@@ -129,13 +129,6 @@ defaults:
       comments: true
       author: digitaldrummerj     # Default author for posts
 
-collections:
-    workshops:
-        output: true
-        permalink: /workshops/:path/
-
-
-
 #       _   __            _             __  _
 #      / | / /___ __   __(_)___ _____ _/ /_(_)___  ____
 #     /  |/ / __ `/ | / / / __ `/ __ `/ __/ / __ \/ __ \
