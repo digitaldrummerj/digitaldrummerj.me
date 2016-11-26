@@ -10,13 +10,11 @@ Here is a quick tip for how to call a filter from within your Angular controller
 
 1. Inject $filter into your controller
 
-
         angular.module('sample').controller('SampleController', SampleController);
 
         /* @ngInject */
         function SampleController($filter) { 
         }  
-
  
 2. Call your filter by calling $filter("filter name")(arg1, arg2, arg3).   
 

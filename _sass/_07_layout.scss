@@ -15,7 +15,7 @@
 - Footer
 - Subfooter
 - CSS-Classes to add margin at top or bottom
-
+- Testsite
 */
 
 
@@ -245,7 +245,7 @@ body.video cite { color: #fff; }
 ------------------------------------------------------------------- */
 
 #up-to-top {
-    padding: 160px 0 10px 0;
+    padding: 50px 0 10px 0;
 }
 #up-to-top a {
     font-size: 24px;
@@ -357,3 +357,17 @@ body.video cite { color: #fff; }
 .pr5  { padding-right: 5px !important; }
 .pr10 { padding-right: 10px !important; }
 .pr20 { padding-right: 20px !important; }
+
+/* CSS-Classes for test site warning */
+.test-site-warning {
+  background-color: $warning-color;
+  padding: 5px 0 5px 0;
+  width:100%;
+  color:black;
+  text-align: center;
+
+  a {
+    text-decoration: underline;
+    color: #fff;
+  }
+}

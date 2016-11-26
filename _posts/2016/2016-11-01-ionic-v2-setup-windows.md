@@ -5,6 +5,7 @@ published: true
 categories: [ionic]
 date: 2016-11-01 06:00
 series: ionic2-setup
+tag: ionic2-setup
 excerpt: | 
     In order to work with the Ionic framework version 2 there is a bit of software installs and configuration that needs to happen in order to deploy to devices.  However, many of the guides out there leave out a number of steps that tripped me up when I first started using Ionic.  
 
@@ -123,5 +124,9 @@ Once you install one of the emulators, you will want to download at least 1 devi
 
 Congratulations, you made it through the guide and have everything setup to create your ionic applications for Android devices.  Unfortunately, if you want to develop for iOS devices you have to do it on a Mac since XCode only runs on a Mac.      
     
-{% include series.html %}
+
+## Series Post
+{: .t60 }
+{% include list-posts tag='ionic2-setup' %}
+
     

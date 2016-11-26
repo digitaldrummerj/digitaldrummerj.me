@@ -1,4 +1,4 @@
-repository: digitaldrummerj/digitaldrummerj.github.io
+repository: digitaldrummerj/blog-theme
 # ASCII-Font › http://patorjk.com/software/taag/#p=display&f=Slant&t=Phlow
 #
 #      _____ _ __          _____      __  __  _
@@ -62,7 +62,7 @@ gems:
 #               /____/
 #
 paginate: 5                      # Paginates all X entries
-paginate_path: "page/:num"   # Pagination path › Important for blog page in /blog/ to work
+paginate_path: "blog/page:num"   # Pagination path › Important for blog page in /blog/ to work
 
 
 # Theme works best with Kramdown (using the table of contents function)
