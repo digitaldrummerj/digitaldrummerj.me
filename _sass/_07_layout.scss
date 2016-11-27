@@ -471,10 +471,10 @@ body.video cite {
 }
 
 
-/* CSS-Classes for test site warning */
+/* CSS-Classes for Testsite warning */
 
 .test-site-warning {
-    background-color: $warning-color;
+    background-color: $alert-color;
     padding: 5px 0 5px 0;
     width: 100%;
     color: black;
@@ -482,5 +482,9 @@ body.video cite {
     a {
         text-decoration: underline;
         color: #fff;
+    }
+
+    h3 {
+        margin: 0;
     }
 }
