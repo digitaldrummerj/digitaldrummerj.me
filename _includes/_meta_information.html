@@ -9,15 +9,17 @@
 		{% endif %} 
 		
 		{% if page.date %}
+		<span class="pr20">
 		<a href="{{ site.baseurl }}/blog/archive/#{{ page.date | date: " %Y-%m " }}">
-			<span class="icon-calendar pr5"></span><time class="pr20" datetime="{{ page.date | date: " %Y-%m-%d " }}" itemprop="datePublished">{{ page.date | date: "%Y-%m-%d" }}</time>
+			<span class="icon-calendar"></span><time  datetime="{{ page.date | date: " %Y-%m-%d " }}" itemprop="datePublished">{{ page.date | date: "%Y-%m-%d" }}</time>
 		</a>
+		</span>
 		{% endif %} 
 		
 
 		{% if page.categories.size > 0 %}
 		
-{% capture tags_content %} <span class="icon-archive pr5"></span><span class="pr20">Posted In: {% endcapture %}
+{% capture tags_content %} <span class="meta-tags"><span class="icon-archive"></span><span class="pr20">Posted In: {% endcapture %}
 {% assign categories = page.categories | sort %}
 
 {% for category in categories %}
@@ -25,10 +27,13 @@
 	  <a href="{{site.baseurl}}/blog/archive/categoryview/#{{ category | slugify }}">{{ category | replace: '-', ' ' }}</a>{% if forloop.last == false and page.categories.size > 2 %}, {% endif %}{% endcapture %}
       {% assign tags_content = tags_content_temp %}
 {% endfor %}
+</span><!-- /.pr20 -->
+</span><!-- /.meta-tags-->
+
 {% else %}
 {% assign tags_content = '' %}
 {% endif %}
-		<span class="pr20">{{tags_content}}</span>
+		{{tags_content}}
 	</p>
 
 </div>

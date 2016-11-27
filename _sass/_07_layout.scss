@@ -255,14 +255,14 @@ body.video cite {
     text-align: initial;
     //font-size: rem-calc(13);
     a {
-        border-bottom: none;
-        font-weight: normal;
+        /*border-bottom: none;*/
+        /*font-weight: normal;*/
     }
 }
 
 #page-meta a:hover {
     color: $secondary-color;
-    text-decoration: underline;
+    /*text-decoration: underline;*/
 }
 
 #page-meta>p>* {
@@ -271,6 +271,7 @@ body.video cite {
 
 #page-meta span[class^='icon-'] {
     white-space: nowrap;
+    margin-right: 5px;
 }
 
 #page-meta .meta-tags {
