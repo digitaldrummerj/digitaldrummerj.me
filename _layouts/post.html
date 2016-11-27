@@ -35,7 +35,7 @@ format: post
 				{% endif %}
 
 				{% if page.show_meta.info %}
-				{% include _meta_information.html %}
+				{% include _meta_information.html post=page %}
 				{% endif %}
 			</header>
 
@@ -50,7 +50,7 @@ format: post
 			{% endif %}
 
 			{% if page.show_meta.info %}
-			{% include _meta_information.html %}
+			{% include _meta_information.html post=page%}
 			{% endif %}
 			
 			{% if page.show_meta.navigation %}

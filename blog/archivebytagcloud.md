@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Post by Tag Cloud
-permalink: /blog/tagcloudview/
+permalink: /blog/archive/tagcloudview/
 active: archivebytagcloud
 sitemap: false
 ---

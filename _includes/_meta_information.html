@@ -1,30 +1,31 @@
+{% assign metadata = include.post %}
 <div id="page-meta" class="t30">
 	<p>
 		<!-- Look the author details up from the site config. -->
-		{% assign author = site.data.authors[page.author] %}
+		{% assign author = site.data.authors[metadata.author] %}
 		<!-- Output author details if some exist. -->
 		{% if author %}
 		<span itemprop="author" itemscope itemtype="http://schema.org/Person"><span itemprop="name" class="pr20 icon-edit"><a href="{{ author.uri }}" target="_blank"> {{ author.name }}</a></span>
 		</span>
 		{% endif %} 
 		
-		{% if page.date %}
+		{% if metadata.date %}
 		<span class="pr20">
-		<a href="{{ site.baseurl }}/blog/archive/#{{ page.date | date: " %Y-%m " }}">
-			<span class="icon-calendar"></span><time  datetime="{{ page.date | date: " %Y-%m-%d " }}" itemprop="datePublished">{{ page.date | date: "%Y-%m-%d" }}</time>
+		<a href="{{ site.baseurl }}/blog/archive/#{{ metadata.date | date: " %Y-%m " }}">
+			<span class="icon-calendar"></span><time  datetime="{{ metadata.date | date: " %Y-%m-%d " }}" itemprop="datePublished">{{ metadata.date | date: "%Y-%m-%d" }}</time>
 		</a>
 		</span>
 		{% endif %} 
 		
 
-		{% if page.categories.size > 0 %}
+		{% if metadata.categories.size > 0 %}
 		
 {% capture tags_content %} <span class="meta-tags"><span class="icon-archive"></span><span class="pr20">Posted In: {% endcapture %}
-{% assign categories = page.categories | sort %}
+{% assign categories = metadata.categories | sort %}
 
 {% for category in categories %}
-      {% capture tags_content_temp %}{{ tags_content }}{% if forloop.last == true and page.categories.size > 1 %} and {% endif %}
-	  <a href="{{site.baseurl}}/blog/archive/categoryview/#{{ category | slugify }}">{{ category | replace: '-', ' ' }}</a>{% if forloop.last == false and page.categories.size > 2 %}, {% endif %}{% endcapture %}
+      {% capture tags_content_temp %}{{ tags_content }}{% if forloop.last == true and metadata.categories.size > 1 %} and {% endif %}
+	  <a href="{{site.baseurl}}/blog/archive/categoryview/#{{ category | slugify }}">{{ category | replace: '-', ' ' }}</a>{% if forloop.last == false and metadata.categories.size > 2 %}, {% endif %}{% endcapture %}
       {% assign tags_content = tags_content_temp %}
 {% endfor %}
 </span><!-- /.pr20 -->

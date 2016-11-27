@@ -1,0 +1,8 @@
+{% assign baseurl = include.baseurl %}
+{% for category in include.categories %}{% capture ignore %}
+	{% for page in site.pages %}{% if page.category == category %}{% assign category_page = page %}{% break %}{% endif %}{% endfor %}
+	{% endcapture %}<a
+			href="{{baseurl}}/#{{ category | slugify }}"
+		>{% if category_page %}{{ category_page.title }}{% else %}{{ category | capitalize }}{% endif %}</a>
+	{% unless forloop.last %}&middot;{% endunless %}
+{% endfor %}

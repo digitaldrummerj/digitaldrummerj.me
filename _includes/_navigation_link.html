@@ -1,0 +1,52 @@
+{% if include.link.special %}
+    {% include _navigation_link_special.html link=include.link %}
+
+{% else %}
+    {% assign link_url = include.link.url %}
+    {% if link_url == '' %}{% assign link_url = nil %}{% endif %}
+
+    {% if link_url contains 'http' %}
+        {% assign domain = '' %}
+    {% elsif link_url == '#' %}
+        {% assign domain = '' %}
+    {% else %}
+        {% assign domain = site.url %}
+    {% endif %}
+
+    {% if page.url contains '/index.html' %}
+        {% comment %}Slice is not available in this version?!{% endcomment %}
+        {% assign page_url = page.url | remove: '/index.html' | append: '/' %}
+    {% else %}
+        {% assign page_url = page.url %}
+    {% endif %}
+
+    {% capture linkHTML %}
+        <a
+            {% if link_url %}href="{{ domain }}{{ link_url }}"{% endif %}
+            {% if link_url contains 'http' %}target="_blank"{% endif %}
+            {% if include.link.icon %}class="icon-{{include.link.icon}}"{% endif %}
+        >{{ include.link.title | escape }} </a>
+    {% endcapture %}
+
+
+    {% if link.dropdown == nil %}
+        {% if include.link.side == "right" %}<li class="divider"></li>{% endif %}
+        <li{% if page_url == link_url or page_url contains link_url and link_url != '/' %} class="active"{% endif %}>
+            {{ linkHTML }}
+        </li>
+        {% if include.link.side == "left" %}<li class="divider"></li>{% endif %}    
+    {% else %}
+        {% if include.link.side == "right" %}<li class="divider"></li>{% endif %}
+        <li class="{% if include.link.dropdown %}has-dropdown{% endif %} {% if page_url == link_url or page_url contains link_url and link_url != '/' %} active{% endif %}">
+            {{ linkHTML }}
+            <ul class="dropdown">
+                {% for sublink in include.link.dropdown %}
+                    {% include _navigation_link.html link=sublink %}
+                {% endfor %}
+            </ul>
+        </li>
+        {% if include.link.side == "left" %}<li class="divider"></li>{% endif %}
+    {% endif %}
+{% endif %}
+
+
