@@ -2,6 +2,7 @@
 layout: default
 format: post
 ---
+
 <div class="row t30">
 	<div class=" columns{% if page.sidebar == NULL %} medium-12 end{% endif %}{% if page.sidebar == "left" %} medium-8 medium-push-4{% endif %}">
 		<article itemscope itemtype="http://schema.org/Article">
@@ -26,26 +27,37 @@ format: post
 					{% if page.subheadline %}<p class="subheadline">{{ page.subheadline }}</p>{% endif %}
 					<h1>{{ page.title }}</h1>
 				</div>
+
+				{% if page.teaser %}
+				<p class="teaser" itemprop="description">
+					{{ page.teaser }}
+				</p>
+				{% endif %}
+
+
+				{% if page.show_meta.info %}
+				{% include _meta_information.html %}
+				{% endif %}
 			</header>
 
-
-			{% if page.teaser %}
-			<p class="teaser" itemprop="description">
-				{{ page.teaser }}
-			</p>
-			{% endif %}
 
 			<div itemprop="articleSection">
 			{{ content }}
 			</div>
 
-			{% if page.show_meta == true %}
-			{% include _meta_information.html %}
-			{% endif %}
-
-			{% if page.comments == true %}
+			{% if page.show_meta.comments %}
 			{% include _comments.html %}
 			{% endif %}
+
+			{% if page.show_meta.info %}
+			{% include _meta_information.html %}
+			{% endif %}
+			
+			{% if page.show_meta.navigation %}
+			{% include {{page.show_meta.navigation}} %}
+			{% endif %}
+			
+			
 		</article>
 	</div><!-- /.medium-8.columns -->
 

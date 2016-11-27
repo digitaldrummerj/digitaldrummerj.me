@@ -1,4 +1,5 @@
 @charset "utf-8";
+
 /* TOC
 
 - Adjustments: Video Layout
@@ -19,13 +20,18 @@
 */
 
 
-
 /* Adjustments: Video Layout
 ------------------------------------------------------------------- */
 
 body.video,
-body.video #masthead-no-image-header { background: #000; }
-body.video #masthead-no-image-header { margin-bottom: 60px; }
+body.video #masthead-no-image-header {
+    background: #000;
+}
+
+body.video #masthead-no-image-header {
+    margin-bottom: 60px;
+}
+
 body.video h1,
 body.video h2,
 body.video h3,
@@ -36,29 +42,36 @@ body.video p,
 body.video a,
 body.video blockquote:before,
 body.video blockquote:after,
-body.video cite a, { color: #fff; }
-body.video cite a:visited, { color: #fff; }
-body.video cite { color: #fff; }
+body.video cite a,
+{
+    color: #fff;
+}
 
+body.video cite a:visited,
+{
+    color: #fff;
+}
+
+body.video cite {
+    color: #fff;
+}
 
 
 /* Navigation
 ------------------------------------------------------------------- */
 
 #navigation {
-    -webkit-box-shadow: 0 2px 2px 0 rgba(0,0,0,.2);
-    box-shadow: 0 2px 3px 0 rgba(0,0,0,.2);
+    -webkit-box-shadow: 0 2px 2px 0 rgba(0, 0, 0, .2);
+    box-shadow: 0 2px 3px 0 rgba(0, 0, 0, .2);
 }
-
 
 
 /* Search
 ------------------------------------------------------------------- */
 
 .no-js form#search {
-  display: none;
+    display: none;
 }
-
 
 
 /* Masthead
@@ -67,23 +80,28 @@ body.video cite { color: #fff; }
 #masthead {
     background-color: $primary-color;
 }
+
 #masthead-no-image-header {
     background-color: $primary-color;
 }
+
 #masthead-with-text {
     text-align: center;
     font-size: rem-calc(54);
     font-family: $header-font-family;
     color: #fff;
     text-transform: uppercase;
-    text-shadow: 0 2px 3px rgba(0,0,0,.4);
+    text-shadow: 0 2px 3px rgba(0, 0, 0, .4);
 }
+
 #masthead-no-image-header {
     height: 175px;
 }
+
 #masthead-no-image-header #logo img {
     margin-top: 60px;
 }
+
 
 /* Masthead › small-only
 ------------------------------------------------------------------- */
@@ -180,20 +198,21 @@ body.video cite { color: #fff; }
     }
 }
 
-
 #title-image-small {
     height: 240px;
 }
+
 #title-image-large {
     height: 520px;
 }
+
 #title-image-index-small {
     height: 120px;
 }
+
 #title-image-index-large {
     height: 260px;
 }
-
 
 
 /* Breadcrumb
@@ -204,15 +223,17 @@ body.video cite { color: #fff; }
     border-top: 1px solid scale-color($grey-1, $lightness: 45%);
     border-bottom: 1px solid scale-color($grey-1, $lightness: 45%);
 }
+
 .breadcrumbs>.current {
-  font-weight: bold;
+    font-weight: bold;
 }
 
 
 /* Meta
 ------------------------------------------------------------------- */
 
-#page-meta, #page-meta a {
+#page-meta,
+#page-meta a {
     color: $grey-5;
 }
 
@@ -220,13 +241,52 @@ body.video cite { color: #fff; }
     background: $grey-5;
     border: 0;
 }
+
 #page-meta .button {
     color: #fff;
 }
+
 #page-meta .button:hover {
     background: $primary-color;
 }
-.meta-info p {
+
+#page-meta p {
+    white-space: normal;
+    text-align: initial;
+    //font-size: rem-calc(13);
+    a {
+        border-bottom: none;
+        font-weight: normal;
+    }
+}
+
+#page-meta a:hover {
+    color: $secondary-color;
+    text-decoration: underline;
+}
+
+#page-meta>p>* {
+    margin-right: rem-calc(20);
+}
+
+#page-meta span[class^='icon-'] {
+    white-space: nowrap;
+}
+
+#page-meta .meta-tags {
+    display: inline-block;
+    * {
+        margin-right: rem-calc(4);
+    }
+}
+
+
+/*[class^='icon-']:before,[class*=' icon-']:before {
+    margin-right: .375rem
+}*/
+
+
+/*.meta-info p {
   font-size: rem-calc(13);
   color: scale-color($grey-1, $lightness: 40%);
 }
@@ -237,8 +297,7 @@ body.video cite { color: #fff; }
   .meta-info a:hover {
     text-decoration: none;
     color: $secondary-color;
-  }
-
+  }*/
 
 
 /* Jump to top
@@ -247,15 +306,16 @@ body.video cite { color: #fff; }
 #up-to-top {
     padding: 50px 0 10px 0;
 }
+
 #up-to-top a {
     font-size: 24px;
     padding: 5px;
     border-radius: 3px;
 }
+
 #up-to-top a:hover {
     background: $grey-2;
 }
-
 
 
 /* Footer
@@ -272,18 +332,18 @@ body.video cite { color: #fff; }
     padding-bottom: 20px;
     background: $footer-bg;
     color: $footer-color;
-    }
+}
 
-    #footer a {
-        color: $footer-link-color;
-    }
-    #footer h4,
-    #footer h5 {
-        letter-spacing: 1px;
-        color: #fff;
-        text-transform: uppercase;
-    }
+#footer a {
+    color: $footer-link-color;
+}
 
+#footer h4,
+#footer h5 {
+    letter-spacing: 1px;
+    color: #fff;
+    text-transform: uppercase;
+}
 
 
 /* Subfooter
@@ -305,69 +365,121 @@ body.video cite { color: #fff; }
     text-transform: uppercase;
     &:hover {
         color: #fff;
-  }
+    }
 }
 
 .social-icons {
     margin-bottom: 10px !important;
-
-// Beware of SCSS-Syntax here
-  li {
-    padding: 0 0 20px 0;
-  }
-  a {
-    font-size: rem-calc(23);
-    display: block;
-    width: 36px;
-    border-radius: 50%;
-    color: $subfooter-bg;
-    background: $subfooter-color;
-    text-align: center;
-    &:hover {
-      background: $subfooter-bg;
-      color: #fff;
+    // Beware of SCSS-Syntax here
+    li {
+        padding: 0 0 20px 0;
     }
-  }
+    a {
+        font-size: rem-calc(23);
+        display: block;
+        width: 36px;
+        border-radius: 50%;
+        color: $subfooter-bg;
+        background: $subfooter-color;
+        text-align: center;
+        &:hover {
+            background: $subfooter-bg;
+            color: #fff;
+        }
+    }
 }
-
 
 
 /* CSS-Classes to add margin at top or bottom
 ------------------------------------------------------------------- */
 
-.t10 { margin-top: 10px !important; }
-.t15 { margin-top: 15px !important; }
-.t20 { margin-top: 20px !important; }
-.t30 { margin-top: 30px !important; }
-.t50 { margin-top: 50px !important; }
-.t60 { margin-top: 60px !important; }
-.t70 { margin-top: 70px !important; }
-.t80 { margin-top: 80px !important; }
-.t90 { margin-top: 90px !important; }
+.t10 {
+    margin-top: 10px !important;
+}
 
-.b15 { margin-bottom: 15px !important; }
-.b20 { margin-bottom: 20px !important; }
-.b30 { margin-bottom: 30px !important; }
-.b60 { margin-bottom: 60px !important; }
+.t15 {
+    margin-top: 15px !important;
+}
 
-.l15 { margin-left: 15px !important; }
-.r15 { margin-right: 15px !important; }
+.t20 {
+    margin-top: 20px !important;
+}
 
-.pl20 { padding-left: 20px !important; }
-.pr5  { padding-right: 5px !important; }
-.pr10 { padding-right: 10px !important; }
-.pr20 { padding-right: 20px !important; }
+.t30 {
+    margin-top: 30px !important;
+}
+
+.t50 {
+    margin-top: 50px !important;
+}
+
+.t60 {
+    margin-top: 60px !important;
+}
+
+.t70 {
+    margin-top: 70px !important;
+}
+
+.t80 {
+    margin-top: 80px !important;
+}
+
+.t90 {
+    margin-top: 90px !important;
+}
+
+.b15 {
+    margin-bottom: 15px !important;
+}
+
+.b20 {
+    margin-bottom: 20px !important;
+}
+
+.b30 {
+    margin-bottom: 30px !important;
+}
+
+.b60 {
+    margin-bottom: 60px !important;
+}
+
+.l15 {
+    margin-left: 15px !important;
+}
+
+.r15 {
+    margin-right: 15px !important;
+}
+
+.pl20 {
+    padding-left: 20px !important;
+}
+
+.pr5 {
+    padding-right: 5px !important;
+}
+
+.pr10 {
+    padding-right: 10px !important;
+}
+
+.pr20 {
+    padding-right: 20px !important;
+}
+
 
 /* CSS-Classes for test site warning */
-.test-site-warning {
-  background-color: $warning-color;
-  padding: 5px 0 5px 0;
-  width:100%;
-  color:black;
-  text-align: center;
 
-  a {
-    text-decoration: underline;
-    color: #fff;
-  }
+.test-site-warning {
+    background-color: $warning-color;
+    padding: 5px 0 5px 0;
+    width: 100%;
+    color: black;
+    text-align: center;
+    a {
+        text-decoration: underline;
+        color: #fff;
+    }
 }

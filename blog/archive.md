@@ -1,7 +1,7 @@
 ---
 layout: default
 title: "Blog Archive"
-teaser: "Check out all blog posts in my blog archive. Click on a headline to read the teaser."
+teaser: "Check out all blog posts in my blog archive. Click on a headline to read the excerpt."
 breadcrumb: true
 header:
    image_fullwidth: header_unsplash_8.jpg

@@ -65,6 +65,12 @@
   dropdown:
   - title: "Blog Archive"
     url: "/blog/archive/"
+  - title: "Blog Archive by Date"
+    url: "/blog/archive/monthview/"
+  - title: "Blog Archive by Category"
+    url: "/blog/archive/categoryview"
+  - title: "Blog Archive by Tag Cloud"
+    url: "/blog/archive/tagcloudview/"
 
 - title: "Search"
   url: "/search/"

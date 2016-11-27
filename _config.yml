@@ -22,7 +22,7 @@ credits: '<p>Created with &hearts; by <a href="http://phlow.de/">Phlow</a> with 
 
 # Main author of the website
 # See > authors.yml
-author: digitaldrummerj
+# author: digitaldrummerj
 
 # This URL is the main address for absolute links. Don't include a slash at the end.
 #
@@ -115,19 +115,25 @@ defaults:
       path: '' 				# an empty string here means all files in the project
       type: 'pages'
     values:
-      show_meta: false 	# Hide metadata for all pages
+      show_meta: 
+        info: false 	# Hide metadata for all pages
+        sharer: false
+        navigation: ''
+        comments: false
       # sidebar:    		# Possible values › left, right › by default there will be no sidebar
-      comments: false
-      author: digitaldrummerj     # Default author for pages
+      # author: ''     # Default author for pages.  Disable as I am the only one
   -
     scope:
       path: ''
       type: 'posts'
     values:
-      show_meta: false   # Show metadata for all posts
+      show_meta: 
+        info: true   # Show metadata for all posts
+        sharer:  true
+        navigation: '_lateral_navigation_blog.html'
+        comments: true
       # sidebar:        # Possible values › left, right › by default there will be no sidebar
-      comments: true
-      author: digitaldrummerj     # Default author for posts
+      # author: digitaldrummerj # disable as I am the only one
 
 #       _   __            _             __  _
 #      / | / /___ __   __(_)___ _____ _/ /_(_)___  ____

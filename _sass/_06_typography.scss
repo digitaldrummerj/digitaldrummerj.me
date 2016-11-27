@@ -20,6 +20,11 @@ Check typography variables › _3_typography_settings.scss
 
 */
 
+/* small
+------------------------------------------------------------------- */
+small {
+    font-size: $font-size-small;
+}
 
 /* Links
 ------------------------------------------------------------------- */
@@ -193,6 +198,17 @@ figcaption a:hover,
 
 td {
     vertical-align: top;
+}
+
+.table-full-width {
+    width: 100%;
+    td {
+        padding: .5em 1em;
+        border: 1px solid;
+    }
+    tr:nth-of-type(odd) {
+        background: #eee
+    }
 }
 
 

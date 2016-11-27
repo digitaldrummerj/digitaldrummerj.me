@@ -1,16 +1,16 @@
----
+--- 
 layout: default
-format: post
+format: post 
 ---
+
 <div class="row t30">
-	<div class="columns{% if page.sidebar == NULL %} medium-12 end{% endif %}{% if page.sidebar == "left" %} medium-8 medium-push-4{% endif %}">
+	<div class="columns{% if page.sidebar == NULL %} medium-12 end{% endif %}{% if page.sidebar == " left
+		" %} medium-8 medium-push-4{% endif %}">
 		<article itemscope itemtype="http://schema.org/Article">
 			<header>
 				{% if page.image.title %}
 				<figure>
-					<img src="{{ site.urlimg }}{{ page.image.title }}" width="970" alt="{{ page.title | escape_once }}" itemprop="image">
-
-					{% if page.image.caption_url and page.image.caption %}
+					<img src="{{ site.urlimg }}{{ page.image.title }}" width="970" alt="{{ page.title | escape_once }}" itemprop="image">					{% if page.image.caption_url and page.image.caption %}
 					<figcaption class="text-right">
 						<a href="{{ page.image.caption_url }}">{{ page.image.caption }}</a>
 					</figcaption>
@@ -23,43 +23,54 @@ format: post
 				{% endif %}
 
 				<div itemprop="name">
-					{% if page.subheadline %}<p class="subheadline">{{ page.subheadline }}</p>{% endif %}
+					{% if page.subheadline %}
+					<p class="subheadline">{{ page.subheadline }}</p>{% endif %}
 					<h1>{{ page.title }}</h1>
 				</div>
+
+				{% if page.teaser %}
+				<p class="teaser" itemprop="description">
+					{{ page.teaser }}
+				</p>
+				{% endif %}
+
+				{% if page.show_meta.info %}
+				{% include _meta_information.html %}
+				{% endif %}
 			</header>
 
 
-			{% if page.teaser %}
-			<p class="teaser" itemprop="description">
-				{{ page.teaser }}
-			</p>
-			{% endif %}
 
 			<div itemprop="articleSection">
-			{{ content }}
+				{{ content }}
 			</div>
 
-			{% if page.show_meta == true %}
-			{% include _meta_information.html %}
-			{% endif %}
-
-			{% if page.comments == true %}
+			{% if page.show_meta.comments %}
 			{% include _comments.html %}
 			{% endif %}
+
+			{% if page.show_meta.info %}
+			{% include _meta_information.html %}
+			{% endif %}
+			
+			{% if page.show_meta.navigation %}
+			{% include {{page.show_meta.navigation}} %}
+			{% endif %}
 		</article>
-	</div><!-- /.medium-8.columns -->
+	</div>
+	<!-- /.medium-8.columns -->
 
 
 	{% if page.sidebar == "left" %}
 	<div class="medium-4 columns medium-pull-8">
 		{% include _sidebar.html %}
-	</div><!-- /.medium-4.columns -->
-	{% endif %}
-
-
-	{% if page.sidebar == "right" %}
+	</div>
+	<!-- /.medium-4.columns -->
+	{% endif %} {% if page.sidebar == "right" %}
 	<div class="medium-4 columns">
 		{% include _sidebar.html %}
-	</div><!-- /.medium-4.columns -->
+	</div>
+	<!-- /.medium-4.columns -->
 	{% endif %}
-</div><!-- /.row -->
+</div>
+<!-- /.row -->

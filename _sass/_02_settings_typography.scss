@@ -46,12 +46,12 @@ $font-weight-bold: bold;
 ------------------------------------------------------------------- */
 
 $font-size-p:    	$base-font-size;
-$font-size-h1:      2.441em;
-$font-size-h2:      1.953em;
-$font-size-h3:      1.563em;
-$font-size-h4:      1.25em;
-$font-size-h5:      1.152em;
-$font-size-small:   0.8em;
+$font-size-h1:      2.441em; // 40px
+$font-size-h2:      1.953em; // 30px
+$font-size-h3:      1.563em; // 24px
+$font-size-h4:      1.25em;  // 20px
+$font-size-h5:      1.152em; // 18px
+$font-size-small:   0.8em;   // 12 px
 
 .font-size-h1   { font-size: $font-size-h1; }
 .font-size-h2   { font-size: $font-size-h2; }
