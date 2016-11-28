@@ -1,8 +1,11 @@
 {% assign metadata = include.post %}
+{% capture tags_content %} <span class="meta-tags"><span class="icon-archive"></span><span class="pr20">Posted In: {% endcapture %}
+{% assign categories = metadata.categories | sort %}
+{% assign author = site.data.authors[metadata.author] %}
+
 <div id="page-meta" class="t30">
 	<p>
 		<!-- Look the author details up from the site config. -->
-		{% assign author = site.data.authors[metadata.author] %}
 		<!-- Output author details if some exist. -->
 		{% if author %}
 		<span itemprop="author" itemscope itemtype="http://schema.org/Person"><span itemprop="name" class="pr20 icon-edit"><a href="{{ author.uri }}" target="_blank"> {{ author.name }}</a></span>
@@ -20,8 +23,6 @@
 
 		{% if metadata.categories.size > 0 %}
 		
-{% capture tags_content %} <span class="meta-tags"><span class="icon-archive"></span><span class="pr20">Posted In: {% endcapture %}
-{% assign categories = metadata.categories | sort %}
 
 {% for category in categories %}
       {% capture tags_content_temp %}{{ tags_content }}{% if forloop.last == true and metadata.categories.size > 1 %} and {% endif %}
