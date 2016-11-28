@@ -393,6 +393,14 @@ body.video cite {
     }
 }
 
+.callforaction {
+    a {
+        &:after {
+            display: none;
+        }
+    }
+}
+
 /* CSS-Classes to add margin at top or bottom
 ------------------------------------------------------------------- */
 
