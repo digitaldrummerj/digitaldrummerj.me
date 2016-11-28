@@ -2,7 +2,7 @@
 layout: page
 title: "Blog Archive"
 teaser: "Check out all blog posts in my blog archive. Click on a headline to read the excerpt."
-breadcrumb: true
+#breadcrumb: true
 permalink: "/blog/archive/"
 sidebar: right
 ---

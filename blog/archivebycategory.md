@@ -2,7 +2,7 @@
 layout: page
 title: "Blog Archive by Category"
 teaser: "Check out all blog posts in my blog archive by category. Click on a headline to read the excerpt."
-breadcrumb: true
+#breadcrumb: true
 permalink: /blog/archive/categoryview/
 sitemap: false
 sidebar: right

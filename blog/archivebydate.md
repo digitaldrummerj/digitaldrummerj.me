@@ -2,7 +2,7 @@
 layout: page
 title: "Blog Archive by Date"
 teaser: "Check out all blog posts in my blog archive by date. Click on a headline to read the excerpt."
-breadcrumb: true
+#breadcrumb: true
 permalink: /blog/archive/monthview/
 sitemap: false
 sidebar: right
