@@ -26,7 +26,7 @@
 	{% assign tags_content = '' %}
 	{% for category in categories %}
 		{% capture tags_content_temp %}{{ tags_content }}{% if forloop.last == true and categories.size > 1 %} and {% endif %}
-		<a href="{{site.baseurl}}blog/archive/categoryview/#{{ category | slugify }}">{{ category | replace: '-', ' ' }}</a>{% if forloop.last == false and categories.size > 2 %}, {% endif %}{% endcapture %}
+		<a href="{{ site.baseurl }}/blog/archive/categoryview/#{{ category | slugify }}">{{ category | replace: '-', ' ' }}</a>{% if forloop.last == false and categories.size > 2 %}, {% endif %}{% endcapture %}
 		{% assign tags_content = tags_content_temp %}
 	{% endfor %}
 

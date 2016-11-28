@@ -3,13 +3,11 @@
 #   Liquid variables are created at the top to keep the source DRY and clean.
 #   Idea by ericcarlisle.com
 #
-#   Variables › {{ url }} › site.baseurl
+#   Variables › {{ site.baseurl }}/ › site.baseurl
 #   Variables › {{ description }} › excerpt, page.meta_description, or site.description
 #   Variables › {{ title }} › page.title
 #
 {% endcomment %}{% capture ignore %}
-
-{% assign url = site.baseurl %}
 
 {% capture description %}{% if page.meta_description %}{{ page.meta_description }}{% elsif page.teaser %}{{ page.teaser }}{% elsif page.excerpt %}{{ page.excerpt }}{% elsif site.description %}{{ site.description }}{% endif %}{% endcapture %}
 {% assign description = description | strip_html | escape | strip %}
@@ -22,10 +20,10 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>{{ title }}</title>
 
-    <link rel="stylesheet" type="text/css" href="{{ url }}assets/css/styles_feeling_responsive.css">
+    <link rel="stylesheet" type="text/css" href="{{ site.baseurl }}/assets/css/styles_feeling_responsive.css">
 
 
-	<script src="{{ url }}assets/js/modernizr.min.js"></script>
+	<script src="{{ site.baseurl }}/assets/js/modernizr.min.js"></script>
 
 	<script src="https://ajax.googleapis.com/ajax/libs/webfont/1.5.18/webfont.js"></script>
 	<script>
@@ -63,7 +61,7 @@
 	<link type="text/plain" rel="author" href="{{ url}}humans.txt">
 
 	{% if page.mediaplayer == true %}
-		<link rel="stylesheet" href="{{ url }}assets/mediaelement_js/mediaelementplayer.min.css">
+		<link rel="stylesheet" href="{{ site.baseurl }}/assets/mediaelement_js/mediaelementplayer.min.css">
 	{% endif %}
 
 	{% include _favicon.html %}

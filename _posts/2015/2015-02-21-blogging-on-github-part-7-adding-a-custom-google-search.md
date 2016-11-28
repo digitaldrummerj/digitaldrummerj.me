@@ -77,7 +77,7 @@ If you have been following along with the other lessons in the series, this shou
 
     {% raw %}
                 <div id="search">
-                    <form role="search" method="get" action="{{site.baseurl}}/search/">
+                    <form role="search" method="get" action="{{ site.baseurl }}//search/">
                         <input id="searchString" name="searchString"
                                placeholder="Be a Better Developer, etc." type="text">
                         <input id="searchButton" name="googleSearchName" type="submit" value="Search">
@@ -98,7 +98,7 @@ If you have been following along with the other lessons in the series, this shou
         <div class="grid" id="searchBar">
              <div>
                  <div id="search">
-                     <form role="search" method="get" action="{{site.baseurl}}/search/">
+                     <form role="search" method="get" action="{{ site.baseurl }}//search/">
                          <input id="searchString" name="searchString"
                                 placeholder="Learn Ionic, Be a Better Developer, etc." type="text">
                          <input id="searchButton" name="googleSearchName" type="button" value="Search">
@@ -107,9 +107,9 @@ If you have been following along with the other lessons in the series, this shou
 
                  <div id="archives">
                      browse by <a title="The complete archive of {{ site.name }}'s Blog by category"
-                            href="{{site.baseurl}}/categoryview">category</a>
+                            href="{{ site.baseurl }}//categoryview">category</a>
                      or <a title="The complete archive of {{ site.name }}'s Blog by month"
-                           href="{{site.baseurl}}/monthview">date</a>
+                           href="{{ site.baseurl }}//monthview">date</a>
                  </div>
              </div>
          </div>

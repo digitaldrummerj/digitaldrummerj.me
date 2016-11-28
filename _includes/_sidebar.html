@@ -1,6 +1,6 @@
 <aside class="sidebar">
 	{% comment %}<div class="panel radius">
-		{% assign tags_url = site.baseurl | append: 'blog/archive/categoryview/' %}
+		{% assign tags_url = site.baseurl | append: '/blog/archive/categoryview/' %}
 		<h3><a href="{{ tags_url }}">Tags</a></h3>
 		{% include _tag_cloud.html baseurl=tags_url %}
 	</div>
@@ -15,7 +15,7 @@
 	</div>
 
 	<div class="panel radius">
-		{% assign categories_url = site.baseurl | append: 'blog/archive/categoryview/' %}
+		{% assign categories_url = site.baseurl | append: '/blog/archive/categoryview/' %}
 		<h3><a href="{{ categories_url }}">Categories</a></h3>
 		<ul class="no-bullet">
 		{% assign categories = site.categories | sort %}
@@ -28,14 +28,14 @@
 	</div>
 
 	<div class="panel radius">
-		{% assign archive_url = site.baseurl | append: 'blog/archive/monthview/' %}
+		{% assign archive_url = site.baseurl | append: '/blog/archive/monthview/' %}
 		<h3><a href="{{ archive_url }}">Archive</a></h3>
 		<ul class="no-bullet">
-			{% for post in site.posts reversed %}
+			{% for post in site.posts %}
 				{% assign currentdate = post.date | date: '%Y-%m' %}
 				{% if currentdate != date %}
-					{% assign count = 1 %}
 					{% unless forloop.first %}({{ count }})</li>{% endunless %}
+					{% assign count = 1 %}
 					{% assign currentyear = post.date | date: '%Y' %}
 					{% if currentyear != year %}
 						{% unless forloop.first %}</ul></li>{% endunless %}
