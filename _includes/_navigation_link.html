@@ -8,10 +8,7 @@
     {% if link_url contains 'http' %}
         {% assign domain = '' %}
     {% elsif link_url == '#' %}
-        {% assign domain = '' %}
-    {% elsif link_url == '/' %}
-        {% assign domain = '' %}
-        
+        {% assign domain = '' %}       
     {% else %}
         {% assign domain = site.baseurl %}
     {% endif %}
