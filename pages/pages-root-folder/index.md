@@ -22,7 +22,7 @@ widget3:
   url: 'https://youtube.com/user/digitaldrummerj'
   
   text: 'Find videos of me speaking on my Youtube Channel'
-  video: '<a href="#" data-reveal-id="videoModal"><img src="http://phlow.github.io/feeling-responsive/images/start-video-feeling-responsive-302x182.jpg" width="302" height="182" alt=""/></a>'
+  video: '<a href="#" data-reveal-id="videoModal"><img src="{{ site.urlimg}}start-video-feeling-responsive-302x182.jpg" width="302" height="182" alt=""/></a>'
 #  image: widget-github-303x182.jpg
 #
 # Use the call for action to show a button on the frontpage
