@@ -35,7 +35,7 @@ permalink: /atom.xml
 
 	<generator uri="http://jekyllrb.com" version="{{ jekyll.version }}">Jekyll</generator>
 
-	{% for post in site.posts limit: 10 %}
+	{% for post in site.posts %}
 		<entry>
 			<id>{{ site.url }}{{ site.baseurl }}{{ post.url }}</id>
 			<title>{{ post.title | strip_html | strip_newlines | xml_escape }}</title>

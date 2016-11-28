@@ -11,6 +11,8 @@ $include-html-classes: false;
 @import "02_settings_typography.scss";
 @import "03_settings_mixins_media_queries.scss";
 @import "04_settings_global.scss";
+@import "06_typography.scss";
+@import "11_syntax-highlighting.scss";
 
 * {
 	display: block;
