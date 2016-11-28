@@ -25,7 +25,7 @@ widget3:
     height: 1280
     width: 720
   image:
-    name: start-video-feeling-responsive-302x182.jpg
+    name: 'start-video-feeling-responsive-302x182.jpg'
     width: 302
     height: 182
 
