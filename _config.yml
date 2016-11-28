@@ -26,12 +26,12 @@ credits: '<p>Created with &hearts; by <a href="http://digitaldrummerj.me/">Justi
 
 # This URL is the main address for absolute links. Don't include a slash at the end.
 #
-url: 'https://digitaldrummerj.me'
+url: 'http://digitaldrummerj.me'
 baseurl: '/blog-theme/'
 
 # This is for the editing function in _/includes/improve_content
 # Leave it empty if your site is not on GitHub/GitHub Pages
-improve_content: https://github.com/digitaldrummerj/blog-theme
+improve_content: https://github.com/digitaldrummerj/blog-theme/blob/master
 
 # This URL points directly to the images directory making
 # things easier to link to images in posts and templates. It needs a slash at the end.
