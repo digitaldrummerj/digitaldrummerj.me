@@ -3,6 +3,9 @@
     <div class="small-12 columns b60">
             <p class="subheadline">{{ post.subheadline }}</p>
       <h2><a href="{{ site.url }}{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></h2>
+      				categories: {{ post.categories}} and size: {{ post.categories.size }}
+
+
     {% include _meta_information.html post=post%}
 
       <p>
