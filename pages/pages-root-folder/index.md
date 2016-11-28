@@ -9,12 +9,12 @@ layout: frontpage
 #  image_fullwidth: header_unsplash_12.jpg
 widget1:
   title: "Blog"
-  url: '/blog/'
+  url: 'blog/'
   image: writing-book-302x182.jpg
   text: 'Give a blurb here about the blog.  Need to make as long as the 2nd and 3rd widget'
 widget2:
   title: "Speaking"
-  url: '/speaking/'
+  url: 'speaking/'
   text: 'Find out where I will be speaking next and get links to my presentation/demo material.'
   image: mic-4-302x182.jpg
 widget3:
