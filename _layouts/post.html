@@ -4,7 +4,7 @@ format: post
 ---
 
 <div class="row t30">
-	<div class=" columns{% if page.sidebar == NULL %} medium-12 end{% elsif page.sidebar == "left" %} medium-8 medium-push-4{% elsif page.sidebar == "right" %} medium-8 {% endif %}">
+	<div class="small-12 columns{% if page.sidebar == NULL %} medium-12 end{% elsif page.sidebar == "left" %} medium-8 medium-push-4{% elsif page.sidebar == "right" %} medium-8 {% endif %}">
 		<article itemscope itemtype="http://schema.org/Article">
 			<header>
 				{% if page.image.title %}
@@ -61,12 +61,12 @@ format: post
 
 
 	{% if page.sidebar == "left" %}
-	<div class="medium-4 columns medium-pull-8">
+	<div class="hide-for-small-only medium-4 columns medium-pull-8">
 		{% include _sidebar.html %}
 	</div>
 	<!-- /.medium-4.columns -->
 	{% endif %} {% if page.sidebar == "right" %}
-	<div class="medium-4 columns">
+	<div class="hide-for-small-only medium-4 columns">
 		{% include _sidebar.html %}
 	</div>
 	<!-- /.medium-4.columns -->
