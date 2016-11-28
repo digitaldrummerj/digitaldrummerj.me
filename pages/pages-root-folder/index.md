@@ -5,8 +5,6 @@
 # this work, you have to use › layout: frontpage
 #
 layout: frontpage
-#header:
-#  image_fullwidth: header_unsplash_12.jpg
 widget1:
   title: "Blog"
   url: 'blog/'
@@ -22,15 +20,15 @@ widget3:
   text: 'Find videos of me speaking on my Youtube Channel'
   url: 'https://youtube.com/user/digitaldrummerj'
   video:
-       url: 'https://www.youtube.com/embed/3b5zCFSmVvU'
-       id: 'videoModal'
-       height: '1280'
-       width:'720'
+    url: 'https://www.youtube.com/embed/3b5zCFSmVvU'
+    id: videoModal
+    height: 1280
+    width: 720
   image:
-       name: 'start-video-feeling-responsive-302x182.jpg'
-       width: '302'
-       height: '182'
-#  image: widget-github-303x182.jpg
+    name: start-video-feeling-responsive-302x182.jpg
+    width: 302
+    height: 182
+
 #
 # Use the call for action to show a button on the frontpage
 #
