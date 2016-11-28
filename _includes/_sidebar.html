@@ -1,9 +1,10 @@
 <aside class="sidebar">
-	<div class="panel radius">
-		{% assign tags_url = site.baseurl | append: '/blog/archive/categoryview' %}
+	{% comment %}<div class="panel radius">
+		{% assign tags_url = site.baseurl | append: '/blog/archive/categoryview/' %}
 		<h3><a href="{{ tags_url }}">Tags</a></h3>
 		{% include _tag_cloud.html baseurl=tags_url %}
 	</div>
+	{% endcomment %}
 
 	<div class="panel radius">
 		<h3>Subscribe</h3>
@@ -20,7 +21,8 @@
 		{% assign categories = site.categories | sort %}
 		{% for category in categories %}
 			{% assign category_key = category | first %}
-			<li class="icon-alias-category">{% include _page_categories.html categories=category_key baseurl=categories_url %}</li>
+			{% assign category_size = category | last | size %}
+			<li class="icon-alias-category">{% include _page_categories.html categories=category_key baseurl=categories_url category_size=category_size %}</li>
 		{% endfor %}
 		</ul> <!-- TODO: Submit PR -->
 	</div>

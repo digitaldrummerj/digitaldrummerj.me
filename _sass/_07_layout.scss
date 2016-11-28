@@ -374,22 +374,24 @@ body.video cite {
     // Beware of SCSS-Syntax here
     li {
         padding: 0 0 20px 0;
-    }
-    a {
-        font-size: rem-calc(23);
-        display: block;
-        width: 36px;
-        border-radius: 50%;
-        color: $subfooter-bg;
-        background: $subfooter-color;
-        text-align: center;
-        &:hover {
-            background: $subfooter-bg;
-            color: #fff;
+        a {
+            font-size: rem-calc(23);
+            display: block;
+            width: 36px;
+            border-radius: 50%;
+            color: $subfooter-bg;
+            background: $subfooter-color;
+            text-align: center;
+            &:hover {
+                background: $subfooter-bg;
+                color: #fff;
+            }
+            &:after {
+                display: none;
+            }
         }
     }
 }
-
 
 /* CSS-Classes to add margin at top or bottom
 ------------------------------------------------------------------- */
@@ -483,7 +485,6 @@ body.video cite {
         text-decoration: underline;
         color: #fff;
     }
-
     h3 {
         margin: 0;
     }

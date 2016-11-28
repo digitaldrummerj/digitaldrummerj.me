@@ -1,46 +1,27 @@
 ---
-layout: default
+layout: page
 title: "Blog Archive by Category"
 teaser: "Check out all blog posts in my blog archive by category. Click on a headline to read the excerpt."
 breadcrumb: true
-header:
-   image_fullwidth: header_unsplash_8.jpg
 permalink: /blog/archive/categoryview/
 sitemap: false
+sidebar: right
 ---
+[By Date]({{"/blog/archive/monthview" | prepend: site.baseurl}}) | [By Tag Cloud]({{"/blog/archive/tagcloudview" | prepend: site.baseurl}}) | [All]({{ "/blog/archive/" | prepend: site.baseurl}})
+
 {% assign tags = site.categories | sort %}
 {% assign sorted_posts = site.posts | sort: 'title' %}
 {% assign counter = 1 %}
-
 {: #top }
-<div id="title" class="row">
-	<div class="small-12 columns t30">
-		<h1>{{ page.title }}</h1>
-		{% if page.teaser %}<p class="teaser">{{ page.teaser }}</p>{% endif %}
-    </div>
-</div>
 
-<div id="category-index" class="row">
-	<div class="small-12 columns t30">
-        <table class="table-full-width">
-            <tr>
-                <td><a href="{{"/blog/archive/monthview" | prepend: site.baseurl | prepend: site.url }}">By Date</a></td>
-                <td><a href="{{"/blog/archive/tagcloudview" | prepend: site.baseurl | prepend: site.url }}">By Tag Cloud</a></td>
-            </tr>
-        </table>
-        <div class="tagcloud03">
-            <ul>{% for tag in tags %}<li><a href="#{{ tag | first | slugify }}">{{ tag | first | replace: '-', ' ' }}<span>{{ tag | last | size }}</span></a></li>{% endfor %}</ul>
-        </div><!-- /.tagcloud03 -->
-    </div><!-- /.small-12.columns -->
-</div><!-- /.row -->
-
-<div id="blog-index" class="row">
-	<div class="small-12 columns t30">
+{% assign tags_url = '' %}
+{% include _tag_cloud.html baseurl=tags_url %}
 
 
+<div id="blog-index" class="row columns">
 {% for tag in tags %}
-<p><a name="{{ tag | first | slugify }}"></a>&nbsp;</p>
-<h3 class="archivetitle">{{ tag | first | replace:'-', ' ' }} <i class="badge">{{ tag | last | size }}</i> </h3>
+
+<h3 class="archivetitle"><a name="{{ tag | first | slugify }}"></a>{{ tag | first | replace:'-', ' ' }} <i class="badge">{{ tag | last | size }}</i> </h3>
 
 <dl class="accordion" data-accordion>
 
@@ -62,7 +43,5 @@ sitemap: false
 <small markdown="1">[back to top](#top)</small>
 
 {% endfor %}
-
-</div><!-- /.small-12.columns -->
-</div><!-- /.row -->
+</div>
 

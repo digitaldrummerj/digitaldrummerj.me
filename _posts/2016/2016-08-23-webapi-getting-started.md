@@ -2,7 +2,7 @@
 layout: post
 title: 'ASP.NET Web Api - Getting Started'
 date: 2016-08-23 06:00
-categories: ['Web Api']
+categories: ['web api']
 series: web-api-getting-started
 published: true
 excerpt: |

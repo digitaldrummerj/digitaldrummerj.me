@@ -3,13 +3,15 @@
   side: left
 
 - title: Speaking
-  url: "/speaking"
+  url: "/speaking/"
   side: left
 
 - title: Blog
-  url: "/blog"
+  url: "/blog/"
   side: left
   dropdown:
+  - title: "Blog Home"
+    url: "/blog/"
   - title: "Blog Archive"
     url: "/blog/archive/"
   - title: "Blog Archive by Date"

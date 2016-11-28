@@ -1,10 +1,11 @@
 {% assign tags = site.categories | sort %}
 {% assign baseurl = include.baseurl %}
+{% assign increaseFont = include.tagCloud %}
 
 <div id="category-index" class="row">
 	<div class="small-12 columns t30">
         <div class="tagcloud03">
-            <ul>{% for tag in tags %}<li><a href="{{baseurl}}/#{{ tag | first | slugify }}">{{ tag | first | replace: '-', ' ' }}<span>{{ tag | last | size }}</span></a></li>{% endfor %}</ul>
+            <ul>{% for tag in tags %}<li><a href="{{baseurl}}#{{ tag | first | slugify }}" {% if increaseFont %}style="font-size: {{ tag | last | size  |  times: 4 | plus: 80  }}%"{% endif %}>{{ tag | first | replace: '-', ' ' }}<span>{{ tag | last | size }}</span></a></li>{% endfor %}</ul>
         </div><!-- /.tagcloud03 -->
     </div><!-- /.small-12.columns -->
 </div><!-- /.row -->

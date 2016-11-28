@@ -5,18 +5,18 @@
 # this work, you have to use › layout: frontpage
 #
 layout: frontpage
-header:
-  image_fullwidth: header_unsplash_12.jpg
+#header:
+#  image_fullwidth: header_unsplash_12.jpg
 widget1:
   title: "Blog"
   url: '/blog/'
-  image: widget-1-302x182.jpg
+  image: writing-book-302x182.jpg
   text: 'Give a blurb here about the blog.  Need to make as long as the 2nd and 3rd widget'
 widget2:
   title: "Speaking"
   url: '/speaking/'
   text: 'Find out where I will be speaking next and get links to my presentation/demo material.'
-  image: lightbulp-302x182.png
+  image: mic-4-302x182.jpg
 widget3:
   title: "Youtube Channel"
   url: 'https://youtube.com/user/digitaldrummerj'

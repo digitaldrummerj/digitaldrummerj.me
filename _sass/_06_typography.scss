@@ -552,7 +552,8 @@ mark {
 .icon-vimeo:before,
 .icon-warning:before,
 .icon-xing:before,
-.icon-youtube:before {
+.icon-youtube:before,
+a[target='_blank']:after {
     display: inline-block;
     font-family: "iconfont";
     font-style: normal;
@@ -639,7 +640,7 @@ mark {
     content: "\f110";
 }
 
-.icon-export:before {
+.icon-export:before, a[target='_blank']:after {
     content: "\f111";
 }
 
@@ -785,4 +786,20 @@ mark {
 
 .icon-youtube:before {
     content: "\f132";
+}
+
+a[target='_blank']:after {
+    display: inline;
+    margin-left: .25rem
+}
+
+sub,sup,a[target='_blank']:after {
+    font-size: 75%;
+    line-height: 0;
+    position: relative;
+    vertical-align: baseline
+}
+
+sup,a[target='_blank']:after {
+    top: -0.5em
 }
