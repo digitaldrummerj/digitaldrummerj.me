@@ -3,8 +3,8 @@
 	{% if include.widget.video %}
 	    {% capture widget_video_image %}{% if include.widget.video.image.name contains 'http' %}{{ include.widget.video.image.name }}{% else %}{{ site.urlimg }}{{ include.widget.video.image.name }}{% endif %}{% endcapture %}
 	
-		<a href="#" data-reveal-id="{{ include.widget.video.id"><img src="{{ widget_video_image }}" width="{{ include.widget.video.image.width }}" height="{{ include.widget.video.image.height }}" alt=""/></a>
-<div id="{{ include.widget.video.id" class="reveal-modal large" data-reveal="">
+		<a href="#" data-reveal-id="{{ include.widget.video.id }}"><img src="{{ widget_video_image }}" width="{{ include.widget.video.image.width }}" height="{{ include.widget.video.image.height }}" alt=""/></a>
+<div id="{{ include.widget.video.id }}" class="reveal-modal large" data-reveal="">
   <div class="flex-video widescreen vimeo" style="display: block;">
     <iframe width="{{ include.widget.video.width }}" height="{{ include.widget.video.height }}" src="{{ include.widget.video.url }}" frameborder="0" allowfullscreen></iframe>
   </div>
