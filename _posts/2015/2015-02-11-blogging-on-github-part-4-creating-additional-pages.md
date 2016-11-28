@@ -114,7 +114,7 @@ To add it to the menu:
 
 6. Add the following line in the menu at the position you want the portfolio page link to be displayed.
 
-        <a href="{{ site.baseurl }}/portfolio">Portfolio</a>
+        <a href="{{ site.baseurl }}portfolio">Portfolio</a>
 
     ![Github Menu with Portfolio Html]({{"github_part4_menu_with_portfolio.png" | prepend: imagedir}})
 

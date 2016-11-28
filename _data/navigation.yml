@@ -3,84 +3,83 @@
   side: left
 
 - title: Speaking
-  url: "/speaking/"
+  url: "speaking/"
   side: left
 
 - title: Blog
-  url: "/blog/"
+  url: "blog/"
   side: left
   dropdown:
   - title: "Blog Home"
-    url: "/blog/"
+    url: "blog/"
   - title: "Blog Archive"
-    url: "/blog/archive/"
+    url: "blog/archive/"
   - title: "Blog Archive by Date"
-    url: "/blog/archive/monthview/"
+    url: "blog/archive/monthview/"
   - title: "Blog Archive by Category"
-    url: "/blog/archive/categoryview"
+    url: "blog/archive/categoryview"
   - title: "Blog Archive by Tag Cloud"
-    url: "/blog/archive/tagcloudview/"
+    url: "blog/archive/tagcloudview/"
 
 - title: Original
   side: left
   dropdown:
   - title: Getting Started
-    url: "/getting-started/"
+    url: "getting-started/"
   - title: "Templates"
-    url: "/"
     side: left
     dropdown:
     - title: "Grid & Colors"
-      url: "/grid/"
+      url: "grid/"
     - title: "Typography"
-      url: "/typography/"
+      url: "typography/"
     - title: "Page/Post"
-      url: "/page/"
+      url: "page/"
     - title: "Post-Left-Sidebar"
-      url: "/post-left-sidebar/"
+      url: "post-left-sidebar/"
     - title: "Post-Right-Sidebar"
-      url: "/post-right-sidebar/"
+      url: "post-right-sidebar/"
     - title: "Page Full-Width"
-      url: "/page-fullwidth/"
+      url: "page-fullwidth/"
     - title: "Blog-Page"
-      url: "/blog/"
+      url: "blog/"
     - title: "Video"
-      url: "/video/"
+      url: "video/"
     - title: "Gallery"
-      url: "/gallery/"
+      url: "gallery/"
     - title: "Portfolio"
-      url: "/portfolio/"
+      url: "portfolio/"
   - title: "Header Styles"
-    url: "/headers/"
+    url: "headers/"
     side: left
     dropdown:
     - title: "Header with Full-Width-Image"
-      url: "/header-full-width-image/"
+      url: "header-full-width-image/"
     - title: "Header with Image and Pattern"
-      url: "/header-image-pattern/"
+      url: "header-image-pattern/"
     - title: "Header with image and color"
-      url: "/header-image-color/"
+      url: "header-image-color/"
     - title: "Header Only With Logo"
-      url: "/header-logo-only/"
+      url: "header-logo-only/"
     - title: "Header With Text"
-      url: "/header-with-text/"
+      url: "header-with-text/"
     - title: "No Header"
-      url: "/no-header/"
+      url: "no-header/"
     - title: "No Header but Image"
-      url: "/no-header-but-image/"
+      url: "no-header-but-image/"
   - title: Documentation
-    url: "/documentation/"
+    url: "documentation/"
     side: left
     dropdown:
     - title: "Changelog"
-      url: "/changelog/"
+      url: "changelog/"
     - title: "Roadmap"
-      url: "/roadmap/"
+      url: "roadmap/"
 
 - title: "Search"
-  url: "/search/"
+  url: "search/"
   side: right
 
 - title: "Contact"
-  url: "/contact/"
+  url: "contact/"
   side: right

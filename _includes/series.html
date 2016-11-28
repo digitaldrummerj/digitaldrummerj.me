@@ -23,7 +23,7 @@
 		{% if page.url == post.url %}
 			This Article
 		{% else %}
-			<a data-proofer-ignore href="{{post.url | prepend: site.baseurl | prepend: site.url}}">{{post.title}}</a>
+			<a data-proofer-ignore href="{{post.url | prepend: site.baseurl}}">{{post.title}}</a>
 		{% endif %}
 		</li>
 	{% endif %}

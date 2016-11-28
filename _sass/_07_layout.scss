@@ -253,16 +253,10 @@ body.video cite {
 #page-meta p {
     white-space: normal;
     text-align: initial;
-    //font-size: rem-calc(13);
-    a {
-        /*border-bottom: none;*/
-        /*font-weight: normal;*/
-    }
 }
 
 #page-meta a:hover {
     color: $secondary-color;
-    /*text-decoration: underline;*/
 }
 
 #page-meta>p>* {
@@ -280,25 +274,6 @@ body.video cite {
         margin-right: rem-calc(4);
     }
 }
-
-
-/*[class^='icon-']:before,[class*=' icon-']:before {
-    margin-right: .375rem
-}*/
-
-
-/*.meta-info p {
-  font-size: rem-calc(13);
-  color: scale-color($grey-1, $lightness: 40%);
-}
-  .meta-info a {
-    text-decoration: underline;
-    color: scale-color($grey-1, $lightness: 40%);
-  }
-  .meta-info a:hover {
-    text-decoration: none;
-    color: $secondary-color;
-  }*/
 
 
 /* Jump to top

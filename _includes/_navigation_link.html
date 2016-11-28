@@ -9,8 +9,11 @@
         {% assign domain = '' %}
     {% elsif link_url == '#' %}
         {% assign domain = '' %}
+    {% elsif link_url == '/' %}
+        {% assign domain = '' %}
+        
     {% else %}
-        {% assign domain = site.baseurl | prepend:site.url %}
+        {% assign domain = site.baseurl %}
     {% endif %}
 
     {% if page.url contains '/index.html' %}

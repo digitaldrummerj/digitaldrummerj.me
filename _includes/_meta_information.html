@@ -1,5 +1,4 @@
 {% assign metadata = include.post %}
-{% capture tags_content %} <span class="meta-tags"><span class="icon-archive"></span><span class="pr20">Posted In: {% endcapture %}
 {% assign categories = metadata.categories | sort %}
 {% assign author = site.data.authors[metadata.author] %}
 
@@ -20,23 +19,21 @@
 		</span>
 		{% endif %} 
 		
-<p>meta categories: {{ post.categories}} and size: {{ post.categories.size }}</p>
-
-		{% if metadata.categories.size > 0 %}
-		
-
-{% for category in categories %}
-      {% capture tags_content_temp %}{{ tags_content }}{% if forloop.last == true and metadata.categories.size > 1 %} and {% endif %}
-	  <a href="{{site.baseurl}}blog/archive/categoryview/#{{ category | slugify }}">{{ category | replace: '-', ' ' }}</a>{% if forloop.last == false and metadata.categories.size > 2 %}, {% endif %}{% endcapture %}
-      {% assign tags_content = tags_content_temp %}
-{% endfor %}
+{% if categories.size > 0 %}
+<span class="meta-tags">
+	<span class="icon-archive"></span>
+	<span class="pr20">Posted In:
+	{% for category in categories %}
+		{% capture tags_content_temp %}{{ tags_content }}{% if forloop.last == true and categories.size > 1 %} and {% endif %}
+		<a href="{{site.baseurl}}blog/archive/categoryview/#{{ category | slugify }}">{{ category | replace: '-', ' ' }}</a>{% if forloop.last == false and categories.size > 2 %}, {% endif %}{% endcapture %}
+		{% assign tags_content = tags_content_temp %}
+	{% endfor %}
+{{tags_content}}
 </span><!-- /.pr20 -->
-</span><!-- /.meta-tags-->
-
-{% else %}
-{% assign tags_content = '' %}
+</span><!-- /.meta-tags -->
 {% endif %}
-		{{tags_content}}
+
+
 	</p>
 </div>
 <!--  /.page-meta -->

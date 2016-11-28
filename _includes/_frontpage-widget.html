@@ -1,5 +1,5 @@
 <div class="medium-4 columns frontpage-widget">
-	{% capture widget_url %}{% if include.widget.url contains 'http' %}{{ include.widget.url }}{% else %}{{ site.url }}{{ site.baseurl }}{{ include.widget.url }}{% endif %}{% endcapture %}
+	{% capture widget_url %}{% if include.widget.url contains 'http' %}{{ include.widget.url }}{% else %}{{ site.baseurl }}{{ include.widget.url }}{% endif %}{% endcapture %}
 	{% if include.widget.video %}
 	    {% capture widget_video_image %}{% if include.widget.image.name contains 'http' %}{{ include.widge.image.name }}{% else %}{{ site.urlimg }}{{ include.widget.image.name }} {% endif %}{% endcapture %}
 	
