@@ -1,11 +1,11 @@
-<nav id="post-nav" class="row">
+<nav id="pagination">
     {% if page.previous.url %}
-    <div class="small-12 medium-5 columns text-left"><a class="small-12 button small radius prev text-left" href="{{ site.baseurl }}{{page.previous.url}}">&laquo; {{page.previous.title}}</a></div>
-    {%else%} &nbsp; {% endif %}
+    <a rel="prev" class="small-12 radius button small" href="{{ site.baseurl }}/{{page.previous.url}}">&laquo; {{page.previous.title}}</a>
+    {% endif %}
 
-    <div class="small-12 medium-2 columns text-center "><a class="small-12 radius button small text-center" href="{{ site.baseurl }}blog/archive/" title="Blog {{ site.data.language.archive }}">{{ site.data.language.archive }}</a></div>
+    <a class="small-12 radius button small" href="{{ site.baseurl }}/blog/archive/" title="Blog {{ site.data.language.archive }}">{{ site.data.language.archive }}</a>
 
     {% if page.next.url %}
-    <div class="small-12 medium-5 columns text-right"><a class="small-12 button small radius next text-right" href="{{ site.baseurl }}{{page.next.url}}">{{page.next.title}} &raquo;</a></div>
-    {% else %} &nbsp; {% endif %}
+    <a rel="next" class="small-12 radius button small" href="{{ site.baseurl }}/{{page.next.url}}">{{page.next.title}} &raquo;</a>
+    {% endif %}
 </nav>

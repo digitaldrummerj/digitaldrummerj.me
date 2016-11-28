@@ -1,7 +1,7 @@
 <div class="medium-4 columns frontpage-widget">
-	{% capture widget_url %}{% if include.widget.url contains 'http' %}{{ include.widget.url }}{% else %}{{ site.baseurl }}{{ include.widget.url }}{% endif %}{% endcapture %}
+	{% capture widget_url %}{% if include.widget.url contains 'http' %}{{ include.widget.url }}{% else %}{{ site.baseurl }}/{{ include.widget.url }}{% endif %}{% endcapture %}
 	{% if include.widget.video %}
-	    {% capture widget_video_image %}{% if include.widget.image.name contains 'http' %}{{ include.widge.image.name }}{% else %}{{ site.urlimg }}{{ include.widget.image.name }} {% endif %}{% endcapture %}
+	    {% capture widget_video_image %}{% if include.widget.image.name contains 'http' %}{{ include.widge.image.name }}{% else %}{{ site.urlimg}}/{{ include.widget.image.name }} {% endif %}{% endcapture %}
 	
 		<a href="#" data-reveal-id="{{ include.widget.video.id }}"><img src="{{ widget_video_image }}" width="{{ include.widget.image.width }}" height="{{ include.widget.image.height }}" alt=""/></a>
 <div id="{{ include.widget.video.id }}" class="reveal-modal large" data-reveal="">
@@ -13,7 +13,7 @@
 	{% else %}
 		<a href="{{ widget_url }}">
 			{% if include.widget.image %}
-			{% capture widget_image %}{% if include.widget.image contains 'http' %}{{ include.widget.image }}{% else %}{{ site.urlimg }}{{ include.widget.image }}{% endif %}{% endcapture %}
+			{% capture widget_image %}{% if include.widget.image contains 'http' %}{{ include.widget.image }}{% else %}{{ site.urlimg}}/{{ include.widget.image }}{% endif %}{% endcapture %}
 				{%comment%}TODO lazy loading{%endcomment%}
 				{%comment%}<img class="lazy" data-src="{{ widget_image}}" alt="" />{%endcomment%}
 				{%comment%}<noscript>{%endcomment%}

@@ -27,7 +27,7 @@ credits: '<p>Created with &hearts; by <a href="http://digitaldrummerj.me/">Justi
 # This URL is the main address for absolute links. Don't include a slash at the end.
 #
 url: 'http://digitaldrummerj.me'
-baseurl: '/blog-theme/'
+baseurl: '/blog-theme'
 
 # This is for the editing function in _/includes/improve_content
 # Leave it empty if your site is not on GitHub/GitHub Pages
@@ -36,10 +36,10 @@ improve_content: https://github.com/digitaldrummerj/blog-theme/blob/master
 # This URL points directly to the images directory making
 # things easier to link to images in posts and templates. It needs a slash at the end.
 #
-# Example: <img src="{{ site.urlimg }}{{ post.image.title }}" />
-# Markdown-Example for posts ![Image Text]({{ site.urlimg }}image.jpg)
+# Example: <img src="{{ site.urlimg}}/{{ post.image.title }}" />
+# Markdown-Example for posts ![Image Text]({{ site.urlimg}}/image.jpg)
 #
-urlimg: 'http://digitaldrummerj.me/blog-theme/images/'
+urlimg: 'http://digitaldrummerj.me/blog-theme/images'
 
 
 # Logo size is 600x80 pixels

@@ -4,10 +4,10 @@ title: "Atom Feed"
 permalink: /atom.xml
 ---
 <?xml version="1.0" encoding="utf-8"?>
-<?xml-stylesheet type="text/xsl" href="{{ site.url }}{{ site.baseurl }}assets/xslt/atom.xslt" ?>
-<?xml-stylesheet type="text/css" href="{{ site.url }}{{ site.baseurl }}assets/css/atom.css" ?>
+<?xml-stylesheet type="text/xsl" href="{{ site.url }}{{ site.baseurl }}/assets/xslt/atom.xslt" ?>
+<?xml-stylesheet type="text/css" href="{{ site.url }}{{ site.baseurl }}/assets/css/atom.css" ?>
 <feed xmlns="http://www.w3.org/2005/Atom">
-	<id>{{ site.url }}{{ site.baseurl }}</id>
+	<id>{{ site.url }}{{ site.baseurl }}/</id>
 	<title>{{ site.title | xml_escape }}</title>
 	<updated>{{ site.time | date_to_xmlschema }}</updated>
 
@@ -30,16 +30,16 @@ permalink: /atom.xml
 		</author>
 	{% endif %}
 
-	<link href="{{ site.url }}{{ site.baseurl }}{{page.url }}" rel="self" type="application/rss+xml" />
-	<link href="{{ site.url }}{{ site.baseurl }}" rel="alternate" type="text/html" />
+	<link href="{{ site.url }}{{ site.baseurl }}/{{page.url }}" rel="self" type="application/rss+xml" />
+	<link href="{{ site.url }}{{ site.baseurl }}/" rel="alternate" type="text/html" />
 
 	<generator uri="http://jekyllrb.com" version="{{ jekyll.version }}">Jekyll</generator>
 
 	{% for post in site.posts %}
 		<entry>
-			<id>{{ site.url }}{{ site.baseurl }}{{ post.url }}</id>
+			<id>{{ site.url }}{{ site.baseurl }}/{{ post.url }}</id>
 			<title>{{ post.title | strip_html | strip_newlines | xml_escape }}</title>
-			<link href="{{ site.url }}{{ site.baseurl }}{{ post.url }}" rel="alternate" type="text/html" title="{{ post.title | xml_escape }}" />
+			<link href="{{ site.url }}{{ site.baseurl }}/{{ post.url }}" rel="alternate" type="text/html" title="{{ post.title | xml_escape }}" />
 			<updated>{{ post.date | date_to_xmlschema }}</updated>
 
 			{% if post.author %}
@@ -59,7 +59,7 @@ permalink: /atom.xml
 				</author>
 			{% endif %}
 			<summary>{{ post.teaser | xml_escape }}</summary>
-			<content type="html" xml:base="{{ site.url }}{{ site.baseurl }}{{ post.url }}">{{ post.content | xml_escape }}</content>
+			<content type="html" xml:base="{{ site.url }}{{ site.baseurl }}/{{ post.url }}">{{ post.content | xml_escape }}</content>
 
 			{% for category in post.categories %}
 				<category term="{{ category | xml_escape }}" />
