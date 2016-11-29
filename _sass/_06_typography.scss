@@ -20,11 +20,14 @@ Check typography variables › _3_typography_settings.scss
 
 */
 
+
 /* small
 ------------------------------------------------------------------- */
+
 small {
     font-size: $font-size-small;
 }
+
 
 /* Links
 ------------------------------------------------------------------- */
@@ -222,17 +225,49 @@ pre {
     background-color: $highlight-background !important; //$code-background-color;
     border-radius: $global-radius;
     border: 2px solid $highlight-border;
+    code {
+        padding: rem-calc(2) rem-calc(5) rem-calc(1) rem-calc(0);
+        border: 0;
+        background-color: $highlight-background;
+        font-size: rem-calc(14);
+        line-height: 1.5;
+        text-indent: 100px;
+        white-space: pre-wrap; //css-3
+        white-space: -moz-pre-wrap; //Mozilla, since 1999
+        white-space: -pre-wrap; // Opera 4-6
+        white-space: -o-pre-wrap; // Opera 7
+        word-wrap: break-word; // Internet Explorer 5.5+
+    }
 }
 
-pre code {
-    padding: rem-calc(2) rem-calc(5) rem-calc(1) rem-calc(0);
-    border: 0;
+@media screen and (max-width: 568px) {
+    code {
+        word-wrap: normal !important;
+        white-space: inherit !important;
+    }
+    code.language-text {
+        word-wrap: normal !important;
+        white-space: inherit !important;
+    }
+    /* Hack that doesn't work well to get SyntaxHighlighter
+   to look decent on an iPhone */
+    pre {
+        -webkit-text-size-adjust: 82%;
+    }
+    code {
+        -webkit-text-size-adjust: 82%;
+    }
 }
 
-code {
-    background-color: $highlight-background;
-    font-size: rem-calc(14);
-    line-height: 1.5;
+@media only screen and (max-width: 400px) {
+    code {
+        word-wrap: normal !important;
+        white-space: inherit !important;
+    }
+    code.language-text {
+        word-wrap: normal !important;
+        white-space: inherit !important;
+    }
 }
 
 
@@ -640,7 +675,8 @@ a[target='_blank']:after {
     content: "\f110";
 }
 
-.icon-export:before, a[target='_blank']:after {
+.icon-export:before,
+a[target='_blank']:after {
     content: "\f111";
 }
 
@@ -793,13 +829,16 @@ a[target='_blank']:after {
     margin-left: .25rem
 }
 
-sub,sup,a[target='_blank']:after {
+sub,
+sup,
+a[target='_blank']:after {
     font-size: 75%;
     line-height: 0;
     position: relative;
     vertical-align: baseline
 }
 
-sup,a[target='_blank']:after {
+sup,
+a[target='_blank']:after {
     top: -0.5em
 }

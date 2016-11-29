@@ -121,7 +121,7 @@ Below are the instructions for installation if you are on a Mac.
 
 On a recent Mac git comes pre-installed.  To verify it is installed open up terminal and run:
 
-            $ git --version
+     $ git --version
 
 If you do not have the git command line tools installed, you will need to install it.  As well, it also indicates that you are running an old version of OSx and you may have issue completing this workshop.
 
@@ -195,8 +195,10 @@ You are now ready to proceed to the [Ionic Framework install](#section-30-ionic)
 
 ## 3.2 Git Configuration
 
-      git config --global --add url.https://github.com.insteadof git://github.com
-   
+```bash
+git config --global --add url.https://github.com.insteadof git://github.com
+```
+
 ## Wrap up
 
 You now have all of the software components needed to create an Ionic project and run/test it out in a web browser.  In the next lab you will create your first Ionic application and test it in the browser.
