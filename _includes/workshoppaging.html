@@ -1,0 +1,30 @@
+{% if page.type != null and page.order != null and page.order > 0 %}
+{% assign current = page.order %}
+{% assign next = page.order | plus:1 %}
+{% assign previous = page.order | minus:1 %}
+
+{% assign pages_list = site.workshops | order: 'title' %}
+{% for node in pages_list %}
+{% if node.ishome != null and node.type != null and node.type == page.type %}
+{% assign home = node.url %}
+{% endif %}
+
+{% if node.order > 0 and node.type != null and node.type == page.type %}
+
+{% if node.order == next  %}
+{% assign nextpage = node.url %}
+{% endif %}
+
+{% if node.order == previous  %}
+{% assign previouspage = node.url %}
+{% endif %}
+
+{% endif %}
+{% endfor %}
+
+<div id="paginate">
+    {% if previouspage %}<span><a href="{{ previouspage }}">&laquo; previous lab</a></span>{% elsif current == 1  %}<span><a href="{{ home }}.html">&laquo; intro</a></span>{% else %}&nbsp;{% endif %}
+
+    {% if nextpage %}<span><a href="{{ nextpage }}">next lab &raquo;</a></span>{% else %}&nbsp;{% endif %}
+</div>
+{% endif %}

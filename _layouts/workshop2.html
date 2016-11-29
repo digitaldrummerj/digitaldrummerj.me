@@ -1,0 +1,19 @@
+---
+layout: page-fullwidth
+---
+
+{% capture pagetype %}{{ page.type | replace: 'extra', '' | replace: 'overview', ''}}{% endcapture %}
+{% capture extratype %}{{ pagetype }}extra{% endcapture %}
+{% capture overviewtype %}{{ pagetype }}overview{% endcapture %}
+{% capture home %}{{ page.lab | prepend: "/workshops/" | prepend: site.baseurl }}{% endcapture %}
+
+<div id="workshop" class="row">
+    <div class="small-12 columns t30 {% if page.layout != "workshoppage2" %} medium-8 {%  else %} medium-12 {% endif %}">
+        {{ content}}
+    </div>
+    {% if page.layout != "workshoppage2" %} 
+        <div class="hide-for-small-only medium-4 columns t30">
+            {% include workshoppostsidebar2.html %}
+        </div>
+    {% endif %}
+</div>

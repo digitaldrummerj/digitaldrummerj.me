@@ -1,0 +1,4 @@
+---
+published: false
+---
+placeholder so that the _drafts directory doesn't disappear.  this dir hold draft post

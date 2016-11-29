@@ -1,0 +1,9 @@
+{% if site.testsite != null %}
+{% assign todo-size = (page.todo | size) %}
+{% if page.todo != null and todo-size > 0 %}
+<div id="todo">
+    <span><img id="icon" src="{{"/images/todo-2.png" | prepend: site.baseurl }}"> Things to Fix: </span>
+    {{ page.todo | markdownify }}
+</div>
+{% endif %}
+{% endif %}

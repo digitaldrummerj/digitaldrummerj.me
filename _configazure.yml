@@ -1,0 +1,11 @@
+#
+# This config-file is only needed for development. Instead of changing the url
+# everytime you work locally on the project, you start both config-files, overwriting
+# the first one with the development variables needed.
+#
+# Start development with › $ jekyll serve --config _config.yml,_config_dev.yml,_config_azure.yml
+
+url: http://digitaldrummerj-test.azurewebsites.net/
+urlimg: 'http://digitaldrummerj-test.azurewebsites.net/images'
+testsite: true
+paginate: 5

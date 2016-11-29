@@ -134,6 +134,19 @@ defaults:
         comments: true
       # sidebar:        # Possible values › left, right › by default there will be no sidebar
       # author: digitaldrummerj # disable as I am the only one
+  -
+    scope:
+      path: ''
+      type: workshops
+    values:
+      stylelink: "/assets/css/workshop.css"
+      includeFontAwesome: true
+      includeLoraFont: true
+
+collections:
+    workshops:
+        output: true
+        permalink: /workshops/:path/
 
 #       _   __            _             __  _
 #      / | / /___ __   __(_)___ _____ _/ /_(_)___  ____
@@ -153,9 +166,9 @@ defaults:
 #   ___/ / /___/ /_/ /
 #  /____/_____/\____/    Verify Website to Webmaster Tools
 
-google_author:             'https://plus.google.com/u/0/118311555303973066167'
-google_site_verification:  'Vk0IOJ2jwG_qEoG7fuEXYqv0m2rLa8P778Fi_GrsgEQ'
-bing_webmastertools_id:    '0FB4C028ABCF07C908C54386ABD2D97F'
+#google_author:             'https://plus.google.com/u/0/118311555303973066167'
+#google_site_verification:  'Vk0IOJ2jwG_qEoG7fuEXYqv0m2rLa8P778Fi_GrsgEQ'
+bing_webmastertools_id:    'E414777C8C1E619FC57F320448FD584A'
 # alexa_verify_id:         ''
 
 
@@ -168,17 +181,17 @@ bing_webmastertools_id:    '0FB4C028ABCF07C908C54386ABD2D97F'
 #                                                 More information » https://mathiasbynens.be/notes/touch-icons
 
 favicon-32x32:                          'favicon-32x32.png'
-touch-icon-192x192:                     'touch-icon-192x192.png'
-apple-touch-icon-180x180-precomposed:   'apple-touch-icon-180x180-precomposed.png'
-apple-touch-icon-152x152-precomposed:   'apple-touch-icon-152x152-precomposed.png'
-apple-touch-icon-144x144-precomposed:   'apple-touch-icon-144x144-precomposed.png'
-apple-touch-icon-120x120-precomposed:   'apple-touch-icon-120x120-precomposed.png'
-apple-touch-icon-114x114-precomposed:   'apple-touch-icon-114x114-precomposed.png'
-apple-touch-icon-76x76-precomposed:     'apple-touch-icon-76x76-precomposed.png'
-apple-touch-icon-72x72-precomposed:     'apple-touch-icon-72x72-precomposed.png'
-apple-touch-icon-precomposed:           'apple-touch-icon-precomposed.png'
-msapplication_tileimage:                'msapplication_tileimage.png'               # Size 144x144
-msapplication_tilecolor:                '#fabb00'
+# touch-icon-192x192:                     'touch-icon-192x192.png'
+# apple-touch-icon-180x180-precomposed:   'apple-touch-icon-180x180-precomposed.png'
+# apple-touch-icon-152x152-precomposed:   'apple-touch-icon-152x152-precomposed.png'
+# apple-touch-icon-144x144-precomposed:   'apple-touch-icon-144x144-precomposed.png'
+# apple-touch-icon-120x120-precomposed:   'apple-touch-icon-120x120-precomposed.png'
+# apple-touch-icon-114x114-precomposed:   'apple-touch-icon-114x114-precomposed.png'
+# apple-touch-icon-76x76-precomposed:     'apple-touch-icon-76x76-precomposed.png'
+# apple-touch-icon-72x72-precomposed:     'apple-touch-icon-72x72-precomposed.png'
+# apple-touch-icon-precomposed:           'apple-touch-icon-precomposed.png'
+# msapplication_tileimage:                'msapplication_tileimage.png'               # Size 144x144
+# msapplication_tilecolor:                '#fabb00'
 
 
 #      _____            _       __   __  ___         ___

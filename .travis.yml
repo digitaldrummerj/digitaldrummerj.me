@@ -1,0 +1,28 @@
+language: ruby
+cache: bundler
+sudo: true
+rvm:
+  - 2.2
+before_install:
+  - sudo apt-get -qq update
+  - sudo apt-get install ncftp
+  - gem install bundler
+  - gem install html-proofer
+script:
+  - chmod +x scripts/build
+  - ./scripts/build
+after_success:
+  - chmod +x scripts/deploy
+  - ./scripts/deploy
+env:
+  global:
+  - NOKOGIRI_USE_SYSTEM_LIBRARIES=true
+# blacklist
+branches:
+  except:
+    - master
+
+# whitelist
+branches:
+  only:
+    - scheduled

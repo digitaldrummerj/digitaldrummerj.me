@@ -1,0 +1,41 @@
+{% capture pagetype %}{{ page.type | replace: 'extra', '' | replace: 'overview', ''}}{% endcapture %}
+{% capture extratype %}{{ pagetype }}extra{% endcapture %}
+{% capture overviewtype %}{{ pagetype }}overview{% endcapture %}
+{% capture home %}{{ pagetype | prepend: "/workshops/" | prepend: site.baseurl }}{% endcapture %}
+{% assign pages_list = site.workshops | sort: 'title' %}
+<section class="sidebar-lists">
+<h3 class="sidebar-description">Overview:</h3>
+<ul class="sidebar-items" id="overview">
+    <li><a class="sidebar-nav-item{% if page.url == home %} active{% endif %}" href="{{ home }}">Home</a></li>
+    {% for node in pages_list %}
+    {% if node.title != null and node.istrue != true  and node.layout == "workshoppost2" and node.type == overviewtype %}
+        <li class="<%= if page.id is @document.id then 'active' else 'inactive' %>">
+        <a class="sidebar-nav-item{% if page.url == node.url %} active{% endif %}" href="{{ node.url  }}">{{ node.title }}</a></li>
+    {% endif %}
+{% endfor %}
+</ul>
+
+
+<h3 class="sidebar-description">Labs:</h3>
+
+    <ul class="sidebar-items" id="labs">
+    {% for node in pages_list %}
+    {% if node.title != null and node.ishome == null  and node.layout == "workshoppost2" and node.type == pagetype %}
+
+    <li class="<%= if page.id is @document.id then 'active' else 'inactive' %>">
+        <a class="sidebar-nav-item{% if page.url == node.url %} active{% endif %}" href="{{ node.url  }}">{{ node.title }}</a>
+    </li>
+    {% endif %}
+    {% endfor %}
+        </ul>
+
+<h3 class="sidebar-description">Extra Labs:</h3>
+    <ul class="sidebar-items" id="extras">
+{% for node in pages_list %}
+    {% if node.title != null and node.istrue != true and node.layout == "workshoppost2" and node.type == extratype %}
+        <li class="<%= if page.id is @document.id then 'active' else 'inactive' %>">
+        <a class="sidebar-nav-item{% if page.url == node.url %} active{% endif %}" href="{{ node.url  }}">{{ node.title }}</a></li>
+    {% endif %}
+{% endfor %}
+</ul>
+</section>
