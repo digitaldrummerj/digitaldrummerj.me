@@ -23,23 +23,19 @@ sidebar: right
 
 <h3 class="archivetitle"><a name="{{ tag | first | slugify }}"></a>{{ tag | first | replace:'-', ' ' }} <i class="badge">{{ tag | last | size }}</i> </h3>
 
-<dl class="accordion" data-accordion>
+<ul>
 
 {% for post in sorted_posts %}
     {%if post.categories contains tag[0]%}
-<dd class="accordion-navigation">
-    <a href="#panel{{ counter }}"><span class="iconfont"></span> {% if post.subheadline %}{{ post.subheadline }} › {% endif %}<strong>{{ post.title }}</strong> <small>{% if post.date %} - {{ post.date | date: "%B %e, %Y" }}{% endif %}</small></a>
-        <div id="panel{{ counter }}" class="content">
-            {% if post.meta_description %}{{ post.meta_description | strip_html | escape }}{% elsif post.teaser %}{{ post.teaser | strip_html | escape }}{% elsif post.excerpt %}{{ post.excerpt | markdownify }}{% endif %}
-            <a href="{{ site.baseurl }}{{ post.url }}" title="Read {{ post.title | escape_once }}"><strong>{{ site.data.language.read_more }}</strong></a><br><br>
-        </div>
-</dd>
+<li>
+    <a title="Read {{ post.title | escape_once }}" href="{{ site.baseurl  }}{{ post.url }}"> {% if post.subheadline %}{{ post.subheadline }} › {% endif %}<strong>{{ post.title }}</strong> <small>{% if post.date %} - {{ post.date | date: "%B %e, %Y" }}{% endif %}</small></a>
+</li>
     {% assign counter=counter | plus:1 %}
 
     {%endif%}
 
 {% endfor %}
-</dl>
+</ul>
 
 <small markdown="1">[back to top](#top)</small>
 

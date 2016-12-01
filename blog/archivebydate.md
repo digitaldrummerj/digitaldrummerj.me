@@ -11,8 +11,8 @@ sidebar: right
 [By Category]({{"/blog/archive/categoryview" | prepend: site.baseurl}}) | [By Tag Cloud]({{"/blog/archive/tagcloudview" | prepend: site.baseurl}}) | [All]({{ "/blog/archive/" | prepend: site.baseurl}})
 
 <div id="index">
-{% assign openList = '<dl class="accordion" data-accordion>' %}
-{% assign closeList = '</dl>' %}
+{% assign openList = '<ul>' %}
+{% assign closeList = '</ul>' %}
 {% assign counter = 1 %}
 {% for post in site.posts %}
     {% capture year %}{{ post.date | date: '%Y' }}{% endcapture %}
@@ -33,13 +33,8 @@ sidebar: right
     {% endcapture %}
 
     {% capture link %}
-        <dd class="accordion-navigation">
-            <a href="#panel{{ counter }}"><span class="iconfont"></span> {% if post.subheadline %}{{ post.subheadline }} › {% endif %}<strong>{{ post.title }}</strong> <small>{% if post.date %} - {{ post.date | date: "%B %e, %Y" }}{% endif %}</small></a>
-            <div id="panel{{ counter }}" class="content">
-                {% if post.meta_description %}{{ post.meta_description | strip_html | escape }}{% elsif post.teaser %}{{ post.teaser | strip_html | escape }}{% elsif post.excerpt %}{{ post.excerpt | markdownify }}{% endif %}
-                <a href="{{ site.baseurl }}{{ post.url }}" title="Read {{ post.title | escape_once }}"><strong>{{ site.data.language.read_more }}</strong></a><br><br>
-            </div>
-        </dd>
+        <li>
+            <a title="Read {{ post.title | escape_once }}" href="{{ site.baseurl }}{{ post.url }}"> {% if post.subheadline %}{{ post.subheadline }} › {% endif %}<strong>{{ post.title }}</strong> <small>{% if post.date %} - {{ post.date | date: "%B %e, %Y" }}{% endif %}</small></a></li>
 
     {% endcapture %}
 
