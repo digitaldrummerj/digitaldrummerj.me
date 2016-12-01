@@ -11,23 +11,25 @@ widget1:
   image: writing-book-302x182.jpg
   text: 'Give a blurb here about the blog.  Need to make as long as the 2nd and 3rd widget'
 widget2:
-  title: "Speaking"
+  title: "Speaking Engagements"
   url: 'speaking/'
-  text: 'Find out where I will be speaking next and get links to my presentation/demo material.'
+  text: 'As much as I love to write code, I enjoy teaching even more. Find out where I will be speaking next and get links to my presentation/demo material.'
   image: mic-4-302x182.jpg
 widget3:
-  title: "Youtube Channel"
-  text: 'Find videos of me speaking on my Youtube Channel'
-  url: 'https://youtube.com/user/digitaldrummerj'
-  video:
-    url: 'https://www.youtube.com/embed/3b5zCFSmVvU'
-    id: videoModal
-    height: 1280
-    width: 720
-  image:
-    name: 'start-video-feeling-responsive-302x182.jpg'
-    width: 302
-    height: 182
+  title: "Workshops"
+  text: 'Go through workshops that I have given'
+  url: 'workshops/'
+  image: tutorial-header@2x-303x182.jpg
+  #url:https://youtube.com/user/digitaldrummerj'
+  #video:
+  #  url: 'https://www.youtube.com/embed/3b5zCFSmVvU'
+  #  id: videoModal
+  #  height: 1280
+  #  width: 720
+  #image:
+  #  name: 'start-video-feeling-responsive-302x182.jpg'
+  #  width: 302
+  #  height: 182
 
 #
 # Use the call for action to show a button on the frontpage

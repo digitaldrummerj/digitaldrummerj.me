@@ -1,34 +1,20 @@
 ---
-layout: page-fullwidth
+layout: page
 title: Speaking
+subheadline: "Combining passion for coding and teaching. "
 permalink: /speaking/
-active: speaking
-redirect_from: "/presentations/"
-sitemap: 
-    priority: 1.0
-    changefreq: weekly
-    lastmod: 2016-08-11T16:31:30+05:30
 ---
 
 {: #top }
 
-I have a passion for coding and for teaching; speaking at developer community events allows me to combine these two.  I love to share my knowledge in order to get you to your end goal quicker.  
-
-If you'd like me to come to your event or user group, [email](mailto:digitaldrummerj@gmail.com) or [tweet](http://twitter.com/digitaldrummerj) at me.
+I love to share my knowledge in order to get you to your end goal faster.   If you'd like me to speak at your event or user group, [email](mailto:digitaldrummerj@gmail.com) or [tweet](http://twitter.com/digitaldrummerj) at me.
+{:.teaser}
 
 If you've attended one of my sessions, please send me your feedback or suggestions.
 
 If you see me at an event, please be sure to come up and say "Hi".  The best part of the events is hanging out with other developers.
 
-### Background
-
-I started really getting into speaking publicly in early 2014 after speaking at the [Southeast Valley .NET User Group](http://www.meetup.com/sevdnug/) in Chandler, Arizona.  I had suggested a couple of topics for future meetings that I wanted to learn about to the user group organizer, [Rob Richardson](http://www.robrich.org) and like a bullet he immediately shot back, "when would you like to present these topics?".  I wasn't quite prepared for that response but in retrospect it was the best response he could have given to me and one that I have used in the meetups that I organize.  I had been an attendee of this user group for awhile but hadn't done a presentation there in a few years.  So after thinking about it for a few minutes I thought I got nothing to lose and asked for a few months to learn the topics.
-
-Over the next couple of months I worked on learning the ins and outs of [Nuget](http://www.nuget.org) and [Chocolatey](http://www.chocolatey.org) as well watching tips and tricks on speaking from speakers I admired like [Scott Hanselman](http://www.hanselman.com/) and [John Papa](http://www.johnpapa.net/).  The presentations both went amazingly well with a lot of great feedback from audience and I was immediately hooked.  Since that initial presentations I have presented well over 50 talks and counting across the United States and Europe.  
-
-<p>&nbsp;</p>
-
-## Upcoming Speaking Engagements
+## My Next Events
 
 ### Nothing Scheduled.  
 
@@ -45,11 +31,11 @@ If you'd like me to come to your event or user group, [email](mailto:digitaldrum
 
 ----
 
-## Presentation Topics
+## My Presentation Topics
 
 Below are all of the talks that I have given with links to the slides and any additional resources that I may have.
 
-If you would like me to given any of these talks you are meetings, please let me know.
+If you would like me to given any of these talks you are meetings, please let me know.  I am also open to new talks if you don't see something below, just ask.
 
 ### Topics 
 
