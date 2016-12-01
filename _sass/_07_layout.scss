@@ -19,12 +19,14 @@
 - Testsite
 */
 
-a[name]:before { 
-  display: block; 
-  content: " "; 
-  margin-top: -75px; 
-  height: 75px; 
-  visibility: hidden; 
+h2,h3 {
+     a[name]:before { 
+       display: block; 
+       content: " "; 
+       margin-top: -75px; 
+       height: 75px; 
+       visibility: hidden; 
+     }
 }
 
 /* Adjustments: Video Layout
