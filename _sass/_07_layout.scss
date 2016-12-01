@@ -295,16 +295,14 @@ body.video cite {
 
 #up-to-top {
     padding: 50px 0 10px 0;
-}
-
-#up-to-top a {
-    font-size: 24px;
-    padding: 5px;
-    border-radius: 3px;
-}
-
-#up-to-top a:hover {
-    background: $grey-2;
+    a {
+         font-size: 24px;
+         padding: 5px;
+         border-radius: 3px;
+         &:hover {
+               background: $grey-2;
+         }
+    }
 }
 
 
