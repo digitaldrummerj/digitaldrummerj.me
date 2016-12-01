@@ -10,7 +10,7 @@
     {% for node in pages_list %}
     {% if node.title != null and node.istrue != true  and node.layout == "workshoppost2" and node.type == overviewtype %}
         <li class="<%= if page.id is @document.id then 'active' else 'inactive' %>">
-        <a class="sidebar-nav-item{% if page.url == node.url %} active{% endif %}" href="{{ node.url  }}">{{ node.title }}</a></li>
+        <a class="sidebar-nav-item{% if page.url == node.url %} active{% endif %}" href="{{site.baseurl}}{{ node.url  }}">{{ node.title }}</a></li>
     {% endif %}
 {% endfor %}
 </ul>
@@ -23,7 +23,7 @@
     {% if node.title != null and node.ishome == null  and node.layout == "workshoppost2" and node.type == pagetype %}
 
     <li class="<%= if page.id is @document.id then 'active' else 'inactive' %>">
-        <a class="sidebar-nav-item{% if page.url == node.url %} active{% endif %}" href="{{ node.url  }}">{{ node.title }}</a>
+        <a class="sidebar-nav-item{% if page.url == node.url %} active{% endif %}" href="{{site.baseurl}}{{ node.url  }}">{{ node.title }}</a>
     </li>
     {% endif %}
     {% endfor %}
@@ -34,7 +34,7 @@
 {% for node in pages_list %}
     {% if node.title != null and node.istrue != true and node.layout == "workshoppost2" and node.type == extratype %}
         <li class="<%= if page.id is @document.id then 'active' else 'inactive' %>">
-        <a class="sidebar-nav-item{% if page.url == node.url %} active{% endif %}" href="{{ node.url  }}">{{ node.title }}</a></li>
+        <a class="sidebar-nav-item{% if page.url == node.url %} active{% endif %}" href="{{site.baseurl}}{{ node.url  }}">{{ node.title }}</a></li>
     {% endif %}
 {% endfor %}
 </ul>

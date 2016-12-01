@@ -23,8 +23,8 @@
 {% endfor %}
 
 <div id="paginate">
-    {% if previouspage %}<span><a href="{{ previouspage }}">&laquo; previous lab</a></span>{% elsif current == 1  %}<span><a href="{{ home }}.html">&laquo; intro</a></span>{% else %}&nbsp;{% endif %}
+    {% if previouspage %}<span><a href="{{ site.baseurl }}{{ previouspage }}">&laquo; previous lab</a></span>{% elsif current == 1  %}<span><a href="{{ site.baseurl }}{{ home }}.html">&laquo; intro</a></span>{% else %}&nbsp;{% endif %}
 
-    {% if nextpage %}<span><a href="{{ nextpage }}">next lab &raquo;</a></span>{% else %}&nbsp;{% endif %}
+    {% if nextpage %}<span><a href="{{ site.baseurl }}{{ nextpage }}">next lab &raquo;</a></span>{% else %}&nbsp;{% endif %}
 </div>
 {% endif %}
