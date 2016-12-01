@@ -14,7 +14,6 @@ sidebar: right
 <div id="index">
 {% assign openList = '<ul>' %}
 {% assign closeList = '</ul>' %}
-{% assign counter = 1 %}
 {% for post in site.posts %}
     {% capture year %}{{ post.date | date: '%Y' }}{% endcapture %}
     {% capture nyear %}{{ post.next.date | date: '%Y' }}{% endcapture %}
@@ -39,10 +38,7 @@ sidebar: right
 
     {% endcapture %}
 
-
     {% unless post.next %}{{ yearHead }}{% else %}{% if year != nyear %}{{yearHead }}{% endif %}{% endunless %}{% if month != nmonth %}{{ monthHead }}{% endif %}{{ link }}
-
-{% assign counter=counter | plus:1 %}
 {% endfor %}
 {{closeList}}
 </div>

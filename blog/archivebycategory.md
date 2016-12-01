@@ -13,8 +13,6 @@ sidebar: right
 
 {% assign tags = site.categories | sort %}
 {% assign sorted_posts = site.posts | sort: 'title' %}
-{% assign counter = 1 %}
-
 
 {% assign tags_url = '' %}
 {% include _tag_cloud.html baseurl=tags_url %}
@@ -32,7 +30,6 @@ sidebar: right
 <li>
     <a title="Read {{ post.title | escape_once }}"   href="{{ site.baseurl }}{{ post.url }}"> <strong>{{ post.title }}</strong> <small>{% if post.date %} - {{ post.date | date: "%B %e, %Y" }}{% endif %}</small></a>
  </li>
-    {% assign counter=counter | plus:1 %}
     {%endif%}
 
 {% endfor %}
