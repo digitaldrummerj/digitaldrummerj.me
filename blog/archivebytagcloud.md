@@ -28,7 +28,7 @@ sidebar: right
 {% for post in sorted_posts %}
     {%if post.categories contains tag[0]%}
 <li>
-    <a title="Read {{ post.title | escape_once }}" href="{{ site.baseurl  }}{{ post.url }}"> {% if post.subheadline %}{{ post.subheadline }} › {% endif %}<strong>{{ post.title }}</strong> <small>{% if post.date %} - {{ post.date | date: "%B %e, %Y" }}{% endif %}</small></a>
+    <a title="Read {{ post.title | escape_once }}" href="{{ site.baseurl  }}{{ post.url }}"> <strong>{{ post.title }}</strong> <small>{% if post.date %} - {{ post.date | date: "%B %e, %Y" }}{% endif %}</small></a>
 </li>
     {% assign counter=counter | plus:1 %}
 

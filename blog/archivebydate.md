@@ -34,7 +34,7 @@ sidebar: right
 
     {% capture link %}
         <li>
-            <a title="Read {{ post.title | escape_once }}" href="{{ site.baseurl }}{{ post.url }}"> {% if post.subheadline %}{{ post.subheadline }} › {% endif %}<strong>{{ post.title }}</strong> <small>{% if post.date %} - {{ post.date | date: "%B %e, %Y" }}{% endif %}</small></a></li>
+            <a title="Read {{ post.title | escape_once }}" href="{{ site.baseurl }}{{ post.url }}"><strong>{{ post.title }}</strong> <small>{% if post.date %} - {{ post.date | date: "%B %e, %Y" }}{% endif %}</small></a></li>
 
     {% endcapture %}
 
