@@ -17,10 +17,15 @@
   - title: "Ionic v1"
     url: "/workshops/ionic/"
 
+- title: "About"
+  url: "/about/"
+  side: right
+  
+- title: "Contact"
+  url: "/contact/"
+  side: right
+
 - title: "Search"
   url: "/search/"
   side: right
 
-#- title: "Contact"
-#  url: "/contact/"
-#  side: right
