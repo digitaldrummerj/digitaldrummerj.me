@@ -7,13 +7,14 @@ permalink: /blog/archive/tagcloudview/
 sitemap: false
 sidebar: right
 ---
+{: #top }
 
 [By Date]({{"/blog/archive/monthview" | prepend: site.baseurl }}) | [By Category]({{"/blog/archive/categoryview" | prepend: site.baseurl}}) | [All]({{ "/blog/archive/" | prepend: site.baseurl}})
 
 {% assign tags = site.categories | sort %}
 {% assign sorted_posts = site.posts | sort: 'title' %}
 {% assign counter = 1 %}
-{: #top }
+
 
 {% assign tags_url = '' %}
 {% include _tag_cloud.html baseurl=tags_url tagCloud=true%}

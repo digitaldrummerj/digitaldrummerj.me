@@ -7,6 +7,7 @@ permalink: /blog/archive/monthview/
 sitemap: false
 sidebar: right
 ---
+{: #top }
 
 [By Category]({{"/blog/archive/categoryview" | prepend: site.baseurl}}) | [By Tag Cloud]({{"/blog/archive/tagcloudview" | prepend: site.baseurl}}) | [All]({{ "/blog/archive/" | prepend: site.baseurl}})
 
@@ -21,7 +22,7 @@ sidebar: right
     {% capture nmonth %}{{ post.next.date | date: '%m%Y' }}{% endcapture %}
  
     {% capture yearHead %}
-        {% if year != nyear and forloop.index != 1 %}{{closeList}}{% endif %}
+        {% if year != nyear and forloop.index != 1 %}{{closeList}}<small markdown="1">[back to top](#top)</small>{% endif %}
 
         <h2 class="archivetitletopbottom"><a name="{{ post.date | date: '%Y' }}"></a>{{ post.date | date: '%Y' }}</h2>
     {% endcapture %}
