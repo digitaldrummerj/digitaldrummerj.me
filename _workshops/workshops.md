@@ -13,13 +13,13 @@ date: 05-10-2016
 {% if lab.ishome == true and lab.url != "/workshops/index" %}
 <article>
 <header>
-<h2 class="post-title"><img src="{{ "/images/logo.png" | prepend: lab.type }}" alt="{{page.type}} Logo"><a href="{{ lab.url }}.html">{{ lab.title }}<br /></a></h2>
+<h2 class="post-title"><img src="{{ "/images/logo.png" | prepend: lab.type }}" alt="{{page.type}} Logo"><a href="{{ site.baseurl }}{{ lab.url }}.html">{{ lab.title }}<br /></a></h2>
 </header>
  <div>
 {{ lab.excerpt | markdownify }}
   </div>
 <div class="more-link">
-  <p><a href="{{ lab.url }}.html">start workshop &raquo;</a></p>
+  <p><a href="{{ site.baseurl }}{{ lab.url }}.html">start workshop &raquo;</a></p>
 </div>
 
 </article>
