@@ -1,11 +1,11 @@
 <nav id="pagination">
     {% if page.previous.url %}
-    <a rel="prev" class="radius button small pull-left" href="{{ site.baseurl }}{{page.previous.url}}">&laquo; {{page.previous.title | truncate: 20 }}</a>
+    <a rel="prev" class="radius button small" href="{{ site.baseurl }}{{page.previous.url}}">&laquo; {{page.previous.title | truncate: 20 }}</a>
     {% endif %}
 
     <!--<a class="radius button small" href="{{ site.baseurl }}/blog/archive/" title="Blog {{ site.data.language.archive }}">{{ site.data.language.archive }}</a>-->
 
     {% if page.next.url %}
-    <a rel="next" class="radius button small pull-right" href="{{ site.baseurl }}{{page.next.url}}">{{page.next.title | truncate: 20}} &raquo;</a>
+    <a rel="next" class="radius button small" href="{{ site.baseurl }}{{page.next.url}}">{{page.next.title | truncate: 20}} &raquo;</a>
     {% endif %}
 </nav>

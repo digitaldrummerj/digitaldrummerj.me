@@ -15,7 +15,7 @@
 - Badge
 - TagCloud
 - Contact Form
-
+- Sharer
 */
 
 
@@ -125,7 +125,6 @@ button.grey:focus,
 .button.grey:focus {
     background-color: $grey-16;
 }
-
 
 
 /* Side-Nav
@@ -363,3 +362,59 @@ img.lazy {
     }
 }
 
+
+/* Sharer */
+@media print {
+    @page { margin: 0.32in; } // TODO https://github.com/zurb/foundation/issues/6834
+    #navigation,
+    #masthead, #masthead-with-pattern, #masthead-with-background-color, #masthead-with-text, #masthead-no-image-header,
+    .breadcrumbs,
+    .sidebar, #post-nav, #sharer, #pagination, #up-to-top,
+    #footer-content, #footer, #subfooter {
+        display: none !important;
+    }
+}
+
+#sharer {
+    margin-bottom: $paragraph-margin-bottom;
+    .share-block {
+        padding: 0.25em !important;
+        .share-link {
+            display: block;
+            text-align: center;
+            text-decoration: none;
+            border: none
+        }
+        a:after {
+            content: ''
+        }
+    }
+    .share-link.share-twitter {
+        background-color: #00aced;
+        color: white
+    }
+    .share-link.share-twitter:hover {
+        color: #baecff
+    }
+    .share-link.share-email {
+        background-color: #777777;
+        color: white
+    }
+    .share-link.share-email:hover {
+        color: #ddd
+    }
+    .share-link.share-googleplus {
+        background-color: #d34836;
+        color: white
+    }
+    .share-link.share-googleplus:hover {
+        color: #f8e0dd
+    }
+    .share-link.share-facebook {
+        background-color: #3B5998;
+        color: white
+    }
+    .share-link.share-facebook:hover {
+        color: #bbc8e4
+    }
+}
