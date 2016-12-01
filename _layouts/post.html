@@ -44,6 +44,10 @@ format: post
 				{{ content }}
 			</div>
 
+			{% if page.show_meta.sharer %}
+			{% include _sharer.html %}
+			{% endif %}
+
 			{% if page.show_meta.comments %}
 			{% include _comments.html %}
 			{% endif %}

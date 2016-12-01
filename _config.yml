@@ -12,13 +12,13 @@ repository: digitaldrummerj/blog-theme
 title: 'Justin James'
 
 # The slogan describes your website and is used on homepage in <title> and other important places
-slogan: 'A web developer and speaker from Arizona'
+slogan: 'Developer, Speaker, and Agile enthusiast from Arizona'
 
 # The description is used on homepage and in the footer to quickly describe your website. Use a maximum of 150 characters for SEO-purposes.
-description: '»digitaldrummerj.me« is all about sharing my knowledge with others in a manner that is easy to understand and consume.'
+description: 'Sharing my knowledge with others in a manner that is easy to understand and consume.'
 
 # The credits show up in the includes/_footer.html – It would be nice of you to leave a link to Phlow or Feeling Responsive as a thank you :)
-credits: '<p>Created with &hearts; by <a href="http://digitaldrummerj.me/">Justin James</a> with <a href="http://jekyllrb.com/" target="_blank">Jekyll</a> based on <a href="http://phlow.github.io/feeling-responsive/">Feeling Responsive</a>.</p>'
+credits: '<p>Created with &hearts; by <a href="http://digitaldrummerj.me/">Justin James</a> .</p>'
 
 # Main author of the website
 # See > authors.yml
@@ -132,7 +132,7 @@ defaults:
         sharer:  true
         navigation: '_lateral_navigation_blog.html'
         comments: true
-      # sidebar:        # Possible values › left, right › by default there will be no sidebar
+      sidebar: right        # Possible values › left, right › by default there will be no sidebar
       # author: digitaldrummerj # disable as I am the only one
   -
     scope:
@@ -181,17 +181,17 @@ bing_webmastertools_id:    'E414777C8C1E619FC57F320448FD584A'
 #                                                 More information » https://mathiasbynens.be/notes/touch-icons
 
 favicon-32x32:                          'favicon-32x32.png'
-# touch-icon-192x192:                     'touch-icon-192x192.png'
-# apple-touch-icon-180x180-precomposed:   'apple-touch-icon-180x180-precomposed.png'
-# apple-touch-icon-152x152-precomposed:   'apple-touch-icon-152x152-precomposed.png'
-# apple-touch-icon-144x144-precomposed:   'apple-touch-icon-144x144-precomposed.png'
-# apple-touch-icon-120x120-precomposed:   'apple-touch-icon-120x120-precomposed.png'
-# apple-touch-icon-114x114-precomposed:   'apple-touch-icon-114x114-precomposed.png'
-# apple-touch-icon-76x76-precomposed:     'apple-touch-icon-76x76-precomposed.png'
-# apple-touch-icon-72x72-precomposed:     'apple-touch-icon-72x72-precomposed.png'
-# apple-touch-icon-precomposed:           'apple-touch-icon-precomposed.png'
-# msapplication_tileimage:                'msapplication_tileimage.png'               # Size 144x144
-# msapplication_tilecolor:                '#fabb00'
+touch-icon-192x192:                     'touch-icon-192x192.png'
+apple-touch-icon-180x180-precomposed:   'apple-touch-icon-180x180-precomposed.png'
+apple-touch-icon-152x152-precomposed:   'apple-touch-icon-152x152-precomposed.png'
+apple-touch-icon-144x144-precomposed:   'apple-touch-icon-144x144-precomposed.png'
+apple-touch-icon-120x120-precomposed:   'apple-touch-icon-120x120-precomposed.png'
+apple-touch-icon-114x114-precomposed:   'apple-touch-icon-114x114-precomposed.png'
+apple-touch-icon-76x76-precomposed:     'apple-touch-icon-76x76-precomposed.png'
+apple-touch-icon-72x72-precomposed:     'apple-touch-icon-72x72-precomposed.png'
+apple-touch-icon-precomposed:           'apple-touch-icon-precomposed.png'
+msapplication_tileimage:                'msapplication_tileimage.png'               # Size 144x144
+msapplication_tilecolor:                '#fabb00'
 
 
 #      _____            _       __   __  ___         ___

@@ -5,9 +5,7 @@ rvm:
   - 2.2
 before_install:
   - sudo apt-get -qq update
-  - sudo apt-get install ncftp
   - gem install bundler
-  - gem install html-proofer
 script:
   - chmod +x scripts/build
   - ./scripts/build
@@ -20,9 +18,10 @@ env:
 # blacklist
 branches:
   except:
-    - master
+#    - master
 
 # whitelist
 branches:
   only:
-    - scheduled
+     - master
+#    - scheduled

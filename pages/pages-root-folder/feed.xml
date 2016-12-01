@@ -15,10 +15,10 @@ permalink: /feed.xml
 		{% for post in site.posts %}
 			<item>
 				<title>{{ post.title | xml_escape }}</title>
-				<link>{{ site.url }}{{ site.baseurl }}/{{ post.url }}</link>
+				<link>{{ site.url }}{{ site.baseurl }}{{ post.url }}</link>
 				<pubDate>{{ post.date | date: "%a, %d %b %Y %H:%M:%S %z" }}</pubDate>
 				<description>{{ post.content | xml_escape }}</description>
-				<guid isPermaLink="true">{{ site.url }}{{ site.baseurl }}/{{ post.url }}</guid>
+				<guid isPermaLink="true">{{ site.url }}{{ site.baseurl }}{{ post.url }}</guid>
 			</item>
 		{% endfor %}
 	</channel>

@@ -19,6 +19,13 @@
 - Testsite
 */
 
+a[name]:before { 
+  display: block; 
+  content: " "; 
+  margin-top: -75px; 
+  height: 75px; 
+  visibility: hidden; 
+}
 
 /* Adjustments: Video Layout
 ------------------------------------------------------------------- */
@@ -276,8 +283,8 @@ body.video cite {
 }
 
 .panel span[class^='icon-'] {
-  white-space: nowrap;
-  margin-right: 5px;
+    white-space: nowrap;
+    margin-right: 5px;
 }
 
 
@@ -381,6 +388,7 @@ body.video cite {
     }
 }
 
+
 /* CSS-Classes to add margin at top or bottom
 ------------------------------------------------------------------- */
 
@@ -476,4 +484,8 @@ body.video cite {
     h3 {
         margin: 0;
     }
+}
+
+h2.blog-title {
+    margin: 0;
 }

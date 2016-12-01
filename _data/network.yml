@@ -2,20 +2,25 @@
 
 - name: "Icons by Daniel Bruce"
   url: "http://entypo.com/"
-  class: "network-entypo"
   title: "Icons by Daniel Bruce"
-
-- name: "Built on Foundation"
-  url: "http://foundation.zurb.com/"
-  class: "services-newsletter"
-  title: "Built on Foundation"
 
 - name: "Images by Unsplash"
   url: "http://unsplash.com/"
-  class: "rss-link"
   title: "Images by Unsplash"
 
-- name: "Using Backstretch by Scott Robbin"
+- name: "Using Backstretch"
   url: "http://srobbin.com/jquery-plugins/backstretch/"
-  class: "sitemap-link"
   title: "Using Backstretch by Scott Robbin"
+
+- name: "Built on Foundation"
+  url: "http://foundation.zurb.com/"
+  title: "Built on Foundation"
+
+- name: "Jekyll"
+  url: http://jekyllrb.com
+  title: "Built On Jekyll"
+
+- name: "Theme by Phlow"
+  url: http://phlow.github.io/feeling-responsive/
+  title: "Theme by Phlow"
+  

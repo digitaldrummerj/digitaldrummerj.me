@@ -9,15 +9,15 @@ widget1:
   title: "Blog"
   url: 'blog/'
   image: writing-book-302x182.jpg
-  text: 'Give a blurb here about the blog.  Need to make as long as the 2nd and 3rd widget'
+  text: "My notebook of technical information to share with you.  If I struggled with it or found something cool, it is documented here."
 widget2:
   title: "Speaking Engagements"
   url: 'speaking/'
-  text: 'As much as I love to write code, I enjoy teaching even more. Find out where I will be speaking next and get links to my presentation/demo material.'
+  text: "As much as I love to write code, I enjoy teaching even more. Find out where I will be speaking next and see past presentations."
   image: mic-4-302x182.jpg
 widget3:
   title: "Workshops"
-  text: 'Go through workshops that I have given'
+  text: "Sometimes an hour long presentation won't do.  You need more time and details.  See my available workshops and work through them."
   url: 'workshops/'
   image: tutorial-header@2x-303x182.jpg
   #url:https://youtube.com/user/digitaldrummerj'
@@ -42,7 +42,7 @@ widget3:
 # To change colors see sass/_01_settings_colors.scss
 #
 callforaction:
-  url: https://tinyletter.com/feeling-responsive
+  url: https://tinyletter.com/digitaldrummerj
   text: Inform me about new updates and features ›
   style: alert
 permalink: /index.html

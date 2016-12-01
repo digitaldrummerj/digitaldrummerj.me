@@ -37,9 +37,9 @@ permalink: /atom.xml
 
 	{% for post in site.posts %}
 		<entry>
-			<id>{{ site.url }}{{ site.baseurl }}/{{ post.url }}</id>
+			<id>{{ site.url }}{{ site.baseurl }}{{ post.url }}</id>
 			<title>{{ post.title | strip_html | strip_newlines | xml_escape }}</title>
-			<link href="{{ site.url }}{{ site.baseurl }}/{{ post.url }}" rel="alternate" type="text/html" title="{{ post.title | xml_escape }}" />
+			<link href="{{ site.url }}{{ site.baseurl }}{{ post.url }}" rel="alternate" type="text/html" title="{{ post.title | xml_escape }}" />
 			<updated>{{ post.date | date_to_xmlschema }}</updated>
 
 			{% if post.author %}
@@ -59,7 +59,7 @@ permalink: /atom.xml
 				</author>
 			{% endif %}
 			<summary>{{ post.teaser | xml_escape }}</summary>
-			<content type="html" xml:base="{{ site.url }}{{ site.baseurl }}/{{ post.url }}">{{ post.content | xml_escape }}</content>
+			<content type="html" xml:base="{{ site.url }}{{ site.baseurl }}{{ post.url }}">{{ post.content | xml_escape }}</content>
 
 			{% for category in post.categories %}
 				<category term="{{ category | xml_escape }}" />
