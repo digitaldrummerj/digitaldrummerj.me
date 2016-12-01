@@ -22,13 +22,13 @@ sidebar: right
     {% capture nmonth %}{{ post.next.date | date: '%m%Y' }}{% endcapture %}
  
     {% capture yearHead %}
-        {% if year != nyear and forloop.index != 1 %}{{closeList}}<small markdown="1">[back to top](#top)</small>{% endif %}
+        {% if year != nyear and forloop.index != 1 %}{{closeList}}{% endif %}
 
         <h2 class="archivetitletopbottom"><a name="{{ post.date | date: '%Y' }}"></a>{{ post.date | date: '%Y' }}</h2>
     {% endcapture %}
 
     {% capture monthHead %}
-        {% if month != nmonth and forloop.index != 1  and year == nyear %}{{ closeList }}{% endif %}
+        {% if month != nmonth and forloop.index != 1  and year == nyear %}{{ closeList }}<small markdown="1">[back to top](#top)</small>{%endif %}
         <h2 class="archivetitle"><a name="{{ post.date | date:  '%Y-%m'  }}"></a>{{ post.date | date: '%B %Y' }}</h2>
         {{ openList }}
     {% endcapture %}
