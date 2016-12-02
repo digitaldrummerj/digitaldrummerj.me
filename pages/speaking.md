@@ -7,7 +7,7 @@ permalink: /speaking/
 
 {: #top }
 
-I love to share my knowledge in order to get you to your end goal faster.   If you'd like me to speak at your event or user group, [email](mailto:digitaldrummerj@gmail.com) or [tweet](http://twitter.com/digitaldrummerj) at me.
+I have a passion for teaching and sharing my knowledge to help get you to your end goal faster.  If you'd like me to speak at your event, [drop me a line]({{ "/contact/" | prepend: site.baseurl }}).  I can cover pretty much any topic you see me blog about but feel free to request just about anything.  
 {:.teaser}
 
 If you've attended one of my sessions, please send me your feedback or suggestions.
@@ -18,7 +18,7 @@ If you see me at an event, please be sure to come up and say "Hi".  The best par
 
 ### Nothing Scheduled.  
 
-If you'd like me to come to your event or user group, [email](mailto:digitaldrummerj@gmail.com) or [tweet](http://twitter.com/digitaldrummerj) at me.
+If you'd like me to speak at your event, [drop me a line]({{ "/contact/" | prepend: site.baseurl }}) and lets make it happen.  I can cover pretty much any topic you see me blog about but feel free to request just about anything.  
 
 <!--
 ### Music City Code <span> - Nashville, TN (August 18th-20th, 2016)</span>

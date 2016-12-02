@@ -43,7 +43,7 @@ widget3:
 #
 callforaction:
   url: https://tinyletter.com/digitaldrummerj
-  text: Inform me about new updates and features ›
+  text: Signup to get latest updates ›
   style: alert
 permalink: /index.html
 #

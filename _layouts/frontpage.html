@@ -38,18 +38,10 @@ format: frontpage
 * First check, if there is a call for action-button
 *
 {% endcomment %}
-{% if page.callforaction.url contains 'http' %}
-{% assign url = '' %}
-{% else %}
-{% capture url %}{{ site.baseurl }}/{% endcapture %}
-{% endif %}
 {% if page.callforaction %}
-    <div class="row t30 b30 callforaction">
-        <div class="small-12 text-center columns">
-            <a class="button large radius {{ page.callforaction.style }}" href="{{ url }}{{ page.callforaction.url }}"{% if page.callforaction.url contains 'http' %} target="_blank" {% endif %}>{{ page.callforaction.text }}</a>
-        </div><!-- /.small-12.columns -->
-    </div><!-- /.row -->
+    {% include _callforaction.html url=page.callforaction.url text=page.callforaction.text style=page.callforaction.style%}
 {% endif %}
+
 
 
 

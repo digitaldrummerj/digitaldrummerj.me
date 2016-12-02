@@ -1,0 +1,16 @@
+{% if include.url contains 'http' %}
+{% assign url = '' %}
+{% else %}
+{% capture url %}{{ site.baseurl }}/{% endcapture %}
+{% endif %}
+{% if include.align %}
+    {% assign align=include.align %}
+{% else %}    
+    {% assign align='text-center' %}
+{% endif %}    
+
+<div class="row t30 b30 callforaction">
+    <div class="small-12 {{ align }} columns">
+        <a class="button large radius {{ include.style }}" href="{{ url }}{{ include.url }}"{% if include.url contains 'http' %} target="_blank" {% endif %}>{{ include.text }}</a>
+    </div><!-- /.small-12.columns -->
+</div><!-- /.row -->

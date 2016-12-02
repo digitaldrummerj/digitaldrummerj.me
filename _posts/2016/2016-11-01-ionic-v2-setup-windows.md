@@ -6,7 +6,6 @@ categories: [ionic]
 date: 2016-11-01 06:00
 series: ionic2-setup
 tag: ionic2-setup
-subheadline: "Testing this out"
 excerpt: | 
     In order to work with the Ionic framework version 2 there is a bit of software installs and configuration that needs to happen in order to deploy to devices.  However, many of the guides out there leave out a number of steps that tripped me up when I first started using Ionic.  
 
