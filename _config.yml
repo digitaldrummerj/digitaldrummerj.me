@@ -18,7 +18,7 @@ slogan: 'Developer, Speaker, and Agile enthusiast from Arizona'
 description: 'Sharing my knowledge with others in a manner that is easy to understand and consume.'
 
 # The credits show up in the includes/_footer.html – It would be nice of you to leave a link to Phlow or Feeling Responsive as a thank you :)
-credits: '<p>Created with &hearts; by <a href="<<site>>">Justin James</a>.</p>'
+credits: '<p>Created with &hearts; by <a href="<<site>>">Justin James</a>.</p><p>This blog, its content, and opinions are my own.</p>'
 
 # Main author of the website
 # See > authors.yml
