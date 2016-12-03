@@ -84,7 +84,9 @@ exclude:
     - vendor
     - .travis.yml
     - scripts
-
+    - .vscode
+    - .sass-cache
+    
 # The language setting is used in /includes/header.html for html-settings
 language: 'en'
 

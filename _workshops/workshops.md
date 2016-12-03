@@ -4,9 +4,11 @@ type: home
 layout: workshoppage2
 permalink: '/workshops/index'
 title: "Workshops"
-teaser: "Here you will find a list of available workshop tutorials that I have created."
 date: 05-10-2016
 ---
+
+Here you will find a list of available workshop tutorials that I have created. If you would like me to give a workshop at your event, please [drop me a line]({{ "/contact/" | prepend: site.baseurl }}).  I can give on the existing workshops below or create a new one on pretty much any topic you see me blog about but feel free to also request just about anything.  
+{: .teaser }
 
 {% assign sorted = (site.workshops | sort: 'title') %} 
 {% for lab in  sorted %}
