@@ -17,5 +17,5 @@
 
 - name: "Blog Archive"
   url: "/blog/archive/categoryview"
-  class: "icon-magnifying-glass"
+  class: "icon-archive"
   title: "See all blog post"
