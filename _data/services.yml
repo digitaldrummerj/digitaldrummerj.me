@@ -15,7 +15,7 @@
   class: "icon-rss"
   title: "Subscribe to Atom Feed"
 
-- name: "sitemap.xml"
-  url: "/sitemap.xml"
-  class: "icon-magnifying-glass"
-  title: "Sitemap for Google Webmaster Tools"
+- name: "Blog Archive"
+  url: "/blog/archive/categoryview"
+  class: "icon-archive"
+  title: "See all blog post"
