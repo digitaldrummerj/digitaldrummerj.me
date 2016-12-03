@@ -13,7 +13,7 @@
 
             <p class="shadow-black">
               {{ site.description }}
-              <a href="{{ site.baseurl }}/info/">{{ site.data.language.more }}</a>
+              <a href="{{ site.baseurl }}/about/">{{ site.data.language.more }}</a>
             </p>
           </div><!-- /.large-6.columns -->
 
@@ -60,7 +60,8 @@
       <div id="subfooter">
         <nav class="row">
           <section id="subfooter-left" class="small-12 medium-6 columns credits">
-            {{ site.credits }}
+             {% assign creditUrl = {{ site.baseurl }}"/about/" %}
+            {{ site.credits | replace '<<site>>', creditUrl}}
           </section>
 
           <section id="subfooter-right" class="small-12 medium-6 columns social-icons">
