@@ -16,7 +16,6 @@ googleplus:
   name: "Google+"
   color: '#d34836'
   title: "Post on Google+"
-  image: 'https://www.gstatic.com/images/icons/gplus-16.png'
   link: 'https://plus.google.com/share?url=<link>'
 facebook:
   # https://developers.facebook.com/docs/plugins/share-button

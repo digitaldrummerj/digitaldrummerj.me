@@ -130,22 +130,36 @@ button.grey:focus,
 /* Side-Nav
 ------------------------------------------------------------------- */
 
-.side-nav li.title {
-    text-transform: uppercase;
-}
-
 .side-nav li {
     border-top: 1px solid $grey-3;
+    .title {
+        text-transform: uppercase;
+    }
+    a:not(.button) {
+        border-bottom: 0;
+        padding: 0.4375rem 0rem;
+    }
+    a:not(.button):hover,
+    a:not(.button):focus {
+        background: $grey-1;
+    }
 }
 
-.side-nav li a:not(.button) {
-    border-bottom: 0;
-    padding: 0.4375rem 0rem;
-}
+.series-nav {
+    padding: 15px;
+    margin-bottom: 20px;
+    border: 1px solid $grey-2;
+    border-radius: 4px;
+    -webkit-box-shadow: 0 1px 1px rgba(0, 0, 0, 0.05);
+    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.05);
+    .side-nav li {
+        border-top: none !important;
+    }
 
-.side-nav li a:not(.button):hover,
-.side-nav li a:not(.button):focus {
-    background: $grey-1;
+    .side-nav li.current {
+         color: rgb(51, 77, 92);
+         padding: 0.4375rem 0rem;
+    }
 }
 
 .homepage p {
@@ -364,26 +378,41 @@ img.lazy {
 
 
 /* Sharer */
+
 @media print {
-    @page { margin: 0.32in; } // TODO https://github.com/zurb/foundation/issues/6834
+    @page {
+        margin: 0.32in;
+    } // TODO https://github.com/zurb/foundation/issues/6834
     #navigation,
-    #masthead, #masthead-with-pattern, #masthead-with-background-color, #masthead-with-text, #masthead-no-image-header,
+    #masthead,
+    #masthead-with-pattern,
+    #masthead-with-background-color,
+    #masthead-with-text,
+    #masthead-no-image-header,
     .breadcrumbs,
-    .sidebar, #post-nav, #sharer, #pagination, #up-to-top,
-    #footer-content, #footer, #subfooter {
+    .sidebar,
+    #post-nav,
+    #sharer,
+    #pagination,
+    #up-to-top,
+    #footer-content,
+    #footer,
+    #subfooter {
         display: none !important;
     }
 }
 
 #sharer {
+    margin-left: 0;
     margin-bottom: $paragraph-margin-bottom;
     .share-block {
-        padding: 0.25em !important;
+       padding: 0.25em !important; 
         .share-link {
             display: block;
             text-align: center;
             text-decoration: none;
-            border: none
+            border: none;
+            border-radius: 10px;
         }
         a:after {
             content: ''

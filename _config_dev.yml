@@ -20,6 +20,7 @@ sass:
 
 # Disable when not in production
 google_analytics_tracking_id: false
+disqus_shortname: false
 
 future: true
 drafts: true

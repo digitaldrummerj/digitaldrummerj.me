@@ -2,7 +2,7 @@
 {% assign categories = metadata.categories | sort %}
 {% assign author = site.data.authors[metadata.author] %}
 
-<div id="page-meta" class="t30">
+<div id="page-meta" class="t10">
 	<p>
 		{% if author %}
 		<!-- Look the author details up from the site config. -->
@@ -22,7 +22,7 @@
 {% if categories.size > 0 %}
 <span class="meta-tags">
 	<span class="icon-price-tag"></span>
-	<span class="pr20">Posted In:
+	<span>
 	{% assign tags_content = '' %}
 	{% for category in categories %}
 		{% capture tags_content_temp %}{{ tags_content }}{% if forloop.last == true and categories.size > 1 %} and {% endif %}
