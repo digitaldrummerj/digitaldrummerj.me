@@ -1,1 +1,1 @@
-bundle exec jekyll build --config _config.yml,_configdev.yml,_configazure.yml --drafts
+bundle exec jekyll build --config _config.yml,_config_dev.yml,_configazure.yml --drafts

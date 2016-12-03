@@ -3,9 +3,9 @@
 # everytime you work locally on the project, you start both config-files, overwriting
 # the first one with the development variables needed.
 #
-# Start development with › $ jekyll serve --config _config.yml,_config_dev.yml,_config_azure.yml
+# Start development with › $ bundle exec jekyll serve --config _config.yml,_config_dev.yml,_config_azure.yml
 
-url: http://digitaldrummerj-test.azurewebsites.net/
-urlimg: 'http://digitaldrummerj-test.azurewebsites.net/images'
+url: http://http://dj-blogtheme.azurewebsites.net/
+urlimg: 'http://dj-blogtheme.azurewebsites.net/images'
+baseurl: 	''
 testsite: true
-paginate: 5
