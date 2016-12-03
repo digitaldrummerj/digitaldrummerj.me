@@ -1,5 +1,5 @@
 - name: GitHub
-  url: http://github.com/digitaldrummerj
+  url: https://github.com/digitaldrummerj
   class: icon-github
   title: Code and such...
 
@@ -9,7 +9,7 @@
   title: "Tech Videos"
 
 - name: Twitter
-  url: http://twitter.com/digitaldrummerj
+  url: https://twitter.com/digitaldrummerj
   class: icon-twitter
   title: "Twitter"
 
