@@ -18,6 +18,10 @@
 - Sharer
 */
 
+.row {
+    max-width: 80rem !important;
+}
+
 
 /* Table of Contents (Index)
 ------------------------------------------------------------------- */
@@ -155,10 +159,9 @@ button.grey:focus,
     .side-nav li {
         border-top: none !important;
     }
-
     .side-nav li.current {
-         color: rgb(51, 77, 92);
-         padding: 0.4375rem 0rem;
+        color: rgb(51, 77, 92);
+        padding: 0.4375rem 0rem;
     }
 }
 
@@ -250,61 +253,67 @@ img.lazy {
     margin: 0;
     padding: 0;
     list-style: none;
-}
-
-.tagcloud03 ul li {
-    display: inline-block;
-    margin: 0 .3em .3em 0;
-    padding: 0;
-}
-
-.tagcloud03 ul li a {
-    position: relative;
-    display: inline-block;
-    max-width: 250px;
-    height: 28px;
-    line-height: 28px;
-    padding: 0 2.5em 0 1em;
-    background-color: #fff;
-    border: 1px solid #aaa;
-    border-radius: 3px;
-    white-space: nowrap;
-    text-overflow: ellipsis;
-    overflow: hidden;
-    color: #333;
-    font-size: 13px;
-    text-decoration: none;
-    -webkit-transition: .2s;
-    transition: .2s;
-}
-
-.tagcloud03 li span {
-    position: absolute;
-    top: 3px;
-    right: 5px;
-    z-index: 2;
-    width: 17px;
-    height: 17px;
-    line-height: 1;
-    background-color: #777; // #3498db;
-    border-radius: 100%;
-    color: #fff;
-    font-size: 10px;
-    padding: 3px;
-    text-align: center;
-    -webkit-transition: .2s;
-    transition: .2s;
-}
-
-.tagcloud03 ul li a:hover {
-    background-color: #3498db;
-    border: 1px solid #3498db;
-    color: #fff;
-}
-
-.tagcloud03 ul li a:hover span {
-    background-color: #fff;
-    color: #3498db;
+    li.cloud {
+        // height: inherit;
+        margin: 0;
+        a {
+            padding: 0 1em 0 1em;
+            border: none !important;
+            height: 40px;
+            padding-top: 5px;
+            padding-bottom: 5px;
+        }
+    }
+    li {
+        display: inline-block;
+        margin: 0 .3em .3em 0;
+        padding: 0;
+        a {
+            position: relative;
+            display: inline-block;
+            max-width: 250px;
+            height: 28px;
+            line-height: 28px;
+            padding: 0 2.5em 0 1em;
+            background-color: #fff;
+            border: 1px solid #aaa;
+            border-radius: 3px;
+            white-space: nowrap;
+            text-overflow: ellipsis;
+            overflow: hidden;
+            color: #333;
+            font-size: 13px;
+            text-decoration: none;
+            -webkit-transition: .2s;
+            transition: .2s;
+            &:hover {
+                background-color: #3498db;
+                border: 1px solid #3498db;
+                color: #fff;
+                span {
+                    background-color: #fff;
+                    color: #3498db;
+                }
+            }
+        }
+        span {
+            position: absolute;
+            top: 5px;
+            right: 5px;
+            z-index: 2;
+            width: 17px;
+            height: 17px;
+            line-height: 1;
+            background-color: #777; // #3498db;
+            border-radius: 100%;
+            color: #fff;
+            font-size: 10px;
+            padding: 3px;
+            text-align: center;
+            -webkit-transition: .2s;
+            transition: .2s;
+        }
+    }
 }
 
 
@@ -406,7 +415,7 @@ img.lazy {
     margin-left: 0;
     margin-bottom: $paragraph-margin-bottom;
     .share-block {
-       padding: 0.25em !important; 
+        padding: 0.25em !important;
         .share-link {
             display: block;
             text-align: center;
