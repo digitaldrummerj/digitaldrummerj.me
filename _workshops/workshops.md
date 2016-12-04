@@ -12,16 +12,17 @@ Here you will find a list of available workshop tutorials that I have created. I
 
 {% assign sorted = (site.workshops | sort: 'title') %} 
 {% for lab in  sorted %}
-{% if lab.ishome == true and lab.url != "/workshops/index" %}
+{% if lab.ishome == true and lab.ready == true and lab.url != "/workshops/index" %}
 <article>
 <header>
-<h2 class="post-title"><img src="{{ "/images/logo.png" | prepend: lab.type }}" alt="{{page.type}} Logo"><a href="{{ site.baseurl }}{{ lab.url }}.html">{{ lab.title }}<br /></a></h2>
+<!-- <img src="{{ "/images/logo.png" | prepend: lab.type }}" alt="{{page.type}} Logo"> -->
+<h2 class="post-title"><a href="{{ site.baseurl }}{{ lab.url }}.html">{{ lab.title }}<br /></a></h2>
 </header>
  <div>
 {{ lab.excerpt | markdownify }}
   </div>
 <div class="more-link">
-  <p><a href="{{ site.baseurl }}{{ lab.url }}.html">start workshop &raquo;</a></p>
+  <p><a href="{{ site.baseurl }}{{ lab.url }}.html">start {{ lab.title}} &raquo;</a></p>
 </div>
 
 </article>

@@ -1,0 +1,14 @@
+{% case include.link.special %}
+{% when 'workshops' %}
+    {% assign sorted = (site.workshops | sort: 'title') %} 
+    {% for lab in  sorted %}
+    {% if lab.ishome == true and lab.ready == true and lab.url != "/workshops/index" %}
+	    <li{% if lab.url == page_url %} class="active"{% endif %}>
+			<a href="{{ site.baseurl }}{{ lab.url }}">
+				{{ lab.title }}
+			</a>
+		</li>
+    {% endif %}
+    {% endfor %}
+{% endcase %}
+ 
