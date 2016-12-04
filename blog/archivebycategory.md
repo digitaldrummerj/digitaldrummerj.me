@@ -23,12 +23,12 @@ sidebar: right
 
 <h3 class="archivetitle"><a name="{{ tag | first | slugify }}"></a>{{ tag | first | replace:'-', ' ' }} <i class="badge">{{ tag | last | size }}</i> </h3>
 
-<ul>
+<ul class="side-nav">
 
 {% for post in sorted_posts %}
     {%if post.categories contains tag[0]%}
 <li>
-    <a title="Read {{ post.title | escape_once }}"   href="{{ site.baseurl }}{{ post.url }}"> <strong>{{ post.title }}</strong> <small>{% if post.date %} - {{ post.date | date: "%B %e, %Y" }}{% endif %}</small></a>
+    <a title="Read {{ post.title | escape_once }}"   href="{{ site.baseurl }}{{ post.url }}"> <strong>{{ post.title }}</strong>{% if post.date %}<small> - {{ post.date | date: "%B %e, %Y" }}</small>{% endif %}</a>
  </li>
     {%endif%}
 
