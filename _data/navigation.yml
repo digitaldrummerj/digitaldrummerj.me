@@ -14,9 +14,7 @@
   url: "/workshops/"
   side: left
   dropdown:
-  - title: "Ionic v1"
-    url: "/workshops/ionic/"
-
+      - special: workshops
 - title: "About"
   url: "/about/"
   side: right

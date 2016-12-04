@@ -18,10 +18,9 @@ env:
 # blacklist
 branches:
   except:
-#    - master
+    - master
 
 # whitelist
 branches:
   only:
-     - master
-#    - scheduled
+    - scheduled

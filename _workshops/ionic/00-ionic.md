@@ -1,6 +1,7 @@
 ---
-title: 'Ionic Workshop'
+title: 'Ionic v1 Introduction Workshop'
 published: true
+ready: true
 layout: workshoppost2
 permalink: '/workshops/ionic/index'
 type: ionic

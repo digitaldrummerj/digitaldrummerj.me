@@ -3,7 +3,7 @@ layout: workshop2
 ---
 
 <div class="post">
-    <span class="post-date" {% if page.ishome != null %} style="margin-left: 3.5em;" {% endif %}>Last Updated: {{ page.date | date_to_string }}</span>
+    <p><span class="post-date">Last Updated: {{ page.date | date_to_string }}</span></p>
 
     {% assign length-size = (page.length | size) %}
     {% if page.length != null and length-size > 0 %}
