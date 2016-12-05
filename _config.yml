@@ -12,13 +12,13 @@ repository: digitaldrummerj/blog-theme
 title: 'Justin James'
 
 # The slogan describes your website and is used on homepage in <title> and other important places
-slogan: 'Developer, Speaker, and Agile enthusiast from Arizona'
+slogan: 'Web Developer, Speaker, and Agile enthusiast from Arizona'
 
 # The description is used on homepage and in the footer to quickly describe your website. Use a maximum of 150 characters for SEO-purposes.
 description: 'Sharing my knowledge with others in a manner that is easy to understand and consume.'
 
 # The credits show up in the includes/_footer.html – It would be nice of you to leave a link to Phlow or Feeling Responsive as a thank you :)
-credits: '<p>Created with &hearts; by <a href="<<site>>">Justin James</a>.</p><p>This blog, its content, and opinions are my own.</p>'
+credits: '<p>Created with &hearts; by <a href="<<credit>>">Justin James</a>. All content is the property of Justin James and <<site>>. This blog, its content, and opinions are my own.</p>'
 
 # Main author of the website
 # See > authors.yml

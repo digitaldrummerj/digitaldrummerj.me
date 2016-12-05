@@ -19,7 +19,8 @@ widget3:
   title: "Workshops"
   text: "Sometimes an hour long presentation won't do.  You need more time and details.  See my available workshops and work through them."
   url: 'workshops/'
-  image: tutorial-header@2x-303x182.jpg
+  image: workshop-303x182.jpg 
+  #tutorial-header@2x-303x182.jpg
   #url:https://youtube.com/user/digitaldrummerj'
   #video:
   #  url: 'https://www.youtube.com/embed/3b5zCFSmVvU'
