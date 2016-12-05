@@ -61,7 +61,7 @@
         <nav class="row">
           <section id="subfooter-left" class="small-12 medium-6 columns credits">
              {% capture creditUrl %}{{ site.baseurl }}/about/{% endcapture %}
-             {% capture site.url %}{{ site.url}}{{ site.baseurl}}{% endcapture %}
+             {% capture siteUrl %}{{ site.url}}{{ site.baseurl}}/{% endcapture %}
              
             {{ site.credits | replace: '<<credit>>', creditUrl | replace: '<<site>>', siteUrl }}
           </section>
