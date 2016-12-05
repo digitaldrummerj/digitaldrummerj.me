@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Blog Archive by Date"
-teaser: "Check out all blog posts in my blog archive by date. Click on a headline to read the excerpt."
+teaser: "Check out all blog posts grouped by month."
 permalink: /blog/archive/monthview/
 sitemap: false
 sidebar: right

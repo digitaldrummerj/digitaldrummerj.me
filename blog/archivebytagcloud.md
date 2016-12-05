@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Blog Archive by Tag Cloud"
-teaser: "Check out all blog posts in my blog archive by tag cloud. Click on a headline to read the excerpt."
+teaser: "Check out all blog posts by tag cloud."
 #breadcrumb: true
 permalink: /blog/archive/tagcloudview/
 sitemap: false
