@@ -16,7 +16,7 @@ widget2:
   text: "As much as I love to write code, I enjoy teaching even more. Find out where I will be speaking next and see past presentations."
   image: mic-4-302x182.jpg
 widget3:
-  title: "Workshops"
+  title: "Tutorials"
   text: "Sometimes an hour long presentation won't do.  You need more time and details.  See my available workshops and work through them."
   url: 'workshops/'
   image: tutorial-header@2x-303x182.jpg
