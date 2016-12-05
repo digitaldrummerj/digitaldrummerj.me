@@ -5,7 +5,7 @@
 #
 # Start development with › $ bundle exec jekyll serve --config _config.yml,_config_dev.yml,_config_azure.yml
 
-url: http://dj-blogtheme.azurewebsites.net/
+url: http://dj-blogtheme.azurewebsites.net
 urlimg: 'http://dj-blogtheme.azurewebsites.net/images'
 baseurl: 	''
 testsite: true
