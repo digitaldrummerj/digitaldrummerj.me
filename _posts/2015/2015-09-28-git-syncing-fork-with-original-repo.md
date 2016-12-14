@@ -85,6 +85,6 @@ To summarize, with the 5 commands below you can sync your forked repository with
         $ git remote add upstream https://github.com/[Original Owner Username]/[Original Repository].git
         $ git fetch upstream
         $ git checkout master
-        $ git merge upstream/upstream
+        $ git merge upstream/master
         $ git push
           
