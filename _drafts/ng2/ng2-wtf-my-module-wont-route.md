@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Angular 2 - WTF My Module Wont Route
-date: 2020-03-01 06:00
+title: 'Angular 2 - WTF My Module Wont Route'
+date: 2020-02-19 06:00
 categories: ['angular']
 published: true
 excerpt: |
