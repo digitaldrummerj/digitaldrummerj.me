@@ -21,16 +21,17 @@
 <nav id="pagination" class="expanded button-group">
     {% if paginator.previous_page %}
       {% if paginator.previous_page == 1 %}
-      <a rel="prev" class="radius button small" href="{{ site.baseurl }}/blog/" title="{{ site.data.language.previous_posts }}">&laquo; {{ site.data.language.previous_posts }}</a>
+      <a rel="prev" class="radius button small  small small-12 medium-4 pull-left" href="{{ site.baseurl }}/blog/" title="{{ site.data.language.previous_posts }}">&laquo; {{ site.data.language.previous_posts }}</a>
       {% else %}
-      <a rel="prev" class="radius button small" href="{{ site.baseurl }}/blog/page{{ paginator.previous_page }}/" title="{{ site.data.language.previous_posts }}">&laquo; {{ site.data.language.previous }}</a>
+      <a rel="prev" class="radius button small  small small-12 medium-4 pull-left" href="{{ site.baseurl }}/blog/page{{ paginator.previous_page }}/" title="{{ site.data.language.previous_posts }}">&laquo; {{ site.data.language.previous }}</a>
       {% endif %}
     {% endif %}
 
-    <a class="radius button small" href="{{ site.baseurl }}/blog/archive/" title="{{ site.data.language.blog_archive }}">{{ site.data.language.blog_archive }}</a>
-
     {% if paginator.next_page %}
-    <a rel="next" class="radius button small" href="{{ site.baseurl }}/blog/page{{ paginator.next_page }}/" title="{{ site.data.language.next_posts }}">{{ site.data.language.next }} &raquo;</a>
+    <a rel="next" class="radius button small  small-12 medium-4 pull-right" href="{{ site.baseurl }}/blog/page{{ paginator.next_page }}/" title="{{ site.data.language.next_posts }}">{{ site.data.language.next }} &raquo;</a>
     {% endif %}
+
+    <a class="radius button small small small-12 medium-12 pull-left" href="{{ site.baseurl }}/blog/archive/" title="{{ site.data.language.blog_archive }}">{{ site.data.language.blog_archive }}</a>
+
 </nav>
 

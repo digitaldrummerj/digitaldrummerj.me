@@ -80,12 +80,13 @@ exclude:
     - README.md
     - INSTALL.md
     - run.bat
+    - run-incremental.bat
     - drafts.bat
+    - drafts-incremental.bat
     - vendor
     - .travis.yml
     - scripts
     - .vscode
-    - .sass-cache
     
 # The language setting is used in /includes/header.html for html-settings
 language: 'en'
