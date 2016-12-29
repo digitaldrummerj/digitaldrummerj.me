@@ -9,7 +9,7 @@ excerpt: |
 
      I verified that I had spelled everything correctly in the routing configuration and in the browser url.  I verified that I had imported the new module in the app module.  I swore everything was setup correctly.  WTF. What was going on?  What did I miss.  
 
-     Keep reading to find out how simple the solution is.  
+     Find out how simple the solution is.  
 ---
 
 {% assign imagedir = "/images/ng2-module-wont-route" | prepend: site.baseurl | prepend: site.url %}
