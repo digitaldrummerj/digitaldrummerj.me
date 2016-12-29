@@ -3,7 +3,7 @@ layout: post
 title: 'Better Way To Get Talk Feedback'
 date: 2016-02-04 06:00
 categories: ['speaking']
-published: true
+published: false
 excerpt: | 
     As a public speaker one of the most important things for me is getting feedback from attendees.  The feedback helps me get better as a presenter as well as figuring out what is working in a talk and what is not. 
 

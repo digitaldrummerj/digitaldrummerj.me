@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Creating Ionic Projects with Visual Studio
-published: true
+published: false
 categories: [ionic]
 date: 2016-07-21 10:00
 series: taco-intro

@@ -4,7 +4,7 @@ series: blogging-with-jekyll
 title: 'Jekyll Part 15: Automatically Tweet New Post'
 date: 2016-02-08 06:00
 categories: ['blogging', 'jekyll']
-published: true
+published: false
 excerpt: |
      Welcome to the continuing series on using Jekyll.  In this tutorial you will learn how to automatically send out a tweet when a new blog post is published.
 

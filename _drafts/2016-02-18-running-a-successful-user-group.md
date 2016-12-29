@@ -3,7 +3,7 @@ layout: post
 title: Running a Successful  User Group 
 date: 2016-02-18 05:00
 categories: ['meetup','community']
-published: true
+published: false
 excerpt: |
 
 ---

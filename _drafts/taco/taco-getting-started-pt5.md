@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Adding Access to Device Capability from with Visual Studio 
-published: true
+published: false
 categories: [ionic]
 date: 2016-07-21 12:00
 series: taco-intro

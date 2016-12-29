@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Angular 2 - Your First Project
-date: 2020-02-19 06:00
+date: 2017-01-03 05:00
 categories: ['angular']
 published: true
 series: angular2-getting-started
@@ -11,15 +11,14 @@ excerpt: |
 
 {% assign imagedir = "/images/ng2-getting-started/" | prepend: site.baseurl | prepend: site.url %}
 
-Welcome to the series on Getting Started with Angular 2.  Angular 2 was released back in September and and so far I have been enjoying working with it.  I have been using the TypeScript version of Angular 2.  It is has been pretty easy for me so far to pick it up but there have been a few things that have made me scratch me head.  In this series I will walk you through creating a simple Angular 2 project that has a header/footer, routing to components/modules, show how to add new components/services, create multiple modules, lock down routes, changing UI configurations based on the environment parameter and adding in the Bootstrap library. 
+Welcome to the series on Getting Started with Angular 2.  Angular 2 was released in September 2016 and and so far I have been enjoying working with it.  I have been using the TypeScript version of Angular 2.  It is has been pretty easy for me so far to pick it up but there have been a few things that have made me scratch me head.  In this series I am going to walk you through creating a simple Angular 2 project that has a header/footer, routing to components/modules, show how to add new components/services, create multiple modules, lock down routes, changing UI configurations based on the environment parameter and adding in the Bootstrap library.  When you are done with the series, you will have a good structure for any project that you want to start.
 
-This is the first post in the series and we will get everything setup on your machine to do Angular 2 developer and then you will create your Angular 2 project that the rest of the series will build on. 
- 
-Angular 2 comes with a really handy command line interface called the Angular CLI that can generate projects and add components/services/modules/pipes/etc.  The Angular CLI is a node based command line utility.  This mean that we need to first install NodeJs and then install the npm package angular-cli.  
+In this post we will get everything setup on your machine to do Angular 2 developer and then you will create your Angular 2 project that the rest of the series will build on. We will be using the new Angular CLI to generate the project and several of the features such as components, services, modules, and pipes.  
+
 
 ## Installing The Angular  CLI
 
-The first thing we need to make sure we have installed in NodeJs.  I would suggest installing the latest LTS version from [https://nodejs.org](https://nodejs.org) which at the time of this writing is 6.9.1.  To verify the version of node that you have installed, launch a command prompt and run `node -v`.  
+ The Angular CLI is a node based utility which means that we need to first install Node before we can install the npm package angular-cli.  The minimum version of Node that is required for the the Angular CLI requires is Node 4.x but I would suggest installing the latest LTS version from [https://nodejs.org](https://nodejs.org) which at the time of this writing is 6.9.1.  To verify the version of node that you have installed, launch a command prompt and run `node -v`.  If you need to install Node, download the LTS installer from [https://nodejs.org](https://nodejs.org) and accept any prompts that the installer has.
 
 After you have Node installed, we need to globally install the Angular CLI by running (it will take several minutes):
 
@@ -27,9 +26,27 @@ After you have Node installed, we need to globally install the Angular CLI by ru
 		
 > On Linux and Mac, you may need to run the command with sudo. 
 
+You can verify that the Angular CLI installed by running
+
+	ng --version
+
+> If it says that ng is unknown, close the command prompt, re-open it and run ng --version again.  If you are still having issues, leave a comment below and I will try to help you out.
+
 ## Generating Your Angular 2 Project
 
 After the Angular CLI is installed you can create a new project with the ng new command.
+
+The ng new command does several things for you:
+ 
+* Creates a directory named after the project name.  
+* Installs the npm dependencies
+* Configures Webpack 
+* Adds a development and production environment configuration file
+* Adds a placeholder file for the stylesheet.  By default it is css based but with the `--style=scss` parameter that we are using below, it will make it scss based instead.
+* Adds a routing file for the app module and import it into the App Module with the `--routing` parameter
+* Adds unit testing spec files 
+
+### Generate Project Steps
 
 1. Open a command prompt
 1. Navigate to where you want to store your project (On Windows, I store mine at c:\projects and on Mac I stored it at ~/projects)
@@ -39,39 +56,40 @@ After the Angular CLI is installed you can create a new project with the ng new 
  
 	![ng new output]({{ "ng-new-output.png" | prepend: imagedir }})
 
- The ng new command does several things for you:
- 
-* Create a directory named after the project name.  
-* Set the default styles to be sass based.  
-	* Without the --styles parameter it will use css as the default style language.  Personally, I prefer scss and the power that it gives me.
-* Install the npm packages
-* Init the directory as a Git folder
-* Configure a default routing file for the app module
-* Setup ng build and serve which use Webpack
-
-
 
 You can view the full documentation for the Angular CLI at [https://github.com/angular/angular-cli](https://github.com/angular/angular-cli)  
 
 ## Running Your Angular 2 Project
 
-Now that we have our project generated, we can view it in a web browser by running `ng serve` to build it and start up a web server with live reload.  Once `ng serve` has completed, open a web browser and navigate to [http://localhost:4200/](http://localhost:4200)
+Now that we have our project generated, we can view it in a web browser by running `ng serve` to build it and start up a web server with live reload.  Once `ng serve` has completed, open a web browser and navigate to [http://localhost:4200/](http://localhost:4200).  You should be looking a page that says: 
+
+![App Works]({{ "app-works.png" | prepend: imagedir }})
+{:.solidborder}
 
 ## Project layout
 
-Your project should look like the image below.  I have highlighted some key pieces of the project layout.  
+If you look at the project directory and file layout there are some key pieces of the project that I have highlighted below.   
 
-* src
-	* app -> Your Application Code
-	* asset -> Static Assets (images, non-npm libaries, custom javascript that you created)
-	* environments -> Environment specific files.  Will will look at these in a later post.
-	* styles.scss -> Application wide css.  Any CSS that is not component specific.
-* angular-cli.json -> Configuration for the Angular CLI and Webpack build
-* package.json -> Standard npm configuration file for dependencies, scripts, project info
+<div class="row">
+	<div class="medium-12 large-6 columns">
+		<p class="solidborder"><img src="{{ "ng-project-layout.png" | prepend: imagedir }}" alt="Project Layout"></p>
+	</div>
+	<div class="medium-12 large-6 columns">
+		<ul>
+			<li>src
+				<ul>
+					<li>app -> Your Application Code</li>
+					<li>asset -> Static Assets (images, non-npm libaries, custom javascript that you created)</li>
+					<li>environments -> Environment specific files.  Will will look at these in a later post.</li>
+					<li>styles.scss -> Application wide css.  Any CSS that is not component specific.</li>
+				</ul>
+			</li>
+			<li>angular-cli.json -> Configuration for the Angular CLI and Webpack build</li>
+			<li>package.json -> Standard npm configuration file for dependencies, scripts, project info</li>
+		</ul>	
 
-![project layout]({{ "ng-project-layout.png" | prepend: imagedir }})
-{:.solidborder}
-
+	</div>
+</div>
 
 ## Wrapping up 
 

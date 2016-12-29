@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Installing Visual Studio Tools for Apache Cordova 
-published: true
+published: false
 categories: [ionic]
 date: 2016-07-21 06:00
 series: taco-intro
