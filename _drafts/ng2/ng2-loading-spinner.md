@@ -2,7 +2,7 @@
 layout: post
 title: Angular 2 - Loading Spinner
 date: 2020-02-19 06:00
-categories: ['angular2']
+categories: ['angular']
 published: true
 excerpt: |
 
