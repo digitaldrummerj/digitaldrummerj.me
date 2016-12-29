@@ -16,6 +16,7 @@
 - TagCloud
 - Contact Form
 - Sharer
+- images
 */
 
 .row {
@@ -459,5 +460,20 @@ img.lazy {
     }
     .share-link.share-facebook:hover {
         color: #bbc8e4
+    }
+}
+
+
+/* Images */
+
+p.solidborder {
+    img {
+        border: 1px solid $grey-16;
+    }
+}
+
+p.dashedborder {
+    img {
+        border: 1px dashed $grey-16;
     }
 }
