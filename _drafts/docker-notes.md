@@ -3,7 +3,7 @@ layout: post
 title: Docker on Windows Notes
 date: 2016-04-13 06:00
 categories: ['docker']
-published: true
+published: false
 excerpt: |
      After seeing a Docker presentation recently I decided to finally figure out how to get Docker working correctly on Windows.  These are my notes as I was learning to use the Docker Toolkit and Virtualbox.
 ---

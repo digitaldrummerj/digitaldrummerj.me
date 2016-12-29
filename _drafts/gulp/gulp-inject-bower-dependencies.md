@@ -3,7 +3,7 @@ layout: post
 title: Gulp - Injecting Bower Css and Javascript 
 date: 2016-02-19 06:00
 categories: ['gulp', 'bower']
-published: true
+published: false
 excerpt: |
 
 ---

@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Installing Visual Studio Android Emulator
-published: true
+published: false
 categories: [ionic]
 date: 2016-07-21 08:00
 series: taco-intro

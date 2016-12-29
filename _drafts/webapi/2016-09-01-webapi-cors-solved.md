@@ -3,7 +3,7 @@ layout: post
 title: 'WebApi Cors Solved'
 date: 2016-09-01 06:00
 categories: ['webapi','cors']
-published: true
+published: false
 excerpt: |
 
 ---

@@ -1,9 +1,9 @@
 ---
 layout: post
-title: Adding bower and npm to an existnig project
+title: Adding bower and npm to an existing project
 date: 2016-02-19 
 categories: ['bower', 'npm', 'angular']
-published: true
+published: false
 excerpt: |
 
 ---

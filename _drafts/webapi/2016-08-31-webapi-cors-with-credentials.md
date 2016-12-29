@@ -4,7 +4,7 @@ title: 'ASP.NET Web Api with Credentials CORS Issues Solved'
 date: 2016-08-31 06:00
 categories: ['webapi','cors']
 series: web-api-getting-started
-published: true
+published: false
 excerpt: |
     
 ---
