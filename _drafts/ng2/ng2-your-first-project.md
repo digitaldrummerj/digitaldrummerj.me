@@ -1,11 +1,14 @@
 ---
 layout: post
-title: Angular 2 - Your First Project
+title: Angular - Your First Project
 date: 2017-01-03 05:00
 categories: ['angular']
 published: true
 series: angular2-getting-started
 excerpt: |
+     Welcome to the series on Getting Started with Angular 2.  Angular 2 was released in September 2016 and and so far I have been enjoying working with it.  I have been using the TypeScript version of Angular 2.  It is has been pretty easy for me so far to pick it up but there have been a few things that have made me scratch me head.  In this series I am going to walk you through creating a simple Angular 2 project that has a header/footer, routing to components/modules, show how to add new components/services, create multiple modules, lock down routes, changing UI configurations based on the environment parameter and adding in the Bootstrap library.  When you are done with the series, you will have a good structure for any project that you want to start.
+
+     In this post we will get everything setup on your machine to do Angular 2 developer and then you will create your Angular 2 project that the rest of the series will build on. We will be using the new Angular CLI to generate the project and several of the features such as components, services, modules, and pipes.  
 
 ---
 
@@ -22,7 +25,7 @@ In this post we will get everything setup on your machine to do Angular 2 develo
 
 After you have Node installed, we need to globally install the Angular CLI by running (it will take several minutes):
 
-		npm install -g angular-cli 
+	npm install -g angular-cli 
 		
 > On Linux and Mac, you may need to run the command with sudo. 
 
@@ -42,14 +45,16 @@ The ng new command does several things for you:
 * Installs the npm dependencies
 * Configures Webpack 
 * Adds a development and production environment configuration file
-* Adds a placeholder file for the stylesheet.  By default it is css based but with the `--style=scss` parameter that we are using below, it will make it scss based instead.
-* Adds a routing file for the app module and import it into the App Module with the `--routing` parameter
+* Adds a placeholder file for the stylesheet.  By default it is css based but with the --style=scss parameter that we are using below, it will make it scss based instead.
+* Adds a routing file for the app module and import it into the App Module with the --routing parameter
 * Adds unit testing spec files 
 
 ### Generate Project Steps
 
 1. Open a command prompt
-1. Navigate to where you want to store your project (On Windows, I store mine at c:\projects and on Mac I stored it at ~/projects)
+1. Navigate to where you want to store your project 
+	* On Windows, I store mine at c:\projects and on Mac I stored it at ~/projects
+
 1. Generate the new project by running (it will take a few minutes to create)
 
 		ng new ProjectName --style=scss --routing 
@@ -93,5 +98,5 @@ If you look at the project directory and file layout there are some key pieces o
 
 ## Wrapping up 
 
-At this point you have your Angular 2 project created and are ready to start coding.  In the next post, we will bring in the Bootstrap library and create our header/footer.
+At this point you have your Angular 2 project created and are ready to start coding.  In the next post, we will create our header and footer.
 
