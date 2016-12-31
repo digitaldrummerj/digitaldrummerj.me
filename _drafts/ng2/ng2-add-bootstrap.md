@@ -1,9 +1,11 @@
 ---
 layout: post
-title: Angular 2 - Add Bootstrap
-date: 2020-02-19 06:00
+title: Angular - Adding Bootstrap Library
+date: 2017-01-06 06:00
 categories: ['angular']
-published: false
+published: true
+series: angular2-getting-started
+
 excerpt: |
 
 ---
@@ -11,3 +13,33 @@ excerpt: |
 {% assign imagedir = "/images/angular2-add-bootstrap/" | prepend: site.baseurl | prepend: site.url %}
 
 
+Welcome to the continuing series on Getting Started with Angular 2.  In the previous post, we created our project using the Angular CLI.  In this post, we will be continuing to use the project we generated and add the [Bootstrap](http://getbootstrap.com) library.  Just like with Angular 1, we are not going to directly add the [Bootstrap](http://getbootstrap.com) library.   Instead we are going to use the [ng2-bootstrap](https://valor-software.com/ng2-bootstrap/) library which wraps the [Bootstrap](http://getbootstrap.com) library with Angular and TypeScript.
+
+The [ng2-bootstrap](https://valor-software.com/ng2-bootstrap/) library works with both [Bootstrap](http://getbootstrap.com) v3 and v3.
+
+1. Open a command prompt and navigate to your project directory
+1. Run the npm install command below to install ng2-bootstrap and bootstrap-sass
+
+    npm install ng2-bootstrap bootstrap-sass --save
+
+
+**File: angular-cli.json**
+
+```json
+  "styles": [
+        "styles.scss",
+        "../node_modules/bootstrap-sass/assets/stylesheets/_bootstrap.scss"
+      ],
+```
+
+**File: src\app\app.component.html**
+
+```html
+<div class="container">
+  <div class="page-header">
+    <h1>
+      {{title}}
+    </h1>
+  </div>
+</div>
+```
