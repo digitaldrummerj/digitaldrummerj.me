@@ -16,7 +16,7 @@ excerpt: |
 
 Welcome the continuing series on using Jekyll. In this tutorial we are going to setup a custom domain for your blog.
 
-{% include series.html %}
+
 
 ## Overview
 
@@ -107,4 +107,3 @@ Now users will be able to get to your blog with the domain name that you just co
 
 In our next lesson, I will show you how to install jekyll so that you can edit your blog post and files locally instead of using the Github web site.  This will allow you to make changes without having to publish them to the world just to test them.    
  
-{% include series.html %}

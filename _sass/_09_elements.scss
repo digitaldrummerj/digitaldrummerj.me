@@ -134,19 +134,22 @@ button.grey:focus,
 
 /* Side-Nav
 ------------------------------------------------------------------- */
+.sidenav ul {
+    margin-bottom: 20px;
 
-.side-nav li {
-    border-top: 1px solid $grey-3;
-    .title {
-        text-transform: uppercase;
-    }
-    a:not(.button) {
-        border-bottom: 0;
-        padding: 0.4375rem 0rem;
-    }
-    a:not(.button):hover,
-    a:not(.button):focus {
-        background: $grey-1;
+    li {
+        border-top: 1px solid $grey-3;
+        .title {
+            text-transform: uppercase;
+        }
+        a:not(.button) {
+            border-bottom: 0;
+            padding: 0.4375rem 0rem;
+        }
+        a:not(.button):hover,
+        a:not(.button):focus {
+            background: $grey-1;
+        }
     }
 }
 

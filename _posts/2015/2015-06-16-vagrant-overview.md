@@ -17,7 +17,7 @@ excerpt: |
 ---
 Welcome to an overview of Vagrant and creating of your first Vagrant machine.  
 
-{% include series.html %}
+
 
 
 ## What is Vagrant?
@@ -199,4 +199,3 @@ You have just create and started up your first Vagrant managed Virtual machine. 
 
 The next lesson, will cover the start of provisioning.  We will install Chocolatey as part of the vagrant up command.
 
-{% include series.html %}

@@ -53,4 +53,3 @@ Once you get the initial set of issues fixed, you will mainly have to worry abou
  
 Overall, this will help improve the quality of your blog by  ensuring that you fix broken links and images before your users spot them.
 
-{% include series.html %}

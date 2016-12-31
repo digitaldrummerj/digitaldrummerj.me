@@ -16,7 +16,7 @@ excerpt: |
 
 Welcome the continuing series on using Jekyll. In this tutorial we are going to add the ability to search your blog using google.
 
-{% include series.html %}
+
 
 ## Overview
 
@@ -241,4 +241,3 @@ You now have the ability for Google to index and search your blog.  This will ma
 
 In our next lesson, I will show you how to host your http://[username].github.io blog with a custom domain name like I am doing with http://digitaldrummerj.me
 
-{% include series.html %}

@@ -16,7 +16,7 @@ excerpt: |
 
 Welcome the continuing series on using Jekyll. In this tutorial we will go through how to add an additional page such as the [speaking]( {{ "speaking" | prepend: site.baseurl | prepend: site.url }}) page on this blog.
   
-{% include series.html %}
+
 
 ## Overview 
 
@@ -133,4 +133,3 @@ With just a few steps, you were able to add a new page into your blog's web site
 
 In the next lesson we will build on this lesson by adding in a page to show the blog post by category.
 
-{% include series.html %}

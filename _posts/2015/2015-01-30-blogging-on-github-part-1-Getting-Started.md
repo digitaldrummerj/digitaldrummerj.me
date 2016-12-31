@@ -24,9 +24,6 @@ excerpt: |
 
 Welcome to the first tutorial of a multi part series on blogging using Jekyll on Github.  Github has an awesome free option for hosting a blog for you and you can get a blog up and running in 10 minutes or less.  This series will cover everything that you to know to host, manage and customized a Jekyll blog that is hosted on Github.
 
-
-{% include series.html %}
-
 ## Section 1: Overview
 
 Github uses the Jekyll engine which turns markdown into static Html pages.  The advantage of this is that performance is better since you are just serving up html and you don't have to worry about hosting a database somewhere .
@@ -78,5 +75,3 @@ Now you are ready to view your new blog.  Open a browser and navigate to http://
 In just a few simple steps, you were able to get your blog up and running.  Through out the series of lessons, you will learn how to manage your blog, create new pages, customize the theme, and host it with a custom domain name.
 
 In the next lesson, where we create your first blog post.
-
-{% include series.html %}

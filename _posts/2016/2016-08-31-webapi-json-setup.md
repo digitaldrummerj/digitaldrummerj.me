@@ -25,7 +25,7 @@ For the naming convention, .NET uses pascal case which means that properties sta
 
 Before we get started, if you have not read the first post, I would suggest that you do so before continuing with this artcle so that you are at the same starting point as I am.  It will take you about 10 minutes to complete the 1st article.
 
-{% include series.html %}
+
 
 The first thing that we are going to do is create a C# class to hold the information about the logged in user.  Then we will  update the FirstController that we created in the previous post to return the C# class that we created.
  
@@ -132,4 +132,4 @@ If you press F5 to compile our code and start a debug session and go to the api/
 
 In this guide we learned how to convert the JSON output response to be camel cased instead of the .NET pascal case without having to modify all of our .NET classes.  In the next post, we will look at creating a common response format to all of the endpoint return values.   
 
-{% include series.html %}
+

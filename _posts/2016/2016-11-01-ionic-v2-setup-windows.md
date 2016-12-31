@@ -16,8 +16,6 @@ excerpt: |
 
 {% assign imagedir = "/images/ionic2-windows/" | prepend: site.baseurl | prepend: site.url %}
 
-{% include series.html %}
-
 In order to work with the Ionic framework version 2 there is a bit of software installs and configuration that needs to happen in order to deploy to devices.  However, many of the guides out there leave out a number of steps that tripped me up when I first started using Ionic.  
 
 This guide will go through all of the steps needed for deploying to an Android device using a Windows machine.  Note that deploying to an iOS device requires a Mac.  
@@ -123,10 +121,4 @@ Once you install one of the emulators, you will want to download at least 1 devi
 ## Congratulations
 
 Congratulations, you made it through the guide and have everything setup to create your ionic applications for Android devices.  Unfortunately, if you want to develop for iOS devices you have to do it on a Mac since XCode only runs on a Mac.      
-    
-
-## Series Post
-{: .t60 }
-{% include list-posts tag='ionic2-setup' %}
-
     

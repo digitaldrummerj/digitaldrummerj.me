@@ -18,7 +18,7 @@ excerpt: |
 ---
 Welcome to the Vagrant lesson on what Vagrant provisioning is.  
 
-{% include series.html %}
+
 
 ## What is Vagrant Provisioning?
 
@@ -57,4 +57,3 @@ The file provider, copies a file from your machine to the virtual machine but do
 
 Now that we understand what provisioning is, in the next couple of lessons we are going to expand on the provisioning to have it install Chocolatey, Boxstarter, and then all of our software using Chocolatey/BoxStarter.
 
-{% include series.html %}

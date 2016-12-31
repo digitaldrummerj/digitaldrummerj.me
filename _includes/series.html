@@ -17,7 +17,7 @@
 		{% if post.url == page.url %}
 			{% assign idx = count %}
 		{% endif %}			
-		{% capture list_tmp %}{{ list }}{% if page.url == post.url %}<li class="current"><span>Part {{ count }} - This Article</span>{% else %}<li><a data-proofer-ignore href="{{ site.baseurl }}{{ post.url }}">Part {{ count }} - {{ post.title }}</a>{% endif %}</li>
+		{% capture list_tmp %}{{ list }}{% if page.url == post.url %}<li class="current"><span>Part {{ count }} - This Article</span>{% else %}<li><a data-proofer-ignore href="{{site.url}}/{{ site.baseurl }}{{ post.url }}">Part {{ count }} - {{ post.title }}</a>{% endif %}</li>
 		{% endcapture %}
 		{% assign list = list_tmp %}		
 	{% endif %}

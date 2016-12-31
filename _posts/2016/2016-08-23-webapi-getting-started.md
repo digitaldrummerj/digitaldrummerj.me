@@ -30,7 +30,7 @@ In this series we will learn how to:
 - Setup A Standard Response
 - Solving CORS Issues When Using Credentials
 
-{% include series.html %}
+
 
 
 ## Create a new Web Api Project 
@@ -155,4 +155,3 @@ The response you get back will be an xml document that contains a string with yo
 
 In this guide we learned how to create a basic C# Web Api project that uses Windows Integrated Authentication.  In the next guide, we will learn how to convert the JSON responses to be camel cased instead of following the .NET pascal case convention without having to update all of our .NET class. 
 
-{% include series.html %}

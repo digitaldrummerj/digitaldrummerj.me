@@ -17,7 +17,7 @@ excerpt: |
 Welcome the continuing series on using Jekyll. In this tutorial we are going to set it up so that we can do draft posts that we can check into our repo but not have them show up on the production site.
 
 
-{% include series.html %}
+
 
 ## Overview
 
@@ -63,5 +63,5 @@ Now you can do all of your editing locally and check the drafts into your git re
 In our next lesson, I will show you how to create the series listing like you see below and how to be able to easily create a blog article series
 
 
-{% include series.html %}
+
  
