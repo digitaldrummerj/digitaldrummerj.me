@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Angular - Your First Project
+title: Angular 2 - Your First Project
 date: 2017-01-03 05:00
 categories: ['angular']
 published: true
