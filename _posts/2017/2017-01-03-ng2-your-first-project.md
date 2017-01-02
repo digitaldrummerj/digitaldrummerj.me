@@ -98,4 +98,6 @@ If you look at the project directory and file layout there are some key pieces o
 
 ## Wrapping up 
 
-At this point you have your Angular 2 project created and are ready to start coding.  In the next post, we will add bootstrap for our styling.
+At this point you have your Angular 2 project created and are ready to start coding.  The code for this post is available on [Github](https://github.com/digitaldrummerj/angular2-getting-started/tree/1-CreateProject)
+
+In the next post, we will add [Bootstrap](https://getbootstrap.com) for our styling.
