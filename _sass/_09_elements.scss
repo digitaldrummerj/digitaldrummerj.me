@@ -134,22 +134,19 @@ button.grey:focus,
 
 /* Side-Nav
 ------------------------------------------------------------------- */
-.sidenav ul {
-    margin-bottom: 20px;
 
-    li {
-        border-top: 1px solid $grey-3;
-        .title {
-            text-transform: uppercase;
-        }
-        a:not(.button) {
-            border-bottom: 0;
-            padding: 0.4375rem 0rem;
-        }
-        a:not(.button):hover,
-        a:not(.button):focus {
-            background: $grey-1;
-        }
+.side-nav li {
+    border-top: 1px solid $grey-3;
+    .title {
+        text-transform: uppercase;
+    }
+    a:not(.button) {
+        border-bottom: 0;
+        padding: 0.4375rem 0rem;
+    }
+    a:not(.button):hover,
+    a:not(.button):focus {
+        background: $grey-1;
     }
 }
 
@@ -160,14 +157,15 @@ button.grey:focus,
     border-radius: 4px;
     -webkit-box-shadow: 0 1px 1px rgba(0, 0, 0, 0.05);
     box-shadow: 0 1px 1px rgba(0, 0, 0, 0.05);
-    .side-nav li {
-        border-top: none !important;
-    }
+    // .side-nav li {
+    //     border-top: none !important;
+    // }
     .side-nav li.current {
         color: rgb(51, 77, 92);
-        padding: 0.4375rem 0.875rem;
+        padding: 0.4375rem 0rem;
     }
 }
+
 
 .homepage p {
     margin: 0;
@@ -422,6 +420,7 @@ img.lazy {
 
 #sharer {
     margin-left: 0;
+    margin-top: 20px;
     margin-bottom: $paragraph-margin-bottom;
     .share-block {
         padding: 0.25em !important;
