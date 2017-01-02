@@ -1,27 +1,28 @@
 ---
 layout: post
 title: Angular 2 - Adding Bootstrap Library
-date: 2017-01-06 06:00
+date: 2017-01-05 06:00
 categories: ['angular']
 published: true
 series: angular2-getting-started
 excerpt: |
+    Welcome to the continuing series on Getting Started with Angular 2.  In the [previous post](/ng2-your-first-project), we created our project using the Angular CLI.  In this post, we will be adding the [Bootstrap](https://getbootstrap.com/) library to the project to make it easier to style our application.  
 
 ---
 
 {% assign imagedir = "/images/angular2-add-bootstrap/" | prepend: site.baseurl | prepend: site.url %}
 
-[bootstrap]: https://getbootstrap.com/ 
-[bootstrap v4]: http://v4-alpha.getbootstrap.com/
-[ng2-bootstrap]: https://valor-software.com/ng2-bootstrap/
+[previous post]: {{ "/ng2-your-first-project" | prepend: site.baseurl | prepend: site.url }}
 
-Welcome to the continuing series on Getting Started with Angular 2.  In the [previous post]({{ "ng2-your-first-project" | prepend: site.baseurl | prepend: site.url }}), we created our project using the Angular CLI.  In this post, we will be adding the [Bootstrap][] library to the project to make it easier to style our application.  
 
-To make [Bootstrap][] play nice with Angular we are going to use the [ng2-bootstrap][] library which rewrites the [Bootstrap][] components to be powered by Angular instead of JQuery.  The [ng2-bootstrap][] library also works with both Bootstrap [v3][bootstrap] and [v4][bootstrap v4] which means when [v4][bootstrap v4] is finally released to production you will only have to change the Bootstrap css reference and fix any breaking changes listed in the [v4 migration guide](http://v4-alpha.getbootstrap.com/migration/).  [Bootstrap v4][] is not yet recommend for production.  The rest of this article is going to focus on using [Bootstrap v3][bootstrap].
+
+Welcome to the continuing series on Getting Started with Angular 2.  In the [previous post][], we created our project using the Angular CLI.  In this post, we will be adding the [Bootstrap](https://getbootstrap.com/) library to the project to make it easier to style our application.  
+
+To make [Bootstrap](https://getbootstrap.com/) play nice with Angular we are going to use the [ng2-bootstrap](https://valor-software.com/ng2-bootstrap/) library which rewrites the [Bootstrap](https://getbootstrap.com/) components to be powered by Angular instead of JQuery.  The [ng2-bootstrap](https://valor-software.com/ng2-bootstrap/) library also works with both Bootstrap [v3](https://getbootstrap.com) and [v4](http://v4-alpha.getbootstrap.com/) which means when [v4](http://v4-alpha.getbootstrap.com/) is finally released to production you will only have to change the Bootstrap css reference and fix any breaking changes listed in the [v4 migration guide](http://v4-alpha.getbootstrap.com/migration/).  [Bootstrap v4](http://v4-alpha.getbootstrap.com/) is not yet recommend for production.  The rest of this article is going to focus on using [Bootstrap v3](https://getbootstrap.com/).
 
 ### Install Libraries
 
-> If you need the code from the previous post, you can get it on [Github](https://github.com/digitaldrummerj/angular2-getting-started/tree/2-CreateProject)
+> If you need the code from the previous post, you can get it on [Github](https://github.com/digitaldrummerj/angular2-getting-started/tree/1-CreateProject)
 
 The first thing that we need to do is install the ng2-bootstrap and bootstrap-sass libraries as dependencies for the project.  Since we generated our project with the --style=scss flag, we need to use the bootstrap-sass module to get the sass versions of bootstrap instead of the css versions that are contained in the bootstrap module.
 
@@ -32,7 +33,7 @@ The first thing that we need to do is install the ng2-bootstrap and bootstrap-sa
 
 ### Updating the Angular CLI Configurations
 
-Now we need to tell the Angular CLI about the [Bootstrap][] scss file.
+Now we need to tell the Angular CLI about the [Bootstrap](https://getbootstrap.com/) scss file.
 
 1. In your code editor, open up the angular-cli.json file.
 1. Search for the styles node and add the bootstrap file
@@ -71,6 +72,6 @@ Now that we have told the Angular CLI to include the bootstrap library, we are r
 
 ## Wrapping up
 
-At this point you have your Angular 2 project with the [Bootstrap][] library added for styling.  The code for this post is available on [Github](https://github.com/digitaldrummerj/angular2-getting-started/tree/2-AddBootstrap).  
+At this point you have your Angular 2 project with the [Bootstrap](https://getbootstrap.com/) library added for styling.  The code for this post is available on [Github](https://github.com/digitaldrummerj/angular2-getting-started/tree/2-AddBootstrap).  
 
 In the next post, we will create a header and footer component that will be used on each page.
