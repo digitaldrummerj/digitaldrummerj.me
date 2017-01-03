@@ -3,8 +3,8 @@ layout: post
 title: Angular 2 - Adding Bootstrap Library
 date: 2017-01-06 06:00
 categories: ['angular']
-published: true
 series: angular2-getting-started
+published: false
 excerpt: |
 
 ---
