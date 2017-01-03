@@ -9,7 +9,7 @@ excerpt: Developer productivity is not just about maximizing your speed in edito
 
 ---
 
-{% include series.html %}
+
 
 Developer productivity is not just about maximizing your speed in editor.  It also includes additional software to help you be more productive.    Below is some of my favorite Windows software that I use.
 
@@ -41,4 +41,3 @@ Developer productivity is not just about maximizing your speed in editor.  It al
 * [Launchy](http://www.launchy.net) - Forget about the start menu.  Launch programs with a few keystrokes.  Setup shortcuts for common web sites you use. 
 * [Vagrant](http://vagrantup.com) - Easily create lightweight and reproducible virtual machines.  If you are using virtual machines on your Windows machine, let Vagrant manage the configurations of it.  No longer will it only work on your machine.  I have a blog series on using Vagrant and Chocolatey together at [{{ "/vagrant-overview" | prepend: site.baseurl | prepend: site.url }}]({{ "/vagrant-overview" | prepend: site.baseurl | prepend: site.url }})  
 
-{% include series.html %}

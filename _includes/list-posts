@@ -24,28 +24,38 @@
 
 {% assign category = include.category %}
 {% assign tag = include.tag %}
+{% assign series = include.series %}
+
 <ul class="side-nav">
 
-  {% if category == NULL and tag == NULL %}
+  {% if category == NULL and tag == NULL and series == NULL %}
 
     {% for post in site.posts limit:include.entries offset:include.offset %}
-      <li><a data-proofer-ignore href="{{ site.baseurl }}{{ post.url }}">{% if post.subheadline %}{{ post.subheadline }} &middot; {% endif %}<strong>{{ post.title }}</strong></a></li>
+      <li><a data-proofer-ignore href="{{site.url}}/{{ site.baseurl }}{{ post.url }}">{% if post.subheadline %}{{ post.subheadline }} &middot; {% endif %}<strong>{{ post.title }}</strong></a></li>
     {% endfor %}
-      <li class="text-right"><a data-proofer-ignore href="{{ site.baseurl }}/blog/archive/"><strong>{{ site.data.language.more }}</strong></a></li>
+    <li><a data-proofer-ignore href="{{site.url}}/{{ site.baseurl }}/blog/archive/"><strong>{{ site.data.language.more }}</strong></a></li>
 
 
   {% elsif category %}
 
     {% for post in site.categories.[category] limit:include.entries offset:include.offset %}
-      <li><a data-proofer-ignore href="{{ site.baseurl }}{{ post.url }}">{% if post.subheadline %}{{ post.subheadline }} &middot; {% endif %}<strong>{{ post.title }}</strong></a></li>
+      <li><a data-proofer-ignore href="{{site.url}}/{{ site.baseurl }}{{ post.url }}">{% if post.subheadline %}{{ post.subheadline }} &middot; {% endif %}<strong>{{ post.title }}</strong></a></li>
     {% endfor %}
-      <li class="text-right"><a data-proofer-ignore href="{{ site.baseurl }}/blog/archive/"><strong>{{ site.data.language.more }}</strong></a></li>
+      <li class="text-right"><a data-proofer-ignore href="{{site.url}}/{{ site.baseurl }}/blog/archive/"><strong>{{ site.data.language.more }}</strong></a></li>
 
-
+  {% elsif series %}
+      {% for post in site.posts reversed %}
+        {% if post.series == series %}
+          {% if page.url != post.url %}
+            <li><a data-proofer-ignore href="{{site.url}}/{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a>
+          {% endif %}
+          </li>
+        {% endif %}
+      {% endfor %}
   {% elsif tag %}
 
     {% for post in site.tags.[tag] limit:include.entries %}
-      <li><a data-proofer-ignore href="{{ site.baseurl }}{{ post.url }}">{% if post.subheadline %}{{ post.subheadline }} &middot; {% endif %}<strong>{{ post.title }}</strong></a></li>
+      <li><a data-proofer-ignore href="{{site.url}}/{{ site.baseurl }}{{ post.url }}">{% if post.subheadline %}{{ post.subheadline }} &middot; {% endif %}<strong>{{ post.title }}</strong></a></li>
     {% endfor %}
 
   {% endif %}

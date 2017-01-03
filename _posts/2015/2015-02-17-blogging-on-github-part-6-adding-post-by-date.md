@@ -17,7 +17,7 @@ excerpt: |
 
 Welcome the continuing series on using Jekyll. In this tutorial we will go through creating a page to show blog post by date.
  
-{% include series.html %}
+
 
 ## Overview
 
@@ -139,4 +139,3 @@ We are going to add the "show by date" link into the header section next to the 
 With just a few simple steps, you were able to add the post by month page and put it in the header.  In the next lesson we will discuss how the blog theme works and how to modify it.
 
 
-{% include series.html %}

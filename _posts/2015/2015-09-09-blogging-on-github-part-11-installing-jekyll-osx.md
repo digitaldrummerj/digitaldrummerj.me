@@ -19,7 +19,7 @@ excerpt: |
 Welcome the continuing series on using Jekyll. In this tutorial we are going to setup your MAC (OSx) computer to be able to edit your blog on your computer.
 
 
-{% include series.html %}
+
 
 ## Overview
 
@@ -142,4 +142,4 @@ Now you are ready to do all of your editing locally and  test it out before the 
 
 In our next lesson, I will show you how to create draft blog post that will only show on your local machine so that you don't have to either clutter up your post directory with drafts or worry about accidentally publishing an unfinished article.
 
-{% include series.html %}
+

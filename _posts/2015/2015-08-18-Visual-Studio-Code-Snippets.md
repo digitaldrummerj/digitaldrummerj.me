@@ -10,7 +10,7 @@ excerpt: |
     
     Below I have listed the code snippets  that I most frequently use and what the output from them looks like.
 ---
-{% include series.html %}
+
 
 There are a bunch of built-in Visual Studio code snippets that will generate code for you with a short keyword and then a tab key press.  These shortcuts will make you more efficient when writing code such as creating properties, loops, exceptions, etc.
 
@@ -169,4 +169,3 @@ With these few code snippets you will be amazed at how much less code you end up
 
 Let me know what you favorite snippets are or ones that you have created.
 
-{% include series.html %}

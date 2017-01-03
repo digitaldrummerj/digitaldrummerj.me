@@ -41,7 +41,17 @@ format: post
 
 
 			<div itemprop="articleSection">
+				{% if page.series %}
+				{% include series.html %}
+				{% endif %}
 				{{ content }}
+				
+				{% if page.series %}
+				<h2 class="t60">Series Post</h2>
+
+				{% include list-posts series=page.series %}
+				{% endif %}
+    
 			</div>
 
 			{% if page.show_meta.sharer %}

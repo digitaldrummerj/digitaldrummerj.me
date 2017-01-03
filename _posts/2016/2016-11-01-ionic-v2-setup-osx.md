@@ -14,7 +14,7 @@ excerpt: |
 
 {% assign imagedir = "/images/ionic2-osx/" | prepend: site.baseurl | prepend: site.url %}
 
-{% include series.html %}
+
 
 In order to work with the Ionic framework there is a bit of software installs and configuration that needs to happen in order to deploy to devices.  However, many of the guides out there leave out a number of steps that tripped me up when I first started using Ionic.  
 
@@ -527,6 +527,3 @@ The last thing we need to verify is that we can deploy the todo app to the iOS S
 
 Congratulations, you made it through the guide and have everything setup to create your ionic applications for both Android and Ionic.    
 
-## Series Post
-{: .t60 }
-{% include list-posts tag='ionic2-setup' %}

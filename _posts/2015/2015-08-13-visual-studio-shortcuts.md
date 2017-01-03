@@ -7,7 +7,7 @@ date: 2015-08-13 06:00
 series: developer-productivity
 excerpt: I am keyboard person and like shortcut keys.  There are lot of available shortcuts in Visual Studio and here is a list of the Visual Studio shortcuts that I use.
 ---
-{% include series.html %}
+
 
 Here is a list of  Visual Studio Community Edition shortcuts that I use.  
 
@@ -192,4 +192,3 @@ Note: Assumes Visual Studio keyboard layout for Resharper
 
 There are a lot more shortcuts that are set in Visual Studio.  I have only covered the ones that I use the most.  To see the full list, visit [http://visualstudioshortcuts.com](http://visualstudioshortcuts.com).
 
-{% include series.html %}

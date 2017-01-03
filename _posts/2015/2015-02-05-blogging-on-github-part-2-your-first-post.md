@@ -17,7 +17,7 @@ excerpt: |
 
 Welcome the continuing series on using Jekyll.  In this tutorial we will go through making your first blog post.
 
-{% include series.html %}
+
 
 ## Overview
 
@@ -190,4 +190,3 @@ This lesson is one of the key lessons as you need to kow how to create new blog 
 
 See you in the next lesson, where we will discuss how to add the ability to comment on blog post.  
  
-{% include series.html %}

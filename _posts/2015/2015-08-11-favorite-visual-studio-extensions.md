@@ -8,7 +8,7 @@ series: developer-productivity
 excerpt: In the Visual Studio Extension Gallery there are hundreds of extensions that are available. The extensions add additional functionality to Visual Studio. Here are the extensions that I typically have installed.
 
 ---
-{% include series.html %}
+
 
 In the Visual Studio Extension Gallery there are hundreds of extensions that are available.  The extensions add additional functionality to Visual Studio.  Below are the extensions that I typically have installed.
 
@@ -231,4 +231,4 @@ When turned on it allows you to auto filter intellisense and any search dialogs 
 Complete feature list at [https://www.jetbrains.com/resharper/features/](https://www.jetbrains.com/resharper/features/)
 
  
- {% include series.html %}
+ 

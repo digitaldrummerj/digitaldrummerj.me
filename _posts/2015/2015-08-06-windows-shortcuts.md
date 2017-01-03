@@ -12,7 +12,7 @@ excerpt: |
 
 ---
 
-{% include series.html %}
+
 
 So many times I watch Windows users spending lots of time doing task that should just take a few seconds but instead are taking several minutes because they are taking the long way around to get the task completed.  
 
@@ -73,4 +73,4 @@ Example:
  
  
  
- {% include series.html %}
+ 

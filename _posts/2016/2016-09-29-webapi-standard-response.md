@@ -16,7 +16,7 @@ Welcome to the continuing series on getting started with ASP.NET Web Api.  In th
 
 Before we get started, if you have not read the previous post, I would suggest that you do so before continuing with this artcle so that you are at the same starting point as I am. 
 
-{% include series.html %}
+
 
 
 Our generic response handler will inherit from IHttpActionResult which basically defines an HttpResponseMessage factory. 
@@ -153,10 +153,5 @@ Now that we have our WrapResponseResult class created, we need to update our Fir
         }, this.Request);            
 
 If you open a web browser and do a get against the api/First endpoint, you won't see any difference from what is returned back compared to just returning UserModel.  However, the benefit is that you now have a single generic method that will execute the function to get the results, format out the results, and check for errors.  This greatly simplifies the logic and amount of code that you will need to write for all of your Web Api methods.  As well since all of the methods will be using the same response handler, if you ever had to make a change to how the response is generated, all of the logic is contained within one class.  
-
-
-{% include series.html %}
-
-
 
 

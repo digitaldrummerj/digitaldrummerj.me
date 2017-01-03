@@ -8,7 +8,7 @@ series: vagrant-getting-started-series
 excerpt: If you are working behind a proxy server you will need to configure both the host computer and the Vagrant virtual machines to communicate through the proxy server.   It is easy to configure the proxy settings but finding the documentation is a different story.  Below we will go through how to configure the proxy for the vagrant commands (up, status, box add, etc) and then how to configure the virtual machine proxy settings. 
 ---
 
-{% include series.html %}
+
 
 ## Overview
 
@@ -93,4 +93,4 @@ To configure global add the code snippet below to VagrantFile at .vagrant.d/Vagr
 Now you have everything you need to configure Vagrant to work from behind a proxy server.  In the next lesson we will cover the different networking options for Vagrant.    
 
 
-{% include series.html %}
+

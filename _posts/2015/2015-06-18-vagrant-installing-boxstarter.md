@@ -22,7 +22,7 @@ excerpt: |
 ---
 Welcome to the Vagrant lesson on installing Boxstarter as part of the Vagrant provisioning process.
 
-{% include series.html %}
+
 
 ## What does Boxstarter give you?
 
@@ -65,4 +65,3 @@ However, there are a few things we need to do in order for this to work without 
 
 So far in the provisioning process, we have had Vagrant install both Chocolatey and Boxstarter.  In the next lesson, we will use Boxstarter to bulk install our software and configure Windows.
 
-{% include series.html %}

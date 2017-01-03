@@ -23,7 +23,7 @@ excerpt: |
 
 Welcome the continuing series on using Jekyll.  In this tutorial you will learn how to add the ability for users to comment on your blog post.
 
-{% include series.html %}
+
 
 ## Overview
 
@@ -92,4 +92,3 @@ Having comments is an essential part of any blog to open up the communication wi
 
 In the next lesson, where you will learn how to create additional pages that are not blog post such as portfolio or about pages.
 
-{% include series.html %}

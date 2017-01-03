@@ -13,7 +13,7 @@ excerpt: |
 
 {% assign imagedir = "/images/docker-toolkit-daemon/" | prepend: site.baseurl | prepend: site.url %}
 
-{% include series.html %}
+
 
 In the [previous tutorial](../docker-windows-mounting-directories/) we learned how to mount additional directories within the Docker containers.  In this tutorial we are going to learn how to run a Docker container as a service a.k.a daemon for nginx and mysql.
 

@@ -16,7 +16,7 @@ excerpt: |
 
 Welcome the continuing series on using Jekyll. In this tutorial we are going to go through how to create the series listing like you see for this blog series.  
 
-{% include series.html %}
+
 
 ### Overview
 
@@ -217,4 +217,3 @@ Now if you do an article series, you can easily have a professional looking seri
 
 In the next lesson, I will show you how to get the code highlighting working when your code includes liquid syntax such as we did in the code examples in this article.
 
-{% include series.html %}

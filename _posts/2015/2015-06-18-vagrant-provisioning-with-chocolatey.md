@@ -13,7 +13,7 @@ excerpt: |
 ---
 Welcome to the Vagrant lesson on installing Chocolatey as part of the Vagrant provisioning process.
 
-{% include series.html %}
+
 
 
 ## Overview
@@ -49,4 +49,3 @@ As we saw in the [Easy Virtual Machine Management]({{"/vagrant-overview" | prepe
 
 We now have Chocolatey installed on the virtual machine and are ready to start installing software.  The next lesson will install Boxstarter and then you will bulk install all of our software.   
 
-{% include series.html %}

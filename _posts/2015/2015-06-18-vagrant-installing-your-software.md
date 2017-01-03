@@ -14,7 +14,7 @@ excerpt: |
 ---
 Welcome to the Vagrant lesson on how to use Boxstarter to configure Windows and install software as part of the Vagrant provisioning process.
 
-{% include series.html %}
+
 
 ## Overview
 
@@ -139,4 +139,3 @@ After you do vagrant up and all of the provisioners runs, you will see the RunBo
 
 The next lesson will cover the different networking options that vagrant supports.  By default Vagrant sets up the virtual machine with a NAT network so that you can only get to the machine from the host.  You an however setup both a public and private network.  We will dive into how to do this.
 
-{% include series.html %}
