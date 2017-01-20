@@ -59,7 +59,7 @@ If we go into the src\app\app.component.html file and add the following html to 
 
 As you can see the header isn't very appealing yet but from a functionality standpoint, there isn't anything more that we need to do to get the header component included on the app-component page which is the page that everything will route through.  You can tell that everything will route through the app-component because of the <router-outlet></router-outlet> tag.  We will cover more about this tag when we get into routing in a future post.
 
-Now lets go into the src/app/shared/header/header.component.html file and replace the html snippet below.  This snippet will give us the hamburger menu along at smaller resolutions, setup us up to have a navigation bar, give an Application title and make the header a solid gray background.
+Now lets go into the src/app/shared/header/header.component.html file and replace the html snippet below.  This snippet will give us the hamburger menu at smaller resolutions, setup us wirh a navigation bar, give an Application title and make the header a solid gray background.
 
 ```html
 <header>
@@ -95,3 +95,5 @@ Now lets go into the src/app/shared/header/header.component.html file and replac
 Now if you look at the header again, you will see it looks much more like a header.
 
 ![Revised Header]({{ "header-formatted.png" | prepend: imagedir }})
+
+
