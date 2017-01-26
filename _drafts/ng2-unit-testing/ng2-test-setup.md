@@ -11,6 +11,30 @@ excerpt: |
  
 {% assign imagedir = "/images/" | prepend: site.baseurl | prepend: site.url %}
 
+Starting  with Angular 2,  unit testing is a first class citizen especially when you have generated your project using the Angular CLI.  Out of the box the Angular CLI is  setup with the karma test runner and jasmine test framework.  When generating additional files such components, services or pipes using the Angular CLI, a spec test file is created.  Spec files are container files for one of more tests.  Typically there is a single spec file per component, service , pipe, etc.  
+
+To run the unit test you execute, 
+
+'''bash
+ng test
+'''
+
+This will run webpack, launch a Chrome browser window and execute all of the tests  it can find in the different spec files.  It also sets up karma to watch for  changes to any TypeScript, scss, Html, or spec files.
+
+In the terminal window you will see the number of tests that it found, what test number it is currently running and any errors or expect failures that happen.
+
+
+Before we jump into how to create the different unit tests, we need to go over some guiding principles.
+
+* A unit test should be able to be run multiple times
+* Unit test can run in any order
+* Service calls from components are mocked out so tjst it returns a static data set.
+* Backend data storage calls are mocked out 
+* No Internet is required to run your unit test 
+* Each unit test is only testing one thing
+*  setup code they is used in multiple places is put into a setup function 
+ 
+
 things to think about testing 
 
 * setup
