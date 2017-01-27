@@ -39,11 +39,11 @@ To generate a report open up the command line and run the command the correspond
 
 ### Gemfile   
 
-	bundle exec html-proof ./_site/ --only-4xx
+	bundle exec htmlproofer ./_site/ --only-4xx
 	
 ### Ruby Gem 
 
-	html-proof ./_site/ --only-4xx
+	htmlproofer ./_site/ --only-4xx
 
 The  --only4xx parameter above tell it to only  reports errors for links that fall within the 4xx status code range.  This would capture not found (404) and not authorized (401) errors but would ignore 500 internal server errors.  The reason to ignore 500 errors is that we don't want validation to fail if their web server is throwing an error  since we are only testing that the link went some place valid.  
 
