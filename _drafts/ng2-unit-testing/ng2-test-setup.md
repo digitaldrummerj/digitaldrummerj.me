@@ -10,14 +10,14 @@ excerpt: |
 {% assign imagedir = "/images/" | prepend: site.baseurl | prepend: site.url %}
 
 >  **Note**: This article is for Angular 2+
+{:.warning}
 
 Starting  with Angular 2,  unit testing is a first class citizen especially when you have generated your project using the Angular CLI.  Out of the box the Angular CLI is  setup with the karma test runner and jasmine test framework.  When generating additional files such components, services or pipes using the Angular CLI, a spec test file is created.  Spec files are container files for one of more tests.  Typically there is a single spec file per component, service , pipe, etc.  
 
 To run the unit test you execute, 
 
-'''bash
-ng test
-'''
+		ng test
+
 
 This will run webpack, launch a Chrome browser window and execute all of the tests  it can find in the different spec files.  It also sets up karma to watch for  changes to any TypeScript, scss, Html, or spec files.
 
@@ -33,16 +33,58 @@ Before we jump into how to create the different unit tests, we need to go over s
 * Each unit test is only testing one thing
 *  setup code that is used in multiple places is put into a setup function 
  
+ 
+* TOC
+{:toc}
+
 ## Jasmine Overview 
+
+[Jasmine](https://jasmine.github.io) is the testing framework that we will be using. Jasmine is a behavior-driven development framework for testing JavaScript code. It does not depend on any other JavaScript frameworks. It does not require a DOM. And it has a clean, obvious syntax so that you can easily write tests. 
+
+### Test Group
+
+To get started with Jasmine you need to create a test group or as called in Jasmine, a test suite.  A test suire is nothing more than a way to logically group test together.  Creating a group of test is done by using the 'describe' function which takes 2 parameters: a string and a function.  The string is the  name of the test suite which is usually named after what is being tested. The function is a block of code that implements the suite. 
+
+CODE
+
+### Create Test  
+
+Once you have a test suite created you need to add test to it or as they are called in Jasmine, a spec.  You create a spec by using the 'it' function which like the describe function takes 2 parameters: a string and function.  The sting is the title of the test and the function is the test.  A test will contain 1 or more expectations that test the state of code.  An expectation in Jasmine is either true or false. A spec with all true expectations is a passing test.  A spec with one or more false expectations is a failing test.
+
+> Since describe and it blocks are functions, they can contain any executable code necessary. JavaScript scoping rules apply, so variables declared in a describe are available to any it block inside the suite.
+
+CODE
+
+### Testing Data 
+
+* expect -> format
+* toBe 
+* toBeTruthy 
+* toBeFalsey 
+* toEqual 
+
+CODE
+
+### Before Each Test
 
 * before each 
 * before each async
-* expect
-* it
-* describe
-* run only 1 test or set of tests
-* spys
-* 
+
+CODE
+
+
+### Running  A Subset Of Test 
+
+* fdescribe 
+* fit
+
+CODE
+
+### Mocking Data 
+
+Mocking is an advanced feature but a very powerful one that will allow us to have true unit test that do not rely on external systems.  In Jasmine it is called spying.  Basically watch for calls to specific functions and instead of calling the function it returns a predefined response.  We will use these in our component test to be able to not have to worry about the logic in our service and instead return data that our component needs for its test.  This ensure that we are testing the component and not also having to test the service at the same ttime.
+
+CODE
 
 ## TestBed Overview 
 
