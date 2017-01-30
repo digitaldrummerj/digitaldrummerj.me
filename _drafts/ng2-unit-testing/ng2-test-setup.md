@@ -1,12 +1,13 @@
 ---
 layout: post
 title: Angular Unit Testing
-date: 2020-03-01
+date: 2020-03-01 05:00
 categories: ['angular']
 published: true
 excerpt: |
 
---- 
+---
+
 {% assign imagedir = "/images/" | prepend: site.baseurl | prepend: site.url %}
 
 >  **Note**: This article is for Angular 2+
@@ -57,6 +58,47 @@ CODE
 
 ### Testing Data 
 
+In order to test data you use the function `expect` which takes the actual value .  Then it chains it to a matcher function  which takes the expected value.
+
+Matchers are implemented as true/false comparisons between the actual and expected values.   It a matcher is true it will pass the test and if it is false it will fail the test.  In the example below, the `toBe` is the matcher function.
+
+```javascript
+it("and has a positive case", function() {
+expect(true).toBe(true);
+});
+```
+
+You can also evaluate the matcher against a negative assertion by putting a call to not before calling the matcher.  
+
+```javascript
+it("test the negative assertion", function() {
+expect(false).not.toBe(true);
+});
+```
+
+Jasmine has a nice set of matchers included.
+
+* toBe - compares with ===
+* toEqual - works for literals, variables, and objects
+* toMatch - for regular expressions
+* toBeDefined - compares against 'undefined' to make sure it is defined
+* toBeUndefined - compares against 'undefined' to make it has not been defined.
+* toBeNull - compares against null
+* toBeTruthy - boolean casting test for true
+* toBeFalsey - boolean casting test for false
+* toContain - finds an items in an Array
+* toBeLessThan - math check for value to be less than a number
+* toBeGreaterThan - math check for value to be greater than a number
+* toBeCloseTo - precision math comparison
+* toThrow - check if function threw an exception
+* toThrowError - check if function threw a specific exception
+* fail - manually fail the test
+
+#### Manually Failing a Test
+
+The fail function causes a spec to fail. It can take a failure message or an Error object as a parameter.
+
+
 * expect -> format
 * toBe 
 * toBeTruthy 
@@ -65,13 +107,34 @@ CODE
 
 CODE
 
-### Before Each Test
+### Setup and Teardown
+
+#### Before Each Test
+
+Called once before each spec in the describe in which it is called.   This means that any values that it sets will be reset before the next test is run.
+
+There are 2 ways to call the beforeEach when testing Angular.  
 
 * before each 
 * before each async
 
 CODE
 
+##### After Each Test
+
+Called once after each spec in the describe in which it is called.  This means that any values that it sets will be reset after the test is run and before the next test starts.  
+
+#### Before All Tests
+
+Called only once before all of the specs in the describe are run.  This method is typically used instantiate values that are expensive to create.  
+
+> Becareful using as it is easy to accidentally leak state between tests so that they randomly pass or fail.
+
+#### After All Tests
+
+Called only once after all of the specs in the describe have been run.  This is used to clean up after all of the test have been or when it is expensive to setup a test.  
+
+> Becareful using as it is easy to accidentally leak state between tests so that they randomly pass or fail.
 
 ### Running  A Subset Of Test 
 
