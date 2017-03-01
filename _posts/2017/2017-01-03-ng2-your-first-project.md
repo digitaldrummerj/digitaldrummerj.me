@@ -29,7 +29,7 @@ After you have Node installed, we need to globally install the Angular CLI by ru
 		
 > On Linux and Mac, you may need to run the command with sudo. 
 
-You can verify that the Angular CLI installed by running
+You can verify that the Angular CLI installed and the version by running the command below.  As of this writing, the Angular CLI version is 1.0.0-beta.25.5
 
 	ng --version
 
@@ -55,9 +55,9 @@ The ng new command does several things for you:
 1. Navigate to where you want to store your project 
 	* On Windows, I store mine at c:\projects and on Mac I stored it at ~/projects
 
-1. Generate the new project by running (it will take a few minutes to create)
+1. Generate the new project called angular2-getting-started by running the command below. It will take a few minutes to create and install the dependencies.  I like to use scss instead of css for my styles which the style parameter enables.  The routing parameter sets up the routing that we will use later on when we have more than 1 page to navigate to.
 
-		ng new ProjectName --style=scss --routing 
+		ng new angular2-getting-started --style=scss --routing 
  
 	![ng new output]({{ "ng-new-output.png" | prepend: imagedir }})
 

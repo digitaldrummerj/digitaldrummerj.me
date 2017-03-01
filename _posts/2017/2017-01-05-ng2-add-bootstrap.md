@@ -22,7 +22,7 @@ To make [Bootstrap](https://getbootstrap.com/) play nice with Angular we are goi
 
 ### Install Libraries
 
-> If you need the code from the previous post, you can get it on [Github](https://github.com/digitaldrummerj/angular2-getting-started/tree/1-CreateProject)
+> If you need the code from the previous post, you can get it from this [Github](https://github.com/digitaldrummerj/angular2-getting-started) repository in the 1-CreateProject branch.  
 
 The first thing that we need to do is install the ng2-bootstrap and bootstrap-sass libraries as dependencies for the project.  Since we generated our project with the --style=scss flag, we need to use the bootstrap-sass module to get the sass versions of bootstrap instead of the css versions that are contained in the bootstrap module.
 

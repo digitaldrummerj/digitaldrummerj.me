@@ -16,9 +16,13 @@ If you see me at an event, please be sure to come up and say "Hi".  The best par
 
 ## My Next Events
 
-### Nothing Scheduled.  
+<!--### Nothing Scheduled.  
 
-If you'd like me to speak at your event, [drop me a line]({{ "/contact/" | prepend: site.baseurl }}) and lets make it happen.  I can cover pretty much any topic you see me blog about but feel free to request just about anything.  
+If you'd like me to speak at your event, [drop me a line]({{ "/contact/" | prepend: site.baseurl }}) and lets make it happen.  I can cover pretty much any topic you see me blog about but feel free to request just about anything.  -->
+
+### Toastmasters - Ocotillo Breakfast Club <span> - Chandler, Az (March 1st, 2017)</span>
+
+- [Slides]({{ "/Downloads/PowerpointTips.pdf" | prepend: site.baseurl }})
 
 <!--
 ### Music City Code <span> - Nashville, TN (August 18th-20th, 2016)</span>
