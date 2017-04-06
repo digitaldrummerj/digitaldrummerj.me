@@ -47,7 +47,6 @@ logo: "logo.png"
 
 # Gems
 gems:
-    - jekyll-gist
     - jekyll-redirect-from
     - jekyll-paginate
     - jekyll-sitemap # Create a sitemap using the official Jekyll sitemap gem
