@@ -1,0 +1,79 @@
+#
+# This config-file is only needed for development. Instead of changing the url
+# everytime you work locally on the project, you start both config-files, overwriting
+# the first one with the development variables needed.
+#
+# Start development with › $ jekyll serve --config _config.yml,_config_dev.yml
+
+url: 		'http://192.168.26.244:4000'
+baseurl: 	''
+urlimg: 	'http://192.168.26.244:4000/images'
+
+sass:
+  style: :compressed
+
+# Disable when not in production
+google_analytics_tracking_id: false
+disqus_shortname: false
+
+future: false
+drafts: true
+testsite: true
+
+defaults:
+  -
+    scope:
+      path: '' 				# an empty string here means all files in the project
+      type: 'pages'
+    values:
+      show_meta: 
+        info: false 	# Hide metadata for all pages
+        sharer: false
+        #navigation: ''
+        comments: false
+      # sidebar:    		# Possible values › left, right › by default there will be no sidebar
+      # author: ''     # Default author for pages.  Disable as I am the only one
+  -
+    scope:
+      path: ''
+      type: 'posts'
+    values:
+      show_meta: 
+        info: true   # Show metadata for all posts
+        sharer:  true
+        navigation: '_lateral_navigation_blog.html'
+        comments: true
+      # sidebar: right        # Possible values › left, right › by default there will be no sidebar
+      # author: digitaldrummerj # disable as I am the only one
+  # -
+  #   scope:
+  #     path: ''
+  #     type: workshops
+  #   values:
+  #     stylelink: "/assets/css/workshop.css"
+  #     includeFontAwesome: true
+  #     includeLoraFont: true
+
+# collections:
+#     workshops:
+#         output: true
+#         permalink: /workshops/:path/
+
+# Exclude these files from your production _site
+exclude:
+    - .sass-cache
+    - Gemfile
+    - Gemfile.lock
+    - LICENSE
+    - README.md
+    - INSTALL.md
+    - run.bat
+    - run-incremental.bat
+    - drafts.bat
+    - drafts-incremental.bat
+    - vendor
+    - .travis.yml
+    - scripts
+    - .vscode
+    - _workshops
+    
