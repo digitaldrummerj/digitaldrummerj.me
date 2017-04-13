@@ -7,3 +7,18 @@ published: true
 excerpt: | 
 
 ---
+
+1. Open Powershell
+1. Set Environment Variable for Proxy
+
+    ```powershell
+    [Environment]::SetEnvironmentVariable("HTTP_PROXY", "http://username:password@proxy:port/", [EnvironmentVariableTarget]::Machine)
+    ```
+
+1. Restart Docker
+
+    ```powershell
+    Restart-Service docker
+    ```
+
+pruned from [https://docs.microsoft.com/en-us/virtualization/windowscontainers/manage-docker/configure-docker-daemon](https://docs.microsoft.com/en-us/virtualization/windowscontainers/manage-docker/configure-docker-daemon)
