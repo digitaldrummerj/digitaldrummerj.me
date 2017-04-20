@@ -20,9 +20,47 @@ If you see me at an event, please be sure to come up and say "Hi".  The best par
 
 If you'd like me to speak at your event, [drop me a line]({{ "/contact/" | prepend: site.baseurl }}) and lets make it happen.  I can cover pretty much any topic you see me blog about but feel free to request just about anything.  -->
 
-### Toastmasters - Ocotillo Breakfast Club <span> - Chandler, Az (March 1st, 2017)</span>
+### Codestock <span> - Knoxville, KY (May 5th-6th, 2017)</span>
 
-- [Slides]({{ "/Downloads/PowerpointTips.pdf" | prepend: site.baseurl }})
+- Rapid API Development with Node and SailsJS
+- [Conference Home Page](https://codestock.org)
+
+### Girl Develop It <span> - Phoenix, AZ (May 13th, 2017)</span>
+
+- Up and Running with Angular Workshop
+- [Workshop Signup](https://www.meetup.com/Girl-Develop-It-Phoenix/events/239274125/)
+
+
+### Nebraska.Code() <span> - Lincoln, NE (May 10-12, 2017)</span>
+
+- Rapid API Development with Node and SailsJS
+- Build mobile apps for iOS, Android, and Windows using JavaScript
+- [Conference Home Page](https://nebraskacode.amegala.com/)
+
+
+### Detroit.Code() <span> - Detroit, MI (July 10-12, 2017)</span>
+
+- Rapid API Development with Node and SailsJS
+- Build mobile apps for iOS, Android, and Windows using JavaScript
+- Up and Running with Angular Workshop
+- [Conference Home Page](https://detroitcode.amegala.com/)
+
+### Angular Phoenix Meetup (July 2017)</span>
+
+- Angular Unit Testing from the Trenches
+- [Meetup Page](https://meetup.com/ng-phx/)
+
+### KCDC <span> - Kansas City, MO (August 3rd-5th, 2017)</span>
+
+- Rapid API Development with Node and SailsJS
+- Mobile Development For Web Developers
+- [Conference Home Page](http://www.kcdc.info/)
+
+### MidwestJS <span> - Minneapolis, MN (August 16th-18th, 2017)</span>
+
+- Angular Unit Testing from the Trenches
+- [Conference Home Page](http://midwestjs.com/)
+
 
 <!--
 ### Music City Code <span> - Nashville, TN (August 18th-20th, 2016)</span>
