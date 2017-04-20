@@ -3,3 +3,5 @@ _site/
 .DS_Store
 Gemfile.lock
 debug.log
+.bundle/
+.jekyll-metadata
