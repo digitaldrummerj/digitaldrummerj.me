@@ -22,7 +22,11 @@ Here you will find a list of available workshop tutorials that I have created. I
 {{ lab.excerpt | markdownify }}
   </div>
 <div class="more-link">
-  <p><a href="{{ site.baseurl }}{{ lab.url }}.html">start {{ lab.title}} &raquo;</a></p>
+  {% if lab.isExternal %}
+    <p><a href="{{ lab.externalLink }}">Start {{ lab.title}} &raquo;</a></p>
+  {% else %}
+    <p><a href="{{ site.baseurl }}{{ lab.url }}.html">Start {{ lab.title}} &raquo;</a></p>
+  {% endif %}
 </div>
 
 </article>

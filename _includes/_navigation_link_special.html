@@ -4,9 +4,11 @@
     {% for lab in  sorted %}
     {% if lab.ishome == true and lab.ready == true and lab.url != "/workshops/index" %}
 	    <li{% if lab.url == page_url %} class="active"{% endif %}>
-			<a href="{{ site.baseurl }}{{ lab.url }}">
-				{{ lab.title }}
-			</a>
+        {% if lab.isExternal %}
+			    <a href="{{ lab.externalLink }}">{{ lab.title }}</a>
+        {% else %}
+			    <a href="{{ site.baseurl }}{{ lab.url }}">{{ lab.title }}</a>
+        {% endif %}
 		</li>
     {% endif %}
     {% endfor %}
