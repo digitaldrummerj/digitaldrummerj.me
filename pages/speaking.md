@@ -26,13 +26,13 @@ If you'd like me to speak at your event, [drop me a line]({{ "/contact/" | prepe
 
 - [Rapid API Development with Node and SailsJS](#sails)
 - [Build mobile apps for iOS, Android, and Windows using JavaScript](#taco)
-- [Up and Running with Angular Workshop](#uprunangular)
+- [Up and Running with Angular Full-Day Workshop](#uprunangular)
 - [Conference Home Page](https://detroitcode.amegala.com/)
 
-### Angular Phoenix Meetup (July 2017)</span>
+### Angular Phoenix Meetup <span> - Phoenix, AZ (July 25th, 2017)</span>
 
 - [Angular Unit Testing from the Trenches](#angulartesting)
-- [Meetup Page](https://meetup.com/ng-phx/)
+- [Meetup Page](https://www.meetup.com/ng-phx/events/241184083/)
 
 ### KCDC <span> - Kansas City, MO (August 3rd-5th, 2017)</span>
 
@@ -45,7 +45,7 @@ If you'd like me to speak at your event, [drop me a line]({{ "/contact/" | prepe
 - [Angular Unit Testing from the Trenches](#angulartesting)
 - [Conference Home Page](http://midwestjs.com/)
 
-### Angular Mix <span> - Orlando, FL (October 2017)</span>
+### Angular Mix <span> - Orlando, FL (October 8th-13th, 2017)</span>
 
 - [Rapid API Development with Node and SailsJS](#sails)
 
@@ -53,9 +53,9 @@ If you'd like me to speak at your event, [drop me a line]({{ "/contact/" | prepe
 
 - [Rapid API Development with Node and SailsJS](#sails)
 - [Mobile Development For Web Developers](#taco)
-- [Angular Unit Testing from the Trenches](#angulartesting)
-- Intro to Git and Github
-- Everyone is a Public Speaker
+- [Intro to Git and Github](#introgit)
+- [Everyone is a Public Speaker](#publicspeaker)
+- [Conference Home Page](https://oct2017.desertcodecamp.com)
 
 <!--
 ### Music City Code <span> - Nashville, TN (August 18th-20th, 2016)</span>
@@ -83,7 +83,9 @@ If you would like me to given any of these talks you are meetings, please let me
 * [Cross Platform Mobile Apps with Ionic](#ionic)
 * [Designing a Restful Api in Minutes with Backand](#backand)
 * [Data Driven Restful Api Creation Made Easy Breezy](#cloudapishootout)
+* [Everyone Is a Public Speaker](#publicspeaker)
 * [Gulp for the .Net Developer](#gulp)
+* [Intro to Version Control with Git and Github](#introgit)
 * [Nuget is easier than you think and you should be using it as both a consumer and creator of packages](#nuget)
 * [Rapid Api Development With Node and Sails](#sails)
 * [Side Waffle - The easiest way to build templates for Visual Studio](#sidewaffle)
@@ -109,7 +111,9 @@ This talk will walk through getting started unit testing your Angular components
 
 #### Past Presentations
 
-* 
+* [MidwestJS <span> - Minneapolis, MN (August 16th-18th, 2017)</span>](http://midwestjs.com/)
+* [Angular Phoenix Meetup <span> - Phoenix, AZ (July 25th, 2017)</span>](https://www.meetup.com/ng-phx/events/241184083/)
+
 
 <p>&nbsp;</p>
 
@@ -133,8 +137,11 @@ Slides: [https://www.slideshare.net/digitaldrummerj/visual-studio-tools-for-apac
 
 #### Past Presentations
 
-* [Nebraska.Code() <span> - Lincoln, NE (May 10-12, 2017)</span>](http://nebraskacode.com/)
+* [Desert Code Camp <span> - Phoenix, AZ (October 14, 2017)</span>](https://oct2017.desertcodecamp.com/)
+* [KCDC <span> - Kansas City, MO (August 3rd-5th, 2017)</span>](http://www.kcdc.info/)
+* [Detroit.Code() <span> - Detroit, MI (July 10-12, 2017)</span>](https://detroitcode.amegala.com/)
 * [San Diego Code Camp <span> - San Diego, CA (June 24th, 2017)</span>](http://socalcodecamp.com)
+* [Nebraska.Code() <span> - Lincoln, NE (May 10-12, 2017)</span>](http://nebraskacode.com/)
 
 <p>&nbsp;</p>
 
@@ -238,6 +245,24 @@ Slides: [http://slides.com/digitaldrummerj/data-driven-restful-api-creation-made
 
 ---
 
+### <a name="publicspeaker"></a>Everyone is a Public Speaker
+
+You may not realize it but we are all public speakers.  Public speaking is all about effectively communicating and we have all been training our whole lives to be better communicators.  Being an effective communicator is a critical skill in today’s job market.   I will share with you what I have learned on my journey to becoming a professional speaker who has given over 100 talks since 2014.  With the tips that I will share you will instantly become a more effectively communicator and presenter.   
+ 
+Slides: [https://www.slideshare.net/digitaldrummerj/everyone-is-a-public-speaker](https://www.slideshare.net/digitaldrummerj/everyone-is-a-public-speaker)
+
+#### Past Presentations
+
+* [Desert Code Camp <span> - Phoenix, AZ (October 14, 2017)</span>](https://oct2017.desertcodecamp.com/)
+* [San Diego Code Camp <span>- San Diego, CA (June 27th-28th, 2015)</span>](http://www.socalcodecamp.net/)
+
+<p>&nbsp;</p>
+
+<small markdown="1">[back to top](#top)</small>
+{: .text-right }
+
+----
+
 ### <a name="gulp"></a>Gulp for the .Net Developer
 
 With the release of Visual Studio 2015 Gulp has become a standard part of the workflow for .Net developers.  Gulp has a lot of functionality available such as minification, injecting script tags into html, running js hint, creating source maps, generating css from sass files, plus much more.  In this session, you will learn the basics of gulp,  how it integrates into Visual Studio, and how to create your own gulpfile to automate common tasks. You will walk away with a starter gulp file to get you on your way to fully utilizing gulp.
@@ -328,6 +353,31 @@ Are you already a web developer and want to create a mobile application?  Then c
 
 ---
 
+### <a name="introgit"></a>Intro to Version Control with Git and Github
+
+
+Being able to understand and use version control is a critical part of being a software developer. Version control allows you (and your team) to collaborate, track, and revert changes to your code, documentation and samples. One very popular version control is Git. In this talk we will cover the basics of using Git, show how to publish and share your code through the GitHub, and how to contribute to an open source project using Git and Github.
+
+You will walk away from this talk ready to use Git and Github to manage all of your code assets and know how to contribute to open source projects.
+
+If you want to follow along with the examples, bring your laptop with install the Git command line from https://git-scm.com/download/  and have a Github account created at https://github.com if you do not already have one.
+
+Slides: [http://digitaldrummerj.me/version-control-intro/#/](http://digitaldrummerj.me/version-control-intro/#/)
+
+
+#### Past Presentations
+
+* [Desert Code Camp <span> - Phoenix, AZ (October 14, 2017)</span>](https://oct2017.desertcodecamp.com/)
+* [Learn To Code Phx Meetup <span> - Phoenix, AZ (April 17th, 2017)</span>](https://www.meetup.com/ltcphx/events/239039237/)
+* [Girl Develop IT <span> - Phoenix, AZ (March 18th, 2017)</span>](https://www.meetup.com/Girl-Develop-It-Phoenix/events/237183681/)
+
+<p>&nbsp;</p>
+
+<small markdown="1">[back to top](#top)</small>
+{: .text-right }
+
+---
+
 ### <a name="nuget"></a>Nuget is easier than you think and you should be using it as both a consumer and creator of packages
 
 Nuget is a package manager for Visual Studio that allows you to easily share assets (dll, javascript, c#, etc files) and use them in your project.  Most Visual Studio developers have consumer nuget packages but few have created and shared nuget packages.  It is amazingly easy to create and publish a nuget package.  In less than 60 minutes I will show you how move from a consumer to a creator.  You will learn how to package up dll's, source code that needs to be inserted in a project, add/change configurations, publish a package and host your own nuget feed.
@@ -379,10 +429,13 @@ Code: [github.com//digitaldrummerj/sailstalk](github.com//digitaldrummerj/sailst
 
 #### Past Presentations
 
-* [Codestock <span> - Knoxville, KY (May 5th-6th, 2017)</span>](https://codestock.org)
-* [Nebraska.Code() <span> - Lincoln, NE (May 10-12, 2017)</span>](http://nebraskacode.com/)
+* [Desert Code Camp <span> - Phoenix, AZ (October 14, 2017)</span>](https://oct2017.desertcodecamp.com/)
+* [Angular Mix <span> - Orlando, FL (October 8th-13th, 2017)</span>](https://angularmix.com/)
+* [KCDC (Half-Day Workshop) <span> - Kansas City, MO (August 3rd-5th, 2017)</span>](http://www.kcdc.info/)
+* [Detroit.Code() <span> - Detroit, MI (July 10-12, 2017)</span>](https://detroitcode.amegala.com/)
 * [San Diego Code Camp <span> - San Diego, CA (June 24th, 2017)</span>](http://socalcodecamp.com)
-
+* [Nebraska.Code() <span> - Lincoln, NE (May 10-12, 2017)</span>](http://nebraskacode.com/)
+* [Codestock <span> - Knoxville, KY (May 5th-6th, 2017)</span>](https://codestock.org)
 
 <p>&nbsp;</p>
 
@@ -488,7 +541,8 @@ Labs: [http://digitaldrummerj.me/angular-tutorial](http://digitaldrummerj.me/ang
 
 #### Past Presentations
 
-* Girl Develop It <span> - Phoenix, AZ (May 13th, 2017)</span>
+* [Detroit.Code() <span> - Detroit, MI (July 10-12, 2017)</span>](https://detroitcode.amegala.com/)
+* [Girl Develop It <span> - Phoenix, AZ (May 13th, 2017)</span>](https://www.meetup.com/Girl-Develop-It-Phoenix/events/239274125/)
 
 
 <p>&nbsp;</p>
