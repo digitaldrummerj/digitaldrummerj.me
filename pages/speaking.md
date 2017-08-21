@@ -21,41 +21,22 @@ If you see me at an event, please be sure to come up and say "Hi".  The best par
 If you'd like me to speak at your event, [drop me a line]({{ "/contact/" | prepend: site.baseurl }}) and lets make it happen.  I can cover pretty much any topic you see me blog about but feel free to request just about anything.  -->
 
 
-
-### Detroit.Code() <span> - Detroit, MI (July 10-12, 2017)</span>
-
-- [Rapid API Development with Node and SailsJS](#sails)
-- [Build mobile apps for iOS, Android, and Windows using JavaScript](#taco)
-- [Up and Running with Angular Full-Day Workshop](#uprunangular)
-- [Conference Home Page](https://detroitcode.amegala.com/)
-
-### Angular Phoenix Meetup <span> - Phoenix, AZ (July 25th, 2017)</span>
-
-- [Angular Unit Testing from the Trenches](#angulartesting)
-- [Meetup Page](https://www.meetup.com/ng-phx/events/241184083/)
-
-### KCDC <span> - Kansas City, MO (August 3rd-5th, 2017)</span>
-
-- [Rapid API Development with Node and SailsJS](#sails)
-- [Mobile Development For Web Developers](#taco)
-- [Conference Home Page](http://www.kcdc.info/)
-
-### MidwestJS <span> - Minneapolis, MN (August 16th-18th, 2017)</span>
-
-- [Angular Unit Testing from the Trenches](#angulartesting)
-- [Conference Home Page](http://midwestjs.com/)
-
 ### Angular Mix <span> - Orlando, FL (October 8th-13th, 2017)</span>
 
 - [Rapid API Development with Node and SailsJS](#sails)
+- [Conference Home Page](https://angularmix.com/#!/)
 
 ### Desert Code Camp <span> - Phoenix, AZ (October 14, 2017)</span>
 
-- [Rapid API Development with Node and SailsJS](#sails)
-- [Mobile Development For Web Developers](#taco)
-- [Intro to Git and Github](#introgit)
+- [Angular Unit Testing from the Trenches](#angulartesting)
 - [Everyone is a Public Speaker](#publicspeaker)
 - [Conference Home Page](https://oct2017.desertcodecamp.com)
+
+### DevUp <span> - St Louis, MO (October 16th-18th, 2017)</span>
+
+- [Up and Running with Angular Full-Day Workshop](#uprunangular)
+- [Conference Home Page](http://devupconf.org/)
+
 
 <!--
 ### Music City Code <span> - Nashville, TN (August 18th-20th, 2016)</span>
@@ -111,6 +92,7 @@ This talk will walk through getting started unit testing your Angular components
 
 #### Past Presentations
 
+* [Desert Code Camp <span> - Phoenix, AZ (October 14, 2017)</span>](https://oct2017.desertcodecamp.com/)
 * [MidwestJS <span> - Minneapolis, MN (August 16th-18th, 2017)</span>](http://midwestjs.com/)
 * [Angular Phoenix Meetup <span> - Phoenix, AZ (July 25th, 2017)</span>](https://www.meetup.com/ng-phx/events/241184083/)
 
@@ -137,7 +119,6 @@ Slides: [https://www.slideshare.net/digitaldrummerj/visual-studio-tools-for-apac
 
 #### Past Presentations
 
-* [Desert Code Camp <span> - Phoenix, AZ (October 14, 2017)</span>](https://oct2017.desertcodecamp.com/)
 * [KCDC <span> - Kansas City, MO (August 3rd-5th, 2017)</span>](http://www.kcdc.info/)
 * [Detroit.Code() <span> - Detroit, MI (July 10-12, 2017)</span>](https://detroitcode.amegala.com/)
 * [San Diego Code Camp <span> - San Diego, CA (June 24th, 2017)</span>](http://socalcodecamp.com)
@@ -367,7 +348,6 @@ Slides: [http://digitaldrummerj.me/version-control-intro/#/](http://digitaldrumm
 
 #### Past Presentations
 
-* [Desert Code Camp <span> - Phoenix, AZ (October 14, 2017)</span>](https://oct2017.desertcodecamp.com/)
 * [Learn To Code Phx Meetup <span> - Phoenix, AZ (April 17th, 2017)</span>](https://www.meetup.com/ltcphx/events/239039237/)
 * [Girl Develop IT <span> - Phoenix, AZ (March 18th, 2017)</span>](https://www.meetup.com/Girl-Develop-It-Phoenix/events/237183681/)
 
@@ -429,7 +409,6 @@ Code: [github.com//digitaldrummerj/sailstalk](github.com//digitaldrummerj/sailst
 
 #### Past Presentations
 
-* [Desert Code Camp <span> - Phoenix, AZ (October 14, 2017)</span>](https://oct2017.desertcodecamp.com/)
 * [Angular Mix <span> - Orlando, FL (October 8th-13th, 2017)</span>](https://angularmix.com/)
 * [KCDC (Half-Day Workshop) <span> - Kansas City, MO (August 3rd-5th, 2017)</span>](http://www.kcdc.info/)
 * [Detroit.Code() <span> - Detroit, MI (July 10-12, 2017)</span>](https://detroitcode.amegala.com/)
@@ -541,6 +520,7 @@ Labs: [http://digitaldrummerj.me/angular-tutorial](http://digitaldrummerj.me/ang
 
 #### Past Presentations
 
+* [DevUp <span> - St Louis, MO (October 16th-18th, 2017)</span>](http://devupconf.org/)
 * [Detroit.Code() <span> - Detroit, MI (July 10-12, 2017)</span>](https://detroitcode.amegala.com/)
 * [Girl Develop It <span> - Phoenix, AZ (May 13th, 2017)</span>](https://www.meetup.com/Girl-Develop-It-Phoenix/events/239274125/)
 
