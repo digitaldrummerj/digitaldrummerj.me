@@ -1,6 +1,7 @@
 ---
 published: true
 title: "Workshops"
+sidebar: false
 ---
 
 <div id="workshop" class="row">
