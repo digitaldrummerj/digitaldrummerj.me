@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="{{ .Lang }}">
+{{ partial "head.html" . }}
+
+<body id="top-of-page">
+
+    {{ partial "navigation.html" . }}
+  
+
+      <div class="row t60">
+            <div class="medium-4 columns frontpage-widget">
+              <a href="blog/">            
+                    <img src="images/home/writing-book-302x182.jpg" alt="" />
+              </a>
+              <h2 class="font-size-h3 t10"><a href="blog/">Blog</a></h2>
+              <p>My notebook of technical information to share with you. If I struggled with it or found something cool, it is documented
+                here.
+              </p>
+              <p><a class="button tiny radius" href="blog/">More ›</a></p>
+            </div>
+            <div class="medium-4 columns frontpage-widget">
+              <a href="speaking/">            
+                    <img src="images/home/mic-4-302x182.jpg" alt="" />
+              </a>
+              <h2 class="font-size-h3 t10"><a href="speaking/">Speaking Engagements</a></h2>
+              <p>As much as I love to write code, I enjoy teaching even more. Find out where I will be speaking next and see past presentations.</p>
+              <p><a class="button tiny radius" href="speaking/">More ›</a></p>
+            </div>
+            <div class="medium-4 columns frontpage-widget">
+              <a href="videos/">            
+                    <img src="images/home/video-302x182.png" alt="" />
+              </a>
+              <h2 class="font-size-h3 t10"><a href="videos/">Videos</a></h2>
+              <p>Watch recordings of my various talks on YouTube, subscribe to my YouTube channel or catch up with me on my live stream.</p>
+              <p><a class="button tiny radius" href="videos/">More ›</a></p>
+            </div>
+        
+          </div>
+
+          <div class="row">
+            <div class="medium-6 columns">
+              {{ $last_post := (index 1) }}
+              {{ range first $last_post (where .Site.Pages "Section" "blog") }}
+              {{ .Render "summary" }}
+              {{ end }}
+              
+            </div>
+            <!-- /.medium-5.columns -->
+        
+            <div class="medium-6 columns">
+              <p><strong>More Articles</strong></p>
+              <ul class="side-nav">
+                {{ $recent_post := (index 3) }}
+                {{ range first $recent_post (after 1 (where .Site.Pages "Section" "blog")) }}
+                  <li><a href="{{.RelPermalink}}"><strong>{{.Title | markdownify }}</strong></a>
+                {{ end }}
+                <li><a data-proofer-ignore="" href="blog/"><strong>More ›</strong></a></li>
+              </ul>
+            </div>
+          </div>
+        
+
+        {{ partial "footer.html" . }}
+</body>
+
+</html>

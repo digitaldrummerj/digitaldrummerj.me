@@ -1,0 +1,23 @@
+name = "Theme - Hugo Foundation6"
+license = "GPL-3.0"
+licenselink = "https://github.com/htkoca/theme-hugo-foundation6/blob/master/license.txt"
+description = "A simple Hugo theme based on the Foundation v6 blog (w/ sidebar) example."
+homepage = "https://github.com/htkoca/theme-hugo-foundation6"
+tags = ["foundation", "blog"]
+features = ["responsive", "blog"]
+min_version = 0.17
+
+[author]
+  name = "Tony Ko"
+  homepage = "http://www.htko.ca"
+
+# If porting an existing theme
+[original]
+  name = "Alan Orth"
+  homepage = "https://englishbulgaria.net"
+  repo = "https://github.com/alanorth/hugo-theme-bootstrap4"
+
+# [original]
+#   author = "zurb"
+#   homepage = "http://foundation.zurb.com/templates-previews-sites-f6/blog.html"
+#   repo = "https://github.com/zurb/foundation-zurb-template"

@@ -1,0 +1,16 @@
+{{ define "main" }}
+<header>
+    <div itemprop="name">
+        {{ if .Params.subheadline }}
+          <p class="subheadline">{{ .Params.subheadline }}</p>
+        {{ end }}
+        {{ if .Title }}
+          <h1>{{ .Title }}</h1>
+        {{end }}
+    </div>
+</header>
+   
+<div itemprop="articleSection">  
+      {{ .Content }}
+</div>
+{{ end }}

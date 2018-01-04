@@ -1,0 +1,142 @@
+# Hugo variables
+#
+baseurl = "http://digitaldrummerj.me/digitaldrummerj-hugo/"
+languageCode = "en-us"
+title = "Justin James"
+theme = "foundation6"
+
+# number of posts to show on home/category/tag pages (Default: 10)
+paginate = 5
+buildDrafts = false
+buildFuture = false
+
+# optionally override the site's footer with custom copyright text
+# copyright = "Except where otherwise noted, content on this site is licensed under a [Creative Commons Attribution 4.0 International license](https://creativecommons.org/licenses/by-sa/4.0/)."
+googleAnalytics = "UA-58457343-1"
+disqusShortname = "digitaldrummerj"
+
+[permalinks]
+  blog = "/:filename/"
+  page = "/:slug/"
+
+# navbar menu entry.
+
+[[menu.navbar_left]]
+  name = "Speaking Engagements"
+  url = "/speaking/"
+  weight = 1
+
+[[menu.navbar_left]]
+  name = "Blog"
+  url = "/blog/"
+  weight = 2
+
+[[menu.navbar_right]]
+  name = "About"
+  url = "/about/"
+  weight = 1
+
+[[menu.navbar_right]]
+  name = "Contact"
+  url = "/contact/"
+  weight = 2
+
+[[menu.navbar_right]]
+  name = "Search"
+  url = "/search/"
+  weight = 3
+
+# workshops
+
+[[menu.workshop]]
+name="Rapid API Development with SailsJS"
+url="http://digitaldrummerj.me/sails-tutorial"
+weight=1
+
+[[menu.workshop]]
+name="Up and Running with Angular"
+url="http://digitaldrummerj.me/angular-tutorial"
+weight=2
+
+# Theme variables
+#
+[params]
+  # Site author
+  author = "Justin James"
+  twitter = "digitaldrummerj"
+  github = "digitaldrummerj"
+  youtube = "digitaldrummerj"
+  twitch = "digitaldrummerj"
+  slideshare = "digitaldrummerj"
+  
+  # Description/subtitle for homepage (can be Markdown)
+  description = "Web Developer and Professional Speaker"
+
+  # Format dates with Go's time formatting
+  date_format = "Mon Jan 02, 2006"
+
+  # verification string for Google Webmaster Tools
+  #google_verify_meta = "BAi57DROASu4b2mkVNA_EyUsobfA7Mq8BmSg7Rn-Zp9"
+
+  # verification string for Bing Webmaster Tools
+  bing_verify_meta = "E414777C8C1E619FC57F320448FD584A"
+
+  # verification string for Yandex Webmaster Tools
+  #yandex_verify_meta = "66b077430f35f04a"
+
+  # Optionally display a message about the site's use of cookies, which may be
+  # required for your site in the European Union. Set the parameter below to a
+  # page where the user can get more information about cookies, either on your
+  # site or externally, for example:
+  #cookie_consent_info_url = "/cookie-information/"
+  #cookie_consent_info_url = "http://cookiesandyou.com"
+
+  [params.sidebar]
+    # How many posts to show on the sidebar (Default: 5)
+    num_recent_posts = 5
+    recent_articles = true
+    categories = true
+    archive = true
+    feed = true
+
+  [params.sharingicons]
+    # Hide the sharing icons on posts? (Default: false)
+    hide = false
+
+    # Optionally, set any of these to false to hide them:
+    facebook = true
+    googleplus = true
+    linkedin = true
+    twitter = true
+    email = true
+
+# Default content language for Hugo 0.17's multilingual support (default is "en")
+# See: https://github.com/spf13/hugo/blob/master/docs/content/content/multilingual.md
+#DefaultContentLanguage = "en"
+
+# Languages to render
+#[languages.en]
+#[languages.bg]
+
+[taxonomies]
+  series = "series"
+  tag = "tags"
+  category = "categories"
+
+
+
+[outputs]
+home = ["HTML","FEED", "ATOM"]
+
+[mediaTypes]
+[mediaTypes."application/rss"]
+suffix = "xml"
+
+[outputFormats]
+[outputFormats.FEED]
+mediatype = "application/rss"
+baseName = "feed"
+
+[outputFormats.ATOM]
+mediatype = "application/rss"
+baseName = "atom"

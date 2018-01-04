@@ -1,0 +1,33 @@
+<head>
+  {{ partial "head-meta.html" . }}
+
+  <base href="{{ .Site.BaseURL }}">
+  <link rel="canonical" href="{{ .Permalink }}">
+  <title>{{ block "title" . }}{{ .Site.Title }}{{ end }}</title>
+
+  <link href="{{ .Site.BaseURL }}css/app.css" rel="stylesheet">
+  <script src="{{ .Site.BaseURL }}js/modernizr.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.5.18/webfont.js"></script>
+  <script>
+    WebFont.load({
+      google: {
+        families: ['Lato:400,700,400italic:latin', 'Volkhov::latin']
+      }
+    });
+  </script>
+
+  <noscript>
+    <link href='http://fonts.googleapis.com/css?family=Lato:400,700,400italic%7CVolkhov' rel='stylesheet' type='text/css'>
+  </noscript>
+
+
+  <link href="{{ $.Site.BaseURL }}/feed.xml" rel="alternate" type="application/rss+xml" title="{{ .Site.Title }}" />
+
+  {{ if .Site.Params.cookie_consent_info_url }}
+    {{ partial "cookie-consent.html" . }}
+  {{ end }}
+
+  {{ template "_internal/google_analytics_async.html" . }}
+  {{ partial "head-custom.html" . }}
+    
+</head>

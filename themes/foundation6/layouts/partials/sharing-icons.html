@@ -1,0 +1,35 @@
+<p>
+        <h4>{{ i18n "share" }}</h4>
+
+        <section id="sharer" class="small-12 columns social-icons">
+                <ul class="inline-list">
+                        {{ if not (eq .Site.Params.sharingicons.twitter false) }}
+                        <li>
+                                <a class="share-twitter icon-twitter" target="_blank" href="https://twitter.com/intent/tweet?text={{ .Title }}&via={{ .Site.Params.twitter }}"
+                                        title="Tweet this"></a>
+                        </li>
+                        {{ end }} {{ if not (eq .Site.Params.sharingicons.facebook false) }}
+                        <li>
+                                <a class="share-facebook icon-facebook" target="_blank" href="https://www.facebook.com/sharer/sharer.php?u={{ .Permalink }}"
+                                        title="Share on Facebook"></a>
+                        </li>
+                        {{ end }} {{ if not (eq .Site.Params.sharingicons.email false) }}
+                        <li>
+                                <a class="share-email icon-mail " target="_blank" href="mailto:subject={{.Title}}&{{ .Permalink }}"
+                                        title="Send ia email"></a>
+                        </li>
+                        {{ end }} {{ if not (eq .Site.Params.sharingicons.googleplus false) }}
+                        <li>
+                                <a class=" share-googleplus icon-googleplus" target="_blank" href="https://plus.google.com/share?url={{ .Permalink }}"
+                                        title="Share on Google+"></a>
+                        </li>
+                        {{ end }} {{ if not (eq .Site.Params.sharingicons.linkedin false) }}
+                        <li>
+                                <a class="share-linkedin icon-linkedin" target="_blank" href="https://www.linkedin.com/shareArticle?mini=true&amp;url={{ .Permalink }}"
+                                        title="Share on LinkedIn"></a>
+                        </li>
+                        {{ end }}
+
+                </ul>
+        </section>
+</p>

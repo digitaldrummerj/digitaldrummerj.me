@@ -1,0 +1,22 @@
+#!/bin/bash
+
+cd _site
+rm robots.txt
+touch robots.txt
+echo -e "# robots.txt generated at http://www.mcanerin.com" >> robots.txt
+echo -e "User-agent: *" >> robots.txt
+echo -e "Disallow: /" >> robots.txt
+echo -e "Disallow: /cgi-bin/" >> robots.txt
+
+git init
+git config user.name "Travis CI"
+git config user.email "cideploy@digitaldrummerj.me"
+
+git add .
+git commit -m "Deploy"
+
+# We redirect any output to
+# /dev/null to hide any sensitive credential data that might otherwise be exposed.
+git push --force --quiet "https://${git_user}:${git_password}@${git_target}" master:master > /dev/null 2>&1 
+
+bundle exec htmlproofer ./_site --only-4xx

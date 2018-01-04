@@ -1,0 +1,28 @@
+#workshop {
+    .post-title {
+        img {
+            margin-right: .2em;
+            vertical-align: middle;
+            width: 1.5em;
+            height: 1.5em;
+        }
+        a {
+            text-decoration: none;
+        }
+    }
+
+    /* more link */
+    .more-link {
+        clear: both;
+        margin: 1em 0;
+        border-top: none !important;
+        a {
+            border-radius: 3px;
+            padding: .3em .6em;
+            transition: background-color .2s ease-out;
+            border: 2px solid;
+            text-decoration: none;
+        }
+    }
+    
+}

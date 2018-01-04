@@ -1,0 +1,19 @@
+{{ if .Params.series }} 
+{{ $name := index .Params.series 0 }}
+<div class="series-nav">
+    <p>This article is part of a series.  </p>
+
+    {{ $name := $name | urlize }} 
+    {{ $series := index .Site.Taxonomies.series $name }}
+    {{ $len := len $series }}
+    <ul class="side-nav">
+        {{ range $ind,$art := $series.Pages.ByDate }}  
+         {{ if eq $art.Permalink $.Page.Permalink }}
+            <li class="current"><span>Part {{ add $ind 1 }} - This Article</span>
+        {{ else }}
+        <li><a href="{{$art.Permalink}}">Part {{ add $ind 1 }} - {{ $art.Params.title}}</a></li>
+            {{end}}
+        {{end}}
+    </ul>
+</div>
+{{end}}

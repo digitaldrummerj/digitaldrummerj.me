@@ -1,0 +1,21 @@
+<feed xmlns="http://www.w3.org/2005/Atom">
+    <id>{{ .Permalink }}</id>
+    <title>{{ if eq  .Title  .Site.Title }}{{ .Site.Title }}{{ else }}{{ with .Title }}{{.}} on {{ end }}{{ .Site.Title }}{{ end }}</title>
+    {{ if not .Date.IsZero }}
+    <updated>{{ .Date.Format "Mon, 02 Jan 2006 15:04:05 -0700" | safeHTML }}</updated>{{ end }}
+    <description>Recent content {{ if ne  .Title  .Site.Title }}{{ with .Title }}in {{.}} {{ end }}{{ end }}on {{ .Site.Title }}</description>
+   
+    {{ range (where .Data.Pages "Type" "blog")}}
+		<entry>
+      <title>{{ .Title }}</title>
+      <id>{{ .Permalink }}</id>
+      <link href="{{ .Permalink }}" rel="alternate" type="text/html" title="{{ .Title | safeHTML }}" />
+      <updated>{{ .Date.Format "Mon, 02 Jan 2006 15:04:05 -0700" | safeHTML }}</updated>
+      <published>{{ .Date.Format "Mon, 02 Jan 2006 15:04:05 -0700" | safeHTML }}</published>
+      <content type="html" xml:base="{{ .Permalink }}">{{ .Content | html }}</content>
+    {{ range .Params.categories }}<category term="{{ . | safeHTML }}" />{{ end }}
+
+        
+        </entry>
+    {{ end }}
+</feed>

@@ -1,0 +1,69 @@
+<div id="navigation" class="sticky">
+    <nav class="top-bar" role="navigation" data-topbar>
+        <ul class="title-area">
+            <li class="name">
+                <h1 class="show-for-small-only">
+                    <a href="{{ .Site.BaseURL | absLangURL }}" class="icon-tree"> {{ .Site.Title | safeHTML }}</a>
+                </h1>
+            </li>
+            <!-- Remove the class "menu-icon" to get rid of menu icon. Take out "Menu" to just have icon alone -->
+            <li class="toggle-topbar menu-icon">
+                <a href="#">
+                    <span>Navigation</span>
+                </a>
+            </li>
+        </ul>
+        <section class="top-bar-section">
+            <ul class="left">
+                <li {{ if .IsHome }}class="active" {{ end }}>
+                    <a href="{{ .Site.BaseURL | absLangURL }}">
+                        {{ i18n "home" }}
+                    </a>
+                </li>
+                {{ range .Site.Menus.navbar_left }}
+
+                <li {{ if eq .URL $.Page.URL }}class="active" {{ end }}>
+                    <a href="{{ .URL | absURL }}">{{ .Name }}</a>
+                </li>
+                {{ end }}
+
+                <li class="has-dropdown  not-click">
+                    <a href="{{ .Site.BaseURL | absLangURL }}/workshops/">Workshops </a>
+                    <ul class="dropdown">
+                        <li class="parent-link hide-for-large-up">
+                            <a class="parent-link js-generated" href="{{ .Site.BaseURL | absLangURL }}/workshops/">Workshops </a>
+                        </li>
+                        {{ range .Site.Menus.workshop }}
+                        <li>
+                            <a href="{{ .URL | absURL }}">{{ .Name }}</a>
+                        </li>
+
+                        {{end}}
+                    </ul>
+                </li>
+            </ul>
+            <ul class="right">
+                {{ range .Site.Menus.navbar_right }}
+                <li {{ if eq .URL $.Page.URL }}class="active" {{ end }}>
+                    <a href="{{.URL | absURL }}">{{ .Name }}</a>
+                </li>
+                {{ end }}
+
+            </ul>
+        </section>
+    </nav>
+</div>
+
+<!-- Masthead -->
+<div id="masthead-no-image-header">
+    <div class="row">
+        <div class="small-12 columns">
+            <a id="logo" href="{{ .Site.BaseURL | absLangURL }}" title="{{ .Site.Title | safeHTML }}">
+                <img src="{{ .Site.BaseURL | absLangURL }}/images/logo.png" alt="{{ .Site.Title | safeHTML }}">
+            </a>
+        </div>
+        <!-- /.small-12.columns -->
+    </div>
+    <!-- /.row -->
+</div>
+<!-- /#masthead -->

@@ -1,0 +1,152 @@
+/*@charset "utf-8";
+/* Syntax highlighting styles
+-------------------------------------- */
+
+.highlight {
+    .c,
+    .cm {
+        color: $highlight-comment;
+        font-style: $highlight-comment-style;
+    } // comment, comment multiline
+    .err {
+        color: $highlight-error;
+        background-color: $highlight-error-background;
+    } // error
+    .cp {
+        color: $highlight-comment-special;
+        font-weight: $highlight-comment-special-font-weight;
+    } //comment.preproc
+    .c1 {
+        color: $highlight-comment;
+        font-style: $highlight-comment-special-font-style;
+    } //comment.single
+    .cs {
+        color: $highlight-comment-special;
+        font-style: $highlight-comment-special-font-style;
+        font-weight: $highlight-comment-special-font-weight;
+    } // comment.special
+    .gd {
+        color: $highlight-generic-deleted;
+        background-color: $highlight-generic-deleted-background;
+        .x {
+            color: $highlight-generic-deleted;
+            background-color: $highlight-generic-deleted-specific-background;
+        } //generic.deleted.specific
+    } //generic.deleted
+    .ge {
+        font-style: $highlight-generic-emphasis-font-style;
+    } // generic.emphasis
+    .gr {
+        color: $highlight-generic-error;
+    } //generic.error
+    .gh {
+        color: $hightlight-generic-heading
+    } // generic.heading
+    .gi {
+        color: $highlight-generic-inserted;
+        background-color: $highlight-generic-inserted-background;
+    } //generic.inserted
+    .gi .x {
+        color: $highlight-generic-inserted-specific;
+        background-color: $highlight-generic-inserted-specific-background;
+    } //generic.inserted.specific
+    .go {
+        color: $highlight-generic-output;
+    } //generic.output
+    .gp {
+        color: $highlight-generic-prompt;
+    } // generic.prompt
+    .gu {
+        color: $highlight-generic-subheading;
+    } //generic.subheading
+    .gt {
+        color: $hightlight-generic-heading;
+    } // generic.traceback
+    .k,
+    .kc,
+    .kd,
+    .kn,
+    .kp,
+    .kr {
+        font-weight: $highlight-keyword-font-weight;
+    } // keyword, keyword.constant, declaraction, ?, psuedo, reserved
+    .kt {
+        color: $highlight-keyword-type;
+    } // keyword.type
+    .m {
+        color: $highlight-literal-number;
+    } //literal.number
+    .s {
+        color: $highlight-literal-string;
+    } //literal.string
+    .n {
+        color: $highlight-name;
+    } // name
+    .na {
+        color: $highlight-name-attribute;
+    } // name.attribute
+    .nb {
+        color: $highlight-name-builtin;
+    } // name.builtin
+    .nc {
+        color: $highlight-name-class;
+        font-weight: $highlight-name-class-font-weight;
+    } // name.class
+    .no {
+        color: $highlight-name-attribute;
+    } // name.constant
+    .ni {
+        color: $highlight-name-entity
+    } // name.entity
+    .ne,
+    .nf {
+        color: $highlight-name-exception;
+        font-weight: $highlight-name-exception-font-weight;
+    } // name.exception, name.function
+    .nn {
+        color: $highlight-name-namespace
+    } //name.namespace
+    .nt {
+        color: $highlight-name-tag
+    } //name.tag
+    .nv,
+    .vc,
+    .vg,
+    .vi {
+        color: $highlight-name-variable;
+    } // // name.variable.class, global, instance, variable
+    .w {
+        color: $highlight-text-whitespace;
+    } // text.whitespace
+    .mf,
+    .mh,
+    .mi,
+    .mo,
+    .il {
+        color: $highlight-literal-number;
+    } // literal.number.float, hex, integer, oct, integer.long
+    .s1,
+    .s2,
+    .sb,
+    .sc,
+    .sd,
+    .se,
+    .sh,
+    .si,
+    .sx {
+        color: $highlight-literal-string;
+    } // literal.string.single, .double, backtick, char, doc, escape, heredoc, interpol, other
+    .sr {
+        color: $highlight-literal-string-regex;
+    } // literal.string.regex
+    .ss {
+        color: $highlight-literal-string-symbol;
+    } // literal.string.symbol
+    .bp {
+        color: $highlight-name-builtin-pseudo;
+    } // name.builtin.Pseudo
+    .gc {
+        color: $highlight-comment-special;
+    } // generic comment??
+}
+

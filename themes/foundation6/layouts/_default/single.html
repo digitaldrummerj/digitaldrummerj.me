@@ -1,0 +1,40 @@
+{{ define "title" }}
+{{ .Title | markdownify }} | {{ .Site.Title }}
+{{ end }}
+{{ define "main" }}
+
+
+  {{ $dateFormat := default "Mon Jan 2, 2006" (index .Site.Params "date_format") }}
+
+  <div class="blog-post">
+    <h3>
+      <a href="{{ .Permalink }}">{{ .Title | markdownify }}</a>
+    </h3>
+    <div class="callout small">
+      <small>
+        <time datetime="{{ .Date.Format "2006-01-02T15:04:05Z07:00" }}">
+          {{ .Date.Format $dateFormat }}
+        </time> 
+        {{ if (.Params.categories) }}Categories: {{ partial "meta-categories.html" . }}.{{ end }}
+        {{ if (.Params.tags) }}Tags: {{ partial "meta-  tags.html" . }}.{{ end }}
+      </small>
+    </div>
+    <p>
+      {{ .Content }}
+    </p>
+    {{ if not .Site.Params.sharingicons.hide }}
+      {{ partial "sharing-icons.html" . }}
+    {{ end }}
+{{ if .IsTranslated }}
+      <h4>{{ i18n "translations" }}</h4>
+      <ul>
+        {{ range .Translations }}
+          <li><a href="{{ .Permalink }}">
+            {{ .Lang }}: {{ .Title }}{{ if .IsPage }}{{ end }}
+          </a></li>
+        {{ end }}
+      </ul>
+    {{ end }}
+  </div>
+
+{{ end }}
