@@ -12,7 +12,7 @@ rm -rf public
 git worktree prune
 
 echo "Checking out gh-pages branch into public"
-git worktree add -B gh-pages public origin/gh-pages
+git worktree add -B master public origin/master
 
 echo "Removing existing files"
 rm -rf public/*
@@ -23,4 +23,4 @@ npm run build:hugo-prod
 cd ../../../
 
 echo "Updating gh-pages branch"
-cd public && git add --all && git commit -m "Publishing to gh-pages (publish.sh)" && git push gh gh-pages
+cd public && git add --all && git commit -m "Publishing to master (publish-to-master.sh)" && git push origin master
