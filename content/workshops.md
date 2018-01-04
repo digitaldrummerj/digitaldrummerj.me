@@ -8,7 +8,7 @@ title: "Workshops"
         <p class="teaser">Here you will find a list of available workshop tutorials that I have created. If you would like me to give a workshop at your event, please <a href="/contact/">drop me a line</a>.  I can give on the existing workshops below or create a new one on pretty much any topic you see me blog about but feel free to also request just about anything.</p>
         <article>
             <header>
-                <h2 class="post-title"><a href="/workshops/sails-tutorial/index.html">Rapid Api Development with SailsJS<br></a></h2>
+                <h2 class="post-title"><a href="/sails-tutorial">Rapid Api Development with SailsJS<br></a></h2>
             </header>
             <div>
                 <p>Creating a RESTful API should be the easiest part of your development. You should not have to be a rocket scientist to successfully create a RESTful API. With Sails, you can create a full featured RESTful API in just a few minutes without writing any code. You get create, destroy, update, find, paginate, sort, and filtering out of the box. If you need to add your business logic to any of the methods or create your own methods, you can do that by writing simple JavaScript functions.</p>
@@ -22,7 +22,7 @@ title: "Workshops"
         </article>
         <article>
             <header>
-                <h2 class="post-title"><a href="/workshops/angular2-intro/index.html">Up and Running with Angular<br></a></h2>
+                <h2 class="post-title"><a href="/angular2-intro/">Up and Running with Angular<br></a></h2>
             </header>
             <div>
                 <p>If you have ever wanted to code an application with Angular this is your chance. Join us for a fun filled day of learning Angular in this hands-on workshop. You will go from 0 to 60 with your Angular knowledge and be able to create our own Angular applications by the end of this workshop. We will start with a new project and continue to build up the project until we have a full application at the end.</p>
