@@ -2,7 +2,7 @@
 categories:
 - blogging
 - jekyll
-date: 2015-09-09T00:00:00Z
+date: 2015-09-09T03:00:00Z
 excerpt: "Welcome the continuing series on using Jekyll. In this tutorial we are going
   to setup your MAC (OSx) computer to be able to edit your blog on your computer.\n
   \  \n## Overview\n\nUp to this point we have been using the Github web site to edit
