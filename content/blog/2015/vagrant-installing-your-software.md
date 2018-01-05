@@ -3,7 +3,7 @@ categories:
 - virtualbox
 - vagrant
 - chocolatey
-date: 2015-06-18T00:00:00Z
+date: 2015-06-18T05:00:00Z
 excerpt: "Welcome to the Vagrant lesson on how to use Boxstarter to configure Windows
   and install software as part of the Vagrant provisioning process.\n\nWe have all
   of the needed software in place to start configuring and installing software onto

@@ -10,7 +10,7 @@ title: Ionic - Using behind a proxy server
 
 ---
 
-I ran into an issue today on the vagrant IonicBox when I tried to create a new Ionic project at work behind the firewall/proxy even with all of the configurations for npm, git, bower, and bash setup for the proxy as detailed at [{{"proxy-configurations" | prepend: site.baseurl | prepend: site.url}}]({{"proxy-configurations" | prepend: site.baseurl | prepend: site.url}}).
+I ran into an issue today on the vagrant IonicBox when I tried to create a new Ionic project at work behind the firewall/proxy even with all of the configurations for npm, git, bower, and bash setup for the proxy as detailed at [proxy-configurations]({{< relref "proxy-configurations.md" >}}).
 
 Luckily, Ionic had a fix for this already.  
 

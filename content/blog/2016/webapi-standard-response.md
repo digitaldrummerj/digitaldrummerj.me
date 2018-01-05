@@ -15,9 +15,6 @@ Welcome to the continuing series on getting started with ASP.NET Web Api.  In th
 
 Before we get started, if you have not read the previous post, I would suggest that you do so before continuing with this artcle so that you are at the same starting point as I am. 
 
-
-
-
 Our generic response handler will inherit from IHttpActionResult which basically defines an HttpResponseMessage factory. 
 
 Some of the advantages of using IHttpActionResult are:
@@ -34,9 +31,9 @@ Lets go ahead and start creating our generic reponse handler.
 
 1. Open the solution in Visual Studio and within the Api project create a new directory called Helpers.   
 1. Within the Helpers directory, create a class called WrapResponseResult.cs.
-1. To the WrapResponseResult class definition add `<T>` to the class name, inherit the class from IHttpActionResult, and add the ExecuteAsync method.   
+1. To the WrapResponseResult class definition add `<T>` to the class name, inherit the class from IHttpActionResult, and add the ExecuteAsync method.
 
-```c#
+```C#
 public class WrapResponseResult<T> : IHttpActionResult
 {
     public Task<HttpResponseMessage> ExecuteAsync(CancellationToken cancellationToken)

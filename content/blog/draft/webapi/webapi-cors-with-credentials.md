@@ -14,8 +14,6 @@ Welcome to the continuing series on getting started with ASP.NET Web Api.  At th
 
 When you make a call to your Api from Angular, Web Api will check if the url is allowed to access the Api by using the CORS setup.  However, when using credentials you can not have a wildcard for the allowed url which presents a problem when you are trying to make a Api for other websites to use.   
 
-{% include series.html %}
-
 In order to setup CORS, we need to installed the Nuget package `Microsoft.AspNet.WebApi.Cors`
 
 1. To install the nuget package, right-click on the project in Solution Explorer and select Manage Nuget Packages.
@@ -42,9 +40,9 @@ You also need to add the following using statement:
 
     using System.Web.Http.Cors;
 
-If you were to run to code and make a call from Angular you will still get a CORS error like below since you can not have a wildard for the origin.  
+If you were to run to code and make a call from Angular you will still get a CORS error like below since you can not have a wildard for the origin.
 
-![Angular CORS Origin Header Error](/images/BloggingOnGitHub/cors-no-origin-header.png)
+![Angular CORS Origin Header Error](images/web-api-cors/cors-no-origin-header.png)
 
 To fix this, we can add in a bit of code to the global.asax.cs in the Application_BeginRequest method to grab the url (origin) making the call and add the Request header "Access-Control-Allow-Origin" set to the origin url.    
 

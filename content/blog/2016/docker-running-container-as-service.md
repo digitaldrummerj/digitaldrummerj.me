@@ -12,7 +12,6 @@ title: Docker - Running Container As a Service
 
 ---
 
-
 In the [previous tutorial](../docker-windows-mounting-directories/) we learned how to mount additional directories within the Docker containers.  In this tutorial we are going to learn how to run a Docker container as a service a.k.a daemon for nginx and mysql.
 
 To run a Docker container as a daemon, we run it with the -d flag.  This will tell Docker to start up the container in the background and return back to the command prompt.
@@ -32,7 +31,6 @@ Once the nginx container is up and running, we can verify it is running by execu
 
 >To see all of the containers even if they are not running execute add a `-a` 
 
-    
 To connect to the nginx web page, we need to know the ip address of the docker machine.  
 
      docker-machine ip
@@ -41,15 +39,15 @@ To connect to the nginx web page, we need to know the ip address of the docker m
 
 If you need to to attach to a shell within the running container, run
 
-    docker attach [container id]  
+    docker attach [container id]
 
 >If docker attach never connects, run docker exec -i -t [container id] /bin/bash
 {:.warning}
 
-If you need to stop the container, run 
+If you need to stop the container, run
 
     docker stop [container id]
-    
+
 You can verify it stopped by running
 
     docker ps -a
@@ -60,9 +58,11 @@ If you are done with the container and ready to delete it, run
 
 ### MySQL Sample
 
-This example will download the mysql image, create a mysql database and expose it to your local machine to interact with.  
+This example will download the mysql image, create a mysql database and expose it to your local machine to interact with.
 
-     $ docker run --name some-mysql -e MYSQL_ROOT_PASSWORD=my-secret-pw -e MYSQL_USER=mysql_user -e MYSQL_PASSWORD=mysql_user1 -e MYSQL_DATABASE=mysql_test -p 3306:3306 -d mysql
+```shell
+$ docker run --name some-mysql -e MYSQL_ROOT_PASSWORD=my-secret-pw -e MYSQL_USER=mysql_user -e MYSQL_PASSWORD=mysql_user1 -e MYSQL_DATABASE=mysql_test -p 3306:3306 -d mysql
+```
 
 * --name: is the name to give the container
 * -e: sets environment variables

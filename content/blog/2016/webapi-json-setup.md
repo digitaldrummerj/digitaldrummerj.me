@@ -28,7 +28,6 @@ Before we get started, if you have not read the first post, I would suggest that
 
 The first thing that we are going to do is create a C# class to hold the information about the logged in user.  Then we will  update the FirstController that we created in the previous post to return the C# class that we created.
  
-
 ### Creating A Class to Return from Web Api Method
 
 1. Open up the solution that we created in the previous article in Visual Studio
@@ -41,7 +40,6 @@ The first thing that we are going to do is create a C# class to hold the informa
 In the "Add New Item" dialog that comes up, name the file UserModel.cs and click ok
 
 ![Set new model file name to UserModel.cs](/images/web-api-getting-started/webapi-add-new-model-filename.png) 
-
 
 In the UserModel.cs replace the contents with the following code:
 

@@ -16,8 +16,6 @@ title: 'Jekyll Part 07: Adding a custom Google search'
 
 Welcome the continuing series on using Jekyll. In this tutorial we are going to add the ability to search your blog using google.
 
-
-
 ## Overview
 
 As your blog grows, you want to make it easy for your readers to find the content that they need on your blog.  Out of the box, Jekyll does not have any type of search engine built-in.  Thankfully, with Google you can easily tell Google to index your blog and then add a search box on the blog.
@@ -32,7 +30,7 @@ If you have been following along with the other lessons in the series, this shou
 
     ![Github Plus Button](/images/BloggingOnGitHub/github_add_button.png)
 
-1.  Name the file search.html
+1. Name the file search.html
 
     ![Github Name New File search.html](/images/BloggingOnGitHub/github_part_7_add_search_html_file.png)
 
@@ -75,19 +73,18 @@ If you have been following along with the other lessons in the series, this shou
 
 1. Before the &lt;div id="archives"&gt; tag that we added previously, add the following html snippet.
 
-                <div id="search">
-                    <form role="search" method="get" action="{{ site.baseurl }}//search/">
-                        <input id="searchString" name="searchString"
-                               placeholder="Be a Better Developer, etc." type="text">
-                        <input id="searchButton" name="googleSearchName" type="submit" value="Search">
-                    </form>
-                </div>
-     {% endraw %}
+        <div id="search">
+            <form role="search" method="get" action="{{ site.baseurl }}//search/">
+                <input id="searchString" name="searchString"
+                        placeholder="Be a Better Developer, etc." type="text">
+                <input id="searchButton" name="googleSearchName" type="submit" value="Search">
+            </form>
+        </div>
 
 1. Replace the &lt;div class="container"&gt; above the search div with the following
-    {% raw %}
+
         <div class="grid" id="searchBar">
-            <div>
+        <div>
 
 1. After the &lt;div id="archives"&gt; section add another &lt;/div&gt; tag.
 
@@ -128,40 +125,40 @@ If you have been following along with the other lessons in the series, this shou
 
 1. Add the following to the bottom of the file before the two @import statements.
 
-            #searchBar {
-              font-size: 80%;
-              padding: 0.43em 0 0.57em;
+        #searchBar {
+            font-size: 80%;
+            padding: 0.43em 0 0.57em;
 
-              #search {
-                float: right;
+            #search {
+            float: right;
 
-                #searchString {
-                  width: 283px;
-                  border: none;
-                  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.2) inset;
-                  padding: 0.3em 0.6em;
-                  background-color: #f6f5ea;
-                  margin-right: 0;
-                }
+            #searchString {
+                width: 283px;
+                border: none;
+                box-shadow: 0 1px 2px rgba(0, 0, 0, 0.2) inset;
+                padding: 0.3em 0.6em;
+                background-color: #f6f5ea;
+                margin-right: 0;
+            }
 
-                #searchButton {
-                  paddign: 0.3em 0.6em;
-                  background-color: #0B5485;
-                  border: 1px solid #f6f5ea;
-                  margin-left: 0;
-                  color: $white;
-                  -webkit-appearance: none;
-                  border-radius: 0;
-                }
+            #searchButton {
+                paddign: 0.3em 0.6em;
+                background-color: #0B5485;
+                border: 1px solid #f6f5ea;
+                margin-left: 0;
+                color: $white;
+                -webkit-appearance: none;
+                border-radius: 0;
+            }
 
-                #archives {
-                  line-height: 2;
-                  float: left;
-                  color: $black;
-                  text-wrap: avoid;
-                }
-              }
-           }
+            #archives {
+                line-height: 2;
+                float: left;
+                color: $black;
+                text-wrap: avoid;
+            }
+            }
+        }
 
 1. Scroll down to the bottom, add the commit comment, and click on the commit change button.
 

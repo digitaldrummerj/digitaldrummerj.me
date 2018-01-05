@@ -20,11 +20,12 @@
     </span>
 {{ end }}
 {{ if (.Params.categories) }}{{ partial "meta-categories.html" . }}{{ end }}
+{{ if (.Params.draft ) }} DRAFT {{ end }}
 
 </div>
     <p>
         {{ partial "series.html" . }}
-      </p>
+    </p>
     <p>
       {{ .Content }}
     </p>
@@ -43,8 +44,8 @@
     {{ end }}
   
   {{ if not .Site.Params.sharingicons.hide }}
-  {{ partial "sharing-icons.html" . }}
-{{ end }}
+    {{ partial "sharing-icons.html" . }}
+  {{ end }}
 
   {{ if .Site.DisqusShortname }}
     {{ partial "disqus.html" . }}

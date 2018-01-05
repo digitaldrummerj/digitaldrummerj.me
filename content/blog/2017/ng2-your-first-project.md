@@ -33,8 +33,8 @@ In this post we will get everything setup on your machine to do Angular 2 develo
 
 After you have Node installed, we need to globally install the Angular CLI by running (it will take several minutes):
 
-	npm install -g angular-cli 
-		
+	npm install -g @angular/cli 
+
 > On Linux and Mac, you may need to run the command with sudo. 
 
 You can verify that the Angular CLI installed and the version by running the command below.  As of this writing, the Angular CLI version is 1.0.0-beta.25.5
@@ -48,7 +48,7 @@ You can verify that the Angular CLI installed and the version by running the com
 After the Angular CLI is installed you can create a new project with the ng new command.
 
 The ng new command does several things for you:
- 
+
 * Creates a directory named after the project name.  
 * Installs the npm dependencies
 * Configures Webpack 
@@ -61,12 +61,13 @@ The ng new command does several things for you:
 
 1. Open a command prompt
 1. Navigate to where you want to store your project 
+	
 	* On Windows, I store mine at c:\projects and on Mac I stored it at ~/projects
 
 1. Generate the new project called angular2-getting-started by running the command below. It will take a few minutes to create and install the dependencies.  I like to use scss instead of css for my styles which the style parameter enables.  The routing parameter sets up the routing that we will use later on when we have more than 1 page to navigate to.
 
-	ng new angular2-getting-started --style=scss --routing 
- 
+	ng new angular2-getting-started --style=scss --routing
+
 	![ng new output](/images/ng2-getting-started/ng-new-output.png)
 
 
@@ -80,7 +81,7 @@ Now that we have our project generated, we can view it in a web browser by runni
 
 ## Project layout
 
-If you look at the project directory and file layout there are some key pieces of the project that I have highlighted below.   
+If you look at the project directory and file layout there are some key pieces of the project that I have highlighted below.
 
 <div class="row">
 	<div class="medium-12 large-6 columns">
@@ -98,11 +99,10 @@ If you look at the project directory and file layout there are some key pieces o
 			</li>
 			<li>angular-cli.json -> Configuration for the Angular CLI and Webpack build</li>
 			<li>package.json -> Standard npm configuration file for dependencies, scripts, project info</li>
-		</ul>	
-
+		</ul>
 	</div>
 </div>
 
-## Wrapping up 
+## Wrapping up
 
 At this point you have your Angular 2 project created and are ready to start coding.  In the next post, we will add bootstrap for our styling.

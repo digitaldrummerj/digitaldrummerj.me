@@ -48,7 +48,7 @@ This will bring up a windows asking you to install the command line tools packag
 	
 ### Section 1.3: Installing Pygments Code Highlighter
 
-		pip install Pygments
+	pip install Pygments
 
 ### Section 1.4: Install Ruby Gems
 

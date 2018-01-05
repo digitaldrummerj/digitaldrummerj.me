@@ -40,7 +40,7 @@ If you are not familiar with Chocolatey, check it out at [http://chocolatey.org]
 1. Run the following command to install Chocolatey
 
 		@powershell -NoProfile -ExecutionPolicy Bypass -Command "iex ((new-object net.webclient).DownloadString('https://chocolatey.org/install.ps1'))" && SET PATH=%PATH%;%ALLUSERSPROFILE%\chocolatey\bin
-		
+
 1. Close the command prompt and re-open it so that we can get the Chocolatey environment variables
 
 Next we are going to install Boxstarter.
@@ -62,9 +62,9 @@ The Windows configuration helper functions that Boxstarter provides to enable or
  
 Run the following commands to install Boxstarter
 
-		chocolatey feature enable -n=allowGlobalConfirmation
-		choco install BoxStarter
-		chocolatey feature disable -n=allowGlobalConfirmation	
+	chocolatey feature enable -n=allowGlobalConfirmation
+	choco install BoxStarter
+	chocolatey feature disable -n=allowGlobalConfirmation	
 		
 ### Section 1.3: Installing the rest of the software
 

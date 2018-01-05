@@ -3,7 +3,7 @@ categories:
 - virtualbox
 - vagrant
 - chocolatey
-date: 2015-06-18T00:00:00Z
+date: 2015-06-18T02:00:00Z
 excerpt: "Welcome to the Vagrant lesson on installing Chocolatey as part of the Vagrant
   provisioning process.\n\nThe first thing we are going to do as part our provisioning
   is to install Chocolatey onto the virtual machine. \n"

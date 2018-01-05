@@ -30,11 +30,9 @@ Note: I assume that you have alrady cloned your jekyll repo to your machine.  Th
 1. In the _includes directory create a new file called series.html
 1. The first thing we are going to do is add an if statement to make sure that the it is a series before trying to output the listing.  Without this, it would output every page if the post didnt have a series and you included the series.html
 
-		{%  raw %}
 		{% if page.series %}
 
 		{% endif %}
-		{% endraw %}
 		
 1. All of the code for the rest of this section will go in between the if and endif statements
 1. Next we are going to figure out how many post are part of the series and which article number in the series this post is.

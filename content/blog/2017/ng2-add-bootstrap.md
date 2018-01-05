@@ -35,30 +35,29 @@ Now we need to tell the Angular CLI about the [Bootstrap](https://getbootstrap.c
 1. Search for the styles node and add the bootstrap file
 
         "styles": [
-              "styles.scss",
-              "../node_modules/bootstrap-sass/assets/stylesheets/_bootstrap.scss"
-            ],
+            "styles.scss",
+            "../node_modules/bootstrap-sass/assets/stylesheets/_bootstrap.scss"
+        ],
 
 
-### Using Bootstrap 
+### Using Bootstrap
 
 Now that we have told the Angular CLI to include the bootstrap library, we are ready to use it.
 
 1. In your code editor, open up the src\app\app.component.html file
 1. Replace the contents of the file with:
 
-        {% raw %}
         <div class="container">
           <div class="page-header">
             <h1>
-              {{title}}
+              {{ title }}
             </h1>
           </div>
         </div>
-        {% endraw %}
-        
+
 1. We are now ready run `ng serve` and view our home page at [http://localhost:4200](http://localhost:4200)
-  * Note: If you already have ng serve running, you will need to stop it using ctrl+c and run ng serve again. Anytime you make changes to the angular-cli.json file, they will not take effect until ng serve is restarted.
+
+  > Note: If you already have ng serve running, you will need to stop it using ctrl+c and run ng serve again. Anytime you make changes to the angular-cli.json file, they will not take effect until ng serve is restarted.
 
 1. The page should now look like
 

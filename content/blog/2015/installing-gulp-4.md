@@ -18,7 +18,7 @@ The first thing we need to do is install the Gulp command line to be able to run
 1. Open a Command Prompt (Windows) or Terminal (Mac or Linux)
 1. Check if you have Gulp CLI < 1.2.1 installed
 
-    	   $ gulp -v
+    	$ gulp -v
 
 1. If a Gulp version is < 1.2.1, you will need to upgrade by running the following commands
 

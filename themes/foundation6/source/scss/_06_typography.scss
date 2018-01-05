@@ -219,19 +219,18 @@ td {
 ------------------------------------------------------------------- */
 
 pre {
-    overflow: auto;
+     overflow: auto;
     margin-bottom: rem-calc(20);
     padding: 5px;
-    background-color: $highlight-background !important; //$code-background-color;
+//     background-color: $highlight-background !important; //$code-background-color;
     border-radius: $global-radius;
     border: 2px solid $highlight-border;
     code {
         padding: rem-calc(2) rem-calc(5) rem-calc(1) rem-calc(0);
         border: 0;
-        background-color: $highlight-background;
-        font-size: rem-calc(14);
+//         background-color: $highlight-background;
+        font-size: rem-calc(16);
         line-height: 1.5;
-        text-indent: 100px;
         white-space: pre-wrap; //css-3
         white-space: -moz-pre-wrap; //Mozilla, since 1999
         white-space: -pre-wrap; // Opera 4-6
@@ -410,7 +409,7 @@ mark {
 .teaser {
     font-size: rem-calc(20);
     p {
-        font-size: rem-calc(20);        
+        font-size: rem-calc(20);
     }
 }
 

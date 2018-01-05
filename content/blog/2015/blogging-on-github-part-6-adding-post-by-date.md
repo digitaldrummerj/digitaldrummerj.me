@@ -14,10 +14,7 @@ series: ["blogging-with-jekyll"]
 title: 'Jekyll Part 06: Adding Post by Date Page'
 ---
 
-
 Welcome the continuing series on using Jekyll. In this tutorial we will go through creating a page to show blog post by date.
- 
-
 
 ## Overview
 
@@ -33,10 +30,9 @@ If you have been following along with the other lessons in the series, this shou
 
     ![Github Plus Button](/images/BloggingOnGitHub/github_add_button.png)
 
-1.  Name the file archivebydate.md
+1. Name the file archivebydate.md
 
     ![Github Name the New File archivebydate.md](/images/BloggingOnGitHub/github_part_6_archivebydate_file_name.png)
-
 
 ## Section 2: Adding the Metadata
 
@@ -54,40 +50,38 @@ Add the following front matter to the top of the archivebycategory.md file.
 After the front matter, add the following code to display the post by Year and Month.
 
     <div id="index">
-    {% for post in site.posts %}
-    {% unless post.next %}
-    <h2>{{ post.date | date: '%Y' }}</h2>
-    {% else %}
-    {% capture year %}{{ post.date | date: '%Y' }}{% endcapture %}
-    {% capture nyear %}{{ post.next.date | date: '%Y' }}{% endcapture %}
-    {% if year != nyear %}
-    {% if forloop.index != 1 %}</ul>{% endif %}
-      <h2>{{ post.date | date: '%Y' }}</h2>
-    {% endif %}
-    {% endunless %}
+        {% for post in site.posts %}
+            {% unless post.next %}
+                <h2>{{ post.date | date: '%Y' }}</h2>
+            {% else %}
+                {% capture year %}{{ post.date | date: '%Y' }}{% endcapture %}
+                {% capture nyear %}{{ post.next.date | date: '%Y' }}{% endcapture %}
+                {% if year != nyear %}
+                {% if forloop.index != 1 %}</ul>{% endif %}
+                    <h2>{{ post.date | date: '%Y' }}</h2>
+                {% endif %}
+            {% endunless %}
 
-    {% capture month %}{{ post.date | date: '%m%Y' }}{% endcapture %}
-    {% capture nmonth %}{{ post.next.date | date: '%m%Y' }}{% endcapture %}
-    {% if month != nmonth %}
-    {% if forloop.index != 1 %}</ul>{% endif %}
-    <h2>{{ post.date | date: '%B %Y' }}</h2><ul>
-    {% endif %}
-
-
-    {% if post.link %}
-      <h3 class="link-post">
-        <a href="{{ site.baseurl }}{{ post.url }}" title="{{ post.title }}">{{ post.title }}</a>
-        <a href="{{ post.link }}" target="_blank" title="{{ post.title }}"><i class="fa fa-link"></i></a></h3>
-    {% else %}
-      <h3><a href="{{ site.baseurl }}{{ post.url }}" title="{{ post.title }}">{{ post.title }}<p class="date">{{ post.date |  date: "%B %e, %Y" }}</p></a></h3>
-      <p>{{ post.excerpt | strip_html | truncate: 160 }}</p>
-    {% endif %}
+        {% capture month %}{{ post.date | date: '%m%Y' }}{% endcapture %}
+        {% capture nmonth %}{{ post.next.date | date: '%m%Y' }}{% endcapture %}
+        {% if month != nmonth %}
+        {% if forloop.index != 1 %}</ul>{% endif %}
+            <h2>{{ post.date | date: '%B %Y' }}</h2><ul>
+        {% endif %}
 
 
-    {% endfor %}
+        {% if post.link %}
+            <h3 class="link-post">
+                <a href="{{ site.baseurl }}{{ post.url }}" title="{{ post.title }}">{{ post.title }}</a>
+                <a href="{{ post.link }}" target="_blank" title="{{ post.title }}"><i class="fa fa-link"></i></a></h3>
+        {% else %}
+            <h3><a href="{{ site.baseurl }}{{ post.url }}" title="{{ post.title }}">{{ post.title }}<p class="date">{{ post.date |  date: "%B %e, %Y" }}</p></a></h3>
+            <p>{{ post.excerpt | strip_html | truncate: 160 }}</p>
+        {% endif %}
+        {% endfor %}
     </div>
 
-##  Section 4: Viewing the Post by Date Page
+## Section 4: Viewing the Post by Date Page
 
 1. After you have added the above text, scroll to the bottom of the page, add your commit note, and    click the commit button.
 

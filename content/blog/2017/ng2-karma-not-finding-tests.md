@@ -23,13 +23,14 @@ I was slightly disappointed when I clicked on the Debug button as it just opened
 
 ![Karma Error](/images/ng2-karma-not-finding-test/karma-debug.png)
 
-Chrome should have run the test.ts file with no problems and it is obviously not a video file.  After a bit of searching, I ran across [Angular CLI Issue 2125](https://github.com/angular/angular-cli/issues/2125) that had a potential workaround of adding a mime type to the Karma configuration.  Below is the configuration that you need to add to the karma.conf.js file.  
+Chrome should have run the test.ts file with no problems and it is obviously not a video file.  After a bit of searching, I ran across [Angular CLI Issue 2125](https://github.com/angular/angular-cli/issues/2125) that had a potential workaround of adding a mime type to the Karma configuration.  Below is the configuration that you need to add to the karma.conf.js file.
 
-```
+```json
 mime: {
     'text/x-typescript': ['ts', 'tsx']
 }
-```    
+
+```
 
 Once you update the configuration you need to stop Karma and re-run it with the `npm run test` command.  It should now find and execute 3 tests.
 

@@ -2,7 +2,7 @@
 categories:
 - vagrant
 - chocolatey
-date: 2015-07-06T00:00:00Z
+date: 2015-07-06T06:00:00Z
 excerpt: If you are working behind a proxy server you will need to configure both
   the host computer and the Vagrant virtual machines to communicate through the proxy
   server.   It is easy to configure the proxy settings but finding the documentation

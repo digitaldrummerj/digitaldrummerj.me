@@ -12,20 +12,18 @@ title: 'Jekyll Tip: Showing Liquid Code in Code Snippets'
 
 ---
 
-
 When blogging with Jekyll there are times when you want to be able to output a code snippet that contains what Jekyll thinks is liquid code.  This especially happens when you are doing Angular tutorials since using the double brackets (&#123;&#123;  &#125;&#125;) for data binding.  Since the code snippets are enclosed in a pre tag, you are not able to html encode the brackets.
 
 Instead, to include liquid markup in the code snippet you need to surround the code snippet with the raw and endraw tags like so
 
-<figure class="highlight"><pre><code class="language-liquid" data-lang="liquid"><span class="p">&#123;%</span><span class="w"> </span><span class="nt">raw</span><span class="w"> </span><span class="w"> </span><span class="p">%&#125;</span>
-
-    &#123;&#123; Notice the double brackets will be in the output &#125;&#125;
-
-<span class="p">&#123;%</span><span class="w"> </span><span class="nt">endraw</span><span class="w"> </span><span class="p">%&#125;</span></code></pre></figure>
+```liquid
+{% raw %}
+    {{ Notice the double brackets will be in the output }}
+{% endraw %}
+```
 
 This will output:
 
 {{< highlight liquid >}}
 {{ Notice the double brackets are output }}
 {{< / highlight >}}
-

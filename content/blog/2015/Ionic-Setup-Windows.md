@@ -80,18 +80,17 @@ On Windows, you will only be able to setup Android development.  Apple requires 
 
 The first test that we are going to run is to make sure that we can test the todo app that we generated in the web browser by running:
 
-        ionic serve --lab
+     ionic serve --lab
 
 This will start up a node based web server and the --lab will tell it to launch a page that shows what the app would look like on an iOS and Android phone.  Granted the node based serve is about 80% accurate but good enough to do a majority of our testing.  Ultimately you should test on a device before releasing into the app stores.         
 
 Next we are going to test our Android device setup.  The first thing we need to do is tell ionic that we want to add the Android platform to our todo app by running:
 
-        ionic platform add android
+    ionic platform add android
 
 This sets up the todo app to be able to be build and deployed to an Android device.  To validate that we can build for Android, run the following:
 
-        ionic build android
-
+    ionic build android
 
 The last thing we need to verify is that we can deploy the todo app to the Visual Studio Emulator for Android.  Before we can deploy the application, we need to start up the emulator.  
 

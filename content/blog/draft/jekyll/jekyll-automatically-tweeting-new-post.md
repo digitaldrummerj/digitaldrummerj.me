@@ -50,5 +50,3 @@ Both systems work extremely well it is just a matter of which system has the abi
 22. Of everything looks correct, click on the continue button.  If something does not look right in the sample data, go back to the other sections, make the needed adjustments and then get it again. 
 
 Zapier is now setup to put a tweet at the top of your Buffer queue whenever you publish a new blog post into your RSS feed.
-
-{% include series.html %}

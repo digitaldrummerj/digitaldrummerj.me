@@ -22,12 +22,6 @@ title: Preparing A Conference Talk
 
 I have done a bunch of conference talks and brown bag sessions this year (~45 in the past 2 years) and here is how I prepare for those talks. Sorry that the reply is a little long but I wanted to make sure you had a process to get started with. Remember that this is my process and you have to find what works best for you.
 
-Here are the phases that I go through:
-
-* Table of Contents Placeholder
-{:toc}
-
-
 There is no set time for how long each phase takes. It all depends on the presentation and the length of it. I have had talks where I spent several weeks working on it while other talks were done in less than a day.
 
 You can see a good number of my presentations at [Presentations by Justin](http://slides.com/digitaldrummerj "http://slides.com/digitaldrummerj")

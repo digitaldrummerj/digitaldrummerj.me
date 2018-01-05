@@ -50,10 +50,10 @@ Ubuntu Trusty 14.04 unfortunately comes with Ruby 1.9.x and we need 2.x.  There 
 		tar -xzvf ruby-install-0.5.0.tar.gz
 		cd ruby-install-0.5.0/
 		sudo make install
-		sudo ruby-install --system ruby 	
+		sudo ruby-install --system ruby
 
 1. We need to install chruby to change the ruby version to the one that we just installed
-	
+
 		wget -O chruby-0.3.9.tar.gz https://github.com/postmodern/chruby/archive/v0.3.9.tar.gz
 		tar -xzvf chruby-0.3.9.tar.gz
 		cd chruby-0.3.9/
@@ -65,9 +65,9 @@ Ubuntu Trusty 14.04 unfortunately comes with Ruby 1.9.x and we need 2.x.  There 
 		source /usr/local/share/chruby/auto.sh
 
 1. In order to it to take effect run replace .bashrc with .bash_profile if you are using that instead
-	
+
 		source ~/.bashrc
-	
+
 1. Verify your ruby version changed with 
 
 		ruby -v
@@ -139,12 +139,12 @@ However, by default your _config.yml file will be set for production which will 
 1. Create a new file in the root of your repo called _configdev.yml
 1. In the _configdev.yml add the following lines to set the url, turn off disqus/google analytics and google search.  
 
-			# then add this to the url as well "/repository-name"
-			url: http://localhost:4000
-			disqus:
-			disquscommentcount: 
-			google_analytics: 
-			google_search: 
+		# then add this to the url as well "/repository-name"
+		url: http://localhost:4000
+		disqus:
+		disquscommentcount: 
+		google_analytics: 
+		google_search: 
 
 1. If your jekyll serve is still running do a ctrl+c to stop it.
 1. Now run the following command to tell jekyll the config yml files to load

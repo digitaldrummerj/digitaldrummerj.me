@@ -3,7 +3,7 @@ categories:
 - virtualbox
 - vagrant
 - chocolatey
-date: 2015-06-18T00:00:00Z
+date: 2015-06-18T03:00:00Z
 excerpt: "Welcome to the Vagrant lesson on installing Boxstarter as part of the Vagrant
   provisioning process.\nBoxstarter gives you the ability to bulk install Chocolatey
   packages plus several helper functions for Windows configuration options.  \n\nWhen

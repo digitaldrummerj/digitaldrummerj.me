@@ -30,26 +30,31 @@ In order to pull the changes from the original repository into your forked versi
 1. Navigate to the directory that contains your forked repository
 1. Run the following command to list the currently configured remote repositories
 
-        $ git remote -v
+    ```shell
+    $ git remote -v
         
         origin https://github.com/[Your UserName]/[Your Fork].git (fetch)
         origin https://github.com/[Your UserName]/[Your Fork].git (push)
-        
+    ```
+
 1. Add the original repository as an upstream repository 
 
-        $ git remote add upstream https://github.com/[Original Owner Username]/[Original Repository].git
-        
+    ```shell
+    $ git remote add upstream https://github.com/[Original Owner Username]/[Original Repository].git
+    ```
+
 1. If you run the git remote command again, you will now see both origin and upstream are configured
 
-        $ git remote -v
-        
-        origin https://github.com/[Your UserName]/[Your Fork].git (fetch)
-        origin https://github.com/[Your UserName]/[Your Fork].git (push)
-        upstream https://github.com/[Original Owner UserName]/[Original Repository].git (fetch)
-        upstream https://github.com/[Original Owner UserName]/[Original Repository].git (push)
-        
+    ```shell
+    $ git remote -v
+
+    origin https://github.com/[Your UserName]/[Your Fork].git (fetch)
+    origin https://github.com/[Your UserName]/[Your Fork].git (push)
+    upstream https://github.com/[Original Owner UserName]/[Original Repository].git (fetch)
+    upstream https://github.com/[Original Owner UserName]/[Original Repository].git (push)
+    ```
 You are now ready to pull the changes from the original repository to the your forked repository.
-                 
+
 ## Merging Original Repo Into Your Fork
 
 1. Open a Command Prompt (Windows) or Terminal (Mac or Linux)
@@ -57,7 +62,7 @@ You are now ready to pull the changes from the original repository to the your f
 1. The first thing is to fetch all of the changes from the original repository.  Note that commits to the original repository will be stored in a local branch called, upstream/master
 
         $ git fetch upstream
-        
+
         remote: Counting objects: 75, done.
         remote: Compressing objects: 100% (53/53), done.
         remote: Total 62 (delta 27), reused 44 (delta 9)
@@ -68,13 +73,13 @@ You are now ready to pull the changes from the original repository to the your f
 1. Make sure that you are on your fork's master branch
 
         $ git checkout master
-        
+
         Switched to branch 'master'
-        
+
 1. Merge the changes from the upstream/master into your local master branch.  This will bring your fork's master branch into sync with the upstream repository without losing your local changes.  If you have made any changes that create a conflict, you will obviously have to resolve those before you can complete the merge.
 
         $ git merge upstream/master
-        
+
         Updating a422352..5fdff0f
         Fast-forward
         ....
@@ -82,15 +87,15 @@ You are now ready to pull the changes from the original repository to the your f
 1. At this point your local branch is synced to the original repositories master branch.  If you want to update the Github repository, you need to push your changes.
 
         $ git push origin master
-             
 
 ## Wrap-Up
 
 To summarize, with the 5 commands below you can sync your forked repository with the original repository and push the changes to your Github repository.     
 
- 
-        $ git remote add upstream https://github.com/[Original Owner Username]/[Original Repository].git
-        $ git fetch upstream
-        $ git checkout master
-        $ git merge upstream/master
-        $ git push
+```shell
+$ git remote add upstream https://github.com/[Original Owner Username]/[Original Repository].git
+$ git fetch upstream
+$ git checkout master
+$ git merge upstream/master
+$ git push
+```

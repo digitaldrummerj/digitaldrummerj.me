@@ -10,6 +10,17 @@ paginate = 5
 buildDrafts = false
 buildFuture = false
 
+# Set to true to enable syntax highlighting in code fences with a language tag
+pygmentsCodefences =  true
+#pygmentsOptions = "linenos=table"
+
+# color-codes for highlighting derived from this style
+pygmentsStyle =               "friendly"
+
+# Set to true to try to do syntax highlighting on code fenced blocks in markdown without a language tag.
+#pygmentsCodefencesGuessSyntax = true
+
+
 # optionally override the site's footer with custom copyright text
 # copyright = "Except where otherwise noted, content on this site is licensed under a [Creative Commons Attribution 4.0 International license](https://creativecommons.org/licenses/by-sa/4.0/)."
 googleAnalytics = "UA-58457343-1"

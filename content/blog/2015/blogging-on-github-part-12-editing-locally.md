@@ -26,7 +26,7 @@ Welcome the continuing series on using Jekyll. In this tutorial we are going to 
 
 In the last couple of articles, we installed jekyll locally but we didn't talk about editing existing blog post or adding in new ones.  There will be times where you will start a blog post but not have time to finish it all in one sitting.  You could just create all of the files in the post directory and set the publish flag to false but over time it will become harder and harder to tell which articles have actually been published.  
 
-Thankfully, jekyll supports having draft posts that by default don't show even if the publish flag is set to true unless you tell jekyll to run with drafts.  On Github, jekyll runs without the drafts flag so you don't have to worry about drafts accidentally showing up.  
+Thankfully, jekyll supports having draft posts that by default don't show even if the publish flag is set to true unless you tell jekyll to run with drafts.  On Github, jekyll runs without the drafts flag so you don't have to worry about drafts accidentally showing up.
 
 ## Section 1: Creating a draft
 
@@ -50,7 +50,7 @@ Thankfully, jekyll supports having draft posts that by default don't show even i
 
 To run jekyll with drafts, you just need to pass in the --drafts argument to the serve command
 
-		jekyll serve --config _config.yml,_configdev.yml --drafts
+    jekyll serve --config _config.yml,_configdev.yml --drafts
 
 Now if you view your site in your web browser, you will see your draft post.
 

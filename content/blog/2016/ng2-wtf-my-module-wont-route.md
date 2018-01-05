@@ -22,8 +22,7 @@ I verified that I had spelled everything correctly in the routing configuration 
 
 Turns out that order is important when importing modules in the app.module.ts file especially when you have configured a route to catch any unknown routes and redirect them to a 404 page.  In this scenario, you have to import the AppRoutingModule last.  This was so obvious once I figured it out but never thought about it before then.  I assumed that it would automatically added the child routes into the routing configuations before the catch all route.  Nope it doesn't work that way.  It adds the routes as they are imported. Below shows the broken code and then the fixed code.
 
-**Original Broken Code: app.module.ts**
-{:.alert-box .alert .radius}
+{{< alert class="alert" text="Original Broken Code: app.module.ts" >}}
 
 Notice that the MyNewModule is listed in the @NgModule imports section after the AppRoutingModule.  Note that the order of import statements at the top of the code does not matter.
 
@@ -45,7 +44,7 @@ import { AppComponent } from './app.component';
     FormsModule,
     HttpModule,
     AppRoutingModule,
-	MyNewModule,
+  	MyNewModule,
   ],
   providers: [],
   bootstrap: [AppComponent]
@@ -53,8 +52,7 @@ import { AppComponent } from './app.component';
 export class AppModule { }
 ```
 
-**Fixed Code: app.module.ts**
-{:.alert-box .success .radius}
+{{< alert class="success" text="Fixed Code: app.module.ts" >}}
 
 Notice that now the MyNewModule is listed in the @NgModule imports section before the AppRoutingModule.  Note that the order of import statements at the top of the code does not matter.
 

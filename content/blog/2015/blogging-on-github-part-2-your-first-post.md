@@ -10,72 +10,70 @@ title: 'Jekyll Part 02: Your First Post'
 
 Welcome the continuing series on using Jekyll.  In this tutorial we will go through making your first blog post.
 
-
-
 ## Overview
 
-We will go through all of the steps to create a new post, add metadata such as title/categories/tags/date, and then make it live on the site.  
+We will go through all of the steps to create a new post, add metadata such as title/categories/tags/date, and then make it live on the site.
 
-## Section 1: Creating the file 
+## Section 1: Creating the file
 
-Thr first step is to create a new file to hold the content of the blog post.  In Jekyll all of the blog post are markdown files and are stored in the _post directory.    When you commit this file to Github, it will be compiled into a static html page.  
+Thr first step is to create a new file to hold the content of the blog post.  In Jekyll all of the blog post are markdown files and are stored in the _post directory.    When you commit this file to Github, it will be compiled into a static html page.
 
-The filename is in the format of year-month-day-title-separated-by-dashes.md.  
+The filename is in the format of year-month-day-title-separated-by-dashes.md.
 
-	2015-02-17-my-first-post.md
-	
-Go ahead and create your file now. 
+    2015-02-17-my-first-post.md
 
-1. To create a file open a web browser and navigate to your [username.github.io repository. 
-2. Go into the _post directory and click the + icon to add a new file.
-3. Name the file yyyy-mm-dd-my-first-post.md where yyyy = 4digit year,  mm = 2 digit month, and dd = 2 digit day of montmonth.
-4. Head to the next section and fill out the metadata about the post (ie: title, date, is published, categories, etc)
+Go ahead and create your file now.
 
-## Section 2: Creating metadata 
+1. To create a file open a web browser and navigate to your [username.github.io repository.
+1. Go into the _post directory and click the + icon to add a new file.
+1. Name the file yyyy-mm-dd-my-first-post.md where yyyy = 4digit year,  mm = 2 digit month, and dd = 2 digit day of montmonth.
+1. Head to the next section and fill out the metadata about the post (ie: title, date, is published, categories, etc)
 
-Now we need to define some information about our blog post.  All of the information such as title, is published,  categories, publish date, etc are stored at the top of the file in what is called Front Matter.  
+## Section 2: Creating metadata
 
-To define the front matter section you have a line with 3 dashes in it and then repeat this same line to signal the end of the front matter section. 
+Now we need to define some information about our blog post.  All of the information such as title, is published,  categories, publish date, etc are stored at the top of the file in what is called Front Matter.
 
-Below are common metadata you will want to fill out.  
+To define the front matter section you have a line with 3 dashes in it and then repeat this same line to signal the end of the front matter section.
+
+Below are common metadata you will want to fill out.
 
 - layout:  is the name of the layout  from the _layouts directory.  If followed part 1 and cloned the jekyll-now repository, then the name is post.
-- title:  the title of the blog post that will showbon the site.  Should be in quotes to avoid conflict with front matter parameter. 
+- title:  the title of the blog post that will showbon the site.  Should be in quotes to avoid conflict with front matter parameter.
 - published: true or false.  Determines  if the post shows  on the website or not.
 - date: date of the post.  this is optional and if not defined will use date in filename.
-- categories: list of categories.  comma delimited.  put in quotes for multi word categories.  optional but recommended.  
-- tags: list of tags that would be used to build a tag cloud.  optional but recommended. 
- 
-### Sample Front Matter:
+- categories: list of categories.  comma delimited.  put in quotes for multi word categories.  optional but recommended.
+- tags: list of tags that would be used to build a tag cloud.  optional but recommended.
 
-	---
-	layout: post
-	title: Your First Post
-	published: false
-	date: 2015-02-01
-	categories: [blogging]
-	tags: [blogging]
-	---
-	
+### Sample Front Matter
+
+    ---
+    layout: post
+    title: Your First Post
+    published: false
+    date: 2015-02-01
+    categories: [blogging]
+    tags: [blogging]
+    ---
+
 Now on to creating actual content in your post.
-	
+
 ## Section 3:  Creating content 
 
 The content of the post will be written in markdown and will be directly below the front matter section .
- 
+
 Below are common markdown tags that you will want to use.  headers, lists, bold, bullets, links and code highlighting.
- 
+
 ### Common Markdown Tags
 
-#### Headers  
+#### Headers
 
-A '#' starting  a line indicates to makebitba header and the number '#' indicates  the size of the header tag.  
+A '#' starting  a line indicates to makebitba header and the number '#' indicates  the size of the header tag.
 
-	#  = 	h1
-	## = h2
-	and so on up the an h6
-	
-**examples**
+    #  = 	h1
+    ## = h2
+    and so on up the an h6
+
+Examples:
 
 #  h1
 
@@ -89,26 +87,23 @@ A '#' starting  a line indicates to makebitba header and the number '#' indicate
 
 #### h6
 
-
-
-#### Numbered list  or Bullets 
+#### Numbered list  or Bullets
 
 For bullets: start a line with a * or -.
 
-	* sample list
-	* next bullet
+    * sample list
+    * next bullet
 
 * sample list 
 * next bullet 
 
 For numbered list start with a 1 or the number you want to start with.
 
-	1. sample ordered list
-	2. number 2
+    1. sample ordered list
+    2. number 2
 
-1. sample ordered list 
+1. sample ordered list
 2. number 2
-
 
 #### Bold
 
@@ -126,12 +121,10 @@ link to other pages:
 	
 [link name display](http://myurl.com)
 
-
 ### Code Highlighting 
 
 There are 2 ways: tab the line in and it will group the text like the examples above.
 or use the highlighter markup
-
 
 {{< highlight text >}}
 {% highlight csharp %}

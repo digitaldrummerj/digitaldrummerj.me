@@ -22,43 +22,36 @@ title: Docker - Mounting Windows Directories in Containers
 
 In the [previous tutorial](../docker-on-windows-getting-started/) we learned how to install Docker and get our first container running.  In this tutorial we are going to learn how to mount additional directories within our Docker container that are outside of the c:\Users directory.  By default, Docker only mounts the c:\Users directory inside the docker machine and containers.  For myself, I have all of my project files two places: c:\projects and c:\personal.  I didn't want to change my standard configuration just for Docker.  Luckily, it is really easy to mount additional directories.    
 
-To mount additional directories, you need to add the directory as a shared folder within Virtualbox and then enable long file paths and symlinks.  Once the Virtualbox shared folders are setup, you need to mount the directories within the docker machine so that they are available to the containers.  
-
-Steps: 
-
-**Table of Contents**
-
-{{.TableOfContents}}
+To mount additional directories, you need to add the directory as a shared folder within Virtualbox and then enable long file paths and symlinks.  Once the Virtualbox shared folders are setup, you need to mount the directories within the docker machine so that they are available to the containers.
 
 ## Step 1: Adding Shared Folders
 
 The first step is to add the directories as Virtualbox shared folders by using  the VBoxManage.exe utility that comes with Virtualbox.  VBoxManage.exe is located in your Virtualbox install directory, which by default is C:\Program Files\Oracle\VirtualBox.
 
-> **Warning:**  To make symlinks works when you start up the docker-machine, you need to run the Docker Quickstart Terminal or Command Line as an administrator.  This is a security limitation of Windows for symlinks.   
-{:.warning}
+{{< blockquote  start="Warning" text="To make symlinks works when you start up the docker-machine, you need to run the Docker Quickstart Terminal or Command Line as an administrator.  This is a security limitation of Windows for symlinks." class="warning" >}}
 
-Before adding the shared folders, we need to make sure that no docker machines are running.  We are going to check for running docker containers and machines as both a  non-admin and admin.  
+Before adding the shared folders, we need to make sure that no docker machines are running.  We are going to check for running docker containers and machines as both a  non-admin and admin.
 
 **Non-Admin Checking For Running Machines**
 
 Launch the Windows Command Prompt and run 
 
     $ docker-machine ls
-     
+
 If any machines comes back with the state of running, you will need to stop the machine.
 
-  
+
 1. Before stopping the machine you will want to make sure that your containers are stopped.    
 
-              $ docker ps 
-              
+        $ docker ps 
+
 1. For any containers that are returned you can stop them by running
 
-            $ docker stop [Container ID]
-          
+        $ docker stop [Container ID]
+
 1. Once all of the containers are stop, you can stop the docker machine. Replace the "[machine name]" with you machine name that we returned from the docker-machine ls command.   Typically you will only have 1 machine and it will be named  default
-          
-            $ docker-machine stop [machine name]           
+
+        $ docker-machine stop [machine name]           
 
 **Admin Checking For Running Machines**
           
@@ -69,26 +62,24 @@ If any machines comes back with the state of running, you will need to stop the 
 1. To check if any docker machines are running, run the command:
 
         $ docker-machine ls
-     
+
 If any machines comes back with the state running, you will need to stop the machine.  
 
 1. Before stopping the machine you will want to make sure that your containers are stopped.    
 
-              $ docker ps 
-              
+        $ docker ps
+
 1. For any containers that are returned you can stop them by running
 
-            $ docker stop [Container ID]
+        $ docker stop [Container ID]
 
 1. Once all of the containers are stop, you can stop the docker machine. Replace the "[machine name]" with you machine name that we returned from the docker-machine ls command.   Typically you will only have 1 machine and it will be named  default
-          
-        $ docker-machine stop [machine name]           
 
+        $ docker-machine stop [machine name]
 
 We are now ready to add in our shared folders.
 
 1. Navigate to the Virtualbox directory.
-
 
         $ cd "c:\Program Files\Oracle\Virtualbox"
 
@@ -97,8 +88,7 @@ We are now ready to add in our shared folders.
         $ VBoxManage.exe sharedfolder add default --name "c/projects" --hostpath "\\?\c:\projects" --automount
         $ VBoxManage.exe sharedfolder add default --name "c/personal" --hostpath "\\?\c:\personal" --automount
 
-> The \\?\ in the hostpath tells Windows to enable long file paths.
-{:.warning}
+{{< blockquote text="The \\?\ in the hostpath tells Windows to enable long file paths." class="warning" >}}
 
 ## Step 2: Allow Long Paths and Symlinks
 
@@ -114,8 +104,7 @@ Next you need to enable symlinks for each of the shared folders.  Replace Shared
 
 ## Step 3: Mounting Shared Folders in Docker
 
-> **Warning:**  To make symlinks works when you start up the docker-machine, you need to run the Docker Quickstart Terminal as an administrator.  This is a security limitation of Windows for symlinks.  Right-click on the Docker Quickstart Terminal and select Run As Administrator.
-{:.warning}  
+{{< blockquote start="Warning" text="To make symlinks works when you start up the docker-machine, you need to run the Docker Quickstart Terminal as an administrator.  This is a security limitation of Windows for symlinks.  Right-click on the Docker Quickstart Terminal and select Run As Administrator." class="warning" >}}
 
 Unfortunately even with auto-mount Docker will only mount the c/Users folder in the docker-machine.  If you want the folders to auto-mount you will need to manually mount them each time you start up the default docker machine. 
 

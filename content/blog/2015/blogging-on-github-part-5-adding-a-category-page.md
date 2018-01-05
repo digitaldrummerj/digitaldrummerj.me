@@ -14,10 +14,7 @@ series: ["blogging-with-jekyll"]
 title: 'Jekyll Part 05: Adding Category Page'
 ---
 
-
 Welcome the continuing series on using Jekyll. In this tutorial we will go through creating a page to show blog post by category.
- 
-
 
 ## Overview
 
@@ -33,10 +30,9 @@ If you have been following along with the other lessons in the series, this shou
 
     ![Github Plus Button](/images/BloggingOnGitHub/github_add_button.png)
 
-1.  Name the file archivebycategory.md
+1. Name the file archivebycategory.md
 
     ![Github Name the New File archivebycategory.md](/images/BloggingOnGitHub/github_part_5_archivebycategory_file_name.png)
-
 
 ## Section 2: Adding the Metadata
 
@@ -53,39 +49,36 @@ Add the following front matter to the top of the archivebycategory.md file.
 
 After the front matter, add the following code to display the categories and the number of post per category.  Each category will link to further down in the page where is will show the post for that category.
 
-        <div>
+    <div>
         {% assign categories = site.categories | sort %}
         {% for category in categories %}
-         <span class="site-tag">
-            <a href="#{{ category | first | slugify }}">
-                    {{ category[0] | replace:'-', ' ' }} ({{ category | last | size }})
-            </a>
-        </span>
+            <span class="site-tag">
+                <a href="#{{ category | first | slugify }}">
+                        {{ category[0] | replace:'-', ' ' }} ({{ category | last | size }})
+                </a>
+            </span>
         {% endfor %}
-        </div>
+    </div>
 
 ## Section 4: Blog Post by Category
 
 Next you need to add the code to display the list of blog post by category and sorted by title
 
-        <div id="index">
-
+    <div id="index">
         {% for category in categories %}
-        <a name="{{ category[0] }}"></a><h2>{{ category[0] | replace:'-', ' ' }} ({{ category | last | size }}) </h2>
-        {% assign sorted_posts = site.posts | sort: 'title' %}
-        {% for post in sorted_posts %}
-        {%if post.categories contains category[0]%}
-
-          <h3><a href="{{ site.url }}{{ site.baseurl }}{{ post.url }}" title="{{ post.title }}">{{ post.title }} <p class="date">{{ post.date |  date: "%B %e, %Y" }}</p></a></h3>
-           <p>{{ post.excerpt | strip_html | truncate: 160 }}</p>
-
-        {%endif%}
+            <a name="{{ category[0] }}"></a>
+            <h2>{{ category[0] | replace:'-', ' ' }} ({{ category | last | size }})</h2>
+            {% assign sorted_posts = site.posts | sort: 'title' %}
+            {% for post in sorted_posts %}
+                {%if post.categories contains category[0]%}
+                    <h3><a href="{{ site.url }}{{ site.baseurl }}{{ post.url }}" title="{{ post.title }}">{{ post.title }} <p class="date">{{ post.date |  date: "%B %e, %Y" }}</p></a></h3>
+                    <p>{{ post.excerpt | strip_html | truncate: 160 }}</p>
+                {%endif%}
+            {% endfor %}
         {% endfor %}
+    </div>
 
-        {% endfor %}
-        </div>
-
-##  Section 5: Viewing the Category Page
+## Section 5: Viewing the Category Page
 
 1. After you have added the above text, scroll to the bottom of the page, add your commit note, and    click the commit button.
 
@@ -115,13 +108,12 @@ Unlike the portfolio page that we created in the last lesson, this time we are n
 
 1. Right after the &lt;/header&gt; tag, add the following html snippet
 
-          <div class="container" >
-                <div id="archives">
-                    browse by <a title="The complete archive of {{ site.name }}'s Blog by category"
-                                 href="{{ site.url}}{{ site.baseurl }}//categoryview">category</a>
-                </div>
+        <div class="container" >
+            <div id="archives">
+                browse by <a title="The complete archive of {{ site.name }}'s Blog by category"
+                                href="{{ site.url}}{{ site.baseurl }}/categoryview">category</a>
             </div>
-          </div>
+        </div>
 
 1. Scroll down to the bottom, add the commit comment, and click on the commit change button.
 

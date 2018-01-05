@@ -14,22 +14,18 @@ excerpt: "Welcome to the series on getting started with .NET Web Api.  In this a
 published: true
 series: ["web-api-getting-started"]
 title: ASP.NET Web Api - Getting Started
-
 ---
 
 Welcome to the series on getting started with ASP.NET Web Api.  In this article we will create a basic C# Web Api with Windows Integrated Authentication and create our first Web Api endpoint.      
 
-ASP.NET Web API is a framework that makes it easy to build HTTP services that reach a broad range of clients, including browsers and mobile devices. ASP.NET Web API is a great platform for building RESTful applications using the .NET Framework.  
+ASP.NET Web API is a framework that makes it easy to build HTTP services that reach a broad range of clients, including browsers and mobile devices. ASP.NET Web API is a great platform for building RESTful applications using the .NET Framework. 
 
 In this series we will learn how to:
 
-- Create a basic C# Web Api with Windows Integrated Authentication 
-- Setup camel-cased json properties for the response 
-- Setup A Standard Response
-- Solving CORS Issues When Using Credentials
-
-
-
+* Create a basic C# Web Api with Windows Integrated Authentication 
+* Setup camel-cased json properties for the response 
+* Setup A Standard Response
+* Solving CORS Issues When Using Credentials
 
 ## Create a new Web Api Project 
 
@@ -49,7 +45,7 @@ To make a C# application with Visual Studio:
     1. Select a location to store the project (c:\projects in this case)
     1. Uncheck the "Application Insights" box since we are not going to be using Application Insights
     1. Click the Ok button
-    
+
     ![New Web Application](/images/web-api-getting-started/vs-new-web-app.png)
 
 * On the next screen, we need to select the New ASP.NET Project Options
@@ -62,7 +58,7 @@ To make a C# application with Visual Studio:
     1. Click Ok to generate the project 
 
     ![Web App Options](/images/web-api-getting-started/vs-new-web-app-options.png)
- 
+
 * You project has now been generated and you should see a screen similar to the follow in Visual Studio
 
     ![Generated Project](/images/web-api-getting-started/vs-new-web-app-finished.png)
@@ -74,7 +70,6 @@ To make a C# application with Visual Studio:
 * The Web Api project comes with a couple of Web Api Endpoints and a very useful Api documentation page that shows all of the available Api endpoints.    Click on the API link in the top nav bar to view the documentation page.
 
     ![Api Doc Page in Chrome](/images/web-api-getting-started/chrome-api-doc-page.png)
-
 
 ## Creating Our First Controller
 
@@ -89,8 +84,7 @@ Now that we have a working Web Api project, lets add some functionality to it.  
 
 ![Web Api New Controller](/images/web-api-getting-started/webapi-new-controller.png)    
 
-
-This will open up the Controller type options.  
+This will open up the Controller type options.
 
 1. Select "Web API 2 Controller - Empty"
 1. Click the Add button
@@ -103,8 +97,6 @@ Next you will need to input the file name.
 1. Click the Add button
 
     ![Web Api Controller File Name](/images/web-api-getting-started/webapi-new-controller-filename.png)
-
-
 
 We now have a blank Web Api Controller that is ready for us to create methods within.
 
@@ -152,4 +144,3 @@ The response you get back will be an xml document that contains a string with yo
 ## Conclusion
 
 In this guide we learned how to create a basic C# Web Api project that uses Windows Integrated Authentication.  In the next guide, we will learn how to convert the JSON responses to be camel cased instead of following the .NET pascal case convention without having to update all of our .NET class. 
-

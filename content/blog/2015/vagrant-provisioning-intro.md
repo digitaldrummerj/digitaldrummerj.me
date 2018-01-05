@@ -3,7 +3,7 @@ categories:
 - virtualbox
 - vagrant
 - chocolatey
-date: 2015-06-18T00:00:00Z
+date: 2015-06-18T01:00:00Z
 excerpt: "Welcome to the Vagrant lesson on what Vagrant provisioning is.\n\nProvisioners
   allow you to automatically install software and alter configurations during the
   Vagrant up process.\n\nThis is useful since boxes typically aren't built perfectly
