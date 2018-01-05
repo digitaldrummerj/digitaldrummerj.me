@@ -42,7 +42,6 @@ Note: I assume that you have alrady cloned your jekyll repo to your machine.  Th
 	* The article number for this post in the idx variable.  
 	* We will loop through the post and increment the count if the Front Matter series tag match the current page's series tag.     		
 
-			{%  raw %}
 			{% assign count = '0' %}
 			{% assign idx = '0' %}
 			{% for post in site.posts reversed %}
@@ -53,14 +52,12 @@ Note: I assume that you have alrady cloned your jekyll repo to your machine.  Th
 					{% endif %}
 				{% endif %}
 			{% endfor %}
-			{% endraw %}
 		
 1. 	Now we need to output the actual html code.  
 	* Note: We are using the panel css from bootstrap.  If you have bootstrap you are good, if not we will add just the panel css in the next section.
 	* First, we output a header for the series that says which part # this post is and how many total parts there are for the series.
 	* Second, we loop through the post and increment the count if the Front Matter series tag match the current page's series tag so that we can append Part # onto each post title.  If the url for the post in the series matches the current page's url, then it outputs "This Article" instead of the actual title.
-	
-		{%  raw %}		
+
 			<div class="panel seriesNote">
 				<p>
 				This article is <strong>Part {{ idx }}</strong> in a <strong>{{ count }}-Part</strong> Series.
@@ -81,7 +78,6 @@ Note: I assume that you have alrady cloned your jekyll repo to your machine.  Th
 				{% endfor %}
 				</ul>
 			</div>
-		{% endraw %}
 		
 1.  In the next section, we will add the series listing onto a couple of post so you can see them in action
 
@@ -213,4 +209,3 @@ In this section we will add in the css to make the series listing stand out and 
 Now if you do an article series, you can easily have a professional looking series listing and it requires very little to get it working.  
 
 In the next lesson, I will show you how to get the code highlighting working when your code includes liquid syntax such as we did in the code examples in this article.
-

@@ -75,7 +75,6 @@ If you have been following along with the other lessons in the series, this shou
 
 1. Before the &lt;div id="archives"&gt; tag that we added previously, add the following html snippet.
 
-    {% raw %}
                 <div id="search">
                     <form role="search" method="get" action="{{ site.baseurl }}//search/">
                         <input id="searchString" name="searchString"
@@ -89,12 +88,11 @@ If you have been following along with the other lessons in the series, this shou
     {% raw %}
         <div class="grid" id="searchBar">
             <div>
-     {% endraw %}
 
 1. After the &lt;div id="archives"&gt; section add another &lt;/div&gt; tag.
 
 1. The whole section for the header should look like this
-    {% raw %}
+
         <div class="grid" id="searchBar">
              <div>
                  <div id="search">
@@ -113,8 +111,6 @@ If you have been following along with the other lessons in the series, this shou
                  </div>
              </div>
          </div>
-    {% endraw %}
-
 
 1. Scroll down to the bottom, add the commit comment, and click on the commit change button.
 
@@ -132,7 +128,6 @@ If you have been following along with the other lessons in the series, this shou
 
 1. Add the following to the bottom of the file before the two @import statements.
 
-            {% raw %}
             #searchBar {
               font-size: 80%;
               padding: 0.43em 0 0.57em;
@@ -166,9 +161,7 @@ If you have been following along with the other lessons in the series, this shou
                   text-wrap: avoid;
                 }
               }
-            }
-            {% endraw %}
-
+           }
 
 1. Scroll down to the bottom, add the commit comment, and click on the commit change button.
 
@@ -234,10 +227,8 @@ If you have been following along with the other lessons in the series, this shou
 
     ![Search View](/images/BloggingOnGitHub/github_part_7_search_in_browser.png)
 
-
 ## Conclusion
 
 You now have the ability for Google to index and search your blog.  This will make it much easier for your reader to find older posts that they may be interested in and hopefully keep them on your blog longer.
 
 In our next lesson, I will show you how to host your http://[username].github.io blog with a custom domain name like I am doing with http://digitaldrummerj.me
-

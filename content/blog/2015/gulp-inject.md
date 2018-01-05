@@ -29,7 +29,6 @@ You should already have NodeJS installed.  To install Gulp:
 
         $ sudo npm install gulp -g
 
-
 ## Installing Gulp-Inject
 
 1. To add the gulp-inject module to the package.json file as a development dependency  you need to install gulp-inject with the --save-dev argument.  From your Ionic project directory run the command:

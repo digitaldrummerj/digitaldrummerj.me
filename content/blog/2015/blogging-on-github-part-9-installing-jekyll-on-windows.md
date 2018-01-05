@@ -82,8 +82,6 @@ Now that you have Boxstarter installed, you will notice on your desktop a new ic
 		
 1. If there were no errors, you are now ready to install jekyll.
 
-
-
 ## Section 2: Getting your Blog onto your computer
 
 In this section, you will clone the blog repo from github and install jekyll.
@@ -163,13 +161,10 @@ However, by default your _config.yml file will be set for production which will 
 
 	![Jekyll Serve Success](/images/BloggingOnGitHub/jekyllserve_multipleconfigs.png)
  
-1. Now if you open up your browser and navigate to http://localhost:4000 you will see you blog and any place that reference site.url will be working..
-
+1. Now if you open up your browser and navigate to http://localhost:4000 you will see you blog and any place that reference site.url will be working.
 
 ## Conclusion
 
 Now you are ready to do all of your editing locally and  test it out before the world gets to see it. 
 
 In our next lesson, I will show you how to install jekyll on OSx and Linux.  Then you will learn how to create draft blog post that will only show on your local machine so that you don't have to either clutter up your post directory with drafts or worry about accidentally publishing an unfinished article.
-
-

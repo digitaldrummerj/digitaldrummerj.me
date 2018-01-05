@@ -42,20 +42,17 @@ If you have been following along with the other lessons in the series, this shou
 
 Add the following front matter to the top of the archivebycategory.md file.
 
-    {% raw %}
     ---
     layout: page
     title: Post by Date
     permalink: /monthview/
     sitemap: false
     ---
-    {% endraw %}
 
 ## Section 3:  Html to Display Post
 
 After the front matter, add the following code to display the post by Year and Month.
 
-    {% raw %}
     <div id="index">
     {% for post in site.posts %}
     {% unless post.next %}
@@ -89,7 +86,6 @@ After the front matter, add the following code to display the post by Year and M
 
     {% endfor %}
     </div>
-    {% endraw %}
 
 ##  Section 4: Viewing the Post by Date Page
 
@@ -117,12 +113,9 @@ We are going to add the "show by date" link into the header section next to the 
 
 1. In the &lt;div id="archives"&gt; tag that we added previously, add the following html snippet after the category view link.
 
-    {% raw %}
         or <a title="The complete archive of
             {{ site.name }}'s Blog by month"
             href="{{ site.url}}{{ site.baseurl }}//monthview">date</a>
-      
-     {% endraw %}
 
     ![GitHub Header Add Html](/images/BloggingOnGitHub/github_part_6_browse_by_category_in_header_html.png)
 

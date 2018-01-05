@@ -82,16 +82,13 @@ You are now ready to pull the changes from the original repository to the your f
 1. At this point your local branch is synced to the original repositories master branch.  If you want to update the Github repository, you need to push your changes.
 
         $ git push origin master
-             
 
 ## Wrap-Up
 
-To summarize, with the 5 commands below you can sync your forked repository with the original repository and push the changes to your Github repository.     
-
+To summarize, with the 5 commands below you can sync your forked repository with the original repository and push the changes to your Github repository.
  
         $ git remote add upstream https://github.com/[Original Owner Username]/[Original Repository].git
         $ git fetch upstream
         $ git checkout master
         $ git merge upstream/master
         $ git push
-          

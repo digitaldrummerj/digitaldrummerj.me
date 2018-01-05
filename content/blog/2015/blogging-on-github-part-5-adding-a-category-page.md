@@ -42,20 +42,17 @@ If you have been following along with the other lessons in the series, this shou
 
 Add the following front matter to the top of the archivebycategory.md file.
 
-    {% raw %}
         ---
         layout: page
         title: Post by Category
         permalink: /categoryview/
         sitemap: false
         ---
-    {% endraw %}
 
 ## Section 3: Category List
 
 After the front matter, add the following code to display the categories and the number of post per category.  Each category will link to further down in the page where is will show the post for that category.
 
-    {% raw %}
         <div>
         {% assign categories = site.categories | sort %}
         {% for category in categories %}
@@ -66,13 +63,11 @@ After the front matter, add the following code to display the categories and the
         </span>
         {% endfor %}
         </div>
-    {% endraw %}
 
 ## Section 4: Blog Post by Category
 
 Next you need to add the code to display the list of blog post by category and sorted by title
 
-    {% raw %}
         <div id="index">
 
         {% for category in categories %}
@@ -89,8 +84,6 @@ Next you need to add the code to display the list of blog post by category and s
 
         {% endfor %}
         </div>
-    {% endraw %}
-
 
 ##  Section 5: Viewing the Category Page
 
@@ -122,7 +115,6 @@ Unlike the portfolio page that we created in the last lesson, this time we are n
 
 1. Right after the &lt;/header&gt; tag, add the following html snippet
 
-        {% raw %}
           <div class="container" >
                 <div id="archives">
                     browse by <a title="The complete archive of {{ site.name }}'s Blog by category"
@@ -130,7 +122,6 @@ Unlike the portfolio page that we created in the last lesson, this time we are n
                 </div>
             </div>
           </div>
-        {% endraw %}
 
 1. Scroll down to the bottom, add the commit comment, and click on the commit change button.
 

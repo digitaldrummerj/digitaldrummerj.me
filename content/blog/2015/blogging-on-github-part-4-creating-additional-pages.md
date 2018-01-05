@@ -49,7 +49,7 @@ By default jekyll  adds files to the sitemap that search engines use to find pag
 
 In order for the page to available at [username].github.io/portfolio, you need to set the front matter permalink to /portfolio/ .
 
-**front  matter tags**
+### front  matter tags
 
 	---
 	title: My Portfolio

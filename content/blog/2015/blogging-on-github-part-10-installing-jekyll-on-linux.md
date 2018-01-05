@@ -71,25 +71,21 @@ Ubuntu Trusty 14.04 unfortunately comes with Ruby 1.9.x and we need 2.x.  There 
 1. Verify your ruby version changed with 
 
 		ruby -v
-	
-	
+
 1. Make sure that the Ruby Gems are updated and then install the bundler GEM	
 	
 		sudo gem update --system 	
 		sudo gem install bundler
-	
-	
+
 ### Section 1.3: Python
 
 In order to use the Pygments code syntax highlighter, we need to install python pip
 
 	sudo apt-get install python-pip -y
 	
-	
 ### Section 1.4: Installing Git
 
 	sudo apt-get install git -y	
-
 
 ## Section 2: Getting your Blog onto your computer
 
@@ -97,12 +93,10 @@ In this section, you will clone the blog repo from github and install jekyll.
 
 1. Open a terminal 
 1. Create the directory ~/projects
-
 		
 		mkdir ~/projects
 	
 1. cd into c:\projects
-
 		 
 		cd ~/projects
 		  
@@ -123,7 +117,6 @@ In this section, you will clone the blog repo from github and install jekyll.
 1. Run the command to install the github-pages gem which has all of the required modules to make jekyll work and the jekyll redirect from plugin.  It is one of the few plugins that Github pages supports and allows you to move pages around and have them automatically redirect so that people with bookmarks can still find a moved page.   
 
 		bundle install
-
 
 Now we have jekyll installed.  Time to test it out
 
@@ -162,14 +155,10 @@ However, by default your _config.yml file will be set for production which will 
 	
 	![Jekyll Serve Success](/images/BloggingOnGitHub/jekyllserve_multipleconfigs.png)
 
-1. Now if you open up your browser and navigate to http://localhost:4000 you will see you blog and any place that reference site.url will be working..
-
+1. Now if you open up your browser and navigate to http://localhost:4000 you will see you blog and any place that reference site.url will be working.
 
 ## Conclusion
 
 Now you are ready to do all of your editing locally and  test it out before the world gets to see it. 
 
 In our next lesson, I will show you how to install jekyll on OSx.  Then you will learn how to create draft blog post that will only show on your local machine so that you don't have to either clutter up your post directory with drafts or worry about accidentally publishing an unfinished article.
-
-
-

@@ -36,6 +36,7 @@ The quickest and easiest way to get started with Jekyll is fork an existing Jeky
 The repository that I used and recommend to fork is the "Jekyll Now" repository at  [https://github.com/barryclark/jekyll-now](https://github.com/barryclark/jekyll-now).  The Jekyll based repository includes a lot of very useful features for a blog out of the box for you such as:  a nice looking theme, code syntax highlighter, social buttons (twitter, Facebook, Github, etc), Disqus blog commenting api, and Google analytics.
 
 ## Section 2: Forking the Repository
+
 Forking a repository in Github is extremely simple.  Go to [https://github.com/barryclark/jekyll-now](https://github.com/barryclark/jekyll-now) and click the ![github fork button](/images/BloggingOnGitHub/github_fork_button.png) button.  Github will now create a fork of the repository for you into your account.
 
 ## Section 3: Renaming the Repository

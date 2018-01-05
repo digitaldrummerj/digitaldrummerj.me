@@ -28,7 +28,6 @@ Instead, it is better if you can test out all of your changes and review your bl
 
 We need to install XCode command line tools, nodejs and python pip.
 
-
 ### Section 1.1: Installing NodeJs
 
 Head over to [nodejs.org](https://nodejs.org) and download the NodeJs Installer and run it.  Take all of the defaults.
@@ -40,7 +39,6 @@ Unfortunately to get the XCode command line tools, you first need to install XCo
 1. Go the App Store
 1. Search for XCode 
 1. Hit the Install Button
-
 
 Once XCode is installed, open up a terminal windows (Application -> Other -> Terminal) and run the following command:
 
@@ -57,19 +55,16 @@ This will bring up a windows asking you to install the command line tools packag
 	sudo gem update --system 	
 	sudo gem install bundler
 
-
 ## Section 2: Getting your Blog onto your computer
 
 In this section, you will clone the blog repo from github and install jekyll.
 
 1. Open a terminal 
 1. Create the directory ~/projects
-
 		
 		mkdir ~/projects
 	
 1. cd into c:\projects
-
 		 
 		cd ~/projects
 		  
@@ -91,7 +86,6 @@ In this section, you will clone the blog repo from github and install jekyll.
 
 		bundle install
 
-
 Now we have jekyll installed.  Time to test it out
 
 ## Section 3: Testing Your Blog Works on Your Computer
@@ -105,7 +99,6 @@ Now that we have everything installed for jekyll it is time to test it out.
 1. If it build successfully you will see something like this
 
 	![Jekyll Serve Success](/images/BloggingOnGitHub/jekyllserve.png)
-
 
 1. Now if you open up your browser and navigate to http://localhost:4000 you will see you blog.
 
@@ -130,13 +123,10 @@ However, by default your _config.yml file will be set for production which will 
 
 	![Jekyll Serve Success](/images/BloggingOnGitHub/jekyllserve_multipleconfigs.png)
  
-1. Now if you open up your browser and navigate to http://localhost:4000 you will see you blog and any place that reference site.url will be working..
-
+1. Now if you open up your browser and navigate to http://localhost:4000 you will see you blog and any place that reference site.url will be working.
 
 ## Conclusion
 
 Now you are ready to do all of your editing locally and  test it out before the world gets to see it. 
 
 In our next lesson, I will show you how to create draft blog post that will only show on your local machine so that you don't have to either clutter up your post directory with drafts or worry about accidentally publishing an unfinished article.
-
-

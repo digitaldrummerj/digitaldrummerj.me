@@ -94,4 +94,3 @@ To summarize, with the 5 commands below you can sync your forked repository with
         $ git checkout master
         $ git merge upstream/master
         $ git push
-          

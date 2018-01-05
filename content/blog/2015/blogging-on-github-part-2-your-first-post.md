@@ -63,9 +63,9 @@ Now on to creating actual content in your post.
 
 The content of the post will be written in markdown and will be directly below the front matter section .
  
- Below are common markdown tags that you will want to use.  headers, lists, bold, bullets, links and code highlighting.
+Below are common markdown tags that you will want to use.  headers, lists, bold, bullets, links and code highlighting.
  
-**Common Markdown Tags**
+### Common Markdown Tags
 
 #### Headers  
 
@@ -134,10 +134,10 @@ or use the highlighter markup
 
 
 {{< highlight text >}}
-{{< highlight csharp >}}	
+{% highlight csharp %}
 // some c# code	
 var a = "bad variable name"
-{{< / highlight >}}
+{% endhighlight %}
 {{< / highlight >}}
 
 
