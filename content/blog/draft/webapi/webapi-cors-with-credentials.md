@@ -1,6 +1,6 @@
 ---
 categories:
-- webapi
+- web-api
 - cors
 date: 2016-08-31T00:00:00Z
 draft: true
