@@ -10,7 +10,9 @@ title: WebApi Cors Solved
 
 >Note: If you are using Windows Authentication and expecting the caller to pass credentials to use your WebApi you need to follow the instructions in the [WebApi Cors with Credentials/](../webapi-cors-with-credentials/) post.
 
-{{< alert text="global.asax.cs" class="success" >}}
+{{< alert  class="success" >}}
+global.asax.cs
+{{</alert>}}
 
 ```c#
 protected void Application_BeginRequest()
@@ -23,7 +25,9 @@ protected void Application_BeginRequest()
 }
 ```
 
-{{< alert text="web.config" class="success" >}}
+{{< alert class="success" >}}
+web.config
+{{</alert>}}
 
 ```xml
 <system.webServer>
@@ -37,11 +41,15 @@ protected void Application_BeginRequest()
 </system.webServer>
 ```
 
-{{< alert text="nuget package" class="success" >}}
+{{< alert class="success" >}}
+nuget package
+{{</alert>}}
 
 Microsoft.AspNet.Cors
 
-{{< alert text="WebApiConfig.cs" class="success" >}}
+{{< alert class="success" >}}
+WebApiConfig.cs
+{{</alert>}}
 
 ```c#
 //CORS

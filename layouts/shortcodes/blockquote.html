@@ -1,3 +1,5 @@
+
+<!-- reset scratch variables -->
 <blockquote class="{{ with .Get "class" }}{{.}}{{ end }}">
-    <p>{{ if .Get "start" }}<strong>{{ with .Get "start" }}{{ . }}{{ end }}:</strong>{{ end }}{{ with .Get "text" }}{{. }}{{ end }}</p>
+    <p>{{ .Inner | markdownify }}</p>
 </blockquote>

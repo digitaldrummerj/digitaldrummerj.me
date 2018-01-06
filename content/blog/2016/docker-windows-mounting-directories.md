@@ -28,7 +28,9 @@ To mount additional directories, you need to add the directory as a shared folde
 
 The first step is to add the directories as Virtualbox shared folders by using  the VBoxManage.exe utility that comes with Virtualbox.  VBoxManage.exe is located in your Virtualbox install directory, which by default is C:\Program Files\Oracle\VirtualBox.
 
-{{< blockquote  start="Warning" text="To make symlinks works when you start up the docker-machine, you need to run the Docker Quickstart Terminal or Command Line as an administrator.  This is a security limitation of Windows for symlinks." class="warning" >}}
+{{< blockquote class="warning" >}}
+**Warning:** To make symlinks works when you start up the docker-machine, you need to run the Docker Quickstart Terminal or Command Line as an administrator.  This is a security limitation of Windows for symlinks.
+{{</blockquote>}}
 
 Before adding the shared folders, we need to make sure that no docker machines are running.  We are going to check for running docker containers and machines as both a  non-admin and admin.
 
@@ -88,7 +90,9 @@ We are now ready to add in our shared folders.
         $ VBoxManage.exe sharedfolder add default --name "c/projects" --hostpath "\\?\c:\projects" --automount
         $ VBoxManage.exe sharedfolder add default --name "c/personal" --hostpath "\\?\c:\personal" --automount
 
-{{< blockquote text="The \\?\ in the hostpath tells Windows to enable long file paths." class="warning" >}}
+{{< blockquote class="warning" >}}
+The \\?\ in the hostpath tells Windows to enable long file paths.
+{{</blockquote>}}
 
 ## Step 2: Allow Long Paths and Symlinks
 
@@ -104,7 +108,9 @@ Next you need to enable symlinks for each of the shared folders.  Replace Shared
 
 ## Step 3: Mounting Shared Folders in Docker
 
-{{< blockquote start="Warning" text="To make symlinks works when you start up the docker-machine, you need to run the Docker Quickstart Terminal as an administrator.  This is a security limitation of Windows for symlinks.  Right-click on the Docker Quickstart Terminal and select Run As Administrator." class="warning" >}}
+{{< blockquote class="warning" >}}
+**Warning:** To make symlinks works when you start up the docker-machine, you need to run the Docker Quickstart Terminal as an administrator.  This is a security limitation of Windows for symlinks.  Right-click on the Docker Quickstart Terminal and select Run As Administrator. 
+{{</blockquote>}}
 
 Unfortunately even with auto-mount Docker will only mount the c/Users folder in the docker-machine.  If you want the folders to auto-mount you will need to manually mount them each time you start up the default docker machine. 
 
