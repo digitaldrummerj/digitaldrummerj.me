@@ -7,7 +7,8 @@
                 {{ range ((where .Site.RegularPages "Section" "blog").ByDate.Reverse ) }}
                     <li>
                          
-                        <a href="{{ .RelPermalink }}">{{ .Title }} - {{ .PublishDate.Format "Jan 02, 2006" }}</a>
+                        <a href="{{ .RelPermalink }}">{{ .Title }} - {{ .PublishDate.Format "Jan 02, 2006" }}{{ if (.Draft ) }} - DRAFT {{ end }}
+                            </a>
                     </li>
                 {{ end }}
 
