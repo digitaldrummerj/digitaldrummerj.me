@@ -1,7 +1,7 @@
 ---
 categories:
 - programming
-- c#
+- c-sharp
 date: 2015-10-05T00:00:00Z
 excerpt: "Throwing away exceptions in your code is just a bad practice and makes it
   harder to support your application.  It may make it easier for you as a developer
