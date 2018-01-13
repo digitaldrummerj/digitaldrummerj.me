@@ -1,7 +1,7 @@
 ---
 categories: ["blogging"]
 date: 2018-01-16T00:00:00Z
-published: true
+published: false
 title: 'Automatically Tweet New Blog Post'
 ---
 
