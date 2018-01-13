@@ -61,12 +61,12 @@ disqusShortname = "digitaldrummerj"
 
 [[menu.workshop]]
 name="Rapid API Development with SailsJS"
-url="http://https://digitaldrummerj.github.io/sails-tutorial"
+url="https://digitaldrummerj.github.io/sails-tutorial"
 weight=1
 
 [[menu.workshop]]
 name="Up and Running with Angular"
-url="http://https://digitaldrummerj.github.io/angular-tutorial"
+url="https://digitaldrummerj.github.io/angular-tutorial"
 weight=2
 
 # Theme variables
