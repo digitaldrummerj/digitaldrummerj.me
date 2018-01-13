@@ -12,7 +12,7 @@ title: ASP.NET Web Api with Credentials CORS Issues Solved
 
 Welcome to the continuing series on getting started with ASP.NET Web Api.  At this point we have created a ASP.NET Web Api project, created our 1st controller, enabled Windows authentication, set the JSON format, and created a generic response handler.  In this article we will learn how to solve in an issue that many enterprise developers have run across when called your ASP.NET Web Api with Windows Authentication client-side code such as Angular.  When you try to make this access the endpoints for your Api from Angular when using credentials, you will get a Cross-Origin Resource Sharing (CORS) error. 
 
-When you make a call to your Api from Angular, Web Api will check if the url is allowed to access the Api by using the CORS setup.  However, when using credentials you can not have a wildcard for the allowed url which presents a problem when you are trying to make a Api for other websites to use.   
+When you make a call to your Api from Angular, Web Api will check if the url is allowed to access the Api by using the CORS setup.  However, when using credentials you can not have a wildcard for the allowed url which presents a problem when you are trying to make a Api for other websites to use.
 
 In order to setup CORS, we need to installed the Nuget package `Microsoft.AspNet.WebApi.Cors`
 
@@ -20,7 +20,7 @@ In order to setup CORS, we need to installed the Nuget package `Microsoft.AspNet
 1. Once the Nuget UI comes up, click on Browse and search for Microsoft.AspNet.WebApi.Cors
 1. Once you find the package, click on it and then click the install button
 
-After the package is installed, we can configure CORS in either the web.config or the App_Start\WebApiConfig.cs.  Since ultimately we are making an Api that any website can call, we are going to set the CORS configuration in code instead of using the web.config.  
+After the package is installed, we can configure CORS in either the web.config or the App_Start\WebApiConfig.cs.  Since ultimately we are making an Api that any website can call, we are going to set the CORS configuration in code instead of using the web.config.
 
 With in the WebApiConfig.cs to the Register method, add the following code before the routes are defined.  
 
