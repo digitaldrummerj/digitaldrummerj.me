@@ -21,7 +21,7 @@
   </noscript>
 
 
-  <link href="{{ $.Site.BaseURL }}/feed.xml" rel="alternate" type="application/rss+xml" title="{{ .Site.Title }}" />
+  <link href="{{ $.Site.BaseURL }}feed.xml" rel="alternate" type="application/rss+xml" title="{{ .Site.Title }}" />
 
   {{ if .Site.Params.cookie_consent_info_url }}
     {{ partial "cookie-consent.html" . }}

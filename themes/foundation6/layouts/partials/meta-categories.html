@@ -3,6 +3,6 @@
 <span class="meta-tags">
   <span class="icon-price-tag"></span>
   <span> 
-{{ range $index, $category := .Params.categories }}{{ if  (gt $index 0) }}/ {{ end }}<a href="{{ "/categories/" | relLangURL }}{{ . | urlize }}">{{.}}</a>{{ end }}
+{{ range $index, $category := .Params.categories }}{{ if  (gt $index 0) }}/ {{ end }}<a href="{{ $.Site.BaseURL }}categories/{{ . | urlize }}">{{.}}</a>{{ end }}
 </span></span>
 {{ end }}

@@ -4,8 +4,8 @@
       <div class="panel radius">
       <h3>Subscribe</h3>
       <ul class="no-bullet">
-        <li><span class="icon-rss"></span><a href="{{ $.Site.BaseURL }}/feed.xml">RSS Feed</a>
-          <li><span class="icon-rss"></span><a href="{{ $.Site.BaseURL }}/atom.xml">Atom Feed</a></ul>
+        <li><span class="icon-rss"></span><a href="{{ $.Site.BaseURL }}feed.xml">RSS Feed</a>
+          <li><span class="icon-rss"></span><a href="{{ $.Site.BaseURL }}atom.xml">Atom Feed</a></ul>
     </div>
     {{ end }}
     {{ if .Site.Params.sidebar.recent_articles}}
@@ -13,7 +13,7 @@
 
       {{ $num_recent_posts := (index .Site.Params.sidebar "num_recent_posts" | default 5) }}
 
-      <h3>{{ i18n "recentPosts" }} <span style="float: right"><small>(<a href="{{ $.Site.BaseURL }}/blog/">All Posts</a>)</small></span></h3>
+      <h3>{{ i18n "recentPosts" }} <span style="float: right"><small>(<a href="{{ $.Site.BaseURL }}blog/">All Posts</a>)</small></span></h3>
       <ul class="no-bullet ">
         {{ range first $num_recent_posts (where .Site.Pages "Type" "blog") }}
         <li><a href="{{ .RelPermalink }}">{{ .Title | markdownify }}</a></li>
@@ -26,9 +26,9 @@
     <div class="panel radius">
         <h3>Archive</h3>
         <ul class="no-bullet">
-          <li><span class="icon-archive"></span><a href="{{ $.Site.BaseURL }}/blog/archive/monthview">By Date</a></li>
-          <li><span class="icon-archive"></span><a href="{{ $.Site.BaseURL }}/blog/archive/categoryview">By Category</a></li>
-          <li><span class="icon-archive"></span><a href="{{ $.Site.BaseURL }}/blog/archive/tagcloudview">By Tag Cloud</a></li>
+          <li><span class="icon-archive"></span><a href="{{ $.Site.BaseURL }}blog/archive/monthview">By Date</a></li>
+          <li><span class="icon-archive"></span><a href="{{ $.Site.BaseURL }}blog/archive/categoryview">By Category</a></li>
+          <li><span class="icon-archive"></span><a href="{{ $.Site.BaseURL }}blog/archive/tagcloudview">By Tag Cloud</a></li>
         </ul>
       </div>
     {{ end }}
