@@ -1,6 +1,6 @@
 # Hugo variables
 #
-baseurl = "/"
+baseurl = "https://digitaldrummerj.me/"
 languageCode = "en-us"
 title = "Justin James"
 theme = "foundation6"
