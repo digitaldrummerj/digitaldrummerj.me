@@ -13,8 +13,9 @@ excerpt: "I have been really enjoying working with Angular 2 over the last few m
   is.  \n"
 published: true
 title: Angular - WTF Module Won't Route
-
 ---
+
+> Note: This post applies to Angular.  The 2+ version of Angular.
 
 I have been really enjoying working with Angular 2 over the last few months but the other day I spent well over an hour cursing Angular wondering why my new module would not route.  I didn't have this much trouble when I created my other modules a few weeks before.  However, this time when I navigated to my new module route it kept going to my catch all route.
 

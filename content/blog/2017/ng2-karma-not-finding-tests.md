@@ -7,8 +7,10 @@ excerpt: |
 
   When I tried to run the built-in test instead of finding the 3 tests, it found **0** tests.  Never having used Karma before, I was unsure what the issue was or where to start troubleshooting.  Luckily it turned out to be a really simple fix once I figured it out and it had to do with Chrome v55 not running the test.ts file.
 published: true
-title: Angular 2 - No  Test Found
+title: Angular - No  Test Found
 ---
+
+> Note: This post applies to Angular.  The 2+ version of Angular.
 
 Are you trying to run your Angular 2 unit test and the Karma test runner is not finding any tests to execute?  This is exactly what happened to me when I tried to run the unit tests that are included as part of the project that the Angular CLI generates.  
 

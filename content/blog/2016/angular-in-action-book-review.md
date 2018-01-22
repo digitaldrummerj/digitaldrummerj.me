@@ -1,13 +1,15 @@
 ---
 categories:
-- angular
+- angularjs
 - ionic
 - book reviews
 date: 2016-01-21T00:00:00Z
 published: true
-title: Angular In Action Book Review
+title: AngularJS In Action Book Review
 
 ---
+
+> Note: This post applies to AngularJS.  The 1.x version of Angular.
 
 <img style="float: left;" src="/images/bookreviews/angular_in_action_cover.jpg"> At the [HolidayJs](http://holidayjs.com) event I won a book and I picked a copy of [Angular In Action](https://www.manning.com/books/angularjs-in-action) by [Lukas Ruebbelke](http://onehungrymind.com/).  I had already been using Angular for a few projects and wasn't expecting to get much out of the book.  Honestly I got it to use as more of a give away at one of my talks but figured I would at least glance through a few chapters of it first.  Needless to say I ended up reading the whole book and plan to keep it.
 

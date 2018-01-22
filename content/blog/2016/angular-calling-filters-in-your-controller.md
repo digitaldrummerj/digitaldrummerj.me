@@ -1,10 +1,12 @@
 ---
 categories:
-- angular
+- angularjs
 date: 2016-01-28T00:00:00Z
 published: true
-title: Calling Filters in Your Angular Controller
+title: AngularJS - Calling Filters in Your Angular Controller
 ---
+
+> Note: This post applies to AngularJS.  The 1.x version of Angular.
 
 Here is a quick tip for how to call a filter from within your Angular controller.  This example assumes that you already know what a filter is and have one created.
 

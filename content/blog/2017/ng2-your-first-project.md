@@ -18,16 +18,17 @@ excerpt: "Welcome to the series on Getting Started with Angular 2.  Angular 2 wa
   modules, and pipes."
 published: true
 series: ["angular2-getting-started"]
-title: Angular 2 - Your First Project
+title: Angular - Your First Project
 
 ---
 
-Welcome to the series on Getting Started with Angular 2.  Angular 2 was released in September 2016 and and so far I have been enjoying working with it.  I have been using the TypeScript version of Angular 2.  It is has been pretty easy for me so far to pick it up but there have been a few things that have made me scratch me head.  In this series I am going to walk you through creating a simple Angular 2 project that has a header/footer, routing to components/modules, show how to add new components/services, create multiple modules, lock down routes, changing UI configurations based on the environment parameter and adding in the Bootstrap library.  When you are done with the series, you will have a good structure for any project that you want to start.
+> Note: This post applies to Angular.  The 2+ version of Angular.
 
-In this post we will get everything setup on your machine to do Angular 2 developer and then you will create your Angular 2 project that the rest of the series will build on. We will be using the new Angular CLI to generate the project and several of the features such as components, services, modules, and pipes.  
+Welcome to the series on Getting Started with Angular.  Angular 2 was released in September 2016 and and so far I have been enjoying working with it.  I have been using the TypeScript version of Angular 2.  It is has been pretty easy for me so far to pick it up but there have been a few things that have made me scratch me head.  In this series I am going to walk you through creating a simple Angular 2 project that has a header/footer, routing to components/modules, show how to add new components/services, create multiple modules, lock down routes, changing UI configurations based on the environment parameter and adding in the Bootstrap library.  When you are done with the series, you will have a good structure for any project that you want to start.
 
+In this post we will get everything setup on your machine to do Angular development and then you will create your Angular  project that the rest of the series will build on. We will be using the new Angular CLI to generate the project and several of the features such as components, services, modules, and pipes.
 
-## Installing The Angular  CLI
+## Installing The Angular CLI
 
  The Angular CLI is a node based utility which means that we need to first install Node before we can install the npm package angular-cli.  The minimum version of Node that is required for the the Angular CLI requires is Node 4.x but I would suggest installing the latest LTS version from [https://nodejs.org](https://nodejs.org) which at the time of this writing is 6.9.1.  To verify the version of node that you have installed, launch a command prompt and run `node -v`.  If you need to install Node, download the LTS installer from [https://nodejs.org](https://nodejs.org) and accept any prompts that the installer has.
 
