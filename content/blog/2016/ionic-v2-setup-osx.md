@@ -10,26 +10,24 @@ excerpt: "In order to work with the Ionic framework there is a bit of software i
 published: true
 series: ["ionic2-setup"]
 tag: ionic2-setup
+toc: true
 title: Ionic v2 - Setup on OSx
 
 ---
 
-In order to work with the Ionic framework there is a bit of software installs and configuration that needs to happen in order to deploy to devices.  However, many of the guides out there leave out a number of steps that tripped me up when I first started using Ionic.  
+In order to work with the Ionic framework there is a bit of software installs and configuration that needs to happen in order to deploy to devices.  However, many of the guides out there leave out a number of steps that tripped me up when I first started using Ionic.
 
-This guide will go through all of the steps needed for deploying to an Android and iOS device using a Mac.  
-
-* TOC
-{:toc}
+This guide will go through all of the steps needed for deploying to an Android and iOS device using a Mac.
 
 ## General Install Steps
 
 For the first part of this tutorial, we will be installing everything to do Ionic development and test your application in Google Chrome.  This will be how you will do about 80% of your development since deploying to a device or emulator can be time consuming.
 
-### Node 
+### Node
 
->If you already have Node installed, you can skip this section.
-{:.warning}
-
+{{< blockquote class="warning" >}}
+If you already have Node installed, you can skip this section.
+{{</blockquote>}}
 
 1. Download the LTS version of node from [https://www.nodejs.org](https://www.nodejs.org)
     * If you are using Chrome to download, it may tell you that a file with a pkg extension could be harmful to your computer and ask if you want to keep the file.  Make sure to click on the keep button.
@@ -44,7 +42,7 @@ For the first part of this tutorial, we will be installing everything to do Ioni
 1. Click Continue
 
     ![NodeJs Install Screen 2](images/ionic2-osx/node-2.png)
-   
+
 1. Click Agree
 
     ![NodeJs Install Screen 3](images/ionic2-osx/node-3.png)
@@ -83,13 +81,14 @@ Next we need to install 3 npm packages for cordova, gulp and ionic.  At the time
     > When prompted with "May Cordova anonymously report usage statistics to improve the tool over time?", answer Yes or No depending on your preference.
 
 1. In the terminal run the following to verify that Ionic install correctly. As of the writing of this post, you should get Ionic version 2.1.4
-        
+
         ionic -v
-  
+
 ### Google Chrome
 
->If you already have Google Chrome installed, you can skip this section.
-{:.warning}
+{{< blockquote class="warning" >}}
+If you already have Google Chrome installed, you can skip this section.
+{{</blockquote>}}
 
 1. Download from  [https://www.google.com/chrome/browser/desktop/](https://www.google.com/chrome/browser/desktop/)
 1. Double click the dmg file to run it
@@ -99,8 +98,9 @@ Next we need to install 3 npm packages for cordova, gulp and ionic.  At the time
 
 ### Visual Studio Code 
 
->If you already have Visual Studio Code installed, you can skip to step 5.
-{:.warning} 
+{{< blockquote class="warning" >}}
+If you already have Visual Studio Code installed, you can skip to step 5.
+{{</blockquote>}} 
 
 1. Download from [https://code.visualstudio.com/](https://code.visualstudio.com)
 
@@ -250,14 +250,15 @@ In this section, we will be installing everything that is needed in order to dep
 
         echo 'y' | android update sdk --filter tools,platform-tools,build-tools-24.0.3,android-19,android-20,android-21,android-22,android-23,android-24,source-24 --all --no-ui
 
-    > Keep an eye on the output from this command.  I had it error downloading one of the packages a time or two and had to run the command a 2nd time. 
-    {:.warning}
+    {{< blockquote class="warning" >}}
+    Keep an eye on the output from this command.  I had it error downloading one of the packages a time or two and had to run the command a 2nd time. 
+    {{</blockquote>}}
 
 ### Android Studio
-	
+
 1. Download from [https://developer.android.com/studio/index.html#downloads](https://developer.android.com/studio/index.html#downloads)
     * Version 2.2.2.0 as of this writing.
- 
+
     ![Android Studio Download](images/ionic2-osx/android-studio-download.png)
 
 1. Double-click on the dmg file after it downloads
@@ -347,15 +348,14 @@ Now that Virtualbox is installed, we need to install the extension pack.
 
     ![virtualbox extension installed](images/ionic2-osx/virtualbox-ext-4.png)
 
+### Genymotion
 
-### Genymotion 
-
-1. Download Genymotion from [https://www.genymotion.com/fun-zone/)[https://www.genymotion.com/fun-zone/]).  
+1. Download Genymotion from [https://www.genymotion.com/fun-zone/](https://www.genymotion.com/fun-zone/)
     * Version 2.7.2 as of this writing. 
-1.  Click the "Download Genymotion Personal Edition" button
+1. Click the "Download Genymotion Personal Edition" button
 
     ![Genymotion Download Genymotion package button](images/ionic2-osx/genymotion-download.png)
-    
+
 1. Sign in to your Genymotion Account if you have one.  If not, then click on the Create Account button
 
     ![Genymotion Account signin](images/ionic2-osx/genymotion-download-signin.png)
@@ -396,11 +396,11 @@ Now that Virtualbox is installed, we need to install the extension pack.
 1. Then select a device from the available list and click next.  In this case I selected the "Custom Phone - 6.0.0 - 768x1280"
 
     ![Genymotion Available Virtual devices](images/ionic2-osx/genymotion-app-download-device.png)
-    
+
 1. It will take several minutes to download the virtual device.  When the download is done, click the Finish button
 
     ![Genymotion Virtual device install finished](images/ionic2-osx/genymotion-app-add-new-finished.png)
-    
+
 ### Gradle
 
 1. If you are using Safari to download files and you didn't change the preference to "open safe files after downloading" when you downloaded the Android SDK, you need to change it before downloading Gradle.  Go into the Safari preferences and uncheck the "Open safe files after downloading" box.  Without doing this, Safari will automatically unzip the downloaded file into the Download folder and delete the zip file.
@@ -434,7 +434,6 @@ Now that Virtualbox is installed, we need to install the extension pack.
 1. Test it by running
 
         echo $GRADLE_HOME
-     
 
 ### Verify Android Setup
 
@@ -454,7 +453,7 @@ The last thing we need to verify is that we can deploy the todo app to the Genym
 1. Once the Genymotion device is started, you can deploy to it by running:
 
         ionic run android
-        
+
 You are now ready to go create your ionic applications for the Android platform.  Continue with the guide to setup for developing for the iOS platform.
 
 ## iOS Setup Steps
@@ -505,7 +504,7 @@ The first test that we are going to run is to make sure that we can test the tod
 
         ionic serve --lab
 
-This will start up a node based web server and the --lab will tell it to launch a page that shows what the app would look like on an iOS, Android and Windows phone.  Granted the node based serve is about 80% accurate but good enough to do a majority of our testing.  Ultimately you should test on a device before releasing into the app stores.         
+This will start up a node based web server and the --lab will tell it to launch a page that shows what the app would look like on an iOS, Android and Windows phone.  Granted the node based serve is about 80% accurate but good enough to do a majority of our testing.  Ultimately you should test on a device before releasing into the app stores.
 
 Next we are going to test our iOS device setup.  The first thing we need to do is tell ionic that we want to add the iOS platform to our todo app by running:
 
@@ -515,13 +514,12 @@ This sets up the todo app to be able to be build and deployed to an iOS device. 
 
         ionic build ios
 
-The last thing we need to verify is that we can deploy the todo app to the iOS Simulator.  
+The last thing we need to verify is that we can deploy the todo app to the iOS Simulator.
 
-1. For the iOS Simulator, run the following: 
+1. For the iOS Simulator, run the following:
 
     ionic run ios
 
 ## Congratulations
 
-Congratulations, you made it through the guide and have everything setup to create your ionic applications for both Android and Ionic.    
-
+Congratulations, you made it through the guide and have everything setup to create your ionic applications for both Android and Ionic.
