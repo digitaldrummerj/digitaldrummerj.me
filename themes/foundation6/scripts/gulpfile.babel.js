@@ -4,7 +4,8 @@
   import cp         from 'child_process';
   import fs         from 'fs';
   import gulp       from 'gulp';
-  import gutil      from 'gulp-util';
+  import log        from 'fancy-log';
+  import colors     from 'ansi-colors';
   import path       from 'path';
   import plugins    from 'gulp-load-plugins';
   import prettify   from 'gulp-jsbeautifier';
@@ -71,25 +72,25 @@
 // 0.5 - Hugo build task
   gulp.task('hugo-build', (code) => {
     return cp.spawn('hugo', ['-t', THEME.name, '-s',HUGO.root], { stdio: 'inherit' })
-      .on('error', (error) => gutil.log(gutil.colors.red(error.message)))
+      .on('error', (error) => log(colors.red(error.message)))
       .on('close', code);
   })
 
   gulp.task('hugo-build-prod', (code) => {
     return cp.spawn('hugo', ['--config', PATHS.prodconfig, '-t', THEME.name, '-s',HUGO.root, ''], { stdio: 'inherit' })
-      .on('error', (error) => gutil.log(gutil.colors.red(error.message)))
+      .on('error', (error) => log(colors.red(error.message)))
       .on('close', code);
   })
 // 0.6 - Hugo server task
   gulp.task('hugo-server', (code) => {
     return cp.spawn('hugo', ['server', '-p', PORT, '-t', THEME.name, '-s',HUGO.root], { stdio: 'inherit' })
-      .on('error', (error) => gutil.log(gutil.colors.red(error.message)))
+      .on('error', (error) => log(colors.red(error.message)))
       .on('close', code);
   })
 
   gulp.task('hugo-server-prod', (code) => {
     return cp.spawn('hugo', ['--config', PATHS.prodconfig,'server', '-p', PORT, '-t', THEME.name, '-s',HUGO.root], { stdio: 'inherit' })
-      .on('error', (error) => gutil.log(gutil.colors.red(error.message)))
+      .on('error', (error) => log(colors.red(error.message)))
       .on('close', code);
   })
 // 0.7 - Html5 lint task

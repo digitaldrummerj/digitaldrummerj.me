@@ -1,6 +1,5 @@
 ---
-categories:
-- node
+categories: ["node"]
 date: 2017-10-03T00:00:00Z
 draft: true
 title: Node-Gyp Unable To Compile Python2 Not Found
