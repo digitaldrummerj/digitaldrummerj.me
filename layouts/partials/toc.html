@@ -1,0 +1,40 @@
+<p><strong>Table of Contents</strong></p>
+ {{ $headers := findRE "<h[2-6].*?>(.|\n])+?</h[2-6]>" $.Content }}
+ 
+ {{ $.Scratch.Add "first" true }}
+
+ <nav id="TableOfContents">
+     <!-- TOC header -->
+     {{ range $headers }}
+        {{ $header := . }}
+        
+        {{ range first 1 (findRE "<h[2]" $header 1) }}
+            {{ $base := ($.Page.File.LogicalName) }}
+            {{ $anchorId := ($header | plainify | htmlEscape | urlize) }}
+            {{ $href := delimit (slice $base $anchorId) "#" | string }}
+            {{ if eq ($.Scratch.Get "first") false }}</ul></li></ul>{{ end }}
+            <ul>
+            <li>
+                <a href="{{ relref $.Page $href }}">
+                    {{ $header | plainify | htmlEscape }}
+                </a>
+                <ul>
+        {{end}}
+           
+        {{ range first 1 (findRE "<h[3-6]" $header 1) }}        
+                {{ $base := ($.Page.File.LogicalName) }}
+                {{ $anchorId := ($header | plainify | htmlEscape | urlize) }}
+                {{ $href := delimit (slice $base $anchorId) "#" | string }}
+                <li>
+                    <a href="{{ relref $.Page $href }}">
+                        {{ $header | plainify | htmlEscape }}
+                    </a>
+                </li>
+        {{end}}
+        {{ $.Scratch.Set "first" false }}
+        
+    {{ end }}
+    </li> <!-- close top list li -->
+</ul> <!-- close top list -->
+</nav>
+ 

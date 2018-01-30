@@ -26,6 +26,9 @@
     <p>
         {{ partial "series.html" . }}
     </p>
+    {{ if .Params.toc }}
+    <p>{{ partial "toc.html" .}}</p>
+    {{ end }}
     <p>
       {{ .Content }}
     </p>
