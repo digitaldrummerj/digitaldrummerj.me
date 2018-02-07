@@ -21,32 +21,32 @@ Step 1 was to get the zip file downloaded using Node and making sure that I coul
 
 1. Install superagent
 
-  ```shell
-  npm install --save superagent
-  ```
+    ```shell
+    npm install --save superagent
+    ```
 
 1. Use superagent to request the file and pipe it to disk
 
-  ```javascript
-  'use strict';
-  const request = require('superagent');
-  const fs = require('fs');
+    ```javascript
+    'use strict';
+    const request = require('superagent');
+    const fs = require('fs');
 
-  const repoName = 'node-zip-download-sample';
-  const href = `https://github.com/digitaldrummerj/${repoName}/archive`;
-  const zipFile = 'master.zip';
-  const source = `${href}/${zipFile}`;
-  const extractEntryTo = `${repoName}-master/`;
-  const outputDir = `./${repoName}-master/`;
+    const repoName = 'node-zip-download-sample';
+    const href = `https://github.com/digitaldrummerj/${repoName}/archive`;
+    const zipFile = 'master.zip';
+    const source = `${href}/${zipFile}`;
+    const extractEntryTo = `${repoName}-master/`;
+    const outputDir = `./${repoName}-master/`;
 
-  request
-    .get(source)
-    .on('error', function(error) {
-      console.log(error);
-    })
-    .pipe(fs.createWriteStream(zipFile))
-    .on('finish', function() {});
-  ```
+    request
+      .get(source)
+      .on('error', function(error) {
+        console.log(error);
+      })
+      .pipe(fs.createWriteStream(zipFile))
+      .on('finish', function() {});
+    ```
 
 Now that the zip file is downloaded we can unzip it.
 
@@ -58,19 +58,19 @@ For unzipping, I didn't find anything built into Node but I did find the [AdmZip
 
 1. Install Adm-Zip
 
-  ```shell
-  npm install --save adm-zip
-  ```
+    ```shell
+    npm install --save adm-zip
+    ```
 
 1. Within the finish above, we want to use Adm-Zip to grab a directory out of the zip file and extract it under the directory that our code is running in
 
-  ```javascript
-  console.log('finished dowloading');
-  var zip = new admZip(zipFile);
-  console.log('start unzip');
-  zip.extractEntryTo(extractEntryTo, outputDir, false, true);
-  console.log('finished unzip');
-  ```
+    ```javascript
+    console.log('finished dowloading');
+    var zip = new admZip(zipFile);
+    console.log('start unzip');
+    zip.extractEntryTo(extractEntryTo, outputDir, false, true);
+    console.log('finished unzip');
+    ```
 
 Just like that we had our zip file downloaded and extracted to a directory.
 
