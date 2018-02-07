@@ -17,9 +17,9 @@ While researching how to do this, I didn't find a library that had all of the re
 
 ## Downloading the Zip File
 
-Step 1 was to get the zip file downloaded using Node and making sure that I could manually open the zip file. Using the superagent and fs modules, you can download the zip file and write it to the file system./
+Step 1 was to get the zip file downloaded using Node and make sure that I could manually open it.  To download the zip file, I am using the superagent package and piping the download to a file using fs.
 
-1. Install superagent
+1. Install superagent package
 
     ```shell
     npm install --save superagent
@@ -33,7 +33,7 @@ Step 1 was to get the zip file downloaded using Node and making sure that I coul
     ```javascript
     'use strict';
 
-    // Import Libraries
+    // Import
     const request = require('superagent');
     const fs = require('fs');
 
@@ -65,9 +65,11 @@ Now that the zip file is downloaded we can unzip it.
 
 ## Unzipping the Zip File
 
-For unzipping, I didn't find anything built into Node but I did find the [AdmZip](https://www.npmjs.com/package/adm-zip) module on NPM.   AdmZip has functions for dealing with the entire zip file or a single file/directory within the zip file. In my case all of my files were contained within a directory in the zip file and I wanted to extract the files contained within that directory.
+For unzipping, I didn't find anything built into Node but I did find the [Adm-Zip](https://www.npmjs.com/package/adm-zip) package on NPM.
 
-1. Install Adm-Zip
+[Adm-Zip](https://www.npmjs.com/package/adm-zip) has functions for dealing with the entire zip file or a single file/directory within the zip file. In my case all of my files were contained within a directory in the zip file and I wanted to extract the files contained within that directory.
+
+1. Install [Adm-Zip](https://www.npmjs.com/package/adm-zip)
 
     ```shell
     npm install --save adm-zip
