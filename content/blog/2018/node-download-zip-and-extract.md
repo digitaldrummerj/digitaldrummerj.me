@@ -45,16 +45,16 @@ Step 1 was to get the zip file downloaded using Node and making sure that I coul
         console.log(error);
       })
       .pipe(fs.createWriteStream(zipFile))
-      .on('finish', function() {});
+      .on('finish', function() {
+          // add code below to here
+      });
     ```
 
 Now that the zip file is downloaded we can unzip it.
 
 ## Unzipping the Zip File
 
-For unzipping, I didn't find anything built into Node but I did find the [AdmZip](https://www.npmjs.com/package/adm-zip) module on NPM.
-
-> AdmZip has functions for dealing with the entire zip file or a single file/directory within the zip file. In my case all of my files were contained within a directory in the zip file and I wanted to extract the files contained within that directory.
+For unzipping, I didn't find anything built into Node but I did find the [AdmZip](https://www.npmjs.com/package/adm-zip) module on NPM.   AdmZip has functions for dealing with the entire zip file or a single file/directory within the zip file. In my case all of my files were contained within a directory in the zip file and I wanted to extract the files contained within that directory.
 
 1. Install Adm-Zip
 
@@ -62,10 +62,10 @@ For unzipping, I didn't find anything built into Node but I did find the [AdmZip
     npm install --save adm-zip
     ```
 
-1. Within the finish above, we want to use Adm-Zip to grab a directory out of the zip file and extract it under the directory that our code is running in
+1. Within the on finish above, we want to use Adm-Zip to grab a directory out of the zip file and extract it under the directory that our code is running in
 
     ```javascript
-    console.log('finished dowloading');
+    console.log('finished downloading');
     var zip = new admZip(zipFile);
     console.log('start unzip');
     zip.extractEntryTo(extractEntryTo, outputDir, false, true);
