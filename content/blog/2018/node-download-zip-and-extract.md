@@ -27,7 +27,8 @@ Step 1 was to get the zip file downloaded using Node and making sure that I coul
 
 1. Using superagent along with fs we can download a zip file and save the zip to a local file.  In the code below, I am downloading the zip for the master branch of the Github repo located at [https://github.com/digitaldrummerj/node-zip-download-sample](https://github.com/digitaldrummerj/node-zip-download-sample).
 
-  > Update the TODO: below with your url, zip file name, directory to extract out of the zip and the output directory for the extract
+    > There are "TODO" statements in the code below for the things that you would need to change to use this code for your own zip file.
+
 
     ```javascript
     'use strict';
