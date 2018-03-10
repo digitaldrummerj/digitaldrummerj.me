@@ -4,58 +4,53 @@ subheadline: "Combining passion for coding and teaching. "
 permalink: /speaking/
 sidebar: false
 ---
+
 <a name="#top"></a><div class="teaser">
-I have a passion for teaching and sharing my knowledge to help get you to your end goal faster.  If you'd like me to speak at your event, <a href="/contact/">drop me a line</a>.  I can cover pretty much any topic you see me blog about but feel free to request just about anything.  
+I have a passion for teaching and sharing my knowledge to help get you to your end goal faster. If you'd like me to speak at your event, <a href="/contact/">drop me a line</a>. I can cover pretty much any topic you see me blog about but feel free to request just about anything.
 
 If you've attended one of my sessions, please send me your feedback or suggestions.
 
-If you see me at an event, please be sure to come up and say "Hi".  The best part of the events is hanging out with other developers.
+If you see me at an event, please be sure to come up and say "Hi". The best part of the events is hanging out with other developers.
+
 </div>
 
 ## My Next Events
 
-<!--### Nothing Scheduled.  
+<!--### Nothing Scheduled.
 
 If you'd like me to speak at your event, [drop me a line]({{ "/contact/" | prepend: site.baseurl >}}) and lets make it happen.  I can cover pretty much any topic you see me blog about but feel free to request just about anything.  -->
 
+### Codestock <span> - Knoxville, TN (April 20-21, 2018)</span>
 
+* [Make Public Speaking Your Competitive Advantage]({{< ref"speaking.md#pubspeak" >}})
+* [Conference Home Page](https://codestock.org/)
 
-### Detroit.Code() <span> - Detroit, MI (July 10-12, 2017)</span>
+### Stir Trek <span> - Columbus, OH (May 4, 2018)</span>
 
-- [Rapid API Development with Node and SailsJS]({{< ref "speaking.md#sails" >}})
-- [Build mobile apps for iOS, Android, and Windows using JavaScript]({{< ref "speaking.md#taco" >}})
-- [Up and Running with Angular Full-Day Workshop]({{< ref"speaking.md#uprunangular" >}})
-- [Conference Home Page](https://detroitcode.amegala.com/)
+* [Rapid Api Development with Node and SailsJS]({{< ref"speaking.md#sails" >}})
+* [Conference Home Page](https://www.stirtrek.com/)
 
-### Angular Phoenix Meetup <span> - Phoenix, AZ (July 25th, 2017)</span>
+### NDC Minnesota <span> - Saint Paul, MN (May 7-10, 2018)</span>
 
-- [Angular Unit Testing from the Trenches]({{< ref"speaking.md#angulartesting" >}})
-- [Meetup Page](https://www.meetup.com/ng-phx/events/241184083/)
-
-### KCDC <span> - Kansas City, MO (August 3rd-5th, 2017)</span>
-
-- [Rapid API Development with Node and SailsJS]({{< ref"speaking.md#sails" >}})
-- [Mobile Development For Web Developers]({{< ref"speaking.md#taco" >}})
-- [Conference Home Page](http://www.kcdc.info/)
+* [Angular Unit Testing from the Trenches]({{< ref"speaking.md#angulartesting" >}})
+* [Conference Home Page](https://ndcminnesota.com/)
 
 <!--
 ### Music City Code <span> - Nashville, TN (August 18th-20th, 2016)</span>
 
-- [Gulp for the .Net Developer]({{< ref"speaking.md#gulp" >}})
-- [Conference Home Page](http://www.musiccitycode.com)
+* [Gulp for the .Net Developer]({{< ref"speaking.md#gulp" >}})
+* [Conference Home Page](http://www.musiccitycode.com)
 -->
 
-<p>&nbsp;</p>
-
-----
+---
 
 ## My Presentation Topics
 
 Below are all of the talks that I have given with links to the slides and any additional resources that I may have.
 
-If you would like me to given any of these talks you are meetings, please let me know.  I am also open to new talks if you don't see something below, just ask.
+If you would like me to given any of these talks you are meetings, please let me know. I am also open to new talks if you don't see something below, just ask.
 
-### Topics 
+### Topics
 
 * [Angular Unit Testing from the Trenches]({{< ref"speaking.md#angulartesting" >}})
 * [Build mobile apps for iOS, Android, and Windows using JavaScript]({{< ref"speaking.md#taco" >}})
@@ -63,9 +58,9 @@ If you would like me to given any of these talks you are meetings, please let me
 * [Continuous Integration with Github and TravisCI]({{< ref"speaking.md#travisci" >}})
 * [Designing a Restful Api in Minutes with Backand]({{< ref"speaking.md#backand" >}})
 * [Data Driven Restful Api Creation Made Easy Breezy]({{< ref"speaking.md#cloudapishootout" >}})
-* [Public Speaking Is Yor Competitive Advantage]({{< ref"speaking.md#publicspeaker" >}})
 * [Gulp for the .Net Developer]({{< ref"speaking.md#gulp" >}})
 * [Intro to Version Control with Git and Github]({{< ref"speaking.md#introgit" >}})
+* [Make Public Speaking Your Competitive Advantage]({{< ref"speaking.md#pubspeak" >}})
 * [Mobile Dev for Web Devs]({{< ref"speaking.md#ionic" >}})
 * [Nuget is easier than you think and you should be using it as both a consumer and creator of packages]({{< ref"speaking.md#nuget" >}})
 * [Rapid Api Development With Node and Sails]({{< ref"speaking.md#sails" >}})
@@ -75,12 +70,9 @@ If you would like me to given any of these talks you are meetings, please let me
 * [Vagrant - Devops Yourself: Fast-Track Your Dev Environment Setup.]({{< ref"speaking.md#vagrant" >}})
 * [Why You Need A Blog and How to Create a Successful One]({{< ref"speaking.md#blogging" >}})
 
-<p>&nbsp;</p>
-
 <small>[back to top]({{< ref"speaking.md#top" >}})</small>
 
-
-----
+---
 
 ### <a name="angulartesting"></a>Angular Unit Testing from the Trenches
 
@@ -92,18 +84,14 @@ This talk will walk through getting started unit testing your Angular components
 
 #### Past Presentations
 
+* [NDC Minnesota <span> - Saint Paul, MN (May 7-10, 2018)</span>](https://ndcminnesota.com/)
 * [Desert Code Camp <span> - Phoenix, AZ (October 14th, 2017)</span>](https://desertcodecamp.com)
 * [MidwestJS <span> - Minneapolis, MN (August 16th-18th, 2017)</span>](http://midwestjs.com/)
 * [Angular Phoenix Meetup <span> - Phoenix, AZ (July 25th, 2017)</span>](https://www.meetup.com/ng-phx/events/241184083/)
 
-
-<p>&nbsp;</p>
-
 <small>[back to top]({{< ref"speaking.md#top" >}})</small>
 
-
 ---
-
 
 ### <a name="taco"></a>Build mobile apps for iOS, Android, and Windows using JavaScript
 
@@ -124,10 +112,7 @@ Slides: [https://www.slideshare.net/digitaldrummerj/visual-studio-tools-for-apac
 * [San Diego Code Camp <span> - San Diego, CA (June 24th, 2017)</span>](http://socalcodecamp.com)
 * [Nebraska.Code() <span> - Lincoln, NE (May 10-12, 2017)</span>](http://nebraskacode.com/)
 
-<p>&nbsp;</p>
-
 <small>[back to top]({{< ref"speaking.md#top" >}})</small>
-
 
 ---
 
@@ -141,8 +126,8 @@ Demo: [https://github.com/digitaldrummerj/ChocolateyTalk](https://github.com/dig
 
 #### Additional Resources
 
-- [Chocolatey Home Page](http://www.chocolatey.org)
-- [BoxStarter (coordinate multiple installs/reboots)](http://www.boxstarter.org)
+* [Chocolatey Home Page](http://www.chocolatey.org)
+* [BoxStarter (coordinate multiple installs/reboots)](http://www.boxstarter.org)
 
 #### Past Presentations
 
@@ -154,15 +139,13 @@ Demo: [https://github.com/digitaldrummerj/ChocolateyTalk](https://github.com/dig
 * [Desert Code Camp <span>- Chandler, Az (April 2014)</span>](https://www.desertcodecamp.com/)
 * [Southeast Valley .Net User Group <span>- Chandler, Az (February 2014)</span>](http://www.meetup.com/sevdnug/)
 
-<p>&nbsp;</p>
-
 <small>[back to top]({{< ref"speaking.md#top" >}})</small>
 
 ---
 
 ### <a name="travisci"></a>Continuous Integration with Github and TravisCI
 
-Come learn how easy it is to implement continuous integration using TravisCI every time you push your commits to Github.   
+Come learn how easy it is to implement continuous integration using TravisCI every time you push your commits to Github.
 
 If you don't know what continuous integration is, it is where on push to your version control system, an automated build is kicked off that ensure that all of your tests and compilation works on a machine that mirrors production and is not your laptop.
 
@@ -170,12 +153,9 @@ Slides: [https://slides.com/digitaldrummerj/travisci-intro/](https://slides.com/
 
 My TravisCI: [https://travis-ci.org/digitaldrummerj/digitaldrummerj.github.io](https://travis-ci.org/digitaldrummerj/digitaldrummerj.github.io)
 
-
 #### Past Presentations
 
 * [Phoenix Version Control Meetup <span>- Phoenix, Az (April 13th, 2016)</span>](http://www.meetup.com/phoenix-version-control/events/229493593/)
-
-<p>&nbsp;</p>
 
 <small>[back to top]({{< ref"speaking.md#top" >}})</small>
 
@@ -183,12 +163,11 @@ My TravisCI: [https://travis-ci.org/digitaldrummerj/digitaldrummerj.github.io](h
 
 ### <a name="backand"></a>Designing a Restful Api in Minutes with Backand
 
-Are you like me  and dislike having to waste time crafting an API for standard CRUD operations?  Are you a front-end developer that doesn't want to become a database expert in order to create your Restful Api?  Then worst of all after once you do finally finish crafting your API, you have to figure out how to host it and get it deployed.   This takes a lot of time away from you being able to focus on your UI and getting it out to the market. 
- 
-Back& can take all of this pain away and allow you to focus on your UI and not crafting your API.  Create your data model and Back& will generate the Restful Api for you.  If you already have a database, just point Back& to it and Back& will generate the Restful Api from that database.  If you also need user/password authentication, social login authentication, server side logic, or hosting, Back& has you covered here as well.  
- 
-In this session, we will examine the features of Back& , walk through the creation of an API, hook the API up to an AngularJS application and then deploy it to the Back& hosting.
+Are you like me and dislike having to waste time crafting an API for standard CRUD operations? Are you a front-end developer that doesn't want to become a database expert in order to create your Restful Api? Then worst of all after once you do finally finish crafting your API, you have to figure out how to host it and get it deployed. This takes a lot of time away from you being able to focus on your UI and getting it out to the market.
 
+Back& can take all of this pain away and allow you to focus on your UI and not crafting your API. Create your data model and Back& will generate the Restful Api for you. If you already have a database, just point Back& to it and Back& will generate the Restful Api from that database. If you also need user/password authentication, social login authentication, server side logic, or hosting, Back& has you covered here as well.
+
+In this session, we will examine the features of Back& , walk through the creation of an API, hook the API up to an AngularJS application and then deploy it to the Back& hosting.
 
 Slides: [http://slides.com/digitaldrummerj/backand-intro](http://slides.com/digitaldrummerj/backand-intro)
 
@@ -197,17 +176,13 @@ Slides: [http://slides.com/digitaldrummerj/backand-intro](http://slides.com/digi
 * [Nebraska.Code() <span>- Lincoln, NE (May 18th-20th, 2016)</span>](http://nebraskacode.com)
 * [Hill Country Javascript User Group <span>- South Texas (giving Virtually) (April 20th, 2016)</span>](http://www.meetup.com/San-Antonio-JavaScript-User-Group/events/225255697/)
 
-<p>&nbsp;</p>
-
 <small>[back to top]({{< ref"speaking.md#top" >}})</small>
-
 
 ---
 
 ### <a name="cloudapishootout"></a>Data Driven Restful Api Creation Made Easy Breezy
 
-
- Are you tired of writing CRUD based APIs?  Wish you could fast track your Api development so that you can focus on your UI?  Don't want to become an API/Hosting expert just to get a basic API in the Cloud?  Then this session is for you.  Creating and Hosting a Restful Api for standard CRUD operations should be an easy task and not one that slows down your applications development.   In this session, we examine the pros/cons my favorite Cloud based API providers (Firebase, Back& and Strongloop) and then we will create an API in each.  You will be able to see how with these 3 Cloud API providers how easy it is to create a full Restful Api in under 10 minutes.
+Are you tired of writing CRUD based APIs? Wish you could fast track your Api development so that you can focus on your UI? Don't want to become an API/Hosting expert just to get a basic API in the Cloud? Then this session is for you. Creating and Hosting a Restful Api for standard CRUD operations should be an easy task and not one that slows down your applications development. In this session, we examine the pros/cons my favorite Cloud based API providers (Firebase, Back& and Strongloop) and then we will create an API in each. You will be able to see how with these 3 Cloud API providers how easy it is to create a full Restful Api in under 10 minutes.
 
 Slides: [http://slides.com/digitaldrummerj/data-driven-restful-api-creation-made-easy-breezy](http://slides.com/digitaldrummerj/data-driven-restful-api-creation-made-easy-breezy)
 
@@ -219,52 +194,50 @@ Slides: [http://slides.com/digitaldrummerj/data-driven-restful-api-creation-made
 
 <small>[back to top]({{< ref"speaking.md#top" >}})</small>
 
-
 ---
-
-### <a name="publicspeaker"></a>Public Speaking Is Your Competitive Advantage
-
-You may not realize it but we are all public speakers.  Public speaking is all about effectively communicating and we have all been training our whole lives to be better communicators.  Being an effective communicator is a critical skill in today’s job market.   I will share with you what I have learned on my journey to becoming a professional speaker who has given over 100 talks since 2014.  With the tips that I will share you will instantly become a more effectively communicator and presenter.   
- 
-Slides: [https://www.slideshare.net/digitaldrummerj/everyone-is-a-public-speaker](https://www.slideshare.net/digitaldrummerj/everyone-is-a-public-speaker)
-
-#### Past Presentations
-
-* [Desert Code Camp <span> - Phoenix, AZ (October 14, 2017)</span>](https://oct2017.desertcodecamp.com/)
-* [San Diego Code Camp <span>- San Diego, CA (June 27th-28th, 2015)</span>](http://www.socalcodecamp.net/)
-
-<p>&nbsp;</p>
-
-<small>[back to top]({{< ref"speaking.md#top" >}})</small>
-
-
-----
 
 ### <a name="gulp"></a>Gulp for the .Net Developer
 
-With the release of Visual Studio 2015 Gulp has become a standard part of the workflow for .Net developers.  Gulp has a lot of functionality available such as minification, injecting script tags into html, running js hint, creating source maps, generating css from sass files, plus much more.  In this session, you will learn the basics of gulp,  how it integrates into Visual Studio, and how to create your own gulpfile to automate common tasks. You will walk away with a starter gulp file to get you on your way to fully utilizing gulp.
+With the release of Visual Studio 2015 Gulp has become a standard part of the workflow for .Net developers. Gulp has a lot of functionality available such as minification, injecting script tags into html, running js hint, creating source maps, generating css from sass files, plus much more. In this session, you will learn the basics of gulp, how it integrates into Visual Studio, and how to create your own gulpfile to automate common tasks. You will walk away with a starter gulp file to get you on your way to fully utilizing gulp.
 
 Slides and Source Code: [https://github.com/digitaldrummerj/GulpForNetDevelopers](https://github.com/digitaldrummerj/GulpForNetDevelopers)
 
 #### Additional Resources
-- [Gulp Home Page](http://gulpjs.com)
+
+* [Gulp Home Page](http://gulpjs.com)
 
 #### Past Presentations
 
 * [Music City Code <span> - Nashville, TN (August 18th-20th, 2016)</span>](http://www.musiccitycode.com)
 * [San Diego Code Camp <span>- San Diego, California (June 27th-28th, 2015)</span>](http://www.socalcodecamp.net/)
 
-<p>&nbsp;</p>
+<small>[back to top]({{< ref"speaking.md#top" >}})</small>
+
+---
+
+### <a name="pubspeak"></a>Make Public Speaking Your Competitive Advantage
+
+In today's job market being an effective communicator is a critical skill even if you are a developer who just wants to write code all day. Being a confident communicator and public speaker can set you apart from the crowd. Public speaking at the end of the day is all about effectively communicating our ideas to others. We have all been training our whole lives to be better communicators. Not a one of us was born with the ability to talk. Talking is a learn skill, just like public speaking is. Anyone can learn to be a confident communicator with a bit of know-how and some practice.
+
+I will share with you how I went from a shy, introverted software developer who would run away from any kind of public speaking to a professional speaker that sprints towards every speaking opportunity and how you can do it as well. T
+
+You will walk away on the road to becoming a confident public speaker that knows how to give an effective presentation and will be ready to rock your next presentation.
+
+Slides: [https://www.slideshare.net/digitaldrummerj/everyone-is-a-public-speaker](https://www.slideshare.net/digitaldrummerj/everyone-is-a-public-speaker)
+
+#### Past Presentations
+
+* [Codestock <span> - Knoxville, TN (August 18th-20th, 2018)</span>](http://www.musiccitycode.com)
+* [Desert Code Camp <span> - Phoenix, AZ (October 14, 2017)</span>](https://oct2017.desertcodecamp.com/)
+* [San Diego Code Camp <span>- San Diego, CA (June 24, 2017)</span>](http://www.socalcodecamp.net/)
 
 <small>[back to top]({{< ref"speaking.md#top" >}})</small>
 
-
-----
+---
 
 ### <a name="ionic"></a>Mobile Dev for Web Devs
 
-
-Are you already a web developer and want to create a mobile application?  Then come learn all about the Ionic mobile framework.  Using technologies that we already know and love with Html 5, Javascript, and CSS 3, you can easily create a mobile application that targets Android, iOS, and Windows 10 Phone.  Your application will look, feel and perform like a native application without you having to do anything special.  Ionic takes care of all of the hard work of making it look right on the mobile devices so that you can focus on your application.  After seeing the Ionic framework, you will be excited to deliver mobile applications.  We will walk through the features of Ionic, getting it setup, and then create a fully working application that is ready to release in the app store.
+Are you already a web developer and want to create a mobile application? Then come learn all about the Ionic mobile framework. Using technologies that we already know and love with Html 5, Javascript, and CSS 3, you can easily create a mobile application that targets Android, iOS, and Windows 10 Phone. Your application will look, feel and perform like a native application without you having to do anything special. Ionic takes care of all of the hard work of making it look right on the mobile devices so that you can focus on your application. After seeing the Ionic framework, you will be excited to deliver mobile applications. We will walk through the features of Ionic, getting it setup, and then create a fully working application that is ready to release in the app store.
 
 **Ionic v2 Overview**
 
@@ -274,32 +247,32 @@ Are you already a web developer and want to create a mobile application?  Then c
 
 **Ionic V1 Overview**
 
-- [Slides](https://slides.com/digitaldrummerj/ionic-overview-2016/)
-- [Demos](https://github.com/digitaldrummerj/IonicFrameworkTalk)
+* [Slides](https://slides.com/digitaldrummerj/ionic-overview-2016/)
+* [Demos](https://github.com/digitaldrummerj/IonicFrameworkTalk)
 
-**Visual Studio Apache Cordova Tooling With Ionic** 
+**Visual Studio Apache Cordova Tooling With Ionic**
 
-- [Slides](https://github.com/digitaldrummerj/TacoTalk/blob/master/Taco%20-%20Intro.pdf)
-- [Demos](https://github.com/digitaldrummerj/TacoTalk)
+* [Slides](https://github.com/digitaldrummerj/TacoTalk/blob/master/Taco%20-%20Intro.pdf)
+* [Demos](https://github.com/digitaldrummerj/TacoTalk)
 
 #### Additional Resources
 
-- [Ionic Framework Home Page](http://www.ionicframework.com)
-- [Ionic View](http://view.ionic.io/)
-- [Ionic Blog](http://ionicframework.com/blog/)
-- [Ionic Docs](http://ionicframework.com/docs/)
-- [Ionic Forum](http://forum.ionicframework.com/)
-- [Ionic Twitter](http://www.twitter.com/ionicframework)
-- [Ionic Creator](https://creator.ionic.io/)
-- [Ionicons - 600+ free icons](http://Ionicons.com/)
-- [Must Have Plugins For Ionic](http://www.gajotres.net/must-have-plugins-for-ionic-framework/)
-- [List of Comprehensive Starter Templates](http://www.gajotres.net/a-comprehensive-list-of-ionic-starter-apps/)
-- [Horizontal List Scroll Demo](http://codepen.io/drewrygh/pen/jEJGLx)
-- [Swipeable Cards](http://devdactic.com/swipeable-cards-ionic/)
-- [Using Twitter Api with Ionic](http://devdactic.com/twitter-rest-api-angularjs/)
-- [Shrinking Headers](http://devdactic.com/shrinking-headers-with-ionic/)
-- [Ionic cheatsheet](http://devdactic.com/ionic-cheatsheet/)
-- [Monitor Battery Status](https://www.thepolyglotdeveloper.com/2015/07/monitor-device-battery-status-using-ionic-framework)
+* [Ionic Framework Home Page](http://www.ionicframework.com)
+* [Ionic View](http://view.ionic.io/)
+* [Ionic Blog](http://ionicframework.com/blog/)
+* [Ionic Docs](http://ionicframework.com/docs/)
+* [Ionic Forum](http://forum.ionicframework.com/)
+* [Ionic Twitter](http://www.twitter.com/ionicframework)
+* [Ionic Creator](https://creator.ionic.io/)
+* [Ionicons - 600+ free icons](http://Ionicons.com/)
+* [Must Have Plugins For Ionic](http://www.gajotres.net/must-have-plugins-for-ionic-framework/)
+* [List of Comprehensive Starter Templates](http://www.gajotres.net/a-comprehensive-list-of-ionic-starter-apps/)
+* [Horizontal List Scroll Demo](http://codepen.io/drewrygh/pen/jEJGLx)
+* [Swipeable Cards](http://devdactic.com/swipeable-cards-ionic/)
+* [Using Twitter Api with Ionic](http://devdactic.com/twitter-rest-api-angularjs/)
+* [Shrinking Headers](http://devdactic.com/shrinking-headers-with-ionic/)
+* [Ionic cheatsheet](http://devdactic.com/ionic-cheatsheet/)
+* [Monitor Battery Status](https://www.thepolyglotdeveloper.com/2015/07/monitor-device-battery-status-using-ionic-framework)
 
 #### Past Presentations
 
@@ -311,7 +284,7 @@ Are you already a web developer and want to create a mobile application?  Then c
 * [Central California .NET User Group<span>- Fresno, Ca (July 21st, 2016)</span>](http://www.meetup.com/Central-CA-NET-Users/events/228410986/)
 * [Nebraska.Code() Full Day Workshop <span>- Lincoln, NE (May 18th-20th, 2016)</span>](http://nebraskacode.com)
 * [Codepalousa <span>- Louisville, Ky (March 28th-30th, 2016)</span>](http://codepalousa.com)
-* [Tutorial - Use Your Existing Web Skills to Create Cross Platform Mobile Applications](http://conferences.oreilly.com/fluent/javascript-html-us)* [Javascript Summit 2016 <span>- Virtual (February 24th, 2016)</span>](http://environmentsforhumans.com/2016/javascript-summit/)
+* [Tutorial - Use Your Existing Web Skills to Create Cross Platform Mobile Applications](http://conferences.oreilly.com/fluent/javascript-html-us)\* [Javascript Summit 2016 <span>- Virtual (February 24th, 2016)</span>](http://environmentsforhumans.com/2016/javascript-summit/)
 * [Laravel Meetup <span>- Phoenix, Az (October 21st, 2015)</span>](http://www.meetup.com/larazona/events/225877278/)
 * [Silicon Valley Code Camp <span>- Silicon Valley, Ca (Ocotber 3rd-4th, 2015)</span>](http://siliconvalley-codecamp.com)
 * [Ionic-AZ Meetup <span>- Scottsdale, Az (September 29th)</span>](http://meetup.com/ionic-az)
@@ -324,24 +297,19 @@ Are you already a web developer and want to create a mobile application?  Then c
 * [Las Vegas Code Camp <span>- Las Vegas, Nv (February 21, 2015)</span>](http://spring2015.lasvegascodecamp.com/home)
 * [Arizona Software Community <span>- Phoenix, Az (January 2015)</span>](http://www.meetup.com/azsoftcom/events/219258109/)
 
-<p>&nbsp;</p>
-
 <small>[back to top]({{< ref"speaking.md#top" >}})</small>
-
 
 ---
 
 ### <a name="introgit"></a>Intro to Version Control with Git and Github
 
-
 Being able to understand and use version control is a critical part of being a software developer. Version control allows you (and your team) to collaborate, track, and revert changes to your code, documentation and samples. One very popular version control is Git. In this talk we will cover the basics of using Git, show how to publish and share your code through the GitHub, and how to contribute to an open source project using Git and Github.
 
 You will walk away from this talk ready to use Git and Github to manage all of your code assets and know how to contribute to open source projects.
 
-If you want to follow along with the examples, bring your laptop with install the Git command line from https://git-scm.com/download/  and have a Github account created at https://github.com if you do not already have one.
+If you want to follow along with the examples, bring your laptop with install the Git command line from https://git-scm.com/download/ and have a Github account created at https://github.com if you do not already have one.
 
 Slides: [http://digitaldrummerj.me/version-control-intro/#/](http://digitaldrummerj.me/version-control-intro/#/)
-
 
 #### Past Presentations
 
@@ -349,16 +317,13 @@ Slides: [http://digitaldrummerj.me/version-control-intro/#/](http://digitaldrumm
 * [Learn To Code Phx Meetup <span> - Phoenix, AZ (April 17th, 2017)</span>](https://www.meetup.com/ltcphx/events/239039237/)
 * [Girl Develop IT <span> - Phoenix, AZ (March 18th, 2017)</span>](https://www.meetup.com/Girl-Develop-It-Phoenix/events/237183681/)
 
-<p>&nbsp;</p>
-
 <small>[back to top]({{< ref"speaking.md#top" >}})</small>
-
 
 ---
 
 ### <a name="nuget"></a>Nuget is easier than you think and you should be using it as both a consumer and creator of packages
 
-Nuget is a package manager for Visual Studio that allows you to easily share assets (dll, javascript, c#, etc files) and use them in your project.  Most Visual Studio developers have consumer nuget packages but few have created and shared nuget packages.  It is amazingly easy to create and publish a nuget package.  In less than 60 minutes I will show you how move from a consumer to a creator.  You will learn how to package up dll's, source code that needs to be inserted in a project, add/change configurations, publish a package and host your own nuget feed.
+Nuget is a package manager for Visual Studio that allows you to easily share assets (dll, javascript, c#, etc files) and use them in your project. Most Visual Studio developers have consumer nuget packages but few have created and shared nuget packages. It is amazingly easy to create and publish a nuget package. In less than 60 minutes I will show you how move from a consumer to a creator. You will learn how to package up dll's, source code that needs to be inserted in a project, add/change configurations, publish a package and host your own nuget feed.
 
 Slides: [http://slides.com/digitaldrummerj/nuget](http://slides.com/digitaldrummerj/nuget)
 
@@ -366,12 +331,12 @@ Demos: [https://github.com/digitaldrummerj/NugetTalk](https://github.com/digital
 
 #### Additional Resources
 
-- [Nuget Gallery](http://www.nuget.org)
-- [Nuget Docs](http://docs.nuget.org)
-- [Host your own feeds/](http://www.nuget.org/packages/NuGet.Server/)
-- [Nuget Gallery Project](https://github.com/NuGet/NuGetGallery)
-- [Branding the Nuget Gallery](http://docs.nuget.org/contribute/branding-the-nuget-gallery)
-- [Nuget Package Explorer](http://npe.codeplex.com/)
+* [Nuget Gallery](http://www.nuget.org)
+* [Nuget Docs](http://docs.nuget.org)
+* [Host your own feeds/](http://www.nuget.org/packages/NuGet.Server/)
+* [Nuget Gallery Project](https://github.com/NuGet/NuGetGallery)
+* [Branding the Nuget Gallery](http://docs.nuget.org/contribute/branding-the-nuget-gallery)
+* [Nuget Package Explorer](http://npe.codeplex.com/)
 
 #### Past Presentations
 
@@ -383,10 +348,7 @@ Demos: [https://github.com/digitaldrummerj/NugetTalk](https://github.com/digital
 * [Desert Code Camp <span>- Chandler, Az (April 2014)</span>](https://www.desertcodecamp.com/)
 * [Southeast Valley .Net User Group <span>- Chandler, Az (February 2014)</span>](http://www.meetup.com/sevdnug/)
 
-<p>&nbsp;</p>
-
 <small>[back to top]({{< ref"speaking.md#top" >}})</small>
-
 
 ---
 
@@ -404,9 +366,9 @@ Slides: [https://www.slideshare.net/digitaldrummerj/rapid-api-development-with-n
 
 Code: [github.com//digitaldrummerj/sailstalk](github.com//digitaldrummerj/sailstalk)
 
-
 #### Past Presentations
 
+* [Stir Trek <span> - Columbus, OH (May 4th, 2018)</spa>](https://www.stirtrek.com/)
 * [Angular Mix <span> - Orlando, FL (October 8th-13th, 2017)</span>](https://angularmix.com/)
 * [KCDC (Half-Day Workshop) <span> - Kansas City, MO (August 3rd-5th, 2017)</span>](http://www.kcdc.info/)
 * [Detroit.Code() <span> - Detroit, MI (July 10-12, 2017)</span>](https://detroitcode.amegala.com/)
@@ -414,12 +376,9 @@ Code: [github.com//digitaldrummerj/sailstalk](github.com//digitaldrummerj/sailst
 * [Nebraska.Code() <span> - Lincoln, NE (May 10-12, 2017)</span>](http://nebraskacode.com/)
 * [Codestock <span> - Knoxville, KY (May 5th-6th, 2017)</span>](https://codestock.org)
 
-<p>&nbsp;</p>
-
 <small>[back to top]({{< ref"speaking.md#top" >}})</small>
 
-
-----
+---
 
 ### <a name="sidewaffle"></a>Side Waffle - The easiest way to build templates for Visual Studio
 
@@ -430,48 +389,43 @@ Slides: [http://slides.com/digitaldrummerj/side-waffle](http://slides.com/digita
 Demo: [https://github.com/digitaldrummerj/SideWaffleTalks](https://github.com/digitaldrummerj/SideWaffleTalks)
 
 #### Additional Resources
-- [http://www.sidewaffle.com](http://www.sidewaffle.com)
+
+* [http://www.sidewaffle.com](http://www.sidewaffle.com)
 
 #### Past Presentations
 
 * [Southeast Valley .Net User Group <span> - Chandler, Az (May 2014)</span>](http://www.meetup.com/sevdnug/)
 
-<p>&nbsp;</p>
-
 <small>[back to top]({{< ref"speaking.md#top" >}})</small>
 
+---
 
-----
+### <a name="vsprod"></a>Tips and Tricks to Maximize Your Productivity in Visual Studio
 
-### <a name="vsprod"></a>Tips and Tricks to Maximize Your Productivity in Visual Studio 
-
-Come learn about the new productivity enhancements in Visual Studio 2015 and C# 6.0, some very cool Visual Studio Extensions, and standard shortcuts to use to unlock your productivity potential in Visual Studio.  You will walk away from this session with all kinds of new tips and tricks to wow your fellow developers.  
+Come learn about the new productivity enhancements in Visual Studio 2015 and C# 6.0, some very cool Visual Studio Extensions, and standard shortcuts to use to unlock your productivity potential in Visual Studio. You will walk away from this session with all kinds of new tips and tricks to wow your fellow developers.
 
 Slides: [http://slides.com/digitaldrummerj/developerproductivity](http://slides.com/digitaldrummerj/developerproductivity)
 
 Demo: [https://github.com/digitaldrummerj/DeveloperProductivityTalk](https://github.com/digitaldrummerj/DeveloperProductivityTalk)
 
-
 #### Additional Resources
-- [19 Must Know VS Keyboard Shortcuts Part 1](http://www.codeproject.com/Articles/1010023/Must-Know-Visual-Studio-Keyboard-Shortcuts-Part)
-- [19 Must Know VS Keyboard Shortcuts Part 2](http://www.codeproject.com/Articles/1010022/Must-Know-Visual-Studio-Keyboard-Shortcuts-Part)
-- [Default VS Shortcuts](http://visualstudioshortcuts.com/2015/)
+
+* [19 Must Know VS Keyboard Shortcuts Part 1](http://www.codeproject.com/Articles/1010023/Must-Know-Visual-Studio-Keyboard-Shortcuts-Part)
+* [19 Must Know VS Keyboard Shortcuts Part 2](http://www.codeproject.com/Articles/1010022/Must-Know-Visual-Studio-Keyboard-Shortcuts-Part)
+* [Default VS Shortcuts](http://visualstudioshortcuts.com/2015/)
 
 #### Past Presentations
 
-* [Las Vegas .NET User Group <span>- Las Vegas, Nv (July 30, 2015)</span>](http://www.dotnetgroup.org/) 
+* [Las Vegas .NET User Group <span>- Las Vegas, Nv (July 30, 2015)</span>](http://www.dotnetgroup.org/)
 * [Nebraska.Code() <span>- Lincoln, Ne (March 19th-21st, 2015)</span>](http://nebraskacode.com/)
 * [SoCal Code Camp <span>- Fullerton, Ca (March 7th & 8th, 2015)</span>](http://www.socalcodecamp.net/)
 * [So Cal Code Camp <span>- Los Angeles, Ca (November 2014)</span>](http://www.socalcodecamp.net/)
 * [Desert Code Camp <span>- Chandler, Az (October 2014)</span>](https://www.desertcodecamp.com/)
 * [Southeast Valley .Net User Group <span>- Chandler, Az (September 2014)</span>](http://www.meetup.com/sevdnug/)
 
-<p>&nbsp;</p>
-
 <small>[back to top]({{< ref"speaking.md#top" >}})</small>
 
-
-----
+---
 
 ### <a name="uprunangular"></a>Up and Running with Angular
 
@@ -493,7 +447,6 @@ Testing overview (if time permits and our brains aren’t already full with Angu
 
 Labs: [http://digitaldrummerj.me/angular-tutorial](http://digitaldrummerj.me/angular-tutorial)
 
-
 #### Pre-Requisite Knowledge:
 
 * Html and CSS
@@ -514,24 +467,18 @@ Labs: [http://digitaldrummerj.me/angular-tutorial](http://digitaldrummerj.me/ang
 * Run: ng serve
 * Open browser and navigate to http://localhost:4200 and you should see the default web page for your Angular application
 
-
 #### Past Presentations
 
 * [Detroit.Code() <span> - Detroit, MI (July 10-12, 2017)</span>](https://detroitcode.amegala.com/)
 * [Girl Develop It <span> - Phoenix, AZ (May 13th, 2017)</span>](https://www.meetup.com/Girl-Develop-It-Phoenix/events/239274125/)
 
-
-<p>&nbsp;</p>
-
 <small>[back to top]({{< ref"speaking.md#top" >}})</small>
 
-
-----
-
+---
 
 ### <a name="vagrant"></a>Vagrant - Devops Yourself: Fast-Track Your Dev Environment Setup.
 
-Does this ever happen to you? The configuration takes forever to remember, document and configure. You can't seem to reproduce the configuration on another developers machine? Then vagrant my friend is for you.  Vagrant will change how you work.    You will forever say goodbye to the "works on my machine" excuse for the development environment for everyone on your team.
+Does this ever happen to you? The configuration takes forever to remember, document and configure. You can't seem to reproduce the configuration on another developers machine? Then vagrant my friend is for you. Vagrant will change how you work. You will forever say goodbye to the "works on my machine" excuse for the development environment for everyone on your team.
 
 Vagrant Only Slides: [http://www.slides.com/digitaldrummerj/devopsyourself](http://www.slides.com/digitaldrummerj/devopsyourself)
 
@@ -540,9 +487,10 @@ Vagrant and Chocolatey Slides: [http://slides.com/digitaldrummerj/devopsyourself
 Examples: [https://github.com/digitaldrummerj/VagrantTalk](https://github.com/digitaldrummerj/VagrantTalk)
 
 #### Additional Resources
-- [vagrantup.com](http://www.vagrantup.com)
-- [Chocolatey Gallery (chocolatey.org)](http://chocolatey.org)
-- [Boxstarter.org](http://boxstarter.org)
+
+* [vagrantup.com](http://www.vagrantup.com)
+* [Chocolatey Gallery (chocolatey.org)](http://chocolatey.org)
+* [Boxstarter.org](http://boxstarter.org)
 
 #### Past Presentations
 
@@ -553,24 +501,18 @@ Examples: [https://github.com/digitaldrummerj/VagrantTalk](https://github.com/di
 * [SoCal Code Camp <span>- Fullerton, Ca (March 7th & 8th, 2015)</span>](http://www.socalcodecamp.net/)
 * [Las Vegas Code Camp <span>- Las Vegas, Nv (February 21, 2015)</span>](http://spring2015.lasvegascodecamp.com/home)
 
-<p>&nbsp;</p>
-
 <small>[back to top]({{< ref"speaking.md#top" >}})</small>
 
-
-----
-
+---
 
 ### <a name="blogging"></a> Why You Need A Blog and How to Create a Successful One
 
-Blogging can greatly help you advance your career.  Don't wait until you need a blog to create one.  This talk gives you all of the tools that you need to create a blog that is updated regularly. 
+Blogging can greatly help you advance your career. Don't wait until you need a blog to create one. This talk gives you all of the tools that you need to create a blog that is updated regularly.
 
 Slides: [http://slides.com/digitaldrummerj/blogging/](http://slides.com/digitaldrummerj/blogging/)
 
 #### Past Presentations
 
 * [Phoenix Versioning User Group <span>- Tempe, Az (September 9th, 2015)</span>](http://www.meetup.com/phoenix-versioning)
-
-<p>&nbsp;</p>
 
 <small>[back to top]({{< ref"speaking.md#top" >}})</small>
