@@ -276,7 +276,7 @@ Are you already a web developer and want to create a mobile application? Then co
 
 #### Past Presentations
 
-* [DevUp <span> - St. Louis, MO (Octber 16-18, 2017)](devupconf.org)
+* [DevUp <span> - St. Louis, MO (Octber 16-18, 2017)](https://devupconf.org)
 * [MidwestJS <span> - Minneapolis, MN (August 10th-12th 2016)</span>](http://midwestjs.com/)
 * [That Conference <span>- Wisconsin Dells, Wisconsin (August 8th-10th, 2016)</span>](http://thatconference.com)
 * [Las Vegas .NET User Group<span>- Las Vegas, Nv (July 28th, 2016)</span>](http://www.dotnetgroup.org/)
@@ -469,7 +469,7 @@ Labs: [http://digitaldrummerj.me/angular-tutorial](http://digitaldrummerj.me/ang
 
 #### Past Presentations
 
-* [DevUp <span> - St. Louis, MO (Octber 16-18, 2017)](devupconf.org)
+* [DevUp <span> - St. Louis, MO (Octber 16-18, 2017)](https://devupconf.org)
 * [Detroit.Code() <span> - Detroit, MI (July 10-12, 2017)</span>](https://detroitcode.amegala.com/)
 * [Girl Develop It <span> - Phoenix, AZ (May 13th, 2017)</span>](https://www.meetup.com/Girl-Develop-It-Phoenix/events/239274125/)
 
