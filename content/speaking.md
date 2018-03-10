@@ -239,18 +239,18 @@ Slides: [https://www.slideshare.net/digitaldrummerj/everyone-is-a-public-speaker
 
 Are you already a web developer and want to create a mobile application? Then come learn all about the Ionic mobile framework. Using technologies that we already know and love with Html 5, Javascript, and CSS 3, you can easily create a mobile application that targets Android, iOS, and Windows 10 Phone. Your application will look, feel and perform like a native application without you having to do anything special. Ionic takes care of all of the hard work of making it look right on the mobile devices so that you can focus on your application. After seeing the Ionic framework, you will be excited to deliver mobile applications. We will walk through the features of Ionic, getting it setup, and then create a fully working application that is ready to release in the app store.
 
-**Ionic v2 Overview**
+#### Ionic v2 Overview
 
 * [Slides](http://digitaldrummerj.me/ionic-v2/#/)
 * [Conference App Demo](https://github.com/driftyco/ionic-conference-app)
 * [Master/Detail Demo](https://github.com/digitaldrummerj/ionic2-master-detail-demo)
 
-**Ionic V1 Overview**
+#### Ionic V1 Overview
 
 * [Slides](https://slides.com/digitaldrummerj/ionic-overview-2016/)
 * [Demos](https://github.com/digitaldrummerj/IonicFrameworkTalk)
 
-**Visual Studio Apache Cordova Tooling With Ionic**
+#### Visual Studio Apache Cordova Tooling With Ionic
 
 * [Slides](https://github.com/digitaldrummerj/TacoTalk/blob/master/Taco%20-%20Intro.pdf)
 * [Demos](https://github.com/digitaldrummerj/TacoTalk)
@@ -276,7 +276,7 @@ Are you already a web developer and want to create a mobile application? Then co
 
 #### Past Presentations
 
-* [DevUp) <span>St. Louis, MO (Octber 16-18))](http://dev)
+* [DevUp <span> - St. Louis, MO (Octber 16-18, 2017)](devupconf.org)
 * [MidwestJS <span> - Minneapolis, MN (August 10th-12th 2016)</span>](http://midwestjs.com/)
 * [That Conference <span>- Wisconsin Dells, Wisconsin (August 8th-10th, 2016)</span>](http://thatconference.com)
 * [Las Vegas .NET User Group<span>- Las Vegas, Nv (July 28th, 2016)</span>](http://www.dotnetgroup.org/)
@@ -307,7 +307,7 @@ Being able to understand and use version control is a critical part of being a s
 
 You will walk away from this talk ready to use Git and Github to manage all of your code assets and know how to contribute to open source projects.
 
-If you want to follow along with the examples, bring your laptop with install the Git command line from https://git-scm.com/download/ and have a Github account created at https://github.com if you do not already have one.
+If you want to follow along with the examples, bring your laptop with install the Git command line from [https://git-scm.com/download/](https://git-scm.com/download/) and have a Github account created at [https://github.com](https://github.com) if you do not already have one.
 
 Slides: [http://digitaldrummerj.me/version-control-intro/#/](http://digitaldrummerj.me/version-control-intro/#/)
 
@@ -447,16 +447,16 @@ Testing overview (if time permits and our brains aren’t already full with Angu
 
 Labs: [http://digitaldrummerj.me/angular-tutorial](http://digitaldrummerj.me/angular-tutorial)
 
-#### Pre-Requisite Knowledge:
+#### Pre-Requisite Knowledge
 
 * Html and CSS
 * Understanding of how events like click work in Html/JavaScript
 * TypeScript is helpful but we will cover the needed knowledge if you do not have any TypeScript experience
 
-#### Pre-Work:
+#### Pre-Work
 
-* Node LTS 6.x (https://nodejs.org)
-* Visual Studio Code (https://code.visualstudio.com)
+* Node LTS 6.x [https://nodejs.org](https://nodejs.org)
+* Visual Studio Code [https://code.visualstudio.com](https://code.visualstudio.com)
 * Angular CLI (npm install -g @angular/cli)
 * Create a new Angular project using the Angular CLI
 * Open Command Prompt or Terminal
@@ -465,10 +465,11 @@ Labs: [http://digitaldrummerj.me/angular-tutorial](http://digitaldrummerj.me/ang
 * Run: cd projects
 * Run: ng new ng2ws –style scss –routing
 * Run: ng serve
-* Open browser and navigate to http://localhost:4200 and you should see the default web page for your Angular application
+* Open browser and navigate to [http://localhost:4200](http://localhost:4200) and you should see the default web page for your Angular application
 
 #### Past Presentations
 
+* [DevUp <span> - St. Louis, MO (Octber 16-18, 2017)](devupconf.org)
 * [Detroit.Code() <span> - Detroit, MI (July 10-12, 2017)</span>](https://detroitcode.amegala.com/)
 * [Girl Develop It <span> - Phoenix, AZ (May 13th, 2017)</span>](https://www.meetup.com/Girl-Develop-It-Phoenix/events/239274125/)
 
@@ -476,7 +477,7 @@ Labs: [http://digitaldrummerj.me/angular-tutorial](http://digitaldrummerj.me/ang
 
 ---
 
-### <a name="vagrant"></a>Vagrant - Devops Yourself: Fast-Track Your Dev Environment Setup.
+### <a name="vagrant"></a>Vagrant - Devops Yourself: Fast-Track Your Dev Environment Setup
 
 Does this ever happen to you? The configuration takes forever to remember, document and configure. You can't seem to reproduce the configuration on another developers machine? Then vagrant my friend is for you. Vagrant will change how you work. You will forever say goodbye to the "works on my machine" excuse for the development environment for everyone on your team.
 
