@@ -34,18 +34,16 @@
   "main": "gulpfile.js",
   "scripts": {
     "build:debug": "gulp build",
-    "build:prod": "gulp build --production",
     "build:css": "gulp css",
     "build:js": "gulp js",
     "build:hugo": "gulp public",
-    "build:hugo-prod": "gulp public-prod --production",
     "server": "gulp server",
-    "server:prod": "gulp server-prod"
+    "build:prod": "gulp build --production",
+    "build:hugo-prod": "gulp public-prod --production",
+    "server:prod": "gulp server-prod --production"
   },
   "babel": {
-    "presets": [
-      "es2015"
-    ]
+    "presets": ["es2015"]
   },
   "private": true
 }

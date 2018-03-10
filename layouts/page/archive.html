@@ -1,0 +1,14 @@
+{{ define "main" }}
+<h1>{{ .Title }}</h1>
+
+{{ .Content }}
+<div class="inner">
+    <ul class="side-nav no-bullet archive-list">
+        {{ range ((where .Site.RegularPages "Section" "blog").ByDate.Reverse ) }}
+        <li>
+            <a href="{{ .RelPermalink }}">{{ .Title }} - {{ .PublishDate.Format "Jan 02, 2006" }}{{ if (.Draft ) }} - DRAFT {{ end }}</a>
+        </li>
+        {{ end }}
+    </ul>
+</div>
+{{ end }}

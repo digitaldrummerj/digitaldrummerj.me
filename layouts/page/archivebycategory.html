@@ -1,0 +1,65 @@
+{{ define "main" }}
+<a name="top"></a>
+<h1>{{ .Title }}</h1>
+
+
+{{ $pageUrl := .RelPermalink | urlize }}
+{{ .Content }}
+
+{{ if not (eq (len $.Site.Taxonomies.categories) 0) }}
+{{ $fontUnit := "rem" }}
+{{ $largestFontSize := 1.5 }}
+{{ $smallestFontSize := .8 }}
+{{ $fontSpread := sub $largestFontSize $smallestFontSize }}
+{{ $max := add (len (index $.Site.Taxonomies.categories.ByCount 0).Pages) 1 }}
+{{ $min := len (index $.Site.Taxonomies.categories.ByCount.Reverse 0).Pages }}
+{{ $spread := sub $max $min }} {{ $fontStep := div $fontSpread $spread }}
+{{ $fontStep := div $fontSpread $spread }}
+
+<div id="category-index" class="column row">
+    <div class="tagcloud03">
+        <ul>
+            {{ range $name, $taxonomy := $.Site.Taxonomies.categories }}
+            {{ $currentTagCount := len $taxonomy.Pages }}
+            {{ $currentFontSize := (add $smallestFontSize (mul (sub $currentTagCount $min) $fontStep) ) }}
+            {{ $count := len $taxonomy.Pages }}
+            {{ $weight := div (sub (math.Log $count) (math.Log $min)) (sub (math.Log $max) (math.Log $min)) }}
+            {{ $currentFontSize := (add $smallestFontSize (mul (sub $largestFontSize $smallestFontSize) $weight) ) }}
+            <li>
+                <a href="{{ $pageUrl }}#{{ $name | urlize}}">{{ $name }}
+                    <span>{{ $currentTagCount }}</span>
+                </a>
+            </li>
+            {{ end }}
+        </ul>
+    </div>
+    <div id="blog-index" class="b30">
+        {{ range $name, $taxonomy := $.Site.Taxonomies.categories }}
+        {{ $currentTagCount := len $taxonomy.Pages }}
+        {{ $currentFontSize := (add $smallestFontSize (mul (sub $currentTagCount $min) $fontStep) ) }}
+        {{ $count := len $taxonomy.Pages }}
+        {{ $weight := div (sub (math.Log $count) (math.Log $min)) (sub (math.Log $max) (math.Log $min)) }}
+        {{ $currentFontSize := (add $smallestFontSize (mul (sub $largestFontSize $smallestFontSize) $weight) ) }}
+
+        <h3 class="archivetitle">
+            <a name="{{ $name }}"></a>{{ $name}}
+            <i class="badge">{{ $currentTagCount }}</i>
+        </h3>
+        <ul class="side-nav">
+            {{ range $taxonomy.Pages }}
+            <li>
+                <a href="{{ .RelPermalink }}">
+                    <strong> {{ .Title }} </strong> -
+                    <small>{{ .PublishDate.Format "Jan 02, 2006" }} </small>{{ if (.Draft ) }} - DRAFT {{ end }}</a>
+            </li>
+            {{ end }}
+        </ul>
+
+        <a href="{{ $pageUrl }}#top">
+            <small>back to top</small>
+        </a>
+        {{ end }}
+    </div>
+</div>
+{{ end }}
+{{ end }}
