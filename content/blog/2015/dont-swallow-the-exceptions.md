@@ -127,7 +127,7 @@ The reason for using a custom exception is to be able to catch your business log
     
 **Fix Example #3: Ability to Put in a Breakpoint**
 
-Yes I know I said there is 2 days to fix it but you can also do it this way.  However this is my least favorite way to not swallow exception as you are still technically swallowing the error but you can at least hook up the debugger, put a breakpoint on the return statement, and get at the exception details.  This only is of value in your development machine but it is at least better than nothing.  
+Yes I know I said there is 2 ways to fix it but you can also do it this way.  However this is my least favorite way to not swallow exception as you are still technically swallowing the error but you can at least hook up the debugger, put a breakpoint on the return statement, and get at the exception details.  This only is of value in your development machine but it is at least better than nothing.  
 
     public void SomeMethod()
     {
