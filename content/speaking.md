@@ -455,7 +455,9 @@ Labs: [http://digitaldrummerj.me/angular-tutorial](http://digitaldrummerj.me/ang
 
 #### Pre-Work
 
-* Node LTS 6.x [https://nodejs.org](https://nodejs.org)
+Below is a quick list of the pre-work commands.  These steps are covered in details in   [Lab 2](https://digitaldrummerj.github.io/angular-tutorial/#chapter2) and [Lab 3](https://digitaldrummerj.github.io/angular-tutorial/#chapter3)
+
+* Node LTS 8.x [https://nodejs.org](https://nodejs.org)
 * Visual Studio Code [https://code.visualstudio.com](https://code.visualstudio.com)
 * Angular CLI (npm install -g @angular/cli)
 * Create a new Angular project using the Angular CLI
@@ -463,8 +465,9 @@ Labs: [http://digitaldrummerj.me/angular-tutorial](http://digitaldrummerj.me/ang
 * Navigate to c:\ on Windows and ~/ on Osx
 * Run: mkdir projects
 * Run: cd projects
-* Run: ng new ng2ws –style scss –routing
-* Run: ng serve
+* Run: ng new ngws --style scss --routing
+* Run: cd ngws
+* Run: npm run start
 * Open browser and navigate to [http://localhost:4200](http://localhost:4200) and you should see the default web page for your Angular application
 
 #### Past Presentations
