@@ -4,7 +4,8 @@ baseurl = "https://digitaldrummerj.me/"
 languageCode = "en-us"
 title = "Justin James"
 theme = "foundation6"
-
+[blackfriday]
+     smartDashes = false
 # number of posts to show on home/category/tag pages (Default: 10)
 paginate = 5
 buildDrafts = false
@@ -79,7 +80,7 @@ weight=2
   youtube = "digitaldrummerj"
   twitch = "digitaldrummerj"
   slideshare = "digitaldrummerj"
-  
+
   # Description/subtitle for homepage (can be Markdown)
   description = "Web Developer and Professional Speaker"
 
