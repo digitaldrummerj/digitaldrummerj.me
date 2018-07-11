@@ -1,6 +1,9 @@
 # Hugo variables
 #
 baseurl = "http://digitaldrummerj.me/"
+[blackfriday]
+     smartDashes = false
+
 languageCode = "en-us"
 title = "Justin James"
 theme = "foundation6"
@@ -77,7 +80,7 @@ weight=2
   youtube = "digitaldrummerj"
   twitch = "digitaldrummerj"
   slideshare = "digitaldrummerj"
-  
+
   # Description/subtitle for homepage (can be Markdown)
   description = "Web Developer and Professional Speaker"
 
