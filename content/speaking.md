@@ -20,20 +20,19 @@ If you see me at an event, please be sure to come up and say "Hi". The best part
 
 If you'd like me to speak at your event, [drop me a line]({{ "/contact/" | prepend: site.baseurl >}}) and lets make it happen.  I can cover pretty much any topic you see me blog about but feel free to request just about anything.  -->
 
-### Codestock <span> - Knoxville, TN (April 20-21, 2018)</span>
+### Atlanta Angular Meetup <span> - Atlanta, GA (October 16th, 2010)</span>
 
+* [Up and Running with Angular in 60 Minutes]({{< ref"speaking.md#uprunangular60" >}})
+
+### Connect.Tech <span> - Atlanta, GA (October 17th-19th)</span>
+
+* [Up and Running with Angular Full Day Workshop]({{< ref"speaking.md#uprunangular" >}})
+
+### SoCal Code Camp <span> - Los Angeles, CA (November 10th-11th)</span>
+
+* [Up and Running with Angular in 60 Minutes]({{< ref"speaking.md#uprunangular" >}})
 * [Make Public Speaking Your Competitive Advantage]({{< ref"speaking.md#pubspeak" >}})
-* [Conference Home Page](https://codestock.org/)
-
-### Stir Trek <span> - Columbus, OH (May 4, 2018)</span>
-
-* [Rapid Api Development with Node and SailsJS]({{< ref"speaking.md#sails" >}})
-* [Conference Home Page](https://www.stirtrek.com/)
-
-### NDC Minnesota <span> - Saint Paul, MN (May 7-10, 2018)</span>
-
-* [Angular Unit Testing from the Trenches]({{< ref"speaking.md#angulartesting" >}})
-* [Conference Home Page](https://ndcminnesota.com/)
+* Zero to Database with EF Core Code First in 60 minutes
 
 <!--
 ### Music City Code <span> - Nashville, TN (August 18th-20th, 2016)</span>
@@ -223,10 +222,10 @@ I will share with you how I went from a shy, introverted software developer who 
 
 You will walk away on the road to becoming a confident public speaker that knows how to give an effective presentation and will be ready to rock your next presentation.
 
-Slides: [https://www.slideshare.net/digitaldrummerj/everyone-is-a-public-speaker](https://www.slideshare.net/digitaldrummerj/everyone-is-a-public-speaker)
-
 #### Past Presentations
 
+* [Desert Code Camp <span> - Phoenix, AZ (October 6th, 2018)</span>](https://oct2018.desertcodecamp.com/)
+* [Nebraska.Code() <span> - Omaha, NE (June 6th-8th, 2018)</span>](https://nebraskacode.amegala.com)
 * [Codestock <span> - Knoxville, TN (August 18th-20th, 2018)</span>](http://www.musiccitycode.com)
 * [Desert Code Camp <span> - Phoenix, AZ (October 14, 2017)</span>](https://oct2017.desertcodecamp.com/)
 * [San Diego Code Camp <span>- San Diego, CA (June 24, 2017)</span>](http://www.socalcodecamp.net/)
@@ -368,6 +367,9 @@ Code: [github.com//digitaldrummerj/sailstalk](github.com//digitaldrummerj/sailst
 
 #### Past Presentations
 
+* [DevUp <span> - St Louis, MO (October 8th-10th, 2018)</spa>](https://devupconf.org/)
+* [MidwestJS <span> - Minneapolis, MN (August 8th-10th, 2018)</span>](http://www.midwestjs.com)
+* [KCDC <span> - Kansas City, MO (July 12th-13th, 2018)</span>](https://kcdc.info/)
 * [Stir Trek <span> - Columbus, OH (May 4th, 2018)</spa>](https://www.stirtrek.com/)
 * [Angular Mix <span> - Orlando, FL (October 8th-13th, 2017)</span>](https://angularmix.com/)
 * [KCDC (Half-Day Workshop) <span> - Kansas City, MO (August 3rd-5th, 2017)</span>](http://www.kcdc.info/)
@@ -427,7 +429,21 @@ Demo: [https://github.com/digitaldrummerj/DeveloperProductivityTalk](https://git
 
 ---
 
-### <a name="uprunangular"></a>Up and Running with Angular
+### <a name="uprunangular60"></a>Up and Running with Angular in 60 Minutes
+
+If you have ever wanted to code an application with Angular this is your chance. Join us for a fun filled day of learning Angular in this hands-on workshop. You will go from 0 to 60 with your Angular knowledge and be able to create our own Angular applications by the end of this workshop. We will start with a new project and continue to build up the project until we have a full application at the end.
+
+#### Past Presentations
+
+* [Atlanta Angular Meetup <span> - Atlanta, GA (Octber 16th, 2018)](https://www.meetup.com/ATL-Angular/events/ggmhgqyxnbwb/)
+* [DevUp <span> - St. Louis, MO (Octber 8th-10th, 2018)](https://devupconf.org)
+* [Desert Code Camp <span> - Phoenix, AZ (October 6th, 2018)</span>](https://oct2018.desertcodecamp.com/)
+
+<small>[back to top]({{< ref"speaking.md#top" >}})</small>
+
+---
+
+### <a name="uprunangular"></a>Up and Running with Angular Workshop
 
 If you have ever wanted to code an application with Angular this is your chance. Join us for a fun filled day of learning Angular in this hands-on workshop. You will go from 0 to 60 with your Angular knowledge and be able to create our own Angular applications by the end of this workshop. We will start with a new project and continue to build up the project until we have a full application at the end.
 
@@ -479,6 +495,7 @@ Below is a quick list of the pre-work commands.  These steps are covered in deta
 <small>[back to top]({{< ref"speaking.md#top" >}})</small>
 
 ---
+
 
 ### <a name="vagrant"></a>Vagrant - Devops Yourself: Fast-Track Your Dev Environment Setup
 
