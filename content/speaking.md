@@ -26,7 +26,7 @@ If you'd like me to speak at your event, [drop me a line]({{ "/contact/" | prepe
 
 ### Connect.Tech <span> - Atlanta, GA (October 17th-19th)</span>
 
-* [Up and Running with Angular Full Day Workshop]({{< ref"speaking.md#uprunangular" >}})
+* [Up and Running with Angular Workshop]({{< ref"speaking.md#uprunangular" >}})
 
 ### SoCal Code Camp <span> - Los Angeles, CA (November 10th-11th)</span>
 
@@ -65,7 +65,8 @@ If you would like me to given any of these talks you are meetings, please let me
 * [Rapid Api Development With Node and Sails]({{< ref"speaking.md#sails" >}})
 * [Side Waffle - The easiest way to build templates for Visual Studio]({{< ref"speaking.md#sidewaffle" >}})
 * [Tips and Tricks to Maximize Your Productivity in Visual Studio]({{< ref"speaking.md#vsprod" >}})
-* [Up and Running with Angular]({{< ref"speaking.md#uprunangular" >}})
+* [Up and Running with Angular in 60 Minutes]({{< ref"speaking.md#uprunangular60" >}})
+* [Up and Running with Angular Workshop]({{< ref"speaking.md#uprunangular" >}})
 * [Vagrant - Devops Yourself: Fast-Track Your Dev Environment Setup.]({{< ref"speaking.md#vagrant" >}})
 * [Why You Need A Blog and How to Create a Successful One]({{< ref"speaking.md#blogging" >}})
 
