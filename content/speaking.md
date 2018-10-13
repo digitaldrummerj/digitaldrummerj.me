@@ -450,17 +450,17 @@ If you have ever wanted to code an application with Angular this is your chance.
 
 Topics Covered
 
-What is Angular and the different parts that make up Angular?
-Angular CLI Overview
-Angular project layout overview
-Creating common components like headers, footers, and menus.
-Applying CSS to just a single component vs the whole site
-Creating new components (pages)
-Routing between components (pages)
-Calling an external http service
-Preparing your application for deployment
-Adding authorization checks to routes (if time permits)
-Testing overview (if time permits and our brains aren’t already full with Angular knowledge)
+* What is Angular and the different parts that make up Angular?
+* Angular CLI Overview
+* Angular project layout overview
+* Creating common components like headers, footers, and menus.
+* Applying CSS to just a single component vs the whole site
+* Creating new components (pages)
+* Routing between components (pages)
+* Calling an external http service
+* Preparing your application for deployment
+* Adding authorization checks to routes (if time permits)
+* Testing overview (if time permits and our brains aren’t already full with Angular knowledge)
 
 Labs: [http://digitaldrummerj.me/angular-tutorial](http://digitaldrummerj.me/angular-tutorial)
 
