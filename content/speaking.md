@@ -6,9 +6,7 @@ sidebar: false
 ---
 
 <a name="#top"></a><div class="teaser">
-I have a passion for teaching and sharing my knowledge to help get you to your end goal faster. If you'd like me to speak at your event, <a href="/contact/">drop me a line</a>. I can cover pretty much any topic you see me blog about but feel free to request just about anything.
-
-If you've attended one of my sessions, please send me your feedback or suggestions.
+I have a passion for teaching and sharing my knowledge to help get you to your end goal faster. If you'd like me to speak at your event, <a href="/contact/">drop me a line</a>.
 
 If you see me at an event, please be sure to come up and say "Hi". The best part of the events is hanging out with other developers.
 
@@ -20,19 +18,11 @@ If you see me at an event, please be sure to come up and say "Hi". The best part
 
 If you'd like me to speak at your event, [drop me a line]({{ "/contact/" | prepend: site.baseurl >}}) and lets make it happen.  I can cover pretty much any topic you see me blog about but feel free to request just about anything.  -->
 
-### Atlanta Angular Meetup <span> - Atlanta, GA (October 16th, 2010)</span>
-
-* [Up and Running with Angular in 60 Minutes]({{< ref"speaking.md#uprunangular60" >}})
-
-### Connect.Tech <span> - Atlanta, GA (October 17th-19th)</span>
-
-* [Up and Running with Angular Workshop]({{< ref"speaking.md#uprunangular" >}})
-
 ### SoCal Code Camp <span> - Los Angeles, CA (November 10th-11th)</span>
 
-* [Up and Running with Angular in 60 Minutes]({{< ref"speaking.md#uprunangular" >}})
+* [Up and Running with Angular in 60 Minutes]({{< ref"speaking.md#uprunangular60" >}})
 * [Make Public Speaking Your Competitive Advantage]({{< ref"speaking.md#pubspeak" >}})
-* Zero to Database with EF Core Code First in 60 minutes
+* [Zero to Database with EF Core Code First in 60 minutes]({{< ref"speaking.md#efcorecodefirst">}})
 
 <!--
 ### Music City Code <span> - Nashville, TN (August 18th-20th, 2016)</span>
@@ -43,15 +33,27 @@ If you'd like me to speak at your event, [drop me a line]({{ "/contact/" | prepe
 
 ---
 
-## My Presentation Topics
+## Topics
 
 Below are all of the talks that I have given with links to the slides and any additional resources that I may have.
 
-If you would like me to given any of these talks you are meetings, please let me know. I am also open to new talks if you don't see something below, just ask.
+If you'd like me to speak at your event, <a href="/contact/">drop me a line</a>.
 
-### Topics
+### Current Talks
 
 * [Angular Unit Testing from the Trenches]({{< ref"speaking.md#angulartesting" >}})
+* [Make Public Speaking Your Competitive Advantage]({{< ref"speaking.md#pubspeak" >}})
+* [Rapid Api Development With Node and Sails]({{< ref"speaking.md#sails" >}})
+* [Up and Running with Angular in 60 Minutes]({{< ref"speaking.md#uprunangular60" >}})
+* [Up and Running with Angular Workshop]({{< ref"speaking.md#uprunangular" >}})
+* [Zero to Database with EF Core Code First in 60 minutes]({{< ref"speaking.md#efcorecodefirst">}})
+
+<small>[back to top]({{< ref"speaking.md#top" >}})</small>
+
+---
+
+### Retired Talks
+
 * [Build mobile apps for iOS, Android, and Windows using JavaScript]({{< ref"speaking.md#taco" >}})
 * [Chocolatey - making the process of installing software on windows easy as pie]({{< ref"speaking.md#chocolatey" >}})
 * [Continuous Integration with Github and TravisCI]({{< ref"speaking.md#travisci" >}})
@@ -59,20 +61,17 @@ If you would like me to given any of these talks you are meetings, please let me
 * [Data Driven Restful Api Creation Made Easy Breezy]({{< ref"speaking.md#cloudapishootout" >}})
 * [Gulp for the .Net Developer]({{< ref"speaking.md#gulp" >}})
 * [Intro to Version Control with Git and Github]({{< ref"speaking.md#introgit" >}})
-* [Make Public Speaking Your Competitive Advantage]({{< ref"speaking.md#pubspeak" >}})
 * [Mobile Dev for Web Devs]({{< ref"speaking.md#ionic" >}})
 * [Nuget is easier than you think and you should be using it as both a consumer and creator of packages]({{< ref"speaking.md#nuget" >}})
-* [Rapid Api Development With Node and Sails]({{< ref"speaking.md#sails" >}})
 * [Side Waffle - The easiest way to build templates for Visual Studio]({{< ref"speaking.md#sidewaffle" >}})
 * [Tips and Tricks to Maximize Your Productivity in Visual Studio]({{< ref"speaking.md#vsprod" >}})
-* [Up and Running with Angular in 60 Minutes]({{< ref"speaking.md#uprunangular60" >}})
-* [Up and Running with Angular Workshop]({{< ref"speaking.md#uprunangular" >}})
 * [Vagrant - Devops Yourself: Fast-Track Your Dev Environment Setup.]({{< ref"speaking.md#vagrant" >}})
 * [Why You Need A Blog and How to Create a Successful One]({{< ref"speaking.md#blogging" >}})
 
 <small>[back to top]({{< ref"speaking.md#top" >}})</small>
 
 ---
+
 
 ### <a name="angulartesting"></a>Angular Unit Testing from the Trenches
 
@@ -436,8 +435,8 @@ If you have ever wanted to code an application with Angular this is your chance.
 
 #### Past Presentations
 
-* [Atlanta Angular Meetup <span> - Atlanta, GA (Octber 16th, 2018)](https://www.meetup.com/ATL-Angular/events/ggmhgqyxnbwb/)
-* [DevUp <span> - St. Louis, MO (Octber 8th-10th, 2018)](https://devupconf.org)
+* [Atlanta Angular Meetup <span> - Atlanta, GA (Octber 16th, 2018)</span>](https://www.meetup.com/ATL-Angular/events/ggmhgqyxnbwb/)
+* [DevUp <span> - St. Louis, MO (Octber 8th-10th, 2018)</span>](https://devupconf.org)
 * [Desert Code Camp <span> - Phoenix, AZ (October 6th, 2018)</span>](https://oct2018.desertcodecamp.com/)
 
 <small>[back to top]({{< ref"speaking.md#top" >}})</small>
@@ -489,7 +488,13 @@ Below is a quick list of the pre-work commands.  These steps are covered in deta
 
 #### Past Presentations
 
-* [DevUp <span> - St. Louis, MO (Octber 16-18, 2017)](https://devupconf.org)
+* [Live Virtual Workshop with Recording](https://speakercoachingspecialist.com/ng-workshop)
+* [Connect.Tech <span>- Atlanta, GA (October 17th, 2018)</span>](http://connect.tech/)
+* [MidwestJS <span> - Minneapolis, MN (August 8th, 2018)</span>](http://www.midwestjs.com/)
+* [KDCDC <span> - Kansas City, MO (July 11, 2018)</span>](http://www.kcdc.info/)
+* [Nebraska.Code <span> - Lincoln, NE (June 6, 2018)</span>](https://nebraskacode.amegala.com)
+* [Music City Tech <span> - Nashville, TN (May 31, 2018)</span>](http://www.musiccitycode.com/)
+* [DevUp <span> - St. Louis, MO (Octber 16-18, 2017)</span>](https://devupconf.org)
 * [Detroit.Code() <span> - Detroit, MI (July 10-12, 2017)</span>](https://detroitcode.amegala.com/)
 * [Girl Develop It <span> - Phoenix, AZ (May 13th, 2017)</span>](https://www.meetup.com/Girl-Develop-It-Phoenix/events/239274125/)
 
@@ -536,5 +541,17 @@ Slides: [http://slides.com/digitaldrummerj/blogging/](http://slides.com/digitald
 #### Past Presentations
 
 * [Phoenix Versioning User Group <span>- Tempe, Az (September 9th, 2015)</span>](http://www.meetup.com/phoenix-versioning)
+
+<small>[back to top]({{< ref"speaking.md#top" >}})</small>
+
+---
+
+### <a name="efcorecodefirst"></a> Zero to Database with EF Core Code First in 60 minutes
+
+Be able to quickly create databases that even your DBA would be proud of without becoming a database expert using EF Core Code First.   You will never again let someone else create the database and then reverse engineer it with EF Core tooling.  Everything you need comes out of the box with EF Core.  You will walk away immediately ready to create your own database using EF Core Code First.
+
+#### Past Presentations
+
+* [ SoCal Code Camp <span> - Los Angeles, CA (November 10th-11th, 2018)</span>](https://www.socalcodecamp.com/)
 
 <small>[back to top]({{< ref"speaking.md#top" >}})</small>
