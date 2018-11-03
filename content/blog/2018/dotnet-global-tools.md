@@ -1,6 +1,6 @@
 ---
 categories:
-- dotnet core
+- dotnet-core
 - web-api
 date: 2018-11-05T00:00:00Z
 published: true
