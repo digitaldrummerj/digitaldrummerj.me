@@ -29,9 +29,3 @@ Unfortunately, one of the features that is missing though is the ability to sear
  [https://github.com/natemcmaster/dotnet-tools](https://github.com/natemcmaster/dotnet-tools)
 
 In our next article, we will start to take a look at a few of the global tools that I am using.
-
-https://github.com/Arasz/dotnet-ignore
-
-https://github.com/sebnilsson/DotnetCleanup
-
-https://www.nuget.org/packages/dotnet-aspnet-codegenerator/
