@@ -3,7 +3,7 @@ categories:
 - visual studio
 - ionic
 - npm
-- nodejs
+- node
 - bower
 - git
 date: 2015-08-20T00:00:00Z
@@ -22,15 +22,15 @@ title: Visual Studio 2015 - External Web Tools
 
 ---
 
-I ran into an issue with an npm package mis-behaving in Visual Studio 2015 but working just fine from the command line.  
+I ran into an issue with an npm package mis-behaving in Visual Studio 2015 but working just fine from the command line.
 
-After scratching my head for awhile trying to figure out what was going on, I discovered that Visual Studio was pointing to its own version of npm and node and not that ones that were available in my path that the command line was using. Visual Studio 2015 ships with: 
+After scratching my head for awhile trying to figure out what was going on, I discovered that Visual Studio was pointing to its own version of npm and node and not that ones that were available in my path that the command line was using. Visual Studio 2015 ships with:
 
 * Node
 * npm
 * git
 
-All of these tools are installed as part of Visual Studio but they are installed into the Visual Studio install directory and are not used by the command line.    
+All of these tools are installed as part of Visual Studio but they are installed into the Visual Studio install directory and are not used by the command line.
 
 If you have manually installed any of these tools like I had, then most likely you have a difference in versions between what the command line is using versus Visual Studio.
 
@@ -46,4 +46,4 @@ To use the system PATH environment variable instead, click on the $(PATH) and us
 
 ![Visual Studio External Web Tools Path Moved Higher](/images/VisualStudio/VisualStudio2015-ExternalWebTools_PathHigher.png)
 
-This will ensure that the version of the tools used matches what the command line is using. 
+This will ensure that the version of the tools used matches what the command line is using.

@@ -89,7 +89,7 @@ function clean(done) {
 // 0.5 - Hugo build task
 gulp.task('hugo-build', code => {
   return cp
-    .spawn('hugo', ['-t', THEME.name, '-s', HUGO.root], { stdio: 'inherit' })
+    .spawn('hugo', ['-t', THEME.name, '-s', HUGO.root, '--config', PAATHS.config], { stdio: 'inherit' })
     .on('error', error => log(colors.red(error.message)))
     .on('close', code);
 });
@@ -105,7 +105,7 @@ gulp.task('hugo-build-prod', code => {
 // 0.6 - Hugo server task
 gulp.task('hugo-server', code => {
   return cp
-    .spawn('hugo', ['server', '-p', PORT, '-t', THEME.name, '-s', HUGO.root], { stdio: 'inherit' })
+    .spawn('hugo', ['server', '--buildDrafts', '--buildFuture', '--config', PATHS.config, '-p', PORT, '-t', THEME.name, '-s', HUGO.root], { stdio: 'inherit' })
     .on('error', error => log(colors.red(error.message)))
     .on('close', code);
 });

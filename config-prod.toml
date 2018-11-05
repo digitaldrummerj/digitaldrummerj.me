@@ -142,7 +142,7 @@ home = ["HTML","FEED", "ATOM"]
 
 [mediaTypes]
 [mediaTypes."application/rss"]
-suffix = "xml"
+suffixes = ["xml"]
 
 [outputFormats]
 [outputFormats.FEED]

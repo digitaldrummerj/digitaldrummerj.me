@@ -1,7 +1,7 @@
 ---
 categories:
 - proxy
-- nodejs
+- node
 - npm
 - bash
 - bower
@@ -16,13 +16,13 @@ title: Npm, Bower, Git, and Bash Proxy Configurations
 
 ---
 
-When you are using npm, bower, and git behind a proxy server you have to do a little bit of configuration.  Luckily it is super easy to do these configurations.  Almost all of the programs have command line commands to set and unset the proxy server.  
+When you are using npm, bower, and git behind a proxy server you have to do a little bit of configuration.  Luckily it is super easy to do these configurations.  Almost all of the programs have command line commands to set and unset the proxy server.
 
 ## Updates:
 
 * **Updated 2015-Feb-01**: Added running source command for Bash and Ruby Gems section
 * **Updated 2015-May-07**: Added the Ionic Start command
-* **Updated 2015-May-08**: Added the Android SDK 
+* **Updated 2015-May-08**: Added the Android SDK
 * **Updated 2015-Aug-03**: Added command lines to set proxy
 * **Updated 2015-Oct-20**: Added Gradle
 
@@ -51,7 +51,7 @@ You will need to close and re-open command prompt for settings to take effect
 
 Run from a non-administrative command prompt
 
-	setx http_proxy=[Your Proxy]:[Proxy Port] 
+	setx http_proxy=[Your Proxy]:[Proxy Port]
 	setx https_proxy=[Your Proxy]:[Proxy Port]
 
 You will need to close and re-open command prompt for settings to take effect
@@ -69,7 +69,7 @@ Need to close and re-open command prompt for settings to take effect
 
 Run from a non-administrative command prompt
 
-	setx http_proxy="" 
+	setx http_proxy=""
 	setx https_proxy=""
 
 Need to close and re-open command prompt for settings to take effect
@@ -103,33 +103,33 @@ Note:   After updated the .bash_profile or .bashrc, you should run one of the fo
 
 ## Bower
 
-There is no command line that I found for configuring bower.  Instead you need to create a .bowerrc file in the users home directory.  
+There is no command line that I found for configuring bower.  Instead you need to create a .bowerrc file in the users home directory.
 
 On Windows:  %userprofile% directory.
 
-On Linux: ~/  
+On Linux: ~/
 
 ### Creating .bowerrc file on Windows
 
-Windows Explorer unfortunately does not  allow you to create files without extensions but using notepad you can create a file without an extension.  
+Windows Explorer unfortunately does not  allow you to create files without extensions but using notepad you can create a file without an extension.
 
 1. Open Notepad
 1. Ctrl + S to save the file
 1. Navigate to the %UserProfile% directory
 1. Change the "Save as Type" to "All Files (*.*)
-1. Name the file .bowerrc 
+1. Name the file .bowerrc
 1. Click the Save button
 1. Now you can edit the file in your text editor of choice
 
-  
+
 ### Proxy Setting in .bowerrc.
 
 	{
 		"proxy":"http://[Your Proxy]:[Proxy Port]",
 		"https-proxy":"http://[Your Proxy]:[Proxy Port]"
 	}
-     
----- 
+
+----
 
 ## Git
 
@@ -155,7 +155,7 @@ You can also set the proxy settings below to be system wide with the --system sw
 **All Configs**
 
 	git config --list
-	
+
 ### Manually Update .gitconfig (not recommended)
 
 	[http]
@@ -187,8 +187,8 @@ You can also set the proxy settings below to be system wide with the --system sw
 
 	proxy=http://[Your Proxy]:[Proxy Port]
 	https-proxy=http://[Your Proxy]:[Proxy Port]
-    
-----	
+
+----
 
 ## Ruby Gem Install
 
@@ -202,12 +202,12 @@ If you need to manually set it
   export http_proxy=[Your Proxy]:[Proxy Port]
 	sudo gem install [your gem name]
 
-### Windows 
+### Windows
 
 	setx http_proxy "[Your Proxy Server]:[Proxy Port]" /M
 	gem install [your gem name]
 
-----	
+----
 
 ## Ionic Start Command
 
@@ -222,14 +222,14 @@ In order to run the ionic start command behind a proxy, you need start the comma
 	setx http_proxy "[Your Proxy Server]:[Proxy Port]" /M
 	ionic start [App Name] [Template Name]
 
-----	
+----
 
 ## Android SDK
-	
+
 
 The android SDK uses ~/.android/androidtool.cfg file to define the proxy information.  If the file does not exist, go ahead and create it.
 
-	
+
 	http.proxyHost=[Your Proxy]
 	http.proxyPort=[Proxy Port]
 
@@ -237,16 +237,16 @@ The android SDK uses ~/.android/androidtool.cfg file to define the proxy informa
 
 ## Gradle
 
-When trying to build an Android project that uses Gradle, you may need to configure the proxy for it.  
+When trying to build an Android project that uses Gradle, you may need to configure the proxy for it.
 
 On Windows:  %userprofile%/.gradle.properties
 
 
     systemProp.http.proxyHost=[Your Proxy]
     systemProp.http.proxyPort=[Proxy Port]
-    systemProp.http.nonProxyHosts=*.nonproxyrepos.com|localhost    
-    
+    systemProp.http.nonProxyHosts=*.nonproxyrepos.com|localhost
+
     systemProp.https.proxyHost=[Your Https Proxy]
-    systemProp.https.proxyPort=[Https Proxy Port] 
+    systemProp.https.proxyPort=[Https Proxy Port]
     systemProp.https.nonProxyHosts=*.nonproxyrepos.com|localhost
 
