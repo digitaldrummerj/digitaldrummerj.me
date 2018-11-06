@@ -5,6 +5,7 @@ categories:
 date: 2018-11-05T00:00:00Z
 published: true
 title: Dotnet CLI Global Tools Are Awesome!
+series: ["DotnetGlobalTools"]
 ---
 
 With the release of .NET Core 2.1 the .NET Core CLI includes a feature called Global Tools that provides a simple way to create and share cross-platform console tools.
