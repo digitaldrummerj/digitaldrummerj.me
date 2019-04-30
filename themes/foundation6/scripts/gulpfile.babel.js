@@ -137,7 +137,7 @@ gulp.task('lint', function() {
 function watch() {
   gulp.watch(path.join(THEME.source, '/scss/**/*.scss')).on('all', gulp.series(sass, 'lint'));
   gulp.watch(path.join(THEME.source, '/js/**/*.js')).on('all', gulp.series(javascript, 'lint'));
-  gulp.watch(THEME.public).on('all', gulp.series('lint'));
+  // gulp.watch(THEME.public).on('all', gulp.series('lint'));
 }
 
 // 1.0 - `Package.json` -> Gulp tasks
