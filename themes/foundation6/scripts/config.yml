@@ -9,8 +9,8 @@ COMPATIBILITY:
 
 # Foundation source directories.
 PATHS:
-  config: "../../../config.toml"
-  prodconfig: "../../../config-prod.toml"
+  config: "config.toml"
+  prodconfig: "config-prod.toml"
   # Paths to Sass libraries, which can then be loaded with @import
   sass:
     - "../source/scss"

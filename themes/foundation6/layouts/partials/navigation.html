@@ -22,7 +22,7 @@
                 </li>
                 {{ range .Site.Menus.navbar_left }}
 
-                <li {{ if eq .URL $.Page.URL }}class="active" {{ end }}>
+                <li {{ if eq .URL $.Page.RelPermalink  }}class="active" {{ end }}>
                     <a href="{{ .URL | absURL }}">{{ .Name }}</a>
                 </li>
                 {{ end }}
@@ -44,7 +44,7 @@
             </ul>
             <ul class="right">
                 {{ range .Site.Menus.navbar_right }}
-                <li {{ if eq .URL $.Page.URL }}class="active" {{ end }}>
+                <li {{ if eq .URL $.Page.RelPermalink  }}class="active" {{ end }}>
                     <a href="{{.URL | absURL }}">{{ .Name }}</a>
                 </li>
                 {{ end }}

@@ -1,6 +1,8 @@
 # Hugo variables
 #
 baseurl = "http://digitaldrummerj.me/"
+#googleAnalytics = "UA-58457343-1"
+#disqusShortname = "digitaldrummerj"
 [blackfriday]
      smartDashes = false
 
@@ -24,8 +26,7 @@ pygmentsStyle =               "manni" #"friendly"
 # Set to true to try to do syntax highlighting on code fenced blocks in markdown without a language tag.
 # pygmentsCodefencesGuessSyntax = true
 
-#googleAnalytics = "UA-58457343-1"
-#disqusShortname = "digitaldrummerj"
+
 
 [permalinks]
   blog = "/:filename/"
