@@ -3,7 +3,7 @@ categories:
 - meetup
 - community
 - zoom
-date: 2020-04-02T00:00:00Z
+date: 2020-04-04T00:00:00Z
 draft: true
 excerpt: ""
 title: Stop The Zoom Trolls.  Setup Zoom Correctly 
