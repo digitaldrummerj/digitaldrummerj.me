@@ -4,6 +4,8 @@
 
   {{ $dateFormat := default "Mon Jan 2, 2006" (index .Site.Params "date_format") }} 
 <header>
+  {{ with .Params.featured_image }}<img src="{{ . }}">{{ end }}
+
     <div itemprop="name">
         {{ if .Params.subheadline }}
         <p class="subheadline">{{ .Params.subheadline }}</p>

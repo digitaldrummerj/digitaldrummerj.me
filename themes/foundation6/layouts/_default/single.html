@@ -7,6 +7,7 @@
   {{ $dateFormat := default "Mon Jan 2, 2006" (index .Site.Params "date_format") }}
 
   <div class="blog-post">
+    {{ with .Params.featured_image }}<img src="{{ . }}">{{ end }}
     <h3>
       <a href="{{ .Permalink }}">{{ .Title | markdownify }}</a>
     </h3>
@@ -19,6 +20,7 @@
         {{ if (.Params.tags) }}Tags: {{ partial "meta-  tags.html" . }}.{{ end }}
       </small>
     </div>
+
     <p>
       {{ .Content }}
     </p>

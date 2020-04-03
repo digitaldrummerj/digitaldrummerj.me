@@ -5,25 +5,24 @@ categories:
 - zoom
 date: 2020-04-03T06:00:00Z
 draft: true
-excerpt: "Are you thinking about running or are running a public meeting using Zoom?  Then you need to prepare for the Zoom Trolls that want nothing more to do then make you end your meeting early.
+summary: "Are you thinking about running a public meeting using Zoom or are running a public meeting using Zoom?  Then you need to prepare for the Zoom Trolls to show up who want nothing more  then to force you to end your meeting early.  Our goal today is to limit the amount of damage that a troll can do to your meeting to almost nothing while still allow your community to network and grow.
 
-By following the Zoom configurations below, you can limit the amount of damage that a troll can do to your meeting to almost nothing.
 
-If you think it can't happen to you, think again.  It is just a matter of time before a troll joins your meeting with the sole purpose to disrupt your meeting and to make you have to end the meeting early.  The troll will cause disruption by sharing their screen, using the annotation feature to draw on the screen, and talking over the presenter.  They will share porn, write inappropriate messages on the screen and say offensive words.
+If you think that a Zoom Troll won't find your meeting, think again.  There are already programs available to generate Zoom meeting numbers and auto join those meeting.  So it is just a matter of time before they find your meeting.  These Zoom Trolls have become such an issue that even the FBI is warning people about.  When a Zoom Troll joins your meeting they cause disruptions by sharing porn that is on their screen, draw on the screen using the annotation feature, unmute themselves to talk over the presenter using inappropriate/offensive language and bring inappropriate on camera.
 
-To minimize the ability of a troll to cause any damage to your meeting there several quick and easy simple actions you need to take in your Zoom settings, when you are scheduling the meeting , and when you are running the meeting."
+
+We can easily minimize the ability of a Zoom Troll to cause any damage to your meeting using the Zoom settings below."
 
 title: Stop The Zoom Trolls and Prevent Zoombombing
+featured_image: /images/stop-zoom-trolls/stop-zoombombing.png
 
 ---
 
-Are you thinking about running or are running a public meeting using Zoom?  Then you need to prepare for the Zoom Trolls that want nothing more to do then force you to end your meeting early.
+Are you thinking about running a public meeting using Zoom or are running a public meeting using Zoom?  Then you need to prepare for the Zoom Trolls to show up who want nothing more  then to force you to end your meeting early.  Our goal today is to limit the amount of damage that a troll can do to your meeting to almost nothing while still allow your community to network and grow.
 
-By following the Zoom configurations below, you can limit the amount of damage that a troll can do to your meeting to almost nothing.
+If you think that a Zoom Troll won't find your meeting, think again.  There are already programs available to generate Zoom meeting numbers and auto join those meeting.  So it is just a matter of time before they find your meeting.  These Zoom Trolls have become such an issue that even the FBI is warning people about.  When a Zoom Troll joins your meeting they cause disruptions by sharing porn that is on their screen, draw on the screen using the annotation feature, unmute themselves to talk over the presenter using inappropriate/offensive language and bring inappropriate on camera.
 
-If you think it can't happen to you, think again.  It is just a matter of time.  Zoombombing as they call it has become a massive problem as Zoom usage has ramped up.  It has become enough of an issue they even the FBI is talking about.  It is just a matter of time before a troll joins your meeting with the sole purpose to disrupt your meeting and to force you  to end the meeting early. The troll will cause disruption by sharing their screen, using the annotation feature to draw on the screen, and talking over the presenter.  They will share porn, write inappropriate messages on the screen and say offensive words.
-
-To minimize the ability of a troll to cause any damage to your meeting there several quick and easy simple actions you need to take in your Zoom settings, when you are scheduling the meeting, and when you are running the meeting.
+We can easily minimize the ability of a Zoom Troll to cause any damage to your meeting using the Zoom settings below.
 
 ## Zoom Account Settings
 
@@ -99,5 +98,7 @@ When scheduling a meeting there aren't many options you can set but there are a 
 * In the participants panel, as the host you need to promote all of your other organizers and the presenter to co-host so they can share their desktop and moderate the meeting. Right click on each participant that you want to promote to co-host and select the co-host option.
 
 With these settings in place it is much harder for a troll to disrupt and destroy your meeting.  While at the same time still allowing you to build and grow your  community.
+
+The only trolling that they will be able to do is to be inappropriate on camera.  If this happen, in the participants panel, right-click on the person and turn off their camera.
 
 Happy Zooming!
