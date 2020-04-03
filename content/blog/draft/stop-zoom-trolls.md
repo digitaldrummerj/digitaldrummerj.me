@@ -3,20 +3,26 @@ categories:
 - meetup
 - community
 - zoom
-date: 2020-04-04T00:00:00Z
+date: 2020-04-03T06:00:00Z
 draft: true
-excerpt: "Are you thinking about running or are running a public meeting using Zoom?  These are meetings where you intend to post the Zoom link in a place that the general public can see it and anyone can join the meeting.
+excerpt: "Are you thinking about running or are running a public meeting using Zoom?  Then you need to prepare for the Zoom Trolls that want nothing more to do then make you end your meeting early.
 
-It is just a matter of time before a troll joins your meeting with the sole purpose to disrupt your meeting and to make you have to end the meeting early.  The troll will cause disruption by sharing their screen, using the annotation feature to draw on the screen, and talking over the presenter.  They will share porn, write inappropriate messages on the screen and say offensive words.
+By following the Zoom configurations below, you can limit the amount of damage that a troll can do to your meeting to almost nothing.
+
+If you think it can't happen to you, think again.  It is just a matter of time before a troll joins your meeting with the sole purpose to disrupt your meeting and to make you have to end the meeting early.  The troll will cause disruption by sharing their screen, using the annotation feature to draw on the screen, and talking over the presenter.  They will share porn, write inappropriate messages on the screen and say offensive words.
 
 To minimize the ability of a troll to cause any damage to your meeting there several quick and easy simple actions you need to take in your Zoom settings, when you are scheduling the meeting , and when you are running the meeting."
 title: Stop The Zoom Trolls.  Setup Zoom Correctly
 
 ---
 
-Are you thinking about running or are running a public meeting using Zoom?  These are meetings where you intend to post the Zoom link in a place that the general public can see it and anyone can join the meeting.
+Are you thinking about running or are running a public meeting using Zoom?  Then you need to prepare for the Zoom Trolls that want nothing more to do then make you end your meeting early.
 
-You might be thinking they won't find your meeting but you would be wrong.  I had a friend that was attending a virtual meetup this past week that had this happen to them and they had to end the meeting right in the middle of an awesome presentation.
+By following the Zoom configurations below, you can limit the amount of damage that a troll can do to your meeting to almost nothing.
+
+If you think it can't happen to you, think again.  It is just a matter of time before a troll joins your meeting with the sole purpose to disrupt your meeting and to make you have to end the meeting early.  The troll will cause disruption by sharing their screen, using the annotation feature to draw on the screen, and talking over the presenter.  They will share porn, write inappropriate messages on the screen and say offensive words.
+
+To minimize the ability of a troll to cause any damage to your meeting there several quick and easy simple actions you need to take in your Zoom settings, when you are scheduling the meeting , and when you are running the meeting.
 
 It is just a matter of time before a troll joins your meeting with the sole purpose to disrupt your meeting and to make you have to end the meeting early.  The troll will cause disruption by sharing their screen, using the annotation feature to draw on the screen, and talking over the presenter.  They will share porn, write inappropriate messages on the screen and say offensive words.
 
@@ -26,19 +32,19 @@ To minimize the ability of a troll to cause any damage to your meeting there sev
 
 Once your are logged into your Zoom account, go under settings:
 
-* Turn off Join before host
+* Turn off Join before host.
 
     ![join before host](/images/stop-zoom-trolls/join-before-host.png)
 
-* Turn on Mute participants upon entry
+* Turn on Mute participants upon entry.  This set the default to ensure that an attendee doesn't show up and immediately disrupt the meeting.
 
     ![mute participants upon entry](/images/stop-zoom-trolls/mute-participants-upon-entry.png)
 
-* Turn on Allow Host to Add Co-Host
+* Turn on Allow Host to Add Co-Host.  This will allow you to add other organizers or moderators at host of the meeting to have the same meeting controls as you do.
 
     ![co-host setting](/images/stop-zoom-trolls/host-add-co-host.png)
 
-* Turn on Allow host to put attendee on hold
+* Turn on Allow host to put attendee on hold.
 
     ![allow host to put attendee on hold](/images/stop-zoom-trolls/allow-host-to-put-attendees-on-hold.png)
 
@@ -58,11 +64,11 @@ Once your are logged into your Zoom account, go under settings:
 
     ![non verbal](/images/stop-zoom-trolls/non-verbal.png)
 
-* Turn Off Allow removed participants to rejoin
+* Turn Off Allow removed participants to rejoin.  If you kick an attendee, you want them to stay out of the meeting.
 
     ![allow removed aprticipants to rejoin](/images/stop-zoom-trolls/allow-removed-participant-to-rejoin.png)
 
-* Turn Off Virtual Background
+* Turn Off Virtual Background to ensure that they don't put an inappropriate background image behind themselves.
 
     ![virtual backgrounds](/images/stop-zoom-trolls/virtual-backgrounds.png)
 
@@ -71,16 +77,30 @@ Once your are logged into your Zoom account, go under settings:
 When scheduling a meeting there aren't many options you can art but there are a few important ones.
 
 * When scheduling for the Meeting ID generate it and DON’T use your personal meeting ID
-* Don’t Allow Join Before Host
-* Mute Participants on Entry
+* Require meeting password.  In the Zoom link you can include the password but it will at least stop people from entering the room that didn't get the official link.
+* Don’t Allow Join Before Host.  First person in is the host so you don't want a participant to be a host.
+* Mute Participants on Entry.   This ensure that anyone joining the meeting is automatically muted.
 * Set to Auto Record the meeting so that you don’t forget and record to the cloud.
+
+![schedule meeting](/images/stop-zoom-trolls/schedule-meeting.png)
 
 ## Running the Meeting
 
-* In the Participants panel, at the start during networking time allow participants to unmute themselves.
-* During the presentation, mute all participants and don’t allow them to unmute themselves.  Use the nonverbal feedback so they can signal that they have a question so you can unmute them.  This stops a troll from being able to just randomly unmute themselves.
-* In the participants panel, as the host you need to promote all of your other organizers and the prrsenter to co-host so they can share their desktop and moderate the meeting
+* In the Participants panel, at the start during networking time allow participants to unmute themselves.  Open the Participants panel and click the more button
 
-With these settings in place it is much harder for a troll to disrupt and destroy your meeting.   While at the same time still allowing you to build and grow your  community.
+    ![allow participants to unmute themselves](/images/stop-zoom-trolls/manage-participant-options-unmute-self.png)
+
+* During the presentation, mute all participants and don’t allow them to unmute themselves.  Use the nonverbal feedback so they can signal that they have a question so you can unmute them.  This stops a troll from being able to just randomly unmute themselves.
+
+     * Open the Participants panel, click on mute all and click the more button to uncheck the allow participants to unmute themselves.
+
+    ![mute all participants](/images/stop-zoom-trolls/manage-participant-mute-unmute.png)
+
+    ![dont allow participants to unmute themselves](/images/stop-zoom-trolls/manage-participant-options.png)
+
+* In the participants panel, under the more option uncheck Allow Participants to Rename Themselves
+* In the participants panel, as the host you need to promote all of your other organizers and the presenter to co-host so they can share their desktop and moderate the meeting. Right click on each participant that you want to promote to co-host and select the co-host option.
+
+With these settings in place it is much harder for a troll to disrupt and destroy your meeting.  While at the same time still allowing you to build and grow your  community.
 
 Happy Zooming!
