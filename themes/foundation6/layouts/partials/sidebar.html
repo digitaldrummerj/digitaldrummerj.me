@@ -15,7 +15,7 @@
 
       <h3>{{ i18n "recentPosts" }} <span style="float: right"><small>(<a href="{{ $.Site.BaseURL }}blog/">All Posts</a>)</small></span></h3>
       <ul class="no-bullet ">
-        {{ range first $num_recent_posts (where .Site.Pages "Type" "blog") }}
+        {{ range first $num_recent_posts (after 1 (where .Site.Pages "Type" "blog")) }}
         <li><a href="{{ .RelPermalink }}">{{ .Title | markdownify }}</a></li>
         {{ end }}
       </ul>
