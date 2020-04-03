@@ -12,25 +12,22 @@ By following the Zoom configurations below, you can limit the amount of damage t
 If you think it can't happen to you, think again.  It is just a matter of time before a troll joins your meeting with the sole purpose to disrupt your meeting and to make you have to end the meeting early.  The troll will cause disruption by sharing their screen, using the annotation feature to draw on the screen, and talking over the presenter.  They will share porn, write inappropriate messages on the screen and say offensive words.
 
 To minimize the ability of a troll to cause any damage to your meeting there several quick and easy simple actions you need to take in your Zoom settings, when you are scheduling the meeting , and when you are running the meeting."
-title: Stop The Zoom Trolls.  Setup Zoom Correctly
+
+title: Stop The Zoom Trolls and Prevent Zoombombing
 
 ---
 
-Are you thinking about running or are running a public meeting using Zoom?  Then you need to prepare for the Zoom Trolls that want nothing more to do then make you end your meeting early.
+Are you thinking about running or are running a public meeting using Zoom?  Then you need to prepare for the Zoom Trolls that want nothing more to do then force you to end your meeting early.
 
 By following the Zoom configurations below, you can limit the amount of damage that a troll can do to your meeting to almost nothing.
 
-If you think it can't happen to you, think again.  It is just a matter of time before a troll joins your meeting with the sole purpose to disrupt your meeting and to make you have to end the meeting early.  The troll will cause disruption by sharing their screen, using the annotation feature to draw on the screen, and talking over the presenter.  They will share porn, write inappropriate messages on the screen and say offensive words.
+If you think it can't happen to you, think again.  It is just a matter of time.  Zoombombing as they call it has become a massive problem as Zoom usage has ramped up.  It has become enough of an issue they even the FBI is talking about.  It is just a matter of time before a troll joins your meeting with the sole purpose to disrupt your meeting and to force you  to end the meeting early. The troll will cause disruption by sharing their screen, using the annotation feature to draw on the screen, and talking over the presenter.  They will share porn, write inappropriate messages on the screen and say offensive words.
 
-To minimize the ability of a troll to cause any damage to your meeting there several quick and easy simple actions you need to take in your Zoom settings, when you are scheduling the meeting , and when you are running the meeting.
-
-It is just a matter of time before a troll joins your meeting with the sole purpose to disrupt your meeting and to make you have to end the meeting early.  The troll will cause disruption by sharing their screen, using the annotation feature to draw on the screen, and talking over the presenter.  They will share porn, write inappropriate messages on the screen and say offensive words.
-
-To minimize the ability of a troll to cause any damage to your meeting there several quick and easy simple actions you need to take in your Zoom settings, when you are scheduling the meeting , and when you are running the meeting.
+To minimize the ability of a troll to cause any damage to your meeting there several quick and easy simple actions you need to take in your Zoom settings, when you are scheduling the meeting, and when you are running the meeting.
 
 ## Zoom Account Settings
 
-Once your are logged into your Zoom account, go under settings:
+Once your are logged into your Zoom account, go under Account and Setting:
 
 * Turn off Join before host.
 
@@ -74,12 +71,12 @@ Once your are logged into your Zoom account, go under settings:
 
 ## Scheduling a meeting
 
-When scheduling a meeting there aren't many options you can art but there are a few important ones.
+When scheduling a meeting there aren't many options you can set but there are a few important ones.
 
-* When scheduling for the Meeting ID generate it and DON’T use your personal meeting ID
-* Require meeting password.  In the Zoom link you can include the password but it will at least stop people from entering the room that didn't get the official link.
-* Don’t Allow Join Before Host.  First person in is the host so you don't want a participant to be a host.
-* Mute Participants on Entry.   This ensure that anyone joining the meeting is automatically muted.
+* Generate the Meeting ID and DON’T use your personal meeting ID
+* Require meeting password. In the Zoom link you can include the password but it will at least stop people from entering the room that didn't get the official link.
+* Don’t Allow Join Before Host. First person in is the host so you don't want a participant to be a host.
+* Mute Participants on Entry. This ensure that anyone joining the meeting is automatically muted.
 * Set to Auto Record the meeting so that you don’t forget and record to the cloud.
 
 ![schedule meeting](/images/stop-zoom-trolls/schedule-meeting.png)
