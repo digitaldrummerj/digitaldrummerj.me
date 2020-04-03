@@ -3,8 +3,8 @@ categories:
 - meetup
 - community
 - zoom
-date: 2020-04-02T00:00:00Z
-draft: true
+date: 2020-04-03T06:00:00Z
+published: true
 summary: "Are you thinking about running a public meeting using Zoom or are running a public meeting using Zoom?  Then you need to prepare for the Zoom Trolls to show up who want nothing more  then to force you to end your meeting early.  Our goal today is to limit the amount of damage that a troll can do to your meeting to almost nothing while still allow your community to network and grow.
 
 
