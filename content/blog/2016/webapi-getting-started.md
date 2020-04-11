@@ -1,6 +1,6 @@
 ---
 categories:
-- web api
+- dotnet
 date: 2016-08-23T00:00:00Z
 excerpt: "Welcome to the series on getting started with .NET Web Api.  In this article
   we will create a basic C# Web Api with Windows Integrated Authentication and create
@@ -16,27 +16,27 @@ series: ["web-api-getting-started"]
 title: ASP.NET Web Api - Getting Started
 ---
 
-Welcome to the series on getting started with ASP.NET Web Api.  In this article we will create a basic C# Web Api with Windows Integrated Authentication and create our first Web Api endpoint.      
+Welcome to the series on getting started with ASP.NET Web Api.  In this article we will create a basic C# Web Api with Windows Integrated Authentication and create our first Web Api endpoint.
 
-ASP.NET Web API is a framework that makes it easy to build HTTP services that reach a broad range of clients, including browsers and mobile devices. ASP.NET Web API is a great platform for building RESTful applications using the .NET Framework. 
+ASP.NET Web API is a framework that makes it easy to build HTTP services that reach a broad range of clients, including browsers and mobile devices. ASP.NET Web API is a great platform for building RESTful applications using the .NET Framework.
 
 In this series we will learn how to:
 
-* Create a basic C# Web Api with Windows Integrated Authentication 
-* Setup camel-cased json properties for the response 
+* Create a basic C# Web Api with Windows Integrated Authentication
+* Setup camel-cased json properties for the response
 * Setup A Standard Response
 * Solving CORS Issues When Using Credentials
 
-## Create a new Web Api Project 
+## Create a new Web Api Project
 
 To make a C# application with Visual Studio:
 
-* Open Visual Studio 2015.  Any edition will work.  I am using Community Edition. 
+* Open Visual Studio 2015.  Any edition will work.  I am using Community Edition.
 * Click File -> New -> *Project...*
 
     ![New Project](/images/web-api-getting-started/vs-start-project.png)
 
-* Find and select *ASP.NET Web Application*, give your application a name and select *ok* 
+* Find and select *ASP.NET Web Application*, give your application a name and select *ok*
 
     1. On the left side under Installed -> Templates, select Web
     1. Select "ASP.NET Web Application"
@@ -50,12 +50,12 @@ To make a C# application with Visual Studio:
 
 * On the next screen, we need to select the New ASP.NET Project Options
 
-    1. Select Web Api for the template    
+    1. Select Web Api for the template
     1. Click on the "Change Authentication" button
         * Select "Windows Authentication"
         * Click Ok
     1. Uncheck "Host in the cloud"
-    1. Click Ok to generate the project 
+    1. Click Ok to generate the project
 
     ![Web App Options](/images/web-api-getting-started/vs-new-web-app-options.png)
 
@@ -63,7 +63,7 @@ To make a C# application with Visual Studio:
 
     ![Generated Project](/images/web-api-getting-started/vs-new-web-app-finished.png)
 
-* If you hit F5 your default browser will launch with the Web Api Start Page.  
+* If you hit F5 your default browser will launch with the Web Api Start Page.
 
     ![Initial Start Page in Chrome](/images/web-api-getting-started/chrome-initial-start-page.png)
 
@@ -78,11 +78,11 @@ Now that we have a working Web Api project, lets add some functionality to it.  
 >Note: You should only uses Windows Integrated Authentication within a business and not for a public Api.
 {:.warning}
 
-1. In the Solution Explorer, right-click on the Controllers  
+1. In the Solution Explorer, right-click on the Controllers
 1. Select Add from the menu the comes up
 1. Select "Controller..." from the list of templates
 
-![Web Api New Controller](/images/web-api-getting-started/webapi-new-controller.png)    
+![Web Api New Controller](/images/web-api-getting-started/webapi-new-controller.png)
 
 This will open up the Controller type options.
 
@@ -133,7 +133,7 @@ Before we test our new controller, we need to make sure that Windows Authenticat
 
 ![VS Solution Properties Set Dev Server Authentication Options]({{"iisexpress-windows-auth.png)
 
-Now we are ready to test our Api.  In Visual Studio, press F5 to start up a debugging session.  This will launch your default web browser.  Once the initial page for Web Api has loaded navigate to the /api/first page  (e.g. http://localhost:58842/api/First).  Your port number will be different than mine.  
+Now we are ready to test our Api.  In Visual Studio, press F5 to start up a debugging session.  This will launch your default web browser.  Once the initial page for Web Api has loaded navigate to the /api/first page  (e.g. http://localhost:58842/api/First).  Your port number will be different than mine.
 
 The response you get back will be an xml document that contains a string with your domain and user name that you are logged in with.  In this case it is [Your Domain]/[Your User Name].  It will look similar to below.
 
@@ -143,4 +143,4 @@ The response you get back will be an xml document that contains a string with yo
 
 ## Conclusion
 
-In this guide we learned how to create a basic C# Web Api project that uses Windows Integrated Authentication.  In the next guide, we will learn how to convert the JSON responses to be camel cased instead of following the .NET pascal case convention without having to update all of our .NET class. 
+In this guide we learned how to create a basic C# Web Api project that uses Windows Integrated Authentication.  In the next guide, we will learn how to convert the JSON responses to be camel cased instead of following the .NET pascal case convention without having to update all of our .NET class.

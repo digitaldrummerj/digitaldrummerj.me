@@ -1,10 +1,8 @@
 ---
 categories:
-- visual studio
-- ionic
+- dotnet
 - npm
 - node
-- bower
 - git
 date: 2015-08-20T00:00:00Z
 excerpt: "I ran into an issue with an npm package mis-behaving in Visual Studio 2015
