@@ -1,7 +1,6 @@
 ---
 categories:
-- web-api
-- cors
+- dotnet
 date: 2016-09-01T00:00:00Z
 draft: true
 excerpt: ""
