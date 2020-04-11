@@ -1,10 +1,10 @@
 {{ define "main" }}
-{{ $paginator := .Paginate (where .Data.Pages "Type" "blog") }}
+
+{{ $paginator := .Paginate (where .Site.RegularPages "Section" "blog") }}
 {{ range $paginator.Pages }}
   {{ .Render "summary" }}
-  <hr>  
+  <hr>
 {{ end }}
-
 {{ if or (.Paginator.HasPrev) (.Paginator.HasNext) }}
   <div>
     {{ if and (.Paginator.HasPrev) (.Paginator.HasNext) }}
