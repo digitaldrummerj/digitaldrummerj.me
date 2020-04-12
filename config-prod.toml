@@ -136,7 +136,7 @@ weight=2
 
 
 [outputs]
-home = ["HTML","FEED", "ATOM"]
+home = ["HTML","FEED"]
 
 [mediaTypes]
 [mediaTypes."application/rss"]
@@ -146,7 +146,3 @@ suffixes = ["xml"]
 [outputFormats.FEED]
 mediatype = "application/rss"
 baseName = "feed"
-
-[outputFormats.ATOM]
-mediatype = "application/rss"
-baseName = "atom"
