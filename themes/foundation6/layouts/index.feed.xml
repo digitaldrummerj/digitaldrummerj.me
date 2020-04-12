@@ -1,10 +1,11 @@
 {{- printf "<?xml version=\"1.0\" encoding=\"utf-8\" standalone=\"yes\"?>" | safeHTML }}
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:media="http://search.yahoo.com/mrss/">
     <channel>
-        <title>{{ if eq  .Title  .Site.Title }}{{ .Site.Title }}{{ else }}{{ with .Title }}{{.}} on {{ end }}{{ .Site.Title }}{{ end }}</title>
-        <link>{{ .Permalink }}</link>
-        <description>{{ if ne  .Title  .Site.Title }}{{ with .Title }}in {{.}} {{ end }}{{ end }}on {{ .Site.Title }}</description>
-	      {{ printf "<atom:link href=%q rel=\"self\" type=\"application/rss+xml\" />" .Permalink | safeHTML }}
+         <title>Justin James Blog</title>
+         <link>{{ .Permalink }}</link>
+         <description>Recent content on Justin James Blog</description>
+	       {{ with .OutputFormats.Get "FEED" }}{{ printf "<atom:link href=%q rel=\"self\" type=\"application/rss+xml\" />" .Permalink  | safeHTML }}{{end }}
+          {{ if not .Date.IsZero }}<lastBuildDate>{{ now.Format "Mon, 02 Jan 2006 15:04:05 -0700" | safeHTML }}</lastBuildDate>{{ end }}
 {{ range where (where .Site.Pages ".Section" "blog") "Kind" "page" }}
         <item>
           <title>{{ .Title }}</title>
