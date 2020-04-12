@@ -44,7 +44,7 @@
                 <ul class="side-nav">
                     {{ range $taxonomy.Pages }}
                         <li>
-                            <a href="{{ .RelPermalink }}"><strong> {{ .Title }} </strong> - <small>{{ .PublishDate.Format "Jan 02, 2006" }} </small>{{ if (.Draft ) }}  - DRAFT {{ end }}</a>
+                            <a href="{{ .RelPermalink }}"><strong> {{ .Title }} </strong>{{ if .Params.subheadline }} ({{ .Params.subheadline }}){{ end }} - <small>{{ .PublishDate.Format "Jan 02, 2006" }} </small>{{ if (.Draft ) }}  - DRAFT {{ end }}</a>
                         </li>
                     {{ end }}
                 </ul>

@@ -40,8 +40,8 @@
           <div class="row">
             <div class="medium-6 columns">
               {{ $last_post := (index 1) }}
-              {{ range first $last_post (where .Site.Pages "Section" "blog") }}
-              {{ .Render "summary" }}
+              {{ range first $last_post (where .Site.RegularPages "Section" "blog") }}
+              {{ .Render "summarynoimage" }}
               {{ end }}
               
             </div>

@@ -10,7 +10,7 @@
                 {{ range ((where .Pages "Section" "blog")) }}
                     <li>
                          
-                        <a href="{{ .RelPermalink }}">{{ .PublishDate.Format "Jan 02" }} : {{ .Title }}{{ if (.Draft ) }}  - DRAFT {{ end }}</a>
+                        <a href="{{ .RelPermalink }}">{{ .PublishDate.Format "Jan 02" }} : {{ .Title }}{{ if .Params.subheadline }} ({{ .Params.subheadline }}){{ end }}{{ if (.Draft ) }}  - DRAFT {{ end }}</a>
                     </li>
                 {{ end }}
 

@@ -1,11 +1,13 @@
 {{ $dateFormat := default "Mon Jan 2, 2006" (index .Site.Params "date_format") }}
 
 <div class="blog-post">
-  {{ with .Params.featured_image }}<img src="{{ . }}">{{ end }}
-
+  {{ if .Params.subheadline }}
+  <p class="subheadline">{{ .Params.subheadline }}</p>
+{{ end }}
   <h2 class="blog-title">
     <a href="{{ .Permalink }}">{{ .Title | markdownify }}</a>
   </h2>
+
   <div id="page-meta" class="t10">
       {{ if .Params.Date }}
       <span class="pr20"><span class="icon-calendar"></span>
