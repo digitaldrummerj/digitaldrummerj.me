@@ -1,7 +1,7 @@
 ---
 categories: ["Testing"]
-date: 2020-04-11T00:00:00Z
-draft: true
+date: 2020-04-12T00:00:00Z
+published: true
 title: You Need Code Coverage
 subheadline: don't test in the dark
 featured_image: "/images/code-coverage/why-code-coverage-featured-image.png"
