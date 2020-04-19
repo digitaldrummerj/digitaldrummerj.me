@@ -2,7 +2,7 @@
 {{ define "main" }}
 
 
-  {{ $dateFormat := default "Mon Jan 2, 2006" (index .Site.Params "date_format") }} 
+  {{ $dateFormat := default "Mon Jan 2, 2006" (index .Site.Params "date_format") }}
 <header>
   {{ with .Params.featured_image }}<img src="{{ . }}">{{ end }}
 
@@ -47,7 +47,7 @@
         {{ end }}
       </ul>
     {{ end }}
-  
+
   {{ if not .Site.Params.sharingicons.hide }}
     {{ partial "sharing-icons.html" . }}
   {{ end }}
