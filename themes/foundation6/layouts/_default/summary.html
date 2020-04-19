@@ -1,7 +1,7 @@
 {{ $dateFormat := default "Mon Jan 2, 2006" (index .Site.Params "date_format") }}
 
 <div class="blog-post">
-  {{ with .Params.featured_image }}<img src="{{ . }}">{{ end }}
+  {{ if .Params.featured_image }}<a href="{{ .Permalink }}"><img src="{{ .Params.featured_image }}"></a>{{ end }}
 
   <h2 class="blog-title">
     <a href="{{ .Permalink }}">{{ .Title | markdownify }}</a>
@@ -16,7 +16,7 @@
     {{ end }}
     {{ if (.Params.categories) }}{{ partial "meta-categories.html" . }}{{ end }}
     {{ if (.Params.draft ) }} DRAFT {{ end }}
-    
+
     </div>
   <p>
     {{ .Summary }}
