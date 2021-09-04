@@ -1,8 +1,0 @@
-{{ if .Params.categories }}
-{{ $len := len .Params.categories }}
-<span class="meta-tags">
-  <span class="icon-price-tag"></span>
-  <span> 
-{{ range $index, $category := .Params.categories }}{{ if  (gt $index 0) }}/ {{ end }}<a href="{{ $.Site.BaseURL }}categories/{{ . | urlize }}">{{.}}</a>{{ end }}
-</span></span>
-{{ end }}
