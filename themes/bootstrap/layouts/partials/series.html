@@ -1,0 +1,18 @@
+{{ if .Params.series }}
+{{ $name := index .Params.series 0 }}
+<div>
+    <h4>This article is part of a series.</h4>
+    {{ $name := $name | urlize }}
+    {{ $series := index .Site.Taxonomies.series $name }}
+    {{ $len := len $series }}
+    <ul class="list-group">
+        {{ range $ind,$art := $series.Pages.ByDate }}
+            {{ if eq $art.Permalink $.Page.Permalink }}
+                <li class="list-group-item active">Part {{ add $ind 1 }} - This Article{{ if (.Params.draft ) }} (DRAFT){{ end }}</li>
+            {{ else }}
+                <li class="list-group-item"><a href="{{$art.Permalink}}">Part {{ add $ind 1 }} - {{ $art.Params.title}}    {{ if (.Params.draft ) }} (DRAFT){{ end }}</a></li>
+            {{end}}
+        {{end}}
+    </ul>
+</div>
+{{end}}

@@ -1,0 +1,45 @@
+{{ partial "header.html" . }}
+
+    <!-- Page Header -->
+    <!-- Set your background image for this header on the line below. -->
+    <header class="intro-header" style="background-image: url('{{ .Site.BaseURL }}{{ .Site.Params.defaultHeaderImage }}')">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+                    <div class="page-heading">
+                      <h1>{{ .Title }}</h1>
+                        <hr class="small">
+                        <span class="subheading">{{ .Description }}</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+ <!-- Main Content -->
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+
+    {{ .Content }}
+    <div>
+        {{ range (.Site.RegularPages.GroupByDate "January 2006")  }}
+        {{ if (where .Pages "Section" "posts") }}
+<h3>{{ .Key }}</h3>
+            <ul class="list-group">
+                {{ range ((where .Pages "Section" "posts")) }}
+                    <li class="list-group-item">
+                        <a href="{{ .RelPermalink }}">{{ .PublishDate.Format "Jan 02" }} : {{ .Title }}{{ if .Params.subheadline }} ({{ .Params.subheadline }}){{ end }}{{ if (.Draft ) }}  - DRAFT {{ end }}</a>
+                    </li>
+                {{ end }}
+
+                </ul>
+        {{ end }}
+        {{ end }}
+    </div>
+
+           </div>
+        </div>
+    </div>
+
+
+{{ partial "footer.html" . }}

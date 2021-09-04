@@ -1,0 +1,124 @@
+baseurl = "https://digitaldrummerj.me"
+title = "Justin James"
+
+buildDrafts = true
+buildFuture = true
+
+canonifyurls = false
+paginate = 10
+theme = "bootstrap"
+#disableKinds = ["taxonomy", "taxonomyTerm"] # disable tags and categories
+languageCode = "en"
+copyright = "Created with ♥ by <a href='/about/'>Justin James</a>. All content is the property of Justin James and digitaldrummerj.me. This blog, its content, and opinions are my own."
+
+#googleAnalytics = "" # delete or comment to disable Google Analytics JS generation
+#disqusShortname = "digitaldrummerj" #delete or comment to disable Disqus comments
+
+# Set to true to enable syntax highlighting in code fences with a language tag
+pygmentsCodefences =  true
+#pygmentsOptions = "linenos=table"
+
+# color-codes for highlighting derived from this style
+pygmentsStyle =               "manni" #"friendly"
+
+# Set to true to try to do syntax highlighting on code fenced blocks in markdown without a language tag.
+# pygmentsCodefencesGuessSyntax = true
+
+[author]
+  name = "Justin James"
+
+[params]
+  DateForm = "January 2, 2006"
+  Description = "Web Developer, Tester, and Professional Speaker"
+  DescriptionMeta = "Web Developer, Tester and Professional Speaker; passionate about good code, automated testing, devops, and presenting."
+  Author = "Justin James"
+  Headshot = "/images/profile-image-display.png"
+  postSummariesFrontPage = 5
+  showReadTime = false
+  customCSS = ["/css/custom.css"] # custom CSS
+  defaultHeaderImage = "/images/bg.png"
+  safariMaskColor = "#545271"
+  msApplicationTileColor = "#545271"
+  Comments = false
+  mainSections = ["posts"]
+
+# Allow HTML to be included from Markdown files
+[markup.goldmark.renderer]
+  unsafe = true
+
+[[params.social]]
+  title = "linkedin"
+  url = "https://www.linkedin.com/in/byuummerj/"
+[[params.social]]
+  title = "github"
+  url = "https://github.com/digitaldrummerj"
+[[params.social]]
+  title = "envelope"
+  url = "/contact/"
+[[params.social]]
+  title = "twitter"
+  url = "https://twitter.com/digitaldrummerj"
+
+[[menu.main]]
+  name ="Home"
+  url = "/"
+  weight = 1
+[[menu.main]]
+  name = "About"
+  url = "/about/"
+  weight = 2
+[[menu.main]]
+  name = "Posts"
+  url = "/posts/"
+  weight = 3
+[[menu.main]]
+  name = "Speaking"
+  url = "/speaking"
+  weight = 4
+[[menu.main]]
+  name = "Contact"
+  url = "/contact/"
+  weight = 5
+[[menu.main]]
+  name = "Search"
+  url = "/search/"
+  weight = 6
+
+[params.sidebar]
+  # How many posts to show on the sidebar (Default: 5)
+  num_recent_posts = 5
+  recent_articles = true
+  categories = true
+  archive = true
+  feed = true
+
+[taxonomies]
+  series = "series"
+  tag = "tags"
+  category = "categories"
+
+[permalinks]
+  blog = "/:filename/"
+  page = "/:slug/"
+  posts = "/:filename/"
+
+  [params.sharingicons]
+    # Hide the sharing icons on posts? (Default: false)
+    hide = false
+
+    # Optionally, set any of these to false to hide them:
+    facebook = true
+    linkedin = true
+    twitter = true
+
+[outputs]
+home = ["HTML","FEED"]
+
+[mediaTypes]
+[mediaTypes."application/rss"]
+suffixes = ["xml"]
+
+[outputFormats]
+[outputFormats.FEED]
+mediatype = "application/rss"
+baseName = "feed"

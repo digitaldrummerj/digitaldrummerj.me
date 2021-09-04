@@ -1,0 +1,22 @@
+{{- printf "<?xml version=\"1.0\" encoding=\"utf-8\" standalone=\"yes\"?>" | safeHTML }}
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:media="http://search.yahoo.com/mrss/">
+    <channel>
+         <title>Justin James Blog</title>
+         <link>{{ .Permalink }}</link>
+         <description>Recent content on Justin James Blog</description>
+	       {{ with .OutputFormats.Get "FEED" }}{{ printf "<atom:link href=%q rel=\"self\" type=\"application/rss+xml\" />" .Permalink  | safeHTML }}{{end }}
+          {{ if not .Date.IsZero }}<lastBuildDate>{{ now.Format "Mon, 02 Jan 2006 15:04:05 -0700" | safeHTML }}</lastBuildDate>{{ end }}
+{{ range where (where .Site.Pages ".Section" "posts") "Kind" "page" }}
+        <item>
+          <title>{{ .Title }}</title>
+          <link>{{ .Permalink }}</link>
+          <pubDate>{{ .Date.Format "Mon, 02 Jan 2006 15:04:05 -0700" | safeHTML }}</pubDate>
+          {{ with .Site.Author.email }}<author>{{.}}{{ with $.Site.Author.name }} ({{.}}){{end}}</author>{{end}}
+          <guid>{{ .Permalink }}</guid>
+          {{ if and (isset .Params "featured_image") (not (eq .Params.featured_image "")) }}<media:content medium="image" url="{{ .Params.featured_image | absURL }}" />{{ end }}
+          <description>{{ if and (isset .Params "featured_image") (not (eq .Params.featured_image "")) }}
+          {{printf "<img src=%q />" .Params.featured_image | html -}}{{ end }}{{- .Content | html -}}</description>
+        </item>
+    {{ end }}
+  </channel>
+</rss>
