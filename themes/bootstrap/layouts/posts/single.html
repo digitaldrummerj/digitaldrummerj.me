@@ -1,0 +1,57 @@
+{{ partial "header.html" .}}
+
+<!-- Page Header -->
+<!-- Set your background image for this header on the line below. -->
+{{ if isset .Params "image" }}
+<header
+  class="intro-header"
+  style="background-image: url('{{ .Site.BaseURL }}/{{ .Params.image }}')"
+>
+  {{ else }}
+  <header
+    class="intro-header"
+    style="background-image: url('{{ .Site.BaseURL }}{{ .Site.Params.defaultHeaderImage }}')"
+  >
+    {{ end }}
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+          <div class="post-heading">
+            <h1>{{ .Title }}</h1>
+            <h2 class="subheading">{{ .Description }}</h2>
+            <span class="meta"> {{ partial "meta.html" .}} {{ if (.Params.draft ) }} - DRAFT {{ end }}
+          </div></span>
+
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- Post Content -->
+  <article>
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+          {{ if (or (isset .Params "toc") (isset .Params "series")) }}
+          {{ .Summary | markdownify}}
+          {{ end }}
+          {{ partial "series.html" . }}
+          {{ if .Params.toc }}
+          {{ partial "toc.html" .}}
+          {{ end }}
+           {{ if (or (isset .Params "toc") (isset .Params "series")) }}
+          <hr />
+          {{ end }}
+          {{ .Content }}
+          {{ partial "series.html" . }}
+          {{ if not .Site.Params.sharingicons.hide }}
+            {{ partial "sharing-icons.html" . }}
+          {{ end }}
+          {{ partial "comments.html" .}}
+        </div>
+      </div>
+    </div>
+  </article>
+
+  {{ partial "footer.html" .}}
+</header>

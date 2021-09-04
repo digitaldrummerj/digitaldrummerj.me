@@ -1,6 +1,6 @@
 ---
-title: Speaking
-subheadline: "Combining passion for coding and teaching. "
+title: Talks
+description: "Combining passion for coding and teaching. "
 permalink: /speaking/
 sidebar: false
 ---
@@ -14,32 +14,10 @@ If you see me at an event, come up and say "Hi". The best part of the events is 
 
 ## Upcoming Events
 
-<!--### Nothing Scheduled.
+### Nothing Scheduled.
 
-If you'd like me to speak at your event, [drop me a line]({{ "/contact/" | prepend: site.baseurl >}}) and lets make it happen.  I can cover pretty much any topic you see me blog about but feel free to request just about anything.  -->
+If you'd like me to speak at your event, [drop me a line](/contact/) and lets make it happen.  I can cover pretty much any topic you see me blog about but feel free to request just about anything.
 
-**[NDC Minnesota](https://ndcminnesota.com/) <span> - Saint Paul, MN (May 8th-9th)</span>**
-
-* [Cypress: Where Automated Web UI Testing Isn't Just for QA Anymore]({{< ref"speaking.md#cypress" >}})
-* [Conference Site](https://ndcminnesota.com/)
-
-**[Open Source North](https://opensourcenorth.com/) <span> - Minneapolis, MN (May 22nd)</span>**
-
-* [Cypress: Where Automated Web UI Testing Isn't Just for QA Anymore]({{< ref"speaking.md#cypress" >}})
-* [Conference Site](https://opensourcenorth.com/)
-
-**[Dev Intersections](https://www.devintersection.com/#!/) <span> - Orlando, FL (June 11th-13th)</span>**
-
-* [Cypress: Where Automated Web UI Testing Isn't Just for QA Anymore]({{< ref"speaking.md#cypress" >}})
-* [Make Public Speaking Your Competitive Advantage]({{< ref"speaking.md#pubspeak" >}})
-* [Zero to Database with EF Core Code First in 60 minutes]({{< ref"speaking.md#efcorecodefirst">}})
-* [Conference Site](https://www.devintersection.com/#!/)
-
-**[KCDC](https://www.kcdc.info/) <span> - Kansas City, MO (July 17th-19th)</span>**
-
-* [Zero to Database with EF Core Code First in 60 minutes]({{< ref"speaking.md#efcorecodefirst">}})
-* [Up and Running with Angular Workshop]({{< ref"speaking.md#uprunangular" >}})
-* [Conference Site](https://www.kcdc.info/)
 
 <!--
 ### Music City Code <span> - Nashville, TN (August 18th-20th, 2016)</span>
@@ -83,6 +61,30 @@ If you'd like me to speak at your event, [drop me a line]({{ "/contact/" | prepe
 ## Past Presentations
 
 ### 2019
+
+**[NDC Minnesota](https://ndcminnesota.com/) <span> - Saint Paul, MN (May 8th-9th)</span>**
+
+* [Cypress: Where Automated Web UI Testing Isn't Just for QA Anymore]({{< ref"speaking.md#cypress" >}})
+* [Conference Site](https://ndcminnesota.com/)
+
+**[Open Source North](https://opensourcenorth.com/) <span> - Minneapolis, MN (May 22nd)</span>**
+
+* [Cypress: Where Automated Web UI Testing Isn't Just for QA Anymore]({{< ref"speaking.md#cypress" >}})
+* [Conference Site](https://opensourcenorth.com/)
+
+**[Dev Intersections](https://www.devintersection.com/#!/) <span> - Orlando, FL (June 11th-13th)</span>**
+
+* [Cypress: Where Automated Web UI Testing Isn't Just for QA Anymore]({{< ref"speaking.md#cypress" >}})
+* [Make Public Speaking Your Competitive Advantage]({{< ref"speaking.md#pubspeak" >}})
+* [Zero to Database with EF Core Code First in 60 minutes]({{< ref"speaking.md#efcorecodefirst">}})
+* [Conference Site](https://www.devintersection.com/#!/)
+
+**[KCDC](https://www.kcdc.info/) <span> - Kansas City, MO (July 17th-19th)</span>**
+
+* [Zero to Database with EF Core Code First in 60 minutes]({{< ref"speaking.md#efcorecodefirst">}})
+* [Up and Running with Angular Workshop]({{< ref"speaking.md#uprunangular" >}})
+* [Conference Site](https://www.kcdc.info/)
+
 
 **StirTrek <span> - Columbus, OH (April 26th, 2019)</span>**
 

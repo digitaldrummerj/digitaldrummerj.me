@@ -1,10 +1,13 @@
 ---
-permalink: "/blog/archive/tagcloudview/"
-title: "Archive by Tag Cloud"
-url: "/blog/archive/tagcloudview/"
+permalink: "/posts/tagcloudview/"
+title: "Posts"
+description: "By Tag Cloud"
+url: "/posts/tagcloudview/"
 published: true
 sidebar: true
 layout: "archivebytagcloud"
 ---
-**Other Archive Pages:**  [By Date](/blog/archive/monthview) | [By Category](/blog/archive/categoryview) 
+**Other Views:**  [List](/posts/) | [By Month](/posts/monthview) | [By Category](/posts/categoryview)
+
+---
 

@@ -1,10 +1,12 @@
 ---
-permalink: "/blog/archive/monthview/"
-url: "/blog/archive/monthview/"
+permalink: "/posts/monthview/"
+url: "/posts/monthview/"
 published: true
 sidebar: true
 layout: "archivebydate"
-title: "Archive by Date"
+title: "Posts"
+description: "By Date"
 ---
+**Other Views:**  [List](/posts/) | [By Category](/posts/categoryview) | [By Tag Cloud](/posts/tagcloudview)
 
-**Other Archive Pages:** [By Category](/blog/archive/categoryview) | [By Tag Cloud](/blog/archive/tagcloudview)
+---
