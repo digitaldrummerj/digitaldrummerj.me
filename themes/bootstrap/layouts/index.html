@@ -21,7 +21,7 @@
         <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
           {{ $numPosts := or .Site.Params.PostSummariesFrontPage 4 }}
           {{ range first $numPosts (where .Site.RegularPages "Type" "in" .Site.Params.mainSections) }}
-              {{ .Render "summary"}}
+              {{ .Render "summary"  }}
           {{ end }}
           <!-- Pager -->
           <ul class="pager">
