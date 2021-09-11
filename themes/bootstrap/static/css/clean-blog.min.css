@@ -484,13 +484,15 @@ text-align: center;
 
 .tagcloud03 {
 	 margin-bottom: 50px;
+   text-align: center
 }
  .tagcloud03 ul.cloud li {
 	 margin: 0;
 }
  .tagcloud03 ul.cloud li a {
 	 padding: 0 1em 0 1em;
-	 border: none !important;
+	 /* border: none !important; */
+   border: none;
 	 height: 45px;
 	 padding-top: 5px;
 	 padding-bottom: 5px;
@@ -526,27 +528,6 @@ text-align: center;
 }
  .tagcloud03 ul li a:hover {
 	 background-color: #4b56a8;
-	 border: 1px solid #4b56a8;
+	 border: 1px solid #0085A1;
 	 color: #fff;
-}
- .tagcloud03 ul li a:hover span {
-	 background-color: #fff;
-	 color: #4b56a8;
-}
- .tagcloud03 ul li span {
-	 position: absolute;
-	 top: 5px;
-	 right: 5px;
-	 z-index: 2;
-	 width: 25px;
-	 height: 25px;
-	 line-height: 1;
-	 background-color: #777;
-	 border-radius: 100%;
-	 color: #fff;
-	 font-size: 14px;
-	 padding: 5px;
-	 text-align: center;
-	 -webkit-transition: 0.2s;
-	 transition: 0.2s;
 }
