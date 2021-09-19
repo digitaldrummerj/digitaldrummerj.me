@@ -7,6 +7,8 @@ title: Git - Remove Local Branches That Are Merged or No Longer Exist
 
 After a while your list of local git branches can get a bit out of control especially if you doing all of your development on a branch, creating a pull request, merging it to main and then deleting the remote git branch when it is merged into main.  Once the branch is deleted on the remote repository there is no need to keep it locally anymore.
 
+<!--more-->
+
 Below is the command to delete all local branches that have been merged into the main branch.  If you git trunk branch is not main or you want to remove all branches that have been merged into a different branch than main, just change the 2 places in the command that say main to what your branch name is.
 
 ## Deleting Branches Merged into Main
