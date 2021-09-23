@@ -11,6 +11,6 @@
 <span class="meta-tags">
   <span class="fa fa-tags"></span>
   <span>
-{{ range $index, $category := .Params.categories }}{{ if  (gt $index 0) }} / {{ end }}<a href="{{ $.Site.BaseURL }}posts/categoryview/#{{ . | urlize }}">{{.}}</a>{{ end }}
+{{ range $index, $category := .Params.categories }}{{ if  (gt $index 0) }} / {{ end }}<a href="{{ $.Site.BaseURL }}/posts/categoryview/#{{ . | urlize }}">{{.}}</a>{{ end }}
 </span></span>
 {{ end }}
