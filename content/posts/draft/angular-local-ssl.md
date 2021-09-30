@@ -2,8 +2,7 @@
 categories:
     - angular
 date: 2021-09-30T00:00:00Z
-draft: true
-publish: false
+publish: true
 title: Angular - Running SSL Locally
 ---
 
