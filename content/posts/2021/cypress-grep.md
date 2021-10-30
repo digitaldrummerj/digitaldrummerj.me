@@ -2,7 +2,7 @@
 categories: ["Testing", "Cypress"]
 date: 2021-11-01T09:00:00Z
 published: false
-title: Cypress Run Only Tests With Certain Tags
+title: Cypress Run Tests That Have Certain Tags
 ---
 
 One of the features that I wish Cypress had is a way to group feature tests together so that I can run all tests for the feature I am currently coding or testing without having to put them all into the same spec file.  Now you can with the [Cypress grep plugin](https://github.com/cypress-io/cypress-grep).
