@@ -3,6 +3,7 @@ categories: ["Testing", "Cypress"]
 date: 2021-11-03T00:00:00Z
 published: true
 title: Cypress Run Tests That Do Not Have Any Tags
+series: ["Cypress Grep"]
 ---
 
 In the previous post on the [Cypress Grep Plugin](/cypress-grep) we installed and went through the basics of how to run just tests that have certain tags but what if you want to run all tests that do not have any tags?

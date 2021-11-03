@@ -30,11 +30,16 @@
   <!-- Post Content -->
   <article>
     <div class="container">
-      <div class="row">
+      <!-- <div class="row">
         <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
           {{ if (or (isset .Params "toc") (isset .Params "series")) }}
           {{ .Summary | markdownify}}
           {{ end }}
+        </div>
+      </div> -->
+      <div class="row">
+        <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+          <br />
           {{ partial "series.html" . }}
           {{ if .Params.toc }}
           {{ partial "toc.html" .}}
@@ -42,11 +47,27 @@
            {{ if (or (isset .Params "toc") (isset .Params "series")) }}
           <hr />
           {{ end }}
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
           {{ .Content }}
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
           {{ partial "series.html" . }}
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
           {{ if not .Site.Params.sharingicons.hide }}
             {{ partial "sharing-icons.html" . }}
           {{ end }}
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
           {{ partial "comments.html" .}}
         </div>
       </div>
