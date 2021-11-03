@@ -30,7 +30,6 @@ If you'd like me to speak at your event, [drop me a line](/contact/) and lets ma
 
 ## Current Talks
 
-* [Angular Unit Testing from the Trenches]({{< ref"speaking.md#angulartesting" >}})
 * [Cypress: Where Automated Web UI Testing Isn't Just for QA Anymore]({{< ref"speaking.md#cypress" >}})
 * [Ultimate Presentation Formula for Nerds]({{< ref"speaking.md#pubspeak" >}})
 * [Up and Running with Angular in 60 Minutes]({{< ref"speaking.md#uprunangular60" >}})
@@ -39,6 +38,7 @@ If you'd like me to speak at your event, [drop me a line](/contact/) and lets ma
 
 ## Retired Talks
 
+* [Angular Unit Testing from the Trenches]({{< ref"speaking.md#angulartesting" >}})
 * [Build mobile apps for iOS, Android, and Windows using JavaScript]({{< ref"speaking.md#taco" >}})
 * [Chocolatey - making the process of installing software on windows easy as pie]({{< ref"speaking.md#chocolatey" >}})
 * [Continuous Integration with Github and TravisCI]({{< ref"speaking.md#travisci" >}})
