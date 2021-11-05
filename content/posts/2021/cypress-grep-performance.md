@@ -2,7 +2,7 @@
 categories: ["Testing", "Cypress"]
 date: 2021-11-08T00:00:00Z
 published: true
-title: Cypress Grep - Increase Performance
+title: Cypress Grep - Faster Test Execution
 series: ["Cypress Grep"]
 ---
 By default, for the [Cypress grep plugin](https://github.com/cypress-io/cypress-grep) when using the grep and grepTags all of the specs are executed and then each the filters are applied. This can be very wasteful, if only a few specs contain the grep in the test titles. Thus when doing the positive grep, you can pre-filter specs using the grepFilterSpecs=true parameter.
