@@ -61,6 +61,7 @@ Open the support/index.js file and add the following line
 ```js
 // cypress/support/index.js
 require('cypress-grep')()```
+```
 
 ### Plugin File
 
