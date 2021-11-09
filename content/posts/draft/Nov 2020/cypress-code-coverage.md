@@ -1,6 +1,6 @@
 ---
 categories: ["Cypress", "Testing", "Angular"]
-date: 2020-12-20T00:00:00Z
+date: 2021-11-29T00:00:00Z
 draft: true
 title: "Angular - Add Code Coverage to Your Cypress Tests"
 series: ["Code Coverage"]
