@@ -2,24 +2,26 @@
 categories: ["Testing", "Cypress"]
 date: 2021-11-15T00:00:00Z
 published: true
-title: Cypress Run Custom Chrome Browser
+title: "Solved: Use Previous Version of Chrome to Prevent Instant Cypress Crash on Our Build Servers When Using Chrome 95"
 ---
 
-Recently, on my build servers Chrome updated itself to Chrome 95 and for whatever reason all of a sudden my automated builds stopped being able to communicate with Chrome and caused the build instantly fail when it tried to run any Cypress tests using `cypress run`.
+Recently, on my build servers, the Chrome version update to Chrome 95 and all of a sudden my automated builds stopped being able to communicate between Cypress and  Chrome and would instantly cause Cypress to crash on the 1st test when using `cypress run`.  We could login to the machine and run all of the tests using Chrome as headed browser but anytime we tried to use Chrome as a headless browser it would instantly fail the build on the 1st tests.
 
-After, much troubleshooting, we discovered that it was something with Chrome 95 our build servers as the previous version of Chrome worked just fine and we had not made any code changes.  We have had issues like this before where a Chrome update all of a sudden stopped our builds from working.
+We have seem other random issues like this show up with Chrome updates in the past and previously the fix was to disable the Chrome auto-update feature and then install a previous version of Chrome.  This was a hack though as there is no way to downgrade Chrome.
 
-By default, there is no way to install a previous version of Chrome but luckily there is a way to download a previous version of Chromium and tell Cypress to use that previous version for Chromium.
+Thankfully, there is an easier way by using a custom browser when running Cypress.  Cypress even maintains a Chromium repository so that you can easily download previous versions of Chrome.
 
 <!--more-->
 
-The first thing we need to do is download the version of Chromium that we want to use for our tests.  If you navigate to [Download Chromium Version](https://chromium.cypress.io/) you can download the version that you want to use from Google.  Cypress run this website but all of the downloads are coming directly from Google.
+Now, the first step was to do download the previous version of Chromium that we wanted to use for our tests.  If you navigate to [Download Chromium Version](https://chromium.cypress.io/) you can download the version that you want to use.
+
+> **Note:** All of the download links on the Cypress Chromium site point directly to Google.
 
 On the [Cypress Chromium Site](https://chromium.cypress.io/) I recommend that you filter the "Release Channel" by stable so that you only get the versions that have been released to production.  You can also filter by the version that you are looking for.
 
 Once you find the version that you want, click on the "Get downloads" link and then download the zip file.
 
-Once the download is complete, unzip it to a directory.  I like to unzip it into c:\Chromium since I can ensure that all of my co-workers and build server will have directory available.
+Once the download is complete, unzip it to a directory.  I like to unzip it into c:\Chromium (I am on Windows) since I can be sure that all of my co-workers and build server will have directory available.
 
 Now to use the custom browser with `cypress run` you to give the location of the custom browser as the browser name in the `--browser` argument.
 
