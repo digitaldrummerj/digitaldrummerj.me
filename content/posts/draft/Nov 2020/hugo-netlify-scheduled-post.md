@@ -1,6 +1,6 @@
 ---
 categories: ["hugo", "github"]
-date: 2021-11-24T00:00:00Z
+date: 2021-11-24T13:00:00Z
 publish: false
 title: Schedule Post with Hugo and Netlify
 ---

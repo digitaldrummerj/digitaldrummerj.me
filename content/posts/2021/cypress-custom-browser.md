@@ -1,6 +1,6 @@
 ---
 categories: ["Testing", "Cypress"]
-date: 2021-11-15T00:00:00Z
+date: 2021-11-15T13:00:00Z
 published: true
 title: "Solved: Use Previous Version of Chrome to Prevent Instant Cypress Crash on Our Build Servers When Using Chrome 95"
 ---

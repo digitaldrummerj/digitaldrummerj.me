@@ -1,6 +1,6 @@
 ---
 categories: ["Cypress", "Testing"]
-date: 2020-12-02T00:00:00Z
+date: 2020-12-02T13:00:00Z
 draft: true
 title: Add Cypress Code Coverage to Continuous Integration
 series: ["Code Coverage"]
