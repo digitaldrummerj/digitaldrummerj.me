@@ -31,7 +31,7 @@ npx cypress run --browser C:\Chromium\94.0.4606.81\chrome.exe --headless
 
 Now Cypress will use the browser located at "C:\Chromium\94.0.4606.81\chrome.exe" when it executed the tests.
 
-You can also use the custom broswer with `cypress open` by using the same `--browser` argument that we used with the run command above but without the `—headless`  argument.
+You can also use the custom broswer with `cypress open` by using the same `--browser` argument that we used with the run command above but without the `—headless` argument.
 
 ```cmd
 npx cypress open --browser C:\Chromium\94.0.4606.81\chrome.exe
