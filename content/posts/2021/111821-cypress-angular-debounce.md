@@ -2,6 +2,7 @@
 categories: ["Testing", "Cypress", "Angular", "RxJS"]
 date: 2021-11-18T13:00:00Z
 published: true
+url: '/cypress-angular-debounce/'
 title: "Solved: Angular RxJs Debounce Not Consistently Firing When Testing Using Cypress"
 ---
 

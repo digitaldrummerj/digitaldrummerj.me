@@ -2,6 +2,7 @@
 categories: ["VSCode"]
 date: 2021-09-07T09:00:00Z
 published: true
+url: '/vscode-bracket-pair-colorization/'
 title: "VSCode: Bracket Pair Colorization Now Native"
 subheadline: no longer need an extensions
 featured_image: "/images/vscode-bracket-pair-colorization/bracket-pair-colorization-on-off.drawio.png"

@@ -4,6 +4,7 @@ categories:
 date: 2021-09-30T00:00:00Z
 publish: true
 title: Angular - Running SSL Locally
+url: '/angular-local-ssl/'
 ---
 
 These days all of our websites are running using https and we should be doing our local development work also using SSL.  When you create your Angular project, it uses http by default but has the ability to easily run uder SSL as long as your have a certificate for Angular to use.
