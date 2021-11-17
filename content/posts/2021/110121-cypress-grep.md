@@ -15,7 +15,6 @@ One of the features that I wish Cypress had is a way to group feature tests toge
 
 With the [Cypress grep plugin](https://github.com/cypress-io/cypress-grep), you can add a tags config to each tests or describe like below that then you can use to only run tests with those tags.
 
-
 ```js
 it('works as an array', { tags: ['config', 'some-other-tag'] }, () => {
   expect(true).to.be.true
@@ -88,4 +87,3 @@ cypress-grep: tests with "hello" in their names
 You are now ready to start using the [Cypress grep plugin](https://github.com/cypress-io/cypress-grep).
 
 In a future post we will look at some of the other features of the [Cypress grep plugin](https://github.com/cypress-io/cypress-grep) such as how to increase the performance by pre-filtering or run tests multiple times.
-

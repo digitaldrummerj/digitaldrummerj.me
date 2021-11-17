@@ -15,13 +15,13 @@ By default, for the [Cypress grep plugin](https://github.com/cypress-io/cypress-
 **Example 1:**  To filter all specs first and then only run the suite or tests that match the title "it loads"
 
 ```shell
-$ npx cypress run --env grep="it loads",grepFilterSpecs=true
+npx cypress run --env grep="it loads",grepFilterSpecs=true
 ```
 
 **Example 2:** To filter all spec files and only run the specs with the tag "@smoke"
 
 ```shell
-$ npx cypress run --env grepTags=@smoke,grepFilterSpecs=true
+npx cypress run --env grepTags=@smoke,grepFilterSpecs=true
 ```
 
 ## Notes
