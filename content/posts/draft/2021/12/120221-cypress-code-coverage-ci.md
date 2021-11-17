@@ -3,7 +3,8 @@ categories: ["Cypress", "Testing"]
 date: 2020-12-02T13:00:00Z
 draft: true
 title: Add Cypress Code Coverage to Continuous Integration
-series: ["Code Coverage"]
+url: '/cypress-code-coverage-ci'
+series: ["Cypress Code Coverage"]
 ---
 
 Here is how I added Cypress to my TeamCity CI builds but the steps will work in any CI system.

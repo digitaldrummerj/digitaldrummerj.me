@@ -3,7 +3,8 @@ categories: ["Cypress", "Testing", "Angular"]
 date: 2021-11-29T13:00:00Z
 draft: true
 title: "Angular - Add Code Coverage to Your Cypress Tests"
-series: ["Code Coverage"]
+url: '/cypress-code-coverage'
+series: ["Cypress Code Coverage"]
 ---
 
 In part 1 of the series we talked about why you need code coverage so you aren't testing in the dark and can make data-driven decisions on if you have actually tested your code the way you think you have.
