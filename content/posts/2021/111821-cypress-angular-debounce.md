@@ -26,7 +26,7 @@ In the code below, after the `cy.tick(501)` we would find that the call to the A
 cy.clock();
 cy.server();
  cy.route({
-        url: '/api/v1/collections/namecheck/*',
+        url: '/api/v1/collections/*',
         method: 'GET',
         status: 200,
         response: 'false'
@@ -56,7 +56,7 @@ In the working code below, the only change that we made from the broken code abo
 cy.clock(new Date(), ['Date']);
 cy.server();
  cy.route({
-        url: '/api/v1/collections/namecheck/*',
+        url: '/api/v1/collections/*',
         method: 'GET',
         status: 200,
         response: 'false'
