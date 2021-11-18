@@ -1,20 +1,20 @@
 ---
-categories: ["Testing", "Cypress", "Angular", "RxJS"]
+categories: ["Testing", "Cypress", "Angular"]
 date: 2021-11-18T13:00:00Z
 published: true
 url: '/cypress-angular-debounce/'
-title: "Solved: Angular RxJs Debounce Not Consistently Firing When Testing Using Cypress"
+title: "Solved: Angular RxJs Debounce Not Consistently Firing When Testing With Cypress"
 ---
 
-In your Angular application if you are using [RxJS Debounce](https://rxjs.dev/api/operators/debounce) and running Cypress test you may have run into times that your application under test is not getting past the debounce wait time.
+In your Angular application if you are using [RxJS Debounce](https://rxjs.dev/api/operators/debounce) and running Cypress test you may have run into times that your tests are not consistently getting past the debounce wait time and appear like they are flaky tests. 
 
-> Debounce is a way to tell Angular to wait X number of milliseconds for something to happen before continuing.  They are great for something like a user lookup control where you want to wait for the user to stop typing in the input box before making the API call so that you are not making an API call for each character of the user's name that is typed.
+> Debounce is a way to wait X number of milliseconds for something to happen before continuing such waiting for a user to stop typing in a field before making an API call.  This  way you are not making an API call for each character typed into the field.
 
-In Cypress, you could put a wait statement in to wait the number of milliseconds needed to get past the debounce time but adding time based wait statements in Cypress is an anti-pattern.
+In Cypress, you could just use a wait statement to get past the debounce time but adding time based wait statements in Cypress is an anti-pattern.
 
-Instead in Cypress you should use use the  `cy.clock() and cy.tick()` commands to be able to forward the virtual time and trigger the debounce to fire.  However, for my project this would not consistently fire the debounce as RxJS was acting like we had not waited for the debounce time and sometimes it would never fire.  We even tried adding in the wait statements just to see if it worked and we still had the issue.
+Instead in Cypress you should use the  `cy.clock() and cy.tick()` commands to be able to forward the virtual time and cause debounce to fire.  However, I found it was not consistently getting past the debounce.  RxJS was acting like we had not waited for the debounce time. 
 
-Luckily, after much troubleshooting the solution ended up being quite simple.
+Luckily, after much troubleshooting the solution ended up being quite simple and only involved test code changes.
 
 <!--more-->
 
@@ -48,7 +48,7 @@ The fix was pretty easy once we understood what we happening.  With [cy.clock()]
 * clearInterval
 * Date objects
 
-Overriding the the setTimeout, clearTimeout, setInterval, and clearInterval is where the issue came in since those are key to the way Debounce works.  So we just needed to set the date and override the Date object.
+Overriding the setTimeout, clearTimeout, setInterval, and clearInterval is where the issue came in since those are key to the way debounce works.  So we just needed to set the date and override the Date object.
 
 In the working code below, the only change that we made from the broken code above was to change `cy.clock()` to `cy.clock(new Date(), ['Date']);` and then our debounce worked as expected.
 
