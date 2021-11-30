@@ -239,7 +239,6 @@ Again you can find the sample project at [https://github.com/digitaldrummerj/cyp
 
 In our next article in our code coverage series, we will add the running of the code coverage report to your automated builds.
 
-
 ## Example Files
 
 ```json

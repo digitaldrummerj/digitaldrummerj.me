@@ -56,7 +56,7 @@ In Github, go to the repository for your Hugo site and then:
 
 Now you are ready to create the Github action to call the Netlify build hook to trigger the build.
 
-##  Create GitHub Action
+## Create GitHub Action
 
 The Github action is pretty simple.  It runs every day at 6 am PST (1 pm UTC) and calls the Netlify build hook.
 
