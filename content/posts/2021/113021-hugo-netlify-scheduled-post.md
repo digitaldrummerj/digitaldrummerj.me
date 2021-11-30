@@ -1,7 +1,7 @@
 ---
 categories: ["hugo"]
 date: 2021-11-30T12:00:00Z
-published: false
+published: true
 url: "/hugo-scheduled-post"
 title: Schedule Post with Hugo and Netlify
 ---
