@@ -8,7 +8,7 @@ command = "echo 'default context'"
 command = "hugo --config config.toml,config-prod.toml --gc --minify"
 
 [context.production.environment]
-HUGO_VERSION = "0.88.1"
+HUGO_VERSION = "0.89.4"
 HUGO_ENV = "production"
 HUGO_ENABLEGITINFO = "true"
 
@@ -16,7 +16,7 @@ HUGO_ENABLEGITINFO = "true"
 command = "hugo --config config.toml,config-prod.toml --gc --minify -b $DEPLOY_PRIME_URL"
 
 [context.deploy-preview.environment]
-HUGO_VERSION = "0.88.1"
+HUGO_VERSION = "0.89.4"
 
 [context.next.environment]
 HUGO_ENABLEGITINFO = "true"
