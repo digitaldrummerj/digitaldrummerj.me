@@ -4,6 +4,7 @@ date: 2021-12-02T13:00:00Z
 published: true
 title: "Angular - Add Code Coverage to Your Cypress Tests"
 url: '/cypress-code-coverage'
+series: ["Cypress Code Coverage"]
 ---
 
 As I have implemented more automated tests, one of the must haves for me is code coverage reports.  Code coverage allow me to quickly and easily see which lines of the code are not being tested so I can close any critical testing gaps.

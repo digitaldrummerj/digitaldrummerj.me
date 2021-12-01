@@ -1,5 +1,5 @@
 ---
-categories: ["Cypress", "Testing"]
+categories: ["Cypress", "Testing", "Angular"]
 date: 2021-12-06T13:00:00Z
 draft: true
 title: Add Cypress Code Coverage to Continuous Integration
@@ -7,7 +7,10 @@ url: '/cypress-code-coverage-ci'
 series: ["Cypress Code Coverage"]
 ---
 
-Here is how I added Cypress to my TeamCity CI builds but the steps will work in any CI system.
+In the previous article, we hooked up Cypress code coverage for our Angular project.  In this article, I will walk you through how to setup the code coverage to run as part of your automated builds.
+
+I am using TeamCity for my automated builds, but you can use any provider that you would like.
+
 <!--more-->
 
 ## Dependencies
