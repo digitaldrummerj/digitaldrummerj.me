@@ -19,9 +19,9 @@
     </title>
 
     <!-- Favicon -->
-    <link rel="shortcut icon" href="{{ .Site.BaseURL }}/favicon.ico" type="image/x-icon" />
-    <link rel="mask-icon" href="{{ .Site.BaseURL }}/icons/safari-pinned-tab.svg" color="{{ .Site.Params.safariMaskColor }}" />
-    <link rel="apple-touch-icon" sizes="180x180" href="{{ .Site.BaseURL }}/icons/apple-touch-icon.png" />
+    <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon" />
+    <link rel="mask-icon" href="/icons/safari-pinned-tab.svg" color="{{ .Site.Params.safariMaskColor }}" />
+    <link rel="apple-touch-icon" sizes="180x180" href="/icons/apple-touch-icon.png" />
     <meta name="apple-mobile-web-app-capable" content="yes" />
     <meta name="apple-mobile-web-app-title" content="{{ .Site.Title }}" />
     <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
@@ -29,14 +29,17 @@
     <meta name="application-name" content="{{ .Site.Title }}" />
     <meta name="msapplication-starturl" content="" />
     <meta name="msapplication-TileColor" content="{{ .Site.Params.msApplicationTileColor }}" />
-    <meta name="msapplication-TileImage" content="{{ .Site.BaseURL }}/icons/mstile-150x150.png" />
-    <link rel="manifest" href="{{ .Site.BaseURL }}/manifest.json" />
+    <meta name="msapplication-TileImage" content="/icons/mstile-150x150.png" />
+    <link rel="manifest" href="/manifest.json" />
 
     <!-- Bootstrap Core CSS -->
     <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
 
     <!-- Custom CSS -->
-    <link href="{{ .Site.BaseURL }}/css/clean-blog.min.css" rel="stylesheet">
+    <link href="/css/clean-blog.min.css" rel="stylesheet">
+    {{ if (findRE "<pre" .Content 1) }}
+    <link href="/css/copy-code-button.css" rel="stylesheet">
+    {{ end }}
     {{- range $val := $.Site.Params.customCSS -}}
 	{{- if gt (len $val) 0 -}}
 	<link rel="stylesheet" type="text/css" href="{{ $val }}">
@@ -71,7 +74,7 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                <a class="navbar-brand" href="{{ .Site.BaseURL }}">{{ .Site.Title }}</a>
+                <a class="navbar-brand" href="/">{{ .Site.Title }}</a>
             </div>
 
             {{ partial "navbar.html" . }}
