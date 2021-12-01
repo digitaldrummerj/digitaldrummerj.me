@@ -11,10 +11,6 @@ In part 1 of the series we talked about why you need code coverage so you aren't
 
 In this article in the series on code coverage, we are going to add code coverage reports to our [Cypress](https://cypress.io) tests.  For our sample project we are using Angular but the step can apply to any project that is using Cypress.  The sample project is a new Angular project (e.g. ng new) that I have added Cypress tests to.
 
-## Get The Code
-
-You can find the sample project at [https://github.com/digitaldrummerj/cypress-code-coverage-demo](https://github.com/digitaldrummerj/cypress-code-coverage-demo).
-
 ## Generate Our Sample Project
 
 Before getting started, we need to generate our sample project using the [Angular CLI](https://angular.io/cli).
@@ -72,7 +68,7 @@ In order for you to gather code coverage metrics, the code coverage needs to kno
 Cypress does not instrument your code - you need to do it yourself. We will be using the [Istanbul](https://istanbul.js.org/) library along with the command-line interface for the [Istanbul](https://istanbul.js.org/) library, [nyc](https://github.com/istanbuljs/nyc).
 
 ```bash
-npm install --save-dev @istanbuljs/nyc-config-typescript istanbul-instrumenter-loader istanbul-lib-coverage nyc source-map-support
+npm install --save-dev @istanbuljs/nyc-config-typescript babel-plugin-=istanbul istanbul-lib-coverage nyc source-map-support
 ```
 
 Since we are using Angular, we also need to inject the command to instrument our code as part of the Angular build process (`ng build`).  By default with the Angular CLI there is no way to inject anything extra into the webpack configuration when you build or serve your application.  If you wanted to inject custom configuration like instrumenting the code, you would have to eject your project from the Angular build system and manage the webpack configuration yourself.  Instead with [ngx-build-plus](https://www.npmjs.com/package/ngx-build-plus) you can inject the extra webpack configurations as part of the normal Angular build and serve commands that the Angular CLI provides.
@@ -100,10 +96,9 @@ Once [npx-build-plus](https://www.npmjs.com/package/ngx-build-plus) is installed
           {
             test: /\.(ts)$/,
             use: {
-              loader: 'istanbul-instrumenter-loader',
+              loader: 'babel-loader',
               options: {
-                debug: true,
-                esModules: true
+                plugins: ['babel-plugin-istanbul']
               }
             },
             enforce: 'post',
@@ -156,7 +151,10 @@ Next up we need to configure the [nyc](https://github.com/istanbuljs/nyc) comman
 ```json
 , "nyc": {
   "extends": "@istanbuljs/nyc-config-typescript",
-  "all": true
+  "all": true,
+  "reporter": [
+      "html"
+    ]
 }
 ```
 
@@ -235,181 +233,5 @@ Lets do a quick  recap of what we accomplished.
 1. Run the tests and generate the code coverage reports
 1. Review the code coverage report
 
-Again you can find the sample project at [https://github.com/digitaldrummerj/cypress-code-coverage-demo](https://github.com/digitaldrummerj/cypress-code-coverage-demo).
 
 In our next article in our code coverage series, we will add the running of the code coverage report to your automated builds.
-
-## Example Files
-
-```json
-"start": "ng serve",
-"cy:open": "cypress open --env coverage=true",
-"build:prod:coverage": "ng build --extra-webpack-config ./cypress/coverage.webpack.js --progress=false",
-
-```
-
---- WEBPACK ---
-
-```javascript
-
-module.exports = {
-  module: {
-    rules: [
-      {
-        test: /\.(ts)$/,
-        use: {
-          loader: 'istanbul-instrumenter-loader',
-          options: {
-            debug: true,
-            esModules: true
-          }
-        },
-        enforce: 'post',
-        include: require('path').join(__dirname, '..', 'src'),
-        exclude: [
-          /node_modules/,
-          /cypress/,
-          /(ngfactory|ngstyle)\.js/]
-      },
-    ],
-  },
-};
-```
-
---- angular.json
-
-```json
-{
-  "$schema": "./node_modules/@angular/cli/lib/config/schema.json",
-  "version": 1,
-  "newProjectRoot": "projects",
-  "projects": {
-    "CypressCodeCoverageDemo": {
-      "root": "",
-      "sourceRoot": "src",
-      "projectType": "application",
-      "architect": {
-        "build": {
-          "builder": "ngx-build-plus:browser",
-          "options": {
-            "outputPath": "dist/CypressCodeCoverageDemo",
-            "index": "src/index.html",
-            "main": "src/main.ts",
-            "tsConfig": "tsconfig.app.json",
-            "polyfills": "src/polyfills.ts",
-            "aot": false,
-            "assets": [
-              "src/assets",
-              "src/favicon.ico",
-            ],
-            "styles": [
-              "src/styles.scss"
-            ]
-          },
-          "configurations": {
-            "production": {
-                "fileReplacements": [
-                {
-                  "replace": "src/environments/environment.ts",
-                  "with": "src/environments/environment.prod.ts"
-                }
-              ],
-              "optimization": true,
-              "outputHashing": "all",
-              "sourceMap": false,
-              "extractCss": true,
-              "namedChunks": false,
-              "aot": true,
-              "extractLicenses": true,
-              "vendorChunk": false,
-              "buildOptimizer": true,
-               "budgets": [
-                {
-                  "type": "initial",
-                  "maximumWarning": "2mb",
-                  "maximumError": "5mb"
-                },
-                {
-                  "type": "anyComponentStyle",
-                  "maximumWarning": "6kb",
-                  "maximumError": "10kb"
-                }
-              ]
-            }
-          }
-        },
-        "serve": {
-          "builder": "ngx-build-plus:dev-server",
-          "options": {
-            "browserTarget": "CypressCodeCoverageDemo:build"
-          },
-          "configurations": {
-            "production": {
-              "browserTarget": "CypressCodeCoverageDemo:build:production"
-            }
-          }
-        },
-        "extract-i18n": {
-          "builder": "@angular-devkit/build-angular:extract-i18n",
-          "options": {
-            "browserTarget": "CypressCodeCoverageDemo:build"
-          }
-        }
-      }
-    }
-  },
-  "defaultProject": "CypressCodeCoverageDemo",
-  "schematics": {
-    "@schematics/angular:component": {
-      "style": "scss",
-      "skipTests": true
-    },
-    "@schematics/angular:class": {
-      "skipTests": true
-    },
-    "@schematics/angular:directive": {
-      "skipTests": true
-    },
-    "@schematics/angular:guard": {
-      "skipTests": true
-    },
-    "@schematics/angular:module": {
-      "skipTests": true
-    },
-    "@schematics/angular:pipe": {
-      "skipTests": true
-    },
-    "@schematics/angular:service": {
-      "skipTests": true
-    }
-  }
-}
-```
-
---- cypress\tsconfig.json ---
-
-```json
-{
-  "compilerOptions": {
-    "allowJs": true,
-    "baseUrl": "../node_modules",
-    "types": [
-      "cypress"
-    ]
-  },
-  "include": [
-    "**/*.*"
-  ]
-}
-```
-
---- cypress/config.json ---
-
-```json
-{
-  "reporterEnabled": "spec,mocha-teamcity-reporter",
-  "reporterOptions": {
-    "mochaFile": "cypress/results/results-[hash].xml"
-  }
-}
-```
