@@ -1,6 +1,6 @@
 ---
 categories: ["Cypress"]
-date: 2021-12-27T13:00:00Z
+date: 2022-01-07T13:00:00Z
 draft: true
 title: Cypress - Helper Functions Instead of Custom Commands
 url: '/cypress-helper-functions'
