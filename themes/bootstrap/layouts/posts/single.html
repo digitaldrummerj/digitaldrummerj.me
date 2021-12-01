@@ -3,16 +3,16 @@
 <!-- Page Header -->
 <!-- Set your background image for this header on the line below. -->
 {{ if isset .Params "image" }}
-<header
-  class="intro-header"
-  style="background-image: url('{{ .Site.BaseURL }}/{{ .Params.image }}')"
->
-  {{ else }}
+  <header
+    class="intro-header"
+    style="background-image: url('{{ .Site.BaseURL }}/{{ .Params.image }}')"
+  >
+{{ else }}
   <header
     class="intro-header"
     style="background-image: url('{{ .Site.BaseURL }}{{ .Site.Params.defaultHeaderImage }}')"
   >
-    {{ end }}
+{{ end }}
     <div class="container">
       <div class="row">
         <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
@@ -25,7 +25,7 @@
         </div>
       </div>
     </div>
-  </header>
+</header>
 
   <!-- Post Content -->
   <article>
@@ -75,4 +75,4 @@
   </article>
 
   {{ partial "footer.html" .}}
-</header>
+
