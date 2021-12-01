@@ -4,13 +4,12 @@ date: 2021-12-03T13:00:00Z
 draft: true
 title: "Angular - Add Code Coverage to Your Cypress Tests"
 url: '/cypress-code-coverage'
-series: ["Cypress Code Coverage"]
 ---
 
-In part 1 of the series we talked about why you need code coverage so you aren't testing in the dark and can make data-driven decisions on if you have actually tested your code the way you think you have.
-
-In this article in the series on code coverage, we are going to add code coverage reports to our [Cypress](https://cypress.io) tests.  For our sample project we are using Angular but the step can apply to any project that is using Cypress.  The sample project is a new Angular project (e.g. ng new) that I have added Cypress tests to.
-
+As I have implemented more automated tests, one of the must haves for me is code coverage reports.  Code coverage allow me to quickly and easily see which lines of the code are not being tested so I can close any critical testing gaps.
+ 
+Today, I am going to be talking specifically about how to implement code coverage for an Angular project that was generated from the Angular CLI.
+ 
 ## Generate Our Sample Project
 
 Before getting started, we need to generate our sample project using the [Angular CLI](https://angular.io/cli).
@@ -68,12 +67,12 @@ In order for you to gather code coverage metrics, the code coverage needs to kno
 Cypress does not instrument your code - you need to do it yourself. We will be using the [Istanbul](https://istanbul.js.org/) library along with the command-line interface for the [Istanbul](https://istanbul.js.org/) library, [nyc](https://github.com/istanbuljs/nyc).
 
 ```bash
-npm install --save-dev @istanbuljs/nyc-config-typescript babel-plugin-=istanbul istanbul-lib-coverage nyc source-map-support
+npm install --save-dev @istanbuljs/nyc-config-typescript babel-plugin istanbul-lib-coverage nyc source-map-support
 ```
 
-Since we are using Angular, we also need to inject the command to instrument our code as part of the Angular build process (`ng build`).  By default with the Angular CLI there is no way to inject anything extra into the webpack configuration when you build or serve your application.  If you wanted to inject custom configuration like instrumenting the code, you would have to eject your project from the Angular build system and manage the webpack configuration yourself.  Instead with [ngx-build-plus](https://www.npmjs.com/package/ngx-build-plus) you can inject the extra webpack configurations as part of the normal Angular build and serve commands that the Angular CLI provides.
+Since we are using Angular, we also need to inject the command to instrument our code as part of the Angular build process (`ng build`).  By default with the Angular CLI there is no way to inject anything extra into the webpack configuration when you build or serve your application but luckily we can use [ngx-build-plus](https://www.npmjs.com/package/ngx-build-plus) to inject the extra webpack configurations as part of the normal Angular build and serve commands.
 
-> WARNING: Never run the build with the code coverage instrumentation as your production build.  It will cause major performance issues since it tracks each line of code that is called.
+> WARNING: Never run the build with the code coverage instrumentation as your production build (e.g ng build --prod).  It will cause major performance issues since it tracks each line of code that is called.
 
 To install [npx-build-plus](https://www.npmjs.com/package/ngx-build-plus) as development dependency run:
 
@@ -115,7 +114,9 @@ Once [npx-build-plus](https://www.npmjs.com/package/ngx-build-plus) is installed
 
 ### Updating Angular.json to use ngx-build-plus
 
-Now that we have  [npx-build-plus](https://www.npmjs.com/package/ngx-build-plus) installed we need to configure our project to use it when the Angular CLI builds and serves our code.   The reason we are doing it at build time instead of when serving is because eventually we will be running this from our automated builds where we aren't using `ng serve`.
+Now that we have  [npx-build-plus](https://www.npmjs.com/package/ngx-build-plus) installed we need to configure our project to use it when the Angular CLI builds and serves our code.   
+
+> The reason we are doing it at build time instead of when serving is because eventually we will be running this from our automated builds where we aren't using `ng serve`.
 
 1. Open the `angular.json` file
 1. Find the the architect -> build section
@@ -139,7 +140,7 @@ Now that we have  [npx-build-plus](https://www.npmjs.com/package/ngx-build-plus)
   },
   ```
 
-Now the Angular CLI will use the ngx-build-plus library to build and serve our Angular App.  You shouldn't notice any difference when using the ngx-build-plus library.  Later, we will add a script into our package.json to tell ngx-build-plus where our additional webpack configuration is located since as I mentioned before we don't always want to instrument our code since it will impact performance.
+Now the Angular CLI will use the ngx-build-plus library to build and serve our Angular App.  You shouldn't notice any difference when using the ngx-build-plus library. 
 
 ## nyc Configuration
 
@@ -227,11 +228,11 @@ Lets do a quick  recap of what we accomplished.
 
 1. Installed the Cypress Code Coverage plugin
 1. Added instrumentation dependencies of istanbul and nyc
-1. Added an extra webpack config to call istanbul to instrument your code
+1. Added an extra webpack config to call bag el-plugin to instrument your code
 1. Change the Angular build to use ngx-build-plus
 1. Confgure the Cypress Code Coverage plugin
 1. Run the tests and generate the code coverage reports
 1. Review the code coverage report
 
 
-In our next article in our code coverage series, we will add the running of the code coverage report to your automated builds.
+In our next article in our code coverage series, we will add the running of the code coverage report to TeamCity builds.
