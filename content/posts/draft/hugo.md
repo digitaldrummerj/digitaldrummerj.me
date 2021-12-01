@@ -1,5 +1,5 @@
 ---
-categories: ["Cypress"]
+categories: ["Hugo"]
 date: 2022-12-30T13:00:00Z
 draft: true
 title: "Hugo Topics"
