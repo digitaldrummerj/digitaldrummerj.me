@@ -19,7 +19,7 @@ pygmentsCodefences =  true
 #pygmentsOptions = "linenos=table"
 
 # color-codes for highlighting derived from this style
-pygmentsStyle =               "manni" #"friendly"
+pygmentsStyle = "manni" #"friendly"
 
 # Set to true to try to do syntax highlighting on code fenced blocks in markdown without a language tag.
 # pygmentsCodefencesGuessSyntax = true
