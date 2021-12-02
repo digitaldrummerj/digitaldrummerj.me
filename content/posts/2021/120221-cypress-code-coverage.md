@@ -7,6 +7,8 @@ url: '/cypress-code-coverage'
 series: ["Cypress Code Coverage"]
 ---
 
+Welcome to part one of our two part series on Angular code coverage for Cypress tests.
+
 As I have implemented more automated tests, one of the must haves for me is code coverage reports.  Code coverage allow me to quickly and easily see which lines of the code are not being tested so I can close any critical testing gaps.
 
 Today, I am going to be talking specifically about how to implement code coverage for an Angular project that was generated from the Angular CLI.
@@ -35,7 +37,7 @@ Now we need to add Cypress to our project
     npm install --save-dev cypress
     ```
 
-1. Once Cypress is installed, we need to initalize Cypress by running
+1. Once Cypress is installed, we need to initialize Cypress by running
 
     ```bash
     npx cypress open
@@ -49,9 +51,9 @@ The Cypress open command will:
 
 ![Cypress Open First Time](/images/code-coverage/cypress-open-examples.png)
 
-> You can safely delete the cypress\integration\examples folder as we won't be using them.
-
 You can now close the Cypress UI.
+
+> You can also safely delete the cypress\integration\1-getting-started and 2-advanced-examples folders as they are just examples and we won't be using them.
 
 ## Dependencies
 
@@ -75,11 +77,13 @@ Since we are using Angular, we also need to inject the command to instrument our
 
 > WARNING: Never run the build with the code coverage instrumentation as your production build (e.g ng build --prod).  It will cause major performance issues since it tracks each line of code that is called.
 
-To install [npx-build-plus](https://www.npmjs.com/package/ngx-build-plus) as development dependency run:
+To install [npx-build-plus](https://www.npmjs.com/package/ngx-build-plus) run:
 
 ```bash
-npm install --save-dev ngx-build-plus
+ng add ngx-build-plus
 ```
+
+> This will install ngx-build-plus and configure angular.json for `ng serve`  and `ng build` to use ngx-build-plus
 
 ### Adding Webpack Config
 
@@ -113,54 +117,33 @@ Once [npx-build-plus](https://www.npmjs.com/package/ngx-build-plus) is installed
     };
     ```
 
-### Updating Angular.json to use ngx-build-plus
+## Configuring the Code Coverage Report
 
-Now that we have  [npx-build-plus](https://www.npmjs.com/package/ngx-build-plus) installed we need to configure our project to use it when the Angular CLI builds and serves our code.
-
-> The reason we are doing it at build time instead of when serving is because eventually we will be running this from our automated builds where we aren't using `ng serve`.
-
-1. Open the `angular.json` file
-1. Find the the architect -> build section
-1. Change the builder to ngx-build-plus:browser like below
-
-  ```json
-  "build": {
-          "builder": "ngx-build-plus:browser",
-  }
-  ```
-
-1. Find the architect -> serve section
-1. Change the builder to ngx-build-plus:dev-server like below
-
-  ```json
-  "serve": {
-    "builder": "ngx-build-plus:dev-server",
-    "options": {
-      "browserTarget": "CypressCodeCoverageDemo:build"
-    },
-  },
-  ```
-
-Now the Angular CLI will use the ngx-build-plus library to build and serve our Angular App.  You shouldn't notice any difference when using the ngx-build-plus library.
-
-## nyc Configuration
-
-Next up we need to configure the [nyc](https://github.com/istanbuljs/nyc) command line interface for the [Istanbul](https://istanbul.js.org/) library.
+Next up we need to configure the [nyc](https://github.com/istanbuljs/nyc) command line interface for the [Istanbul](https://istanbul.js.org/) library that determines how our code coverage report is generated.
 
 1. Open the package.json file
 1. Add a new section at the bottom before the closing `}` bracket.
 
-```json
-, "nyc": {
-  "extends": "@istanbuljs/nyc-config-typescript",
-  "all": true,
-  "reporter": [
-      "html"
-    ]
-}
-```
+    ```txt
+    "nyc": {
+      "extends": "@istanbuljs/nyc-config-babel",
+      "all": true,
+      "exclude": [
+        "**/cypress/**",
+        "**/coverage/**",
+        "karma.conf.js",
+        "src/test.ts",
+        "**/*.spec.ts"
+      ],
+      "reporter": [
+        "html"
+      ]
+    }
+    ```
 
-## Telling Cypress to Include Our Code Coverage Plugin
+> The exclude above just makes the report cleaner by not including directories and files that are related to testing and not the actual production code!
+
+## Configure Cypress Code Coverage Plugin
 
 Earlier, we installed the cypress code coverage plugin but we haven't told Cypress about the plugin yet.  To use the code coverage plugin, we need to wire it up in the `cypress/plugin/index.js` and `cypress/support/index.js` files.
 
@@ -177,25 +160,41 @@ Earlier, we installed the cypress code coverage plugin but we haven't told Cypre
   import '@cypress/code-coverage/support';
   ```
 
-## Adding Our First Test
+## Creating Our First Test
 
 Before we can test our code coverage, we need to create a tests for our Angular application.  We are going to create a simple tests that navigates to the home page and makes sure that the H1 tags has the correct text.
 
 1. In the cypress/integration folder, create a new file called `homepage.spec.js`
 1. In the `homepage.spec.js` file, add the following text
 
-  ```javascript
-  describe('Sample Tests for the Home Page', () => {
-    it('Does Home Page Load', () => {
-      cy.visit('/');
-      cy.get('h1').should('contain', 'Welcome to CypressCodeCoverageDemo!');
-    })
-  }
-  ```
+    ```javascript
+    describe('Sample Tests for the Home Page', () => {
+      it('Does Home Page Load', () => {
+        cy.visit('/');
+        cy.get(".highlight-card > span").should(
+          "contain",
+          "CypressCodeCoverageDemo app is running!"
+        );
+      })
+    });
+    ```
 
-## Running Our Code Coverage
+## Generating the Code Coverage Report
 
-Now we are ready to run our code coverage.  In order to run our tests, we need to start up the Angular Dev Web Server with ng serve and then start the Cypress tests from the command line.
+We are almost ready to ready to run our code coverage.
+
+The last thing we need to do before running our tests is to tell Cypress what the url for our Angular application is (e.g. localhost:4200)
+
+1. open the cypress.json file in the root of your Angular project
+1. Add the baseUrl value instead of the {}
+
+    ```txt
+    "baseUrl": "http://localhost:4200"
+    ```
+
+Now we are ready to run our tests.
+
+First we need to start up the Angular Dev Web Server with ng serve and tell it to include our extra webpack configuration
 
 1. Within Visual Studio Code, open the Integrated Terminal (Ctrl+`)
 1. Run the following start the Angular Dev Web Server with the Code Instrumented by running
@@ -204,6 +203,8 @@ Now we are ready to run our code coverage.  In order to run our tests, we need t
     ng serve --extra-webpack-config ./cypress/coverage.webpack.js
     ```
 
+Second, we need to start up the Cypress UI with code coverage enabled.
+
 1. Within the Integrated Terminal click the + button to create a 2nd terminal
 1. To run, Cypress with code coverage by running the following:
 
@@ -211,28 +212,31 @@ Now we are ready to run our code coverage.  In order to run our tests, we need t
     npx cypress open --env coverage=true
     ```
 
-1. Now when you run your tests, it will output a coverage report.  Within the Cypress UI, will see 3 messages about the code coverage.
+1. When the UI launches, cl;ick on the "Run 1 integration spec"
+1. When the test runs, it will create a coverage report as well as if you look at the log for the 1 tests that we have, will see 3 messages about the code coverage.
 
-      ![Cypress UI with Coverage Messages](/images/code-coverage/cypress-code-coverage-in-ui.png)
+![Cypress UI with Coverage Messages](/images/code-coverage/cypress-code-coverage-in-ui.png)
 
 ## Viewing Code Coverage Report
 
-Once all of your tests are done running, you can find the coverage report in the root of your project in the coverage\lcov-report\src\index.html file.  The important number to look at is the lines that are covered.  In our case 8 out of 10 lines are covered.
+Once all of your tests are done running, you can find the coverage report in the root of your project in the coverage\index.html file.
+
+The two numbers that I typically look at are lines and statements.  Lines says has the line been touched while statements says has every statement on the line been touched by a test.  For example `var x = 10;console.log(x)` is 1 line and 2 statements.
 
 ![Code Coverage Report](/images/code-coverage/code-coverage-report-ui.png)
 
-You can also click on any folder or file and drill down in to see which lines of code were coverage and which lines weren't covered.
+You can also click on any folder or file and drill down in to see which lines of code were covered and which lines were not covered.
 
 ## Recap
 
-Lets do a quick  recap of what we accomplished.
+Lets do a quick recap of what we accomplished.
 
 1. Installed the Cypress Code Coverage plugin
 1. Added instrumentation dependencies of istanbul and nyc
-1. Added an extra webpack config to call bag el-plugin to instrument your code
-1. Change the Angular build to use ngx-build-plus
-1. Confgure the Cypress Code Coverage plugin
-1. Run the tests and generate the code coverage reports
-1. Review the code coverage report
+1. Added an extra webpack config to call babel-plugin to instrument your code
+1. Updated the Angular build to use ngx-build-plus
+1. Configured the Cypress Code Coverage plugin
+1. Generated the code coverage report
+1. Reviewed the code coverage report
 
-In our next article in our code coverage series, we will add the running of the code coverage report to TeamCity builds.
+In our next article, we will add the running of the code coverage report to TeamCity builds, set up failure metrics, and be able to view the report within TeamCity.

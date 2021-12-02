@@ -3,7 +3,8 @@ categories: ["Testing", "dotnet-core"]
 date: 2021-12-09T09:00:00Z
 published: false
 title: "ASP.NET Core - Implementing Code Coverage with DotCover"
-url: '/aspnert-core-code-coverage'
+url: '/aspnet-core-code-coverage'
+series: ["Code Coverage", "ASP.NET Code Coverage"]
 ---
 
 ## Step 1: Add DotCover Nuget Package to Project File

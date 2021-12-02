@@ -2,38 +2,44 @@
 categories: ["Cypress", "Testing", "Angular"]
 date: 2021-12-06T13:00:00Z
 draft: true
-title: Add Cypress Code Coverage to Continuous Integration
-url: '/cypress-code-coverage-ci'
+title: Angular - Add Code Coverage to Automated Builds in TeamCity
+url: "/cypress-code-coverage-teamcity"
 series: ["Cypress Code Coverage"]
 ---
 
-In the previous article, we hooked up Cypress code coverage for our Angular project.  In this article, I will walk you through how to setup the code coverage to run as part of your automated builds.
+Welcome to part two of our two part series on Angular code coverage.
 
-I am using TeamCity for my automated builds, but you can use any provider that you would like.
+In the previous article, we hooked up Cypress code coverage for our Angular project.  In this article, I will walk you through how to setup the code coverage to run as part of the builds in TeamCity.
 
 <!--more-->
 
 ## Dependencies
 
 ```json
-    "angular-http-server": "^1.9.0",
-    "mocha": "^7.1.0",
-    "mocha-teamcity-reporter": "^3.0.0",
-    "npm-run-all": "^4.1.5",
-
+"angular-http-server": "^1.9.0",
+"npm-run-all": "^4.1.5",
 ```
 
 ## nyc TeamCity Config
 
-```json
+To our nyc configuration in the package.json file, we need to add the teamcity reporter.
+
+```txt
 "nyc": {
-    "extends": "@istanbuljs/nyc-config-typescript",
-    "all": true,
-    "reporter": [
-      "html",
-      "teamcity"
-    ]
-  }
+  "extends": "@istanbuljs/nyc-config-babel",
+  "all": true,
+  "exclude": [
+    "**/cypress/**",
+    "**/coverage/**",
+    "karma.conf.js",
+    "src/test.ts",
+    "**/*.spec.ts"
+  ],
+  "reporter": [
+    "html",
+    "teamcity"
+  ]
+}
 ```
 
 ## npm scripts
@@ -42,11 +48,9 @@ I am using TeamCity for my automated builds, but you can use any provider that y
  "scripts": {
     "start": "ng serve",
     "build": "ng build",
-    "build:prod": "node --max_old_space_size=8192 ./node_modules/@angular/cli/bin/ng build --prod --progress=false",
-    "build:prod:coverage": "node --max_old_space_size=8192 ./node_modules/@angular/cli/bin/ng build --extra-webpack-config ./cypress/coverage.webpack.js --progress=false",
-    "lint": "ng lint --format stylish",
-    "lint:ci": "ng lint --format tslint-teamcity-reporter",
-    "ci": "run-s lint:ci build:prod ci:cypress",
+    "build:prod": "ng build --prod --progress=false",
+    "build:prod:coverage": "ng build --extra-webpack-config ./cypress/coverage.webpack.js --progress=false",
+    "ci": "run-s build:prod ci:cypress",
     "ci:cypress": "start-server-and-test ci:start-server http://localhost:4200 cy:run",
     "ci:start-server": "angular-http-server --path ./dist -p 4200 --silent",
     "cy:run": "cypress run --browser chrome --headless --reporter mocha-teamcity-reporter --env coverage=false",
@@ -56,4 +60,3 @@ I am using TeamCity for my automated builds, but you can use any provider that y
     "cy:open": "cypress open --env coverage=false"
   },
 ```
-

@@ -16,4 +16,3 @@ topics:
 * copy to clipboard for code snippets.   see [https://www.dannyguo.com/blog/how-to-add-copy-to-clipboard-buttons-to-code-blocks-in-hugo/](https://www.dannyguo.com/blog/how-to-add-copy-to-clipboard-buttons-to-code-blocks-in-hugo/)
 
 <!--more-->
-
