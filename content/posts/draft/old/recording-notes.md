@@ -1,7 +1,7 @@
 ---
 categories: ["recording", "speaking", "camtasia"]
-date: 2018-02-01T00:00:00Z
-draft: true
+date: 2023-02-01T00:00:00Z
+published: false
 excerpt: ""
 title: More Recording Notes
 ---

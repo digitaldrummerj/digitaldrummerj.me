@@ -1,7 +1,7 @@
 ---
 categories: ["Angular"]
-date: 2020-04-14T00:00:00Z
-draft: true
+date: 2023-04-14T00:00:00Z
+published: false
 title: Export Angular Material Table to Excel
 ---
 

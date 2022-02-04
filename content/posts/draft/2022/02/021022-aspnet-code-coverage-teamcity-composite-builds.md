@@ -1,7 +1,7 @@
 ---
 categories: ["dotnet-core"]
-date: 2021-12-27T13:00:00Z
-draft: true
+date: 2022-02-10T13:00:00Z
+published: false
 title: TeamCity - Run Unit Test and Integration Tests In Parallel and Combine Results
 url: '/teamcity-composite-builds'
 ---

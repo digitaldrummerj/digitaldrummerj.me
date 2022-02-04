@@ -1,6 +1,6 @@
 ---
 categories: ["Testing", "dotnet-core"]
-date: 2021-12-09T09:00:00Z
+date: 2022-02-05T13:00:00Z
 published: false
 title: "ASP.NET Core - Implementing Code Coverage with DotCover"
 url: '/aspnet-core-code-coverage'
@@ -14,7 +14,7 @@ Add the dotCover Dotnet CLI Tool to the Unit Test Project File.
 ```xml
 <ItemGroup>
     <DotNetCliToolReference Include="JetBrains.dotCover.DotNetCliTool" Version="2019.3.4" />
-  </ItemGroup>
+</ItemGroup>
 ```
 
 ## Step 2: Restore Number Packages
