@@ -1,7 +1,6 @@
 ---
 categories: ["Cypress", "Testing", "Angular"]
-date: 2021-12-06T13:00:00Z
-draft: true
+date: 2022-02-04T13:00:00Z
 title: Angular - Add Code Coverage to Automated Builds in TeamCity
 url: "/cypress-code-coverage-teamcity"
 series: ["Cypress Code Coverage"]
@@ -137,7 +136,8 @@ Within TeamCity, you need to edit the build settings to add the build report tab
 
 1. Click the save button
 
-1. Now if you view a build, you will see a new tab titled "UI Coverage"
+1. Now if you view a build, you will see a new tab titled "UI Coverage" that will contain the code coverage report that we are going to add to the build artifacts in the next section.
+
   ![teamcity build tabs](/images/cypress-code-coverage-ci/tc_build_tabs.png)
 
 #### Adding Code Coverage Report as a Build Artifact
