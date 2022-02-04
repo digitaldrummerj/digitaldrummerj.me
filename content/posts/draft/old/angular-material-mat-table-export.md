@@ -5,6 +5,7 @@ published: false
 title: Export Angular Material Table to Excel
 ---
 
+<!--more-->
 ## Dependencies
 
 Angular 8: 1.2.5

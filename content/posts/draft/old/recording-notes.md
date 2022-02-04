@@ -6,6 +6,8 @@ excerpt: ""
 title: More Recording Notes
 ---
 
+<!--more-->
+
 * Filming Process
     * Replace the batteries in the microphone
     * Put camera out of the way of the audience if possible.  I tend to put it off to the side and film from the side with as much of a front angle as I can get
