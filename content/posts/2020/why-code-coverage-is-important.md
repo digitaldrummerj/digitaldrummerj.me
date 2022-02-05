@@ -5,7 +5,6 @@ published: true
 title: You Need Code Coverage
 subheadline: don't test in the dark
 featured_image: "/images/code-coverage/why-code-coverage-featured-image.png"
-series: ["Code Coverage"]
 ---
 
 Welcome to the start of my series on code coverage.  In this article we are going to talk about why you need code coverage reports and then in future articles implement the reports in our Angular based UI and ASP.NET Core based API.

@@ -1,0 +1,3 @@
+{{ $colour := .Get 0 | safeCSS }}
+{{ $colour2 := .Get 1 | safeHTML }}
+<code style="background-color: {{ $colour }};"><span style="color: {{ $colour }}; filter:  grayscale(1) invert(1) contrast(100);">{{ $colour2 }}</span></code>
