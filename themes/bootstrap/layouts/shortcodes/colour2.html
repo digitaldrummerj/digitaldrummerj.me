@@ -1,0 +1,4 @@
+{{ $colour := .Get 0 | safeCSS }}
+{{ $colour2 := .Get 1 | safeHTML }}
+<code><span style="display: inline-block;width: 1.6ch;height: 1.6ch;
+border-radius: 0.1rem;background-color: {{ $colour }};margin-right:5px;"></span>{{ $colour2 }}</code>
