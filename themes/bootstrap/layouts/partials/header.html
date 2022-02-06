@@ -31,7 +31,8 @@
     <meta name="msapplication-TileColor" content="{{ .Site.Params.msApplicationTileColor }}" />
     <meta name="msapplication-TileImage" content="/icons/mstile-150x150.png" />
     <link rel="manifest" href="/manifest.json" />
-
+    {{ template "_internal/twitter_cards.html" . }}
+    {{ template "_internal/opengraph.html" . }}
     <!-- Bootstrap Core CSS -->
     <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
 
