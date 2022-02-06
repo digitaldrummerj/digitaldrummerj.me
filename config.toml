@@ -46,6 +46,10 @@ pygmentsStyle = "manni" #"friendly"
 [markup.goldmark.renderer]
   unsafe = true
 
+# Used to define the twitter card site
+[Social]
+  twitter = "digitaldrummerj"
+
 [[params.social]]
   title = "linkedin"
   url = "https://www.linkedin.com/in/digitaldrummerj/"

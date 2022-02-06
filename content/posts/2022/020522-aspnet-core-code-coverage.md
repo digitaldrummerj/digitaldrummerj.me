@@ -9,7 +9,7 @@ series: ['aspnet-core-code-coverage']
 
 Having automated tests is a good thing to have to help with your code quality but having those tests without any idea of how much of your code is actually being tested is a really bad thing.
 
-To figure out how much of our code we are actually testing, we need to create a code coverage report.  To generate our code coverage report, we going to use the JetBrains dotCover tool.
+To figure out how much of our code we are actually testing, we need to create a code coverage report.  To generate our code coverage report, we going to use the [JetBrains dotCover](https://www.jetbrains.com/dotcover/) tool.
 
 <!--more-->
 
@@ -18,6 +18,8 @@ To figure out how much of our code we are actually testing, we need to create a 
 ## Step 1: Install dotCover
 
 First, you need to install dotCover.CommandLineTools package from nuget as a command line tool within the project.
+
+> **NOTE**: We are using the command line version of dotCover as it is free to use and ultimately we will be adding it to our automated builds, so we do not want the GUI version.  If you want the GUI version and Visual Studio integration, they do offer a 30 day trial of [dotCover](https://www.jetbrains.com/dotcover/download/#section=commandline).
 
 Even though JetBrains says that you can install it from nuget as a package, I have found that if you do that and then try to run `dotnet dotcover test` you get the following error message.
 
@@ -67,3 +69,5 @@ Also, your project team will need to decide on the target code coverage percenta
 > As a target of 100% code coverage sounds awesome, in a lot of cases this is not a realistic target and the business value to increase the code coverage beyond a certain point does not provide enough additional business value.
 
 In our next post on ASP.NET Code Coverage using dotCover, we will discuss how to filter the report so that it only incudes code that should actually be tested and exclude things like our unit test project, so that our code coverage number is more accurate.
+
+> If you want to download the project that I used for this post, you can do so at [https://github.com/digitaldrummerj/aspnet-core-code-coverage](https://github.com/digitaldrummerj/aspnet-core-code-coverage).  It is based on .NET 3.1.

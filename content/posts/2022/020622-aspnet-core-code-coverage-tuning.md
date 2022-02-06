@@ -2,7 +2,7 @@
 categories: ["Testing", "dotnet-core"]
 date: 2022-02-06T13:00:00Z
 published: true
-title: "dotCover - Optimizing Coverage Report"
+title: "dotCover - Optimizing Coverage Report to Only Include Our Applications Logic"
 url: '/aspnet-core-code-coverage-tuning-dotCover/'
 series: ['aspnet-core-code-coverage']
 ---
@@ -44,3 +44,5 @@ The report also now includes just the files that are truly should be under tests
 ![dotcover optimized report](/images/aspnet-core-dotcover/dotcover-report-optimized.png)
 
 In the next post in the series, we will add our code coverage report as part of our TeamCity build.
+
+> If you want to download the project that I used for this post, you can do so at [https://github.com/digitaldrummerj/aspnet-core-code-coverage](https://github.com/digitaldrummerj/aspnet-core-code-coverage).  It is based on .NET 3.1.
