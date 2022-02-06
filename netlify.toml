@@ -16,7 +16,7 @@ HUGO_ENABLEGITINFO = "true"
 command = "hugo --config config.toml,config-prod.toml --buildFuture --buildDrafts --gc --minify -b $DEPLOY_PRIME_URL"
 
 [context.deploy-preview.environment]
-HUGO_VERSION = "0.89.4"
+HUGO_VERSION = "0.92.1"
 
 [context.next.environment]
 HUGO_ENABLEGITINFO = "true"
