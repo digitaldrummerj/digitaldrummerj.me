@@ -8,3 +8,8 @@ series: ['create-blog']
 ---
 
 [Hugo Custom Shortcodes](https://gohugo.io/templates/shortcode-templates/)
+
+* Colour
+* Colour2
+* Alert
+* Blockquote
