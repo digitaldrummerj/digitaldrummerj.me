@@ -1,9 +1,7 @@
 ---
 categories:
-- github
 - markdown
 - blogging
-- npm
 date: 2016-05-10T00:00:00Z
 excerpt: |
   When you are writing tutorials that are broken up by sections it is nice to have a table of contents at the top to help the users navigate.  However, maintaining this by hand is a no go.  Luckily there is a great npm package called doctoc that will look at the headings in your markdown file and generated a table of contents for you.
@@ -18,7 +16,6 @@ When you are writing tutorials that are broken up by sections it is nice to have
 
 <!-- START doctoc generated TOC please keep comment here to allow auto update -->
 <!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
-
 
 - [Installing](#installing)
 - [Adding to All Files](#adding-to-all-files)
@@ -37,21 +34,21 @@ When you are writing tutorials that are broken up by sections it is nice to have
 
 ## Installing
 
-    $ npm install -g doctoc
+    npm install -g doctoc
 
 ## Adding to All Files
 
-    $ doctoc .
+    doctoc .
 
 ## Add to Single File
 
-    $ doctoc /path/to/file [...]
+    doctoc /path/to/file [...]
 
 ### examples
 
-    $ doctoc README.md
+    doctoc README.md
 
-    $ doctoc CONTRIBUTING.MD LICENSE.MD
+    doctoc CONTRIBUTING.MD LICENSE.MD
 
 ## Skipping Files
 
@@ -63,8 +60,7 @@ The first step is to add this line of text to the markdown files to skip of:
 
 Using [Ack](http://beyondgrep.com/) which requires Perl
 
-
-    $ ack -L 'DOCTOC SKIP' | xargs doctoc
+    ack -L 'DOCTOC SKIP' | xargs doctoc
 
 Here is an example using built-in Windows command line options.  If you are not running it in the directory that contains your markdown files that you want a table of contents on then make sure to update the source variable.
 
@@ -84,7 +80,6 @@ Here is an example using built-in Windows command line options.  If you are not 
 
      pause
 
-
 ## Specifying Location of the Table of Contents
 
 By default doctoc will add the table of contents at the top of the file.  You can however indicate where you would like to have it placed with the following:
@@ -93,7 +88,6 @@ By default doctoc will add the table of contents at the top of the file.  You ca
     <!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
 
     <!-- END doctoc generated TOC please keep comment here to allow auto update -->
-
 
 ## Changing the Title to the Table of Contents
 
@@ -121,7 +115,6 @@ By default doctoc generated github formatted links.  To change use the following
 
     doctoc README.md --bitbucket
 
-
 ## Using with Jekyll
 
 >UPDATED 2016-05-10: For Jekyll the recommendation is now to use the kramdown table of contents built-in generator
@@ -135,7 +128,7 @@ To use add a table of contents using kramdown on your Jekyll blog, add the follo
 
 **Jekyll Kramdown TOC Sample Showing All Headers**
 
-* TOC
+- TOC
 {:toc}
 
 This will cause the * TOC to be replaced with the actual table of contents when the jekyll build/serve is run.
@@ -149,10 +142,8 @@ To remember to always update the Table of Contents before committing to you can 
 1. Add your doctoc command to the file and save
 1. Now the next time you do a git commit the table of contents will automatically updated
 
-
 ## More Info
 
 [Github Repo](https://github.com/thlorenz/doctoc)
 
 [npm package](https://www.npmjs.com/package/doctoc)
-

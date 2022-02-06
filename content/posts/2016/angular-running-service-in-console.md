@@ -11,7 +11,7 @@ published: true
 title: AngularJS - Calling Service Methods from Console
 ---
 
-> Note: This post applies to AngularJS.  The 1.x version of Angular.
+> Note: This post applies to AngularJS.  The 1.x version of Angular. AngularJS has been end of life at of 12/31/2021.
 
 Here is a quick tip for how you can run your Angular service and factory methods within the Chrome Dev Tools console.  No longer will you have to go through the process of navigating through the UI to trigger a Service/Factory method to run.  Now you can just load up the web site and do all of your debugging through the Chrome console.
 

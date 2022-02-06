@@ -1,5 +1,5 @@
 ---
-categories: ["recording", "speaking", "camtasia"]
+categories: ["speaking"]
 date: 2018-02-01T00:00:00Z
 published: true
 title: How I Record My Conference Talks

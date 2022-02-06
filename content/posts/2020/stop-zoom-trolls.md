@@ -1,7 +1,5 @@
 ---
 categories:
-- meetup
-- community
 - zoom
 date: 2020-04-07T06:00:00Z
 published: true

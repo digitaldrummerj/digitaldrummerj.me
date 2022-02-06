@@ -38,11 +38,14 @@ We will be going through 3 steps:
 The first step is to get the list of possible application to remove.  We are going to get this list by running the Get-AppxPackage powershell function,  saving output to a file named ModernApps.txt that will be saved to the Windows temp directory and open it in notepad.
 
 1. Open up a powershell command prompt.
-	* Use Windows Key + R, type powershell and press enter
+
+    * Use Windows Key + R, type powershell and press enter
 
 1. Run the following command to get the list of applications, save the output to a file and open it in notepad.
 
-		Get-AppxPackage | Format-Wide -Property Name -Column 1 | Out-File "${env:temp}\ModernApps.txt" | notepad "${env:temp}\ModernApps.txt"
+    ```powershell
+     Get-AppxPackage | Format-Wide -Property Name -Column 1 | Out-File "${env:temp}\ModernApps.txt" | notepad "${env:temp}\ModernApps.txt"
+     ```
 
 1. In the script in the next section, modify the $AppsList variable with the programs that you wish to uninstall.
 
@@ -70,13 +73,13 @@ Note:  If you are testing out the script below by running it from the Powershell
 
 try
 {
-	$tsenv = New-Object -COMObject Microsoft.SMS.TSEnvironment
-	$logPath = $tsenv.Value("LogPath")
+ $tsenv = New-Object -COMObject Microsoft.SMS.TSEnvironment
+ $logPath = $tsenv.Value("LogPath")
 }
 catch
 {
-	Write-Host "This script is not running in a task sequence"
-	$logPath = $env:windir + "\temp"
+ Write-Host "This script is not running in a task sequence"
+ $logPath = $env:windir + "\temp"
 }
 
 $logFile = "$logPath\$($myInvocation.MyCommand).log"
@@ -89,62 +92,62 @@ Write-Host "Logging to $logFile"
 # Update the List of Applications to be removed with your own
 #*********************
 $AppsList =
-	"microsoft.windowscommunicationsapps",
-	"Microsoft.BingFinance",
-	"Microsoft.BingMaps",`
-	"Microsoft.BingWeather",
-	"Microsoft.ZuneVideo",
-	"Microsoft.ZuneMusic",
-	"Microsoft.Media.PlayReadyClient.2",`
-	"Microsoft.XboxLIVEGames",
-	"Microsoft.HelpAndTips",
-	"Microsoft.BingSports",`
-	"Microsoft.BingNews",
-	"Microsoft.BingFoodAndDrink",
-	"Microsoft.BingTravel",
-	"Microsoft.WindowsReadingList",`
-	"Microsoft.BingHealthAndFitness",
-	"Microsoft.WindowsAlarms",
-	"Microsoft.WindowsScan",
-	"Microsoft.WindowsSoundRecorder",
-	"Microsoft.SkypeApp"
+ "microsoft.windowscommunicationsapps",
+ "Microsoft.BingFinance",
+ "Microsoft.BingMaps",`
+ "Microsoft.BingWeather",
+ "Microsoft.ZuneVideo",
+ "Microsoft.ZuneMusic",
+ "Microsoft.Media.PlayReadyClient.2",`
+ "Microsoft.XboxLIVEGames",
+ "Microsoft.HelpAndTips",
+ "Microsoft.BingSports",`
+ "Microsoft.BingNews",
+ "Microsoft.BingFoodAndDrink",
+ "Microsoft.BingTravel",
+ "Microsoft.WindowsReadingList",`
+ "Microsoft.BingHealthAndFitness",
+ "Microsoft.WindowsAlarms",
+ "Microsoft.WindowsScan",
+ "Microsoft.WindowsSoundRecorder",
+ "Microsoft.SkypeApp"
 
 ForEach ($App in $AppsList)
 {
-	$Packages = Get-AppxPackage | Where-Object {$_.Name -eq $App}
+ $Packages = Get-AppxPackage | Where-Object {$_.Name -eq $App}
 
-	if ($Packages -ne $null)
-	{
-			Write-Host "Removing Appx Package: $App"
+ if ($Packages -ne $null)
+ {
+   Write-Host "Removing Appx Package: $App"
 
-			foreach ($Package in $Packages)
-			{
-				Remove-AppxPackage -package $Package.PackageFullName
-			}
-	}
-	else
-	{
-			Write-Host "Unable to find package: $App"
-	}
+   foreach ($Package in $Packages)
+   {
+    Remove-AppxPackage -package $Package.PackageFullName
+   }
+ }
+ else
+ {
+   Write-Host "Unable to find package: $App"
+ }
 
-	$ProvisionedPackage = Get-AppxProvisionedPackage -online | Where-Object {$_.displayName -eq $App}
+ $ProvisionedPackage = Get-AppxProvisionedPackage -online | Where-Object {$_.displayName -eq $App}
 
-	if ($ProvisionedPackage -ne $null)
-	{
-			Write-Host "Removing Appx Provisioned Package: $App"
-			Remove-AppxProvisionedPackage -online -packagename $ProvisionedPackage.PackageName
-	}
-	else
-	{
-			Write-Host "Unable to find provisioned package: $App"
-	}
+ if ($ProvisionedPackage -ne $null)
+ {
+   Write-Host "Removing Appx Provisioned Package: $App"
+   Remove-AppxProvisionedPackage -online -packagename $ProvisionedPackage.PackageName
+ }
+ else
+ {
+   Write-Host "Unable to find provisioned package: $App"
+ }
 }
 
 # Stop logging
 Stop-Transcript
 ```
 
-##Executing Powershell Script as Part of Vagrant Provisioning
+## Executing Powershell Script as Part of Vagrant Provisioning
 
 The last step is to add the running of the script to the vagrant provisioning process.
 
@@ -153,40 +156,46 @@ The last step is to add the running of the script to the vagrant provisioning pr
 1. In the shell directory, create a file called main.cmd.
 1. Add the following contents to the main.cmd file.
 
-		echo 'Removing Default Windows Programs'
-		@powershell -NoProfile -ExecutionPolicy Bypass -File "%systemdrive%\vagrant\shell\RemoveDefaultPrograms.ps1"
+    ```powershell
+    echo 'Removing Default Windows Programs'
+    @powershell -NoProfile -ExecutionPolicy Bypass -File "%systemdrive%\vagrant\shell\RemoveDefaultPrograms.ps1"
+    ```
 
 1. Open up your VagrantFile in a text editor of your choice.
 1. Add the following line in the area where you have your provisioning setup.
 
-		config.vm.provision :shell, path: "shell/main.cmd"
+   ```powershell
+   config.vm.provision :shell, path: "shell/main.cmd"
+   ```
 
 1. When you run vagrant up, the last step it will run is the provisioning scripts.
 1. If you already have a machine controlled by vagrant up and running, you can run vagrant provision to rerun the provisioning scripts.
 
-**Sample Output from the vagrant provisioning**
+### Sample Output from the vagrant provisioning
 
-	==> default: C:\Windows\system32>echo 'Removing Default Windows Programs'
-	==> default:
-	==> default: 'Removing Default Windows Programs'
-	==> default: This script is not running in a task sequence
-	==> default: Transcript started, output file is C:\Windows\temp\RemoveDefaultPrograms.ps1.log
-	==> default:
-	==> default: Logging to C:\Windows\temp\RemoveDefaultPrograms.ps1.log
-	==> default: Unable to find package: microsoft.windowscommunicationsapps
-	==> default: Removing Appx Provisioned Package: microsoft.windowscommunicationsapps
-	==> default:
-	==> default: Path           :
-	==> default: Online         : True
-	==> default: Restart Needed : False
-	==> default:
-	==> default:
-	==> default: Unable to find package: Microsoft.BingFinance
-	==> default: Removing Appx Provisioned Package: Microsoft.BingFinance
-	==> default: Path           :
-	......
-	==> default:
-	==> default: Transcript stopped, output file is C:\Windows\temp\RemoveDefaultPrograms.ps1.log
+```shell
+ ==> default: C:\Windows\system32>echo 'Removing Default Windows Programs'
+ ==> default:
+ ==> default: 'Removing Default Windows Programs'
+ ==> default: This script is not running in a task sequence
+ ==> default: Transcript started, output file is C:\Windows\temp\RemoveDefaultPrograms.ps1.log
+ ==> default:
+ ==> default: Logging to C:\Windows\temp\RemoveDefaultPrograms.ps1.log
+ ==> default: Unable to find package: microsoft.windowscommunicationsapps
+ ==> default: Removing Appx Provisioned Package: microsoft.windowscommunicationsapps
+ ==> default:
+ ==> default: Path           :
+ ==> default: Online         : True
+ ==> default: Restart Needed : False
+ ==> default:
+ ==> default:
+ ==> default: Unable to find package: Microsoft.BingFinance
+ ==> default: Removing Appx Provisioned Package: Microsoft.BingFinance
+ ==> default: Path           :
+ ......
+ ==> default:
+ ==> default: Transcript stopped, output file is C:\Windows\temp\RemoveDefaultPrograms.ps1.log
+```
 
 After we have run the script, if you used the application list that I had in the script, the start menu will look like this.
 

@@ -1,6 +1,7 @@
 ---
 categories:
 - dotnet
+- asp.net
 date: 2016-08-23T00:00:00Z
 excerpt: "Welcome to the series on getting started with .NET Web Api.  In this article
   we will create a basic C# Web Api with Windows Integrated Authentication and create

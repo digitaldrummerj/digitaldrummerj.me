@@ -1,7 +1,6 @@
 ---
 categories:
 - vagrant
-- chocolatey
 date: 2015-07-06T06:00:00Z
 excerpt: If you are working behind a proxy server you will need to configure both
   the host computer and the Vagrant virtual machines to communicate through the proxy
@@ -17,7 +16,7 @@ title: Vagrant Part 6 - Behind A Proxy Server
 
 ## Overview
 
-If you are working behind a proxy server you will need to configure both the host computer and the Vagrant virtual machines to communicate through the proxy server.   It is easy to configure the proxy settings but finding the documentation is a different story.  Below we will go through how to configure the proxy for the vagrant commands (up, status, box add, etc) and then how to configure the virtual machine proxy settings. 
+If you are working behind a proxy server you will need to configure both the host computer and the Vagrant virtual machines to communicate through the proxy server.   It is easy to configure the proxy settings but finding the documentation is a different story.  Below we will go through how to configure the proxy for the vagrant commands (up, status, box add, etc) and then how to configure the virtual machine proxy settings.
 
 ## Vagrant Commands
 
@@ -31,12 +30,12 @@ The typical proxy environment variables are http_proxy and https_proxy.  You can
 
 	set http_proxy=http://yourproxyserver:port
 	set https_proxy=https://yourproxyserver:port
-	
+
 ### Permantly Set
 
 	setx http_proxy=http://yourproxyserver:port
 	setx https_proxy=https://yourproxyserver:port
- 
+
 ### View Proxy Settings
 
 If the commands below just echo out the text instead of the actual proxy server, it means that the proxy server is not set.
@@ -60,18 +59,18 @@ In order to configure the vagrant virtual machines to use a proxy server, you ne
 
 The vagrant-proxyconf can configure the proxy settings for Generic Proxy environment variables, Chef, Apt, Docker, Git, npm, PEAR, Subversion, Yum, and Windows.
 
-Below we will walk through the basics of using the vagrant-proxyconf plugin.  You can read the full documentation at [https://github.com/tmatilai/vagrant-proxyconf](https://github.com/tmatilai/vagrant-proxyconf).   
+Below we will walk through the basics of using the vagrant-proxyconf plugin.  You can read the full documentation at [https://github.com/tmatilai/vagrant-proxyconf](https://github.com/tmatilai/vagrant-proxyconf).
 
 
 ### Ensuring the plugin is installed
 
 There is no built-in vagrant command to make sure that a plugin is installed but since the Vagrantfile is a Ruby file, it is very easy to write a little bit of Ruby code to ensure that the plugin is installed.
 
-In the Vagrantfile before the **Vagrant.configure(2) do |config|** line added the following code snippet: 
+In the Vagrantfile before the **Vagrant.configure(2) do |config|** line added the following code snippet:
 
-	if !Vagrant.has_plugin?("vagrant-proxyconf") 
-	     	system('vagrant plugin install vagrant-proxyconf')     
-	     
+	if !Vagrant.has_plugin?("vagrant-proxyconf")
+	     	system('vagrant plugin install vagrant-proxyconf')
+
 	     raise("vagrant-proxyconf installed. Run command again.");
 	end
 
@@ -95,7 +94,7 @@ To configure global add the code snippet below to VagrantFile at .vagrant.d/Vagr
 
 ## Next Steps
 
-Now you have everything you need to configure Vagrant to work from behind a proxy server.  In the next lesson we will cover the different networking options for Vagrant.    
+Now you have everything you need to configure Vagrant to work from behind a proxy server.  In the next lesson we will cover the different networking options for Vagrant.
 
 
 

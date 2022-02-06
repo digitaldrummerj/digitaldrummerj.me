@@ -6,7 +6,7 @@ published: true
 title: AngularJS - Calling Filters in Your Angular Controller
 ---
 
-> Note: This post applies to AngularJS.  The 1.x version of Angular.
+> Note: This post applies to AngularJS.  The 1.x version of Angular. AngularJS has been end of life at of 12/31/2021.
 
 Here is a quick tip for how to call a filter from within your Angular controller.  This example assumes that you already know what a filter is and have one created.
 
@@ -16,11 +16,11 @@ Here is a quick tip for how to call a filter from within your Angular controller
     angular.module('sample').controller('SampleController', SampleController);
 
     /* @ngInject */
-    function SampleController($filter) { 
+    function SampleController($filter) {
     }
     ```
 
-1. Call your filter by calling: 
+1. Call your filter by calling:
 
     * **View** call your filter called "myFilter" on myDateVariable with arguments arg1 and arg2, you would use:
 

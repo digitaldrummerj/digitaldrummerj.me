@@ -28,18 +28,18 @@ When you release your web site to production, you should minify and concatenate 
 
 Sourcemaps bacically are a way to map the combined/minified file back to the original file. As part of the minification process you generate a source map which holds the information about your original files.  The developer tools will then parse the source map and make it appear as though you're running unminified and uncombined files.
 
-##Creating Sourcemaps
+## Creating Sourcemaps
 
 To generate the sourcemaps we are going to gulp with the gulp-concat, gulp-uglify, and gulp-sourcemaps modules.   If you are not familiar with gulp, it is basically a javascript build system that allows you to write code to automate tasks.
 
 1. Install [node.js](http://nodejs.org) if you don't have it installed already.
 1. Install Gulp and the Gulp modules that we need.
 
-        $ npm install --save gulp
-        $ npm install --save gulp-concat
-        $ npm install --save-dev gulp-uglify
-        $ npm install --save-dev gulp-sourcemaps
-        $ npm install --save-dev rimraf
+        npm install --save gulp
+        npm install --save gulp-concat
+        npm install --save-dev gulp-uglify
+        npm install --save-dev gulp-sourcemaps
+        npm install --save-dev rimraf
 
 1. Create a file called gulpfile.js if you don't already have one.
 1. Add the required gulp modules to the gulpfile.js.
@@ -92,18 +92,18 @@ To generate the sourcemaps we are going to gulp with the gulp-concat, gulp-uglif
 
         gulp.task('default', ['build-js']);
 
-##Running Task
+## Running Task
 
 1. Open a command prompt or terminal.
 1. Navigate to the directory that contain the gulpfile.js we created.
 1. Run the following command:
 
-        $ gulp build-js
+        gulp build-js
 
 1. If it worked successfully, you should have a minified file in your www/js folder.
 1. To use the file, open up the index.html file and remove all of your javascript script tags that reference your js files in the www folder and replace it with a single script tag that references the www/js/bundle.min.js file.  Make sure to leave any vendor script tags.
 
-##Enabling Sourcemaps in Chrome Developer Tools
+## Enabling Sourcemaps in Chrome Developer Tools
 
 Now that we have the source maps generated, we have to tell the Chrome Developer Tools to enable the source maps.
 
@@ -112,7 +112,7 @@ Now that we have the source maps generated, we have to tell the Chrome Developer
 
     ![Open Chrome Developer Tools](/images/ChromeDevTools/ChromeDevTools-Open.png)
 
-1.  Click on the Setting Cog.
+1. Click on the Setting Cog.
 
     ![Open Settings](/images/ChromeDevTools/ChromeDevTools-SettingsCog.png)
 
@@ -125,7 +125,7 @@ Now that we have the source maps generated, we have to tell the Chrome Developer
     * Note: If you are using Angular, you have to make sure that you use the minification safe syntax for the dependency injection.  See the next section for examples.
     * Note 2: If you are using the Ionic Framework, the default templates (blank, tabs, sidemenu) do not use the Angular minification safe syntax.  You will need to modify the template after you generate your application.
 
-##Angular Minification Safe Syntax
+## Angular Minification Safe Syntax
 
 If you are using the AngularJs framework it does a lot of dependency injection.  Out of the box, if you just pass in your arguments to the different functions, it is not minification safe.  There are a couple of easy ways to make it minification safe with a minimal amount of code changes.
 
