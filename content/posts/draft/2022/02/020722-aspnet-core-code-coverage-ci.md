@@ -1,11 +1,15 @@
 ---
-categories: ["Testing", "dotnet-core"]
+categories: ["testing", "dotnet-core"]
 date: 2022-02-07T13:00:00Z
 published: false
 title: "ASP.NET Core - Code Coverage in TeamCity"
 url: '/aspnet-core-code-coverage-teamcity/'
 series: ['aspnet-core-code-coverage']
 ---
+In the previous two post in the series, we setup and optimized our code coverage using the command line version of dotCover.  In this post, we are going to add our code coverage to our TeamCity automated builds.
+
+<!--more-->
+
 
 Create Build Step
 

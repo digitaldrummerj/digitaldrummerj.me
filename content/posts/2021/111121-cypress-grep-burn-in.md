@@ -1,5 +1,5 @@
 ---
-categories: ["Testing", "Cypress"]
+categories: ["testing", "Cypress"]
 date: 2021-11-11T00:00:00Z
 published: true
 title: Cypress - How to run the same test again and again to confirm it is flake-free

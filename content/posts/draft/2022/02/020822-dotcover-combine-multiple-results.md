@@ -1,5 +1,5 @@
 ---
-categories: ["Testing", "dotnet-core"]
+categories: ["testing", "dotnet-core"]
 date: 2022-02-08T13:00:00Z
 published: false
 title: "DotCover - Combine Multiple Results into Single Report"

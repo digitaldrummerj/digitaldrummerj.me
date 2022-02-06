@@ -1,5 +1,5 @@
 ---
-categories: ["Testing"]
+categories: ["testing"]
 date: 2020-04-12T00:00:00Z
 published: true
 title: You Need Code Coverage
