@@ -10,11 +10,6 @@ p {
   margin: 30px 0
 }
 
-ol li p {
-  margin: 0 0 10px !important;
-  line-height: 1;
-}
-
 p a {
   text-decoration: underline
 }
@@ -235,6 +230,16 @@ hr.small {
   .intro-header .post-heading .subheading {
     font-size: 30px
   }
+}
+
+.post-content li p {
+  margin: 0 0 10px;
+  line-height: 1;
+}
+
+.post-content img {
+  border: 2px solid #555;
+  display: inline
 }
 
 .post-preview>a {
