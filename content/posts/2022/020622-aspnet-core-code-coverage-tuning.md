@@ -2,7 +2,7 @@
 categories: ["Testing", "dotnet-core"]
 date: 2022-02-06T13:00:00Z
 published: true
-title: "dotCover - Filtering Files Used as Part of Generate Coverage Report"
+title: "dotCover - Optimizing Coverage Report"
 url: '/aspnet-core-code-coverage-tuning-dotCover/'
 series: ['aspnet-core-code-coverage']
 ---
