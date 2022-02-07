@@ -1,5 +1,5 @@
 ---
-categories: ["Testing", "Cypress"]
+categories: ["testing", "Cypress"]
 date: 2021-11-15T13:00:00Z
 published: true
 url: '/cypress-custom-browser/'

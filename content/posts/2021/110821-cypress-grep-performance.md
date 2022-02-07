@@ -1,5 +1,5 @@
 ---
-categories: ["Testing", "Cypress"]
+categories: ["testing", "Cypress"]
 date: 2021-11-08T00:00:00Z
 published: true
 title: Cypress Grep - Faster Test Execution

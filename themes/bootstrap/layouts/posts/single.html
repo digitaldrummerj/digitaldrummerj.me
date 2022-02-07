@@ -37,7 +37,7 @@
           {{ end }}
         </div>
       </div> -->
-      <div class="row">
+      <div class="row post-series">
         <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
           <br />
           {{ partial "series.html" . }}
@@ -49,24 +49,24 @@
           {{ end }}
         </div>
       </div>
-      <div class="row">
+      <div class="row post-content">
         <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
           {{ .Content }}
         </div>
       </div>
-      <div class="row">
+      <div class="row post-series">
         <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
           {{ partial "series.html" . }}
         </div>
       </div>
-      <div class="row">
+      <div class="row post-sharing">
         <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
           {{ if not .Site.Params.sharingicons.hide }}
             {{ partial "sharing-icons.html" . }}
           {{ end }}
         </div>
       </div>
-      <div class="row">
+      <div class="row post-comments">
         <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
           {{ partial "comments.html" .}}
         </div>

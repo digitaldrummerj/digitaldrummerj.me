@@ -1,18 +1,18 @@
 ---
-categories: ["Testing", "Cypress", "Angular"]
+categories: ["testing", "Cypress", "Angular"]
 date: 2021-11-18T13:00:00Z
 published: true
 url: '/cypress-angular-debounce/'
 title: "Solved: Angular RxJs Debounce Not Consistently Firing When Testing With Cypress"
 ---
 
-In your Angular application if you are using [RxJS Debounce](https://rxjs.dev/api/operators/debounce) and running Cypress test you may have run into times that your tests are not consistently getting past the debounce wait time and appear like they are flaky tests. 
+In your Angular application if you are using [RxJS Debounce](https://rxjs.dev/api/operators/debounce) and running Cypress test you may have run into times that your tests are not consistently getting past the debounce wait time and appear like they are flaky tests.
 
 > Debounce is a way to wait X number of milliseconds for something to happen before continuing such waiting for a user to stop typing in a field before making an API call.  This  way you are not making an API call for each character typed into the field.
 
 In Cypress, you could just use a wait statement to get past the debounce time but adding time based wait statements in Cypress is an anti-pattern.
 
-Instead in Cypress you should use the  `cy.clock() and cy.tick()` commands to be able to forward the virtual time and cause debounce to fire.  However, I found it was not consistently getting past the debounce.  RxJS was acting like we had not waited for the debounce time. 
+Instead in Cypress you should use the  `cy.clock() and cy.tick()` commands to be able to forward the virtual time and cause debounce to fire.  However, I found it was not consistently getting past the debounce.  RxJS was acting like we had not waited for the debounce time.
 
 Luckily, after much troubleshooting the solution ended up being quite simple and only involved test code changes.
 
