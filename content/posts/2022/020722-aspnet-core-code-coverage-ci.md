@@ -3,7 +3,7 @@ categories: ["testing", "dotnet-core"]
 date: 2022-02-07T13:00:00Z
 published: true
 title: ".NET Core - Code Coverage in TeamCity"
-url: '/aspnet-core-code-coverage-teamcity/'
+url: '/dotnet-core-code-coverage-teamcity/'
 series: ['aspnet-core-code-coverage']
 toc: true
 summary: "In part 1 and 2 of of this article series, we setup and optimized our code coverage using the free command line version of dotCover.
