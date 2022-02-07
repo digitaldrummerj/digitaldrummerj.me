@@ -239,7 +239,8 @@ hr.small {
 
 .post-content img {
   border: 2px solid #555;
-  display: inline
+  display: inline;
+  margin: 10px 0px 10px 0px;
 }
 
 .post-content figure {
@@ -247,8 +248,14 @@ hr.small {
     display: flex;
     flex-flow: column;
     padding: 5px;
-    max-width: 100%;
+    max-width: 750px;
     margin: auto;
+    margin-bottom: 25px;
+}
+
+.post-content figure img {
+  margin: 5px;
+  border: 0px;
 }
 
 .post-content figcaption {

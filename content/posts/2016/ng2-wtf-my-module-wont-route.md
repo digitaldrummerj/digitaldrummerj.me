@@ -19,11 +19,11 @@ title: Angular - WTF Module Won't Route
 
 I have been really enjoying working with Angular 2 over the last few months but the other day I spent well over an hour cursing Angular wondering why my new module would not route.  I didn't have this much trouble when I created my other modules a few weeks before.  However, this time when I navigated to my new module route it kept going to my catch all route.
 
-I verified that I had spelled everything correctly in the routing configuration and in the browser url.  I verified that I had imported the new module in the app module.  I swore everything was setup correctly.  WTF. What was going on?  What did I miss.  
+I verified that I had spelled everything correctly in the routing configuration and in the browser url.  I verified that I had imported the new module in the app module.  I swore everything was setup correctly.  WTF. What was going on?  What did I miss.
 
 Turns out that order is important when importing modules in the app.module.ts file especially when you have configured a route to catch any unknown routes and redirect them to a 404 page.  In this scenario, you have to import the AppRoutingModule last.  This was so obvious once I figured it out but never thought about it before then.  I assumed that it would automatically added the child routes into the routing configuations before the catch all route.  Nope it doesn't work that way.  It adds the routes as they are imported. Below shows the broken code and then the fixed code.
 
-{{< alert class="alert" >}}
+{{< alert class="info" >}}
 Original Broken Code: app.module.ts
 {{</alert>}}
 
@@ -87,7 +87,6 @@ import { AppComponent } from './app.component';
 export class AppModule { }
 ```
 
-Such a simple solution to a problem that will have you cursing at Angular.  Hopefully in the future they can change this within Angular so that import order doesn't affect routing like this. 
+Such a simple solution to a problem that will have you cursing at Angular.  Hopefully in the future they can change this within Angular so that import order doesn't affect routing like this.
 
-Leave a comment below, if you have run into other issues with Angular 2 that have been making you scratch your head and curse at the framework.  
- 
+Leave a comment below, if you have run into other issues with Angular 2 that have been making you scratch your head and curse at the framework.

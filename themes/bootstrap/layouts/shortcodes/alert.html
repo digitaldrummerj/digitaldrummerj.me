@@ -1,3 +1,1 @@
-<p class="alert-box {{ with .Get "class" }}{{.}}{{ end }} radius">
-    {{ .Inner | markdownify }}
-</p>
+<div class="alert alert-{{ with .Get "class" }}{{.}}{{end}}">{{ .Inner | markdownify }}</div>
