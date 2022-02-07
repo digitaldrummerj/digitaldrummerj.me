@@ -266,6 +266,10 @@ hr.small {
     text-align: center;
 }
 
+.post-content li figcaption {
+    padding: 30px;
+}
+
 .post-preview>a {
   color: #404040
 }
