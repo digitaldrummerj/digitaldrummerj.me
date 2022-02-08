@@ -11,5 +11,5 @@ series: ['create-blog']
 
 * Colour
 * Colour2
-* Alert
+* Alert - multiple line
 * Blockquote
