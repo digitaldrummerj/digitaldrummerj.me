@@ -1,6 +1,6 @@
 ---
-categories: ["dotnet-core"]
-date: 2022-02-10T13:00:00Z
+categories: ["testing", "dotnet-core", "teamcity", "dotcover"]
+date: 2022-02-09T13:00:00Z
 published: false
 title: dotCover - How to not combine multiple coverage reports in TeamCity
 url: '/teamcity-composite-builds'
@@ -8,15 +8,15 @@ url: '/teamcity-composite-builds'
 
 In our previous post, we talked about how TeamCity automatically combines multiple dotCover outputs into a single code coverage report but what if we wanted to keep thoose reports seperate?
 
-You might be thinking why would you want to do this?  Don’t you want to see the overall test coverage?    
+You might be thinking why would you want to do this?  Don’t you want to see the overall test coverage?
 
-The overall coverage is nice but when you have both unit tests and integration tests, there is a high potential that you are reporting lines of code being covered that were only called by the integration tests but not actually tests.
+The overall coverage is nice but when you have both unit tests and integration tests, there is a high potential that you are reporting lines of code being covered that were only called by the integration tests but not actually tested.
 
-In this post, we are going to look at how in TeamCity you can run both test suites as part of a build and keep the code coverage reports separate using composite builds in TeamCity.  
+In this post, we are going to look at how in TeamCity you can run both test suites as part of a build, generate individual reports, and still have a combined report.
 
-> one big benefit too of composite builds is that the test suites will run in parallel.
+<!--more-->
 
-<—more—>
+Another nice benefit of the way we are going to implement our build in this post is that your unit and integration test build will run in parallel.  Thus you overall build time will decrease.
 
 ## Why do we need seperate code coverage reports?
 
@@ -32,10 +32,25 @@ With the integration test since it start at tge endpoint, that means it calls al
 
 This is exactly what is happening on one of my projects as the integration tests are only validating the security setup of the endpoints.  Our main concern with the integrating tests is to make sure we are only allowing callers to see data that their security role allows them to see.  We test both the authorization denied and authorization success.  For authorization denied, it works as you want for code coverage as the code stops within the endpoint and returns an error message.  However, for authorization success, it proceeds to call through all the layers of the application, making it look like we tested our business logic even if there was no unit tests actually covering those lines.  So for us, it was very important to have individual code coverage reports for unit tests vs integration tests so that we could easily see where we had gaps in unit test coverage.
 
-## Implementation 
+## Implementation
 
 * create unit test build
+  * build steps
+    * restore
+    * test
+    * copy snapshot
+    * echo snapshot
+  * artifacts
 * create integration test build
+  * build steps
+    * restore
+    * test
+    * copy snapshot
+    * echo snapshot
 * create composite build
-* setup artifacts so you get combine results while still having individual reports
-
+  * as regular build so we can combine the results from the tests snapshots
+  * snapshot dependencies to call the test builds
+  * artifact dependencies to generate the coverage report
+  * build steps
+    * echo snapshots
+  * also need to attach a version control repository so that the combined coverage report has the source code included.
