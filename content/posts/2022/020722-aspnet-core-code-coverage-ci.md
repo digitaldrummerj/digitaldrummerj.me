@@ -1,5 +1,5 @@
 ---
-categories: ["testing", "dotnet-core"]
+categories: ["testing", "dotnet-core", "teamcity", "dotcover"]
 date: 2022-02-07T13:00:00Z
 published: true
 title: ".NET Core - Code Coverage in TeamCity"
@@ -37,12 +37,23 @@ Luckily, it is really easy to tell TeamCity to use a locally installed dotCover 
 
 ## Step 2: Add Builds Step
 
-We need to add two build steps:
+We need to add three build steps:
 
+1. Run `dotnet restore` to restore our nuget packages
 1. Run our unit tests with code coverage
 1. Tell TeamCity to process the code coverage results
 
-### 2.1: Run Unit Tests with Code Coverage
+### 2.1: Restore Nuget Packages
+
+You need to create a build step that is a command line step with the working directory as the Unit Test project folder and the custom script has the command `dotnet restore`
+
+```cmd
+dotnet restore
+```
+
+{{< figure src="/images/aspnet-core-dotcover/teamcity-dotnet-restore.png" caption="Run dotnet restore" >}}
+
+### 2.2: Run Unit Tests with Code Coverage
 
 We need to add a new build step to our TeamCity build and configure it as follows.  For the most part we are going to use the command from our [previous post](/aspnet-core-code-coverage-tuning-dotcover/) with the except of removing the dcReportType parameter so that a snapshot is created instead.
 
@@ -66,7 +77,7 @@ Add a new build step and configure your build step as follows:
 
 {{< figure src="/images/aspnet-core-dotcover/teamcity-run-unit-tests.png" caption="Run Unit Test Build Step Configuration" >}}
 
-### 2.2: Report Coverage to TeamCity
+### 2.3: Report Coverage to TeamCity
 
 The next thing we need to do is add a build step to tell TeamCity to process the code coverage snapshot that we generated in the unit tests build step.
 

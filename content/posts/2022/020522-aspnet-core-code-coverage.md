@@ -1,5 +1,5 @@
 ---
-categories: ["testing", "dotnet-core"]
+categories: ["testing", "dotnet-core", "dotcover"]
 date: 2022-02-05T13:00:00Z
 published: true
 title: "ASP.NET Core - Implementing Code Coverage with JetBrains dotCover"
