@@ -233,8 +233,8 @@ hr.small {
 }
 
 .post-content li p {
-  margin: 0 0 10px;
-  line-height: 1;
+  margin: 20px 0 10px;
+  line-height: 1.5;
 }
 
 .post-content img {
