@@ -1,6 +1,6 @@
 ---
 categories: ["hugo", "blogging"]
-date: 2022-03-17T13:00:00Z
+date: 2022-03-09T13:00:00Z
 published: false
 title: "Hugo - Fix Extra Lines In List When Adding a Code Block"
 url: '/hugo-fix-list-extra-lines-with-code-block'
@@ -24,8 +24,8 @@ Here is what we want it to look like with a code block
 To fix the issue, I had to add the following css to my theme
 
 ```css
-li p {
-  margin: 0 0 10px;
-  line-height: 1;
+.post-content li p {
+  margin: 20px 0 10px;
+  line-height: 1.5;
 }
 ```
