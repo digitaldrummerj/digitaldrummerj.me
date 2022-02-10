@@ -2,7 +2,7 @@
 categories: ["testing", "dotnet-core", "teamcity", "dotcover"]
 date: 2022-02-09T13:00:00Z
 published: true
-title: dotCover - How to not combine multiple coverage reports in TeamCity
+title: dotCover - How in TeamCity to create multiple coverage reports
 url: '/teamcity-composite-builds'
 series: ['aspnet-core-code-coverage']
 
