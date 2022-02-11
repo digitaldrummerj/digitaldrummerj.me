@@ -70,4 +70,7 @@ Here are some additional post ideas that I have not picked a date for yet.
         1. table names
         1. create migration scripts
         1. you should use real database for unit testing vs in-memory or sql lite?
+1. Hugo
+    1. Set url in front matter so it is diff than file name
+
 <!--more-->
