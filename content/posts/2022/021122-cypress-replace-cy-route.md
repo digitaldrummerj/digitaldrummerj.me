@@ -1,7 +1,7 @@
 ---
 categories: ["Cypress"]
 date: 2022-02-11T13:00:00Z
-published: false
+published: true
 title: Cypress - Migrate from cy.route to cy.intercept
 url: '/cypress-migrate-to-cy-intercept'
 ---
@@ -18,9 +18,11 @@ Unlike cy.route(), cy.intercept():
 * does not require calling cy.server()
 * does not have method set to GET by default, but intercepts all methods
 
+<!--more-->
+
 ## Using cy.route
 
-In my code, we use cy.route that return either response using a file (e.g. fixture) or an object defined in the test code itself.  
+In my code, we use cy.route that return either response using a file (e.g. fixture) or an object defined in the test code itself.
 
 > My preference is to use a fixture file for any response that is more than just a simple string as it makes your code more readable and allows you to reuse the fixture in other routes/intercepts.
 
@@ -30,10 +32,10 @@ Here is a quick look at the syntax of cy.route.
 
 ```javascript
 cy.route({
-    url: url,
-    method: method,
+    url: 'url',
+    method: 'method',
     status: status,
-    response: `fixture:filename`
+    response: 'fixture:filename'
 }).as('alias');
 ```
 
@@ -41,8 +43,8 @@ cy.route({
 
 ```javascript
 cy.route({
-      url: url,
-      method: method,
+      url: 'url',
+      method: 'method',
       status: status,
       response: ''
     }).as('alias');
@@ -50,7 +52,7 @@ cy.route({
 
 ## Updated to Intercept
 
-Updating to use cy.intercept is pretty straight forward. 
+Updating to use cy.intercept is pretty straight forward.
 
 > **Warning:** make sure for each alias of the same name that you update it to cy.intercept else it will not override itself as you expect it to since cy.route and cy.intercept do not interface with each other.
 
@@ -58,24 +60,24 @@ Updating to use cy.intercept is pretty straight forward.
 
 ```javascript
 cy.intercept({
-    method: method,
-    url: url,
+    method: 'method',
+    url: 'url',
     }, {
     statusCode: status,
-    fixture: response
+    fixture: 'filename'
 }).as('alias');
 ```
 
-**cy.intercept using a response that is not a fixture file**
+**cy.intercept using a response that is not a fixture file:**
 
 ```javascript
 cy.intercept({
-    method: method,
-    path: url,
+    method: 'method',
+    path: 'url',
     }, {
-    statusCode: parseInt(status),
-    body: response
+    statusCode: status,
+    body: 'response'
 }).as('alias');
 ```
 
-The last step once all of your cy.routes have been updated is to remove the call to cy.server add or is no longer needed .
+The last step once all of your cy.routes have been updated to cy.intercept is to remove the call to cy.server as it is no longer needed.
