@@ -6,21 +6,23 @@ title: Cypress - Migrate from cy.route to cy.intercept
 url: '/cypress-migrate-to-cy-intercept'
 ---
 
-With Cypress 6.0, the cy.route and cy.server commands were deprecated and replaced with cy.intercept.
+Starting with Cypress 6.0, the cy.route and cy.server commands were deprecated and replaced with cy.intercept.
+
+> Cypress is currently at version 9.4
 
 ## Comparison to cy.route()
 
 Unlike cy.route(), cy.intercept():
 
 * can intercept all types of network requests including Fetch API, page loads, XMLHttpRequests, resource loads, etc.
-* does not require calling cy.server() before use - in fact, cy.server() does not influence cy.intercept() at all.
-* does not have method set to GET by default, but intercepts * methods
+* does not require calling cy.server()
+* does not have method set to GET by default, but intercepts all methods
 
 ## Using cy.route
 
-In my code, we used cy.route with both a fixture file that we referenced and a body response in the test code itself.  
+In my code, we use cy.route that return either response using a file (e.g. fixture) or an object defined in the test code itself.  
 
-> Fixture files are great for trust as well as making your code more readable.
+> My preference is to use a fixture file for any response that is more than just a simple string as it makes your code more readable and allows you to reuse the fixture in other routes/intercepts.
 
 Here is a quick look at the syntax of cy.route.
 
