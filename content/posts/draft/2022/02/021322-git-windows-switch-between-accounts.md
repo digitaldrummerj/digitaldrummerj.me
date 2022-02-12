@@ -1,48 +1,54 @@
 ---
-categories: ["git"]
+categories: ["git", "github"]
 date: 2022-03-13T13:00:00Z
 published: false
-title: "Git - Switch Between Github Accounts on Windows"
-url: '/git-switch-between-github-accounts-on-windows'
+title: "Switch Between Github Accounts on Windows"
+url: '/switch-between-github-accounts-on-windows'
 ---
+Recently, I had to create a Github account for work in addition to the one that I have for my personal repos. Not a big deal having two accounts but figuring out how to switch the account to use depending on the repository was difficult to figure out.
 
-Recently, I had to create a Github account for work in addition to the one that I have for my personal repos.
+Luckily, the solution is really straight forward yo implement.
 
-Not a big deal having two accounts but getting the repository commits to have the correct author name and email and then to use the correct account credentials took a bit of time time to figure out.
+<!—more—>
 
-Once I figured out the solution it was really easy but trying to figure it out took the better part of a day of trial and error to get it right.
+The solution is to:
 
+1. Move all your work repositories to a single directory like c:\repos\work
+1. Move all your personal repositories to a single directory like c:\repos\personal
+1. Create a .gitconfig-work file in the same directory as your .gitconfig file
 
-**.gitconfig file:**
+	```config
+	[user]
+		name = Justin James
+		email = [Work Email Here]
+	[credential “https://github.com”]
+		helper = dtkeyring
+	```
 
-```config
-[includeIf "gitdir:C:/repos/work/"]
-  path = .gitconfig-work
-[includeIf "gitdir:C:/repos/personal/"]
-  path = .gitconfig-personal
-[core]
- longpaths = true
-[init]
- defaultBranch = main
-```
+1. Create a .gitconfig-personal file in the same directory as your .gitconfig file
 
-**.gitconfig-work file:**
+	```config
+	[user]
+ 		name = Justin James
+		email = [Personal Email Here]
+	[credential “https://github.com”]
+ 		helper = wincred
+ 		useHttpPath = true
+	```
+	
+	> the useHttpPath argument for the credential manager is key as it will will prompt you for credentials for each repository instead of using a single credential for all repositories on a given platform (e.g. GitHub, GitLab, BitBucket, etc)
 
-```config
-[user]
- name = Justin James
- email = [Work Email Here]
-[credential "https://github.com"]
- helper = dtkeyring
-```
+1. Update your .gitconfig file in your home directory to have an includeif to change which git config pull in based in kn the directory
 
-**.gitconfig-personal file:**
+	```config
+	[includeIf "gitdir:C:/repos/work/"]
+  		path = .gitconfig-work
+	[includeIf "gitdir:C:/repos/personal/"]
+  		path = .gitconfig-personal
+	[core]
+ 		longpaths = true
+	[init]
+ 		defaultBranch = main
+	```
 
-```config
-[user]
- name = Justin James
- email = [Personal Email Here]
-[credential "https://github.com"]
- helper = wincred
- useHttpPath = true
-```
+Now your git configuration will change based on the directory your git repository.  This ensures that the right account is associated to your commits.  As well as it will prompt you for your GitHub credentials per repository url.
