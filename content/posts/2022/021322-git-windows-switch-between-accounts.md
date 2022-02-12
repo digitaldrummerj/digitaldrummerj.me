@@ -8,7 +8,7 @@ url: '/switch-between-github-accounts-on-windows'
 
 Recently, I had to create a Github account for work in addition to the one that I have for my personal repos. Not a big deal having two accounts but figuring out how to switch the account to use depending on the repository was difficult to figure out.
 
-Luckily, the solution is really straight forward yo implement.
+Luckily, the solution is really straight forward to implement.
 
 <!--more—->
 
