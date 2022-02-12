@@ -57,8 +57,6 @@ Now that we have Hugo install, we need to create a new website.
 
 At this point we only have a shell of a website.  For the design is the website, Hugo allows us to add themes to control the look and feel. 
 
-For the purpose of this Hugo series, I created a [starter theme](https://github.com/digitaldrummerj/hugo-theme-clean-blog-bootstrap) for us to use based on this website.
-
 There are two ways to install a theme.  You can make the theme a gitsubmodule or you can download the theme and unzip it into the themes directory under your website.
 
 There are pros and cons to both options.
@@ -112,13 +110,14 @@ Post in Hugo use markdown for the contentand are stored in the content/post dire
 
 1. Open a command prompt  
 1. Navigate to your website folder
-1.  
+1.  Run the hugo new command to create a new post
 
-```cmd
-hugo new posts/my-first-post.md
-```
+    ```cmd
+    hugo new posts/my-first-post.md
+    ```
 
 ## Start Hugo Server
+
 
 ```cmd
 hugo server -D
