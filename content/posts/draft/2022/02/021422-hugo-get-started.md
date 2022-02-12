@@ -100,7 +100,6 @@ To install the theme:
 
 ## Configuring Theme
 
-
 ## Add Some Content
 
 Now that we have our site and theme setup, we 
@@ -116,11 +115,14 @@ Post in Hugo use markdown for the contentand are stored in the content/post dire
     hugo new posts/my-first-post.md
     ```
 
-## Start Hugo Server
+## Start Web Server
 
+We are now ready to see what our side looks like. 
+
+Hugo includes a built-in web server to render and serve our site. 
 
 ```cmd
 hugo server -D
 ```
 
-Your blog is now up and running with your first post.  In the next post in the series, we will take a look at how to deploy our site using the free version of Netlify everytime we push commits to our GitHub repository for our site.
+Your blog is now up and running with your first post.  In the next post in the series, we will take a look at how to deploy our site using the free version of Netlify so that everytime we push commits to our GitHub repository for our site.
