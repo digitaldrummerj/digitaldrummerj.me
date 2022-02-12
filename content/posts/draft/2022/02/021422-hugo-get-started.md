@@ -66,6 +66,7 @@ There are pros and cons to both options.
 **git submodule pros:**
 
 * it is easy to update the theme with any changes the theme author makes.
+* fastest way to get started with a theme
 
 **git submodule cons**
 
@@ -77,15 +78,20 @@ There are pros and cons to both options.
 **download theme pros**
 
 * the theme is stored along with your site and any changes you make to it are stored with your site
- * you do not have to worry about the theme repository going away 
+ * you do not have to worry about the theme repository going away
+ * you have the 
+ * most control of your theme
 
 **download themes cons**
 
+* takes a little bit more work to start uaing theme since you have to download and unzip it.
 * you will have to manually merge any changes the theme author makes into your version of the theme.  
 
     > in my experience, themes rarely get updated after their release
 
-As you can see there is a lot of cons to having your theme as a submodule.  As well for this series on Hugo, we will be s starting with a basic starter theme and then adding and modifying the theme so you will want to have the theme installed locally.
+My preference is to download the them so that I have full control over it and don't have to worry about the theme repository going away.
+
+As well for this series on Hugo, we will be starting with a basic starter theme and then adding and modifying the theme so you will want to have the theme installed locally.
 
 To install the theme:
 
@@ -94,16 +100,28 @@ To install the theme:
 
 > If you want to use a different theme, you can find a good amount of themes available at [https://themes.gohugo.io/](https://themes.gohugo.io/)
 
+## Configuring Theme
+
+
 ## Add Some Content
+
+Now that we have our site and theme setup, we 
+are ready to create our first blog post.
+
+Post in Hugo use markdown for the contentand are stored in the content/post directory.
+
+1. Open a command prompt  
+1. Navigate to your website folder
+1.  
 
 ```cmd
 hugo new posts/my-first-post.md
 ```
-
-## Configuring Theme
 
 ## Start Hugo Server
 
 ```cmd
 hugo server -D
 ```
+
+Your blog is now up and running with your first post.  In the next post in the series, we will take a look at how to deploy our site using the free version of Netlify everytime we push commits to our GitHub repository for our site.
