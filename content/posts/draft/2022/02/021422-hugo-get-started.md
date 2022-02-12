@@ -8,9 +8,15 @@ series: ['create-blog']
 toc: true
 ---
 
-This website is based on the [Hugo](https://gohugo.io/) static site generator.  It is currently my favorite static site generator.  In this series of post on Hugo, we are going to go through building out a full blog to replicate the functionality of this website (posts, archives by date, archives by category, archives by tag cloud, rss feed, contact page, search page and about page plus some posts on various Hugo features).
+Are you ready to start blogging? 
 
-> A static site generator renders your content into HTML files that you then upload to your web server for serving to your users instead of your site being rendered dynamically on the fly by the web server when a page is requested.
+Do you want to create your blog using [Hugo](https://gohugo.io/) ?
+
+If yes, then this series of post on Hugo is what you are looking for.  Even if you have never used or heard of Hugo you will be able to create your blog and deeply it. 
+
+In this series of post on Hugo, we are going to build a full blog based on this website.   By the end you will be able to add posts, have an archives by date/category/tag, have an rss feed, be able to add pafes such as contact, search and about plus we will cocer various piece of functionality built into Hugo features.
+
+Hugo is a static site generator.  A static site generator renders your content into HTML files that you then upload to your web server for serving to your users instead of your site being rendered dynamically on the fly by the web server when a page is requested. 
 
 ## Hugo Install
 
