@@ -100,6 +100,13 @@ To install the theme:
 
 ## Configuring Theme
 
+* turn on theme
+* blog name 
+* blog description 
+* social media 
+* menu 
+* footer copywrite 
+*  
 ## Add Some Content
 
 Now that we have our site and theme setup, we 
