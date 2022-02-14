@@ -1,18 +1,16 @@
 ---
 categories: ["blogging", "hugo"]
 date: 2022-02-14T13:00:00Z
-published: false
-title: "Creating a Blog Using Hugo"
+published: true
+title: "Create a Blog Using Hugo"
 url: '/create-blog-with-hugo'
 ---
 
-Are you ready to start blogging?
+Are you ready to capturing and sharing your knowledge with others by creating a blog?
 
-Do you want to create your blog using [Hugo](https://gohugo.io/)?
+Then this series on [Hugo](https://gohugo.io/) is what you are looking for.  Even if you have never used or heard of Hugo you will be able to create your blog and deploy it.
 
-If yes, then this series of post on Hugo is what you are looking for.  Even if you have never used or heard of Hugo you will be able to create your blog and deploy it.
-
-In this series of post on Hugo, we are going to build a full blog based on this website.   By the end of the series, you will be able to add posts, have a page to view past post by date/category/tag, have an rss feed so people can subscribe tonyour blog, be able to add pages such as contact, search and about plus we will dig into  several useful Hugo features to take some of the work out of creating your blog and post.
+In this series of post on Hugo, we are going to build a full blog based on this website.   By the end of the series, you will be able to add posts, have a page to view past post by date/category/tag, have an rss feed so people can subscribe to your blog, be able to add pages such as contact, search and about plus we will dig into  several useful Hugo features to take some of the work out of creating your blog and post.
 
 If you have not heard of Hugo before, Hugo is a static site generator.  A static site generator renders your content into HTML files and you only have to deploy the HTML to your web server.  No database is needed.  No fancy hosting service.  No Wordpress site.  In fact, you can run your site using GitHub pages for free.
 
@@ -81,27 +79,28 @@ There are pros and cons to both options.
 
 **download themes cons:**
 
-* takes a little bit more work to start uaing theme since you have to download and unzip it.
+* takes a little bit more work to start using theme since you have to download and unzip it.
 * you will have to manually merge any changes the theme author makes into your version of the theme.
 
-    > in my experience, themes rarely get updated after their release
+    > In my experience, themes rarely get updated after their release
 
-My preference is to download the them so that I have full control over it and don't have to worry about the theme repository going away.
+My preference is to download the theme so that I have full control over it and don't have to worry about the theme repository going away.
 
 As well for this series on Hugo, we will be starting with a basic starter theme and then adding and modifying the theme so you will want to have the theme installed locally.
 
 To install the theme:
 
 1. Go to [https://github.com/digitaldrummerj/hugo-theme-bootstrap](https://github.com/digitaldrummerj/hugo-theme-bootstrap)
-1. Click on the green code button and then cick the Download ZIP
+1. Click on the green code button and then click the Download ZIP
 
     ![download theme from GitHub](/images/hugo/get-started/theme-download.png)
 
 1. Unzip the download to the themes directory
-1. Open the config.toml in the root of your site and add the following line to tell Hugo to use the theme.  The value of the theme, is the directory name under Themes to use as the theme.
+1. Rename hugo-theme-bootstrap-main to bootstrap
+1. Open the config.toml file that is in the root of your site and add the following line to tell Hugo to use the theme.  The value of the theme parameter, is the directory name of the theme under Themes.
 
     ```text
-    theme = "hugo-theme-bootstrap-main"
+    theme = "bootstrap"
     ```
 
 > If you want to use a different theme, you can find a good amount of themes available at [https://themes.gohugo.io/](https://themes.gohugo.io/)
@@ -110,7 +109,7 @@ To install the theme:
 
 Now that we have our site and theme setup, we are ready to create our first blog post.
 
-Post in Hugo use markdown for the contentand are stored in the content/post directory.
+Post in Hugo use markdown for the content and are stored in the content/post directory.
 
 1. Open a command prompt
 1. Navigate to your website folder
@@ -122,12 +121,17 @@ Post in Hugo use markdown for the contentand are stored in the content/post dire
 
 ## Start Web Server
 
-We are now ready to see what our side looks like.
+We are now ready to see what our side looks like and start up the built-in Hugo web server
 
-Hugo includes a built-in web server to render and serve our site.
+1. From our command line that we already have open, run:
 
-```cmd
-hugo server -D
-```
+    ```cmd
+    hugo server -D -F
+    ```
 
-Your blog is now up and running with your first post.  In the next post in the series, we will take a look at how to deploy our site using the free version of Netlify so that everytime we push commits to our GitHub repository for our site.
+    > the -D argument tells Hugo to include draft post
+    > the -F argument tells Hugo to include future dated post that are published
+
+1. Open your browser and navigate to [http://localhost:1313](http://localhost:1313)
+
+Your blog is now up and running with your first post.  In the next post in the series, we will take a look at how to deploy our site using the free version of Netlify so that every time we push commits to our GitHub repository, our site will update itself.
