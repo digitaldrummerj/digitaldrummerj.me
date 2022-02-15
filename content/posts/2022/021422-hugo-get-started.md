@@ -134,4 +134,4 @@ We are now ready to see what our side looks like and start up the built-in Hugo 
 
 1. Open your browser and navigate to [http://localhost:1313](http://localhost:1313)
 
-Your blog is now up and running with your first post.  In the next post in the series, we will take a look at how to deploy our site using the free version of Netlify so that every time we push commits to our GitHub repository, our site will update itself.
+Your blog is now up and running with your first post.  In the [next post](/deploy-hugo-netlify) in the series, we will take a look at how to deploy our site using the free version of Netlify so that every time we push commits to our GitHub repository, our site will update itself.
