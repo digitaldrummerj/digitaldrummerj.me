@@ -45,6 +45,8 @@ hugo --gc --minify
 
 ## Add Custom Domain (optional)
 
+> [Custom Domain Setup Docs](https://docs.netlify.com/domains-https/custom-domains/)
+
 ![setup custom domain](/images/hugo/deploy-netlify/netlify-new-site-step-8-custom-domain.png)
 
 ![domain already registered](/images/hugo/deploy-netlify/netlify-new-site-step-8-custom-domain-already-registered.png)
@@ -53,4 +55,3 @@ hugo --gc --minify
 
 ![ssl verified](/images/hugo/deploy-netlify/netlify-new-site-step-10-ssl-verified.png)
 
-    > [Custom Domain Setup](https://docs.netlify.com/domains-https/custom-domains/)
