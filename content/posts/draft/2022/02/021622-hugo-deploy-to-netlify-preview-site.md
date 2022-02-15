@@ -14,3 +14,30 @@ url: '/blog-preview-with-netlify'
 
 ![deploy previews settings](/images/hugo/deploy-netlify-preview/netlify-preview-step-4.png)
 
+## Configure Netlify Builds
+
+```toml
+# This will be your default build command
+[build]
+publish = "public"
+command = "echo 'default context'"
+
+# This will be your production build
+[context.production]
+command = "hugo --config config.toml,config-prod.toml --gc --minify"
+
+[context.production.environment]
+HUGO_VERSION = "0.92.1"
+HUGO_ENV = "production"
+HUGO_ENABLEGITINFO = "true"
+
+# This will be your preview build
+[context.deploy-preview]
+command = "hugo --config config.toml,config-prod.toml --buildFuture --buildDrafts --gc --minify -b $DEPLOY_PRIME_URL"
+
+[context.deploy-preview.environment]
+HUGO_VERSION = "0.92.1"
+
+[context.next.environment]
+HUGO_ENABLEGITINFO = "true"
+```
