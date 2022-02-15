@@ -6,11 +6,15 @@ title: "Deploy Hugo Site to Netlify"
 url: '/deploy-hugo-netlify'
 ---
 
-In our previous post on [Creating a Blog Using Hugo](/create-blog-with-hugo/) we created our blog website.  In this post, we will be deploying the website that we created using a free account at [Netlify](https://www.netlify.com/).
+In our previous post on [Creating a Blog Using Hugo](/create-blog-with-hugo/) we installed Hugo, create a new site, added a theme to the site and created our first post.  
 
-We could deploy our website using Github Pages as well but one of the features that [Netlify](https://www.netlify.com/) has that I use a ton is creating a preview site for each pull request.  This allows me to test site changes in a staging/preview environment before I merge the pull request and make them live in production.
+In this post, we will be deploying the site that we created using a free account at [Netlify](https://www.netlify.com/).  The site will be re-built and re-deployed whenever we push a new commit to our sites Git repository.  We will also look at how to setup our site using our own domain and creating an SSL certificate for the site.
 
-<!--more-->
+<!—more—>
+
+A question that comes up a lot when I talk about deploying static sites like Hugo is, why not just use GitHub Pages?
+
+This is a great question.  While GitHub Pages does allows us to deploy our site with a custom domain and SSL, what it does not allow us to do is deploy a staging or preview version of the site to test out changes before making them live.  Netlify gives us the ability to create a preview site for each pull request which I use as a way to see what my future and draft post will look like on a machine other than my laptop.  As well Netlify allows us to deploy a branch to a subdomain, allows multiple domains pointing to a single site, unlimited websites, and rollback to a previous buuld.  All of this can be done with the free tier of Netlify. 
 
 ## Create Netlify Account
 
