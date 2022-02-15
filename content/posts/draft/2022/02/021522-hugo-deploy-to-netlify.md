@@ -6,7 +6,7 @@ title: "Deploy Our Hugo Blog to Netlify"
 url: '/deploy-hugo-netlify'
 ---
 
-In our previous post on [Creating a Blog Using Hugo](https://digitaldrummerj.me/create-blog-with-hugo/) we created our blog website.  In this post, we will be deploying the website that we created using a free account at [Netlify](https://www.netlify.com/).
+In our previous post on [Creating a Blog Using Hugo](/create-blog-with-hugo/) we created our blog website.  In this post, we will be deploying the website that we created using a free account at [Netlify](https://www.netlify.com/).
 
 We could deploy our website using Github Pages as well but one of the features that [Netlify](https://www.netlify.com/) has that I use a ton is creating a preview site for each pull request.  This allows me to test site changes in a staging/preview environment before I merge the pull request and make them live in production.
 
