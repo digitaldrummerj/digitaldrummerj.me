@@ -88,7 +88,7 @@ For the steps to setup the DNS for your site, please see the [Netlify Custom Dom
 
 {{< alert class="warning" >}}
 Even though Netlify, can purchase the domain for you, I would highly suggest that you purchase   and manage your domains through something like [dnsimple](https://dnsimple.com/r/7695fdc3a9dc82).  With Dnsimple, you have full control and ownership over your domain.  Dnsimple also has a number of one click setups that do the DNS setup work for you including one for Netlify.
-{{/ alert }}
+{{< /alert >}}
 
 Once you have pointed your DNS at Netlify, yoi are ready to add your custom domain to Netlify.
 
