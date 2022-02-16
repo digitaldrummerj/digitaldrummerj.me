@@ -5,6 +5,12 @@ published: false
 title: "Deploy Preview Release of Site Using Netlify"
 url: '/blog-preview-with-netlify'
 ---
+In our previous post on Deploying Your Hugo  Site Using Netlify, we set up Netlify to automatically deploy our site everytime we pushed a commit to our GitHub repository and set up a custom domain to point to the site.
+
+In this post, we are going to look at the preview deploy feature of Netlify to build and deploy to a preview/staging site when we create or update a pull request.
+
+Creating a preview of your site using Netlify is setup out of the box to build everytime you create our update a pull request.
+
 
 ![site settings button](/images/hugo/deploy-netlify-preview/netlify-preview-step-1.png)
 
