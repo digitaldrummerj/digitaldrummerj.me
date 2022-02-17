@@ -17,6 +17,12 @@ command = "hugo --config config.toml,config-prod.toml --buildFuture --buildDraft
 
 [context.deploy-preview.environment]
 HUGO_VERSION = "0.92.1"
+HUGO_ENABLEGITINFO = "true"
 
-[context.next.environment]
+[context.staging]
+command = "hugo --config config.toml,config-prod.toml --buildFuture --buildDrafts --gc --minify -b $DEPLOY_PRIME_URL"
+
+[context.staging.environment]
+HUGO_VERSION = "0.92.1"
+HUGO_ENV = "production"
 HUGO_ENABLEGITINFO = "true"
