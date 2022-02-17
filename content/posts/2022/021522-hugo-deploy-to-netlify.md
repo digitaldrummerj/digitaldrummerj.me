@@ -125,4 +125,4 @@ You will see the HTTPS section at the bottom of the domain settings.
 
 Your site is now deployed with a custom domain that will be re-built and re-deployed with each push to your Git repository.
 
-In our next post on Hugo, we will set up a preview site that will be deployed every time a pull request is created or updated. This will allow you to test out changes before they go live in production.
+In our [next post on Hugo](/blog-preview-with-netlify), we will set up a preview site that will be deployed every time a pull request is created or updated. This will allow you to test out changes before they go live in production.
