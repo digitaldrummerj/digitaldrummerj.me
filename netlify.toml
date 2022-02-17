@@ -2,21 +2,23 @@
 # This will be your default build command
 [build]
 publish = "public"
-command = "echo 'default context'"
-
-[context.production]
 command = "hugo --config config.toml,config-prod.toml --gc --minify"
 
-[context.production.environment]
+[build.environment]
 HUGO_VERSION = "0.92.1"
-HUGO_ENV = "production"
 HUGO_ENABLEGITINFO = "true"
+HUGO_ENV = "production"
 
 [context.deploy-preview]
 command = "hugo --config config.toml,config-prod.toml --buildFuture --buildDrafts --gc --minify -b $DEPLOY_PRIME_URL"
 
 [context.deploy-preview.environment]
 HUGO_VERSION = "0.92.1"
+HUGO_ENV = "preview"
 
-[context.next.environment]
-HUGO_ENABLEGITINFO = "true"
+[context.staging]
+command = "hugo --config config.toml,config-prod.toml --buildFuture --buildDrafts --gc --minify -b $DEPLOY_PRIME_URL"
+
+[context.staging.environment]
+HUGO_VERSION = "0.92.1"
+HUGO_ENV = "staging"
