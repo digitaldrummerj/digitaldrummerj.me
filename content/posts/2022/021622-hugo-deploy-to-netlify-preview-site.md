@@ -94,4 +94,4 @@ I can also add a GitHub issue to deal with a problem unrelated to the pull reque
 
 ![Netlify new issue section in the sidebar in preview](/images/hugo/deploy-netlify-preview/netlify-preview-new-issue.png)
 
-That was a lap around how to create, configure and test/review a preview deployment for your site. In our next post on Hugo, we will look at how you can create a staging site that matches the configuration of our production deployment.
+That was a lap around how to create, configure and test/review a preview deployment for your site. In our [next post](/blog-staging-with-netlify) on Hugo, we will look at how you can create a staging site that matches the configuration of our production deployment.
