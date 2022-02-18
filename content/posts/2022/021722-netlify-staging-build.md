@@ -1,7 +1,7 @@
 ---
 categories: ["blogging", "hugo", "netlify"]
 date: 2022-02-17T13:00:00Z
-draft: true
+draft: false
 title: "Deploy Staging Test Site with Netlify"
 url: '/blog-staging-with-netlify'
 ---
