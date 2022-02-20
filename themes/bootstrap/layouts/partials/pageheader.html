@@ -1,0 +1,31 @@
+
+<!-- Page Header -->
+<!-- Set your background image for this header on the line below. -->
+
+{{ if isset .Params "image" }}
+  <header
+    class="intro-header"
+    style="background-image: url('{{ .Site.BaseURL }}/{{ .Params.image }}')"
+  >
+{{ else }}
+  <header
+    class="intro-header"
+    style="background-image: url('{{ .Site.BaseURL }}{{ .Site.Params.defaultHeaderImage }}')"
+  >
+{{ end }}
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+            <div class="site-heading">
+                <h1>{{ .Title }}</h1>
+                <hr class="small">
+                {{ if isset .Params "description" }}<span class="subheading">{{ .Params.description }}</span>
+                {{ else if and (.Site.Params.Description) (.IsHome)  }}
+                  {{ with .Site.Params.Description }}<span class="subheading">{{ . }}</span>{{ end }}
+                {{end}}
+                <span class="meta">{{ partial "meta" . }}{{ partial "draft" . }}</span>
+            </div>
+            </div>
+        </div>
+    </div>
+</header>
