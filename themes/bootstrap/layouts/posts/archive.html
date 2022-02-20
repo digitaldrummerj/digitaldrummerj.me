@@ -4,7 +4,7 @@
   <a href="{{ .Permalink }}">
     <h2 class="post-title">{{ .Title | markdownify }}</h2>
   </a>
-  <p class="post-meta">{{ partial "meta.html" .}}{{ if (.Params.draft ) }} DRAFT {{ end }}</p>
+  <p class="post-meta">{{ partial "meta.html" .}} {{ partial "draft" . }}</p>
   <p class="post-subtitle">{{ .Summary }}</p>
   <p>
     <a href="{{ .Permalink }}"><strong>Read More</strong></a>
