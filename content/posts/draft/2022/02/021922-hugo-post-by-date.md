@@ -5,12 +5,19 @@ published: false
 title: "Hugo - Create Archive Page to View Posts Month"
 url: '/hugo-view-post-grouped-by-month'
 ---
-
-test
+In our previous post, we took a look at how to build an archive page view all of the post that we have written.  In this post, we are going to build a an archive page that shows our posts by month.  
 
 <!--more-->
 
+![example of page](/images/hugo/archive-by-date)
+
 ## Archive By Date Page
+
+To create the archive by month page, we need to create a page and the accompanying layout for the page.
+
+###  Create page to display archive 
+
+1. In the content directory, create a new file  
 
 **content\archivebydate.md:**
 
