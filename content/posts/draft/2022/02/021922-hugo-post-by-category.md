@@ -10,6 +10,9 @@ In our [previous post](/hugo-view-post-grouped-by-month), we create a page to vi
 
 <!--more-->
 
+Hugo has what is called taxonomies.  
+
+For the taxonomy view, the list page will be used 
 # outline
 
 * create taxonomy pages
