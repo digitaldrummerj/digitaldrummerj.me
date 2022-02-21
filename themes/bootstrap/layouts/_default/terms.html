@@ -1,17 +1,21 @@
 {{ define "main" }}
-  {{ partial "pageheader.html" . }}
-    <!-- Main Content -->
-    <div class="container">
-      <div class="row">
-        <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
-          <ul>
-            {{ $data := .Data }}
-            {{ range $key, $value := .Data.Terms.ByCount }}
-            <li><a href="/{{ $data.Plural }}/{{ $value.Name | urlize }}">{{ $value.Name | title }}</a> {{ $value.Count }}</li>
-            {{ end }}
-          </ul>
-        </div>
-      </div>
-    </div>
+<!-- Main Content -->
+<div class="container">
+  <div class="row">
+    <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+      <ul class="patterns-list">
+        {{ range .Data.Terms.Alphabetical }}
+          <li>
+              <a href="{{ .Page.RelPermalink }}">
+                  <span class="fa fa-tags"></span>
 
+                  {{ .Page.Title }}
+                  <span>({{ .Count }})</span>
+              </a>
+          </li>
+        {{ end }}
+      </ul>
+    </div>
+  </div>
+</div>
 {{ end }}

@@ -1,13 +1,10 @@
 {{ define "main" }}
-
-{{ partial "pageheader.html" . }}
-
 <!-- Main Content -->
 <div class="container">
   <div class="row">
     <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
       {{ .Content }}
-      <form class="form" id="contactform" action="https://formspree.io/f/xjvjjevz" method="POST">
+      <form class="form" id="contactform" action="{{ .Site.Params.contactusform.formSpreeUrl }}" method="POST">
         <input class="hidden" type="text" name="_gotcha" style="display: none" />
         <input
           class="hidden"
@@ -15,7 +12,7 @@
           name="_subject"
           value="Message via {{ .Site.BaseURL | absLangURL }}"
         />
-        <input type="hidden" name="_next" value="{{ .Site.BaseURL | absLangURL }}/thankyou/" />
+        <input type="hidden" name="_next" value="{{ .Site.BaseURL | absLangURL }}{{ .Site.Params.contactusform.thankyouPage }}" />
         <div class="form-group">
             <label class="label" for="name">Your name</label>
             <input class="form-control" type="text" name="name" placeholder="Name" required />
@@ -41,5 +38,4 @@
     </div>
   </div>
 </div>
-
 {{ end }}

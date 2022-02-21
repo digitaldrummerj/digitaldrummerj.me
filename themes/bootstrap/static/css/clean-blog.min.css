@@ -8,6 +8,23 @@ ul.striped-list > li:nth-of-type(odd) {
     background-color: #f3f3f3 ;
 }
 
+/* Pattern lists */
+.patterns-list {
+    list-style: none;
+    margin-left: 0;
+}
+.patterns-list h2 {
+    font-size: 1.25rem;
+    line-height: 1.6;
+}
+.patterns-list li + li {
+    margin-top: 1rem;
+    padding-top: 1rem;
+    border-top: 2px solid;
+}
+.patterns-list a {
+    border: 0;
+}
 
 p {
   line-height: 1.5;

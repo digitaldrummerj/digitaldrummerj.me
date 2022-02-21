@@ -1,28 +1,24 @@
 {{ define "main"}}
-{{ partial "pageheader.html" . }}
  <!-- Main Content -->
-    <div class="container">
-        <div class="row">
-            <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
-
-    {{ .Content }}
-    <div>
-        {{ range (.Site.RegularPages.GroupByDate "January 2006")  }}
-        {{ if (where .Pages "Section" "posts") }}
-<h3>{{ .Key }}</h3>
-            <ul class="list-group striped-list">
-                {{ range ((where .Pages "Section" "posts")) }}
-                    <li class="list-group-item">
-                        <a href="{{ .RelPermalink }}">{{ .PublishDate.Format "Jan 02" }} : {{ .Title }}{{ if .Params.subheadline }} ({{ .Params.subheadline }}){{ end }}{{ partial "draft" . }}</a>
-                    </li>
+<div class="container">
+    <div class="row">
+        <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+            {{ .Content }}
+            <div>
+                {{ range (.Site.RegularPages.GroupByDate "January 2006")  }}
+                    {{ if (where .Pages "Section" "posts") }}
+                        <h3>{{ .Key }}</h3>
+                        <ul class="list-group striped-list">
+                            {{ range ((where .Pages "Section" "posts")) }}
+                                <li class="list-group-item">
+                                    <a href="{{ .RelPermalink }}">{{ .PublishDate.Format "Jan 02" }} : {{ .Title }}{{ if .Params.subheadline }} ({{ .Params.subheadline }}){{ end }}{{ partial "draft" . }}</a>
+                                </li>
+                            {{ end }}
+                        </ul>
+                    {{ end }}
                 {{ end }}
-
-                </ul>
-        {{ end }}
-        {{ end }}
-    </div>
-
-           </div>
+            </div>
         </div>
     </div>
+</div>
 {{ end }}

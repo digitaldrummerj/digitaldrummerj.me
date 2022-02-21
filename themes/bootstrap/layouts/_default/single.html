@@ -1,14 +1,12 @@
 {{ define "main" }}
-
-{{ partial "pageheader" . }}
-  <!-- Post Content -->
-  <article>
-    <div class="container">
-      <div class="row post-content">
-        <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
-          {{ .Content }}
-        </div>
+<!-- Post Content -->
+<article>
+  <div class="container">
+    <div class="row post-content">
+      <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+        {{ .Content }}
       </div>
     </div>
-  </article>
+  </div>
+</article>
 {{ end }}
