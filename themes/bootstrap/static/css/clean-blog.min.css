@@ -4,8 +4,8 @@ body {
   color: #404040
 }
 
-ul.striped-list > li:nth-of-type(odd) {
-    background-color: #f3f3f3 ;
+ul.striped-list > li:nth-of-type(even) {
+    background-color: #e0e0e0;
 }
 
 /* Pattern lists */
