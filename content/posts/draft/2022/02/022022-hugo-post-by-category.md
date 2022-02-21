@@ -33,8 +33,8 @@ With the category taxonomy created, we now need to generate our page.  There are
 For the purpose of this article, we are just going to create the files in the `layouts\categories` folder to have a custom page for display the category that overrides that default display of a term.
 
 1. Create the directory in your theme's layout folder called categories
-1. Create a file in the layouts\categories folder called terms.html
-1. Add the following to the terms.html file to show the list of categories, have each category link to later in the page, and show the number of post per category
+1. Create a file in the `layouts\categories` folder called terms.html
+1. Add the following to the `terms.html` file to show the list of categories, have each category link to later in the page, and show the number of post per category
 
     ```html {linenos=false,hl_lines=[1,7,"11-17", 21, "23-24", 27, "29-31", 33, 38, 41, 45]}
     {{ define "main"}}
@@ -84,10 +84,10 @@ For the purpose of this article, we are just going to create the files in the `l
     {{ end }}
     ```
 
-1. To create the category list summary page for when a category is directly pulled up, you need to add the a file called layouts\categories\taxonomy.html
-1. To the taxonomy.html file, add the following code to the page to display the list of categories
+1. To create the category list summary page for when a category is directly pulled up, you need to add the a file called `layouts\categories\taxonomy.html`
+1. To the `taxonomy.html` file, add the following code to the page to display the list of categories
 
-    ```html {linenos=false,hl_lines=[1,"6-8","12-17", 21, }
+    ```html {linenos=false,hl_lines=[1,"6-8","12-17", 21 }
     {{ define "main" }}
     <!-- Main Content -->
     <div class="container">
@@ -103,59 +103,61 @@ For the purpose of this article, we are just going to create the files in the `l
     ```
 
 The last thing we need to do is add a bit of CSS to style our list the way we want it to be designed.
-**static\css\clean-blog.min.css:**
 
-```css
-.tagcloud03 {
-  margin-bottom: 50px;
-   text-align: center
-}
- .tagcloud03 ul.cloud li {
-  margin: 0;
-}
- .tagcloud03 ul.cloud li a {
-  padding: 0 1em 0 1em;
-  /* border: none !important; */
-   border: none;
-  height: 45px;
-  padding-top: 5px;
-  padding-bottom: 5px;
-}
- .tagcloud03 ul {
-  margin: 0;
-  padding: 0;
-  list-style: none;
-}
- .tagcloud03 ul li {
-  display: inline-block;
-  margin: 0 0.3em 0.3em 0;
-  padding: 0;
-}
- .tagcloud03 ul li a {
-  position: relative;
-  display: inline-block;
-  max-width: 250px;
-  height: 35px;
-  line-height: 35px;
-  padding: 0 2.5em 0 1em;
-  background-color: #fff;
-  border: 1px solid #aaa;
-  border-radius: 3px;
-  white-space: nowrap;
-  text-overflow: ellipsis;
-  overflow: hidden;
-  color: #333;
-  font-size: 18px;
-  text-decoration: none;
-  -webkit-transition: 0.2s;
-  transition: 0.2s;
-}
- .tagcloud03 ul li a:hover {
-  background-color: #4b56a8;
-  border: 1px solid #0085A1;
-  color: #fff;
-}
-```
+1. Open the css file `static\css\clean-blog.min.css`
+1. Add the following code to the bottom of the file
+
+  ```css
+  .tagcloud03 {
+    margin-bottom: 50px;
+    text-align: center
+  }
+  .tagcloud03 ul.cloud li {
+    margin: 0;
+  }
+  .tagcloud03 ul.cloud li a {
+    padding: 0 1em 0 1em;
+    /* border: none !important; */
+    border: none;
+    height: 45px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+  }
+  .tagcloud03 ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+  }
+  .tagcloud03 ul li {
+    display: inline-block;
+    margin: 0 0.3em 0.3em 0;
+    padding: 0;
+  }
+  .tagcloud03 ul li a {
+    position: relative;
+    display: inline-block;
+    max-width: 250px;
+    height: 35px;
+    line-height: 35px;
+    padding: 0 2.5em 0 1em;
+    background-color: #fff;
+    border: 1px solid #aaa;
+    border-radius: 3px;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    color: #333;
+    font-size: 18px;
+    text-decoration: none;
+    -webkit-transition: 0.2s;
+    transition: 0.2s;
+  }
+  .tagcloud03 ul li a:hover {
+    background-color: #4b56a8;
+    border: 1px solid #0085A1;
+    color: #fff;
+  }
+  ```
 
 Now you have a custom category list and summary page.
 
