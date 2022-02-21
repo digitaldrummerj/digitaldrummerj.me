@@ -72,5 +72,23 @@ Here are some additional post ideas that I have not picked a date for yet.
         1. you should use real database for unit testing vs in-memory or sql lite?
 1. Hugo
     1. Set url in front matter so it is diff than file name
+    1. Make external urls open in a new tab automatically (e.g. _default\_markup\render-link.html)
+    1. shortcodes to look into adding
+       1. file tree shortcode
+       1. expandable sections shortcode
+       1. better figure shortcode
+       1. better blockquote
+       1. better note shortcode
+       1. better warning shortcode
+       1. shortcode for checkmarks
+    1. Add Reading time
 
+        ```html
+        {{ if (gt .ReadingTime 0) }}
+            {{ $readTime := cond (gt .ReadingTime 1) "minutes" "minute" }}
+            <span class="meta-tags">| <span class="fa fa-clock-o"></span>Reading Time: {{ .ReadingTime }} {{ $readTime }} |</span>
+        {{ end }}
+        ```
+
+    1. Customize the display of the terms and terms list
 <!--more-->

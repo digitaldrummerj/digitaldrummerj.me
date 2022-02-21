@@ -43,6 +43,11 @@ pygmentsStyle = "manni" #"friendly"
 [markup.goldmark.renderer]
   unsafe = true
 
+# Used in the theme\layouts\contact\single.html
+[params.contactusform]
+  formSpreeUrl = "https://formspree.io/f/xjvjjevz"
+  thankyouPage = "/thankyou/"
+
 # Used to define the twitter card site
 [Social]
   twitter = "digitaldrummerj"
@@ -95,7 +100,6 @@ pygmentsStyle = "manni" #"friendly"
 
 [taxonomies]
   series = "series"
-  tag = "tags"
   category = "categories"
 
 [permalinks]

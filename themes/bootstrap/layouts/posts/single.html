@@ -1,78 +1,41 @@
-{{ partial "header.html" .}}
-
-<!-- Page Header -->
-<!-- Set your background image for this header on the line below. -->
-{{ if isset .Params "image" }}
-  <header
-    class="intro-header"
-    style="background-image: url('{{ .Site.BaseURL }}/{{ .Params.image }}')"
-  >
-{{ else }}
-  <header
-    class="intro-header"
-    style="background-image: url('{{ .Site.BaseURL }}{{ .Site.Params.defaultHeaderImage }}')"
-  >
-{{ end }}
-    <div class="container">
-      <div class="row">
-        <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
-          <div class="post-heading">
-            <h1>{{ .Title }}</h1>
-            <h2 class="subheading">{{ .Description }}</h2>
-            <span class="meta"> {{ partial "meta.html" .}} {{ if (.Params.draft ) }} - DRAFT {{ end }}
-          </div></span>
-
-        </div>
-      </div>
-    </div>
-</header>
-
-  <!-- Post Content -->
-  <article>
-    <div class="container">
-      <!-- <div class="row">
-        <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+{{ define "main" }}
+<!-- Post Content -->
+<article>
+  <div class="container">
+    <div class="row post-series">
+      <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+        <br />
+        {{ partial "series.html" . }}
+        {{ if .Params.toc }}
+        {{ partial "toc.html" .}}
+        {{ end }}
           {{ if (or (isset .Params "toc") (isset .Params "series")) }}
-          {{ .Summary | markdownify}}
-          {{ end }}
-        </div>
-      </div> -->
-      <div class="row post-series">
-        <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
-          <br />
-          {{ partial "series.html" . }}
-          {{ if .Params.toc }}
-          {{ partial "toc.html" .}}
-          {{ end }}
-           {{ if (or (isset .Params "toc") (isset .Params "series")) }}
-          <hr />
-          {{ end }}
-        </div>
-      </div>
-      <div class="row post-content">
-        <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
-          {{ .Content }}
-        </div>
-      </div>
-      <div class="row post-series">
-        <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
-          {{ partial "series.html" . }}
-        </div>
-      </div>
-      <div class="row post-sharing">
-        <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
-          {{ if not .Site.Params.sharingicons.hide }}
-            {{ partial "sharing-icons.html" . }}
-          {{ end }}
-        </div>
-      </div>
-      <div class="row post-comments">
-        <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
-          {{ partial "comments.html" .}}
-        </div>
+        <hr />
+        {{ end }}
       </div>
     </div>
-  </article>
-
-  {{ partial "footer.html" .}}
-
+    <div class="row post-content">
+      <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+        {{ .Content }}
+      </div>
+    </div>
+    <div class="row post-series">
+      <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+        {{ partial "series.html" . }}
+      </div>
+    </div>
+    <div class="row post-sharing">
+      <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+        {{ if not .Site.Params.sharingicons.hide }}
+          {{ partial "sharing-icons.html" . }}
+        {{ end }}
+      </div>
+    </div>
+    <div class="row post-comments">
+      <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+        {{ partial "comments.html" .}}
+      </div>
+    </div>
+  </div>
+</article>
+{{ end }}
