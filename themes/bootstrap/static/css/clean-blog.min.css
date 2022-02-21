@@ -4,8 +4,8 @@ body {
   color: #404040
 }
 
-ul.striped-list > li:nth-of-type(odd) {
-    background-color: #f3f3f3 ;
+ul.striped-list > li:nth-of-type(even) {
+    background-color: #e0e0e0;
 }
 
 /* Pattern lists */
@@ -258,12 +258,14 @@ hr.small {
   line-height: 1.2;
 }
 
+.post-preview img,
 .post-content img {
   border: 2px solid #555;
   display: inline;
   margin: 10px 0px 10px 0px;
 }
 
+.post-preview figure,
 .post-content figure {
     border: thin #c0c0c0 solid;
     display: flex;
@@ -274,11 +276,13 @@ hr.small {
     margin-bottom: 25px;
 }
 
+.post-preview figure img,
 .post-content figure img {
   margin: 5px;
   border: 0px;
 }
 
+.post-preview figcaption,
 .post-content figcaption {
     background-color: #222;
     color: #fff;
@@ -287,6 +291,7 @@ hr.small {
     text-align: center;
 }
 
+.post-preview li figcaption,
 .post-content li figcaption {
     padding: 30px;
 }

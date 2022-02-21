@@ -1,0 +1,49 @@
+{{ define "main"}}
+ <!-- Main Content -->
+<div class="container">
+    <div class="row">
+        <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+            <a name="top"></a>
+            {{ .Content }}
+            <p><strong>Other Views: </strong><a href="/posts/">List</a> | <a href="/posts/monthview">By Month</a> | <a href="/posts/tagcloudview">By Tag Cloud</a></p>
+            <hr />
+
+            {{ if not (eq (len $.Data.Terms) 0) }}
+                <div>
+                    <div class="tagcloud03">
+                        <ul>
+                            {{ range .Data.Terms.Alphabetical }}
+                                <li>
+                                    <a href="#{{ .Page.Title | urlize}}">{{ .Page.Title }}
+                                        <span class="badge">{{ .Count }}</span>
+                                    </a>
+                                </li>
+                            {{ end }}
+                        </ul>
+                    </div>
+                    <div>
+                        {{ range .Data.Terms.Alphabetical }}
+                            <h3>
+                                <a name="{{ .Page.Title }}"></a>{{ .Page.Title}}
+                                <i class="badge">{{ .Count }}</i>
+                            </h3>
+                            <ul class="list-group striped-list">
+                                {{ range .Pages }}
+                                    <li class="list-group-item">
+                                        <a href="{{ .RelPermalink }}">
+                                            {{ .Title }} {{ if .Params.subheadline }} ({{ .Params.subheadline }}){{ end }} -
+                                            <small>{{ .PublishDate.Format "Jan 02, 2006" }}{{ partial "draft" . }}</small></a>
+                                    </li>
+                                {{ end }}
+                            </ul>
+                            <a href="#top">
+                                <small>back to top</small>
+                            </a>
+                        {{ end }}
+                    </div>
+                </div>
+            {{ end }}
+        </div>
+    </div>
+</div>
+{{ end }}

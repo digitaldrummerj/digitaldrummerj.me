@@ -7,21 +7,15 @@ buildFuture = true
 canonifyurls = false
 paginate = 10
 theme = "bootstrap"
-#disableKinds = ["taxonomy", "taxonomyTerm"] # disable tags and categories
 languageCode = "en"
 
 #googleAnalytics = "" # delete or comment to disable Google Analytics JS generation
-#disqusShortname = "digitaldrummerj" #delete or comment to disable Disqus comments
 
 # Set to true to enable syntax highlighting in code fences with a language tag
 pygmentsCodefences =  true
-#pygmentsOptions = "linenos=table"
 
 # color-codes for highlighting derived from this style
 pygmentsStyle = "manni" #"friendly"
-
-# Set to true to try to do syntax highlighting on code fenced blocks in markdown without a language tag.
-# pygmentsCodefencesGuessSyntax = true
 
 [params]
   copyright = "Created with ♥ by <a href='/about/'>Justin James</a>. All content is the property of Justin James and digitaldrummerj.me. This blog, its content, and opinions are my own."
@@ -89,14 +83,6 @@ pygmentsStyle = "manni" #"friendly"
   name = "Search"
   url = "/search/"
   weight = 6
-
-[params.sidebar]
-  # How many posts to show on the sidebar (Default: 5)
-  num_recent_posts = 5
-  recent_articles = true
-  categories = true
-  archive = true
-  feed = true
 
 [taxonomies]
   series = "series"

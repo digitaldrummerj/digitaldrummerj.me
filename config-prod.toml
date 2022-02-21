@@ -2,4 +2,3 @@ baseurl = "https://digitaldrummerj.me"
 buildDrafts = false
 buildFuture = false
 googleAnalytics = "UA-58457343-1"
-#disqusShortname = "digitaldrummerj" #delete or comment to disable Disqus comments

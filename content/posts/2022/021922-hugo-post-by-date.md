@@ -167,4 +167,4 @@ We could directly update the default list.html page, but if we ever have a list 
 
 Our archive by month page is now completed and ready to deploy. As you can see, there is a lot of power in the functions that Hugo provides us to loop through the post, group posts, run conditional logic, and more.
 
-In our next post, we will build the archive by category page.
+In our [next post](/hugo-view-post-grouped-by-category), we will build the archive by category page.
