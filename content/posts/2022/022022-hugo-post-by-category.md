@@ -1,7 +1,7 @@
 ---
 categories: ["blogging", "hugo"]
 date: 2022-02-20T13:00:00Z
-published: false
+published: true
 title: "Hugo - Create Page to View Posts Grouped by Category"
 url: '/hugo-view-post-grouped-by-category'
 ---
