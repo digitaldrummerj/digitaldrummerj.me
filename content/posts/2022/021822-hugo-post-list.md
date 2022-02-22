@@ -2,7 +2,7 @@
 categories: ["blogging", "hugo"]
 date: 2022-02-18T13:00:00Z
 published: true
-title: "Hugo - Create an Archive Page to View All Your Posts"
+title: "Hugo - Create Page to View All Your Posts"
 url: '/hugo-view-all-post'
 
 ---

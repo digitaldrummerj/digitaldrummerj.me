@@ -557,7 +557,6 @@ text-align: center;
 }
  .tagcloud03 ul.cloud li a {
 	 padding: 0 1em 0 1em;
-	 /* border: none !important; */
    border: none;
 	 height: 45px;
 	 padding-top: 5px;
