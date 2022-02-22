@@ -24,7 +24,7 @@
                     <div>
                         {{ range .Data.Terms.Alphabetical }}
                             <h3>
-                                <a name="{{ .Page.Title }}"></a>{{ .Page.Title}}
+                                <a name="{{ .Page.Title | urlize }}"></a>{{ .Page.Title}}
                                 <i class="badge">{{ .Count }}</i>
                             </h3>
                             <ul class="list-group striped-list">
