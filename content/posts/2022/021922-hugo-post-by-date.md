@@ -2,7 +2,7 @@
 categories: ["blogging", "hugo"]
 date: 2022-02-19T13:00:00Z
 published: true
-title: "Hugo - Create Archive Page to View Posts Month"
+title: "Hugo - View Posts Grouped By Month"
 url: '/hugo-view-post-grouped-by-month'
 ---
 In our [previous post](/hugo-view-all-post), we looked at how to build an archive page to view all of the posts we have written. In this post, we will build an archive page that shows our posts by month.
