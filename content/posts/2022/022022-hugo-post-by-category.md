@@ -59,7 +59,7 @@ For the purpose of this article, we are just going to create the files in the `l
                         <div>
                             {{ range .Data.Terms.Alphabetical }}
                                 <h3>
-                                    <a name="{{ .Page.Title }}"></a>{{ .Page.Title}}
+                                    <a name="{{ .Page.Title | urlize }}"></a>{{ .Page.Title}}
                                     <i class="badge">{{ .Count }}</i>
                                 </h3>
                                 <ul class="list-group striped-list">
@@ -161,4 +161,4 @@ The last thing we need to do is add a bit of CSS to style our list the way we wa
 
 Now you have a custom category list and summary page.
 
-In our next Hugo post, we will create a page to look at posts categories in a word cloud.
+In our [next post](/hugo-view-post-tag-cloud) on Hugo, we will create a page to look at posts categories in a word cloud.
