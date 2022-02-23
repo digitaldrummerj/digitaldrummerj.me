@@ -1,5 +1,6 @@
 baseurl = "https://digitaldrummerj.me"
 title = "Justin James"
+Copyright = "Copyright 2015-2022.  All content is the property of Justin James and digitaldrummerj.me."
 
 buildDrafts = true
 buildFuture = true
@@ -17,12 +18,15 @@ pygmentsCodefences =  true
 # color-codes for highlighting derived from this style
 pygmentsStyle = "manni" #"friendly"
 
+[Author]
+  name = "Justin James"
+
+
 [params]
   copyright = "Created with ♥ by <a href='/about/'>Justin James</a>. All content is the property of Justin James and digitaldrummerj.me. This blog, its content, and opinions are my own."
   DateForm = "January 2, 2006"
   Description = "Web Developer, Tester, and Professional Speaker"
   DescriptionMeta = "Web Developer, Tester and Professional Speaker; passionate about good code, automated testing, devops, and presenting."
-  Author = "Justin James"
   Headshot = "/images/profile-image-display.png"
   postSummariesFrontPage = 5
   showReadTime = false
@@ -103,7 +107,7 @@ pygmentsStyle = "manni" #"friendly"
     twitter = true
 
 [outputs]
-home = ["HTML","FEED"]
+home = ["HTML","FEED", "RSS"]
 
 [mediaTypes]
 [mediaTypes."application/rss"]
