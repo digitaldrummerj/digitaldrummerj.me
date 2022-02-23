@@ -41,9 +41,9 @@ You also can configure Hugo (config.toml) to show a copyright notice and set the
 copyright = "2022 Justin James All rights reserved"
 languageCode = "en-us"
 
-[author]
-name = "Justin James"
-email = "me@example.com"
+[Author]
+    name = "Justin James"
+    email = "me@example.com"
 ```
 
 Next, you need to add the following snippet inside the `<head>` tags of theme’s head partial:
