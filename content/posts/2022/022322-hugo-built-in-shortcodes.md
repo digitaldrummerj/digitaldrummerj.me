@@ -12,7 +12,7 @@ When creating a post, there are times where you really wish Hugo could render so
 
 This is where Hugo shortcodes come into play. Shortcodes are simply a way of inserting a snippet of HTML into a page from your markdown.
 
-Let;s take a look at how to use the built-in shortcodes.
+Let's take a look at how to use the built-in shortcodes.
 
 <!--more-->
 
