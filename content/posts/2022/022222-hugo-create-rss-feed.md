@@ -1,7 +1,7 @@
 ---
 categories: ["blogging", "hugo"]
 date: 2022-02-22T13:00:00Z
-published: false
+published: true
 title: "Hugo - Create RSS Feed for Site"
 url: '/hugo-create-rss-feed'
 ---
@@ -56,11 +56,11 @@ Next, you need to add the following snippet inside the `<head>` tags of theme’
 
 The default template includes only the summary of each blog post. I really like reading entire post in my RSS reader if I can. It removes all the bloat of the original website, and just gives me the text I care about.
 
-We can override the default rss template by copying it our theme's layouts\_default\rss.xml and editing it.
+We can override the default rss template by copying it our theme's `layouts\_default\rss.xml` and editing it.
 
 You can find the default rss template that ships with Hugo at [https://github.com/gohugoio/hugo/blob/master/tpl/tplimpl/embedded/templates/_default/rss.xml](https://github.com/gohugoio/hugo/blob/master/tpl/tplimpl/embedded/templates/_default/rss.xml)
 
-If you’d like to create a full-text feed then you’d have to change this line
+To then change from the summary view to the full content view, you’d change this line in the default template
 
 ```html
 <description>{{ .Summary | html }}</description>
@@ -72,48 +72,6 @@ to this
 <description>{{ .Content | html }}</description>
 ```
 
-The edited file needs to be saved under our theme in the layouts/_default/rss.xml so that it will override the default feed.
+You now have your RSS configured to include the entire post and it is ready for people to start subscribing to the feed.  Your RSS feed can be viewed by going to the `index.xml` page on your web site.
 
-```html
-{{- $pctx := . -}}
-{{- if .IsHome -}}{{ $pctx = .Site }}{{- end -}}
-{{- $pages := slice -}}
-{{- if or $.IsHome $.IsSection -}}
-{{- $pages = $pctx.RegularPages -}}
-{{- else -}}
-{{- $pages = $pctx.Pages -}}
-{{- end -}}
-{{- $limit := .Site.Config.Services.RSS.Limit -}}
-{{- if ge $limit 1 -}}
-{{- $pages = $pages | first $limit -}}
-{{- end -}}
-{{- printf "<?xml version=\"1.0\" encoding=\"utf-8\" standalone=\"yes\"?>" | safeHTML }}
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
-  <channel>
-    <title>{{ if eq  .Title  .Site.Title }}{{ .Site.Title }}{{ else }}{{ with .Title }}{{.}} on {{ end }}{{ .Site.Title }}{{ end }}</title>
-    <link>{{ .Permalink }}</link>
-    <description>Recent content {{ if ne  .Title  .Site.Title }}{{ with .Title }}in {{.}} {{ end }}{{ end }}on {{ .Site.Title }}</description>
-    <generator>Hugo -- gohugo.io</generator>{{ with .Site.LanguageCode }}
-    <language>{{.}}</language>{{end}}{{ with .Site.Author.email }}
-    <managingEditor>{{.}}{{ with $.Site.Author.name }} ({{.}}){{end}}</managingEditor>{{end}}{{ with .Site.Author.email }}
-    <webMaster>{{.}}{{ with $.Site.Author.name }} ({{.}}){{end}}</webMaster>{{end}}{{ with .Site.Copyright }}
-    <copyright>{{.}}</copyright>{{end}}{{ if not .Date.IsZero }}
-    <lastBuildDate>{{ .Date.Format "Mon, 02 Jan 2006 15:04:05 -0700" | safeHTML }}</lastBuildDate>{{ end }}
-    {{- with .OutputFormats.Get "RSS" -}}
-    {{ printf "<atom:link href=%q rel=\"self\" type=%q />" .Permalink .MediaType | safeHTML }}
-    {{- end -}}
-    {{ range $pages }}
-    <item>
-      <title>{{ .Title }}</title>
-      <link>{{ .Permalink }}</link>
-      <pubDate>{{ .Date.Format "Mon, 02 Jan 2006 15:04:05 -0700" | safeHTML }}</pubDate>
-      {{ with .Site.Author.email }}<author>{{.}}{{ with $.Site.Author.name }} ({{.}}){{end}}</author>{{end}}
-      <guid>{{ .Permalink }}</guid>
-      <description>{{ .Content | html }}</description>
-    </item>
-    {{ end }}
-  </channel>
-</rss>
-```
-
-You now have your RSS configured and ready for people to start using.  You can view your RSS feed by going to `/index.xml` on your web site.
+> You also have RSS feeds for each category by going to `/categories/[name]/index.xml` where `[name]` is the name of the category.
