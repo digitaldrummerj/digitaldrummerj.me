@@ -72,6 +72,28 @@ to this
 <description>{{ .Content | html }}</description>
 ```
 
-You now have your RSS configured to include the entire post and it is ready for people to start subscribing to the feed.  Your RSS feed can be viewed by going to the `index.xml` page on your web site.
+The default Hugo RSS template, also includes all of the pages in your site and not just your blog post.  For my RSS feed, I do not want my about, search, speaking or any other page that is not a blog post included in my RSS feed.
+
+At the top of the Hugo RSS template, is a `$pages` variable. To pull just content located in the `content\posts` section, you'd update these lines in the default template
+
+```html
+{{- if or $.IsHome $.IsSection -}}
+{{- $pages = $pctx.RegularPages  -}}
+{{- else -}}
+{{- $pages = $pctx.Pages  -}}
+{{- end -}}
+```
+
+to this
+
+```html
+{{- if or $.IsHome $.IsSection -}}
+{{- $pages = (where (where $pctx.RegularPages ".Section" "posts") "Kind" "page")  -}}
+{{- else -}}
+{{- $pages = (where (where $pctx.Pages ".Section" "posts") "Kind" "page")  -}}
+{{- end -}}
+```
+
+You now have your RSS configured to only show posts and include the entire post.  Your RSS feed is now ready for people to start subscribing to the feed.  Your RSS feed can be viewed by going to the `index.xml` page on your web site.
 
 > You also have RSS feeds for each category by going to `/categories/[name]/index.xml` where `[name]` is the name of the category.
