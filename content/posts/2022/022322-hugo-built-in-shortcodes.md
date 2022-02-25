@@ -64,4 +64,4 @@ There are several shortcodes that are included in Hugo.
 
 See how to use the built-in shortcodes in the [Hugo Shortcodes Documentation](https://gohugo.io/content-management/shortcodes/#use-hugos-built-in-shortcodes)
 
-In our next post, we will take a look at how you can create your own shortcodes.
+In our [next post](/hugo-custom-shortcodes), we will take a look at how you can create your own shortcodes.
