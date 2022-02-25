@@ -16,6 +16,8 @@ To create a shortcode you need to create a file in thr layouts\shortcodes folder
 
 Shortcodes can also take parameters either as positional or named parameters.
 
+## Create Our Custom Shortcode
+
 Let's build a bootstrap alert shortcode.
 
 **What We Are Building:**
@@ -58,6 +60,8 @@ Your .Inner text is here
 
 Now anytime you want to call out something you can use the alert shortcode to do it.
 
+## Create Single Line Shortcode
+
 You can also create shortcodes that are single line shortcodes such as the one that this blog has for {{< colour "#e3fbc9" "colour" >}}
 
 **layouts\colour.html:**
@@ -73,6 +77,8 @@ You can also create shortcodes that are single line shortcodes such as the one t
 ```text
 {{</* colour "#e3fbc9" "colour" */>}}
 ```
+
+## Wrap Up
 
 Shortcodes can be a really powerful way to create reusable bits of HTML that extends what Hugo is able to directly generate from the markdown.
 
