@@ -21,4 +21,3 @@ Copy this code sniipet into the render-link.html.
 ```
 
 Now when any link starts with http or https, it will open in a new tab while links within the website will open in the same tab 
-
