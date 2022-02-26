@@ -84,4 +84,4 @@ Shortcodes can be a really powerful way to create reusable bits of HTML that ext
 
 You can more in-depth about [Custom Shortcodes](https://gohugo.io/templates/shortcode-templates/) in the Hugo docs.
 
-In our next Hugo post, we are going to take a look at how to have all links that start with http or https open in a new tab without you having to do anything all at.
+In our [next Hugo post](/hugo-links-to-other-pages), we are going to take a look at how to have all links that start with http or https open in a new tab without you having to do anything all at.
