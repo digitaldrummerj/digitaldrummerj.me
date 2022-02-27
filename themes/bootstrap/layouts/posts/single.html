@@ -6,10 +6,8 @@
       <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
         <br />
         {{ partial "series.html" . }}
-        {{ if .Params.toc }}
         {{ partial "toc.html" .}}
-        {{ end }}
-          {{ if (or (isset .Params "toc") (isset .Params "series")) }}
+        {{ if (or (isset .Params "toc") (isset .Params "series")) }}
         <hr />
         {{ end }}
       </div>
