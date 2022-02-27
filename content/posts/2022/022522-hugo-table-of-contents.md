@@ -14,9 +14,9 @@ Hugo can generate a table of contents for you by including `{{ .TableOfContents 
 
 > Note: `{{ .TableOfContent }}` does not render when just placed in your markdown file for a post
 
-The main place that you will want a table of contents is when you are viewing a single post. You can either make it the default for all single pages by placing it in the `layouts\_defaults\single.html` or have it only show up when viewing a post by placing it in `layouts\posts\single.html`
+The main place that you will want a table of contents is when you are viewing a single post. You can either make it the default for all single pages by placing it in the layouts\_defaults\single.html or have it only show up when viewing a post by placing it in layouts\posts\single.html
 
-I only put a table of contents in my posts. To add the table of contents, you need to create the `layouts\posts\single.html` file and then add the `{{  .TableOfContents }}` where you want it to show.
+I only put a table of contents in my posts. To add the table of contents, you need to create the layouts\posts\single.html file and then add the `{{  .TableOfContents }}` where you want it to show.
 
 **layouts\posts\single.html example:**
 
@@ -58,7 +58,7 @@ Suppose you want only to include a table of contents when you specify a paramete
 {{ end }}
 ```
 
-Now that you have the `{{ if .Params.toc }}` added to your html template, you need to add the `toc` parameter to the front matter of any post that you want a table of content to be displayed.
+Now that you have the `{{ if .Params.toc }}` added to your html template, you need to add the `toc: true` parameter to the front matter of any post that you want a table of content to be displayed.
 
 ```markdown {linenos=false,hl_lines=[2]}
 ---
