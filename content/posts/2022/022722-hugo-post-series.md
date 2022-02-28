@@ -77,7 +77,7 @@ First, we need to create the partial that will generate the series html.
 
 ## Create Series (In-Depth)
 
-Let's walk through the code snippet above for the layout\partial\series.html file.
+Let's walk through the code snippet above for the layouts\partial\series.html file.
 
 ### Step 1: Only Display If Series
 
