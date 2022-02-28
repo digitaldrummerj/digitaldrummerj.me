@@ -63,7 +63,7 @@ First, we need to create the partial that will generate the series html.
     {{ end }}
     ```
 
-1. The last thing we need to do is add the `series:` parameter to any posts that are part of a series with the name of the series like we did below with the `series: ['aspnet-core-code-coverage']`
+1. To show the series list we need to add the `series:` parameter to any posts that are part of a series with the name of the series like we did below with the `series: ['aspnet-core-code-coverage']`
 
     ```markdown {linenos=false,hl_lines=[6]}
     ---
@@ -73,6 +73,13 @@ First, we need to create the partial that will generate the series html.
     title: dotCover - How in TeamCity to create multiple coverage reports
     series: ['aspnet-core-code-coverage']
     ---
+    ```
+
+1. The last thing we need to do is tell Hugo about the series by add it to our config.toml file.  If you already have other taxonomies defined, just add the series to the list instead of creating a new list.
+
+    ```text
+    [taxonomies]
+       series = "series"
     ```
 
 ## Create Series (In-Depth)
