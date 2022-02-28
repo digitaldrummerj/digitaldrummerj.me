@@ -2,26 +2,27 @@
 <!-- Post Content -->
 <article>
   <div class="container">
+    {{ if (or (isset .Params "toc") (isset .Params "series")) }}
     <div class="row post-series">
       <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
-        <br />
         {{ partial "series.html" . }}
         {{ partial "toc.html" .}}
-        {{ if (or (isset .Params "toc") (isset .Params "series")) }}
         <hr />
-        {{ end }}
       </div>
     </div>
+    {{ end }}
     <div class="row post-content">
       <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
         {{ .Content }}
       </div>
     </div>
+    {{ if (isset .Params "series") }}
     <div class="row post-series">
       <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
         {{ partial "series.html" . }}
       </div>
     </div>
+    {{ end }}
     <div class="row post-sharing">
       <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
         {{ if not .Site.Params.sharingicons.hide }}
