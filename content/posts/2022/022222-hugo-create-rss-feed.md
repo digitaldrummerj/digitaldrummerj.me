@@ -4,6 +4,7 @@ date: 2022-02-22T13:00:00Z
 published: true
 title: "Hugo - Create RSS Feed for Site"
 url: '/hugo-create-rss-feed'
+series: ['hugo blog creation']
 ---
 
  If you have a Hugo site, you probably already have a working RSS feed. You just might not know about it!

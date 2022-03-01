@@ -4,6 +4,7 @@ date: 2022-02-16T13:00:00Z
 published: true
 title: "Hugo - Deploy Preview Release of Site Using Netlify"
 url: '/blog-preview-with-netlify'
+series: ['hugo blog creation']
 ---
 In our previous post on [Deploying Your Hugo Site Using Netlify](/deploy-hugo-netlify), we set up Netlify to automatically deploy our site every time we pushed a commit to our GitHub repository. As well, we set up a custom domain for our site.
 

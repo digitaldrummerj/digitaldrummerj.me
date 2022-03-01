@@ -4,6 +4,7 @@ date: 2022-02-27T13:00:00Z
 published: true
 title: "Hugo - Create a Post Series"
 url: '/hugo-post-series'
+series: ['hugo blog creation']
 ---
 
 When writing a blog, sometimes you want to write a multiple part posts that are meant to be read in order and you want to display to the reader that the post is part of a series, where the post is in the series and a link to get to the other posts in the series.

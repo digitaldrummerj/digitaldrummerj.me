@@ -4,6 +4,7 @@ date: 2022-02-21T13:00:00Z
 published: true
 title: "Hugo - View Posts by Tag Cloud"
 url: '/hugo-view-post-tag-cloud'
+series: ['hugo blog creation']
 ---
 
 In our [previous post](/hugo-view-post-grouped-by-category) on Hugo, we created a page to view the post grouped by category and a page to view all posts for a category.

@@ -4,6 +4,7 @@ date: 2022-02-17T13:00:00Z
 draft: false
 title: "Hugo - Deploy Staging Test Site with Netlify"
 url: '/blog-staging-with-netlify'
+series: ['hugo blog creation']
 ---
 In our previous post on [Deploying a Preview Release of Site Using Netlify](/blog-preview-with-netlify), we set up Netlify to build and deploy a preview of our site every time we created or updated a pull request that also included all of our draft and future posts.
 
