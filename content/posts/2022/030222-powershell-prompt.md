@@ -39,6 +39,31 @@ key = 'HKLM:\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Console\TrueTypeFont'
 Set-ItemProperty -Path $key -Name '000' -Value 'CaskaydiaCove Nerd Font'
 ```
 
+I am using [Windows Terminal](https://www.microsoft.com/en-us/p/windows-terminal/9n0dx20hk701?activetab=pivot:overviewtab) to run all of various shells including Powershell.
+
+To use the CaskaydiaCove Nerd Font that you just installed in Windows Terminal, you need to update the JSON settings file and set the font to be CaskaydiaCove Nerd Font.
+
+1. Open Windows Terminal
+1. Open settings by pressing ctrl+, or clicking on the down arrow in the title bar and select Settings
+1. On the bottom of the left navbar, click on Open JSON file
+1. Find the defaults sections under profiles and add the "font" section below
+
+  ```json
+  {
+    "profiles":
+    {
+        "defaults":
+        {
+            // Put settings here that you want to apply to all profiles
+            "font": {
+                "face": "CaskeydiaCove Nerd Font",
+                "weight": "normal"
+            }
+        }
+    }
+  }
+  ```
+
 ## Starship
 
 Next, we need to install [Starship](https://starship.rs/), the minimal, blazing-fast, and infinitely customizable prompt for any shell!
