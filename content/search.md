@@ -1,5 +1,5 @@
-+++
-title = "Search"
-type = "search"
-+++
+---
+title: "Search"
+layout: "search"
+---
 
