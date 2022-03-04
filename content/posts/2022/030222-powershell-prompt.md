@@ -129,8 +129,10 @@ Import-Module devtoolbox
 
 For the predictive suggests when typing commands, we need to install PSReadline.
 
+In a PowerShell administrator shell, run
+
 ```PowerShell
-Install-Module PSReadLine -Force
+Install-Module PSReadLine -RequiredVersion 2.2.2 -Force
 ```
 
 > Needed to use -Force to have it install PSReadLine 2.2
@@ -147,7 +149,7 @@ Set-PSReadLineOption -EditMode
 
 ## update function
 
-The update function is designed to MI can easily make sure PowerShell]
+The update function is designed to make it easy to update powershell to the latest version
 
 ```PowerShell
 function update {
@@ -155,7 +157,7 @@ function update {
 }
 ```
 
-I would suggest that you run the `update` command and install the latest cross platform version.
+I would suggest that you run the `update` command and install the latest cross platform version.  Once you get the cross-platform version installed, you need to install the PowerShell modules above and create the profile.
 
 ## profile ended
 
