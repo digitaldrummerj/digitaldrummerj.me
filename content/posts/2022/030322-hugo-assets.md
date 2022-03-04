@@ -40,3 +40,5 @@ For JavaScript files, it works the same way as a CSS file does. To minify js/cle
 {{ $js := resources.Get "js/clean-blog.js" | minify }}
 <script src="{{ $js.RelPermalink }}"></script>
 ```
+
+Now you can minify your CSS and JavaScript files any time you want.
