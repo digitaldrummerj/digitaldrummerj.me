@@ -7,7 +7,7 @@ buildFuture = true
 
 canonifyurls = false
 paginate = 10
-# theme = "bootstrap"
+theme = "bootstrap"
 languageCode = "en"
 
 #googleAnalytics = "" # delete or comment to disable Google Analytics JS generation
