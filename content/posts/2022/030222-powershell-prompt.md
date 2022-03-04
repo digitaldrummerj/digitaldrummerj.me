@@ -30,21 +30,30 @@ Several items need to be installed for the profile to work:
 
 Nerd Fonts patches developer targeted fonts with a high number of glyphs (icons). Specifically to add an increased number of extra glyphs from popular ‘iconic fonts’ such as Font Awesome, Devicons, Octicons, and others.
 
-Download the CaskaydiaCove Nerd Font from [Nerd Font](https://www.nerdfonts.com/font-downloads).
+I am using the CaskaydiaCove Nerd Font from [Nerd Font](https://www.nerdfonts.com/font-downloads).
 
-Once you have the font installed, open PowerShell as an Administrator and run:
+To install:
 
-```powershell
-key = 'HKLM:\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Console\TrueTypeFont'
-Set-ItemProperty -Path $key -Name '000' -Value 'CaskaydiaCove Nerd Font'
-```
+1. Open Windows Terminal as an Administrator
+1. Create a Powershell tab
+1. Install the Chocolatey package
 
-I am using [Windows Terminal](https://www.microsoft.com/en-us/p/windows-terminal/9n0dx20hk701?activetab=pivot:overviewtab) to run all of various shells including PowerShell.
+  ```shell
+  choco install -y cascadia-code-nerd-font
+  ```
 
-To use the CaskaydiaCove Nerd Font that you just installed in Windows Terminal, you need to update the JSON settings file and set the font to be CaskaydiaCove Nerd Font.
+  > If you are not using Chocolatey, you can install it at [https://chocolatey.org/install](https://chocolatey.org/install)
 
-1. Open Windows Terminal
-1. Open settings by pressing ctrl+, or clicking on the down arrow in the title bar and select Settings
+1. After the font is installed, I needed this registry entry to tell Windows that the font is a TrueTypeFont
+
+  ```powershell
+  key = 'HKLM:\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Console\TrueTypeFont'
+  Set-ItemProperty -Path $key -Name '000' -Value 'CaskaydiaCove Nerd Font'
+  ```
+
+Next, we need to tell [Windows Terminal](https://www.microsoft.com/en-us/p/windows-terminal/9n0dx20hk701?activetab=pivot:overviewtab) to use the CaskaydiaCove Nerd Font that was just installed.
+
+1. In Windows Terminal, Open settings by pressing ctrl+, or clicking on the down arrow in the title bar and select Settings
 1. On the bottom of the left navbar, click on Open JSON file
 1. Find the defaults sections under profiles and add the "font" section below
 
@@ -56,7 +65,7 @@ To use the CaskaydiaCove Nerd Font that you just installed in Windows Terminal, 
         {
             // Put settings here that you want to apply to all profiles
             "font": {
-                "face": "CaskeydiaCove Nerd Font",
+                "face": "CaskaydiaCove Nerd Font",
                 "weight": "normal"
             }
         }
