@@ -47,7 +47,7 @@ To install:
 1. After the font is installed, I needed this registry entry to tell Windows that the font is a TrueTypeFont
 
   ```powershell
-  key = 'HKLM:\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Console\TrueTypeFont'
+  $key = 'HKLM:\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Console\TrueTypeFont'
   Set-ItemProperty -Path $key -Name '000' -Value 'CaskaydiaCove Nerd Font'
   ```
 
