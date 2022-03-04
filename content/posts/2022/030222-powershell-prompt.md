@@ -86,7 +86,7 @@ choco install -y starship
 Now that we have Starship installed, we need to add it to our PowerShell profile.
 
 1. Open PowerShell
-1. Open the profile by typing `notepad profile`
+1. Open the profile by typing `notepad $profile`
 1. Add the following line at the top of the profile and save it
 
     ```PowerShell
