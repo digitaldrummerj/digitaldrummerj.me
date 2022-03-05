@@ -1,5 +1,5 @@
 ---
-categories: ["testing", "dotnet-core", "dotcover"]
+categories: ["testing", "aspnet-core", "dotcover"]
 date: 2022-02-06T13:00:00Z
 published: true
 title: "dotCover - Optimizing Coverage Report to Only Include Our Applications Logic"
