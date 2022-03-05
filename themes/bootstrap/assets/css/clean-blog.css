@@ -51,7 +51,7 @@ a {
 
 a:hover,
 a:focus {
-  color: #0085a1
+  color: #4b56a8
 }
 
 a img:hover,
@@ -303,41 +303,43 @@ hr.small {
 .post-preview>a:hover,
 .post-preview>a:focus {
   text-decoration: none;
-  color: #0085a1
+  color: #4b56a8
 }
 
-.post-preview>a>.post-title {
+.post-preview .post-title {
   font-size: 30px;
   margin-top: 30px;
   margin-bottom: 10px
 }
 
-.post-preview>a>.post-subtitle {
+.post-preview a .post-subtitle {
   margin: 0;
   font-weight: 300;
   margin-bottom: 10px
 }
 
-.post-preview>.post-meta {
-  color: gray;
+.post-preview .post-meta {
+  color: #353535;
   font-size: 18px;
   font-style: italic;
   margin-top: 0
 }
 
-.post-preview>.post-meta>a {
+.post-preview .post-meta a {
   text-decoration: none;
-  color: #404040
+  color: #353535
 }
 
-.post-preview>.post-meta>a:hover,
-.post-preview>.post-meta>a:focus {
-  color: #0085a1;
+.post-preview .post-title a:hover,
+.post-preview a:focus,
+.post-preview .post-meta a:hover,
+.post-preview .post-meta a:focus {
+  color: #4b56a8;
   text-decoration: underline
 }
 
 @media only screen and (min-width:768px) {
-  .post-preview>a>.post-title {
+  .post-preview .post-title a {
     font-size: 36px
   }
 }
@@ -595,4 +597,27 @@ text-align: center;
 	 background-color: #4b56a8;
 	 border: 1px solid #0085A1;
 	 color: #fff;
+}
+
+.series-compact {
+    margin: 1em 0;
+    padding: 0.5em 1em;
+    border-left: 0.5em solid #4b56a8;
+    color: #505050;
+    font-weight: 550;
+}
+
+.series-compact p {
+  margin: 0;
+}
+
+.series-compact a {
+  color: #505050;
+}
+
+.list-group-item.active,
+.list-group-item.active:hover,
+.list-group-item.active:focus {
+  background-color: #4b56a8;
+  border-color: #4b56a8;
 }

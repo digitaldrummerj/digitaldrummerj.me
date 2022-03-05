@@ -9,7 +9,7 @@ excerpt: If you are working behind a proxy server you will need to configure bot
   vagrant commands (up, status, box add, etc) and then how to configure the virtual
   machine proxy settings.
 published: true
-series: ["vagrant getting started"]
+series: ["Vagrant Getting Started"]
 title: Vagrant Part 6 - Behind A Proxy Server
 
 ---

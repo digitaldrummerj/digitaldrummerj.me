@@ -4,6 +4,7 @@ date: 2022-03-01T13:00:00Z
 published: true
 title: "Hugo - Integrate Google Search"
 url: '/hugo-Integrate-google-search'
+series: ['Blogging With Hugo']
 ---
 
 As your site content grows, finding content will become harder and you will need to add the ability to search your content.

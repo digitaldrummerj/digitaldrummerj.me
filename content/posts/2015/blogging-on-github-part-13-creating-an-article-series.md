@@ -11,7 +11,7 @@ excerpt: "Welcome the continuing series on using Jekyll. In this tutorial we are
   the series.  Instead you can easily create a liquid template that does all of the
   work for you.  \n"
 published: true
-series: ["blogging-with-jekyll"]
+series: ["Blogging with Jekyll"]
 title: 'Jekyll Part 13: Creating an Article Series'
 ---
 

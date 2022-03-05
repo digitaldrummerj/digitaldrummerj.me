@@ -9,7 +9,7 @@ excerpt: "Welcome to the Vagrant lesson on how to use Boxstarter to configure Wi
   our virtual machine.\n\nIn this lesson, we will create an file with all of the install
   and configuration commands that will be executed with Boxstarter. \n"
 published: true
-series: ["vagrant getting started"]
+series: ["Vagrant Getting Started"]
 title: Vagrant Part 5 - Installing Your Software
 
 ---

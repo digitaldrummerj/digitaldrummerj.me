@@ -4,7 +4,7 @@ date: 2022-02-05T13:00:00Z
 published: true
 title: "ASP.NET Core - Implementing Code Coverage with JetBrains dotCover"
 url: '/aspnet-core-code-coverage'
-series: ['aspnet-core-code-coverage']
+series: ['ASP.NET Core Code Coverage']
 ---
 
 Having automated tests is a good thing to have to help with your code quality but having those tests without any idea of how much of your code is actually being tested is a really bad thing.

@@ -4,7 +4,7 @@ date: 2022-02-18T13:00:00Z
 published: true
 title: "Hugo - Create Page to View All Your Posts"
 url: '/hugo-view-all-post'
-
+series: ['Blogging With Hugo']
 ---
 
 In our post on [Creating Your Blog Using Hugo](/create-blog-with-hugo), the theme that I provided you included the archive page that allows you to page through all of the posts you have written. By default, Hugo only shows 10 posts at a time and then you need to have an archive page that pages through the remaining posts. Even though I provided you with the archive page, I want to examine how that page works so you know how you can customize the page to match the look and feel you want.

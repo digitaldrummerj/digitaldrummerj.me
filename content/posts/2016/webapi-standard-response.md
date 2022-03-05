@@ -7,7 +7,7 @@ excerpt: "Welcome to the continuing series on getting started with ASP.NET Web A
   \ In this article we will learn how to setup a standard response format for all
   of the endpoints.    \n"
 published: true
-series: ["web-api-getting-started"]
+series: [WebApi Getting Started"]
 title: ASP.NET Web Api - Setup Generic Response Handler
 
 ---

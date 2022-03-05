@@ -4,7 +4,7 @@ categories:
 - jekyll
 date: 2015-02-05T00:00:00Z
 published: true
-series: ["blogging-with-jekyll"]
+series: ["Blogging with Jekyll"]
 title: 'Jekyll Part 02: Your First Post'
 ---
 
@@ -57,7 +57,7 @@ Below are common metadata you will want to fill out.
 
 Now on to creating actual content in your post.
 
-## Section 3:  Creating content 
+## Section 3:  Creating content
 
 The content of the post will be written in markdown and will be directly below the front matter section .
 
@@ -94,8 +94,8 @@ For bullets: start a line with a * or -.
     * sample list
     * next bullet
 
-* sample list 
-* next bullet 
+* sample list
+* next bullet
 
 For numbered list start with a 1 or the number you want to start with.
 
@@ -118,53 +118,53 @@ surround  the text you to build with 2 ** and then put 2 more after the text  to
 link to other pages:
 
 	[link name display](http://myurl.com)
-	
+
 [link name display](http://myurl.com)
 
-### Code Highlighting 
+### Code Highlighting
 
 There are 2 ways: tab the line in and it will group the text like the examples above.
 or use the highlighter markup
 
 {{< highlight text >}}
 {% highlight csharp %}
-// some c# code	
+// some c# code
 var a = "bad variable name"
 {% endhighlight %}
 {{< / highlight >}}
 
 
-## Highlighting text without the code highlighting 
+## Highlighting text without the code highlighting
 
-Start the line with a tab and it will automatically do it for you.  
+Start the line with a tab and it will automatically do it for you.
 
 	you will get text like this if you start the line with a tab.
-	
+
 ## Further Reading on Markdown
 
 Github documentation on their markdown:  [https://help.github.com/articles/github-flavored-markdown/](https://help.github.com/articles/github-flavored-markdown/).
 
 ## Section 4:  Saving as draft
 
-Most of the time you are not going to write and publish the blog post in one sitting but you need to save your work without it showing up in the website.  This is called saving a draft and it is super simple to do.  By setting the front matter published tag to false it will tell jekyll to not publish it. 
+Most of the time you are not going to write and publish the blog post in one sitting but you need to save your work without it showing up in the website.  This is called saving a draft and it is super simple to do.  By setting the front matter published tag to false it will tell jekyll to not publish it.
 
 	---
-	other front matter tags 
+	other front matter tags
 	published: false
 	---
-	
+
 You can also create a drafts folder and save the file in the but if you do that then you will need to move the file to the _post folder when you are ready to publish.
 
-## Section  5: Publishing post 
+## Section  5: Publishing post
 
-Publishing a post is as simple as changing the front matter published to true and committing the change to the github repository.  
+Publishing a post is as simple as changing the front matter published to true and committing the change to the github repository.
 
 	---
-	other front matter tags 
+	other front matter tags
 	published: true
 	---
 
-Github will take care of the conversion from markdown to an html page.  This should happen automatically within a minute and show up on the blog home page at the top.  
+Github will take care of the conversion from markdown to an html page.  This should happen automatically within a minute and show up on the blog home page at the top.
 
 If it doesn't show up then check your email that you registered on github with to see if there was a jekyll compile error email.
 
@@ -173,5 +173,4 @@ If it doesn't show up then check your email that you registered on github with t
 
 This lesson is one of the key lessons as you need to kow how to create new blog post.  Creating new blog post is really easy with Jekyll and a little bit of markdown.  Once you learn the different markdown tags, you will be writing blog post in no time at all.
 
-See you in the next lesson, where we will discuss how to add the ability to comment on blog post.  
- 
+See you in the next lesson, where we will discuss how to add the ability to comment on blog post.

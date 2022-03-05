@@ -4,6 +4,7 @@ date: 2022-02-28T13:00:00Z
 published: true
 title: "Hugo - Add Additional Non-Blog Pages"
 url: '/hugo-add-additional-pages'
+series: ['Blogging With Hugo']
 ---
 
 So far in our [Hugo series](/categories/hugo) we have only looked only blog related page such as posts and archives but typically you have other pages such as an about, search, or contact us.

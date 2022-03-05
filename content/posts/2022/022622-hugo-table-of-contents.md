@@ -4,6 +4,7 @@ date: 2022-02-26T13:00:00Z
 published: true
 title: "Hugo - Selectively Add Table of Contents to Post"
 url: '/hugo-table-of-contents'
+series: ['Blogging With Hugo']
 ---
 
 When you are doing a longer tutorial style post, it is helpful to include a table of contents that will show all of the headings in the post and link to that portion of the post. In this post, we will look at how you can selectively add a table of contents to a post.

@@ -13,7 +13,7 @@ excerpt: "Welcome to the series on getting started with .NET Web Api.  In this a
   for the response \n- Setup A Standard Response\n- Solving CORS Issues When Using
   Credentials\n"
 published: true
-series: ["web-api-getting-started"]
+series: [WebApi Getting Started"]
 title: ASP.NET Web Api - Getting Started
 ---
 
