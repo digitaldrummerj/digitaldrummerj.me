@@ -1,14 +1,13 @@
 [
   {{- range $index, $page := .Site.RegularPages -}}
     {{- if gt $index 0 -}} , {{- end -}}
-    {{- $entry := dict "uri" $page.RelPermalink "title" $page.Title -}}
+    {{- $entry := dict "uri" $page.Rel\Permalink -}}
+    {{- $entry := dict "title" $page.Title -}}
     {{- $entry = merge $entry (dict "summary" ($page.Summary)) -}}
-    {{- $entry = merge $entry (dict "publishdate" ($page.PublishDate)) -}}
-    {{- $entry = merge $entry (dict "lastmoddate" ($page.Lastmod)) -}}
-
+    {{- $entry = merge $entry (dict "publishdate" ($page.PublishDate)) -}}0
     {{- $entry = merge $entry (dict "content" ($page.Plain | htmlUnescape)) -}}
     {{- $entry = merge $entry (dict "description" $page.Description) -}}
-    {{- $entry = merge $entry (dict "categories" $page.Params.categories) -}}
+    {{- $entry = merge $entry (dict "categories" (delimit $page.Params.categories " ; ")) -}}
     {{- $entry | jsonify -}}
   {{- end -}}
 ]
