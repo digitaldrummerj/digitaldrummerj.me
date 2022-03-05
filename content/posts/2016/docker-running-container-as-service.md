@@ -7,7 +7,7 @@ excerpt: |
 
   To run a Docker container as a daemon, we run it with the -d flag.  This will tell Docker to start up the container in the background and return back to the command prompt.
 published: true
-series: ["docker-toolkit-windows"]
+series: ["Docker Toolkit for Windows"]
 title: Docker - Running Container As a Service
 
 ---
@@ -29,9 +29,9 @@ Once the nginx container is up and running, we can verify it is running by execu
 
      docker ps
 
->To see all of the containers even if they are not running execute add a `-a` 
+>To see all of the containers even if they are not running execute add a `-a`
 
-To connect to the nginx web page, we need to know the ip address of the docker machine.  
+To connect to the nginx web page, we need to know the ip address of the docker machine.
 
      docker-machine ip
 
@@ -73,9 +73,9 @@ Once the MySql container is up and running we can see that it is running with
 
      docker ps
 
->To see all of the containers even if they are not running execute add a `-a`     
+>To see all of the containers even if they are not running execute add a `-a`
 
-To connect to the MySql database, we need to know the ip address of the docker machine   
+To connect to the MySql database, we need to know the ip address of the docker machine
 
      docker-machine ip
 
@@ -83,15 +83,15 @@ Then we need to install MySql Workbench from [https://www.mysql.com/products/wor
 
 If you need to to attach to a shell within the running container, run
 
-    docker attach [container id]  
+    docker attach [container id]
 
 >If docker attach never connects, run docker exec -i -t [container id] /bin/bash
 {:.warning}
 
-If you need to stop the container, run 
+If you need to stop the container, run
 
     docker stop [container id]
-    
+
 You can verify it stopped by running
 
     docker ps -a
@@ -103,4 +103,4 @@ If you are done with the container and ready to delete it, run
 >WARNING: This will delete any data that you added to the database
 {:.warning}
 
-You have learn how to run 2 different types of Docker containers as background containers.  Any Docker container can be run as a background container by using the -d when starting up the container for the first time.  
+You have learn how to run 2 different types of Docker containers as background containers.  Any Docker container can be run as a background container by using the -d when starting up the container for the first time.

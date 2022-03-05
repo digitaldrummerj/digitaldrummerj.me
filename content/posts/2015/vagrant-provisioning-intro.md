@@ -14,7 +14,7 @@ excerpt: "Welcome to the Vagrant lesson on what Vagrant provisioning is.\n\nProv
   provisioning the machine, from simple command line scripts to more complex configuration
   management systems such as chef and puppet. \n"
 published: true
-series: ["vagrant getting started"]
+series: ["Vagrant Getting Started"]
 title: Vagrant Part 2 - Provisioning Introduction
 
 ---

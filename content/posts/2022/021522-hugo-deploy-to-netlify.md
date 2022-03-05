@@ -4,7 +4,7 @@ date: 2022-02-15T13:00:00Z
 published: true
 title: "Hugo - Deploy Site to Netlify"
 url: '/deploy-hugo-netlify'
-series: ['hugo blog creation']
+series: ['Blogging With Hugo']
 ---
 
 In our previous post on [Creating a Blog Using Hugo](/create-blog-with-hugo/), we installed Hugo, created a new site, added a theme, and created our first post.

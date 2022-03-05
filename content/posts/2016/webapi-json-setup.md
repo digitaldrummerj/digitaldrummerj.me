@@ -12,7 +12,7 @@ excerpt: |
 
   In order to test the camel case configuration, we are going to update the FirstController that we created in the previous post to return a .NET class called UserModel instead of a string.
 published: true
-series: ["web-api-getting-started"]
+series: [WebApi Getting Started"]
 title: ASP.NET Web Api - Setup JSON Camel Cased Fields
 
 ---

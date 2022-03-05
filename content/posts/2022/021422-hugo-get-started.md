@@ -4,7 +4,7 @@ date: 2022-02-14T13:00:00Z
 published: true
 title: "Create a Blog Using Hugo"
 url: '/create-blog-with-hugo'
-series: ['hugo blog creation']
+series: ['Blogging With Hugo']
 ---
 
 Are you ready to capturing and sharing your knowledge with others by creating a blog?

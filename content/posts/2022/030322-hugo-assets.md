@@ -4,6 +4,7 @@ date: 2022-03-03T13:00:00Z
 draft: false
 title: "Hugo - Minify JS and CSS"
 url: '/hugo-asset-pipeline'
+series: ['Blogging With Hugo']
 ---
 
 When you think about a website's performance, you should minify your CSS and JavaScript file so that they download as quickly as possible. This still holds true even with static sites like Hugo. Luckily, Hugo can minify files out of the box using what Hugo calls [Asset Pipeline](https://gohugo.io/hugo-pipes/introduction/).
