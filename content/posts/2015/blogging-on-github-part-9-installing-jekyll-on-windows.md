@@ -14,7 +14,7 @@ excerpt: "Welcome the continuing series on using Jekyll. In this tutorial we are
   not officially supported on Windows but it does work and I have not had any issues
   with it.\n"
 published: true
-series: ["blogging-with-jekyll"]
+series: ["Blogging with Jekyll"]
 title: 'Jekyll Part 09: Installing Jekyll On Windows'
 ---
 

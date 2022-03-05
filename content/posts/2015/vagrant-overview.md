@@ -14,29 +14,29 @@ excerpt: "Welcome to an overview of Vagrant and creating of your first Vagrant m
   when you create the virtual machine on the new machine.\n\nBefore, we can see Vagrant
   in action, we first need to install a little bit of software onto your machine.\n"
 published: true
-series: ["vagrant getting started"]
+series: ["Vagrant Getting Started"]
 title: Vagrant Part 1 - Easy Virtual Machine Management
 
 ---
 
-Welcome to an overview of Vagrant and creating of your first Vagrant machine.  
+Welcome to an overview of Vagrant and creating of your first Vagrant machine.
 
 
 
 
 ## What is Vagrant?
 
-Vagrant allows you to create and manage lightweight reproducible virtual machines.   
+Vagrant allows you to create and manage lightweight reproducible virtual machines.
 
-Essentially, all of the configurations to create and configure a virtual machine are kept separate from the virtual machine.  This allows you to delete the virtual machine and then re-create it with all of the same configurations at any point.   
+Essentially, all of the configurations to create and configure a virtual machine are kept separate from the virtual machine.  This allows you to delete the virtual machine and then re-create it with all of the same configurations at any point.
 
 No longer do you have to be afraid to delete a virtual machine for a project that isn't active.  You can also give the Vagrant configuration to a co-worker or move it to another machine and be assured that everything will get setup correctly when you create the virtual machine on the new machine.
-  
+
 Before, we can see Vagrant in action, we first need to install a little bit of software onto your machine.
 
 ## Getting Started
 
-In this section, we will install all of the software needed to be able to Vagrant.  
+In this section, we will install all of the software needed to be able to Vagrant.
 
 There are 3 pieces of software that we need:
 
@@ -66,8 +66,8 @@ Now that we have Chocolatey installed, we can start installing software or as Ch
 To install a package, you would run the command:
 
 	choco install [package name]
-	
-You can find the package names on the Chocolatey Gallery at [http://chocolatey.org](http://chocolatey.org).  
+
+You can find the package names on the Chocolatey Gallery at [http://chocolatey.org](http://chocolatey.org).
 
 Next we are going to install Virtualbox using Chocolatey.
 
@@ -75,12 +75,12 @@ Next we are going to install Virtualbox using Chocolatey.
 
 For this tutorial, I am using Virtualbox as the virtual machine provider.  You could also use Hyper-V (free)  or VMWare (paid).  If you are using Hyper-V already, you can not use Virtualbox at the same as they conflict with each other.
 
-If you already have Virtualbox installed, you can skip this step.  
+If you already have Virtualbox installed, you can skip this step.
 
-Open an administrative command prompt and run the following Chocolatey command.  
+Open an administrative command prompt and run the following Chocolatey command.
 
 	choco install virtualbox.extensionpack
-	
+
 The command above will also instal Virtualbox as it is listed as a dependency for the virtualbox.extensionpack package.
 
 ## Vagrant
@@ -90,10 +90,10 @@ To install Vagrant, from the administrative command prompt, run the following Ch
 	choco install vagrant
 
 We are now ready to create our first virtual machine using Vagrant.
-	
+
 ## Your First Machine
 
-Vagrant create a file called VagrantFile for each virtual machine,  The VagrantFile contains the information about the box the virtual machine is based off of, how to setup the network, the virtualization provider (virtualbox, vmare, hyper-v, azure, etc), and any provisioning scripts to run (shell , puppet, chef, etc) .  
+Vagrant create a file called VagrantFile for each virtual machine,  The VagrantFile contains the information about the box the virtual machine is based off of, how to setup the network, the virtualization provider (virtualbox, vmare, hyper-v, azure, etc), and any provisioning scripts to run (shell , puppet, chef, etc) .
 
 Vagrant starts with a base box which nothing more than the a portable skelton for building virtual machine.  There are 2 types of boxes for Vagrant.
 
@@ -102,49 +102,49 @@ Vagrant starts with a base box which nothing more than the a portable skelton fo
 
 For this tutorial, we are going to use the Base OS box and build out the box with all of the software we need.
 
-## Creating VagrantFile 
- 
+## Creating VagrantFile
+
 The first step is to create a directory to hold the VagrantFile.  I use c:\VagrantBoxes to hold all of the my Vagrant machines configurations.
 
 1. Within c:\VagrantBoxes, create a directory called MyFirstMachine.
 
 1. Open up a command prompt and navigate to the MyFirstMachine directory that you just created.
- 
+
 1. To initalize the Vagrant box, you need to run the vagrant init command.   This command will initialize the directory to hold Vagrant information and creates the VagrantFile.
 
 1. For this tutorial, we are going to use the box "opentable/win-8.1-enterprise-amd64-nocm".  The command below will initalize the MyFirstMachine directory.
 
 	vagrant init "opentable/win-8.1-enterprise-amd64-nocm"
-	
+
 Additional boxes can be from the cloud at [https://atlas.hashicorp.com/boxes/search]( https://atlas.hashicorp.com/boxes/search)
 
 ## Configuring the VagrantFile
 
-In the MyFirstMachine directory there is now a file called VagrantFile.  Open this file up in your favorite text editor.  
+In the MyFirstMachine directory there is now a file called VagrantFile.  Open this file up in your favorite text editor.
 
 Within the VagrantFile, there is a basic configuration already setup and a lot of very useful comments that explain the different possible configurations.
 
 ### Vagrant general configurations
 
-1. config.vm.box is the name of the Vagrant base box to use to start up the machine with.  If this base box does not already exist on your machine it will attempt to download it from the Vagrant cloud.  
+1. config.vm.box is the name of the Vagrant base box to use to start up the machine with.  If this base box does not already exist on your machine it will attempt to download it from the Vagrant cloud.
 
 		config.vm.box = "opentable/win-8.1-enterprise-amd64-nocm"
 
 1. Configure the actual machine name of the virtual machine
-	
-		config.vm.hostname = "MyFirstMachine"	
+
+		config.vm.hostname = "MyFirstMachine"
 
 1. How long Vagrant will keep trying to connect to the virtual machine before it assume something went wrong and times out.
-	
+
 		config.vm.boot_timeout = 600
-	
+
 1. How to commumicate with the machine.  The two options are SSH and WinRM.  Typically SSH is used for Linux and WinRM for Windows machines.
-	
+
 		config.vm.communicator = "winrm"
 
 ### Virtualbox Configurations
 
-In the configuration below, it will configure the virtual machine with: 
+In the configuration below, it will configure the virtual machine with:
 
 * 4 gigs of RAM
 * Set it to use 2 CPUs
@@ -157,15 +157,15 @@ In the configuration below, it will configure the virtual machine with:
 				vb.cpus = 2
 				vb.customize ["modifyvm", :id, "--vram", "128"]
 				vb.customize ["modifyvm", :id, "--clipboard", "bidirectional"]
-				vb.name = "My First Machine"   
-			end     
+				vb.name = "My First Machine"
+			end
 
-Now we are ready to start up the machine and start using it. 
+Now we are ready to start up the machine and start using it.
 
 1. Open a command prompt.
 1. Navigate to the MyFirstMachine folder.
 1. Run vagrant up to start up the machine.
-	* The first time you run this command using a new base box, it will take a bit as it has to download the box from the cloud.  
+	* The first time you run this command using a new base box, it will take a bit as it has to download the box from the cloud.
 
 Now that the machine is started up, there are some additional Vagrant commands that you will need to know to be able to hibernate, reboot, shutdown, and delete the virtual machine
 
@@ -176,27 +176,27 @@ The commands below all need to run from the command line from within the MyFirst
 **See Status of Machine**
 
 	vagrant status
-	
+
 **Hibernate Machine**
 
 	vagrant suspend
-	
+
 **Reboot Machine**
 
 	vagrant reload
-	
+
 **Shutdown Machine**
 
 	vagrant shutdown
-	
+
 **Remove Virtual Machine**
 
 	vagrant destroy
-	
+
 **Re-Create Machine after Destroying it**
 
 	vagrant up
-	
+
 ## Next Steps
 
 You have just create and started up your first Vagrant managed Virtual machine.  This is only the beginning of what you can do with Vagrant.  In future lessons in this series we will install software and configure the OS as part of the vagrant up command, we will create multiple machine with a single vagrant command, create azure virtual machines, and create own own base boxes.

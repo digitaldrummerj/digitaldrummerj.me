@@ -1,16 +1,18 @@
 ---
-categories: ["testing", "dotnet-core", "teamcity", "dotcover"]
+categories: ["testing", "aspnet-core", "teamcity", "dotcover"]
 date: 2022-02-07T13:00:00Z
 published: true
 title: ".NET Core - Code Coverage in TeamCity"
 url: '/dotnet-core-code-coverage-teamcity/'
-series: ['aspnet-core-code-coverage']
+series: ['ASP.NET Core Code Coverage']
 toc: true
-summary: "In part 1 and 2 of of this article series, we setup and optimized our code coverage using the free command line version of dotCover.
-
-
-In this post, we are going to add our code coverage to our TeamCity builds to run our unit tests with code coverage as part of the automated builds, show us the code coverage metrics summary after the build, be able to view the code coverage report right in TeamCity and add failure metrics for if code coverage percent drops."
 ---
+
+In [part 1](/aspnet-core-code-coverage) and [part 2](/aspnet-core-code-coverage-tuning-dotCover/) of of this article series, we setup and optimized our code coverage using the free command line version of dotCover.
+
+In this post, we are going to add our code coverage to our TeamCity builds to run our unit tests with code coverage as part of the automated builds, show us the code coverage metrics summary after the build, be able to view the code coverage report right in TeamCity and add failure metrics for if code coverage percent drops.
+
+<!--more-->
 
 {{< alert class="warning" >}}
 **Note:** This post assumes that you already have a TeamBuild setup for your project to trigger a build on pull request or manually on pushes to the repository.

@@ -18,6 +18,7 @@
     </div>
   </div>
 </div>
+<<<<<<< HEAD:themes/bootstrap/layouts/search/single.html
 <template id="search-result" hidden>
   <div class="post-preview">
     <a class="summary-title-link">
@@ -47,3 +48,14 @@
 <script src="/js/lunr.min.js"></script>
 <script src="/js/search.js"></script>
 {{ end }}
+=======
+<noscript>
+  Search
+  <a href="https://www.google.com/search?q=site:{{ .Site.BaseURL | absLangURL }}" target="_blank"
+    >Google</a
+  >
+  for:
+  <pre><code>search-term site: {{ .Site.BaseURL | absLangURL }} </code></pre>
+</noscript>
+{{ end }}
+>>>>>>> origin/main:themes/bootstrap/layouts/page/search.html

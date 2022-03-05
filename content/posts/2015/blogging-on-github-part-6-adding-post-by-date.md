@@ -10,7 +10,7 @@ excerpt: |
 
   A typical blog has a way for your readers to view posts by either category or date, so that they can look at your archives without having to go through the blog post one by one and page by page.  In the last lesson, we added the post by category page.  In this lesson we will add the post by date page.
 published: true
-series: ["blogging-with-jekyll"]
+series: ["Blogging with Jekyll"]
 title: 'Jekyll Part 06: Adding Post by Date Page'
 ---
 

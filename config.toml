@@ -35,6 +35,7 @@ pygmentsStyle = "manni" #"friendly"
   safariMaskColor = "#545271"
   msApplicationTileColor = "#545271"
   Comments = false
+  seriesListLimit = 5
   mainSections = ["posts"]
 
 # Allow HTML to be included from Markdown files

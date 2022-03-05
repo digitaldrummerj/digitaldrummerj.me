@@ -9,22 +9,22 @@ excerpt: "So many times I watch Windows users spending lots of time doing task t
   that I see people doing and below I will show you how to get them done the easiest
   way possible.\n"
 published: true
-series: ["developer-productivity"]
+series: ["Developer Productivity"]
 title: Favorite Windows Shortcuts
 
 ---
 
-So many times I watch Windows users spending lots of time doing task that should just take a few seconds but instead are taking several minutes because they are taking the long way around to get the task completed.  
+So many times I watch Windows users spending lots of time doing task that should just take a few seconds but instead are taking several minutes because they are taking the long way around to get the task completed.
 
 Here are some examples that I see people doing and below I will show you how to get them done the easiest way possible.
- 
-1. Getting 2 programs side by side half screened
-1. Navigating in Windows Explorer to find the Visual Studio solution or project directory 
-1. Open programs as an administrator 
-1. Just opening up task manager.  
 
-   
-**Note:**  All of these shortcuts are built directly into Windows. 
+1. Getting 2 programs side by side half screened
+1. Navigating in Windows Explorer to find the Visual Studio solution or project directory
+1. Open programs as an administrator
+1. Just opening up task manager.
+
+
+**Note:**  All of these shortcuts are built directly into Windows.
 
 
 ## Moving Program between half screen, full screen and monitors
@@ -37,7 +37,7 @@ Here are some examples that I see people doing and below I will show you how to 
 
 ## Start Program as Administrator
 
-Windows 8: 
+Windows 8:
 
 1. Windows Key
 1. Start typing program name to bring up search bar
@@ -47,9 +47,9 @@ Windows 8:
 
 ## Quickly Opening up Visual Studio Solutions
 
-Windows has a feature called Jump List that allows you to pick items to an icon in the taskbar that are available when you right-click on the icons. 
+Windows has a feature called Jump List that allows you to pick items to an icon in the taskbar that are available when you right-click on the icons.
 
-Example: 
+Example:
 
 1. Pin Visual Studio icon to taskbar
 1. Open a Visual Studio Solution
@@ -58,19 +58,18 @@ Example:
 1. Now instead of having to open Visual Studio and navigating to the solution file, you can right-click on the Visual Studio icon and select the solution from the pinned item.
 
 ## Quickly Opening Task Manager
- 
- Ctrl+Shift+Esc 
- 
- 
+
+ Ctrl+Shift+Esc
+
+
 ## Windows Explorer Favorites
- 
+
  Windows explorer has the favorites links section that you can drag folders onto.
- 
+
  This is a great place to put commonly used folders such as the folders for current project that you are working on.
-   
+
  **Note:** That adding or removing folders from the Favorites list does not have any affect on the actual folder, it only removes it from the Favorites list.
- 
- 
- 
- 
- 
+
+
+
+

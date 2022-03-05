@@ -12,7 +12,7 @@ excerpt: "Welcome the continuing series on using Jekyll. In this tutorial we are
   letting the world see them.  It will also let you have draft post where you can
   see them locally but on github they will not be visible.\n"
 published: true
-series: ["blogging-with-jekyll"]
+series: ["Blogging with Jekyll"]
 title: 'Jekyll Part 11: Installing Jekyll On OSx'
 ---
 

@@ -16,7 +16,7 @@ excerpt: "Welcome the continuing series on using Jekyll. In this tutorial we are
   runs without the drafts flag so you don't have to worry about drafts accidentally
   showing up.  \n"
 published: true
-series: ["blogging-with-jekyll"]
+series: ["Blogging with Jekyll"]
 title: 'Jekyll Part 12: Editing Locally'
 ---
 
@@ -24,7 +24,7 @@ Welcome the continuing series on using Jekyll. In this tutorial we are going to 
 
 ## Overview
 
-In the last couple of articles, we installed jekyll locally but we didn't talk about editing existing blog post or adding in new ones.  There will be times where you will start a blog post but not have time to finish it all in one sitting.  You could just create all of the files in the post directory and set the publish flag to false but over time it will become harder and harder to tell which articles have actually been published.  
+In the last couple of articles, we installed jekyll locally but we didn't talk about editing existing blog post or adding in new ones.  There will be times where you will start a blog post but not have time to finish it all in one sitting.  You could just create all of the files in the post directory and set the publish flag to false but over time it will become harder and harder to tell which articles have actually been published.
 
 Thankfully, jekyll supports having draft posts that by default don't show even if the publish flag is set to true unless you tell jekyll to run with drafts.  On Github, jekyll runs without the drafts flag so you don't have to worry about drafts accidentally showing up.
 
@@ -39,13 +39,13 @@ Thankfully, jekyll supports having draft posts that by default don't show even i
 		layout: post
 		title: 'Drafts Test'
 		categories: ['How-To']
-		date: 2015-09-11 06:00	
+		date: 2015-09-11 06:00
 		---
-		
+
 1. If you run the jekyll serve command, you will not see this post showing up.
 
 		jekyll serve --config _config.yml,_configdev.yml
-		
+
 ## Section 2: Running with Drafts
 
 To run jekyll with drafts, you just need to pass in the --drafts argument to the serve command
@@ -54,11 +54,10 @@ To run jekyll with drafts, you just need to pass in the --drafts argument to the
 
 Now if you view your site in your web browser, you will see your draft post.
 
-With the drafts argument, it does respect the publish front matter, so if you don't want a draft to show up even with the --drafts argument, just set the published to false for that article. 
+With the drafts argument, it does respect the publish front matter, so if you don't want a draft to show up even with the --drafts argument, just set the published to false for that article.
 
 ## Conclusion
 
 Now you can do all of your editing locally and check the drafts into your git repo without having to fear they will accidentally get published before they are ready.
 
 In our next lesson, I will show you how to create the series listing like you see below and how to be able to easily create a blog article series
- 

@@ -10,7 +10,7 @@ excerpt: "Welcome the continuing series on using Jekyll. In this tutorial we wil
   or blog post by category/date, you are going to want these as separate pages.  These
   pages most likely will have there own look and feel as well.\n"
 published: true
-series: ["blogging-with-jekyll"]
+series: ["Blogging with Jekyll"]
 title: 'Jekyll Part 04: Adding Additional Pages'
 ---
 

@@ -10,7 +10,7 @@ excerpt: "Welcome the continuing series on using Jekyll. In this tutorial we wil
   one by one.  Unfortunately, the Jekyll-Now repository that we cloned your blog from,
   does not have these pages.  Luckily, these pages are really easy to create.\n"
 published: true
-series: ["blogging-with-jekyll"]
+series: ["Blogging with Jekyll"]
 title: 'Jekyll Part 05: Adding Category Page'
 ---
 

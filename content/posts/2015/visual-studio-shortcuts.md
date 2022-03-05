@@ -7,12 +7,12 @@ excerpt: I am keyboard person and like shortcut keys.  There are lot of availabl
   shortcuts in Visual Studio and here is a list of the Visual Studio shortcuts that
   I use.
 published: true
-series: ["developer-productivity"]
+series: ["Developer Productivity"]
 title: Favorite Visual Studio Shortcuts
 
 ---
 
-Here is a list of  Visual Studio Community Edition shortcuts that I use.  
+Here is a list of  Visual Studio Community Edition shortcuts that I use.
 
 ## Building Solution
 
@@ -34,22 +34,22 @@ Here is a list of  Visual Studio Community Edition shortcuts that I use.
 
 ## Building Current Project
 
-There is no default shortcut for building the current project or running code analysis on it.  You can go  under the Build menu and select to build just the current project but this is a manual step that requires you to navigate through the menus.  
+There is no default shortcut for building the current project or running code analysis on it.  You can go  under the Build menu and select to build just the current project but this is a manual step that requires you to navigate through the menus.
 
 To accomplish this, I set the keyboard shortcut Ctrl + \ .
 
 1. Tools -> Options -> Keyboard or Ctrl + Q, type Keyboard, and hit Enter
 2. Set shortcut for Build.BuildSelection.
-3. Open a file and Ctrl+\ should now build that project  
+3. Open a file and Ctrl+\ should now build that project
 
 **Run Code Analysis on Current Project**
 
-You can also run code analysis on the current project like you can on the whole solution.  
+You can also run code analysis on the current project like you can on the whole solution.
 
 To accomplish this, I set the keyboard shortcut Ctrl+Alt+\
 
 1. Tools -> Options -> Keyboard or Ctrl + Q, type Keyboard, and hit Enter
-1. Set shortcut for Build.RunCodeAnalysisonSelection.  
+1. Set shortcut for Build.RunCodeAnalysisonSelection.
 1. Open a file and Ctrl+Alt+\ to run the the code analysis for the project
 
 ## Debugging
@@ -134,7 +134,7 @@ To accomplish this, I set the keyboard shortcut Ctrl+Alt+\
 
 ## Visual Studio Windows Layout
 
-In Visual Studio 2015, you can now save the Windows Layout and change them with a shortcut key.  
+In Visual Studio 2015, you can now save the Windows Layout and change them with a shortcut key.
 
 1. To Save:  In Visual Studio 2015, under the Windows menu, click the Save Windows Layout
 1. To Apply Layout: In Visual Studio 2015, under the Windows menu, select the Apply Windows layout popout and pick the layout to apply.  There is also a shortcut key for each of the saved Windows layouts.  By default it is Ctrl+Alt+# (e.g. Ctrl+Alt+1 for the 1st saved layout)

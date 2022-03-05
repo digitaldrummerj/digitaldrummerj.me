@@ -8,16 +8,16 @@ excerpt: |
 
   Below I have listed the code snippets  that I most frequently use and what the output from them looks like.
 published: true
-series: ["developer-productivity"]
+series: ["Developer Productivity"]
 title: Visual Studio Code Snippets
 
 ---
 
 There are a bunch of built-in Visual Studio code snippets that will generate code for you with a short keyword and then a tab key press.  These shortcuts will make you more efficient when writing code such as creating properties, loops, exceptions, etc.
 
-Below I have listed the code snippets  that I most frequently use and what the output from them looks like.  
+Below I have listed the code snippets  that I most frequently use and what the output from them looks like.
 
-To use these snippets type they keyword and then press the tab key. 
+To use these snippets type they keyword and then press the tab key.
 
 ## Loops
 
@@ -26,25 +26,25 @@ To use these snippets type they keyword and then press the tab key.
 		do
 		{
 		} while (b);
-	
+
 * while
 
 		while (true)
 		{
 		}
-	
+
 * for
 
 		for (int i = 0; i < UPPER; i++)
 		{
 		}
-	
+
 * foreach
 
 		foreach (var VARIABLE in COLLECTION)
 		{
 		}
-	
+
 ## Conditionals
 
 * if
@@ -52,13 +52,13 @@ To use these snippets type they keyword and then press the tab key.
 		if (b)
 		{
 		}
-	
+
 * else
 
 		else
 		{
 		}
-	
+
 * switch
 
 		switch (@enum)
@@ -76,7 +76,7 @@ To use these snippets type they keyword and then press the tab key.
 		{
 			throw;
 		}
-		
+
 * tryf
 
 		try
@@ -85,7 +85,7 @@ To use these snippets type they keyword and then press the tab key.
 		finally
 		{
 		}
-	
+
 * exception
 
 		[Serializable]
@@ -114,13 +114,13 @@ To use these snippets type they keyword and then press the tab key.
 			{
 			}
 		}
-		
+
 ## Properties
 
 * prop
 
 		public TYPE Type { get; set; }
-	
+
 * propfull
 
 		private int myVar;
@@ -130,7 +130,7 @@ To use these snippets type they keyword and then press the tab key.
 			get { return myVar; }
 			set { myVar = value; }
 		}
-	
+
 * propg
 
 		public int I { get; private set; }
@@ -138,35 +138,35 @@ To use these snippets type they keyword and then press the tab key.
 ## Misc
 
 * ctor
-	
+
 		public class Misc
 		{
 			public Misc()
-			{	
+			{
 			}
 		}
-	
+
 * enum
 
 		enum MyEnum
 		{
 		}
-	
+
 * struct
 
 		struct MyStruct
 		{
 		}
-	
+
 * &num;region
 
 		#region MyRegion
 		#endregion
 
 
-There are several more code snippets that are available at [http://tinyurl.com/vscodesnippets](http://tinyurl.com/vscodesnippets).  
+There are several more code snippets that are available at [http://tinyurl.com/vscodesnippets](http://tinyurl.com/vscodesnippets).
 
-With these few code snippets you will be amazed at how much less code you end up writing by hand.  Ever little bit helps to make you more productive and efficient as a developer.  
+With these few code snippets you will be amazed at how much less code you end up writing by hand.  Ever little bit helps to make you more productive and efficient as a developer.
 
 Let me know what you favorite snippets are or ones that you have created.
 

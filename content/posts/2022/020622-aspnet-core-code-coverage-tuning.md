@@ -1,12 +1,12 @@
 ---
-categories: ["testing", "dotnet-core", "dotcover"]
+categories: ["testing", "aspnet-core", "dotcover"]
 date: 2022-02-06T13:00:00Z
 published: true
 title: "dotCover - Optimizing Coverage Report to Only Include Our Applications Logic"
 url: '/aspnet-core-code-coverage-tuning-dotCover/'
-series: ['aspnet-core-code-coverage']
+series: ['ASP.NET Core Code Coverage']
 ---
-In part 1 of the ASPNET Code Coverage Using dotCover, we hooked up dotCover to our project to generate our code coverage report.  It was pretty easy to hook it up but the number is not the most accurate as it includes every file that is part of the solution including our test project and all of the ASP.NET WebApi code.
+In [part 1](/aspnet-core-code-coverage) of the ASPNET Code Coverage Using dotCover, we hooked up dotCover to our project to generate our code coverage report.  It was pretty easy to hook it up but the number is not the most accurate as it includes every file that is part of the solution including our test project and all of the ASP.NET WebApi code.
 
 When looking at code coverage, we only want to include files that make sense to test against so that our code coverage number is the most accurate.  So that means we should exclude our unit tests project from the report since we are not going to run tests against our test projects.  Same thing with the ASP.NET WebApi startup.cs, program.cs and Controllers as we would want to test those using integration tests and not unit tests.
 

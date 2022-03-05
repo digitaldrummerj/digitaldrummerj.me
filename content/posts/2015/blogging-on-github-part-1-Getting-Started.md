@@ -20,7 +20,7 @@ excerpt: "\nWelcome to the first tutorial of a multi part series on blogging usi
   Google analytics.\n"
 published: true
 redirect_from: /blogging-on-github-part-1/
-series: ["blogging-with-jekyll"]
+series: ["Blogging with Jekyll"]
 title: 'Jekyll Part 01: Getting Started'
 ---
 

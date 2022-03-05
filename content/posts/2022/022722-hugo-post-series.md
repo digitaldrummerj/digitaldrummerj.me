@@ -4,6 +4,7 @@ date: 2022-02-27T13:00:00Z
 published: true
 title: "Hugo - Create a Post Series"
 url: '/hugo-post-series'
+series: ['Blogging With Hugo']
 ---
 
 When writing a blog, sometimes you want to write a multiple part posts that are meant to be read in order and you want to display to the reader that the post is part of a series, where the post is in the series and a link to get to the other posts in the series.
@@ -63,7 +64,7 @@ First, we need to create the partial that will generate the series html.
     {{ end }}
     ```
 
-1. To show the series list we need to add the `series:` parameter to any posts that are part of a series with the name of the series like we did below with the `series: ['aspnet-core-code-coverage']`
+1. To show the series list we need to add the `series:` parameter to any posts that are part of a series with the name of the series like we did below with the `series: ['ASP.NET Core Code Coverage']`
 
     ```markdown {linenos=false,hl_lines=[6]}
     ---
@@ -71,7 +72,7 @@ First, we need to create the partial that will generate the series html.
     date: 2022-02-09T13:00:00Z
     published: true
     title: dotCover - How in TeamCity to create multiple coverage reports
-    series: ['aspnet-core-code-coverage']
+    series: ['ASP.NET Core Code Coverage']
     ---
     ```
 
