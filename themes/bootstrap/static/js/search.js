@@ -202,7 +202,7 @@ window.addEventListener("DOMContentLoaded", event => {
               )));
               target.appendChild(element);
             }
-            title.scrollIntoView(true);
+            // title.scrollIntoView(true);
 
             if (!doNotAddState) {
                 history.pushState({type: "search", term: term}, title.textContent, "#search=" + encodeURIComponent(term));
