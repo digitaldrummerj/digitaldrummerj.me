@@ -1,5 +1,4 @@
 {{define "main" }}
-
 <div class="container">
   <div class="row">
     <div class="col-lg-10 col-lg-offset-2 col-md-11 col-md-offset-1">
@@ -13,12 +12,24 @@
           />
         </div>
       </form>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-lg-10 col-lg-offset-2 col-md-11 col-md-offset-1">
+      <p>Search Help:</p>
+      <ul>
+        <li>Wildcards: *</li>
+        <li>Keyword Prescence: Default is OR multiple words.  Can use + say term must be present or - to say term must not be present.  `+foo bar -baz` must contain foo, might contain bar and must not contain baz</li>
+        <li>Dashes in Term: if you use a dash as part of the term, it must be escaped with a `\` e.g. `aspnet\-core'</li>
+        <li>Search Fields: you can narrow the search by looking in specific fields.  title, subtitle, categories,description</li>
+      </ul>
+    </div>
+  </div>
 
       <div id="results" class="results"></div>
     </div>
   </div>
 </div>
-<<<<<<< HEAD:themes/bootstrap/layouts/search/single.html
 <template id="search-result" hidden>
   <div class="post-preview">
     <a class="summary-title-link">
@@ -45,17 +56,9 @@
   <hr />
 </template>
 
-<script src="/js/lunr.min.js"></script>
-<script src="/js/search.js"></script>
+  {{ $lunr := resources.Get "js/lunr.js" | minify }}
+  <script src="{{ $lunr.RelPermalink }}"></script>
+
+    {{ $search := resources.Get "js/search.js" | minify }}
+  <script src="{{ $search.RelPermalink }}"></script>
 {{ end }}
-=======
-<noscript>
-  Search
-  <a href="https://www.google.com/search?q=site:{{ .Site.BaseURL | absLangURL }}" target="_blank"
-    >Google</a
-  >
-  for:
-  <pre><code>search-term site: {{ .Site.BaseURL | absLangURL }} </code></pre>
-</noscript>
-{{ end }}
->>>>>>> origin/main:themes/bootstrap/layouts/page/search.html

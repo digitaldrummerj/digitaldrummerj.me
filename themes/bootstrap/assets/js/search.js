@@ -83,16 +83,15 @@ window.addEventListener("DOMContentLoaded", event => {
             }
 
             lookup = {};
-            index = lunr(function() {
+            index = lunr(function () {
                 this.ref("uri");
-                this.field("title");
+                this.field("title", { boost: 10 });
                 this.field("subtitle");
                 this.field("content");
                 this.field("description");
-                this.field("categories");
+                this.field("categories", { boost: 5});
                 this.field('summary');
                 this.field('publishdate');
-                this.field('lastmoddate');
 
                 for (let document of documents) {
                     this.add(document);
@@ -240,5 +239,24 @@ window.addEventListener("DOMContentLoaded", event => {
             }
         }
         return result;
+    }
+
+    function displayErrorMessage(message) {
+      document.querySelector('.search-error-message').innerHTML = message;
+      document.querySelector('.search-container').classList.remove('focused');
+      document.querySelector('.search-error').classList.remove('hide-element');
+      document.querySelector('.search-error').classList.add('fade');
+    }
+
+    function getLunrSearchQuery(query) {
+      const searchTerms = query.split(' ');
+      if (searchTerms.length === 1) {
+        return query;
+      }
+      query = '';
+      for (const term of searchTerms) {
+        query += `+${term} `;
+      }
+      return query.trim();
     }
 }, {once: true});
