@@ -1,13 +1,18 @@
-[
-  {{- range $index, $page := .Site.RegularPages -}}
-    {{- if gt $index 0 -}} , {{- end -}}
-    {{- $entry := dict "uri" $page.Rel\Permalink -}}
-    {{- $entry := dict "title" $page.Title -}}
-    {{- $entry = merge $entry (dict "summary" ($page.Summary)) -}}
-    {{- $entry = merge $entry (dict "publishdate" ($page.PublishDate)) -}}0
-    {{- $entry = merge $entry (dict "content" ($page.Plain | htmlUnescape)) -}}
-    {{- $entry = merge $entry (dict "description" $page.Description) -}}
-    {{- $entry = merge $entry (dict "categories" (delimit $page.Params.categories " ; ")) -}}
-    {{- $entry | jsonify -}}
-  {{- end -}}
-]
+{{- $.Scratch.Add "pagesIndex" slice -}}
+{{- $.Scratch.Add "urlsAdded" slice -}}
+{{- range $index, $page := .Site.RegularPages -}}
+  {{- if gt (len $page.Content) 0 -}}
+    {{- if not (in ($.Scratch.Get "urlsAdded") $page.Permalink) -}}
+      {{- $entry := dict "uri" $page.RelPermalink -}}
+      {{- $entry = merge $entry (dict "title" $page.Title) -}}
+      {{- $entry = merge $entry (dict "summary" $page.Summary) -}}
+      {{- $entry = merge $entry (dict "publishdate" $page.PublishDate) -}}
+      {{- $entry = merge $entry (dict "content" ($page.Plain | htmlUnescape)) -}}
+      {{- $entry = merge $entry (dict "description" $page.Description) -}}
+      {{- $entry = merge $entry (dict "categories" $page.Params.categories) -}}
+      {{- $.Scratch.Add "pagesIndex" $entry -}}
+      {{- $.Scratch.Add "urlsAdded" $page.Permalink -}}
+    {{end }}
+  {{ end }}
+{{- end -}}
+{{- $.Scratch.Get "pagesIndex" | jsonify -}}

@@ -16,16 +16,28 @@
   </div>
   <div class="row">
     <div class="col-lg-10 col-lg-offset-2 col-md-11 col-md-offset-1">
-      <p>Search Help:</p>
+      <h3>Advanced Search Options:</h3>
       <ul>
-        <li>Wildcards: *</li>
-        <li>Keyword Prescence: Default is OR multiple words.  Can use + say term must be present or - to say term must not be present.  `+foo bar -baz` must contain foo, might contain bar and must not contain baz</li>
-        <li>Dashes in Term: if you use a dash as part of the term, it must be escaped with a `\` e.g. `aspnet\-core'</li>
-        <li>Search Fields: you can narrow the search by looking in specific fields.  title, subtitle, categories,description</li>
+        <li><strong>Wildcards:</strong> *</li>
+        <li><strong>Keyword Prescence:</strong> Default is OR multiple words.
+            <ul>
+              <li>Include Term: add + to start of term (e.g. <code>+aspnet</code></li>
+              <li>Exclude Term: add - to start of term (e.g. <code>-dotcover</code></li>
+              <li>You can combine them together. <code>+foo bar -baz</code> must contain foo, might contain bar and must not contain baz</li>
+            </ul>
+        </li>
+        <li><strong>Dashes in Term:</strong> if you use a dash as part of the term, it must be escaped with a <code>\</code> e.g. <code>aspnet\-core</code></li>
+        <li><strong>Filter by Category or other Field: </strong>you can tell the search to include a term in a field such as a category or title.
+          <ul>
+            <li><code>categories:aspnet\-core</code> to search the aspnet-core category</li>
+            <li>Available fields are: title, subtitle, categories,description</li>
+          </ul>
+        </li>
       </ul>
     </div>
   </div>
-
+  <div class="row">
+    <div class="col-log-10 col-lg-offset-2 col-md-11 col-md-offset-1">
       <div id="results" class="results"></div>
     </div>
   </div>
@@ -59,6 +71,6 @@
   {{ $lunr := resources.Get "js/lunr.js" | minify }}
   <script src="{{ $lunr.RelPermalink }}"></script>
 
-    {{ $search := resources.Get "js/search.js" | minify }}
+    {{ $search := resources.Get "js/search.js" }}
   <script src="{{ $search.RelPermalink }}"></script>
 {{ end }}

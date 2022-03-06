@@ -176,7 +176,7 @@ window.addEventListener("DOMContentLoaded", event => {
                 '.read-more-link'
                 ).href = doc.uri;
 
-                if (doc.categories !== null) {
+                if (doc.categories !== null && doc.categories !== undefined) {
                     for (let index = 0; index < doc.categories.length; index++) {
                         let tagElement = element.querySelector('.tag').cloneNode(true);
                         const tag = doc.categories[index];
@@ -196,7 +196,7 @@ window.addEventListener("DOMContentLoaded", event => {
               element.querySelector('.summary').innerHTML = doc.summary;
                 element.querySelector('.time').textContent = formatDate(new Date(
                     convertTZ(
-                doc.lastmoddate,
+                doc.publishdate,
                 'America/Phoenix'
               )));
               target.appendChild(element);
