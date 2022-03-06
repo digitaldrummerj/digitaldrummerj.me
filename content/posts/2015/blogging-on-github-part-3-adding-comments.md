@@ -14,7 +14,7 @@ excerpt: "Welcome the continuing series on using Jekyll.  In this tutorial you w
   will go through the process of getting a Disqus account, configuring  the account,
   \ configuring your blog and testing it all out.\n"
 published: true
-series: ["blogging-with-jekyll"]
+series: ["Blogging with Jekyll"]
 title: 'Jekyll Part 03: Adding Commenting to Post'
 ---
 

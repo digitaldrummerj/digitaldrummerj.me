@@ -35,6 +35,7 @@ pygmentsStyle = "manni" #"friendly"
   safariMaskColor = "#545271"
   msApplicationTileColor = "#545271"
   Comments = false
+  seriesListLimit = 5
   mainSections = ["posts"]
 
 # Allow HTML to be included from Markdown files
@@ -107,7 +108,17 @@ pygmentsStyle = "manni" #"friendly"
     twitter = true
 
 [outputs]
-home = ["HTML","FEED", "RSS"]
+home = ["HTML","RSS", "FEED","Lunr"]
+
+[outputFormats.Lunr]
+baseName = "lunr"
+isPlainText = true
+mediaType = "application/json"
+notAlternative = true
+
+[params.lunr]
+vars = ["title", "summary", "content", "description", "publishdate", "uri", "categories"]
+params = ["categories"]
 
 [mediaTypes]
 [mediaTypes."application/rss"]

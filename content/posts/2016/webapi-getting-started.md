@@ -1,7 +1,5 @@
 ---
-categories:
-- dotnet
-- asp.net
+categories: ["dotnet", "aspnet"]
 date: 2016-08-23T00:00:00Z
 excerpt: "Welcome to the series on getting started with .NET Web Api.  In this article
   we will create a basic C# Web Api with Windows Integrated Authentication and create
@@ -13,7 +11,7 @@ excerpt: "Welcome to the series on getting started with .NET Web Api.  In this a
   for the response \n- Setup A Standard Response\n- Solving CORS Issues When Using
   Credentials\n"
 published: true
-series: ["web-api-getting-started"]
+series: [WebApi Getting Started"]
 title: ASP.NET Web Api - Getting Started
 ---
 

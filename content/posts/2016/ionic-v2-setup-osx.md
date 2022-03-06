@@ -8,8 +8,8 @@ excerpt: "In order to work with the Ionic framework there is a bit of software i
   I first started using Ionic.  \n\nThis guide will go through all of the steps needed
   for deploying to an Android and iOS device using a Mac.  \n"
 published: true
-series: ["ionic2-setup"]
-tag: ionic2-setup
+series: ["Ionic2 Setup"]
+tag: Ionic2 Setup
 toc: true
 title: Ionic v2 - Setup on OSx
 

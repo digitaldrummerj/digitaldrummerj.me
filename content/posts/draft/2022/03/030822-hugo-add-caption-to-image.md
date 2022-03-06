@@ -4,6 +4,7 @@ date: 2022-03-08T13:00:00Z
 published: false
 title: "Hugo - Add Caption to Image"
 url: '/hugo-add-caption-to-image'
+series: ['Blogging With Hugo']
 ---
 
 

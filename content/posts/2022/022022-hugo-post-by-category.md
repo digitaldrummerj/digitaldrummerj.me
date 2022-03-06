@@ -4,6 +4,7 @@ date: 2022-02-20T13:00:00Z
 published: true
 title: "Hugo - View Posts Grouped by Category"
 url: '/hugo-view-post-grouped-by-category'
+series: ['Blogging With Hugo']
 ---
 
 In our [previous post](/hugo-view-post-grouped-by-month), we create a page to view our posts grouped by month.  In this post, we are going to create a page to show post grouped by category.

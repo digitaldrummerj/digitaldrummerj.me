@@ -2,6 +2,8 @@
 title: "About"
 layout: "about"
 Description: "Making the Complex Simple and Easy to Understand!"
+date: 2022-02-15T13:00:00Z
+
 ---
 
 I have been programming, designing, and testing web applications for over 20 years.  I love to share my knowledge with others to help get you to your end goals faster.  I am a frequent speaker at conferences, meetups and community events.

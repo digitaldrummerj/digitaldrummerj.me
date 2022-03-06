@@ -10,7 +10,7 @@ excerpt: "Welcome to part 7 of the series on Blogging on Github.  In this lesson
   engine built-in.  Thankfully, with Google you can easily tell Google to index your
   blog and then add a search box on the blog.\n"
 published: true
-series: ["blogging-with-jekyll"]
+series: ["Blogging with Jekyll"]
 title: 'Jekyll Part 07: Adding a custom Google search'
 ---
 

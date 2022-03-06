@@ -1,7 +1,5 @@
 ---
-categories:
-- dotnet-core
-- asp.net
+categories: ["aspnet-core"]
 date: 2018-11-06T00:00:00Z
 published: true
 title: Download .gitignore with a .NET CLI Global Tool

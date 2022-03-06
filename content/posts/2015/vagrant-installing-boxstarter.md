@@ -14,7 +14,7 @@ excerpt: "Welcome to the Vagrant lesson on installing Boxstarter as part of the 
   size.\n* Set Windows explorer options like showing hidden files, protected OS files,
   and file extensions.\n"
 published: true
-series: ["vagrant getting started"]
+series: ["Vagrant Getting Started"]
 title: Vagrant Part 4 - Install Boxstarter
 
 ---

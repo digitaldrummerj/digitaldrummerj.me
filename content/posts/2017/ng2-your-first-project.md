@@ -17,7 +17,7 @@ excerpt: "Welcome to the series on Getting Started with Angular 2.  Angular 2 wa
   CLI to generate the project and several of the features such as components, services,
   modules, and pipes."
 published: true
-series: ["angular2-getting-started"]
+series: ["Angular 2 Getting Started"]
 title: Angular - Your First Project
 
 ---

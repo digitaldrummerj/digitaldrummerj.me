@@ -12,7 +12,7 @@ excerpt: "Welcome the continuing series on using Jekyll. In this tutorial we are
   it might seem like this is going to be complicated but it is actually very easy
   to set this up.\n"
 published: true
-series: ["blogging-with-jekyll"]
+series: ["Blogging with Jekyll"]
 title: 'Jekyll Part 08: Using a Custom Domain'
 ---
 

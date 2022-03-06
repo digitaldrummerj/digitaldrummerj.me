@@ -1,0 +1,76 @@
+{{define "main" }}
+<div class="container">
+  <div class="row">
+    <div class="col-lg-10 col-lg-offset-2 col-md-11 col-md-offset-1">
+      <form id="search" class="search" role="search">
+        <div class="form-group form-group-lg">
+          <input
+            type="search"
+            class="form-control"
+            id="search-input"
+            placeholder="Enter search term and hit enter"
+          />
+        </div>
+      </form>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-lg-10 col-lg-offset-2 col-md-11 col-md-offset-1">
+      <h3>Advanced Search Options:</h3>
+      <ul>
+        <li><strong>Wildcards:</strong> *</li>
+        <li><strong>Keyword Prescence:</strong> Default is OR multiple words.
+            <ul>
+              <li>Include Term: add + to start of term (e.g. <code>+aspnet</code></li>
+              <li>Exclude Term: add - to start of term (e.g. <code>-dotcover</code></li>
+              <li>You can combine them together. <code>+foo bar -baz</code> must contain foo, might contain bar and must not contain baz</li>
+            </ul>
+        </li>
+        <li><strong>Dashes in Term:</strong> if you use a dash as part of the term, it must be escaped with a <code>\</code> e.g. <code>aspnet\-core</code></li>
+        <li><strong>Filter by Category or other Field: </strong>you can tell the search to include a term in a field such as a category or title.
+          <ul>
+            <li><code>categories:aspnet\-core</code> to search the aspnet-core category</li>
+            <li>Available fields are: title, subtitle, categories,description</li>
+          </ul>
+        </li>
+      </ul>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-log-10 col-lg-offset-2 col-md-11 col-md-offset-1">
+      <div id="results" class="results"></div>
+    </div>
+  </div>
+</div>
+<template id="search-result" hidden>
+  <div class="post-preview">
+    <a class="summary-title-link">
+      <h2 class="post-title"></h2>
+    </a>
+    <p class="post-meta">
+      <span>
+        <span class="fa fa-calendar"></span>
+        <time class="time" datetime=""></time>
+      </span>
+      <span class="meta-tags">
+        <span class="fa fa-tags"></span>
+        <span class="tags"><span class="tag"><span class="sep"></span>
+          <a class="tag-link" href=""></a></span>
+        </span>
+      </span>
+    </p>
+
+    <p class="post-subtitle summary"></p>
+    <p>
+      <a class="read-more-link"><strong>Read More</strong></a>
+    </p>
+  </div>
+  <hr />
+</template>
+
+  {{ $lunr := resources.Get "js/lunr.js" | minify }}
+  <script src="{{ $lunr.RelPermalink }}"></script>
+
+    {{ $search := resources.Get "js/search.js" }}
+  <script src="{{ $search.RelPermalink }}"></script>
+{{ end }}

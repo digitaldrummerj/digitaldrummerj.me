@@ -1,9 +1,7 @@
 <div class="post-preview">
   {{ if .Params.featured_image }}<a href="{{ .Permalink }}"><img src="{{ .Params.featured_image }}"></a>{{ end }}
 
-  <a href="{{ .Permalink }}">
-    <h2 class="post-title">{{ .Title | markdownify }}</h2>
-  </a>
+  <h2 class="post-title"><a href="{{ .Permalink }}">{{ .Title | markdownify }}</a></h2>
   <p class="post-meta">{{ partial "meta.html" .}}{{ partial "draft" . }}</p>
   <p class="post-subtitle">{{ .Summary}}</p>
   <p>

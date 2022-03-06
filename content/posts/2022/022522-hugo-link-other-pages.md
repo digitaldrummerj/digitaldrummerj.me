@@ -4,6 +4,7 @@ date: 2022-02-25T13:00:00Z
 published: true
 title: "Hugo - Open External Links in a New Tab"
 url: '/hugo-links-to-other-pages'
+series: ['Blogging With Hugo']
 ---
 
 For Hugo based websites, when a link goes to an external website, I prefer to have them open in a new browser tab.
