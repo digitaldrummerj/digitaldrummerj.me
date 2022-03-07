@@ -7,11 +7,33 @@ url: '/hugo-add-copy-code-snippet-button'
 series: ['Blogging With Hugo']
 ---
 
+As a technical site, I have a good number of posts that include code snippets that are meant for the reader to be able to cut and paste.  Instead of always making the user have to select all of the lines from the code snippet, it would be awesome to give them a copy button for the snippet.
+
+**Example without line numbers:**
+![copy button example](/images/hugo/copy-button/example.png)
+
+**Example with line nunmbers:**
+
+![copy button example with line numbers](/images/hugo/copy-button/example-with-line-num.png)
+
+In this post, we are going to take a look at how to implement the copy button.
+
 <!--more-->
 
-Highlighter site configuration
+## Requirements
 
-```toml
+There are a few requirements to make this work.
+
+1. Automatically add the copy button without having to add specific to a post
+1. Works with both line numbers on and line numbers off
+1. Copy button says "Copied" after clicking on it and then goes back to copy after a few seconds
+1. Work cross browser
+1. Copy button is located within the code snippet section
+1. The type of code snippet is added to the top left above the code snippet
+
+## Hugo Highlighter Site Configuration
+
+```toml {linenos=true}
 [markup]
   [markup.highlight]
     anchorLineNos = false
