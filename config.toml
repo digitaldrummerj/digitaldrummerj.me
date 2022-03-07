@@ -37,8 +37,8 @@ pygmentsStyle = "manni" #"friendly"
   Comments = false
   seriesListLimit = 5
   mainSections = ["posts"]
+  images = ["/images/james.png"]
 
-# Allow HTML to be included from Markdown files
 [markup.goldmark.renderer]
   unsafe = true
 
