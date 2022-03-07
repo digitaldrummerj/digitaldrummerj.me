@@ -301,6 +301,10 @@ hr.small {
     text-decoration: underline;
 }
 
+.post-preview .post-title a {
+  text-decoration: none;
+}
+
 .post-preview>a {
   color: #404040
 }
