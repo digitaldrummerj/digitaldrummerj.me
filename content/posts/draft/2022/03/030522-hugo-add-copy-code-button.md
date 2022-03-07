@@ -1,12 +1,13 @@
 ---
 categories: ["blogging", "hugo"]
-date: 2022-03-05T13:00:00Z
+date: 2022-03-07T13:00:00Z
 published: false
 title: "Hugo - Add Copy Code Snippet Button"
 url: '/hugo-add-copy-code-snippet-button'
 series: ['Blogging With Hugo']
 ---
 
+<!--more-->
 
 Highlighter site configuration
 
