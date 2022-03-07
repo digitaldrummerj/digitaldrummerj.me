@@ -31,6 +31,7 @@ languageCode = "en"
   Comments = false
   seriesListLimit = 5
   mainSections = ["posts"]
+  images = ["/images/james.png"]
 
 [markup]
   # Allow HTML to be included from Markdown files

@@ -296,6 +296,15 @@ hr.small {
     padding: 30px;
 }
 
+.post-preview a,
+.post-content a {
+    text-decoration: underline;
+}
+
+.post-preview .post-title a {
+  text-decoration: none;
+}
+
 .post-preview>a {
   color: #404040
 }
