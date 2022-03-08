@@ -4,8 +4,13 @@ function createCopyButton(highlightDiv) {
   button.type = "button";
   button.innerText = "Copy";
   button.addEventListener("click", () => copyCodeToClipboard(button, highlightDiv));
-  addCopyButtonToDom(button, highlightDiv);
+   highlightDiv.insertBefore(button, highlightDiv.firstChild);
+   const wrapper = document.createElement('div');
+   wrapper.className = 'highlight-wrapper';
+   highlightDiv.parentNode.insertBefore(wrapper, highlightDiv);
+   wrapper.appendChild(highlightDiv);
 }
+document.querySelectorAll('.highlight').forEach((highlightDiv) => createCopyButton(highlightDiv));
 
 async function copyCodeToClipboard(button, highlightDiv) {
   const codeToCopy = highlightDiv.querySelector(":last-child > .chroma > code").innerText;
@@ -19,7 +24,11 @@ async function copyCodeToClipboard(button, highlightDiv) {
   } catch (_) {
     copyCodeBlockExecCommand(codeToCopy, highlightDiv);
   } finally {
-    codeWasCopied(button);
+     button.blur();
+     button.innerText = 'Copied!';
+     setTimeout(function () {
+       button.innerText = 'Copy';
+     }, 2000);
   }
 }
 
@@ -39,21 +48,3 @@ function copyCodeBlockExecCommand(codeToCopy, highlightDiv) {
   document.execCommand("copy");
   highlightDiv.removeChild(textArea);
 }
-
-function codeWasCopied(button) {
-  button.blur();
-  button.innerText = "Copied!";
-  setTimeout(function () {
-    button.innerText = "Copy";
-  }, 2000);
-}
-
-function addCopyButtonToDom(button, highlightDiv) {
-  highlightDiv.insertBefore(button, highlightDiv.firstChild);
-  const wrapper = document.createElement("div");
-  wrapper.className = "highlight-wrapper";
-  highlightDiv.parentNode.insertBefore(wrapper, highlightDiv);
-  wrapper.appendChild(highlightDiv);
-}
-
-document.querySelectorAll(".highlight").forEach((highlightDiv) => createCopyButton(highlightDiv));

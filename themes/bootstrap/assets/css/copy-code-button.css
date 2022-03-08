@@ -2,14 +2,27 @@
   display: block;
 }
 
+/* Start: Turn off individual column border, margin, and padding when line numbers are showing */
 .highlight-wrapper .lntd pre {
     padding: 0;
-
 }
 
 .chroma .lntd pre {
     border: 0px solid #ccc;
 }
+
+.chroma .lntd:first-child {
+  padding: 7px 7px 7px 10px;
+  margin: 0;
+}
+
+.chroma .lntd:last-child {
+  padding: 7px 10px 7px 7px;
+  margin: 0;
+}
+/* End: Turn off individual column border, margin, and padding when line numbers are showing */
+
+
 .highlight {
   position: relative;
   z-index: 0;
@@ -23,16 +36,6 @@
   z-index: 1;
   border-radius: 4px;
   padding: 10px;
-}
-
-.chroma .lntd:first-child {
-  padding: 7px 7px 7px 10px;
-  margin: 0;
-}
-
-.chroma .lntd:last-child {
-  padding: 7px 10px 7px 7px;
-  margin: 0;
 }
 
 .copy-code-button {
@@ -89,5 +92,6 @@
     border-bottom-left-radius: 0;
     border-bottom-right-radius: 0;
     padding: 5px 10px 7px;
-    line-height: 1
+    line-height: 1;
+    opacity: 0.6;
 }
