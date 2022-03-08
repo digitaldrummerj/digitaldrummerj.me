@@ -12,12 +12,6 @@ languageCode = "en"
 
 #googleAnalytics = "" # delete or comment to disable Google Analytics JS generation
 
-# Set to true to enable syntax highlighting in code fences with a language tag
-pygmentsCodefences =  true
-
-# color-codes for highlighting derived from this style
-pygmentsStyle = "manni" #"friendly"
-
 [Author]
   name = "Justin James"
 
@@ -39,8 +33,23 @@ pygmentsStyle = "manni" #"friendly"
   mainSections = ["posts"]
   images = ["/images/james.png"]
 
-[markup.goldmark.renderer]
-  unsafe = true
+[markup]
+  # Allow HTML to be included from Markdown files
+  [markup.goldmark.renderer]
+    unsafe = true
+  [markup.highlight]
+    anchorLineNos = false
+    codeFences = true
+    guessSyntax = false
+    hl_Lines = ''
+    lineAnchors = ''
+    lineNoStart = 1
+    lineNos = false
+    lineNumbersInTable = true
+    noClasses = false
+    noHl = false
+    style = 'monokailight'
+    tabWidth = 4
 
 # Used in the theme\layouts\contact\single.html
 [params.contactusform]

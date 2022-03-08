@@ -301,6 +301,10 @@ hr.small {
     text-decoration: underline;
 }
 
+.post-preview .post-title a {
+  text-decoration: none;
+}
+
 .post-preview>a {
   color: #404040
 }
@@ -328,6 +332,10 @@ hr.small {
   font-size: 18px;
   font-style: italic;
   margin-top: 0
+}
+
+#TableOfContents a {
+  color: #4b56a8;
 }
 
 .post-preview .post-meta a {
