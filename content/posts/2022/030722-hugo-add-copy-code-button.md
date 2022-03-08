@@ -5,6 +5,7 @@ published: true
 title: "Hugo - Dynamically Add Copy Code Snippet Button"
 url: '/hugo-add-copy-code-snippet-button'
 series: ['Blogging With Hugo']
+toc: true
 ---
 
 I have many posts on this site that include code snippets for the reader to cut and paste into their code. From a usability perspective, instead of always making the user select lines from the code snippet to copy and paste, we can add a copy button to the code snippet.
@@ -284,6 +285,8 @@ In your footer, add the following after the rest of your JavaScript code input.
 ```
 
 Now any time you navigate to a page on your site with a code snippet (e.g. `<pre>` tag), a copy button will be added to the code snippet, and the code snippet will be copied to the clipboard.
+
+## Inspiration for Copy Button
 
 > Inspiration for the copy code button came from the following posts.
 >

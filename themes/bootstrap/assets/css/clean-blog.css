@@ -334,6 +334,10 @@ hr.small {
   margin-top: 0
 }
 
+#TableOfContents a {
+  color: #4b56a8;
+}
+
 .post-preview .post-meta a {
   text-decoration: none;
   color: #353535
