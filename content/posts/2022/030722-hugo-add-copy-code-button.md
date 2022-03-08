@@ -283,7 +283,7 @@ In your footer.html file or where every your footer file is located, add the fol
 
 Now any time you navigate to a page on your site that has a code snippet (e.g. `<pre>` tag), a copy button will be added to the code snippet and the code snippet will be copied to the clipboard.
 
-> Inspiration for the copy code button came from the following post.
+> Inspiration for the copy code button came from the following posts.
 >
 > copy to clipboard for code snippets.   see [https://www.dannyguo.com/blog/how-to-add-copy-to-clipboard-buttons-to-code-blocks-in-hugo/](https://www.dannyguo.com/blog/how-to-add-copy-to-clipboard-buttons-to-code-blocks-in-hugo/)
 >
