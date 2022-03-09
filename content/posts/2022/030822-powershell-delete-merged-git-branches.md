@@ -13,22 +13,22 @@ In this post, we will look at how to use PowerShell instead to delete your local
 <!--more-->
 
 1. Open PowerShell and navigate to your git repository that you want to clean up
+1. Make sure you are on the main branch
+
+    ```PowerShell
+    git checkout main
+    ```
+
 1. Fetch the latest from the git
 
     ```PowerShell
-    git fetch
+    git pull --prune
     ```
 
 1. See the list of local git branches
 
     ```PowerShell
     git branch
-    ```
-
-1. Make sure you are on the main branch
-
-    ```PowerShell
-    git checkout main
     ```
 
 1. Delete all local branches that have been merged to main branch
