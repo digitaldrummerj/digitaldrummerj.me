@@ -1,0 +1,3 @@
+baseurl = "https://preview--digitaldrummerj.me"
+buildDrafts = true
+buildFuture = true
