@@ -8,6 +8,8 @@
     <meta name="author" content="{{.Site.Author.name}}">
     <meta name="keywords" content="{{ if .Keywords }}{{ delimit .Keywords ", " }}{{ end }}">
 
+    {{ template "_internal/google_analytics.html" . }}
+
     <title>
       {{- if .IsHome -}}
         {{ .Site.Title }} - {{ .Site.Params.Description }}
@@ -58,6 +60,7 @@
     <link href='https://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic' rel='stylesheet'>
     <link href='https://fonts.googleapis.com/css?family=Lato:400,700,400italic%7CVolkhov' rel='stylesheet' type='text/css'>
     <link href='https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet'>
+
 </head>
 
 <body>
