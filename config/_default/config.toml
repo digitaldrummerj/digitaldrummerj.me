@@ -10,11 +10,8 @@ paginate = 10
 theme = "bootstrap"
 languageCode = "en"
 
-#googleAnalytics = "" # delete or comment to disable Google Analytics JS generation
-
 [Author]
   name = "Justin James"
-
 
 [params]
   copyright = "Created with ♥ by <a href='/about/'>Justin James</a>. All content is the property of Justin James and digitaldrummerj.me. This blog, its content, and opinions are my own."

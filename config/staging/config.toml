@@ -1,0 +1,3 @@
+baseurl = "https://staging--digitaldrummerj.me"
+buildDrafts = false
+buildFuture = false
