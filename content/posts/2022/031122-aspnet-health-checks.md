@@ -22,6 +22,11 @@ The first thing we need to do is create our actual health check.
 > All of the code in this post is using ASP.NET Core 6.0
 
 1. Create the file ExampleHealthCheck.cs
+
+    ```shell
+    ExampleHealthCheck.cs
+    ```
+
 1. Add the following code to the ExampleHealthCheck.cs file
 
     ```csharp {linenos=true,hl_lines=[12,13,17,18,19]}
@@ -55,16 +60,20 @@ The first thing we need to do is create our actual health check.
 
 ## Tell ASP.NET Core About Health Check
 
-In Program.cs, you need to register the health check service:
+In Program.cs, you need to register the health check service before the builder.build() line.
 
 ```csharp
-using AspNetCoreHealthCheckExample;
-
 builder.Services.AddHealthChecks()
     .AddCheck<ExampleHealthCheckAsync>("Example");
 ```
 
-Lastly, we need to setup the endpoint url for the health check in Program.cs.
+You will also need to add the namespace for our health check to the top of Program.cs
+
+```csharp
+using AspNetCoreHealthCheckExample;
+```
+
+Lastly, we need to setup the endpoint url for the health check in Program.cs before the app.Run() line
 
 ```csharp
 app.MapHealthChecks("/health");
