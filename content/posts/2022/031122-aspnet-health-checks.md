@@ -7,9 +7,9 @@ url: '/aspnet-core-health-checks'
 series: ['ASPNET Core Health Checks']
 ---
 
-If your ASP.NET Core application communicates with any 3rd party systems, it is really helpful to have health checks to determine if your connection to the 3rd party system is healthy, degraded or unhealthy.
+If your ASP.NET Core application communicates with any 3rd party systems, it is beneficial to have health checks to determine if your connection to the 3rd party system is healthy, degraded, or unhealthy.
 
-With ASP.NET Core, Microsoft references the Microsoft.AspNetCore.Diagnostics.HealthChecks package implicitly for ASP.NET Core apps.  This means that everything you need architecrture wise is available and you just need to create your actual health check code.
+With ASP.NET Core, Microsoft references Microsoft.AspNetCore.Diagnostics.HealthChecks package implicitly for ASP.NET Core apps.  This means that everything you need architecture wise is available and you just need to create your actual health check code.
 
 <!--more-->
 
@@ -52,7 +52,7 @@ public class ExampleHealthCheckAsync : IHealthCheck
 
 ## Tell ASP.NET Core About Health Check
 
-If Program.cs you need to register the health check service:
+If Program.cs, you need to register the health check service:
 
 ```csharp
 using AspNetCoreHealthCheckExample;
@@ -67,13 +67,13 @@ The last item, in the Program.cs, we need to do is to set up the endpoint url fo
 app.MapHealthChecks("/health");
 ```
 
-Now if you run your application (F5) and navigate to /health, you can run your health check which will return a "Healthy" text response.  If you want to simulate an unhealthy response, just throw an exception into the try block of your health check.
+Now, when you run your application (F5) and navigate to /health, you can run your health check, which will return a "Healthy" text response.  If you want to simulate an unhealthy response, just throw an exception into the try block of your health check.
 
 ## Conclusion
 
-That was pretty easy and quick to add a health check into our application.  Honestly, the hard part is doing to be to write the code to actually check if our application healthy but at least we do not have to worry about the infrastructure part of running the health checks.
+That was pretty easy and quick to add the ability to run a health check into our application.  The hard part comes next, which is to write the code to check if our application is healthy or not.
 
-I do however find that just having a text response of "Healthy" or "Unhealthy" is not super useful.  It is especially un-useful when you run multiple health checks and one fails and you have no clue which one failed.  In our next post in this series, we are going to update our healthy response to return JSON back that looks like:
+However, I find that just having a text response of "Healthy" or "Unhealthy" is not super helpful.  It is incredibly unhelpful when you run multiple health checks at once in which one fails, and you have no idea which one was the "Unhealthy"   one.  In our next post in this series, we will update our healthy response to return JSON to see the status of each of the health checks, how long it took to run, and the description of what it is doing.
 
 ```json
 {
