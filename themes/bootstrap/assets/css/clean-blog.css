@@ -253,8 +253,9 @@ hr.small {
   }
 }
 
+.post-content li,
 .post-content li p {
-  margin: 20px 0 10px;
+  margin: 10px 0 5px;
   line-height: 1.2;
 }
 
