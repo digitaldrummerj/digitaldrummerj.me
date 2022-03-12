@@ -2,7 +2,7 @@
 categories: ['aspnet-core']
 date: 2022-03-11T13:00:00Z
 draft: false
-title: "ASP.NET Core - Add Health Checks"
+title: "ASPNET Core - Add Health Checks"
 url: '/aspnet-core-health-checks'
 series: ['ASPNET Core Health Checks']
 ---
