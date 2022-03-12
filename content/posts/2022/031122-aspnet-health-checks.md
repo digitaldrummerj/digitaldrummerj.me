@@ -4,7 +4,7 @@ date: 2022-03-11T13:00:00Z
 draft: false
 title: "ASP.NET Core - Add Health Checks"
 url: '/aspnet-core-health-checks'
-series: ['ASPNET Core Health Checks']
+series: ['ASP.NET Core Health Checks']
 ---
 
 If your ASP.NET Core application communicates with any 3rd party systems, it is beneficial to have health checks to determine if your connection to the 3rd party system is healthy, degraded, or unhealthy.
@@ -21,38 +21,41 @@ The first thing we need to do is create our actual health check.
 
 > All of the code in this post is using ASP.NET Core 6.0
 
-```csharp {linenos=true,hl_lines=[12,13,17,18,19]}
-namespace AspNetCoreHealthCheckExample;
+1. Create the file ExampleHealthCheck.cs
+1. Add the following code to the ExampleHealthCheck.cs file
 
-using Microsoft.Extensions.Diagnostics.HealthChecks;
+    ```csharp {linenos=true,hl_lines=[12,13,17,18,19]}
+    namespace AspNetCoreHealthCheckExample;
 
-public class ExampleHealthCheckAsync : IHealthCheck
-{
-    public Task<HealthCheckResult> CheckHealthAsync(
-        HealthCheckContext context, CancellationToken cancellationToken = default)
+    using Microsoft.Extensions.Diagnostics.HealthChecks;
+
+    public class ExampleHealthCheckAsync : IHealthCheck
     {
-        try
+        public Task<HealthCheckResult> CheckHealthAsync(
+            HealthCheckContext context, CancellationToken cancellationToken = default)
         {
-            return Task.FromResult(
-                HealthCheckResult.Healthy("Health Msg Here."));
-        }
-        catch (Exception)
-        {
-            return Task.FromResult(
-                new HealthCheckResult(
-                    context.Registration.FailureStatus, "Unhealth Msg Here."));
+            try
+            {
+                return Task.FromResult(
+                    HealthCheckResult.Healthy("Health Msg Here."));
+            }
+            catch (Exception)
+            {
+                return Task.FromResult(
+                    new HealthCheckResult(
+                        context.Registration.FailureStatus, "Unhealth Msg Here."));
+            }
         }
     }
-}
-```
+    ```
 
-**Line 12-13:** If healthy, return a status of 200 and text response of "Healthy"
+    **Line 12-13:** If healthy, return a status of 200 and text response of "Healthy"
 
-**Line 17-19:** If unhealthy, return a status of 503 and text response of "Unhealthy"
+    **Line 17-19:** If unhealthy, return a status of 503 and text response of "Unhealthy"
 
 ## Tell ASP.NET Core About Health Check
 
-If Program.cs, you need to register the health check service:
+In Program.cs, you need to register the health check service:
 
 ```csharp
 using AspNetCoreHealthCheckExample;
@@ -61,7 +64,7 @@ builder.Services.AddHealthChecks()
     .AddCheck<ExampleHealthCheckAsync>("Example");
 ```
 
-The last item, in the Program.cs, we need to do is to set up the endpoint url for the health check.
+Lastly, we need to setup the endpoint url for the health check in Program.cs.
 
 ```csharp
 app.MapHealthChecks("/health");
