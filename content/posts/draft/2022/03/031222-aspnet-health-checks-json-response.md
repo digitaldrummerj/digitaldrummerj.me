@@ -2,203 +2,138 @@
 categories: ["aspnet-core"]
 date: 2022-03-12T13:00:00Z
 draft: true
-title: "Aspnet - Health Checks - Generate Better Response Than Just Text"
+title: "ASP.NET - Health Checks - Generate Better Response Than Just Text"
 url: '/aspnet-core-health-checks-json'
+series: ['ASP.NET Core Health Checks']
 ---
+
+In our [previous post](/aspnet-core-health-checks), we added a simple health check to our ASP.NET Core application. Although we only added a single health check, you can add multiple health checks and have multiple run as once.  Regardless if you run a single or multiple health checks, the implementation out of the box, just returns a "Healthy" or "Unhealthy" string, which is not overall helpful to know which component actually failed.
+
+In this post, we are going to update our health check response to return a json record that will let us know the status of each health check that is run as well as the overall health status of the application.
+
+```
+{
+    "status": "Healthy",
+    "duration": "00:00:00.0066738",
+    "info":
+    [
+        {
+        "key": "ExampleHealthCheckAsync",
+        "description": "Health Msg Here.",
+        "duration": "00:00:00.0010113",
+        "status": "Healthy",
+        "data": {}
+        }
+    ]
+}
+```
 
 <!--more-->
 
-[https://docs.microsoft.com/en-us/aspnet/core/host-and-deploy/health-checks](https://docs.microsoft.com/en-us/aspnet/core/host-and-deploy/health-checks)
+To update the health check to return json instead of plain text, we do not actually need to update the health check itself. The update will all be in how we configure the health check in Program.cs.
 
-The Microsoft.AspNetCore.Diagnostics.HealthChecks package is referenced implicitly for ASP.NET Core apps.
+> If you have not implemented the example health check from the [previous post](/aspnet-core-health-checks), please do so first.
 
-> Note: AspNetCore.Diagnostics.HealthChecks isn't maintained or supported by Microsoft.
+## Create Custom Health Check Response
 
-Outline
+1. Create file HealthCheckExtensions
 
-* Setup
-* Basic Healthy or Unhealthy Check
-* Changing check response to Json
-* Json Response Options
-* Filtering Health Checks to RUn
-* Future Post: Healthy UI
+    ```text
+    HealthCheckExtensions.cs
+    ```
 
-```csharp
-using System;
-using System.Threading;
-using System.Threading.Tasks;
-using Microsoft.Extensions.Diagnostics.HealthChecks;
+1. Add the following code to HealthCheckExtensions.cs to generate our response in JSON
 
-namespace AspNetCore.Example.Healthchecks
-{
-    public class ExampleHealthCheck : IHealthCheck
-    {
-        public ExampleHealthCheck()
-        {
-        }
-        public Task<HealthCheckResult> CheckHealthAsync(
-            HealthCheckContext context, CancellationToken cancellationToken = default)
-        {
-            try
-            {
-                return Task.FromResult(
-                    HealthCheckResult.Healthy("Health Msg Here."));
-            }
-            catch (Exception)
-            {
-                return Task.FromResult(
-                    new HealthCheckResult(
-                        context.Registration.FailureStatus, "Unhealth Msg Here."));
-            }
-        }
-    }
-}
-```
+    ```csharp {linenos=true, hl_lines=[]}
+   using System.Net.Mime;
+    using Microsoft.AspNetCore.Diagnostics.HealthChecks;
+    using Microsoft.Extensions.Diagnostics.HealthChecks;
+    using System.Text.Json;
+    using System.Text.Json.Serialization;
 
-In `ConfigureServices(IServiceCollection services)`
-
-```csharp
-services.Configure<MvcOptions>(options =>
-{
-    options.EnableEndpointRouting = false;
-});
-
-services
-    .AddHealthChecks()
-    .AddCheck<AcmsHealthCheck>(
-        nameof(AcmsHealthCheck),
-        tags: new [] { "Example" }
-    );
-```
-
-In `Configure(IApplicationBuilder app, IWebHostEnvironment env, IServiceProvider serviceProvider)`
-
-```csharp
-app.UseEndpoints(endpoints =>
-{
-    endpoints.MapCustomHealthChecks("/health/example", "Example", "Example");
-    endpoints.MapCustomHealthChecks("/health", "All");
-});
-```
-
-```csharp
-using System;
-
-namespace AspNetCore.Example.Healthchecks
-{
-    public class HealthInfo
-    {
-        public string Key { get; set; }
-        public string Description { get; set; }
-        public TimeSpan Duration { get; set; }
-        public string Status { get; set; }
-        public string Error { get; set; }
-    }
-}
-```
-
-```csharp
-using System;
-using System.Collections.Generic;
-
-namespace AspNetCore.Example.Healthchecks
-{
-    public class HealthResult
-    {
-        public string Name { get; set; }
-        public string Status { get; set; }
-        public TimeSpan Duration { get; set; }
-        public ICollection<HealthInfo> Info { get; set; }
-    }
-}
-```
-
-```csharp
-using System;
-using System.Linq;
-using System.Net.Mime;
-using Microsoft.AspNetCore.Builder;
-using Microsoft.AspNetCore.Diagnostics.HealthChecks;
-using Microsoft.AspNetCore.Http;
-using Microsoft.AspNetCore.Routing;
-using Microsoft.Extensions.Diagnostics.HealthChecks;
-using Newtonsoft.Json;
-using Newtonsoft.Json.Serialization;
-
-namespace AspNetCore.Example.Healthchecks
-{
     public static class HealthCheckExtensions
     {
-        /// <summary>
-        ///     Maps the custom health checks.
-        /// </summary>
-        /// <param name="endpoints">The endpoints.</param>
-        /// <param name="endpointUrl">The endpoint URL</param>
-        /// <param name="serviceName">Name of the service</param>
-        /// <param name="filterTag">The string for the filter</param>
-        /// <remarks>see Microsoft docs at <a href="https://docs.microsoft.com/en-us/aspnet/core/host-and-deploy/health-checks?view=aspnetcore-3.1#health-check-options-2" /></remarks>
-        /// <example>
-        ///     <code>
-        ///     {
-        ///         "Name":"Example",
-        ///         "Status":"Healthy",
-        ///         "Duration":"00:00:01.6876124",
-        ///         "Info":[
-        ///             {
-        ///                 "Key":"ExampleHealthCheck",
-        ///                 "Description":"Can connect to Db.",
-        ///                 "Duration":"00:00:01.2364398",
-        ///                 "Status":"Healthy"
-        ///             }
-        ///         ]
-        ///     }
-        ///     </code>
-        /// </example>
-        /// <returns>The health check status.  Status is 503 for unhealth and 200 for Healthy or Degraded.</returns>
         public static IEndpointConventionBuilder MapCustomHealthChecks(
-            this IEndpointRouteBuilder endpoints, string endpointUrl, string serviceName, string filterTag = "")
+            this IEndpointRouteBuilder endpoints,
+            string endpointUrl,
+            string serviceName)
         {
-            Func<HealthCheckRegistration, bool> filterPredicate =
-                filterPredicate = check => check.Tags.Any(t => t == filterTag);
-            if (string.IsNullOrWhiteSpace(filterTag)) filterPredicate = x => true;
-
-            var endpointConventionBuilder = endpoints.MapHealthChecks(endpointUrl, new HealthCheckOptions
+            var jsonSerializerOptions = new JsonSerializerOptions
             {
-                AllowCachingResponses = false,
-                Predicate = filterPredicate,
-                ResponseWriter = async (context, report) =>
+                WriteIndented = false,
+                PropertyNamingPolicy = JsonNamingPolicy.CamelCase,
+                DefaultIgnoreCondition = JsonIgnoreCondition.WhenWritingNull
+            };
+
+            var endpointConventionBuilder =
+                endpoints.MapHealthChecks(endpointUrl, new HealthCheckOptions
                 {
-                    var result = JsonConvert.SerializeObject(
-                        new HealthResult
-                        {
-                            Name = serviceName,
-                            Status = report.Status.ToString(),
-                            Duration = report.TotalDuration,
-                            Info = report.Entries
-                                .Select(e =>
-                                    new HealthInfo
-                                    {
-                                        Key = e.Key,
-                                        Description = e.Value.Description,
-                                        Duration = e.Value.Duration,
-                                        Status = Enum.GetName(typeof(HealthStatus), e.Value.Status),
-                                        Error = e.Value.Exception?.Message
-                                    })
-                                .ToList()
-                        }, Formatting.None,
-                        new JsonSerializerSettings
-                        {
-                            NullValueHandling = NullValueHandling.Ignore,
-                            ContractResolver = new CamelCasePropertyNamesContractResolver()
-                        });
-                    context.Response.ContentType = MediaTypeNames.Application.Json;
-                    await context.Response.WriteAsync(result);
-                }
-            });
+                    ResponseWriter = async (context, report) =>
+                    {
+                        string json = JsonSerializer.Serialize(
+                            new
+                            {
+                                Name = serviceName,
+                                Status = report.Status.ToString(),
+                                Duration = report.TotalDuration,
+                                Info = report.Entries
+                                    .Select(e =>
+                                        new
+                                        {
+                                            Key = e.Key,
+                                            Description = e.Value.Description,
+                                            Duration = e.Value.Duration,
+                                            Status = Enum.GetName(
+                                                typeof(HealthStatus),
+                                                e.Value.Status),
+                                            Error = e.Value.Exception?.Message,
+                                            Data = e.Value.Data
+                                        })
+                                    .ToList()
+                            }
+                        , jsonSerializerOptions);
+
+                        context.Response.ContentType = MediaTypeNames.Application.Json;
+                        await context.Response.WriteAsync(json);
+                    }
+                });
 
             return endpointConventionBuilder;
         }
     }
+    ```
+
+## Enable Custom Response
+
+In Program.cs
+
+```csharp
+app.UseRouting();
+
+app.UseEndpoints(endpoints =>
+{
+    endpoints.MapCustomHealthChecks("/health", "Example");
+});
+```
+
+
+```json
+{
+    "status": "Healthy",
+    "duration": "00:00:00.0066738",
+    "info":
+    [
+        {
+        "key": "ExampleHealthCheckAsync",
+        "description": "Health Msg Here.",
+        "duration": "00:00:00.0010113",
+        "status": "Healthy",
+        "data": {}
+        }
+    ]
 }
 ```
 
+## Conclusion
+
+You can also read more about ASP.NET Core Health Checks in the [docs](https://docs.microsoft.com/en-us/aspnet/core/host-and-deploy/health-checks)

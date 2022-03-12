@@ -89,15 +89,16 @@ However, I find that just having a text response of "Healthy" or "Unhealthy" is 
 
 ```json
 {
-    "Name":"Example",
-    "Status":"Healthy",
-    "Duration":"00:00:01.6876124",
-    "Info":[
+    "status": "Healthy",
+    "duration": "00:00:00.0066738",
+    "info":
+    [
         {
-            "Key":"ExampleHealthCheck",
-            "Description":"Can connect to Db.",
-            "Duration":"00:00:01.2364398",
-            "Status":"Healthy"
+        "key": "ExampleHealthCheckAsync",
+        "description": "Health Msg Here.",
+        "duration": "00:00:00.0010113",
+        "status": "Healthy",
+        "data": {}
         }
     ]
 }
