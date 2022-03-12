@@ -1,11 +1,10 @@
 ---
-categories: ['aspnet-core']
-date: 2022-03-18T13:00:00Z
+categories: ["aspnet-core"]
+date: 2022-03-12T13:00:00Z
 draft: true
-title: "ASP.NET Core - Add Health Checks"
-url: '/aspnet-core-health-checks'
+title: "Aspnet - Health Checks - Generate Better Response Than Just Text"
+url: '/aspnet-core-health-checks-json'
 ---
-
 
 <!--more-->
 
@@ -64,7 +63,12 @@ services.Configure<MvcOptions>(options =>
     options.EnableEndpointRouting = false;
 });
 
-services.AddHealthChecks().AddCheck<AcmsHealthCheck>(nameof(AcmsHealthCheck), tags: new [] { "ACMS" });
+services
+    .AddHealthChecks()
+    .AddCheck<AcmsHealthCheck>(
+        nameof(AcmsHealthCheck),
+        tags: new [] { "Example" }
+    );
 ```
 
 In `Configure(IApplicationBuilder app, IWebHostEnvironment env, IServiceProvider serviceProvider)`
@@ -197,3 +201,4 @@ namespace AspNetCore.Example.Healthchecks
     }
 }
 ```
+
