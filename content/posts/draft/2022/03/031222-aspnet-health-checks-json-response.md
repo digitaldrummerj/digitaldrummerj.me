@@ -36,6 +36,8 @@ To update the health check to return json instead of plain text, we do not actua
 
 ## Create Custom Health Check Response
 
+To create our custom json response, we are going to create a method that takes in a HealthReport, loops through the report and create a json resppnse.
+
 1. Create file HealthCheckExtensions
 
     ```text
@@ -45,77 +47,71 @@ To update the health check to return json instead of plain text, we do not actua
 1. Add the following code to HealthCheckExtensions.cs to generate our response in JSON
 
     ```csharp {linenos=true, hl_lines=[]}
-   using System.Net.Mime;
-    using Microsoft.AspNetCore.Diagnostics.HealthChecks;
-    using Microsoft.Extensions.Diagnostics.HealthChecks;
-    using System.Text.Json;
-    using System.Text.Json.Serialization;
+    using System.Net.Mime;
+using Microsoft.Extensions.Diagnostics.HealthChecks;
+using System.Text.Json;
+using System.Text.Json.Serialization;
 
-    public static class HealthCheckExtensions
+public static class HealthCheckExtensions
+{
+    public static Task WriteResponse(
+    	HttpContext context, 
+    	HealthReport report)
     {
-        public static IEndpointConventionBuilder MapCustomHealthChecks(
-            this IEndpointRouteBuilder endpoints,
-            string endpointUrl,
-            string serviceName)
+        var jsonSerializerOptions = new JsonSerializerOptions
         {
-            var jsonSerializerOptions = new JsonSerializerOptions
+            WriteIndented = false,
+            PropertyNamingPolicy = JsonNamingPolicy.CamelCase,
+            DefaultIgnoreCondition = JsonIgnoreCondition.WhenWritingNull
+        };
+
+        string json = JsonSerializer.Serialize(
+            new
             {
-                WriteIndented = false,
-                PropertyNamingPolicy = JsonNamingPolicy.CamelCase,
-                DefaultIgnoreCondition = JsonIgnoreCondition.WhenWritingNull
-            };
+                Status = report.Status.ToString(),
+                Duration = report.TotalDuration,
+                Info = report.Entries
+                    .Select(e =>
+                        new
+                        {
+                            Key = e.Key,
+                            Description = e.Value.Description,
+                            Duration = e.Value.Duration,
+                            Status = Enum.GetName(
+                                typeof(HealthStatus),
+                                e.Value.Status),
+                            Error = e.Value.Exception?.Message,
+                            Data = e.Value.Data
+                        })
+                    .ToList()
+            },
+            jsonSerializerOptions);
 
-            var endpointConventionBuilder =
-                endpoints.MapHealthChecks(endpointUrl, new HealthCheckOptions
-                {
-                    ResponseWriter = async (context, report) =>
-                    {
-                        string json = JsonSerializer.Serialize(
-                            new
-                            {
-                                Name = serviceName,
-                                Status = report.Status.ToString(),
-                                Duration = report.TotalDuration,
-                                Info = report.Entries
-                                    .Select(e =>
-                                        new
-                                        {
-                                            Key = e.Key,
-                                            Description = e.Value.Description,
-                                            Duration = e.Value.Duration,
-                                            Status = Enum.GetName(
-                                                typeof(HealthStatus),
-                                                e.Value.Status),
-                                            Error = e.Value.Exception?.Message,
-                                            Data = e.Value.Data
-                                        })
-                                    .ToList()
-                            }
-                        , jsonSerializerOptions);
-
-                        context.Response.ContentType = MediaTypeNames.Application.Json;
-                        await context.Response.WriteAsync(json);
-                    }
-                });
-
-            return endpointConventionBuilder;
+            context.Response.ContentType = MediaTypeNames.Application.Json;
+            return context.Response.WriteAsync(json);
         }
-    }
+}
     ```
 
 ## Enable Custom Response
 
-In Program.cs
+To enable the custom response, we need to update Program.cs to enable routing and then use endpoints.
 
 ```csharp
 app.UseRouting();
 
+// app.UseAuthorization();
+
 app.UseEndpoints(endpoints =>
 {
-    endpoints.MapCustomHealthChecks("/health", "Example");
+    endpoints.MapHealthChecks(“/health”, new HealthCheckOptions()
+    {
+        ResponseWriter = HealthCheckExtensions.WriteResponse
+    });
 });
 ```
 
+Now when run your application and go to /health the response we look similar to:
 
 ```json
 {
@@ -135,5 +131,10 @@ app.UseEndpoints(endpoints =>
 ```
 
 ## Conclusion
+
+The returned json is way more informative and helpful than the plain text response.  
+
+Right now, when you run the health checks, it will run all of the health checks.  In our next post, we will look at how to create filters to run only specific health checks.
+
 
 You can also read more about ASP.NET Core Health Checks in the [docs](https://docs.microsoft.com/en-us/aspnet/core/host-and-deploy/health-checks)
