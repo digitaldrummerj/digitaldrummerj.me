@@ -66,24 +66,39 @@ Here are some additional post ideas that I have not picked a date for yet.
         1. ESLint
         1. REST Client
         1. Winter Is Coming Theme (along with coding font)
-1. Resharper
-    1. Resharper Shortcuts
-    1. Resharper Templates
-    1. Resharper creating multiple file templates
-1. Visual Studio
-    1. Visual Studio 2019 Extensions
-    1. Upgrading to Visual Studio 2022
-1. .NET Architecture
-    1. Service Pattern
-    1. aspnet-core-swagger-authentication
-    1. Rest Client to Call Other 3rd Party APIs
-    1. Anti-Forgery Tokens
-    1. Data Protection (<https://docs.microsoft.com/en-us/aspnet/core/security/data-protection/implementation/key-storage-providers?view=aspnetcore-2.2&tabs=netcore-cli>)
-    1. CORS
-    1. Dependency Injection
-    1. Mocking with MOQ
-    1. Entity Framework
-       1. History Tracking with Triggers
+1. .NET Core
+   1. Non-nullable Property Must Contain a Non-null Value in .NET 6 - [https://docs.microsoft.com/en-us/dotnet/csharp/nullable-references#nullable-contexts](https://docs.microsoft.com/en-us/dotnet/csharp/nullable-references#nullable-contexts)
+      * Project File
+
+        ```xml {linenos=true,hl_lines=[3]}
+        <PropertyGroup>
+            <TargetFramework>net6.0</TargetFramework>
+            <Nullable>enable</Nullable>
+            <ImplicitUsings>enable</ImplicitUsings>
+        </PropertyGroup>
+        ```
+
+      * research:
+           * [https://www.c-sharpcorner.com/article/solution-non-nullable-property-must-contain-a-non-null-value-in-net-6/](https://www.c-sharpcorner.com/article/solution-non-nullable-property-must-contain-a-non-null-value-in-net-6/)
+
+   1. Resharper
+       1. Resharper Shortcuts
+       1. Resharper Templates
+       1. Resharper creating multiple file templates
+   1. Visual Studio
+       1. Visual Studio 2019 Extensions
+       1. Upgrading to Visual Studio 2022
+   1. .NET Architecture
+       1. Service Pattern
+       1. aspnet-core-swagger-authentication
+       1. Rest Client to Call Other 3rd Party APIs
+       1. Anti-Forgery Tokens
+       1. Data Protection (<https://docs.microsoft.com/en-us/aspnet/core/security/data-protection/implementation/key-storage-providers?view=aspnetcore-2.2&tabs=netcore-cli>)
+       1. CORS
+       1. Dependency Injection
+       1. Mocking with MOQ
+       1. Entity Framework
+          1. History Tracking with Triggers
 1. Hugo
     1. Set url in front matter so it is diff than file name
     1. Make external urls open in a new tab automatically (e.g. _default\_markup\render-link.html)

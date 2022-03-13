@@ -85,19 +85,20 @@ Now, when you run your application (F5) and navigate to /health, you can run you
 
 That was pretty easy and quick to add the ability to run a health check into our application.  The hard part comes next, which is to write the code to check if our application is healthy or not.
 
-However, I find that just having a text response of "Healthy" or "Unhealthy" is not super helpful.  It is incredibly unhelpful when you run multiple health checks at once in which one fails, and you have no idea which one was the "Unhealthy"   one.  In our next post in this series, we will update our healthy response to return JSON to see the status of each of the health checks, how long it took to run, and the description of what it is doing.
+However, I find that just having a text response of "Healthy" or "Unhealthy" is not super helpful.  It is incredibly unhelpful when you run multiple health checks at once in which one fails, and you have no idea which one was the "Unhealthy"   one.  In our [next post](/aspnet-core-health-checks-json) in this series, we will update our healthy response to return JSON to see the status of each of the health checks, how long it took to run, and the description of what it is doing.
 
 ```json
 {
-    "Name":"Example",
-    "Status":"Healthy",
-    "Duration":"00:00:01.6876124",
-    "Info":[
+    "status": "Healthy",
+    "duration": "00:00:00.0066738",
+    "info":
+    [
         {
-            "Key":"ExampleHealthCheck",
-            "Description":"Can connect to Db.",
-            "Duration":"00:00:01.2364398",
-            "Status":"Healthy"
+        "key": "ExampleHealthCheckAsync",
+        "description": "Health Msg Here.",
+        "duration": "00:00:00.0010113",
+        "status": "Healthy",
+        "data": {}
         }
     ]
 }
