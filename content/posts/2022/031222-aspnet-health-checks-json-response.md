@@ -46,56 +46,64 @@ To create our custom json response, we are going to create a method that takes i
 
 1. Add the following code to HealthCheckExtensions.cs to generate our response in JSON
 
-    ```csharp {linenos=true, hl_lines=[]}
+    ```csharp {linenos=true, hl_lines=["20-38"]}
     using System.Net.Mime;
-using Microsoft.Extensions.Diagnostics.HealthChecks;
-using System.Text.Json;
-using System.Text.Json.Serialization;
+    using Microsoft.Extensions.Diagnostics.HealthChecks;
+    using System.Text.Json;
+    using System.Text.Json.Serialization;
 
-public static class HealthCheckExtensions
-{
-    public static Task WriteResponse(
-    	HttpContext context, 
-    	HealthReport report)
+    public static class HealthCheckExtensions
     {
-        var jsonSerializerOptions = new JsonSerializerOptions
+        public static Task WriteResponse(
+            HttpContext context,
+            HealthReport report)
         {
-            WriteIndented = false,
-            PropertyNamingPolicy = JsonNamingPolicy.CamelCase,
-            DefaultIgnoreCondition = JsonIgnoreCondition.WhenWritingNull
-        };
-
-        string json = JsonSerializer.Serialize(
-            new
+            var jsonSerializerOptions = new JsonSerializerOptions
             {
-                Status = report.Status.ToString(),
-                Duration = report.TotalDuration,
-                Info = report.Entries
-                    .Select(e =>
-                        new
-                        {
-                            Key = e.Key,
-                            Description = e.Value.Description,
-                            Duration = e.Value.Duration,
-                            Status = Enum.GetName(
-                                typeof(HealthStatus),
-                                e.Value.Status),
-                            Error = e.Value.Exception?.Message,
-                            Data = e.Value.Data
-                        })
-                    .ToList()
-            },
-            jsonSerializerOptions);
+                WriteIndented = false,
+                PropertyNamingPolicy = JsonNamingPolicy.CamelCase,
+                DefaultIgnoreCondition = JsonIgnoreCondition.WhenWritingNull
+            };
 
-            context.Response.ContentType = MediaTypeNames.Application.Json;
-            return context.Response.WriteAsync(json);
-        }
-}
+            string json = JsonSerializer.Serialize(
+                new
+                {
+                    Status = report.Status.ToString(),
+                    Duration = report.TotalDuration,
+                    Info = report.Entries
+                        .Select(e =>
+                            new
+                            {
+                                Key = e.Key,
+                                Description = e.Value.Description,
+                                Duration = e.Value.Duration,
+                                Status = Enum.GetName(
+                                    typeof(HealthStatus),
+                                    e.Value.Status),
+                                Error = e.Value.Exception?.Message,
+                                Data = e.Value.Data
+                            })
+                        .ToList()
+                },
+                jsonSerializerOptions);
+
+                context.Response.ContentType = MediaTypeNames.Application.Json;
+                return context.Response.WriteAsync(json);
+            }
+    }
     ```
 
 ## Enable Custom Response
 
 To enable the custom response, we need to update Program.cs to enable routing and then use endpoints.
+
+In Program.cs, remove the following line from our previous setup
+
+```csharp
+app.MapHealthChecks("/health");
+```
+
+In Program.cs, add the following lines to use the new HealthCheckExtensions.WriteResponse.  If you are using app.UseAuthorization, you need to put the app.UseRouting() above it and the app.UseEndpoints below it.
 
 ```csharp
 app.UseRouting();
@@ -113,7 +121,7 @@ app.UseEndpoints(endpoints =>
 
 Now when run your application and go to /health the response we look similar to:
 
-```json
+```
 {
     "status": "Healthy",
     "duration": "00:00:00.0066738",
@@ -132,9 +140,8 @@ Now when run your application and go to /health the response we look similar to:
 
 ## Conclusion
 
-The returned json is way more informative and helpful than the plain text response.  
+The returned json is way more informative and helpful than the plain text response.  It will become even more helpful when you have multiple health checks running at the same time and need to see the status of each one to figure out the failure.
 
-Right now, when you run the health checks, it will run all of the health checks.  In our next post, we will look at how to create filters to run only specific health checks.
-
+Also, right now, when you run the health checks, it will run all of the health checks.  We only have a single health check, but as this grows into multiple health checks, it would be nice to be able to run specific health checks.  In our next post, this is exactly what we will be doing as we create filters to run only specific health checks.
 
 You can also read more about ASP.NET Core Health Checks in the [docs](https://docs.microsoft.com/en-us/aspnet/core/host-and-deploy/health-checks)
