@@ -1,7 +1,7 @@
 ---
 categories: ["aspnet-core"]
 date: 2022-03-12T13:00:00Z
-draft: true
+draft: false
 title: "ASP.NET - Health Checks - Generate Better Response Than Just Text"
 url: '/aspnet-core-health-checks-json'
 series: ['ASP.NET Core Health Checks']
