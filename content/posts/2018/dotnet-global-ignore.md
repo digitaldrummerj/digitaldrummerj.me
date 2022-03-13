@@ -39,7 +39,7 @@ dotnet-ignore get  -n "Git Ignore Name"
 To download the Visual Studio .gitignore file run
 
 ```bash
-dotnet-ignore get -n visualstudio.ignore
+dotnet-ignore get -n visualstudio.gitignore
 ```
 
 By default the .gitignore file is placed into the directory that the command is run from.  If you want it in a different directory use the `-d` parameter.

@@ -194,7 +194,10 @@ Create the file assets\css\copy-code-button.css and add the following code to it
 .highlight > .chroma {
   position: static;
   z-index: 1;
-  border-radius: 4px;
+  border-top-left-radius: 0px;
+  border-top-right-radius: 0px;
+  border-bottom-left-radius: 4px;
+  border-bottom-right-radius: 4px;
   padding: 10px;
 }
 
@@ -202,7 +205,7 @@ Create the file assets\css\copy-code-button.css and add the following code to it
   position: absolute;
   z-index: 2;
   right: 0;
-  top: 0;
+  top: -29px;
   font-size: 13px;
   font-weight: 700;
   line-height: 14px;
@@ -211,10 +214,10 @@ Create the file assets\css\copy-code-button.css and add the following code to it
   color: #ffffff;
   background-color: #000000;
   border: 1.25px solid #232326;
-  border-top-left-radius: 0;
+  border-top-left-radius: 4px;
   border-top-right-radius: 4px;
-  border-bottom-right-radius: 0;
-  border-bottom-left-radius: 4px;
+  border-bottom-right-radius: 0px;
+  border-bottom-left-radius: 0px;
   white-space: nowrap;
   padding: 6px 6px 7px 6px;
   margin: 0 0 0 1px;
@@ -238,22 +241,26 @@ Create the file assets\css\copy-code-button.css and add the following code to it
   opacity: .01;
 }
 .chroma [data-lang]:before {
-    position: absolute;
-    z-index: 0;
-    top: -24px;
-    left: 0;
-    content: attr(data-lang);
-    font-size: 1em;
-    font-weight: 700;
-    color: white;
-    background-color: black;
-    border-top-left-radius: 4px;
-    border-top-right-radius: 4px;
-    border-bottom-left-radius: 0;
-    border-bottom-right-radius: 0;
-    padding: 5px 10px 7px;
-    line-height: 1;
-    opacity: 0.6;
+  position: absolute;
+  z-index: 0;
+  top: -29px;
+  left: 0;
+  content: attr(data-lang);
+  font-size: 13px;
+  font-weight: 700;
+  color: white;
+  background-color: black;
+  border-top-left-radius: 4px;
+  border-top-right-radius: 4px;
+  border-bottom-left-radius: 0;
+  border-bottom-right-radius: 0;
+  padding: 6px 6px 7px 6px;
+  line-height: 14px;
+  opacity: 0.6;
+  position: absolute;
+  letter-spacing: 0.5px;
+  border: 1.25px solid #232326;
+  margin: 0 0 0 1px;
 }
 ```
 
