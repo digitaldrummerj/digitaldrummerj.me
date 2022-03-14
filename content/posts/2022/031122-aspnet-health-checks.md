@@ -104,4 +104,6 @@ However, I find that just having a text response of "Healthy" or "Unhealthy" is 
 }
 ```
 
-You can also read more about ASP.NET Core Health Checks in the [docs](https://docs.microsoft.com/en-us/aspnet/core/host-and-deploy/health-checks)
+[Download Code Example](https://github.com/digitaldrummerj/aspnet-core-health-checks/tree/feature/1-plain-text-response)
+
+> You can also read more about ASP.NET Core Health Checks in the [docs](https://docs.microsoft.com/en-us/aspnet/core/host-and-deploy/health-checks)
