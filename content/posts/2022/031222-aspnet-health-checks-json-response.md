@@ -32,7 +32,7 @@ In this post, we are going to update our health check response to return a json 
 
 To update the health check to return json instead of plain text, we do not actually need to update the health check itself. The update will all be in how we configure the health check in Program.cs.
 
-> If you have not implemented the example health check from the [previous post](/aspnet-core-health-checks), please do so first.
+> If you have not implemented the example health check from the [previous post](/aspnet-core-health-checks), please do so first or [download code from previous post](https://github.com/digitaldrummerj/aspnet-core-health-checks/tree/feature/1-plain-text-response)
 
 ## Create Custom Health Check Response
 
@@ -142,6 +142,8 @@ Now when run your application and go to /health the response we look similar to:
 
 The returned json is way more informative and helpful than the plain text response.  It will become even more helpful when you have multiple health checks running at the same time and need to see the status of each one to figure out the failure.
 
-Also, right now, when you run the health checks, it will run all of the health checks.  We only have a single health check, but as this grows into multiple health checks, it would be nice to be able to run specific health checks.  In our next post, this is exactly what we will be doing as we create filters to run only specific health checks.
+Also, right now, when you run the health checks, it will run all of the health checks.  We only have a single health check, but as this grows into multiple health checks, it would be nice to be able to run specific health checks.  In our [next post](/aspnet-health-checks-filters), this is exactly what we will be doing as we create filters to run only specific health checks.
 
-You can also read more about ASP.NET Core Health Checks in the [docs](https://docs.microsoft.com/en-us/aspnet/core/host-and-deploy/health-checks)
+[Download Code Example](https://github.com/digitaldrummerj/aspnet-core-health-checks/tree/feature/2-json-response)
+
+> You can also read more about ASP.NET Core Health Checks in the [docs](https://docs.microsoft.com/en-us/aspnet/core/host-and-deploy/health-checks)
