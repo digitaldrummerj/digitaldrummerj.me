@@ -13,8 +13,6 @@ Here are some additional post ideas that I have not picked a date for yet.
 
 ### March
 
-* 031122-aspnet-health-checks.md
-* 031222-aspnet-health-checks-json-response.md
 * 031322-vscode-extension-addonly.md
 * 031422-vscode-extension-foldplus.md
 * 031522-vscode-extension-path-intellisense.md
