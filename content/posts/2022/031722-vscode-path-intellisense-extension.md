@@ -1,7 +1,7 @@
 ---
 categories: ["vscode", "productivity"]
 date: 2022-03-17T13:00:00Z
-draft: true
+draft: false
 title: "VSCode - Favorite Extension - Path Intellisense"
 url: '/vscode-path-intellisense-extension'
 ---
