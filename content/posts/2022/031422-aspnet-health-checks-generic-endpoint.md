@@ -15,7 +15,6 @@ In this post, we are going to build on the previous post and update our endpoint
 
 > If you have not implemented the example health check from the previous post, you can [download code from previous post](https://github.com/digitaldrummerj/aspnet-core-health-checks/tree/feature/3-filters)
 
-
 ```csharp
 public static IEndpointConventionBuilder MapCustomHealthChecks(
     this IEndpointRouteBuilder endpoints,
