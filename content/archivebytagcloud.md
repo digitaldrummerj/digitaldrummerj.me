@@ -9,4 +9,3 @@ layout: "archivebytagcloud"
 **Other Views:**  [List](/posts/) | [By Month](/posts/monthview) | [By Category](/categories)
 
 ---
-
