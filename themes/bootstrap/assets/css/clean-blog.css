@@ -212,7 +212,7 @@ hr.small {
 @media only screen and (min-width:768px) {
   .intro-header .site-heading h1,
   .intro-header .page-heading h1 {
-    font-size: 60px
+    font-size: 50px
   }
 }
 
@@ -436,8 +436,6 @@ footer .copyright a:hover {
   margin: 0;
   font-size: .85em;
   line-height: 1.764705882em;
-  vertical-align: middle;
-  vertical-align: baseline;
   opacity: 0;
   -webkit-transition: top .3s ease, opacity .3s ease;
   -moz-transition: top .3s ease, opacity .3s ease;
@@ -538,11 +536,6 @@ img::-moz-selection {
   color: #fff;
   background: 0 0
 }
-
-body {
-  webkit-tap-highlight-color: #0085a1
-}
-
 
 #share-buttons {display: inline-block; vertical-align: middle; }
 #share-buttons:after {content: ""; display: block; clear: both;}

@@ -11,6 +11,7 @@ In our [previous post](/aspnet-core-health-checks), we added a simple health che
 
 In this post, we are going to update our health check response to return a json record that will let us know the status of each health check that is run as well as the overall health status of the application.
 
+<!-- markdownlint-disable-next-line MD040 -->
 ```
 {
     "status": "Healthy",
@@ -121,6 +122,7 @@ app.UseEndpoints(endpoints =>
 
 Now when run your application and go to /health the response we look similar to:
 
+<!-- markdownlint-disable-next-line MD040 -->
 ```
 {
     "status": "Healthy",
