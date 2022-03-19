@@ -135,12 +135,14 @@ When you are first starting out, I tend to keep it at 5% to 10% and over time I 
     ![teamcity build failure on metric change](/images/cypress-code-coverage-ci/tc_add_failure_condition.png)
 
 1. For ignored tests failure: select Fail build if to number of ignored test and set is more by at least 1 percent and click save
+
     ![ignored tests failure condition](/images/cypress-code-coverage-ci/tc_failure_conditions_number_of_ignored_tests.png)
 
 1. For number of tests failure: select Fail build if to number of tests and set is less by at least 1 percent and click save
     ![ignored tests failure condition](/images/cypress-code-coverage-ci/tc_failure_conditions_number_of_ignored_tests.png)
 
 1. For code coverage percent failure: select Fail build if to percentage of statement coverage and set is less by at least 1 percent and click save
+
     ![ignored tests failure condition](/images/cypress-code-coverage-ci/tc_failure_conditions_number_of_ignored_tests.png)
 
 > If you want to download the project that I used for this post, you can do so at [https://github.com/digitaldrummerj/aspnet-core-code-coverage](https://github.com/digitaldrummerj/aspnet-core-code-coverage).  It is based on .NET 3.1.
