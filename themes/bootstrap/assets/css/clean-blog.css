@@ -271,30 +271,35 @@ hr.small {
     border: thin #c0c0c0 solid;
     display: flex;
     flex-flow: column;
-    padding: 5px;
-    max-width: 750px;
-    margin: auto;
     margin-bottom: 25px;
+    justify-content: left;
 }
 
 .post-preview figure img,
 .post-content figure img {
-  margin: 5px;
+  margin: auto;
   border: 0px;
 }
 
 .post-preview figcaption,
 .post-content figcaption {
-    background-color: #222;
-    color: #fff;
+    background-color: #4b56a8;
+    color: white;
+    border-top: thin #ffffff solid;
     font: italic smaller sans-serif;
-    padding: 3px;
     text-align: center;
+    margin-top: 0;
+}
+
+.post-preview figcaption p,
+.post-content figcaption p {
+  margin: 10px;
+  line-height: 1.2;
 }
 
 .post-preview li figcaption,
 .post-content li figcaption {
-    padding: 30px;
+    padding: 5px;
 }
 
 .post-preview a,

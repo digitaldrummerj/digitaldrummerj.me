@@ -15,8 +15,8 @@ In this post, we will look at the GitHub Pull Request and Issues extension that 
 <!--more-->
 
 ## Why You Need GitHub Pull Request and Issues Extension
- 
-Managing all of my GitHub pull requests and issues right from VS Code allows me to stay focused on coding and reduces my context switching.  
+
+Managing all of my GitHub pull requests and issues right from VS Code allows me to stay focused on coding and reduces my context switching.
 
 The extension provides:
 
@@ -30,9 +30,9 @@ The extension provides:
 
 Once you have the extension installed a new icon will show up on the sidebar that will show a list of pull requests and issues.
 
-![pull request demo](/images/vscode-extensions/gh-pr-issues/demo1.gif)
+{{< figure src="/images/vscode-extensions/gh-pr-issues/demo1.gif" caption="Pull Request Demo" >}}
 
-![todo comment to issue demo](/images/vscode-extensions/gh-pr-issues/demo2.gif)
+{{< figure src="/images/vscode-extensions/gh-pr-issues/demo2.gif" caption="Create Issue from Todo Comment Demo" >}}
 
 ## More Details and Install
 
