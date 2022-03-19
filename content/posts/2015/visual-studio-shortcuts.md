@@ -22,11 +22,10 @@ Here is a list of  Visual Studio Community Edition shortcuts that I use.
 	<th>Shortcut</th>
 </tr>
 <tr>
-		<td>Build Solution</td>
+	<td>Build Solution</td>
 	<td>Ctrl+Shift+B</td>
 </tr>
 <tr class="alt">
-
 	<td>Run Code Analysis on Solution</td>
 	<td>Alt+F11</td>
 </tr>
@@ -60,11 +59,10 @@ To accomplish this, I set the keyboard shortcut Ctrl+Alt+\
 	<th>Shortcut</th>
 </tr>
 <tr>
-		<td>Start Debugging</td>
+	<td>Start Debugging</td>
 	<td>F5</td>
 </tr>
 <tr class="alt">
-
 	<td>Start without Debugging</td>
 	<td>Ctrl+F5</td>
 </tr>
