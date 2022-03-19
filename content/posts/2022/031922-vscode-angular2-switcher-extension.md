@@ -26,10 +26,10 @@ Here are the keyboard shortcuts for Windows and Mac.
 
 |Action  |  Windows  |     Mac     |
 | - | :-------: | :-----------: |
-|go to `.html`<br>if on `.html` then go to previous | alt+o | shift+alt+o
-|go to `.css`<br>if on `.css` then go to previous | alt+i | shift+alt+i
-|go to `.ts`<br>if on `.ts` then go to previous | alt+u | shift+alt+u
-|go to `.spec.ts`<br>if on `.spec.ts` then go to previous | alt+p | shift+alt+p
+|go to `.html`<br><br>if on `.html` then go to previous | alt+o | shift+alt+o
+|go to `.css`<br><br>if on `.css` then go to previous | alt+i | shift+alt+i
+|go to `.ts`<br><br>if on `.ts` then go to previous | alt+u | shift+alt+u
+|go to `.spec.ts`<br><br>if on `.spec.ts` then go to previous | alt+p | shift+alt+p
 
 > If you have a StreamDeck, you can also add buttons for the shortcuts so that you dont have to remember the shortcuts.  Yes, I know you are leaving the keyboard to use the StreamDeck, but pushing a button doesn't bother me like mousing does.
 
