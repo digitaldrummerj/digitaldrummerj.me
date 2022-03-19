@@ -10,21 +10,21 @@ In this series, we are looking at some of my favorite VS Code extensions.
 
 Extensions in VS Code are invaluable to speed up your work and make you more productive.
 
-In this post, we will look at Angular2 Switcher provides shortcuts to switch between the TypeScript, StyleSheet, Spec, and Html files for your Angular files.
+In this post, we will look at Angular2 Switcher which provides shortcuts to switch between the TypeScript, StyleSheet, Spec, and Html files for your Angular files.
 
 <!--more-->
 
 ## Why You Need Angular2 Switcher
 
-I love keyboard shortcuts and not having to leave the keyboard for the mouse.  I find mousing tends to aggravate my shoulder over time, so anything I can do to avoid that is awesome.
+When coding using Angular, I frequently switch between my template (html), stylesheet (scss), and typescript (.ts). To switch files, I have to open up the sidebar, mousing over to the file, and clicking to open it. However, I find mousing aggravates my shoulder, so anything I can do to avoid mousing is awesome. 
 
-When coding using Angular, I frequently switch between my template file (html), stylesheet (scss), and typescript (.ts) files.   With Angular2 Switcher installer, you get keyboard shortcuts to switch between the files.  It is quicker than opening up the sidebar, mousing over to the file, and clicking to open it.
+With Angular2 Switcher, you get keyboard shortcuts to switch between the files.
 
 ## Usage
 
-Here are the keyboard shortcuts.
+Here are the keyboard shortcuts for Windows and Mac.
 
-|Action  |  Windows  |     macOS     |
+|Action  |  Windows  |     Mac     |
 | - | :-------: | :-----------: |
 |go to `.html`<br>if on `.html` then go to previous | alt+o | shift+alt+o
 |go to `.css`<br>if on `.css` then go to previous | alt+i | shift+alt+i
