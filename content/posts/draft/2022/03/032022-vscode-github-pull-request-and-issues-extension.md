@@ -10,15 +10,13 @@ In this series, we are looking at some of my favorite VS Code extensions.
 
 Extensions in VS Code are invaluable to speed up your work and make you more productive.
 
-In this post, we will look at the GitHub Pull Request and Issues extension that allows you to review and manage GitHub pull requests and issues right in VS Code.
+In this post, we will look at the GitHub Pull Request and Issues extension that allows you to stay where you are writing your code and manage your GitHub pull requests and issues right from VS Code
 
 <!--more-->
 
-## Why You Need GitHub Pull Request and Issues Extension
+## What is Included
 
-Managing all of my GitHub pull requests and issues right from VS Code allows me to stay focused on coding and reduces my context switching.
-
-The extension provides:
+ This extension provides:
 
 * Listing and browsing PRs and Issues
 * Reviewing PRs with in-editor commenting
@@ -26,7 +24,7 @@ The extension provides:
 * “Start working on issue” action creates a branch for you
 * Create issues from “todo” comments
 
-## Usage
+## Demo
 
 Once you have the extension installed a new icon will show up on the sidebar that will show a list of pull requests and issues.
 
