@@ -1,7 +1,7 @@
 ---
 categories: ["aspnet core"]
 date: 2022-03-21T13:00:00Z
-draft: true
+draft: false
 title: "ASP.NET Core - AutoMapper - Easily Convert One Object to Another"
 url: '/aspnet-core-automapper'
 series: ["AutoMapper - Getting Started"]
@@ -10,6 +10,8 @@ series: ["AutoMapper - Getting Started"]
 **Mapping code is boring. Testing mapping code is even more boring.**
 
 AutoMapper is a simple library built to map one object to another and takes out all of the fuss of mapping one object to another.
+
+In this post, we will create a sample ASP.NET Core API project, install and wire up AutoMapper, and update the sample Weather Forecast Controller to return a view model that was converted from our concrete object to a view model object.
 
 <!--more-->
 
