@@ -50,7 +50,7 @@
 /* LiteralStringRegex */ .chroma .sr { color: #d88200 }
 /* LiteralStringSingle */ .chroma .s1 { color: #d88200 }
 /* LiteralStringSymbol */ .chroma .ss { color: #d88200 }
-/* LiteralNumber */ .chroma .m { color: #ae81ff }
+/* LiteralNumber */ .chroma .m { color: #272822 }
 /* LiteralNumberBin */ .chroma .mb { color: #ae81ff }
 /* LiteralNumberFloat */ .chroma .mf { color: #ae81ff }
 /* LiteralNumberHex */ .chroma .mh { color: #ae81ff }
