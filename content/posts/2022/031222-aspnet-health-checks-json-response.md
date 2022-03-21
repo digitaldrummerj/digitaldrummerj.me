@@ -1,5 +1,5 @@
 ---
-categories: ["aspnet-core"]
+categories: ["aspnet core"]
 date: 2022-03-12T13:00:00Z
 draft: false
 title: "ASP.NET - Health Checks - Generate Better Response Than Just Text"

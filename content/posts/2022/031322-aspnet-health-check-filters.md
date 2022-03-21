@@ -1,5 +1,5 @@
 ---
-categories: ["aspnet-core"]
+categories: ["aspnet core"]
 draft: false
 date: 2022-03-13T13:00:00Z
 title: "ASP.NET - Selectively Run Health Checks"
