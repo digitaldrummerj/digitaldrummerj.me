@@ -1,5 +1,5 @@
 ---
-categories: ["testing", "aspnet-core", "teamcity", "dotcover"]
+categories: ["testing", "aspnet core", "teamcity", "dotcover"]
 date: 2022-02-08T13:00:00Z
 published: true
 title: "DotCover - Combine Multiple Results into Single Report"

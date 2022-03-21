@@ -13,39 +13,30 @@ Here are some additional post ideas that I have not picked a date for yet.
 
 ### March
 
-* 031322-vscode-extension-addonly.md
-* 031422-vscode-extension-foldplus.md
-* 031522-vscode-extension-path-intellisense.md
-* 031622-vscode-extension-markdown-lint.md
-* 031722-vscode-extension-angular2-switcher.md
-* 031822-vscode-extension-github-pr.md
-* 031922-dotnet-core-auto-mapper.md
-  * setup / mapping
-  * testing
-* 032022-ef-core-soft-deletes.md
-* 032122-ef-core-add-audit-columns.md
-* 031322-ef-core-enums-as-column-value.md
-* 031422-ef-core-split-context-config-by-table.md
-* 031522-ef-core-call-stored-procedure.md
-* 031622-ef-core-global-filters.md
-* 031722-ef-core-indexes.md
-* 031822-ef-core-relationships.md
-* 031922-ef-core-column-attributes.md
-* 032022-ef-core-table-names.md
-* 032122-ef-core-migration-scripts.md
-* 032222-ef-core-use-real-db-for-testing.md
-* 032322-aspnet-core-add-swagger.md
-* 032422-aspnet-core-add-versioning.md
-* 032522-aspnet-core-global-exception-handler.md
-* 032722-dotnet-core-repository-pattern.md
-* 032822-dotnet-core-supervisor-pattern.md
-* 032922-aspnet-core-strongly-typed-config.md
-* 033022-hugo-mobile-blog-writing.md
+* hugo new posts/draft/2022/03/032022-vscode-extension-github-pr.md
+* hugo new posts/draft/2022/03/032122-dotnet-core-auto-mapper.md
+* hugo new posts/draft/2022/03/032222-dotnet-core-auto-mapper-testing.md
+* hugo new posts/draft/2022/03/032322-ef-core-soft-deletes.md
+* hugo new posts/draft/2022/03/032422-ef-core-add-audit-columns.md
+* hugo new posts/draft/2022/03/032522-ef-core-enums-as-column-value.md
+* hugo new posts/draft/2022/03/032622-ef-core-split-context-config-by-table.md
+* hugo new posts/draft/2022/03/032722-ef-core-call-stored-procedure.md
+* hugo new posts/draft/2022/03/032822-ef-core-global-filters.md
+* hugo new posts/draft/2022/03/032922-ef-core-indexes.md
+* hugo new posts/draft/2022/03/033022-ef-core-relationships.md
+* hugo new posts/draft/2022/03/033122-ef-core-column-attributes.md
 
 ### April
 
-* 040122-
-* 040222-
+* hugo new posts/draft/2022/03/040122-ef-core-table-names.md
+* hugo new posts/draft/2022/03/040222-ef-core-migration-scripts.md
+* hugo new posts/draft/2022/03/040322-aspnet-core-add-swagger.md
+* hugo new posts/draft/2022/03/040422-aspnet-core-add-versioning.md
+* hugo new posts/draft/2022/03/040522-aspnet-core-global-exception-handler.md
+* hugo new posts/draft/2022/03/040622-aspnet-core-repository-pattern.md
+* hugo new posts/draft/2022/03/040722-aspnet-core-supervisor-pattern.md
+* hugo new posts/draft/2022/03/040822-aspnet-core-strongly-typed-config.md
+* hugo new posts/draft/2022/03/040922-hugo-mobile-blog-writing.md
 
 ## Future Ideas
 
