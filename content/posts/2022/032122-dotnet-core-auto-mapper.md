@@ -84,8 +84,7 @@ Now that we have our example project and AutoMapper installed, we are going to m
 
         public int TemperatureF { get; set; }
 
-        // left out so that you can see it used the ViewModel
-        // public string? Summary { get; set; }
+        public string? Summary { get; set; }
     }
     ```
 
