@@ -66,4 +66,6 @@ Now we are going to create our XUnit project and mapping profile test.
 
 Now you are able to validate that the AutoMapper mapping profile is valid as part of your testing and automated builds.
 
-In our next post on AutoMapper, we will take a look at what to do when property names are not the same between the input and output.
+In our [next post](/aspnet-core-automapper-property-names-not-same) on AutoMapper, we will take a look at what to do when property names are not the same between the input and output.
+
+> [See Code for Post](https://github.com/digitaldrummerj/aspnet-core-automapper-example/tree/feature/2-automapper-testing)

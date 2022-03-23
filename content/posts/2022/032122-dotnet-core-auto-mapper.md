@@ -181,4 +181,6 @@ Now that everything is working, next time you need to create a mapping, you just
 
 AutoMapper as configured above only works as expected if our input and output objects have the same property names and the mapping configuration is correct.
 
-In [part 2](/aspnet-core-automapper-testing) in the series, we will look at how to write a unit test for our mapping configuration to make sure that profile is correct.  Then in part 3 of this series, we will look at how to configure our mapping when property names do not match between the input and output object.
+In [part 2](/aspnet-core-automapper-testing) in the series, we will look at how to write a unit test for our mapping configuration to make sure that profile is correct.  Then in [part 3](/aspnet-core-automapper-property-names-not-same) of this series, we will look at how to configure our mapping when property names do not match between the input and output object.
+
+> [See Code for Post](https://github.com/digitaldrummerj/aspnet-core-automapper-example/tree/feature/1-automapper-get-started)
