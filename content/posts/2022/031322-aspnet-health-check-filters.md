@@ -14,7 +14,7 @@ In this post, we will are going to add the ability to selectively run our health
 
 <!--more-->
 
-> If you have not implemented the example health check from [part 1](/aspnet-core-health-checks) and [part 2](/aspnet-core-health-checks-json), please do so first or [download code from previous post](https://github.com/digitaldrummerj/aspnet-core-health-checks/tree/feature/2-json-response)
+> If you have not implemented the example health check from [part 1](/aspnet-core-health-checks) and [part 2](/aspnet-core-health-checks-json), please do so first or [download code from previous post](https://github.com/digitaldrummerj/aspnet-core-health-checks-example/tree/feature/2-json-response)
 
 To demonstrate selectively running of health checks, we need to add a second health check.
 
@@ -91,6 +91,6 @@ Now when you navigate to the `/health` endpoint it will run all health checks an
 
 In our next post in this series, we will update our endpoint mapping to use a generic endpoint that provides filtering and returns json with a single line of code.
 
-[Download Code Example](https://github.com/digitaldrummerj/aspnet-core-health-checks/tree/feature/3-filter)
+[Download Code Example](https://github.com/digitaldrummerj/aspnet-core-health-checks-example/tree/feature/3-filter)
 
 > You can also read more about ASP.NET Core Health Checks in the [docs](https://docs.microsoft.com/en-us/aspnet/core/host-and-deploy/health-checks)
