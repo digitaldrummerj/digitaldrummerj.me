@@ -45,4 +45,4 @@ The report also now includes just the files that are truly should be under tests
 
 In the next post in the series, we will add our code coverage report as part of our TeamCity build.
 
-> If you want to download the project that I used for this post, you can do so at [https://github.com/digitaldrummerj/aspnet-core-code-coverage](https://github.com/digitaldrummerj/aspnet-core-code-coverage).  It is based on .NET 3.1.
+> If you want to download the project that I used for this post, you can do so at [https://github.com/digitaldrummerj/aspnet-core-code-coverage-example](https://github.com/digitaldrummerj/aspnet-core-code-coverage-example).  It is based on .NET 3.1.
