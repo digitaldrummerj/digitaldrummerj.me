@@ -585,4 +585,4 @@ Now we are ready to create the EntityMap configuration for our Blog and Post ent
 
 If you start up the application and run the get call for Blog, you will see that it no longer returns the record with the IsDelete set to true as it did before. If you need to write a query to return the IsDeleted is true records, on the individual queries, you would add a call to IgnoreQueryFilters() as part of the query.
 
-Whew, you made it. I know it was a lot of steps and code to walk through, but you did it and completed the implementation of EF Core soft deletes. If you found this post helpful, please share this post on Twitter, Facebook, and LinkedIn using the share buttons below.
+Whew, you made it. I know it was a lot of steps and code to walk through, but you did it and completed the implementation of EF Core soft deletes. If you found this post helpful, please share this post on Twitter and Facebook using the share buttons below.
