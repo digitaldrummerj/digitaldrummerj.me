@@ -1,13 +1,13 @@
 ---
 categories: ["aspnet core", "ef core"]
 date: 2022-03-26T13:00:00Z
-draft: true
+draft: false
 title: "EF Core - Audit Fields - Track Created By and Last Updated By Values Automatically"
 url: '/ef-core-audit-columns'
 series: ["EF Core Advanced Features"]
 ---
 
-In several applications I work on, in addition to the soft deletes that we implemented in the [previous post](/ef-core-soft-deletes), we also a requirement to implement audit tracking.  Audit tracking is the tracking of who created the record, the date the record was created, who was the last person to update the record, and the last updated date of the record. We called this audit tracking.
+In several applications I work on, in addition to the soft deletes that we implemented in the [previous post](/ef-core-soft-deletes), we also have a requirement to implement audit tracking.  Audit tracking is the tracking of who created the record, the date the record was created, who was the last person to update the record, and the last updated date of the record.
 
 In this post, we will implement audit tracking so that the audit fields are automatically added onto our entities and EF Core automatically sets the values when save our entity.
 
@@ -23,7 +23,7 @@ In our [previous post](/ef-core-soft-deletes) on soft deletes, we create a sampl
 
 Since all of our entities that need to have audit tracking enable are inheriting from EntityBase.cs, we just need to add the audit tracking fields to the IEntityBase.cs and EntityBase.cs.
 
-1. Open EntityFramework\Entities\Base\IEntityBase.cs and add the following properties
+1. Open IEntityBase.cs and add the following properties
 
     ```csharp
     DateTimeOffset CreatedOn { get; set; }
@@ -35,7 +35,7 @@ Since all of our entities that need to have audit tracking enable are inheriting
     string UpdatedBy { get; set; }
     ```
 
-1. Open EntityFramework\Entities\Base\EntityBase.cs and implement the following properties
+1. Open EntityBase.cs and implement the following properties
 
     ```csharp
     public DateTimeOffset CreatedOn { get; set; }
@@ -202,7 +202,7 @@ For our database context, when a SaveChanges method is called, it uses  the SetA
 * For adding a new record, it sets both the created and last updated fields.
 * For update and delete, it only sets the last updated fields.
 
-1. Replace the code that is in the EntityFramework\Extensions\ChangeTrackerExtension.cs with the following code.  Note that the timestamps are UTC.
+1. Replace the code in ChangeTrackerExtension.cs with the following code
 
     ```csharp
     using EntityFrameworkExample.Authentication;
