@@ -13,7 +13,7 @@ In this post, we are going to build on the previous post and update our endpoint
 
 <!--more-->
 
-> If you have not implemented the example health check from the previous post, you can [download code from previous post](https://github.com/digitaldrummerj/aspnet-core-health-checks-example/tree/feature/3-filters)
+> If you have not implemented the example health check from the previous post, you can [download code from previous post](https://github.com/digitaldrummerj/aspnet-core-health-checks-example/tree/feature/3-filter)
 
 1. Create a file called HealthCheckExtension.cs
 1. Add the following code to the HealthCheckExtension.cs to create a custom health check endpoint that will map a health check to the url and tag filter provided.
