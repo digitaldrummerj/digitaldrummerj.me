@@ -4,6 +4,7 @@ date: 2022-03-24T13:00:00Z
 draft: false
 title: "EF Core - Implement Soft Delete"
 url: '/ef-core-soft-deletes'
+series: ["EF Core Advanced Features"]
 ---
 
 In several applications I work on, we have a requirement that we are not allowed to delete any data out of the database physically. Instead, when we need to delete a record, we set an IsDeleted column to true and exclude the row from our queries.
