@@ -145,4 +145,4 @@ When you are first starting out, I tend to keep it at 5% to 10% and over time I 
 
     ![ignored tests failure condition](/images/cypress-code-coverage-ci/tc_failure_conditions_number_of_ignored_tests.png)
 
-> If you want to download the project that I used for this post, you can do so at [https://github.com/digitaldrummerj/aspnet-core-code-coverage](https://github.com/digitaldrummerj/aspnet-core-code-coverage).  It is based on .NET 3.1.
+> If you want to download the project that I used for this post, you can do so at [https://github.com/digitaldrummerj/aspnet-core-code-coverage-example](https://github.com/digitaldrummerj/aspnet-core-code-coverage-example).  It is based on .NET 3.1.
