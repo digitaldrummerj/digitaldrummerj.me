@@ -37,44 +37,44 @@ The first thing we need to do is create an enum.
 
 Now that our enum is created, we need to add the new property to our entity that is of the enum Status.
 
-1. Open up our Blog entity and add a new property 
+1. Open up our Blog entity and add a new property
 
-	```csharp
-	[Required]
-	[MaxLength(25)]
-	public Status Status { get; set; }
+     ```csharp
+    [Required]
+    [MaxLength(25)]
+    public Status Status { get; set; }
     ```
 
 Now we need to tell EF Core how to handle the enum.
 
 1. Open up our BlogMap.cs and add the following to the Configure to set the default value and convert it to a string
 
-	```csharp
-	entity.Property(t => t.Status)
-    	.HasDefaultValue(SyncStatus.Draft)
-    	.HasConversion<string>();
+    ```csharp
+    entity.Property(t => t.Status)
+        .HasDefaultValue(SyncStatus.Draft)
+        .HasConversion<string>();
     ```
 
 1. Also, need to add the using for EF Core to the BlogMap.cs
 
-	```csharp
-	using Microsoft.EntityFrameworkCore;
-	```
+    ```csharp
+    using Microsoft.EntityFrameworkCore;
+    ```
 
 The last thing we need to do is create our migration script to add the new column.
 
-1. Run the following command to generate the migration script 
+1. Run the following command to generate the migration script
 
-	```shell
-	dotnet ef migrations add AddStatusField -o .\EntityFramework\Migrations\
-	```
+    ```shell
+    dotnet ef migrations add AddStatusField -o .\EntityFramework\Migrations\
+    ```
 
 1. Then we need to run the script against our database.
 
-	```shell
-	dotnet ef database update
-	```
+    ```shell
+    dotnet ef database update
+    ```
 
-Now our application will only allow the enum values to be entered through EF Core for our Status column.   
+Now our application will only allow the enum values to be entered through EF Core for our Status column.
 
 > [See Code for Post](https://github.com/digitaldrummerj/efcore-examples/tree/feature/3-enum-columns)
