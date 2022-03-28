@@ -390,3 +390,5 @@ You are now ready to test that the audit tracking works:
 Whew, you made it. I know it was a lot of steps and code to walk through, but you did it and completed the implementation of EF Core audit tracking. Audit tracking once you know how to implement it is not overly difficult to implement but figuring out all of the moving pieces takes a bit of time. Hopefully, this post has made it easier for you to quickly implement audit tracking.
 
 If you found this post helpful, please share this post on Twitter and Facebook using the share buttons below.
+
+> [See Code for Post](https://github.com/digitaldrummerj/efcore-examples/tree/feature/2-audit-fields)

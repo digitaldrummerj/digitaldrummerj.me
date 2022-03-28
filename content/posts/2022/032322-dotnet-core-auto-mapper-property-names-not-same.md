@@ -44,4 +44,4 @@ CreateMap<WeatherForecast, WeatherForecastViewModel>()
 
 Just like that AutoMapper is able to map Summary to SummaryText.  For each property name that do not match, you will need to add a call to ForMember.
 
-> [See Code for Post](https://github.com/digitaldrummerj/aspnet-core-automapper-example/tree/feature/2-automapper-names-not-same)
+> [See Code for Post](https://github.com/digitaldrummerj/aspnet-core-automapper-example/tree/feature/3-automapper-names-not-same)
