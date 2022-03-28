@@ -571,7 +571,7 @@ Now we are ready to create the EntityMap configuration for our Blog and Post ent
 1. Now, we need to tell our DbContext (EntityFrameworkExampleContext), about the EntityMap configuration for our Blog and Post entities by overriding the OnModelCreating method
 
     ```csharp
-    protected override void OnModelCreating(ModelBuilder modelBuilder)
+    protected override void OnModelCreating(ModelBuild  er modelBuilder)
     {
         modelBuilder.ApplyConfiguration(new BlogMap());
         modelBuilder.ApplyConfiguration(new PostMap());
@@ -587,3 +587,5 @@ Now we are ready to create the EntityMap configuration for our Blog and Post ent
 If you start up the application and run the get call for Blog, you will see that it no longer returns the record with the IsDelete set to true as it did before. If you need to write a query to return the IsDeleted is true records, on the individual queries, you would add a call to IgnoreQueryFilters() as part of the query.
 
 Whew, you made it. I know it was a lot of steps and code to walk through, but you did it and completed the implementation of EF Core soft deletes. If you found this post helpful, please share this post on Twitter and Facebook using the share buttons below.
+
+> [See Code for Post](https://github.com/digitaldrummerj/efcore-examples/tree/feature/1-soft-deletes)
