@@ -44,7 +44,7 @@ Now that our enum is created, we need to add the new property to our entity that
 	[Required]
 	[MaxLength(25)]
 	public Status Status { get; set; }
-	```
+    ```
 
 Now we need to tell EF Core how to handle the enum.
 
