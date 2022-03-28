@@ -74,7 +74,7 @@ The last thing we need to do is create our migration script to add the new colum
 	```shell
 	dotnet ef database update
 	```
-	
+
 Now our application will only allow the enum values to be entered through EF Core for our Status column.   
 
 > [See Code for Post](https://github.com/digitaldrummerj/efcore-examples/tree/feature/3-enum-columns)
