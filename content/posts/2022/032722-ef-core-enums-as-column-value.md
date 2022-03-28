@@ -25,7 +25,6 @@ The first thing we need to do is create an enum.
 
 1. To the Status.cs add the following code to create our enum
 
-
     ```csharp
     namespace EntityFrameworkExample;
 
@@ -54,7 +53,7 @@ Now we need to tell EF Core how to handle the enum.
 	entity.Property(t => t.Status)
     	.HasDefaultValue(SyncStatus.Draft)
     	.HasConversion<string>();
-	```
+    ```
 
 1. Also, need to add the using for EF Core to the BlogMap.cs
 
@@ -64,7 +63,7 @@ Now we need to tell EF Core how to handle the enum.
 
 The last thing we need to do is create our migration script to add the new column.
 
-	1. Run the following command to generate the migration script 
+1. Run the following command to generate the migration script 
 
 	```shell
 	dotnet ef migrations add AddStatusField -o .\EntityFramework\Migrations\
