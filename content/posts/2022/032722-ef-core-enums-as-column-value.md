@@ -46,6 +46,8 @@ Now that our enum is created, we need to add the new property to our entity that
 	public Status Status { get; set; }
 	```
 
+Now we need to tell EF Core how to handle the enum.
+
 1. Open up our BlogMap.cs and add the following to the Configure to set the default value and convert it to a string
 
 	```csharp
@@ -60,13 +62,15 @@ Now that our enum is created, we need to add the new property to our entity that
 	using Microsoft.EntityFrameworkCore;
 	```
 
-1. The last thing we need to do is create our migration script to add the new column.
+The last thing we need to do is create our migration script to add the new column.
+
+	1. Run the following command to generate the migration script 
 
 	```shell
 	dotnet ef migrations add AddStatusField -o .\EntityFramework\Migrations\
 	```
 
-1. Then we need to runbthe scriot against our database.
+1. Then we need to run the script against our database.
 
 	```shell
 	dotnet ef database update
