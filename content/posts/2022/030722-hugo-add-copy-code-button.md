@@ -11,6 +11,7 @@ toc: true
 I have many posts on this site that include code snippets for the reader to cut and paste into their code. From a usability perspective, instead of always making the user select lines from the code snippet to copy and paste, we can add a copy button to the code snippet.
 
 **example without line numbers:**
+
 ![copy button example](/images/hugo/copy-button/example.png)
 
 **example with line numbers:**
