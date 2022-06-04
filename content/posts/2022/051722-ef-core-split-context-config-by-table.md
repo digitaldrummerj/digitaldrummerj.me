@@ -138,4 +138,4 @@ modelBuilder.ApplyConfiguration(new PostMap());
 
 We have gone from having lots of entity configuration code in the database context OnModelCreating to have just a few lines.  Also, having a config file for each entity, makes it possible to quickly see the entity's configuration.
 
-We can also enhance our implementation which we are going to do in our next post, to have a base class that all entities inherit from where we can put global configurations and not have to worry about adding them to each entity.
+We can also enhance our implementation which we are going to do in our [next post](/ef-core-global-configurations), to have a base class that all entities inherit from where we can put global configurations and not have to worry about adding them to each entity.
