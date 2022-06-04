@@ -4,6 +4,7 @@ date: 2022-06-06T13:00:00Z
 draft: false
 title: "EF Core - Configurations That Apply to All Tables"
 url: '/ef-core-global-configurations'
+series: ["EF Core Advanced Features"]
 ---
 
 In our [previous post](/ef-core-split-model-config), we split all of the entity configurations by table into their own configuration mapping file. The next step is to create a base class that all of the configuration mappings inherit from where we can put configurations that all entities should get.
