@@ -6,17 +6,15 @@ title: "EF Core - Configurations That Apply to All Tables"
 url: '/ef-core-global-configurations'
 ---
 
-As a follow to our [previous post](/ef-core-split-model-config) on splitting the EF Core entity configurations by table into their own files, we are going to implement the ability to have entity configurations that apply to all of the EF Core entities that we have created.
+In our [previous post](/ef-core-split-model-config), we split all of the entity configurations by table into their own configuration mapping file. The next step is to create a base class that all of the configuration mappings inherit from where we can put configurations that all entities should get.
 
-This is really useful for our [soft deletes](/ef-core-soft-deletes) that we implement previously where we want to exclude by default all of the rows that have the IsDeleted flag set to true but we do not want to have to remember to add that code to all of the entities.
-
-This will also allow us to have the code in a single place, so if we ever decide to change it, it will be a very easy change to make.
+An example of where we will use the global configuration is the [soft deletes](/ef-core-soft-deletes) that we implement previously where we want to exclude all of the rows that have the IsDeleted flag set to true but we do not want to have to remember to add that code to all of the entities and we don't want to have to remember to add it to every query.
 
 <!--more-->
 
-In our [previous post](/ef-core-split-model-config), we split all of the entity configurations by table into their own configuration mapping file. The next step is to create a base class that all of the configuration mappings inherit from and that we can put the global configurations in.
+> **Note** This code in this post is based off of the code from the previous post.  If you have not gone through the previous post, you can download the code [here](https://github.com/digitaldrummerj/efcore-examples/tree/feature/4-entity-config-by-table)
 
-> **Note** This     post is based off of the code from the previous post.  If you have not gone through the previous post, you can download the code [here](https://github.com/digitaldrummerj/efcore-examples/tree/feature/4-entity-config-by-table)
+The first thing that we need to do is create our base interface and abstract class that all of our entity maps will inherit from.
 
 1. In the EntityFramework\Maps directory, created a directory named base
 1. In the EntityFramework\Maps\base directory, create a new interface named IEntityMapBase.cs
@@ -34,7 +32,7 @@ In our [previous post](/ef-core-split-model-config), we split all of the entity 
 
 The interface inherits from the EF Core IEntityTypeConfiguration, just like our BlogMap and PostMap did in our previous post.
 
-Now we need to create our implementation of the interface we just created.
+Now we need to create our implementation of the interface we just created.  We will be making it an abstract class since we do not want to be able to directly instantiate the class and only want to use it as a base class.
 
 1. In the EntityFramework\Maps\Base directory, create a class named EntityMapBase.cs
 1. In the EntityMapBase.cs file, we need to override the configuration method
@@ -88,7 +86,7 @@ public class PostMap : EntityMapBase<Post>
 }
 ```
 
-Now we are ready to implement our global configuration in the EntityMapBase.
+Now we are ready to move the isDeleted query filter into our EntityMapBase .
 
 1. In the `EntityMapBase.Configure` method, add the following code to specify the global filter for isDeleted = false
 
@@ -96,7 +94,7 @@ Now we are ready to implement our global configuration in the EntityMapBase.
     builder.HasQueryFilter(t => t.IsDeleted == false);
     ```
 
-1. Now in the BlogMap and PostMap, we can remove the isDeleted query filter.
+1. In the BlogMap and PostMap, we can remove the isDeleted query filter as it is in the base class now.
 
 Just like that we now have the ability to specify global entity configurations just by inheriting our entity map from EntityMapBase and within our entity calling base.Configure(builder)
 
