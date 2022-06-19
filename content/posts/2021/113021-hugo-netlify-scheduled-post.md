@@ -73,7 +73,7 @@ To create the Github action follow these steps:
 
     on:
       schedule:
-        - cron: "* 13 * * *"
+        - cron: "0 13 * * *"
 
     jobs:
       build:
