@@ -44,3 +44,7 @@ To fix the error, I needed to close OBS, install the NDI Tools from NewTek and c
 1. Open OBS and the NDI Runtime missing error should not appear
 1. Under the tools menu you have the NDI Output settings option
 1. In a scene you can add an NDI Source
+
+{{< alert class="warning" >}}
+**Note:** I also found that when sending NDI Audio to another computer, that the audio had a lot of static on it but only in the right channel.  The fix was to go into the OBS Audio setting on the computer sending the NDI output and set the Audio -> General -> Channels to Mono.
+{{</alert>}}
