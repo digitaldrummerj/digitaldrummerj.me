@@ -129,13 +129,13 @@ For editing the companion module code I like to use [Visual Studio Code](https:/
 
 Before we can use our Companion module in Companion, we need to install the dependencies for the module and compile the module.
 
-1. Before we can install the module dependencies, we need to install Yarn.  In your terminal windows run the following 3 commands:
+1. Before we can install the module dependencies, we need to install Yarn.  In your terminal windows run the following command:
 
     ```
-    corepack enable
-    corepack prepare yarn@stable --activate
-    yarn set version stable
+    npm install --global yarn
     ```
+
+    > Note: we are using Yarn 1.0 because that it what Companion is using and we want to stay on the same version as they are using.
 
 1. Now that we got Yarn installed, we can install our module's dependencies by running the following command in your module's directory
 
