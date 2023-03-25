@@ -239,6 +239,6 @@ Lets do a quick recap of what we accomplished.
 1. Generated the code coverage report
 1. Reviewed the code coverage report
 
-> The code for this article is available at [https://github.com/digitaldrummerj/angular-cypress-code-coverage](https://github.com/digitaldrummerj/angular-cypress-code-coverage)
+> The code for this article is available at [https://github.com/digitaldrummerj/angular-cypress-code-coverage-example](https://github.com/digitaldrummerj/angular-cypress-code-coverage-example)
 
 In our next article, we will add the running of the code coverage report to TeamCity builds, set up failure metrics, and be able to view the report within TeamCity.

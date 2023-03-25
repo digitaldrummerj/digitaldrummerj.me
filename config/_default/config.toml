@@ -110,7 +110,7 @@ languageCode = "en"
 
     # Optionally, set any of these to false to hide them:
     facebook = true
-    linkedin = true
+    linkedin = false
     twitter = true
 
 [outputs]

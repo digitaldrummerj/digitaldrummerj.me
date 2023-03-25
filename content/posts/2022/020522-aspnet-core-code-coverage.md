@@ -70,4 +70,4 @@ Also, your project team will need to decide on the target code coverage percenta
 
 In our next post on ASP.NET Code Coverage using dotCover, we will discuss how to filter the report so that it only incudes code that should actually be tested and exclude things like our unit test project, so that our code coverage number is more accurate.
 
-> If you want to download the project that I used for this post, you can do so at [https://github.com/digitaldrummerj/aspnet-core-code-coverage](https://github.com/digitaldrummerj/aspnet-core-code-coverage).  It is based on .NET 3.1.
+> If you want to download the project that I used for this post, you can do so at [https://github.com/digitaldrummerj/aspnet-core-code-coverage-example](https://github.com/digitaldrummerj/aspnet-core-code-coverage-example).  It is based on .NET 3.1.

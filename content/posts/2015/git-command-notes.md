@@ -82,15 +82,16 @@ Full details at [https://help.github.com/articles/generating-ssh-keys/](https://
 
 **See what files have changed**
 
-	Long Form: git status  
-	Short Form: git status -s
-	Show Files: git status -u or to always show git config status.showuntrackedfile=yes 
+Long Form: `git status`
 
+Short Form: `git status -s`
+
+Show Files: `git status -u` or to always show `git config status.showuntrackedfile=yes`
 
 **Turning a directory into a repository on the local machine**
 
 	git init
-    
+
 **Adding files to the repository**
 
 	git add [file name]
@@ -102,20 +103,20 @@ Full details at [https://help.github.com/articles/generating-ssh-keys/](https://
 **Reverting a file that has changes not been added or staged**
 
 	git checkout [file name]
-	
+
 **Unadding a file that has been added and not committed but leave file**
 
 	git reset
-	
+
 **Unadding a file that has been added and not committed but delete file**
 
 	git reset --hard
 
 **Ignoring files**
 
-- create .gitignore file 
+- create .gitignore file
 - starter files available at [https://github.com/github/gitignore](https://github.com/github/gitignore)
-- Create a .gitignore file for any number of languages at [http://gitignore.io](http://gitignore.io) 
+- Create a .gitignore file for any number of languages at [https://www.toptal.com/developers/gitignore/](https://www.toptal.com/developers/gitignore/)
   
 **Committing files to the local repository**
 
@@ -134,7 +135,7 @@ Full details at [https://help.github.com/articles/generating-ssh-keys/](https://
 	git push
   
 ## Merge
- 
+
 #### Storing work that you want to keep but not commit
   
 **Storing the work**
@@ -142,7 +143,7 @@ Full details at [https://help.github.com/articles/generating-ssh-keys/](https://
 	git stash
   
 **Seeing what work is stored**
-	
+
 	git stash list
   
 **Applying the last stash to the current code**
@@ -150,7 +151,7 @@ Full details at [https://help.github.com/articles/generating-ssh-keys/](https://
 	git stash apply
   
 **Applying a different stash then the last one to the current code**
-	
+
 	git stash apply stash@{[Number for stash from git stash list command]}
   
 ## Branching
@@ -158,7 +159,7 @@ Full details at [https://help.github.com/articles/generating-ssh-keys/](https://
 **See Available Branch Including Remote Branches**
 
 	git branch -v
-	
+
 **Creating a Branch**
   
 	git branch [Branch Name]
@@ -170,7 +171,7 @@ Full details at [https://help.github.com/articles/generating-ssh-keys/](https://
 **Switch to last branch you were on**
 
 	git checkout -
-	
+
 **Merging a branch into the master (HEAD)**
   
 	First make sure you are on the master branch: git checkout master
@@ -181,9 +182,9 @@ Full details at [https://help.github.com/articles/generating-ssh-keys/](https://
   
 	git branch
   
-  - Note: the * in the results indicates the branch currently checked out. 
+  - Note: the * in the results indicates the branch currently checked out.
   
-  
+
 **See last commit of each branch**
   
 	git branch -v 
@@ -197,13 +198,12 @@ Full details at [https://help.github.com/articles/generating-ssh-keys/](https://
 	git branch --no-merged
   
 **Push branch to remote repository**
-	
+
 	git push origin [branch name]
   
 **Delete a Local branch**
-	
-	git branch -d [branch name]
 
+	git branch -d [branch name]
 
 **Deleting Remote Branch**
 
@@ -211,7 +211,7 @@ Full details at [https://help.github.com/articles/generating-ssh-keys/](https://
 
 ## Proxy Settings
 
-See Post on [Proxy  Configurations]({{"/proxy-configurations" | prepend: site.baseurl | prepend: site.url }}) for configuring your proxy settings with Git
+See Post on [Proxy  Configurations](/proxy-configurations) for configuring your proxy settings with Git
 
 ## Configurations
 

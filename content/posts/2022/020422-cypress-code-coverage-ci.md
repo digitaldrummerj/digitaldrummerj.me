@@ -17,7 +17,7 @@ I will be using TeamCity as the automated build platform and am assuming that yo
 
 <!--more-->
 
-> This article will be building on the code from the previous article.  You can get the code from the previous article at [https://github.com/digitaldrummerj/angular-cypress-code-coverage](https://github.com/digitaldrummerj/angular-cypress-code-coverage)
+> This article will be building on the code from the previous article.  You can get the code from the previous article at [https://github.com/digitaldrummerj/angular-cypress-code-coverage-example](https://github.com/digitaldrummerj/angular-cypress-code-coverage-example)
 
 ## Install Dependencies
 
