@@ -1,6 +1,6 @@
 baseurl = "https://digitaldrummerj.me"
 title = "Justin James"
-Copyright = "Copyright 2015-2022.  All content is the property of Justin James and digitaldrummerj.me."
+Copyright = "Copyright 2015-2023.  All content is the property of Justin James and digitaldrummerj.me."
 
 buildDrafts = true
 buildFuture = true
