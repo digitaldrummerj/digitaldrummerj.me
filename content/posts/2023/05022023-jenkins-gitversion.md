@@ -6,9 +6,15 @@ title: "Using GitVersion on Jenkins"
 url: '/jenkins-gitversion'
 ---
 
+{{< alert class="danger" >}}
+**NOTE:** This article is out of date.  Click [here](/jenkins-automatically-versioning-your-application) for the new article.
+{{</alert>}}
+
 For my continuous integration builds I use Gitversion to determine that SemVer to use for a particular build and release.  For pre-release builds the version would look like something like 0.1.5-ci0004 where the -ci is appended to the version number and the 4 is the build number in the CI system.  Then for a release  release version, it would just be the version number of 0.1.5 without the -ci or build number at the end.
 
 I am in the process of moving several builds to Jenkins and needed to get Gitversion working on Jenkins.  I am totally new to Jenkins so even though Gitversion has [documentation](https://gitversion.net/docs/reference/build-servers/jenkins) on how to set up Jenkins correctly it took me a bit to figure out where those options were. My initial attempts ended up with the pre-release being 0.1.5-origin-master-0004 instead of 0.1.5-ci0004.
+
+<!--more-->
 
 Below are the options that you need to add into Jenkins and what they are called.
 

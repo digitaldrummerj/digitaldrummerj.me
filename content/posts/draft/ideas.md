@@ -44,7 +44,6 @@ Here are some additional post ideas that I have not picked a date for yet.
     1. Cypress login testing
     1. Cypress end to end testing
     1. Cypress screenshot testing
-    1. Cypress - Mocking Api Calls
     1. UI Performance Testing Using Locust
 1. VSCode
     1. Visual Studio Code Outline on the Right
