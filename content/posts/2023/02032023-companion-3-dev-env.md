@@ -7,7 +7,7 @@ url: '/companion-3-dev-environment-for-zoomosc'
 toc: true
 ---
 
-[Bitfocus Companion](https://bitfocus.io/companion) version 3 is in beta and they have made it way easier to do module development.  In this post, we are going to get your computer set up to be able to do Companion module development. 
+[Bitfocus Companion](https://bitfocus.io/companion) version 3 is in beta and they have made it way easier to do module development.  In this post, we are going to get your computer set up to be able to do Companion module development.
 
 <!--more-->
 
@@ -57,7 +57,7 @@ Now that we have the directory that will contain our Companion modules, we need 
 
 1. Go to [https://git-scm.com/downloads](https://git-scm.com/downloads) and downlod the Git install for your OS
 1. Open the installer for Git and follow the prompts.  I just stick with the defaults
-1. Open a terminal and navigate to the companion-module-dev folder 
+1. Open a terminal and navigate to the companion-module-dev folder
 1. Run the following command to set up your Git name and email that will be used if you submit changes to the code
 
     ```shell
@@ -71,7 +71,7 @@ Now that we have the directory that will contain our Companion modules, we need 
     git clone [Your GitHub Fork Url]
     ```
 
-    > for example, my GitHub fork is https://github.com/digitaldrummerj/companion-module-zoom-osc-iso
+    > for example, my GitHub fork is [https://github.com/digitaldrummerj/companion-module-zoom-osc-iso](https://github.com/digitaldrummerj/companion-module-zoom-osc-iso)
 
 1. The git clone created a directory in the companion-module-dev folder called companion-module-zoom-osc-iso
 1. In the terminal, go into the companion-module-zoom-osc-iso driectory
@@ -97,25 +97,25 @@ Now that fnm is installed, we need to tell it which version of node to use
 
 1. In a terminal window, install Node by running
 
-    ```
+    ```shell
     fnm install 18
     ```
 
 1. Tell fnm to use Node 18 that we just installed
 
-    ```
+    ```shell
     fnm use 18
     ```
 
 1. Tell fnm that Node 18 is our default Node version
 
-    ```
+    ```shell
     fnm default 18
     ```
 
 1. Lastly, install enable the corepack
 
-    ```
+    ```shell
     corepack enable
     ```
 
@@ -131,7 +131,7 @@ Before we can use our Companion module in Companion, we need to install the depe
 
 1. Before we can install the module dependencies, we need to install Yarn.  In your terminal windows run the following command:
 
-    ```
+    ```shell
     npm install --global yarn
     ```
 
@@ -139,13 +139,13 @@ Before we can use our Companion module in Companion, we need to install the depe
 
 1. Now that we got Yarn installed, we can install our module's dependencies by running the following command in your module's directory
 
-    ```
+    ```shell
     yarn install
     ```
 
 1. The module built after the yarn install.  If you need to build the module again, you can run the following command
 
-    ```
+    ```shell
     yarn dev
     ```
 
@@ -181,7 +181,6 @@ After you launch Companion, follow the steps below to tell Companion about your 
 
 ![Companion Launch](/images/companion/companion-cog.png)
 
-
 ## Part 4: Pull Changes from Module Into Your Copy of the Module
 
 As the module developers make changes, you will want to pull those changes into your forked repository.  
@@ -189,24 +188,24 @@ As the module developers make changes, you will want to pull those changes into 
 1. Open a terminal and navigate to your module's directory that contains your forked repository
 1. The first thing is to fetch all of the changes from the original repository.  Note that commits to the original repository will be stored in a local branch called, upstream/master
 
-    ```
+    ```shell
     git fetch upstream
     ```
 
 1. Make sure that you are on your fork's main branch
 
-    ```
+    ```shell
     git checkout main
     ```
 
 1. Merge the changes from the upstream/main into your local master branch.  This will bring your fork's master branch into sync with the upstream repository without losing your local changes.  If you have made any changes that create a conflict, you will obviously have to resolve those before you can complete the merge.
 
-    ```
+    ```shell
     git merge upstream/master
     ```
 
 1. Build the module
 
-    ```
+    ```shell
     yarn dev
     ```
