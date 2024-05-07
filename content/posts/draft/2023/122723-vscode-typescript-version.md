@@ -1,10 +1,10 @@
-—
+--—
 categories: [“vscode”, “typescript”]
 date: 2023-12-27T13:00:00Z
 published: false
 title: “Fix Vscode is Using Weong TypeScript Version”
 url: ‘/vscode-typescript-version’
-—
+—--
 
 Problem: VSCode uses its built-in TypeScript version by default. So if your project uses a different TypeScript version, you may experience random type issues.
 
