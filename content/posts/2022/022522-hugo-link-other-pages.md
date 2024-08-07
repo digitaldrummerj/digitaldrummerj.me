@@ -11,7 +11,7 @@ For Hugo based websites, when a link goes to an external website, I prefer to ha
 
 <!--more-->
 
-To accomplish the goal of opening all external links in a new tab, you need to override the Hugo default behavior for rendering links by creating the file `layouts/_defaults/_markup/render-link.html`.
+To accomplish the goal of opening all external links in a new tab, you need to override the Hugo default behavior for rendering links by creating the file `layouts/_default/_markup/render-link.html`.
 
 In the render-link.html, we need to look at the prefix of the `.Destination` to see if it starts with http or https and if it does then add the `target="_blank"
 
