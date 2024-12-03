@@ -1,7 +1,7 @@
 ---
 categories: ["git"]
-date: 2019-05-06T00:00:00Z
-published: true
+published: 2019-05-06T00:00:00Z
+
 title: "Git: Clone Branch to New Repo without History"
 ---
 

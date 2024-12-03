@@ -1,7 +1,7 @@
 ---
 categories: ["blogging", "hugo"]
-date: 2022-02-18T13:00:00Z
-published: true
+published: 2022-02-18T13:00:00Z
+
 title: "Hugo - Create Page to View All Your Posts"
 url: '/hugo-view-all-post'
 series: ['Blogging With Hugo']

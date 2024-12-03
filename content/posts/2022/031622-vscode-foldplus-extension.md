@@ -1,6 +1,6 @@
 ---
 categories: ["vscode", "productivity"]
-date: 2022-03-16T13:00:00Z
+published: 2022-03-16T13:00:00Z
 draft: false
 title: "VS Code - Favorite Extension - FoldPlus"
 url: '/vscode-foldplus-extension'

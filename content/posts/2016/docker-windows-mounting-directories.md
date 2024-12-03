@@ -1,7 +1,7 @@
 ---
 categories:
 - docker
-date: 2016-06-03T00:00:00Z
+published: 2016-06-03T00:00:00Z
 excerpt: "In the [previous Docker tutorial](../docker-on-windows-getting-started/)
   we learned how to install Docker and get our first container running.  In this tutorial
   we are going to learn how to mount additional directories within our Docker container
@@ -14,7 +14,7 @@ excerpt: "In the [previous Docker tutorial](../docker-on-windows-getting-started
   file paths and symlinks.  Once the Virtualbox shared folders are setup, you need
   to mount the directories within the docker machine so that they are available to
   the containers.  \n"
-published: true
+
 series: ["Docker Toolkit for Windows"]
 title: Docker - Mounting Windows Directories in Containers
 

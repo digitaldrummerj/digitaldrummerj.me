@@ -1,6 +1,6 @@
 ---
 categories: ["aspnet core", "ef core"]
-date: 2022-03-27T13:00:00Z
+published: 2022-03-27T13:00:00Z
 draft: false
 title: "EF Core - Use Enum as Column Value"
 url: '/ef-core-enum-as-column-value'

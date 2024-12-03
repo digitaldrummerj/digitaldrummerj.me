@@ -1,7 +1,7 @@
 ---
 categories: ["blogging", "hugo"]
-date: 2022-03-04T13:00:00Z
-published: true
+published: 2022-03-04T13:00:00Z
+
 title: "Hugo - Create a 404 Page"
 url: '/hugo-create-404-page'
 series: ['Blogging With Hugo']

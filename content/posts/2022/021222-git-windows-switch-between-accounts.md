@@ -1,7 +1,7 @@
 ---
 categories: ["git", "github"]
-date: 2022-02-12T13:00:00Z
-published: true
+published: 2022-02-12T13:00:00Z
+
 title: "Switch Between Github Accounts on Windows"
 url: "/switch-between-github-accounts-on-windows"
 ---

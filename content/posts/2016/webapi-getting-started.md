@@ -1,6 +1,6 @@
 ---
 categories: ["dotnet", "aspnet"]
-date: 2016-08-23T00:00:00Z
+published: 2016-08-23T00:00:00Z
 excerpt: "Welcome to the series on getting started with .NET Web Api.  In this article
   we will create a basic C# Web Api with Windows Integrated Authentication and create
   our first Web Api endpoint.      \nASP.NET Web API is a framework that makes it
@@ -10,7 +10,7 @@ excerpt: "Welcome to the series on getting started with .NET Web Api.  In this a
   C# Web Api with Windows Integrated Authentication \n- Setup camel-cased json properties
   for the response \n- Setup A Standard Response\n- Solving CORS Issues When Using
   Credentials\n"
-published: true
+
 series: [WebApi Getting Started"]
 title: ASP.NET Web Api - Getting Started
 ---

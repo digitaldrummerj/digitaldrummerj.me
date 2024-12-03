@@ -6,14 +6,12 @@ buildDrafts = true
 buildFuture = true
 
 canonifyurls = false
-paginate = 10
+
 theme = "bootstrap"
 languageCode = "en"
 
-[Author]
-  name = "Justin James"
-
 [params]
+  author = "Justin James"
   copyright = "Created with ♥ by <a href='/about/'>Justin James</a>. All content is the property of Justin James and digitaldrummerj.me. This blog, its content, and opinions are my own."
   DateForm = "January 2, 2006"
   Description = "Web Developer, Tester, and Professional Speaker"
@@ -54,8 +52,6 @@ languageCode = "en"
   thankyouPage = "/thankyou/"
 
 # Used to define the twitter card site
-[Social]
-  twitter = "digitaldrummerj"
 
 [[params.social]]
   title = "linkedin"
@@ -112,6 +108,8 @@ languageCode = "en"
     facebook = true
     linkedin = false
     twitter = true
+    twitterHandle = "digitaldrummerj"
+
 
 [outputs]
 home = ["HTML","FEED", "RSS"]

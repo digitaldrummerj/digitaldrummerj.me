@@ -1,7 +1,7 @@
 ---
 categories:
 - year in review
-date: 2015-12-31T00:00:00Z
+published: 2015-12-31T00:00:00Z
 excerpt: "2015 was a great year with lots of new adventures.  I started a blog, did
   a bunch of speaking, started a new position at work, competed in my first hackathon
   (and won), and started a couple of meetups.  \n\nAt the beginning of 2015 I had
@@ -9,7 +9,7 @@ excerpt: "2015 was a great year with lots of new adventures.  I started a blog, 
   Be more active in my local dev community    \n\nI accomplished all of my goals plus
   more this year plus more.  Read about all of the things that I did as well as my
   goals for this year for speaking, blogging, and dev community.\n"
-published: true
+
 title: 2015 Year In Review
 
 ---

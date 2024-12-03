@@ -1,7 +1,7 @@
 ---
 categories: ["blogging", "hugo"]
-date: 2022-02-27T13:00:00Z
-published: true
+published: 2022-02-27T13:00:00Z
+
 title: "Hugo - Create a Post Series"
 url: '/hugo-post-series'
 series: ['Blogging With Hugo']
@@ -69,8 +69,8 @@ First, we need to create the partial that will generate the series html.
     ```markdown {linenos=false,hl_lines=[6]}
     ---
     categories: ["testing", "dotnet-core", "teamcity", "dotcover"]
-    date: 2022-02-09T13:00:00Z
-    published: true
+    published: 2022-02-09T13:00:00Z
+    
     title: dotCover - How in TeamCity to create multiple coverage reports
     series: ['ASP.NET Core Code Coverage']
     ---

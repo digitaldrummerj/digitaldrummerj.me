@@ -2,7 +2,7 @@
 categories:
 - blogging
 - jekyll
-date: 2015-03-10T00:00:00Z
+published: 2015-03-10T00:00:00Z
 excerpt: "Welcome the continuing series on using Jekyll. In this tutorial we are going
   to setup a custom domain for your blog.\n    \n## Overview\n\nPart of having a blog
   is making it your own and giving it personality.  One of the easiest ways to do
@@ -11,7 +11,7 @@ excerpt: "Welcome the continuing series on using Jekyll. In this tutorial we are
   process of setting up a custom domain name like http://digitaldrummerj.me.  At first
   it might seem like this is going to be complicated but it is actually very easy
   to set this up.\n"
-published: true
+
 series: ["Blogging with Jekyll"]
 title: 'Jekyll Part 08: Using a Custom Domain'
 ---

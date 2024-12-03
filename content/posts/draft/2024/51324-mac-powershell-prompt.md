@@ -1,7 +1,7 @@
 ---
 categories: ["powershell"]
-date: 2024-05-13T13:00:00Z
-published: true
+published: 2024-05-13T13:00:00Z
+
 title: "Use Powershell on Mac"
 url: '/mac-powershell-prompt'
 ---

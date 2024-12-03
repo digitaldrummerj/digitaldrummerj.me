@@ -2,8 +2,7 @@
 categories:
 - blogging
 - jekyll
-date: 2015-02-05T00:00:00Z
-published: true
+published: 2015-02-05T00:00:00Z
 series: ["Blogging with Jekyll"]
 title: 'Jekyll Part 02: Your First Post'
 ---
@@ -39,8 +38,8 @@ Below are common metadata you will want to fill out.
 
 - layout:  is the name of the layout  from the _layouts directory.  If followed part 1 and cloned the jekyll-now repository, then the name is post.
 - title:  the title of the blog post that will showbon the site.  Should be in quotes to avoid conflict with front matter parameter.
-- published: true or false.  Determines  if the post shows  on the website or not.
-- date: date of the post.  this is optional and if not defined will use date in filename.
+-  or false.  Determines  if the post shows  on the website or not.
+- published: date of the post.  this is optional and if not defined will use date in filename.
 - categories: list of categories.  comma delimited.  put in quotes for multi word categories.  optional but recommended.
 - tags: list of tags that would be used to build a tag cloud.  optional but recommended.
 
@@ -49,8 +48,8 @@ Below are common metadata you will want to fill out.
     ---
     layout: post
     title: Your First Post
-    published: false
-    date: 2015-02-01
+    draft: true
+    published: 2015-02-01
     categories: [blogging]
     tags: [blogging]
     ---
@@ -150,7 +149,7 @@ Most of the time you are not going to write and publish the blog post in one sit
 
 	---
 	other front matter tags
-	published: false
+	draft: true
 	---
 
 You can also create a drafts folder and save the file in the but if you do that then you will need to move the file to the _post folder when you are ready to publish.
@@ -161,7 +160,7 @@ Publishing a post is as simple as changing the front matter published to true an
 
 	---
 	other front matter tags
-	published: true
+	
 	---
 
 Github will take care of the conversion from markdown to an html page.  This should happen automatically within a minute and show up on the blog home page at the top.

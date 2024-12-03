@@ -1,7 +1,7 @@
 ---
 categories: ["hugo", "blogging"]
-date: 2022-03-10T13:00:00Z
-published: true
+published: 2022-03-10T13:00:00Z
+
 title: "Hugo - Add Google Analytics"
 url: '/hugo-google-analytics'
 series: ['Blogging With Hugo']

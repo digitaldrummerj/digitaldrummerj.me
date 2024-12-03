@@ -1,8 +1,8 @@
 ---
 categories:
 - angularjs
-date: 2016-01-28T00:00:00Z
-published: true
+published: 2016-01-28T00:00:00Z
+
 title: AngularJS - Calling Filters in Your Angular Controller
 ---
 

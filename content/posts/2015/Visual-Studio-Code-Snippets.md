@@ -2,12 +2,12 @@
 categories:
 - productivity
 - visual studio
-date: 2015-08-18T00:00:00Z
+published: 2015-08-18T00:00:00Z
 excerpt: |
   There are a bunch of built-in Visual Studio code snippets that will generate code for you with a short keyword and then a tab key press.  These shortcuts will make you more efficient when writing code such as creating properties, loops, exceptions, etc.
 
   Below I have listed the code snippets  that I most frequently use and what the output from them looks like.
-published: true
+
 series: ["Developer Productivity"]
 title: Visual Studio Code Snippets
 

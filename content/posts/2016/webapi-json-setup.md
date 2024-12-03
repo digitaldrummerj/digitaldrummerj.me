@@ -1,6 +1,6 @@
 ---
 categories: ["dotnet", "aspnet"]
-date: 2016-08-31T00:00:00Z
+published: 2016-08-31T00:00:00Z
 excerpt: |
   Welcome to the continuing series on getting started with ASP.NET Web Api.  In the last post, we created our ASP.NET Web Api project, created our 1st controller and enabled Windows authentication.  In this article we will learn how to set the JSON response to convert the .NET pascal cased properties into camel cased properties.
 
@@ -9,7 +9,7 @@ excerpt: |
   ### Creating Class to Return
 
   In order to test the camel case configuration, we are going to update the FirstController that we created in the previous post to return a .NET class called UserModel instead of a string.
-published: true
+
 series: [WebApi Getting Started"]
 title: ASP.NET Web Api - Setup JSON Camel Cased Fields
 

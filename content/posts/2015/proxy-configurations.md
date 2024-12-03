@@ -4,11 +4,11 @@ categories:
 - node
 - npm
 - bash
-date: 2015-01-16T20:00:00Z
+published: 2015-01-16T20:00:00Z
 excerpt: "When you are using npm, bower, and git behind a proxy server you have to do a little bit of configuration.  Luckily it is super easy to do these configurations.
   \ Almost all of the programs have command line commands to set and unset the proxy
   server.  \n"
-published: true
+
 title: Npm, Bower, Git, and Bash Proxy Configurations
 
 ---

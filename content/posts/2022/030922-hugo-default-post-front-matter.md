@@ -1,6 +1,6 @@
 ---
 categories: ["blogging", "hugo"]
-date: 2022-03-09T13:00:00Z
+published: 2022-03-09T13:00:00Z
 draft: false
 title: "Hugo - Set Default Front Matter When Creating Post"
 url: '/hugo-default-front-matter'
@@ -21,7 +21,7 @@ For my post, my default front matter is:
 ```markdown
 ---
 categories: [""]
-date: {{ dateFormat "2006-01-02" .Date }}T13:00:00Z
+published: {{ dateFormat "2006-01-02" .Date }}T13:00:00Z
 draft: true
 title: "{{ replace .Name "-" " " | title }}"
 url: ''
@@ -43,7 +43,7 @@ To create our default front matter we need to create an archetypes file for your
     ```markdown
     ---
     categories: [""]
-    date: {{ dateFormat "2006-01-02" .Date }}T13:00:00Z
+    published: {{ dateFormat "2006-01-02" .Date }}T13:00:00Z
     draft: true
     title: "{{ replace .Name "-" " " | title }}"
     url: ''
@@ -65,7 +65,7 @@ Your my-post.md file will look like that following with the date updated for the
 ```markdown
 ---
 categories: [""]
-date: 2022-03-09T13:00:00Z
+published: 2022-03-09T13:00:00Z
 draft: true
 title: "My Post"
 url: ''

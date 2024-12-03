@@ -1,7 +1,7 @@
 ---
 categories:
 - iis
-date: 2015-02-04T20:45:35Z
+published: 2015-02-04T20:45:35Z
 excerpt: "So I brought up a new machine and tried to run my ASP.NET web site in IIS
   Express that uses Windows Authentication and was greeted with the following error:
   \n\n**Error**\n\nThe requested page cannot be accessed because the related configuration
@@ -9,7 +9,7 @@ excerpt: "So I brought up a new machine and tried to run my ASP.NET web site in 
   be used at this path. This happens when the section is locked at a parent level.
   Locking is either by default (overrideModeDefault=\"Deny\"), or set explicitly by
   a location tag with overrideMode=\"Deny\" or the legacy allowOverride=\"false\".\n"
-published: true
+
 title: IIS Express - Turning on Windows Authentication
 
 ---

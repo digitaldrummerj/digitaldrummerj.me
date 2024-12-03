@@ -1,7 +1,7 @@
 ---
 categories: ["blogging", "hugo"]
-date: 2022-02-20T13:00:00Z
-published: true
+published: 2022-02-20T13:00:00Z
+
 title: "Hugo - View Posts Grouped by Category"
 url: '/hugo-view-post-grouped-by-category'
 series: ['Blogging With Hugo']
@@ -88,7 +88,7 @@ For the purpose of this article, we are just going to create the files in the `l
 1. To create the category list summary page for when a category is directly pulled up, you need to add the a file called `layouts\categories\taxonomy.html`
 1. To the `taxonomy.html` file, add the following code to the page to display the list of categories
 
-    ```html {linenos=false,hl_lines=[1,"6-8","12-17", 21 }
+    ```html {linenos=false,hl_lines=[1,"6-8","12-17", 21] }
     {{ define "main" }}
     <!-- Main Content -->
     <div class="container">

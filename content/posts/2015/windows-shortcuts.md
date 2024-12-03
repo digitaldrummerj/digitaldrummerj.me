@@ -2,13 +2,13 @@
 categories:
 - productivity
 - windows
-date: 2015-08-06T00:00:00Z
+published: 2015-08-06T00:00:00Z
 excerpt: "So many times I watch Windows users spending lots of time doing task that
   should just take a few seconds but instead are taking several minutes because they
   are taking the long way around to get the task completed.  \n\nHere are some examples
   that I see people doing and below I will show you how to get them done the easiest
   way possible.\n"
-published: true
+
 series: ["Developer Productivity"]
 title: Favorite Windows Shortcuts
 

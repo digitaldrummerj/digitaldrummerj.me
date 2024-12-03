@@ -2,7 +2,7 @@
 categories:
 - jekyll
 - blogging
-date: 2016-05-24T00:00:00Z
+published: 2016-05-24T00:00:00Z
 excerpt: "As I was writing some tutorials recently I wanted to be able to style the
   html elements that Jekyll outputs with different css classes without having to write
   the actually html in the markdown.    \n\nFor example I wanted to use a blockquote
@@ -12,7 +12,7 @@ excerpt: "As I was writing some tutorials recently I wanted to be able to style 
   in markdown this is my default blockquote.\n\n>This is a warning blockquote.\n{:.warning}\n\nWith
   the kramdown markdown parser that Jekyll uses you can easily add these css classes
   without having to write out the html code.  \n"
-published: true
+
 title: 'Jekyll Tip: Adding Styling To Html Output'
 
 ---

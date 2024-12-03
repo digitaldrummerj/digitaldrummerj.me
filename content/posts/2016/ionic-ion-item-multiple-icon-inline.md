@@ -1,14 +1,14 @@
 ---
 categories:
 - ionic
-date: 2016-01-19T00:00:00Z
+published: 2016-01-19T00:00:00Z
 excerpt: "Today I ran into an issue using Ionic, where I was trying to put two icons
   on the right side of an ion list item.  There is really easy to do with the item-icon-right
   css class.  Unfortunately when you have multiple icons, it overlaps instead of showing
   them side by side. I was not expecting this as I had only used 1 icon before and
   assumed that item-icon-right would just put them side by side.  \n\nLuckily, there
   is an easy fix for this using some built-in Ionic css classes.\n"
-published: true
+
 title: Ionic - Stop Icons from Overlapping in Ion List
 
 ---

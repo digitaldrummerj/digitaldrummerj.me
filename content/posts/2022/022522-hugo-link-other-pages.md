@@ -1,7 +1,7 @@
 ---
 categories: ["blogging", "hugo"]
-date: 2022-02-25T13:00:00Z
-published: true
+published: 2022-02-25T13:00:00Z
+
 title: "Hugo - Open External Links in a New Tab"
 url: '/hugo-links-to-other-pages'
 series: ['Blogging With Hugo']

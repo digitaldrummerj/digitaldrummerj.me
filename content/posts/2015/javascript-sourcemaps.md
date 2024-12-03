@@ -3,7 +3,7 @@ categories:
 - debugging
 - chrome
 - gulp
-date: 2015-05-17T00:00:00Z
+published: 2015-05-17T00:00:00Z
 excerpt: "When you release your web site to production, you should minify and concatenate
   your javascript files.  You will have much better performance by doing this but
   unfortunately debugging becomes difficult with the minified code as it shortens
@@ -17,7 +17,7 @@ excerpt: "When you release your web site to production, you should minify and co
   with the gulp-concat, gulp-uglify, and gulp-sourcemaps modules.   If you are not
   familiar with gulp, it is basically a javascript build system that allows you to
   write code to automate tasks.  \n"
-published: true
+
 title: Javascript Debugging Made Easier with Sourcemaps
 
 ---

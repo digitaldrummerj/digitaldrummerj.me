@@ -1,7 +1,7 @@
 ---
 categories:
 - nuget
-date: 2015-05-04T00:00:00Z
+published: 2015-05-04T00:00:00Z
 excerpt: When you are building nuget packages that are not directly using the AssemblyInfo.cs
   for the version number, you need to make sure to increment the nuget version number
   before building the package.  Inevitable though you will forget to increment the
@@ -9,7 +9,7 @@ excerpt: When you are building nuget packages that are not directly using the As
   you could automatically increment the version number before calling nuget pack.  Well
   I have written a powershell script to do just this.  Below are the details out the
   script.
-published: true
+
 title: Nuget - Incrementing Version Before Building
 
 ---

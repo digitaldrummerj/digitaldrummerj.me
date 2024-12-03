@@ -1,8 +1,8 @@
 ---
 categories:
 - camtasia
-date: 2015-08-25T00:00:00Z
-published: true
+published: 2015-08-25T00:00:00Z
+
 title: Camtasia 8.5 - How to Record to Mono
 ---
 

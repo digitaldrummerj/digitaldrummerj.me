@@ -1,7 +1,7 @@
 ---
 categories: ["jenkins", "aspnet core", "dotnet"]
-date: 2023-05-16T13:00:00Z
-published: true
+published: 2023-05-16T13:00:00Z
+
 title: "ASP.NET Core Environment Variables With Semicolon in Jenkins"
 url: '/jenkins-aspnet-environment-semicolon'
 ---

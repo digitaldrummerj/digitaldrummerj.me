@@ -1,7 +1,7 @@
 ---
 categories: ["ef core", "dotnet"]
-date: 2023-02-23T13:00:00Z
-published: true
+published: 2023-02-23T13:00:00Z
+
 title: "Better Way to Manage Database Views in EF Core Migrations"
 url: '/efcore-view-migrations'
 ---

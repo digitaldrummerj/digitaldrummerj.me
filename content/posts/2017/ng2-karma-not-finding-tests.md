@@ -1,12 +1,12 @@
 ---
 categories:
 - angular
-date: 2017-01-06T00:00:00Z
+published: 2017-01-06T00:00:00Z
 excerpt: |
   As I get more into Angular 2 I wanted to figure out how to unit test my Angular components.  Angular 2 has unit testing built-in to the project that the Angular CLI generates.  It uses  [Karma](https://karma-runner.github.io/1.0/index.html) for the test runner and [Jasmine](https://jasmine.github.io/) for the testing.  The Angular docs also have a really good [Testing Guide](https://angular.io/docs/ts/latest/guide/testing.html).
 
   When I tried to run the built-in test instead of finding the 3 tests, it found **0** tests.  Never having used Karma before, I was unsure what the issue was or where to start troubleshooting.  Luckily it turned out to be a really simple fix once I figured it out and it had to do with Chrome v55 not running the test.ts file.
-published: true
+
 title: Angular - No  Test Found
 ---
 

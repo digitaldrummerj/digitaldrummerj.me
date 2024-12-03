@@ -2,7 +2,7 @@
 categories:
 - ionic
 - visual studio
-date: 2015-09-17T00:00:00Z
+published: 2015-09-17T00:00:00Z
 excerpt: "I am doing an [Ionic Framework](http://www.ionicframework.com) presentation
   and I wanted to use the Visual Studio 2015 Cordova Tooling.  \n\nI have done this
   presentation twice in the past couple of months using my Intel Nuc machine with
@@ -16,7 +16,7 @@ excerpt: "I am doing an [Ionic Framework](http://www.ionicframework.com) present
   thought this shouldn't take that long but unfortunately I ran into a bunch of issues.
   \ Luckily I have managed to fix all of the issue and can move on with the prep work
   for my presentation.\n"
-published: true
+
 title: Getting Visual Studio Cordova Tooling Working with the Ionic Framework
 
 ---

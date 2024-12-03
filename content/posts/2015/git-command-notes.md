@@ -2,12 +2,12 @@
 categories:
 - github
 - git
-date: 2015-01-14T20:45:35Z
+published: 2015-01-14T20:45:35Z
 excerpt: |
   I am finally making myself learn the git command line instead of just using a UI so that I can actually understand what git is really doing.  Plus I have started playing a lot with the IonicBox and running a Ubuntu vagrant controlled VM for this blog and both of those are just linux shell command prompt only machines.
 
   Below are my notes on various commands so that I can stop having to Google each time I forgot one of them.
-published: true
+
 redirect_from: /git/
 title: Git Command Notes
 ---

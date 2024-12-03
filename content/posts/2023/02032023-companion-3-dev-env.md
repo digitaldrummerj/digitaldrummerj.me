@@ -1,7 +1,7 @@
 ---
 categories: ["companion"]
-date: 2023-02-03T13:00:00Z
-published: true
+published: 2023-02-03T13:00:00Z
+
 title: "How to Setup a Development Environment for Companion v3 and ZoomOSC/ZoomISO Module"
 url: '/companion-3-dev-environment-for-zoomosc'
 toc: true

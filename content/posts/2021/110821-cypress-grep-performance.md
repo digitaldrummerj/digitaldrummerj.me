@@ -1,7 +1,7 @@
 ---
 categories: ["testing", "Cypress"]
-date: 2021-11-08T00:00:00Z
-published: true
+published: 2021-11-08T00:00:00Z
+
 title: Cypress Grep - Faster Test Execution
 url: '/cypress-grep-performance/'
 series: ["Cypress Grep"]

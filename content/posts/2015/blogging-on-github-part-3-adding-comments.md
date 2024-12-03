@@ -2,7 +2,7 @@
 categories:
 - blogging
 - jekyll
-date: 2015-02-07T00:00:00Z
+published: 2015-02-07T00:00:00Z
 excerpt: "Welcome the continuing series on using Jekyll.  In this tutorial you will
   learn how to add the ability for users to comment on your blog post.\n\n## Overview\n\nYou
   may be thinking that commenting isn't really that important but it is a key feature
@@ -13,7 +13,7 @@ excerpt: "Welcome the continuing series on using Jekyll.  In this tutorial you w
   to a wonderful tool called Disqus.  Disqus is free but still full featured.\n\nWe
   will go through the process of getting a Disqus account, configuring  the account,
   \ configuring your blog and testing it all out.\n"
-published: true
+
 series: ["Blogging with Jekyll"]
 title: 'Jekyll Part 03: Adding Commenting to Post'
 ---

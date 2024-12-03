@@ -1,7 +1,7 @@
 ---
 categories: ["cypress", "testing"]
-date: 2023-07-17T13:00:00Z
-published: true
+published: 2023-07-17T13:00:00Z
+
 title: "Cypress - Creating Your Test Strategy"
 url: '/cypress-creating-your-test-strategy'
 toc: true

@@ -1,7 +1,7 @@
 ---
 categories: ["blogging", "hugo"]
-date: 2022-02-23T13:00:00Z
-published: true
+published: 2022-02-23T13:00:00Z
+
 title: "Hugo - Use Shortcodes Instead of Embedding HTML in Your Markdown"
 url: '/hugo-built-in-shortcodes'
 series: ['Blogging With Hugo']

@@ -1,7 +1,7 @@
 ---
 categories: ["blogging", "hugo", "netlify"]
-date: 2022-02-16T13:00:00Z
-published: true
+published: 2022-02-16T13:00:00Z
+
 title: "Hugo - Deploy Preview Release of Site Using Netlify"
 url: '/blog-preview-with-netlify'
 series: ['Blogging With Hugo']

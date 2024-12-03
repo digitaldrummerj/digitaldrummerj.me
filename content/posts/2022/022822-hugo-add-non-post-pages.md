@@ -1,7 +1,7 @@
 ---
 categories: ["blogging", "hugo"]
-date: 2022-02-28T13:00:00Z
-published: true
+published: 2022-02-28T13:00:00Z
+
 title: "Hugo - Add Additional Non-Blog Pages"
 url: '/hugo-add-additional-pages'
 series: ['Blogging With Hugo']

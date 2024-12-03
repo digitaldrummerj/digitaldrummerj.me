@@ -1,7 +1,7 @@
 ---
 categories: ["blogging", "hugo"]
-date: 2022-03-05T13:00:00Z
-published: true
+published: 2022-03-05T13:00:00Z
+
 title: "Hugo - Add Contact Form Using Formspree"
 url: '/hugo-contact-form-formspree'
 series: ['Blogging With Hugo']

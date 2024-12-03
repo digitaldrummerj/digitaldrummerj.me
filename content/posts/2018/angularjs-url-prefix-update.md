@@ -1,8 +1,8 @@
 ---
 categories:
 - angularjs
-date: 2018-01-25T00:00:00Z
-published: true
+published: 2018-01-25T00:00:00Z
+
 title: AngularJS - Why is there an ! in my url now?
 ---
 

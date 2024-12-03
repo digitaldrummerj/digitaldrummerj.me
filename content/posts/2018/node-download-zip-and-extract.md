@@ -1,7 +1,7 @@
 ---
 categories: ["node"]
-date: 2018-02-07T00:00:00Z
-published: true
+published: 2018-02-07T00:00:00Z
+
 title: How to Download and Extract a Zip File with Node
 ---
 

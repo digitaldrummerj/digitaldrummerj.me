@@ -1,13 +1,13 @@
 ---
 categories:
 - angularjs
-date: 2016-01-11T00:00:00Z
+published: 2016-01-11T00:00:00Z
 excerpt: "Here is a quick tip for how you can run your Angular service and factory
   methods within the Chrome Dev Tools console.\n    \nNo longer will you have to go
   through the process of navigating through the UI to trigger a Service/Factory method
   to run.  Now you can just load up the web site and do all of your debugging through
   the Chrome console.   \n"
-published: true
+
 title: AngularJS - Calling Service Methods from Console
 ---
 

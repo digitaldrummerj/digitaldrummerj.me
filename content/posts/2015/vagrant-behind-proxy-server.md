@@ -1,14 +1,14 @@
 ---
 categories:
 - vagrant
-date: 2015-07-06T06:00:00Z
+published: 2015-07-06T06:00:00Z
 excerpt: If you are working behind a proxy server you will need to configure both
   the host computer and the Vagrant virtual machines to communicate through the proxy
   server.   It is easy to configure the proxy settings but finding the documentation
   is a different story.  Below we will go through how to configure the proxy for the
   vagrant commands (up, status, box add, etc) and then how to configure the virtual
   machine proxy settings.
-published: true
+
 series: ["Vagrant Getting Started"]
 title: Vagrant Part 6 - Behind A Proxy Server
 

@@ -1,7 +1,7 @@
 ---
 categories:
 - chrome
-date: 2015-05-15T00:00:00Z
+published: 2015-05-15T00:00:00Z
 excerpt: "The Chrome Developer tools are an amazing set of tools for debugging and
   trobuleshooting web sites.  If you are a web developer and have not tried out these
   tools, you have been missing out.  As amazing as the developer tools are, one of
@@ -13,7 +13,7 @@ excerpt: "The Chrome Developer tools are an amazing set of tools for debugging a
   talk at the [Codepalousa Conference](http://www.codepalousa.com) called Black Boxing.
   \ Black boxing allows you to tell the javascript debugger to skip over the file
   when stepping through the code.  \n"
-published: true
+
 title: Chrome DevTools - Hiding Vendor Scripts
 ---
 

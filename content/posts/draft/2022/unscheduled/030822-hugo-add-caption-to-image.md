@@ -1,7 +1,7 @@
 ---
 categories: ["hugo", "blogging"]
-date: 2024-03-08T13:00:00Z
-published: false
+published: 2024-03-08T13:00:00Z
+draft: true
 title: "Hugo - Add Caption to Image"
 url: '/hugo-add-caption-to-image'
 series: ['Blogging With Hugo']

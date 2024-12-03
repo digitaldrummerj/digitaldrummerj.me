@@ -2,14 +2,14 @@
 categories:
 - blogging
 - jekyll
-date: 2015-02-17T00:00:00Z
+published: 2015-02-17T00:00:00Z
 excerpt: |
   Welcome the continuing series on using Jekyll. In this tutorial we will go through creating a page to show blog post by date.
 
   ## Overview
 
   A typical blog has a way for your readers to view posts by either category or date, so that they can look at your archives without having to go through the blog post one by one and page by page.  In the last lesson, we added the post by category page.  In this lesson we will add the post by date page.
-published: true
+
 series: ["Blogging with Jekyll"]
 title: 'Jekyll Part 06: Adding Post by Date Page'
 ---
@@ -52,21 +52,21 @@ After the front matter, add the following code to display the post by Year and M
     <div id="index">
         {% for post in site.posts %}
             {% unless post.next %}
-                <h2>{{ post.date | date: '%Y' }}</h2>
+                <h2>{{ post.date | published: '%Y' }}</h2>
             {% else %}
-                {% capture year %}{{ post.date | date: '%Y' }}{% endcapture %}
-                {% capture nyear %}{{ post.next.date | date: '%Y' }}{% endcapture %}
+                {% capture year %}{{ post.date | published: '%Y' }}{% endcapture %}
+                {% capture nyear %}{{ post.next.date | published: '%Y' }}{% endcapture %}
                 {% if year != nyear %}
                 {% if forloop.index != 1 %}</ul>{% endif %}
-                    <h2>{{ post.date | date: '%Y' }}</h2>
+                    <h2>{{ post.date | published: '%Y' }}</h2>
                 {% endif %}
             {% endunless %}
 
-        {% capture month %}{{ post.date | date: '%m%Y' }}{% endcapture %}
-        {% capture nmonth %}{{ post.next.date | date: '%m%Y' }}{% endcapture %}
+        {% capture month %}{{ post.date | published: '%m%Y' }}{% endcapture %}
+        {% capture nmonth %}{{ post.next.date | published: '%m%Y' }}{% endcapture %}
         {% if month != nmonth %}
         {% if forloop.index != 1 %}</ul>{% endif %}
-            <h2>{{ post.date | date: '%B %Y' }}</h2><ul>
+            <h2>{{ post.date | published: '%B %Y' }}</h2><ul>
         {% endif %}
 
 
@@ -75,7 +75,7 @@ After the front matter, add the following code to display the post by Year and M
                 <a href="{{ site.baseurl }}{{ post.url }}" title="{{ post.title }}">{{ post.title }}</a>
                 <a href="{{ post.link }}" target="_blank" title="{{ post.title }}"><i class="fa fa-link"></i></a></h3>
         {% else %}
-            <h3><a href="{{ site.baseurl }}{{ post.url }}" title="{{ post.title }}">{{ post.title }}<p class="date">{{ post.date |  date: "%B %e, %Y" }}</p></a></h3>
+            <h3><a href="{{ site.baseurl }}{{ post.url }}" title="{{ post.title }}">{{ post.title }}<p class="date">{{ post.date |  published: "%B %e, %Y" }}</p></a></h3>
             <p>{{ post.excerpt | strip_html | truncate: 160 }}</p>
         {% endif %}
         {% endfor %}

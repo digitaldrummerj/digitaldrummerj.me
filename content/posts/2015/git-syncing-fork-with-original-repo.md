@@ -2,7 +2,7 @@
 categories:
 - git
 - github
-date: 2015-09-28T00:00:00Z
+published: 2015-09-28T00:00:00Z
 excerpt: "Syncing your forked repository to the original repository is an important
   step before submitting any pull request to the original repository for the changes
   in your forked repository.  Even if you are not going to submit a pull request to
@@ -14,7 +14,7 @@ excerpt: "Syncing your forked repository to the original repository is an import
   process you need to configure the original repository as an upstream remote, merge
   in the changes from the original repository and then push the merged version back
   to Github.  \n"
-published: true
+
 title: Sync your Git Fork to the Original Repo
 ---
 

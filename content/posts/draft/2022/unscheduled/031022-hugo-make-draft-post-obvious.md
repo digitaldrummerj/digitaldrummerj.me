@@ -1,7 +1,7 @@
 ---
 categories: ["blogging", "hugo"]
-date: 2024-03-10T13:00:00Z
-published: false
+published: 2024-03-10T13:00:00Z
+draft: true
 title: "Hugo - Add a Note to Post If Draft"
 url: '/hugo-make-draft-post-obvious'
 series: ['Blogging With Hugo']

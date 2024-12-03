@@ -2,14 +2,14 @@
 categories:
 - blogging
 - jekyll
-date: 2015-02-15T00:00:00Z
+published: 2015-02-15T00:00:00Z
 excerpt: "Welcome the continuing series on using Jekyll. In this tutorial we will
   go through creating a page to show blog post by category.\n    \n## Overview\n\nA
   typical blog has a way for your readers to view posts by either category or date,
   so that they can look at your archives without having to go through the blog post
   one by one.  Unfortunately, the Jekyll-Now repository that we cloned your blog from,
   does not have these pages.  Luckily, these pages are really easy to create.\n"
-published: true
+
 series: ["Blogging with Jekyll"]
 title: 'Jekyll Part 05: Adding Category Page'
 ---
@@ -71,7 +71,7 @@ Next you need to add the code to display the list of blog post by category and s
             {% assign sorted_posts = site.posts | sort: 'title' %}
             {% for post in sorted_posts %}
                 {%if post.categories contains category[0]%}
-                    <h3><a href="{{ site.url }}{{ site.baseurl }}{{ post.url }}" title="{{ post.title }}">{{ post.title }} <p class="date">{{ post.date |  date: "%B %e, %Y" }}</p></a></h3>
+                    <h3><a href="{{ site.url }}{{ site.baseurl }}{{ post.url }}" title="{{ post.title }}">{{ post.title }} <p class="date">{{ post.date |  published: "%B %e, %Y" }}</p></a></h3>
                     <p>{{ post.excerpt | strip_html | truncate: 160 }}</p>
                 {%endif%}
             {% endfor %}

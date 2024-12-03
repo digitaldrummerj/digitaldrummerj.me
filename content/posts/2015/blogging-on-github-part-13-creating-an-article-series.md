@@ -2,7 +2,7 @@
 categories:
 - blogging
 - jekyll
-date: 2015-09-15T00:00:00Z
+published: 2015-09-15T00:00:00Z
 excerpt: "Welcome the continuing series on using Jekyll. In this tutorial we are going
   to go through how to create the series listing like you see for this blog series.
   \ \n\n### Overview\n\nSometimes a blog post gets too big and you need to split it
@@ -10,7 +10,7 @@ excerpt: "Welcome the continuing series on using Jekyll. In this tutorial we are
   each other but you don't want to have to manage a listing of all of the post in
   the series.  Instead you can easily create a liquid template that does all of the
   work for you.  \n"
-published: true
+
 series: ["Blogging with Jekyll"]
 title: 'Jekyll Part 13: Creating an Article Series'
 ---
@@ -87,7 +87,7 @@ Note: I assume that you have alrady cloned your jekyll repo to your machine.  Th
 		---
 		layout: post
 		title: You're up and running!
-		published: true
+		
 		series: "Intro to Series"
 		---
 

@@ -1,7 +1,7 @@
 ---
 categories: ["cypress", "testing"]
-date: 2023-07-19T13:00:00Z
-published: true
+published: 2023-07-19T13:00:00Z
+
 title: "Cypress - Scale Your Network Mocks By Centralizing Them"
 url: '/cypress-scale-mocks-by-centralizing-them'
 ---

@@ -1,7 +1,7 @@
 ---
 categories: ["aspnet core"]
 draft: false
-date: 2022-03-13T13:00:00Z
+published: 2022-03-13T13:00:00Z
 title: "ASP.NET - Selectively Run Health Checks"
 url: '/aspnet-core-health-checks-filter'
 series: ['ASP.NET Core Health Checks']

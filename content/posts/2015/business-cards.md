@@ -2,14 +2,14 @@
 categories:
 - how-to
 - speaking
-date: 2015-05-04T00:00:00Z
+published: 2015-05-04T00:00:00Z
 excerpt: |
   If you are planning on going to any professional networking events, user groups, or speaking at events, you should have business cards with you.  Many times people think, I only need to have business cards if I am looking for a job.  This is far from the truth.  You should have business cards so that you can connect with the people that you have met.  People tend to meet lots of people at events and without a business card, it is difficult for people to remember who you are.  It is also a good way for people to be able to follow up with you.
 
   You may be tempted to make your own business cards and print them off on your home printer but please don't.  At first this sounds like a great idea but almost never works out right.  If you don't get the right card stock they will feel cheap.  If you don't get them exactly aligned when printing, they will look unprofessional.  When cutting the cards then need to be straight clean cuts which is not easy to do.
 
   Instead you need to purchase professionally printed cards.  You might be thinking, having to purchase business cards is going to be expensive but this is no longer the case.  You can easily get 100 business cards and a holder for under $30.
-published: true
+
 title: Purchasing Business Cards
 ---
 

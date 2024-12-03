@@ -1,6 +1,6 @@
 ---
 categories: ["vscode", "productivity"]
-date: 2022-03-20T13:00:00Z
+published: 2022-03-20T13:00:00Z
 draft: false
 title: "VS Code - Favorite Extension - Github Pull Request and Issues"
 url: '/vscode-github-pull-request-and-issues-extension'

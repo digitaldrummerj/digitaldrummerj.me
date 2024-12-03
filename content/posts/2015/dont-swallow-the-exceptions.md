@@ -1,7 +1,7 @@
 ---
 categories:
 - dotnet
-date: 2015-10-05T00:00:00Z
+published: 2015-10-05T00:00:00Z
 excerpt: "Throwing away exceptions in your code is just a bad practice and makes it
   harder to support your application.  It may make it easier for you as a developer
   to get something working but in the long run it cost way more money to do the maintenance
@@ -24,7 +24,7 @@ excerpt: "Throwing away exceptions in your code is just a bad practice and makes
   and a bogus line in the catch block to be able to get at the exception.  \n    \n
   \   public void SomeMethod()\n    {\n        try\n        {\n            //Some
   Code That Errors\n        }\n        catch\n        {\n        }\n    }\n"
-published: true
+
 title: Do Not Swallow The Exceptions
 ---
 

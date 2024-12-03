@@ -1,7 +1,7 @@
 ---
 categories: ["davinci resolve"]
-date: 2023-08-12T13:00:00Z
-published: false
+published: 2023-08-12T13:00:00Z
+draft: true
 title: "Davinci Resolve - My Favorite Keyboard Shortcuts"
 url: '/davinci-resolve-favorite-keyboard-shortcuts'
 ---

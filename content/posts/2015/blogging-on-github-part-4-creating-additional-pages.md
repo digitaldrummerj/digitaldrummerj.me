@@ -2,14 +2,14 @@
 categories:
 - blogging
 - jekyll
-date: 2015-02-11T00:00:00Z
+published: 2015-02-11T00:00:00Z
 excerpt: "Welcome the continuing series on using Jekyll. In this tutorial we will
   go through how to add an additional page such as the [speaking](/speaking) page on this blog.\n\n## Overview
   \n\nAs your blog grows you are going to want to add additional information besides
   \ just blog post.  If you start speaking at events or want to show off your portfolio
   or blog post by category/date, you are going to want these as separate pages.  These
   pages most likely will have there own look and feel as well.\n"
-published: true
+
 series: ["Blogging with Jekyll"]
 title: 'Jekyll Part 04: Adding Additional Pages'
 ---

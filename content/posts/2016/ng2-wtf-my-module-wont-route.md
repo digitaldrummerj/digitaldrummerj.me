@@ -1,7 +1,7 @@
 ---
 categories:
 - angular
-date: 2016-12-29T00:00:00Z
+published: 2016-12-29T00:00:00Z
 excerpt: "I have been really enjoying working with Angular 2 over the last few months
   but the other day I spent well over an hour cursing Angular wondering why my new
   module would not route.  I didn't have this much trouble when I created my other
@@ -11,7 +11,7 @@ excerpt: "I have been really enjoying working with Angular 2 over the last few m
   I had imported the new module in the app module.  I swore everything was setup correctly.
   \ WTF. What was going on?  What did I miss.  \n\nFind out how simple the solution
   is.  \n"
-published: true
+
 title: Angular - WTF Module Won't Route
 ---
 

@@ -2,11 +2,11 @@
 categories:
 - productivity
 - windows
-date: 2015-07-28T08:00:00Z
+published: 2015-07-28T08:00:00Z
 excerpt: Developer productivity is not just about maximizing your speed in editor.  It
   also includes additional software to help you be more productive.    Below is some
   of my favorite Windows software that I use.
-published: true
+
 series: ["Developer Productivity"]
 title: Favorite Windows Programs
 ---

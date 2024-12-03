@@ -1,7 +1,7 @@
 ---
 categories: ["hugo", "blogging"]
-date: 2022-02-13T13:00:00Z
-published: true
+published: 2022-02-13T13:00:00Z
+
 title: "Hugo - Show ShortCode Markdown in Code Block"
 url: '/hugo-show-shortcode-markdown-in-code-block'
 ---

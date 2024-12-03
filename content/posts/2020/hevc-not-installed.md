@@ -2,8 +2,8 @@
 categories:
 - how-to
 - windows
-date: 2020-04-19T00:00:00Z
-published: true
+published: 2020-04-19T00:00:00Z
+
 title: "Solved: Windows 10 Errors When Trying to Watch Video with HEVC Extension Not Found"
 featured_image: /images/hevc/hevc-featured.png
 ---
