@@ -1,13 +1,13 @@
 ---
 categories:
 - ionic
-date: 2016-11-01T00:00:00Z
+published: 2016-11-01T00:00:00Z
 excerpt: "In order to work with the Ionic framework there is a bit of software installs
   and configuration that needs to happen in order to deploy to devices.  However,
   many of the guides out there leave out a number of steps that tripped me up when
   I first started using Ionic.  \n\nThis guide will go through all of the steps needed
   for deploying to an Android and iOS device using a Mac.  \n"
-published: true
+
 series: ["Ionic2 Setup"]
 tag: Ionic2 Setup
 toc: true

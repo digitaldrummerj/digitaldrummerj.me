@@ -1,6 +1,6 @@
 ---
 categories: ["aspnet core", "ef core"]
-date: 2022-05-18T13:00:00Z
+published: 2022-05-18T13:00:00Z
 draft: false
 title: "EF Core - Split Model Configuration Into Files By Table"
 url: '/ef-core-split-model-config'

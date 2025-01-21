@@ -1,6 +1,6 @@
 ---
 categories: ["aspnet core"]
-date: 2022-03-23T13:00:00Z
+published: 2022-03-23T13:00:00Z
 draft: false
 title: "ASP.NET Core - AutoMapper - Handle When Property Names Are Not Same Between Objects"
 url: '/aspnet-core-automapper-property-names-not-same'

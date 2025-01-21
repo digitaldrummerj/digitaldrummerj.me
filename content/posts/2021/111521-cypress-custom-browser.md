@@ -1,7 +1,7 @@
 ---
 categories: ["testing", "Cypress"]
-date: 2021-11-15T13:00:00Z
-published: true
+published: 2021-11-15T13:00:00Z
+
 url: '/cypress-custom-browser/'
 title: "Solved: Use Previous Version of Chrome to Prevent Instant Cypress Crash on Our Build Servers When Using Chrome 95"
 ---

@@ -1,6 +1,6 @@
 ---
 categories: ["aspnet core", "ef core"]
-date: 2022-06-06T13:00:00Z
+published: 2022-06-06T13:00:00Z
 draft: false
 title: "EF Core - Configurations That Apply to All Tables"
 url: '/ef-core-global-configurations'

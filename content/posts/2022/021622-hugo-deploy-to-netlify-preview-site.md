@@ -1,12 +1,12 @@
 ---
 categories: ["blogging", "hugo", "netlify"]
-date: 2022-02-16T13:00:00Z
-published: true
+published: 2022-02-16T13:00:00Z
+
 title: "Hugo - Deploy Preview Release of Site Using Netlify"
 url: '/blog-preview-with-netlify'
 series: ['Blogging With Hugo']
 ---
-In our previous post on [Deploying Your Hugo Site Using Netlify](/deploy-hugo-netlify), we set up Netlify to automatically deploy our site every time we pushed a commit to our GitHub repository. As well, we set up a custom domain for our site.
+HUGO_VERSION = "0.141.0"site every time we pushed a commit to our GitHub repository. As well, we set up a custom domain for our site.
 
 In this post, we will look at the preview deploy feature of Netlify to build and deploy to a preview/staging site when we create or update a pull request.
 
@@ -50,10 +50,10 @@ To have different settings, we will create a file in the root of our site named 
     # This will be your default build command
     [build]
     publish = "public"
-    command = "hugo --gc --minify"
+    command = "hugo --environment production --gc --minify"
 
     [build.environment]
-    HUGO_VERSION = "0.92.1"
+    HUGO_VERSION = "0.141.0"
     HUGO_ENV = "production"
     HUGO_ENABLEGITINFO = "true"
     ```
@@ -63,14 +63,15 @@ To have different settings, we will create a file in the root of our site named 
     ```toml
     # This will be your preview build
     [context.deploy-preview]
-    command = "hugo --config config.toml,config-prod.toml --buildFuture --buildDrafts --gc --minify -b $DEPLOY_PRIME_URL"
+    command = "hugo --environment preview --gc --minify -b $DEPLOY_PRIME_URL"
     ```
 
 1. We can also set different environment variables and override the default ones
 
     ```toml
     [context.deploy-preview.environment]
-    HUGO_VERSION = "0.92.1"
+    HUGO_VERSION = "0.141.0"
+    HUGO_ENV = "preview"
    ```
 
 Now our production deployment will only include published posts, while our preview deployment will include future and draft posts.

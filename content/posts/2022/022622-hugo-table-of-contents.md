@@ -1,7 +1,7 @@
 ---
 categories: ["blogging", "hugo"]
-date: 2022-02-26T13:00:00Z
-published: true
+published: 2022-02-26T13:00:00Z
+
 title: "Hugo - Selectively Add Table of Contents to Post"
 url: '/hugo-table-of-contents'
 series: ['Blogging With Hugo']
@@ -65,8 +65,8 @@ Now that you have the `{{ if .Params.toc }}` added to your html template, you ne
 ---
 toc: true
 categories: ["blogging", "hugo"]
-date: 2022-02-26T13:00:00Z
-published: true
+published: 2022-02-26T13:00:00Z
+
 title: "Hugo - Add Table of Contents to Post"
 ---
 ```

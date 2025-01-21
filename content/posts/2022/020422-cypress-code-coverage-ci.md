@@ -1,6 +1,6 @@
 ---
 categories: ["Cypress", "testing", "Angular"]
-date: 2022-02-04T13:00:00Z
+published: 2022-02-04T13:00:00Z
 title: Angular - Add Code Coverage to Automated Builds in TeamCity
 url: "/cypress-code-coverage-teamcity"
 series: ["Cypress Code Coverage"]

@@ -1,6 +1,6 @@
 ---
 categories: ["aspnet core"]
-date: 2022-03-22T13:00:00Z
+published: 2022-03-22T13:00:00Z
 draft: false
 title: "ASP.NET Core - AutoMapper - Test Mapping Configuration"
 url: '/aspnet-core-automapper-testing'

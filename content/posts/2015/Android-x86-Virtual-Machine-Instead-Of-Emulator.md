@@ -1,7 +1,7 @@
 ---
 categories:
 - ionic
-date: 2015-01-11T20:45:35Z
+published: 2015-01-11T20:45:35Z
 excerpt: "The Android emulator is super super slow and I could never get it working
   on my development virtual machine.  I thought no problem I will just use Genymotion
   but due to a video card driver issue on my laptop (not Genymotion's fault), I couldn't
@@ -13,7 +13,7 @@ excerpt: "The Android emulator is super super slow and I could never get it work
   allows you to run Android on a pc and virtualbox machine.  So I follow the guide
   at  [Android x86 virtualbox install](http://www.android-x86.org/documents/virtualboxhowto)
   and was up and running in no time.  \n"
-published: true
+
 title: Ionic - Using Android x86 Virtual Machine Instead of Emulator
 ---
 

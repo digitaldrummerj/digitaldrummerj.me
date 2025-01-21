@@ -2,7 +2,7 @@
 categories:
 - blogging
 - jekyll
-date: 2015-09-09T02:00:00Z
+published: 2015-09-09T02:00:00Z
 excerpt: "Welcome the continuing series on using Jekyll. In this tutorial we are going
   to setup your Ubuntu Linux computer to be able to edit your blog on your computer.\n
   \   \n## Overview\n\nUp to this point we have been using the Github web site to
@@ -11,7 +11,7 @@ excerpt: "Welcome the continuing series on using Jekyll. In this tutorial we are
   it is better if you can test out all of your changes and review your blog post before
   letting the world see them.  It will also let you have draft post where you can
   see them locally but on github they will not be visible.\n"
-published: true
+
 series: ["Blogging with Jekyll"]
 title: 'Jekyll Part 10: Installing Jekyll On Linux'
 ---

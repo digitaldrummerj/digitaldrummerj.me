@@ -2,14 +2,13 @@
 categories:
 - git
 - github
-date: 2015-06-11T00:00:00Z
 excerpt: When I am working on a git repository and using the command line, one of
   the things that I often end up checking is which git branch I am on and if there
   are any pending changes.  How awesome would it be if the bash shell prompt, told
   you the branch name if the directory is part of a git repository and if there are
   any changes.  Well, thankfully someone has done this work already and with a little
   bit of configuration on your part, you can implement the changes.
-published: true
+published: 2015-06-11T00:00:00Z
 title: Add Git Branch Name to Bash Prompt
 ---
 

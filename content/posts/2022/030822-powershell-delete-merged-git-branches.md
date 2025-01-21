@@ -1,6 +1,6 @@
 ---
 categories: ["powershell" , "git"]
-date: 2022-03-08T13:00:00Z
+published: 2022-03-08T13:00:00Z
 draft: false
 title: "Git: Delete Merged Local Branches That No Longer Exist with Powershell"
 url: '/git-remove-local-merged-branches-powershell/'

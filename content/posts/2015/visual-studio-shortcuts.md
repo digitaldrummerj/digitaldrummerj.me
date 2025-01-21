@@ -2,11 +2,11 @@
 categories:
 - productivity
 - visual studio
-date: 2015-08-13T00:00:00Z
+published: 2015-08-13T00:00:00Z
 excerpt: I am keyboard person and like shortcut keys.  There are lot of available
   shortcuts in Visual Studio and here is a list of the Visual Studio shortcuts that
   I use.
-published: true
+
 series: ["Developer Productivity"]
 title: Favorite Visual Studio Shortcuts
 

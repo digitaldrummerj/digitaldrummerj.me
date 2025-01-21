@@ -1,6 +1,6 @@
 ---
 categories: ["aspnet core", "ef core"]
-date: 2022-03-26T13:00:00Z
+published: 2022-03-26T13:00:00Z
 draft: false
 title: "EF Core - Audit Fields - Track Created By and Last Updated By Values Automatically"
 url: '/ef-core-audit-columns'

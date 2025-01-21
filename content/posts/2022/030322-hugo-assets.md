@@ -1,6 +1,6 @@
 ---
 categories: ["blogging", "hugo"]
-date: 2022-03-03T13:00:00Z
+published: 2022-03-03T13:00:00Z
 draft: false
 title: "Hugo - Minify JS and CSS"
 url: '/hugo-asset-pipeline'

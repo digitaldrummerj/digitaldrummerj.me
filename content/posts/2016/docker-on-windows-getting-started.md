@@ -1,7 +1,7 @@
 ---
 categories:
 - docker
-date: 2016-05-31T00:00:00Z
+published: 2016-05-31T00:00:00Z
 excerpt: "After seeing a Docker presentation recently I decided to finally figure
   out how to get Docker working correctly on Windows.  Luckily it worked out of the
   box fairly well but I did run into issues with Windows file path lengths and proxy
@@ -16,7 +16,7 @@ excerpt: "After seeing a Docker presentation recently I decided to finally figur
   \ This terminal will ensure that you have the base image that Docker uses for Virtualbox
   on Windows and you can run all of the Docker commands from this terminal.\n\nLets
   take a look at a few examples to get us started.\n"
-published: true
+
 series: ["Docker Toolkit for Windows"]
 title: Docker - Getting Started On Windows
 

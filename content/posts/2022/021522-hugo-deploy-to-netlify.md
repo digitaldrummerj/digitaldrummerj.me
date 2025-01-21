@@ -1,7 +1,7 @@
 ---
 categories: ["blogging", "hugo", "netlify"]
-date: 2022-02-15T13:00:00Z
-published: true
+published: 2022-02-15T13:00:00Z
+
 title: "Hugo - Deploy Site to Netlify"
 url: '/deploy-hugo-netlify'
 series: ['Blogging With Hugo']

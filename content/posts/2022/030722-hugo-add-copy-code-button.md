@@ -1,7 +1,7 @@
 ---
 categories: ["blogging", "hugo"]
-date: 2022-03-07T13:00:00Z
-published: true
+published: 2022-03-07T13:00:00Z
+
 title: "Hugo - Dynamically Add Copy Code Snippet Button"
 url: '/hugo-add-copy-code-snippet-button'
 series: ['Blogging With Hugo']

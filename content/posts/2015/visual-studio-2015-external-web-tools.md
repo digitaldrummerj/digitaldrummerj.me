@@ -4,7 +4,7 @@ categories:
 - npm
 - node
 - git
-date: 2015-08-20T00:00:00Z
+published: 2015-08-20T00:00:00Z
 excerpt: "I ran into an issue with an npm package mis-behaving in Visual Studio 2015
   but working just fine from the command line.  \n\nAfter scratching my head for awhile
   trying to figure out what was going on, I discovered that Visual Studio was pointing
@@ -15,7 +15,7 @@ excerpt: "I ran into an issue with an npm package mis-behaving in Visual Studio 
   these tools like I had, then most likely you have a difference in versions between
   what the command line is using versus Visual Studio.\n\nLuckily you can easily tell
   Visual Studio which versions to use.\n"
-published: true
+
 title: Visual Studio 2015 - External Web Tools
 
 ---

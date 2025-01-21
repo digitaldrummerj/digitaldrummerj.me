@@ -2,7 +2,7 @@
 categories:
 - virtualbox
 - vagrant
-date: 2015-06-18T03:00:00Z
+published: 2015-06-18T03:00:00Z
 excerpt: "Welcome to the Vagrant lesson on installing Boxstarter as part of the Vagrant
   provisioning process.\nBoxstarter gives you the ability to bulk install Chocolatey
   packages plus several helper functions for Windows configuration options.  \n\nWhen
@@ -13,7 +13,7 @@ excerpt: "Welcome to the Vagrant lesson on installing Boxstarter as part of the 
   User access control (UAC).\n* Set taskbar options like size, postion, and lock the
   size.\n* Set Windows explorer options like showing hidden files, protected OS files,
   and file extensions.\n"
-published: true
+
 series: ["Vagrant Getting Started"]
 title: Vagrant Part 4 - Install Boxstarter
 

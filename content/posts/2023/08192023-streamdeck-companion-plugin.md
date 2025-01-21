@@ -1,7 +1,7 @@
 ---
 categories: ["companion", "streamdeck"]
-date: 2023-08-19T13:00:00Z
-published: true
+published: 2023-08-19T13:00:00Z
+
 title: "Setup Streamdeck With Companion Plug-in "
 url: '/companion-streamdeck-plugin'
 ---

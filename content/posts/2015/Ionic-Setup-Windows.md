@@ -1,7 +1,7 @@
 ---
 categories:
 - ionic
-date: 2015-01-11T20:45:35Z
+published: 2015-01-11T20:45:35Z
 excerpt: "If you are like me and just starting to work with the [Ionic Framework](http://www.ionicframework.com)
   and don't already have a machine setup to do Android, iOS, Node, etc development
   then many of the guides out there leave out a number of steps that you need to do
@@ -11,7 +11,7 @@ excerpt: "If you are like me and just starting to work with the [Ionic Framework
   and [Boxstarter](http://www.boxstarter.org) to automate the setup for the Ionic
   Framework.\n\nOn Windows, you will only be able to setup Android development.  Apple
   requires a Mac in order to do iOS development.\n"
-published: true
+
 title: Ionic - How to setup on Windows
 
 ---

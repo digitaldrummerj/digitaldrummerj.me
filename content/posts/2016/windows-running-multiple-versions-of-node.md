@@ -1,7 +1,7 @@
 ---
 categories:
 - node
-date: 2016-07-20T00:00:00Z
+published: 2016-07-20T00:00:00Z
 excerpt: "I am sure that many of you are in the same situation that I am in with needing
   a different version of node for different projects and you don't want to have to
   create a new virtual machine for each project just because of node.  Luckily with
@@ -12,7 +12,7 @@ excerpt: "I am sure that many of you are in the same situation that I am in with
   available to.  There is no ability to share packages between versions.  This means
   that it will take a bit more disk space but most node packages are fairly small
   so this should be a none issue.    \n"
-published: true
+
 title: Running Multiple Version of Node On Windows
 
 ---

@@ -1,7 +1,7 @@
 ---
 categories: ["git"]
-date: 2021-09-19T12:00:00Z
-published: true
+published: 2021-09-19T12:00:00Z
+
 url: '/git-remove-local-merged-branches/'
 title: Git - Remove Local Branches That Are Merged or No Longer Exist
 ---

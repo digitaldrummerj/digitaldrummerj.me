@@ -2,14 +2,14 @@
 categories:
 - blogging
 - jekyll
-date: 2015-02-21T00:00:00Z
+published: 2015-02-21T00:00:00Z
 excerpt: "Welcome to part 7 of the series on Blogging on Github.  In this lesson,
   we are going to add the ability to search your blog using google.\n    \n## Overview\n\nAs
   your blog grows, you want to make it easy for your readers to find the content that
   they need on your blog.  Out of the box, Jekyll does not have any type of search
   engine built-in.  Thankfully, with Google you can easily tell Google to index your
   blog and then add a search box on the blog.\n"
-published: true
+
 series: ["Blogging with Jekyll"]
 title: 'Jekyll Part 07: Adding a custom Google search'
 ---

@@ -1,7 +1,7 @@
 ---
 categories: ["blogging", "hugo"]
-date: 2022-02-14T13:00:00Z
-published: true
+published: 2022-02-14T13:00:00Z
+
 title: "Create a Blog Using Hugo"
 url: '/create-blog-with-hugo'
 series: ['Blogging With Hugo']

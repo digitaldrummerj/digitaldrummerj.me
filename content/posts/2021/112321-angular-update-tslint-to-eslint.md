@@ -1,7 +1,7 @@
 ---
 categories: ["Angular"]
-date: 2021-11-23T13:00:00Z
-published: true
+published: 2021-11-23T13:00:00Z
+
 url: "/angular-migrate-to-eslint/"
 title: Migrating Angular from tslint to to eslint
 ---

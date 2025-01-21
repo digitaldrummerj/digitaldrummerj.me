@@ -2,13 +2,13 @@
 categories:
 - virtualbox
 - vagrant
-date: 2015-06-18T05:00:00Z
+published: 2015-06-18T05:00:00Z
 excerpt: "Welcome to the Vagrant lesson on how to use Boxstarter to configure Windows
   and install software as part of the Vagrant provisioning process.\n\nWe have all
   of the needed software in place to start configuring and installing software onto
   our virtual machine.\n\nIn this lesson, we will create an file with all of the install
   and configuration commands that will be executed with Boxstarter. \n"
-published: true
+
 series: ["Vagrant Getting Started"]
 title: Vagrant Part 5 - Installing Your Software
 

@@ -1,7 +1,7 @@
 ---
 categories: ["blogging", "hugo"]
-date: 2022-02-21T13:00:00Z
-published: true
+published: 2022-02-21T13:00:00Z
+
 title: "Hugo - View Posts by Tag Cloud"
 url: '/hugo-view-post-tag-cloud'
 series: ['Blogging With Hugo']
@@ -124,7 +124,7 @@ Now we need to create a page that uses the tag cloud layout that we just created
     permalink: “/posts/tagcloudview/“
     title: “Posts by Tag Cloud”
     url: “/posts/tagcloudview/“
-    published: true
+    
     sidebar: true
     layout: “archivebytagcloud”
     —

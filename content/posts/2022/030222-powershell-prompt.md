@@ -1,7 +1,7 @@
 ---
 categories: ["powershell"]
-date: 2022-03-02T13:00:00Z
-published: true
+published: 2022-03-02T13:00:00Z
+
 title: "Take your Windows Terminal and PowerShell to the next level"
 url: '/next-level-powershell-prompt'
 ---

@@ -1,6 +1,6 @@
 ---
 categories: ["aspnet core"]
-date: 2022-03-21T13:00:00Z
+published: 2022-03-21T13:00:00Z
 draft: false
 title: "ASP.NET Core - AutoMapper - Easily Convert One Object to Another"
 url: '/aspnet-core-automapper'

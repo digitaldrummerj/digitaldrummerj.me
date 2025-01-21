@@ -3,7 +3,7 @@ categories:
 - vagrant
 - windows
 - powershell
-date: 2015-05-27T00:00:00Z
+published: 2015-05-27T00:00:00Z
 excerpt: "When I am provisioning a new development virtual machine with vagrant, I
   do not need all of the Windows 8 modern applications such as bing maps, finance,
   skype, etc to be installed onto the virtual machine.  These applications are nice
@@ -14,7 +14,7 @@ excerpt: "When I am provisioning a new development virtual machine with vagrant,
   that you want to remove.  \n1. Update the script with the list of applications to
   remove.  \n1. Add the vagrant provisioning configuration to run the script when
   you initially run vagrant up  \n"
-published: true
+
 title: Windows 8.1 - Powershell Script to Uninstall Default Programs
 
 ---

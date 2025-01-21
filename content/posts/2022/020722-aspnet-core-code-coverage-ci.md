@@ -1,7 +1,7 @@
 ---
 categories: ["testing", "aspnet core", "teamcity", "dotcover"]
-date: 2022-02-07T13:00:00Z
-published: true
+published: 2022-02-07T13:00:00Z
+
 title: ".NET Core - Code Coverage in TeamCity"
 url: '/dotnet-core-code-coverage-teamcity/'
 series: ['ASP.NET Core Code Coverage']

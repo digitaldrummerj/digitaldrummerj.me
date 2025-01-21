@@ -2,7 +2,7 @@
 categories:
 - visual studio
 - gulp
-date: 2015-11-15T00:00:00Z
+published: 2015-11-15T00:00:00Z
 excerpt: "When I am working in an code editor such as Visual Studio, I do not want
   to have to have to leave the editor to run command line programs such as Gulp task.
   \ I want to be able to run the gulp task right from instead the editor.  Starting
@@ -11,7 +11,7 @@ excerpt: "When I am working in an code editor such as Visual Studio, I do not wa
   you no longer have to install an extension.   \n\nIn this post, we will look at
   how to run your Gulp task within Visual Studio and then how to integrate them into
   the Visual Studio build process.\n"
-published: true
+
 title: Running Gulp Task in Visual Studio
 
 ---

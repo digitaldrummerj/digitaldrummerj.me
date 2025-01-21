@@ -2,11 +2,11 @@
 categories:
 - productivity
 - visual studio
-date: 2015-08-11T00:00:00Z
+published: 2015-08-11T00:00:00Z
 excerpt: In the Visual Studio Extension Gallery there are hundreds of extensions that
   are available. The extensions add additional functionality to Visual Studio. Here
   are the extensions that I typically have installed.
-published: true
+
 series: ["Developer Productivity"]
 title: Favorite Visual Studio Extensions
 ---

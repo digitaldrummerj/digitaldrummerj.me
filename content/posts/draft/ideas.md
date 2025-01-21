@@ -1,6 +1,6 @@
 ---
-date: 2025-03-01T13:00:00Z
-published: false
+published: 2025-03-01T13:00:00Z
+draft: true
 title: "Post Ideas"
 url: '/post-ideas'
 ---

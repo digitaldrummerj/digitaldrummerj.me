@@ -1,7 +1,7 @@
 ---
 categories: ["obs"]
-date: 2023-01-29T13:00:00Z
-published: true
+published: 2023-01-29T13:00:00Z
+
 title: "How to Completely Uninstall OBS on Mac"
 url: '/obs-mac-uninstall'
 ---

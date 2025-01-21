@@ -1,7 +1,7 @@
 ---
 categories: ["testing", "aspnet core", "teamcity", "dotcover"]
-date: 2022-02-09T13:00:00Z
-published: true
+published: 2022-02-09T13:00:00Z
+
 title: dotCover - How in TeamCity to create multiple coverage reports
 url: '/teamcity-composite-builds'
 series: ['ASP.NET Core Code Coverage']

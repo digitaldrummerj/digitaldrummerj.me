@@ -1,6 +1,6 @@
 ---
 categories: ["vscode", "productivity"]
-date: 2022-03-15T13:00:00Z
+published: 2022-03-15T13:00:00Z
 draft: false
 title: "VS Code Favorite Extension Series - Add Only"
 url: '/vscode-addonly-extension'

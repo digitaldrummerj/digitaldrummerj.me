@@ -1,7 +1,7 @@
 ---
 categories: ["blogging", "hugo"]
-date: 2022-02-19T13:00:00Z
-published: true
+published: 2022-02-19T13:00:00Z
+
 title: "Hugo - View Posts Grouped By Month"
 url: '/hugo-view-post-grouped-by-month'
 series: ['Blogging With Hugo']
@@ -25,7 +25,7 @@ To create the archive by month page, we need to create a page in the content fol
 ---
 permalink: "/posts/monthview/"
 url: "/posts/monthview/"
-published: true
+
 layout: "archivebydate"
 title: "Posts"
 description: "By Date"

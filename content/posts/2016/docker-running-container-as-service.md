@@ -1,12 +1,12 @@
 ---
 categories:
 - docker
-date: 2016-06-15T00:00:00Z
+published: 2016-06-15T00:00:00Z
 excerpt: |
   In the [previous tutorial](../docker-windows-mounting-directories/) we learned how to mount additional directories within the Docker containers.  In this tutorial we are going to learn how to run a Docker container as a service a.k.a daemon for nginx and mysql.
 
   To run a Docker container as a daemon, we run it with the -d flag.  This will tell Docker to start up the container in the background and return back to the command prompt.
-published: true
+
 series: ["Docker Toolkit for Windows"]
 title: Docker - Running Container As a Service
 

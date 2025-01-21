@@ -2,7 +2,7 @@
 categories:
 - blogging
 - jekyll
-date: 2015-01-30T00:00:00Z
+published: 2015-01-30T00:00:00Z
 excerpt: "\nWelcome to the first tutorial of a multi part series on blogging using
   Jekyll on Github.  Github has an awesome free option for hosting a blog for you
   and you can get a blog up and running in 10 minutes or less.  This series will cover
@@ -18,7 +18,7 @@ excerpt: "\nWelcome to the first tutorial of a multi part series on blogging usi
   out of the box for you such as:  a nice looking theme, code syntax highlighter,
   social buttons (twitter, Facebook, Github, etc), Disqus blog commenting api, and
   Google analytics.\n"
-published: true
+
 redirect_from: /blogging-on-github-part-1/
 series: ["Blogging with Jekyll"]
 title: 'Jekyll Part 01: Getting Started'

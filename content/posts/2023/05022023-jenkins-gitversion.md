@@ -1,7 +1,7 @@
 ---
 categories: ["jenkins"]
-date: 2023-05-02T13:00:00Z
-published: true
+published: 2023-05-02T13:00:00Z
+
 title: "Using GitVersion on Jenkins"
 url: '/jenkins-gitversion'
 ---

@@ -1,14 +1,14 @@
 ---
 categories:
 - ionic
-date: 2015-01-11T20:45:35Z
+published: 2015-01-11T20:45:35Z
 excerpt: "If you are like me and just starting to work with the Ionic Framework and
   don’t already have a machine setup to do Android, iOS, Node, etc development then
   many of the guides out there leave out a number of steps that you need to do in
   order to get everything working.\n\n    Even being a Windows user I was able to
   pretty easily get Ionic working on a Mac.  The only difference between the Windows
   setup and the OSx setup is that you can build for an iOS device on a Mac.    \n"
-published: true
+
 title: Ionic - Setup on OSx
 
 ---

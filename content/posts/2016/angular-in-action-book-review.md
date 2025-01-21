@@ -1,8 +1,8 @@
 ---
 categories:
 - angularjs
-date: 2016-01-21T00:00:00Z
-published: true
+published: 2016-01-21T00:00:00Z
+
 title: AngularJS In Action Book Review
 
 ---

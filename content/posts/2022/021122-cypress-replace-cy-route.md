@@ -1,7 +1,7 @@
 ---
 categories: ["Cypress"]
-date: 2022-02-11T13:00:00Z
-published: true
+published: 2022-02-11T13:00:00Z
+
 title: Cypress - Migrate from cy.route to cy.intercept
 url: '/cypress-migrate-to-cy-intercept'
 ---

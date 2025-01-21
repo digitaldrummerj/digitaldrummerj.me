@@ -1,7 +1,7 @@
 ---
 categories:
 - vagrant
-date: 2015-10-04T00:00:00Z
+published: 2015-10-04T00:00:00Z
 excerpt: "As part of my [demo](https://github.com/digitaldrummerj/VagrantTalk/tree/master/ExampleVagrantFiles/WindowsWithChocolatey)
   during my Vagrant talk, I use the [opentable/win-8.1-enterprise-amd64-nocm](https://atlas.hashicorp.com/opentable/boxes/win-8.1-enterprise-amd64-nocm)
   vagrant base box with the virtualbox provider.  This vagrant base box unfortunately
@@ -10,7 +10,7 @@ excerpt: "As part of my [demo](https://github.com/digitaldrummerj/VagrantTalk/tr
   RDP ports without detecting if the port is already in use.\n\nLuckily, it is really
   easy to fix the included vagrantfile so that you can create vagrant machines but
   you have to do some prework before running a vagrant up using this base box.       \n"
-published: true
+
 title: Vagrant - Fixing Opentable Basebox looking for Windows Plugin
 
 ---

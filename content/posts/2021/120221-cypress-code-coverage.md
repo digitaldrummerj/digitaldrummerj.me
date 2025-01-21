@@ -1,7 +1,7 @@
 ---
 categories: ["Cypress", "testing", "Angular"]
-date: 2021-12-02T13:00:00Z
-published: true
+published: 2021-12-02T13:00:00Z
+
 title: "Angular - Add Code Coverage to Your Cypress Tests"
 url: '/cypress-code-coverage'
 series: ["Cypress Code Coverage"]

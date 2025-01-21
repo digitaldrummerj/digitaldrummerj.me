@@ -1,7 +1,7 @@
 ---
 categories:
 - ionic
-date: 2016-11-01T00:00:00Z
+published: 2016-11-01T00:00:00Z
 excerpt: "In order to work with the Ionic framework version 2 there is a bit of software
   installs and configuration that needs to happen in order to deploy to devices.  However,
   many of the guides out there leave out a number of steps that tripped me up when
@@ -11,7 +11,7 @@ excerpt: "In order to work with the Ionic framework version 2 there is a bit of 
   I can easily repeat it, we will be using [Chocolatey](http://www.chocolatey.org)
   and [Boxstarter](http://www.boxstarter.org) for all of the installs and configurations.
   \n"
-published: true
+
 series: ["Ionic2 Setup"]
 tag: Ionic2 Setup
 title: Ionic v2 - How to setup on Windows

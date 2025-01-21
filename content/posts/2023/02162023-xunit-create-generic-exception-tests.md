@@ -1,7 +1,7 @@
 ---
 categories: ["dotnet", "testing"]
-date: 2023-02-16T13:00:00Z
-published: true
+published: 2023-02-16T13:00:00Z
+
 title: "Xunit Create Generic Exception Tests"
 url: '/xunit-generic-exception-tests'
 ---

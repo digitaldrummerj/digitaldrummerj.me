@@ -2,7 +2,7 @@
 categories:
 - blogging
 - jekyll
-date: 2015-09-11T00:00:00Z
+published: 2015-09-11T00:00:00Z
 excerpt: "Welcome the continuing series on using Jekyll. In this tutorial we are going
   to set it up so that we can do draft posts that we can check into our repo but not
   have them show up on the production site.\n\nIn the last couple of articles, we
@@ -15,7 +15,7 @@ excerpt: "Welcome the continuing series on using Jekyll. In this tutorial we are
   flag is set to true unless you tell jekyll to run with drafts.  On Github, jekyll
   runs without the drafts flag so you don't have to worry about drafts accidentally
   showing up.  \n"
-published: true
+
 series: ["Blogging with Jekyll"]
 title: 'Jekyll Part 12: Editing Locally'
 ---
@@ -35,11 +35,11 @@ Thankfully, jekyll supports having draft posts that by default don't show even i
 1. Add the following to the DraftsTest.md file
 
 		---
-		published: true
+		
 		layout: post
 		title: 'Drafts Test'
 		categories: ['How-To']
-		date: 2015-09-11 06:00
+		published: 2015-09-11 06:00
 		---
 
 1. If you run the jekyll serve command, you will not see this post showing up.

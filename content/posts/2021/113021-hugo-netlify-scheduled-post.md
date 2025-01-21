@@ -1,7 +1,7 @@
 ---
 categories: ["hugo"]
-date: 2021-11-30T12:00:00Z
-published: true
+published: 2021-11-30T12:00:00Z
+
 url: "/hugo-scheduled-post"
 title: Schedule Post with Hugo and Netlify
 ---
@@ -98,8 +98,8 @@ Here is an example of the data for this post that will be published on November 
 ```yml
 —
 categories: [“hugo”]
-date: 2021-11-24T12:00:00Z
-published: true
+published: 2021-11-24T12:00:00Z
+
 title: Schedule Post with Hugo and Netlify
 —
 ```

@@ -1,7 +1,7 @@
 ---
 categories: ["aspnet core"]
-date: 2018-11-05T00:00:00Z
-published: true
+published: 2018-11-05T00:00:00Z
+
 title: Dotnet CLI Global Tools Are Awesome!
 series: ["DotnetGlobalTools"]
 ---

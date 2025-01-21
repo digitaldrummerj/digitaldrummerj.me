@@ -1,7 +1,7 @@
 ---
 categories: ["Cypress"]
-date: 2022-02-10T13:00:00Z
-published: true
+published: 2022-02-10T13:00:00Z
+
 title: Cypress - Create My Own Cypress Commands
 url: '/cypress-custom-commands'
 ---

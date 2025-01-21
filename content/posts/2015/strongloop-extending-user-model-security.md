@@ -2,7 +2,7 @@
 categories:
 - ionic
 - strongloop
-date: 2015-10-30T00:00:00Z
+published: 2015-10-30T00:00:00Z
 excerpt: "After following Raymond Camden's [Strongloop Introduction](http://www.raymondcamden.com/tags/strongloop/),
   I was ready to update the [todo demo application](https://github.com/Ionic-AZ/Todo-Lab1-LocalStorage)
   that I have been using for the [Ionic Arizona Meetup](http://meetup.com/ionic-az).
@@ -15,7 +15,7 @@ excerpt: "After following Raymond Camden's [Strongloop Introduction](http://www.
   explictly defined security setup.  This is great except for the fact that even if
   you add additional ACLs in your extended user model the default security has already
   denied the user before it gets to the security you setup.  \n"
-published: true
+
 series: ["Strongloop Todo"]
 title: Strongloop - Fixing Security When Extending User Model
 

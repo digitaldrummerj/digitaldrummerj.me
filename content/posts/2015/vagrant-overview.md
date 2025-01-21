@@ -2,7 +2,7 @@
 categories:
 - vagrant
 - virtualbox
-date: 2015-06-16T00:00:00Z
+published: 2015-06-16T00:00:00Z
 excerpt: "Welcome to an overview of Vagrant and creating of your first Vagrant machine.
   \ \n\nVagrant allows you to create and manage lightweight reproducible virtual machines.
   \      \nEssentially, all of the configurations to create and configure a virtual
@@ -13,7 +13,7 @@ excerpt: "Welcome to an overview of Vagrant and creating of your first Vagrant m
   or move it to another machine and be assured that everything will get setup correctly
   when you create the virtual machine on the new machine.\n\nBefore, we can see Vagrant
   in action, we first need to install a little bit of software onto your machine.\n"
-published: true
+
 series: ["Vagrant Getting Started"]
 title: Vagrant Part 1 - Easy Virtual Machine Management
 

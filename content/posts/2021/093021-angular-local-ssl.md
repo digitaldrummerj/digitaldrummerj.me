@@ -1,8 +1,7 @@
 ---
 categories:
     - angular
-date: 2021-09-30T00:00:00Z
-publish: true
+published: 2021-09-30T00:00:00Z
 title: Angular - Running SSL Locally
 url: '/angular-local-ssl/'
 ---

@@ -2,7 +2,7 @@
 categories:
 - virtualbox
 - vagrant
-date: 2015-06-18T01:00:00Z
+published: 2015-06-18T01:00:00Z
 excerpt: "Welcome to the Vagrant lesson on what Vagrant provisioning is.\n\nProvisioners
   allow you to automatically install software and alter configurations during the
   Vagrant up process.\n\nThis is useful since boxes typically aren't built perfectly
@@ -13,7 +13,7 @@ excerpt: "Welcome to the Vagrant lesson on what Vagrant provisioning is.\n\nProv
   makes provisioning super powerful.    \n\nVagrant gives you multiple options for
   provisioning the machine, from simple command line scripts to more complex configuration
   management systems such as chef and puppet. \n"
-published: true
+
 series: ["Vagrant Getting Started"]
 title: Vagrant Part 2 - Provisioning Introduction
 

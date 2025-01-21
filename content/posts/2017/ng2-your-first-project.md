@@ -1,7 +1,7 @@
 ---
 categories:
 - angular
-date: 2017-01-03T00:00:00Z
+published: 2017-01-03T00:00:00Z
 excerpt: "Welcome to the series on Getting Started with Angular 2.  Angular 2 was
   released in September 2016 and and so far I have been enjoying working with it.
   I have been using the TypeScript version of Angular 2.  It is has been pretty
@@ -16,7 +16,7 @@ excerpt: "Welcome to the series on Getting Started with Angular 2.  Angular 2 wa
   2 project that the rest of the series will build on. We will be using the new Angular
   CLI to generate the project and several of the features such as components, services,
   modules, and pipes."
-published: true
+
 series: ["Angular 2 Getting Started"]
 title: Angular - Your First Project
 

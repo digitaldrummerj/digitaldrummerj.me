@@ -1,7 +1,7 @@
 ---
 categories: ["dotnet"]
-date: 2023-05-01T13:00:00Z
-published: true
+published: 2023-05-01T13:00:00Z
+
 title: "Use C# to Convert PNG to Base64"
 url: '/csharp-png-to-base64'
 ---

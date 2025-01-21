@@ -1,11 +1,11 @@
 ---
 categories:
 - npm
-date: 2015-05-07T00:00:00Z
+published: 2015-05-07T00:00:00Z
 excerpt: One of the most annoying features of npm for me is the spinner.  Many times
   it runs long enough that I am wondering if it is still working or hung.  Thankfully
   you can easily change this with the .npmrc file.
-published: true
+
 title: Removing the NPM spinner
 
 ---

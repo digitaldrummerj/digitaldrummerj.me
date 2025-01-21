@@ -1,7 +1,8 @@
 ---
 permalink: "/posts/monthview/"
 url: "/posts/monthview/"
-published: true
+publishedDate: 2024-12-02T20:45:35Z
+
 sidebar: true
 layout: "archivebydate"
 title: "Posts By Date"

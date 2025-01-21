@@ -1,6 +1,6 @@
 ---
 categories: ["vscode", "productivity"]
-date: 2022-03-18T13:00:00Z
+published: 2022-03-18T13:00:00Z
 draft: false
 title: "VS Code - Favorite Extension - markdownlint"
 url: '/vscode-markdown-lint-extension'

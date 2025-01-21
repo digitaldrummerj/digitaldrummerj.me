@@ -2,7 +2,7 @@
 categories:
 - blogging
 - jekyll
-date: 2015-09-09T01:00:00Z
+published: 2015-09-09T01:00:00Z
 excerpt: "Welcome the continuing series on using Jekyll. In this tutorial we are going
   to setup your Windows computer to be able to edit your blog on your computer.\n\n##
   Overview\n\nUp to this point we have been using the Github web site to edit all
@@ -13,7 +13,7 @@ excerpt: "Welcome the continuing series on using Jekyll. In this tutorial we are
   see them locally but on github they will not be visible.\n\nNote that Jekyll is
   not officially supported on Windows but it does work and I have not had any issues
   with it.\n"
-published: true
+
 series: ["Blogging with Jekyll"]
 title: 'Jekyll Part 09: Installing Jekyll On Windows'
 ---
