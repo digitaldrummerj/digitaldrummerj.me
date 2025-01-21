@@ -5,7 +5,7 @@ publish = "public"
 command = "hugo --environment production --gc --minify"
 
 [build.environment]
-HUGO_VERSION = "0.111.3"
+HUGO_VERSION = "0.139.3"
 HUGO_ENABLEGITINFO = "true"
 HUGO_ENV = "production"
 
@@ -13,12 +13,12 @@ HUGO_ENV = "production"
 command = "hugo --environment preview --gc --minify -b $DEPLOY_PRIME_URL"
 
 [context.deploy-preview.environment]
-HUGO_VERSION = "0.139.3"
+HUGO_VERSION = "0.141.0"
 HUGO_ENV = "preview"
 
 [context.staging]
 command = "hugo --environment staging --gc --minify -b $DEPLOY_PRIME_URL"
 
 [context.staging.environment]
-HUGO_VERSION = "0.139.3"
+HUGO_VERSION = "0.141.0"
 HUGO_ENV = "staging"
