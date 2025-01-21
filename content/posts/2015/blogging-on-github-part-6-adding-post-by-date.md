@@ -57,7 +57,7 @@ After the front matter, add the following code to display the post by Year and M
                 {% capture year %}{{ post.date | published: '%Y' }}{% endcapture %}
                 {% capture nyear %}{{ post.next.date | published: '%Y' }}{% endcapture %}
                 {% if year != nyear %}
-                {% if forloop.index != 1 %}</ul>{% endif %}
+                    {% if forloop.index != 1 %}</ul>{% endif %}
                     <h2>{{ post.date | published: '%Y' }}</h2>
                 {% endif %}
             {% endunless %}
@@ -65,7 +65,7 @@ After the front matter, add the following code to display the post by Year and M
         {% capture month %}{{ post.date | published: '%m%Y' }}{% endcapture %}
         {% capture nmonth %}{{ post.next.date | published: '%m%Y' }}{% endcapture %}
         {% if month != nmonth %}
-        {% if forloop.index != 1 %}</ul>{% endif %}
+            {% if forloop.index != 1 %}</ul>{% endif %}
             <h2>{{ post.date | published: '%B %Y' }}</h2><ul>
         {% endif %}
 
@@ -124,5 +124,3 @@ We are going to add the "show by date" link into the header section next to the 
 ## Conclusion
 
 With just a few simple steps, you were able to add the post by month page and put it in the header.  In the next lesson we will discuss how the blog theme works and how to modify it.
-
-
