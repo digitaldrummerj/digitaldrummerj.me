@@ -10,5 +10,6 @@
         "shortcode",
         "shortcodes",
         "teamcity"
-    ]
+    ],
+    "editor.insertSpaces": true
 }

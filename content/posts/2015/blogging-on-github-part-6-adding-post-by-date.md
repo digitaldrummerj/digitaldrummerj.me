@@ -57,7 +57,7 @@ After the front matter, add the following code to display the post by Year and M
                 {% capture year %}{{ post.date | published: '%Y' }}{% endcapture %}
                 {% capture nyear %}{{ post.next.date | published: '%Y' }}{% endcapture %}
                 {% if year != nyear %}
-                    {% if forloop.index != 1 %}</ul>{% endif %}
+                    {% if forloop.index != 1 %}</ul>{% enffdif %}
                     <h2>{{ post.date | published: '%Y' }}</h2>
                 {% endif %}
             {% endunless %}
