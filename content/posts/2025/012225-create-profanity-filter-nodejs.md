@@ -2,6 +2,9 @@
 title: "Create A Profanity Filter in NodeJS"
 date: 2025-01-22T00:00:00Z
 draft: false
+series: ['NodeJS Profanity Filter']
+url: '/nodejs-profanity-filter'
+categories: ["node"]
 ---
 
 I was recently working with a client on a Q&A submission form for student assemblies that they are running and the client needed to strip out any profanity from the question submission.
