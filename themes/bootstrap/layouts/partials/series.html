@@ -1,7 +1,7 @@
 {{ if .Params.series }}
-{{ $seriesName := (index .Params.series 0) }}
+{{ $seriesName := lower (index .Params.series 0) }}
 {{ $seriesNameUrl := $seriesName | urlize }}
-{{ $series := (index .Site.Taxonomies.series $seriesNameUrl) }}
+{{ $series := (index .Site.Taxonomies.series $seriesName) }}
 {{ if gt $series.Count 1 }}
     {{ if gt $series.Count .Site.Params.seriesListLimit }}
         <div class="series-compact">
