@@ -1,8 +1,8 @@
 ---
-title: "Create A Profanity Filter in NodeJS"
+title: "Create A Profanity Filter in Node"
 date: 2025-01-22T00:00:00Z
 draft: false
-series: ['NodeJS Profanity Filter']
+series: ['Node Profanity Filter']
 url: '/nodejs-profanity-filter'
 categories: ["node"]
 ---
@@ -22,6 +22,13 @@ Our Node server will be using express.
 ### Create Project and Install Express
 
 1. Run `npm init` and follow the prompts
+1. Open up your package.json file
+1. Add a  type attribute to the list right below the main
+
+    ```text
+    "type": "module",
+    ```
+
 1. Install Express
 
    ```shell
@@ -230,7 +237,7 @@ Below is the full API if you just want to copy the whole thing.
 
 ## Complete API
 
-Filename: index.js 
+Filename: index.js
 
 ```javascript
 import express from 'express';
@@ -315,10 +322,10 @@ class CustomFilter extends Filter {
 
   // Apply additional custom bad word filtering
   bannedWords
-   .filter(phrase => !excludedWordsFromCustomFilter.includes(phrase)) // Exclude specific words           
-   .forEach(phrase => {
+   .filter(bannedWord => !excludedWordsFromCustomFilter.includes(bannedWord)) // Exclude specific words           
+   .forEach(bannedWord => {
     const pattern = new RegExp(
-     `\\b${phrase.replace(/\W+/g, '[\\W]*')}\\b`,
+     `\\b${bannedWord.replace(/\W+/g, '[\\W]*')}\\b`,
      'gi'
     );
 
