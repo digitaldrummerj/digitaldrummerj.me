@@ -4,12 +4,16 @@ Copyright = "Copyright 2015-2025.  All content is the property of Justin James a
 
 buildDrafts = true
 buildFuture = true
-
 canonifyurls = false
-
 theme = "bootstrap"
 languageCode = "en"
-
+enableRobotsTXT = true
+[sitemap]
+  changeFreq = "daily"
+  disable = false
+  filename = "sitemap.xml"
+  priority = -1
+  
 [params]
   author = "Justin James"
   copyright = "Created with ♥ by <a href='/about/'>Justin James</a>. All content is the property of Justin James and digitaldrummerj.me. This blog, its content, and opinions are my own."
@@ -122,3 +126,4 @@ suffixes = ["xml"]
 [outputFormats.FEED]
 mediatype = "application/rss"
 baseName = "feed"
+
