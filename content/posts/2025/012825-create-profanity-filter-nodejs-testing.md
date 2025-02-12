@@ -3,7 +3,7 @@ title: "Testing Our Node Profanity Filter"
 date: 2025-02-01T13:00:00
 draft: false
 url: '/nodejs-profanity-filter-testing'
-series: ['Node Profanity Filter']
+series: ['Node Filters']
 categories: ["node"]
 ---
 
