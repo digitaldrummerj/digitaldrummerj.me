@@ -668,7 +668,7 @@ This talk will be code heavy as we walk through getting started with Sails and d
 
 Slides: [https://www.slideshare.net/digitaldrummerj/rapid-api-development-with-node-and-sails](https://www.slideshare.net/digitaldrummerj/rapid-api-development-with-node-and-sails)
 
-Code: [github.com//digitaldrummerj/sailstalk](github.com//digitaldrummerj/sailstalk)
+Code: [https://github.com/digitaldrummerj/sailstalk](https://github.com/digitaldrummerj/sailstalk)
 
 <small>[back to top]({{< ref"speaking.md#top" >}})</small>
 
@@ -734,30 +734,11 @@ Topics Covered
 * Adding authorization checks to routes (if time permits)
 * Testing overview (if time permits and our brains aren’t already full with Angular knowledge)
 
-Labs: [http://digitaldrummerj.me/angular-tutorial](http://digitaldrummerj.me/angular-tutorial)
-
 #### Pre-Requisite Knowledge
 
 * Html and CSS
 * Understanding of how events like click work in Html/JavaScript
 * TypeScript is helpful but we will cover the needed knowledge if you do not have any TypeScript experience
-
-#### Pre-Work
-
-Below is a quick list of the pre-work commands.  These steps are covered in details in   [Lab 2](https://digitaldrummerj.github.io/angular-tutorial/#chapter2) and [Lab 3](https://digitaldrummerj.github.io/angular-tutorial/#chapter3)
-
-* Node LTS 8.x [https://nodejs.org](https://nodejs.org)
-* Visual Studio Code [https://code.visualstudio.com](https://code.visualstudio.com)
-* Angular CLI (npm install -g @angular/cli)
-* Create a new Angular project using the Angular CLI
-* Open Command Prompt or Terminal
-* Navigate to c:\ on Windows and ~/ on Osx
-* Run: mkdir projects
-* Run: cd projects
-* Run: ng new ngws --style scss --routing
-* Run: cd ngws
-* Run: npm run start
-* Open browser and navigate to [http://localhost:4200](http://localhost:4200) and you should see the default web page for your Angular application
 
 <small>[back to top]({{< ref"speaking.md#top" >}})</small>
 
