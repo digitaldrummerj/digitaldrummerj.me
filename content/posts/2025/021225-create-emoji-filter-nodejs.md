@@ -1,6 +1,6 @@
 ---
 title: "Remove All Emojis From Text in Node"
-date: 2025-02-13T00:00:00Z
+date: 2025-02-12T13:00:00Z
 draft: false
 series: ['Node Filters']
 url: '/nodejs-emoji-filter'
