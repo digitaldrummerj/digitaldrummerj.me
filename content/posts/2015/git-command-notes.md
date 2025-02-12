@@ -8,7 +8,6 @@ excerpt: |
 
   Below are my notes on various commands so that I can stop having to Google each time I forgot one of them.
 
-redirect_from: /git/
 title: Git Command Notes
 ---
 

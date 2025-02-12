@@ -1,8 +1,8 @@
 ---
-title: "Create A Profanity Filter in Node"
+title: "Remove Profanity from Text in Node"
 date: 2025-01-22T00:00:00Z
 draft: false
-series: ['Node Profanity Filter']
+series: ['Node Filters']
 url: '/nodejs-profanity-filter'
 categories: ["node"]
 ---
@@ -11,7 +11,7 @@ I was recently working with a client on a Q&A submission form for student assemb
 
 <!--more -->
 
-We decided that we want this in the API versus on the submission form itself so that the students couldn't just open up the browser developer tools and figure out how to skirt around the filter.  The API is written in NodeJS Express.
+We decided that we want to do this in the API versus on the submission form itself so that the students couldn't just open up the browser developer tools and figure out how to skirt around the filter.
 
 I could have rolled my own profanity filter but I figured someone had to have already done this and low and behold they have. I need the library to be able to add additional words. I found an npm package called [bad-words](https://www.npmjs.com/package/bad-words) that had exactly what I was looking for.
 
