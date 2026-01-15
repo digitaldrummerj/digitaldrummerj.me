@@ -100,9 +100,9 @@ enableRobotsTXT = true
   category = 'categories'
 
 [permalinks]
-  blog = "/:filename/"
+  blog = "/:contentbasename/"
   page = "/:slug/"
-  posts = "/:filename/"
+  posts = "/:contentbasename/"
 
   [params.sharingicons]
     # Hide the sharing icons on posts? (Default: false)
