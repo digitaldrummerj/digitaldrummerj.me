@@ -4,6 +4,7 @@ url: "/posts/monthview/"
 publishedDate: 2024-12-02T20:45:35Z
 
 sidebar: true
+type: "page"
 layout: "archivebydate"
 title: "Posts By Date"
 ---

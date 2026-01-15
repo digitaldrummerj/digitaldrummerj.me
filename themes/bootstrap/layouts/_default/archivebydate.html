@@ -1,0 +1,23 @@
+{{ define "main"}}
+ <!-- Main Content -->
+<div class="container">
+    <div class="row">
+        <div class="col-lg-12">
+            {{ .Content }}
+            <div>
+                {{ $posts := where .Site.RegularPages "Section" "posts" }}
+                {{ range ($posts.GroupByDate "January 2006")  }}
+                    <h3>{{ .Key }}</h3>
+                    <ul class="list-group striped-list">
+                        {{ range .Pages }}
+                            <li class="list-group-item">
+                                <a href="{{ .RelPermalink }}">{{ .PublishDate.Format "Jan 02" }} : {{ .Title }}{{ if .Params.subheadline }} ({{ .Params.subheadline }}){{ end }}{{ partial "draft" . }}</a>
+                            </li>
+                        {{ end }}
+                    </ul>
+                {{ end }}
+            </div>
+        </div>
+    </div>
+</div>
+{{ end }}
