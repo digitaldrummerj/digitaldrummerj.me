@@ -2,9 +2,9 @@
 categories: ["AI", "github copilot", "developer tools"]
 published: 2026-01-18T13:00:00Z
 draft: true
-title: "Part 1: Copilot in your terminal: what it is, what it can do, and why it’s not just a gimmick."
+title: "OLD: Part 1: Copilot in your terminal: what it is, what it can do, and why it’s not just a gimmick."
 url: '/github-copilot-cli'
-series: 'github-copilot-cli-start'
+series: ['github-copilot-cli-start']
 ---
 
 GitHub Copilot CLI is **Copilot for your terminal**. Not a plugin you forget to update. Not another tab you’ll ignore. It runs where you already work and it’s built to read, write, and run code in-context.
@@ -84,11 +84,7 @@ By default, copilot utilizes Claude Sonnet 4.5. Run the `/model` command to choo
 
 You are now ready to start coding away using the Github Copilot CLI!
 
----
-
 ## References
 
 - [https://docs.github.com/en/copilot/how-tos/use-copilot-agents/use-copilot-cli](https://docs.github.com/en/copilot/how-tos/use-copilot-agents/use-copilot-cli)
 - [https://github.com/features/copilot/cli](https://github.com/features/copilot/cli)
-
----
